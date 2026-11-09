@@ -111,7 +111,8 @@ Gerado por `importacao/enriquecer.py` a partir do CSV de estoque do WooCommerce 
 |---|---|
 | `importacao/saida/revisao-enriquecimento.xlsx` | **Comece por aqui.** Confiança de cada produto, erros encontrados nas descrições atuais, o que a oficina deve conferir na peça e as fontes |
 | `importacao/criar_metacampos_novos.graphql` | Os 32 campos novos da ficha (modelo, fabricação, nut, cor, cordas de fábrica, alimentação de pedais, potência de amps…) |
-| `importacao/saida/produtos-shopify-enriquecido.csv` | Planilha para a Shopify, com a ficha completa, peso de envio e tags de filtro |
+| `importacao/saida/produtos-shopify-enriquecido.csv` | Planilha para a Shopify: descrições reescritas em PT-BR com as correções aplicadas, ficha completa, peso de envio e tags de filtro |
+| `importacao/descricoes/` | As descrições reescritas (HTML + resumo + observação para a equipe) |
 | `importacao/saida/woocommerce-enriquecido.csv` | O mesmo estoque no formato do WooCommerce, com tabela "Ficha técnica" na descrição e peso/medidas de envio |
 
 **Ordem na Shopify:**

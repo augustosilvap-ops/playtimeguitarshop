@@ -1,0 +1,224 @@
+[
+ {
+  "id": 6196,
+  "descricao_html": "<p>Overdrive da Flamma para quem quer um drive simples e eficiente no pedalboard. Com três controles e uma chave de voz, serve tanto para empurrar um amplificador que já está saturando quanto para ser a base do seu timbre de drive.</p><ul><li><strong>Controles diretos:</strong> Volume, Tone e Overdrive para acertar ganho e brilho rapidamente.</li><li><strong>Chave Warm/Hot:</strong> duas vozes de ganho no mesmo pedal.</li><li><strong>True bypass:</strong> com o pedal desligado, o sinal da guitarra passa sem interferência.</li><li><strong>Compacto e leve:</strong> cerca de 153 g, ocupa pouco espaço no pedalboard; alimentação 9V DC.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Pedal overdrive Flamma com Volume, Tone, Overdrive, chave Warm/Hot e true bypass. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Texto não cita o código FC07 (a descrição curta atual afirma FC07): confirmar o modelo na etiqueta. Verificar se acompanha fonte/caixa."
+ },
+ {
+  "id": 6202,
+  "descricao_html": "<p>O Friedman BE-OD traz para o formato pedal o caráter do amplificador Friedman BE-100: um drive de alto ganho com sotaque de rock britânico, pensado para transformar um amplificador limpo em um som saturado e encorpado. Uma opção sólida para rock e metal que pedem peso com definição.</p><ul><li><strong>Amp-in-a-box:</strong> circuito baseado no amplificador Friedman BE-100.</li><li><strong>Equalização completa:</strong> Bass, Treble e Presence, além de Volume, Gain e o controle Tight.</li><li><strong>Trimpot interno de ganho:</strong> permite limitar o ganho máximo conforme seus captadores e seu estilo.</li><li><strong>Alimentação flexível:</strong> aceita de 9V a 18V DC, centro negativo (não usa bateria).</li><li><strong>True bypass:</strong> footswitch liga/desliga sem colorir o sinal quando desligado.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Friedman BE-OD: drive de alto ganho inspirado no amplificador BE-100, com EQ completo e trimpot de ganho. Seminovo revisado pela Playtime.",
+  "observacao": "Confirmar na etiqueta o país de fabricação e se é o BE-OD comum (não o Deluxe); o texto não cita país. Verificar caixa original."
+ },
+ {
+  "id": 6205,
+  "descricao_html": "<p>O Empress Fuzz é um pedal de fuzz analógico fabricado no Canadá pela Empress Effects. Uma boa escolha para quem quer acrescentar fuzz ao pedalboard com um pedal de fabricante boutique e alimentação padrão de 9V.</p><ul><li><strong>Fuzz analógico:</strong> circuito totalmente analógico.</li><li><strong>Fabricação canadense:</strong> produzido pela Empress Effects, no Canadá.</li><li><strong>True bypass:</strong> sinal intacto com o pedal desligado.</li><li><strong>Baixo consumo:</strong> 9V DC centro negativo, cerca de 30 mA, compatível com fontes comuns de pedal.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Empress Fuzz: fuzz analógico fabricado no Canadá, com true bypass e alimentação 9V. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Marca cadastrada como 'Fuzz': corrigir para Empress Effects. A ficha atual lista controles errados (Fuzz/Output/Tone/Bias e chave Smooth/Bright); pelo manual são Gain, Treble, Bass e Output, sem chave de voz. Conferir os rótulos na peça antes de corrigir a tabela."
+ },
+ {
+  "id": 6208,
+  "descricao_html": "<p>O Hermida Audio EPH-3 é um delay que simula o eco de fita do clássico EP-3, para quem gosta de repetições com cara de tape echo sem a manutenção de uma máquina de fita. Pedal compacto, de fabricação americana, fácil de encaixar no pedalboard.</p><ul><li><strong>Simulação de eco de fita:</strong> delay digital inspirado no EP-3.</li><li><strong>True bypass:</strong> com o pedal desligado, o sinal segue sem alteração.</li><li><strong>Alimentação padrão:</strong> 9V DC (fonte não inclusa).</li><li><strong>Formato compacto:</strong> ocupa pouco espaço na placa.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Hermida Audio EPH-3: delay que simula o eco de fita EP-3, compacto e com true bypass. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Não citados: nomes dos controles (fontes divergem: Level/Delay/Feedback vs Mix/Delay/Feedback/Flutter), tempo máximo (600 ou 700 ms) e se é versão Hermida ou Lovepedal. A descrição atual fala em 'híbrida analógica/digital'; a ficha indica delay digital."
+ },
+ {
+  "id": 6213,
+  "descricao_html": "<p>O Hiwatt Tube Tremolo é um tremolo valvulado, para quem quer uma válvula de verdade no caminho do efeito. Com controle de forma de onda, vai do pulsar suave ao corte rítmico bem marcado.</p><ul><li><strong>Tremolo valvulado:</strong> a modulação passa por uma válvula no circuito.</li><li><strong>Controle Wave:</strong> ajusta a forma de onda de senoidal a quadrada.</li><li><strong>Depth, Speed e Master:</strong> intensidade, velocidade e volume ajustáveis.</li><li><strong>Alimentação 18V:</strong> usa fonte própria de 18V; não ligue em fonte de pedal 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Hiwatt Tube Tremolo: tremolo valvulado com controle de forma de onda, Depth, Speed e Master. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Confirmar a válvula instalada (descrição atual diz 12AU7) e se acompanha a fonte 18V original (a descrição atual diz 'fonte inclusa'). Conferir país na etiqueta."
+ },
+ {
+  "id": 6225,
+  "descricao_html": "<p>O Ibanez DE7 é um delay da série Tone-Lok que reúne dois caracteres em um só pedal: repetições digitais nítidas ou um modo Echo mais quente. Com tempos de 30 ms a 2,6 segundos, atende do slapback curto a texturas longas, na guitarra ou no baixo.</p><ul><li><strong>Modos Delay e Echo:</strong> alterne entre repetições limpas e um eco de caráter mais vintage.</li><li><strong>Chave Range:</strong> três faixas de tempo (30–160 ms, 120–650 ms e 480–2600 ms) para ajuste mais preciso.</li><li><strong>Knobs Tone-Lok:</strong> os potenciômetros recolhem e travam, evitando mudanças acidentais no palco.</li><li><strong>Saídas Mono Out e Dry Out:</strong> permite usar dois amplificadores, um com o sinal seco (não é estéreo verdadeiro).</li><li><strong>Alimentação:</strong> bateria 9V ou fonte 9V DC.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Ibanez DE7 Delay/Echo da série Tone-Lok, de 30 ms a 2,6 s, com saídas Mono e Dry. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Corrigir a ficha atual: as saídas são Mono Out e Dry Out, não estéreo Wet/Dry. Testar recolhimento dos knobs e tampa da bateria."
+ },
+ {
+  "id": 6228,
+  "descricao_html": "<p>O iRig BlueBoard, da IK Multimedia, é um controlador MIDI sem fio via Bluetooth: em vez de gerar efeitos, ele comanda apps e softwares, trocando presets e acionando funções com os pés. Pensado para quem toca com iPhone, iPad ou Mac no palco ou em casa.</p><ul><li><strong>Sem fios:</strong> Bluetooth LE com alcance de até 10 metros.</li><li><strong>4 pads retroiluminados:</strong> programáveis e fáceis de enxergar em ambientes escuros.</li><li><strong>Mensagens MIDI:</strong> envia Program Change, Control Change e Note On/Off.</li><li><strong>Expansão:</strong> duas entradas P10 TRS para pedal de expressão ou footswitch extra.</li><li><strong>Pilhas AAA:</strong> funciona com 4 pilhas alcalinas ou zinco-carbono (não recarregáveis).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "IK Multimedia iRig BlueBoard: controlador MIDI Bluetooth com 4 pads e entradas para expressão. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Marca cadastrada como 'Irig': o fabricante é IK Multimedia (iRig é a linha). Testar pareamento e compartimento de pilhas; verificar caixa."
+ },
+ {
+  "id": 6231,
+  "descricao_html": "<p>O Joyo JF-10 Dyna Compressor segue a linha do clássico MXR Dyna Comp: nivela a dinâmica, segura os picos e dá mais sustentação às notas. Útil para o som estalado do country e do funk, para limpos mais uniformes e para solos com mais sustain, na guitarra ou no baixo.</p><ul><li><strong>Três controles:</strong> Sustain, Attack e Level para ajustar intensidade, ataque e volume.</li><li><strong>True bypass:</strong> sinal intacto quando desligado.</li><li><strong>Alimentação:</strong> fonte 9V DC centro negativo ou bateria 9V.</li><li><strong>Compacto:</strong> chassi metálico de 120 × 64 × 55 mm.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Joyo JF-10 Dyna Compressor, no estilo do MXR Dyna Comp, com Sustain, Attack e Level e true bypass. Seminovo revisado pela Playtime.",
+  "observacao": "Corrigir a ficha atual: o JF-10 tem três controles (Sustain, Attack e Level), não dois."
+ },
+ {
+  "id": 6237,
+  "descricao_html": "<p>O Meris LVX é um sistema de delay modular de fabricação americana, para quem quer ir muito além do delay tradicional. Ele combina vários tipos de delay com elementos de processamento que podem ser colocados em diferentes pontos da cadeia, além de looper e controle completo por MIDI.</p><ul><li><strong>Arquitetura modular:</strong> elementos de processamento posicionáveis antes do delay, depois dele ou no loop de feedback.</li><li><strong>Tipos de delay:</strong> modos Digital, BBD e Magnetic (fita), com até 2540 ms de delay duplo.</li><li><strong>Looper estéreo:</strong> 60 segundos sempre disponíveis.</li><li><strong>Estéreo real e MIDI:</strong> 2 entradas e 2 saídas P10, entrada de expressão, MIDI In e Out/Thru e USB-C para atualização.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, fonte de no mínimo 300 mA (não inclusa).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Meris LVX: delay modular estéreo com modos Digital, BBD e fita, looper de 60 s e MIDI. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Corrigir o peso na ficha: 680 g (24 oz), não 0,6 kg. Conferir firmware e se acompanha caixa/manual."
+ },
+ {
+  "id": 6240,
+  "descricao_html": "<p>O Mooer Micro Preamp 017 Cali MK IV é um pré-amplificador digital de dois canais inspirado no Mesa/Boogie Mark IV, em formato mini. Com o simulador de gabinete, pode ir direto para a mesa de som ou para uma potência.</p><ul><li><strong>Dois canais independentes:</strong> cada um com Volume, Gain, Bass, Middle e Treble.</li><li><strong>Simulador de gabinete:</strong> pode ser ligado ou desligado conforme o uso.</li><li><strong>Footswitch com duas funções:</strong> liga/desliga ou troca de canal.</li><li><strong>Formato mini:</strong> 93,5 × 42 × 52 mm e 160 g; alimentação 9V DC, 300 mA (fonte não inclusa).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Mooer Micro Preamp 017 Cali MK IV: pré de dois canais inspirado no Mesa Mark IV, com simulador de gabinete. Seminovo revisado pela Playtime.",
+  "observacao": "Verificar se acompanha fonte/caixa; testar troca de canais e saída com simulador."
+ },
+ {
+  "id": 6243,
+  "descricao_html": "<p>O Mooer Green Mile é um overdrive no estilo Tube Screamer em formato mini, para quem quer o drive de médios marcados que funciona em quase todo pedalboard sem ocupar espaço. A chave Warm/Hot amplia as opções no mesmo pedal.</p><ul><li><strong>Overdrive estilo Tube Screamer:</strong> controles Level, Tone e Overdrive.</li><li><strong>Chave Warm/Hot:</strong> dois modos de ganho para variar a intensidade.</li><li><strong>True bypass:</strong> sinal intacto com o pedal desligado.</li><li><strong>Consumo baixíssimo:</strong> 7 mA em 9V DC, ótimo para fontes compartilhadas (não usa bateria).</li><li><strong>Formato mini:</strong> 93,5 × 42 × 52 mm e cerca de 150 g.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Mooer Green Mile: overdrive mini estilo Tube Screamer com chave Warm/Hot e true bypass. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "A ficha confirmada indica o código MOD1 (a descrição atual diz MMO). Verificar se acompanha fonte/caixa."
+ },
+ {
+  "id": 6249,
+  "descricao_html": "<p>O MXR M135 Smart Gate é um noise gate para guitarra e baixo que corta chiado e zumbido sem estrangular o sustain. Indicado para setups de alto ganho e cadeias longas de pedais.</p><ul><li><strong>Resposta adaptativa:</strong> atua de forma mais lenta em notas sustentadas e mais rápida em staccatos e palm mute.</li><li><strong>Chave Hiss / Mid / Full:</strong> escolhe a faixa de frequência do ruído a ser tratada.</li><li><strong>Controle de sensibilidade:</strong> ajuste do threshold conforme o nível de ruído do seu equipamento.</li><li><strong>Hardwire bypass:</strong> sinal direto com o pedal desligado.</li><li><strong>Alimentação:</strong> bateria 9V ou fonte 9V DC, com consumo de 15 mA.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "MXR M135 Smart Gate: noise gate para guitarra e baixo com chave Hiss/Mid/Full e hardwire bypass. Seminovo, revisado pela Playtime.",
+  "observacao": "Texto não cita país de fabricação (confirmar na etiqueta). Verificar se acompanha fonte/caixa."
+ },
+ {
+  "id": 6252,
+  "descricao_html": "<p>O Neunaber ExP Controller é um controlador de presets para os pedais Neunaber da série Expanse. Importante: ele não funciona sozinho, precisa estar ligado a um pedal Neunaber Expanse compatível. Conectado, transforma o pedal em um sistema com vários efeitos à mão.</p><ul><li><strong>4 efeitos, 2 presets cada:</strong> acesso rápido a 8 configurações salvas.</li><li><strong>Expressão:</strong> 3 entradas para pedais de expressão e uma entrada Preset Morph, para transição gradual entre presets.</li><li><strong>Sem fonte extra:</strong> é alimentado pelo próprio pedal Expanse através da porta ExP.</li><li><strong>LEDs multicoloridos:</strong> identificação visual do efeito e do preset ativos.</li><li><strong>Compacto:</strong> 117 × 73 × 51 mm, fabricado nos EUA.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Neunaber ExP Controller: controlador de presets para pedais Neunaber Expanse (não funciona sozinho). Seminovo, revisado pela Playtime.",
+  "observacao": "Confirmar se acompanha o cabo ExP (a descrição atual diz 'cabo incluso'; o texto novo não afirma)."
+ },
+ {
+  "id": 6255,
+  "descricao_html": "<p>O Neunaber Seraphim Shimmer é um reverb com efeito shimmer, fabricado nos EUA, para quem busca ambiências amplas e camadas que lembram pads, muito usadas em worship, post-rock e ambient. Com apenas três controles, é rápido de ajustar.</p><ul><li><strong>Shimmer ajustável:</strong> controle dedicado para a intensidade do shimmer na cauda do reverb.</li><li><strong>Mix e Depth:</strong> proporção entre sinal seco e efeito e tamanho da cauda.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, cerca de 100 mA.</li><li><strong>Fabricação americana:</strong> produzido pela Neunaber nos EUA.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Neunaber Seraphim Shimmer: reverb shimmer fabricado nos EUA, com controles Mix, Depth e Shimmer. Seminovo, revisado pela Playtime.",
+  "observacao": "Identificar a versão (original ou v2, mono ou estéreo): tipo de bypass e compatibilidade com o ExP dependem disso e não foram citados. Verificar caixa/fonte."
+ },
+ {
+  "id": 6258,
+  "descricao_html": "<p>O NIG PHF reúne phaser e flanger analógicos em um único pedal, fabricado no Brasil pela NIG. Para quem quer explorar modulação, das texturas clássicas aos sons mais experimentais, sem precisar de dois pedais.</p><ul><li><strong>Dois efeitos analógicos:</strong> phaser e flanger no mesmo chassi.</li><li><strong>Acionamento independente:</strong> footswitches separados permitem usar um efeito, o outro ou os dois juntos.</li><li><strong>Controles para cada seção:</strong> conjuntos independentes para phaser e flanger.</li><li><strong>Fabricação nacional:</strong> alimentação padrão 9V DC, centro negativo.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "NIG PHF: phaser e flanger analógicos fabricados no Brasil, usáveis separados ou juntos. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Remover o asterisco solto da ficha atual. Não citados: nomes exatos dos knobs, consumo e tipo de bypass (conferir na peça)."
+ },
+ {
+  "id": 6262,
+  "descricao_html": "<p>O NUX Horseman é um overdrive no estilo Klon Centaur na série compacta Mini Core, para quem quer um drive transparente que soma ao timbre em vez de substituí-lo. Dois modos e bypass selecionável tornam o pedal fácil de encaixar em qualquer setup.</p><ul><li><strong>Modos Gold e Silver:</strong> duas vozes de overdrive no mesmo pedal.</li><li><strong>Gain com potenciômetro duplo:</strong> ao lado de Treble e Output, como no circuito que o inspirou.</li><li><strong>Mais headroom:</strong> conversor interno eleva a alimentação de 9V para 18V.</li><li><strong>Bypass selecionável:</strong> true bypass (LED vermelho) ou buffered (LED verde).</li><li><strong>Compacto:</strong> 94 × 51 × 53 mm e 174 g.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "NUX Horseman: overdrive estilo Klon com modos Gold/Silver, 18V interno e bypass selecionável. Seminovo, revisado pela Playtime.",
+  "observacao": "Consumo (90 mA) removido por divergência entre fontes. Dica para a equipe: o modo de bypass é trocado segurando o footswitch ao ligar a alimentação."
+ },
+ {
+  "id": 6268,
+  "descricao_html": "<p>O NUX Morning Star é um overdrive no estilo Blues Breaker da série Mini Core, indicado para quem busca um crunch que preserva a dinâmica e a clareza do instrumento. A função Shine acrescenta brilho quando você precisa se destacar.</p><ul><li><strong>Drive, Tone e Level:</strong> controles simples para chegar rápido ao timbre.</li><li><strong>Função Shine:</strong> realce de agudos acionado pelo footswitch.</li><li><strong>Bypass selecionável:</strong> true bypass (LED vermelho) ou buffered (LED verde).</li><li><strong>Compacto:</strong> 94 × 51 × 53 mm e 174 g; alimentação 9V DC (fonte não inclusa).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "NUX Morning Star: overdrive mini estilo Blues Breaker com função Shine e bypass selecionável. Seminovo, revisado pela Playtime.",
+  "observacao": "Consumo exato não confirmado; não publicar '< 100 mA' sem conferir no manual."
+ },
+ {
+  "id": 6271,
+  "descricao_html": "<p>O NUX Sculpture (NCP-2) é um compressor da série Mini Core que nivela o volume, segura picos e dá mais sustentação às notas. Funciona bem na guitarra, no baixo e em instrumentos acústicos, e o controle Blend ajuda a manter o ataque natural.</p><ul><li><strong>Sustain, Level e Blend:</strong> o Blend mistura o sinal comprimido com o original.</li><li><strong>Modos Clean e Clip:</strong> compressão mais transparente ou mais apertada.</li><li><strong>Bypass selecionável:</strong> true bypass ou buffered.</li><li><strong>Formato mini:</strong> 94 × 51 × 53 mm; alimentação 9V DC (fonte não inclusa).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "NUX Sculpture NCP-2: compressor mini com Blend, modos Clean/Clip e bypass selecionável. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Remover da ficha a faixa de consumo '20 a 100 mA' e o peso (não confirmados)."
+ },
+ {
+  "id": 6274,
+  "descricao_html": "<p>O NUX Tube Man é um overdrive de controles simples, para quem quer acrescentar saturação ao timbre sem complicação.</p><ul><li><strong>Três controles:</strong> Drive, Tone e Level.</li><li><strong>Alimentação padrão:</strong> 9V DC, centro negativo.</li><li><strong>Conexões:</strong> entrada e saída P10 mono.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Pedal overdrive NUX Tube Man com controles Drive, Tone e Level e alimentação 9V. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "A descrição atual chama de 'OD-3', que é outro pedal da NUX. Identificar a versão pela etiqueta (Tube Man original, MKII ou NOD-2 Mini Core) e conferir bateria e bypass; texto mantido curto por isso."
+ },
+ {
+  "id": 6277,
+  "descricao_html": "<p>O Orange Terror Stamp é um amplificador de guitarra completo em formato de pedal: pré-amplificador valvulado com 12AX7 e power amp de estado sólido de 20 W. Basta ligar a uma caixa e tocar, ou usar a saída CabSim para gravar e ir direto ao PA.</p><ul><li><strong>Híbrido:</strong> pré valvulado (12AX7/ECC83) e potência classe AB de estado sólido.</li><li><strong>Gain e Shape:</strong> o Shape é o controle de equalização da Orange para moldar o timbre.</li><li><strong>Dois volumes:</strong> Volume 1 e Volume 2, alternados pelo footswitch (base e solo, por exemplo).</li><li><strong>Conexões completas:</strong> saída para falante de 8–16 Ω, loop de efeitos buffered e saída CabSim/fone.</li><li><strong>Atenção à fonte:</strong> usa 15V DC, 2A, centro positivo; não ligue em fonte de pedal 9V comum.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Orange Terror Stamp: amplificador híbrido de 20 W em formato de pedal, com pré valvulado, FX loop e saída CabSim. Seminovo revisado.",
+  "observacao": "Confirmar se a fonte 15V original acompanha (a descrição atual diz 'inclusa') e o estado da válvula. Dimensões variam entre fontes: medir antes de publicar."
+ },
+ {
+  "id": 6280,
+  "descricao_html": "<p>Pedal de reverb digital da Kappa Electronics, marca brasileira, para quem quer acrescentar ambiência ao pedalboard com um pedal nacional.</p><ul><li><strong>Reverb digital:</strong> efeito de ambiência para guitarra.</li><li><strong>Alimentação padrão:</strong> 9V DC, centro negativo.</li><li><strong>Conexões:</strong> entrada e saída P10 mono.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Pedal de reverb digital Kappa Electronics, fabricação nacional, alimentação 9V. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Modelo 'Orion' não localizado em fontes públicas da Kappa (a linha conhecida tem o reverb Cosmos): conferir nome na serigrafia. Conferir no painel controles e número de modos (a descrição atual fala em 6), consumo e bypass. Texto mantido curto por isso."
+ },
+ {
+  "id": 6283,
+  "descricao_html": "<p>O Mooer Tender Octaver X2 é um oitavador polifônico digital em formato de pedal duplo, com oitava abaixo e oitava acima em módulos independentes. Para quem quer encorpar riffs e acordes com oitavas.</p><ul><li><strong>Polifônico:</strong> rastreia acordes, não apenas notas isoladas.</li><li><strong>Módulos Sub e Upper:</strong> dois footswitches ligam a oitava abaixo e a oitava acima de forma independente.</li><li><strong>14 presets:</strong> 7 vermelhos e 7 azuis para guardar suas configurações.</li><li><strong>Alimentação:</strong> 9V DC, centro negativo (plug 2,1 mm).</li></ul><p>Uma ferramenta versátil para expandir o alcance da guitarra sem ocupar muito espaço.</p>",
+  "resumo": "Mooer Tender Octaver X2: oitavador polifônico com módulos Sub e Upper independentes e 14 presets.",
+  "observacao": "Bypass 'True Bypass' da descrição atual não confirmado em fonte oficial (omitido). Conferir se acompanha fonte e caixa."
+ },
+ {
+  "id": 6286,
+  "descricao_html": "<p>O Pedrone Penta-Switch é um chaveador de loops programável fabricado no Brasil, para guitarristas e baixistas que querem acionar combinações de pedais com uma única pisada. Organiza o pedalboard e simplifica as trocas de timbre no palco.</p><ul><li><strong>5 loops:</strong> para pedais ou grupos de pedais.</li><li><strong>Programável:</strong> 5 footswitches com até 10 combinações memorizadas.</li><li><strong>Controle do amplificador:</strong> saída extra para troca de canal.</li><li><strong>Chaveamento por relés:</strong> circuito analógico, com sistema de mute selecionável para trocas silenciosas.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, consumo de até cerca de 300 mA.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Pedrone Penta-Switch: chaveador nacional de 5 loops com 10 combinações programáveis e saída para canal do amp. Seminovo revisado.",
+  "observacao": "Testar os 5 loops, memória e saída de controle; verificar manual/fonte."
+ },
+ {
+  "id": 6292,
+  "descricao_html": "<p>O Mooer Reverie Chorus (TCH1), da Twin Series, é um pedal de chorus e modulação digital estéreo para quem quer mais do que um chorus tradicional. Com presets e tap tempo, funciona bem tanto em casa quanto no palco.</p><ul><li><strong>Estéreo:</strong> entradas e saídas estéreo P10.</li><li><strong>Tap tempo:</strong> sincroniza a modulação com o andamento da música.</li><li><strong>5 presets de usuário:</strong> acesso rápido pelos dois footswitches.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, 130 mA (fonte não inclusa).</li></ul><p>Um centro de modulação compacto para quem gosta de explorar texturas.</p>",
+  "resumo": "Mooer Reverie Chorus TCH1 (Twin Series): chorus e modulação digital estéreo com tap tempo e 5 presets.",
+  "observacao": "Lista de modos e efeitos da descrição atual e o 'True Bypass' não foram confirmados em fonte oficial; omitidos. Conferir caixa e manual."
+ },
+ {
+  "id": 6298,
+  "descricao_html": "<p>O Tech 21 SansAmp Blonde, da SansAmp Character Series, é um pré-amplificador analógico de fabricação americana inspirado nos amplificadores no estilo Fender. Vai do limpo brilhante ao drive saturado e, com simulação de alto-falante integrada, pode ir direto para a mesa de som ou interface.</p><ul><li><strong>100% analógico:</strong> tecnologia SansAmp da Tech 21.</li><li><strong>Controle Character:</strong> altera a voz do amplificador emulado.</li><li><strong>EQ ativo:</strong> Low, Mid e High, além de Level e Drive.</li><li><strong>Simulação de alto-falante:</strong> integrada, para uso direto em linha.</li><li><strong>Alimentação:</strong> fonte 9V DC (mín. 100 mA) ou bateria 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Tech 21 SansAmp Blonde: pré analógico estilo Fender com EQ ativo e simulação de alto-falante. Seminovo, revisado pela Playtime.",
+  "observacao": "Corrigir título: 'SAMSAMP' para SansAmp. 'Buffered Bypass' da descrição atual não confirmado (omitido). Identificar se é a versão original ou V2."
+ },
+ {
+  "id": 6301,
+  "descricao_html": "<p>Pedal de ganho da Skulacho, marca brasileira, com controles simples para quem quer acrescentar saturação ao timbre.</p><ul><li><strong>Três controles:</strong> Gain, Tone e Level.</li><li><strong>Alimentação padrão:</strong> 9V DC, centro negativo.</li><li><strong>Conexões:</strong> entrada e saída P10 mono.</li></ul><p>Uma opção nacional e direta para o seu pedalboard.</p>",
+  "resumo": "Pedal Skulacho Grump, fabricação nacional, com controles Gain, Tone e Level e alimentação 9V.",
+  "observacao": "Modelo não localizado em fontes públicas: confirmar o tipo de efeito (overdrive, distorção ou fuzz) testando o pedal, a grafia da marca (Skulacho x Skullacho) e se é true bypass. Texto mantido curto por isso."
+ },
+ {
+  "id": 6307,
+  "descricao_html": "<p>O Strymon Cloudburst é um reverb ambiente de fabricação americana, feito para criar espaços amplos e texturas etéreas. O destaque é o modo Ensemble, que acrescenta camadas harmônicas que acompanham o que você toca.</p><ul><li><strong>Botão Ensemble:</strong> adiciona camadas harmônicas à cauda do reverb.</li><li><strong>Controles diretos:</strong> Decay, Pre-Delay, Mix, Tone e Mod.</li><li><strong>Estéreo e controle externo:</strong> entradas e saídas estéreo P10, jack EXP/MIDI e USB-C para MIDI e atualização de firmware.</li><li><strong>Bypass selecionável:</strong> true bypass por relé ou buffered.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, 250 mA (fonte não inclusa).</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Strymon Cloudburst: reverb ambiente estéreo com modo Ensemble, EXP/MIDI e USB-C. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Conferir versão do firmware e funcionamento do USB-C."
+ },
+ {
+  "id": 6310,
+  "descricao_html": "<p>O T-Rex Mudhoney é um overdrive/distorção que vai do crunch suave a uma saturação encorpada, mantendo a resposta à dinâmica da palhetada. A chave Boost dá ganho extra quando a música pede mais.</p><ul><li><strong>Gain, Tone e Level:</strong> controles diretos para ajustar ganho, brilho e volume.</li><li><strong>Chave Boost:</strong> aumenta o ganho do pedal.</li><li><strong>Alimentação flexível:</strong> fonte de 8 a 12,5V DC centro negativo ou bateria 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "T-Rex Mudhoney: overdrive/distorção com Gain, Tone, Level e chave Boost. Seminovo, revisado pela oficina Playtime.",
+  "observacao": "Confirmar se é o Mudhoney de um canal (não o Mudhoney II) e se é da Danish Collection. True bypass da descrição atual não confirmado (omitido)."
+ },
+ {
+  "id": 6314,
+  "descricao_html": "<p>O T-Rex Replicator Junior é um eco de fita de verdade, 100% analógico, em formato de pedal. Para quem quer o comportamento de uma máquina de fita real, com saturação e modulação naturais, em tamanho de pedalboard.</p><ul><li><strong>Fita real:</strong> eco analógico com uma cabeça de reprodução e cartucho de fita substituível.</li><li><strong>Saturation, Level, Feedback e Time:</strong> controle do caráter e da quantidade de repetições.</li><li><strong>Dois footswitches:</strong> liga/desliga e tap tempo separados.</li><li><strong>Fonte dedicada:</strong> usa fonte própria; não ligue em fonte de pedal 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "T-Rex Replicator Junior: eco de fita real 100% analógico com tap tempo e controle de saturação. Seminovo, revisado pela Playtime.",
+  "observacao": "Confirmar se a fonte original acompanha e sua voltagem (fontes citam 12V ou 18V). Verificar estado da fita, cabeça e motor. Peso/dimensões não confirmados."
+ },
+ {
+  "id": 6322,
+  "descricao_html": "<p>O Mooer Reecho Pro (TDL1), da Twin Series, é um delay digital estéreo com seis tipos de delay, presets e tap tempo. Atende de repetições discretas a ambiências amplas, tudo em um pedal compacto.</p><ul><li><strong>Seis tipos de delay:</strong> Digital, Analog, Real Echo, Tape Echo, Tube Echo e Galaxy.</li><li><strong>Tap tempo:</strong> repetições sincronizadas com o andamento da música.</li><li><strong>Presets:</strong> salve e acesse suas configurações pelos dois footswitches.</li><li><strong>Estéreo:</strong> entradas e saídas estéreo P10.</li><li><strong>Alimentação:</strong> 9V DC centro negativo, consumo de 210 mA.</li></ul><p>Um delay completo para quem quer variedade sem abrir mão do espaço no pedalboard.</p>",
+  "resumo": "Mooer Reecho Pro TDL1 (Twin Series): delay digital estéreo com 6 tipos de delay, tap tempo e presets.",
+  "observacao": "Corrigir o nome do produto: 'Reecho Pro' (TDL1), não 'Twin Reecho Pro'. Corrigir lista de modos na ficha ('Mod' é modificador, não tipo de delay). Fonte recomendada: 9V com pelo menos 300 mA."
+ },
+ {
+  "id": 6325,
+  "descricao_html": "<p>O Vox Mystic Edge, da linha Valvenergy, leva o caráter dos amplificadores Vox AC30 para o formato pedal. Ele usa a válvula Nutube, uma válvula de vácuo em miniatura, e pode funcionar como drive na frente do amplificador ou como pré-amplificador com simulação de gabinete.</p><ul><li><strong>Válvula Nutube:</strong> válvula de verdade no circuito, em formato compacto.</li><li><strong>Equalização completa:</strong> Gain, Volume, Tone Cut, Treble e Bass, além da chave Bright.</li><li><strong>Três modos de saída:</strong> Standard, Preamp e Cab Sim, para usar com amplificador, potência ou direto na mesa.</li><li><strong>Alimentação:</strong> fonte 9V DC centro negativo (95 mA, recomendada) ou bateria 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Vox Valvenergy Mystic Edge: drive e pré estilo AC30 com válvula Nutube e modos Standard, Preamp e Cab Sim. Seminovo revisado.",
+  "observacao": "Marca está vazia no cadastro: preencher Vox. Corrigir ficha: série Valvenergy (não 'AC30 Series'), controle 'Tone Cut', e remover 'saída de fones' (o pedal tem jack Link). Conferir display e chave de modos."
+ },
+ {
+  "id": 6331,
+  "descricao_html": "<p>O Zoom Ultra Fuzz UF-01 é um fuzz com controles além do básico, para quem quer ir de uma saturação mais contida a um fuzz denso e cheio de harmônicos. Gate e Reso ajudam a moldar o ataque e o corpo do som.</p><ul><li><strong>Seis controles:</strong> Gain, Gate, Color, Tone, Reso e Level.</li><li><strong>Gate integrado:</strong> ajuda a controlar ruído e o corte das notas.</li><li><strong>Baixo consumo:</strong> 18 mA em 9V DC.</li><li><strong>Alimentação:</strong> fonte 9V DC centro negativo (Zoom AD-0006) ou bateria 9V.</li></ul><p>Peça usada, revisada pela oficina Playtime. Os detalhes desta unidade estão no Passaporte da peça.</p>",
+  "resumo": "Zoom Ultra Fuzz UF-01: fuzz com Gain, Gate, Color, Tone, Reso e Level, fonte ou bateria 9V. Seminovo, revisado pela Playtime.",
+  "observacao": "Corrigir ficha: controles são Gain, Gate, Color, Tone, Reso e Level (não 'Fuzz' e 'chave Resonance'). True bypass não confirmado (omitido). Conferir tampa da bateria."
+ },
+ {
+  "id": 6334,
+  "descricao_html": "<p>A Zoom G2 FOUR é uma pedaleira multiefeitos com simulação de amplificadores, compacta e completa para estudar, gravar e tocar ao vivo. Reúne amplificadores, efeitos e looper em um só equipamento, com interface de áudio USB para gravar direto no computador.</p><ul><li><strong>Amplificadores e efeitos:</strong> simulações de amplificadores e efeitos em um único equipamento.</li><li><strong>Looper e ritmos:</strong> looper integrado e padrões de bateria para estudar e criar.</li><li><strong>Interface de áudio USB-C:</strong> grava direto no computador; edição pelo software Guitar Lab.</li><li><strong>Saída de fone:</strong> prática silenciosa em casa.</li><li><strong>Alimentação:</strong> fonte 9V DC 500 mA (Zoom AD-16) ou via USB-C.</li></ul><p>Uma pedaleira prática para quem quer muitos recursos em pouco espaço.</p>",
+  "resumo": "Pedaleira Zoom G2 FOUR com simulação de amplificadores, efeitos, looper e interface de áudio USB-C.",
+  "observacao": "Conferir no painel as conexões exatas (AUX, saídas L/R) antes de detalhar; não citadas no texto. Verificar se acompanha fonte AD-16 e caixa."
+ },
+ {
+  "id": 6341,
+  "descricao_html": "<p>A Zoom G2X FOUR traz os recursos da G2 FOUR com um pedal de expressão integrado, para quem quer controlar wah, volume e pitch em tempo real. Uma pedaleira completa para estudar, gravar e tocar ao vivo.</p><ul><li><strong>Pedal de expressão integrado:</strong> controle de volume, wah e pitch com o pé.</li><li><strong>Amplificadores e efeitos:</strong> simulações de amplificadores e efeitos em um único equipamento.</li><li><strong>Looper e ritmos:</strong> looper integrado e padrões de bateria.</li><li><strong>Interface de áudio USB-C:</strong> grava direto no computador; edição pelo software Guitar Lab.</li><li><strong>Alimentação:</strong> fonte 9V DC 500 mA (Zoom AD-16) ou via USB-C.</li></ul><p>Uma pedaleira versátil para quem quer expressão e muitos recursos em um só lugar.</p>",
+  "resumo": "Pedaleira Zoom G2X FOUR com pedal de expressão, simulação de amplificadores, looper e interface de áudio USB-C.",
+  "observacao": "Conferir no painel as conexões exatas; verificar se acompanha fonte AD-16 e caixa; testar o pedal de expressão."
+ },
+ {
+  "id": 6394,
+  "descricao_html": "<p>O Orange Crush Bass 25 é um combo de baixo de 25 W, compacto e fácil de transportar, pensado para o estudo. Tem alto-falante de 8\" em gabinete com duto e equalização com médio varrível para ajustar bem o timbre.</p><ul><li><strong>Alto-falante 8\" Orange Voice of the World:</strong> em gabinete com duto (reflex).</li><li><strong>EQ com médio paramétrico:</strong> Treble, Middle, Frequency e Bass, além de Volume e chave Pad -6 dB.</li><li><strong>Afinador cromático integrado:</strong> afinação rápida sem acessório extra.</li><li><strong>Estudo em casa:</strong> entrada auxiliar P2 e saída de fone com CabSim.</li></ul><p>Um amplificador prático para o dia a dia do baixista.</p>",
+  "resumo": "Combo de baixo Orange Crush Bass 25: 25 W, falante de 8\", EQ com médio varrível, afinador e saída de fone com CabSim.",
+  "observacao": "Corrigir ficha: o Crush Bass 25 não tem controle Gain (tem Volume, Treble, Middle, Frequency, Bass e chave Pad). Conferir voltagem na etiqueta (não é bivolt) e a cor da unidade (o nome cita 25BK)."
+ },
+ {
+  "id": 6413,
+  "descricao_html": "<p>O Orange Crush 12 é um combo de guitarra de 12 W, analógico e portátil, pensado para estudar em casa. Com Gain e Overdrive independentes, vai do limpo ao crunch e à saturação.</p><ul><li><strong>Analógico:</strong> circuito de transistor.</li><li><strong>Gain e Overdrive:</strong> controles independentes para dosar a saturação.</li><li><strong>EQ de 3 bandas:</strong> Bass, Middle e Treble, além de Volume.</li><li><strong>Saída de fone com CabSim:</strong> para estudar em silêncio.</li><li><strong>Portátil:</strong> alto-falante 6\" Orange Voice of the World, 4,7 kg.</li></ul><p>Um ótimo companheiro de estudo com o timbre da Orange.</p>",
+  "resumo": "Combo Orange Crush 12: 12 W analógico, alto-falante de 6\", Gain e Overdrive, EQ de 3 bandas e saída de fone com CabSim.",
+  "observacao": "Conferir voltagem na etiqueta (não é bivolt) e a cor da unidade (o nome não indica)."
+ },
+ {
+  "id": 6421,
+  "descricao_html": "<p>O Orange Crush 12 BK é a versão preta do combo de guitarra Crush 12: 12 W, analógico e portátil, pensado para estudar em casa. Com Gain e Overdrive independentes, vai do limpo ao crunch e à saturação.</p><ul><li><strong>Acabamento preto:</strong> visual mais discreto que o laranja tradicional da marca.</li><li><strong>Gain e Overdrive:</strong> controles independentes para dosar a saturação.</li><li><strong>EQ de 3 bandas:</strong> Bass, Middle e Treble, além de Volume.</li><li><strong>Saída de fone com CabSim:</strong> para estudar em silêncio.</li><li><strong>Portátil:</strong> alto-falante 6\" Orange Voice of the World, 4,7 kg.</li></ul><p>Um ótimo companheiro de estudo com o timbre da Orange.</p>",
+  "resumo": "Combo Orange Crush 12 BK preto: 12 W analógico, alto-falante de 6\", Gain e Overdrive, EQ de 3 bandas e saída de fone com CabSim.",
+  "observacao": "Conferir voltagem na etiqueta (não é bivolt)."
+ }
+]

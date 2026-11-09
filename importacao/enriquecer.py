@@ -33,6 +33,19 @@ TIPOS = [("Guitarras", "Guitarras"), ("Violões", "Violões"), ("Baixos", "Baixo
 INSTRUMENTOS = {"Guitarras", "Violões", "Baixos"}
 
 
+# erros de digitação encontrados nos títulos atuais (confirmados na pesquisa)
+TITULOS = [(r"CLEAN E DI\b(?!RTY)", "CLEAN E DIRTY"), (r"\bBLACK TALK\b", "BACK TALK"), (r"\bSAMSAMP\b", "SANSAMP"),
+           (r"\bTWIN REECHO PRO\b", "REECHO PRO")]
+# marcas cadastradas errado ou vazias (por ID do produto)
+MARCAS = {6205: "Empress Effects", 6228: "IK Multimedia", 6325: "Vox", 8387: "Squier"}
+
+
+def corrigir_titulo(t):
+    for a, b in TITULOS:
+        t = re.sub(a, b, t, flags=re.I)
+    return t
+
+
 def slug(s):
     s = unicodedata.normalize("NFKD", html.unescape(s)).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -103,6 +116,9 @@ def main():
         desc = r["Descrição"].replace("\\n", "\n")
         e = res.get(pid, {})
         base = extrair(desc)
+        if e.get("campos") and e.get("fontes"):
+            # produto pesquisado: vale só o que a pesquisa confirmou (a descrição antiga tem erros)
+            base = {}
         campos = {k: limpar(v) for k, v in {**base, **(e.get("campos") or {})}.items() if k in CHAVES and limpar(v)}
         for k in ("braco_espessura_1", "braco_espessura_12"):
             if k in campos:
@@ -125,8 +141,8 @@ def main():
         nova = novas.get(pid) or {}
         if nova.get("resumo"):
             curta = limpar(nova["resumo"])
-        produtos.append({"id": pid, "linha": r, "handle": handles.get(str(pid)) or slug(r["Nome"]), "nome": html.unescape(r["Nome"]),
-                         "marca": html.unescape(r["Marcas"]) or (campos.get("modelo", "").split() or [""])[0], "tipo": tipo, "cats": cats, "corpo": nova.get("descricao_html") or desc, "nova": bool(nova.get("descricao_html")), "campos": campos,
+        produtos.append({"id": pid, "linha": r, "handle": handles.get(str(pid)) or slug(r["Nome"]), "nome": corrigir_titulo(html.unescape(r["Nome"])),
+                         "marca": MARCAS.get(pid) or html.unescape(r["Marcas"]) or (campos.get("modelo", "").split() or [""])[0], "tipo": tipo, "cats": cats, "corpo": nova.get("descricao_html") or desc, "nova": bool(nova.get("descricao_html")), "campos": campos,
                          "tags": sorted(tags), "imgs": imgs, "qtd": estoque_qtd, "preco": preco(r["Preço"]),
                          "promo": preco(r["Preço promocional"]) if r["Preço promocional"].strip() else 0,
                          "envio": envio, "curta": curta, "e": e})
