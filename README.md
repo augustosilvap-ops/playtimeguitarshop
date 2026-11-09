@@ -46,7 +46,10 @@
    - `main-menu`: Início, Guitarras, Violões, Baixos, Pedais e amps, Garimpo, Clínica, Troca
    - `footer` (Loja): Guitarras, Violões, Baixos, Garimpo
    - `servicos` (Serviços): Clínica Playtime, Afinador online, Avalie sua troca, Passaporte do Instrumento, Consultoria por vídeo, Compra segura
-6. **Passaporte e áudio** — *Configurações › Dados personalizados › Produtos › Adicionar definição*, com namespace `custom`:
+6. **Passaporte e áudio** — crie as definições de metacampo de **Produtos**, todas com namespace `custom`.
+   O nome do menu muda conforme a versão do painel: procure em *Configurações* por **Metacampos e metaobjetos** (ou **Dados personalizados**) › **Produtos** › **Adicionar definição**.
+   Atalho que não depende do menu: abra qualquer produto, role até o quadro **Metacampos** no fim da página e clique em **Gerenciar** (ou ⋯ › **Gerenciar definições**).
+   Ou cole na barra do navegador: `https://admin.shopify.com/store/SUA-LOJA/settings/custom_data/product/metafields` (troque SUA-LOJA pelo nome da loja que aparece no endereço do painel).
 
    | Nome | Chave | Tipo |
    |---|---|---|
