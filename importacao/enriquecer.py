@@ -87,6 +87,11 @@ def main():
     linhas = list(csv.DictReader(open(estoque, encoding="utf-8-sig")))
     cab = list(linhas[0].keys())
     res = carregar_resultados(pasta)
+    # descrições reescritas (PT-BR, com as correções aplicadas), se existirem
+    novas = {}
+    for f in sorted((AQUI / "descricoes").glob("resultado_*.json")):
+        for d in json.load(open(f, encoding="utf-8")):
+            novas[int(d["id"])] = d
     handles = json.load(open(AQUI / "handles.json"))
     SAIDA.mkdir(exist_ok=True)
 
@@ -117,8 +122,11 @@ def main():
         estoque_qtd = int(float(r["Estoque"])) if r["Estoque"].strip() else (1 if r["Em estoque?"].strip() == "1" else 0)
         envio = e.get("envio") or {}
         curta = limpar(e.get("descricao_curta") or "")
+        nova = novas.get(pid) or {}
+        if nova.get("resumo"):
+            curta = limpar(nova["resumo"])
         produtos.append({"id": pid, "linha": r, "handle": handles.get(str(pid)) or slug(r["Nome"]), "nome": html.unescape(r["Nome"]),
-                         "marca": html.unescape(r["Marcas"]) or "", "tipo": tipo, "cats": cats, "corpo": desc, "campos": campos,
+                         "marca": html.unescape(r["Marcas"]) or "", "tipo": tipo, "cats": cats, "corpo": nova.get("descricao_html") or desc, "nova": bool(nova.get("descricao_html")), "campos": campos,
                          "tags": sorted(tags), "imgs": imgs, "qtd": estoque_qtd, "preco": preco(r["Preço"]),
                          "promo": preco(r["Preço promocional"]) if r["Preço promocional"].strip() else 0,
                          "envio": envio, "curta": curta, "e": e})
@@ -167,13 +175,14 @@ def main():
             for k, c in (("peso_kg", "Peso (kg)"), ("comprimento_cm", "Comprimento (cm)"), ("largura_cm", "Largura (cm)"), ("altura_cm", "Altura (cm)")):
                 if env.get(k) and not r[c].strip():
                     r[c] = str(env[k]).replace(".", ",")
-            if p["curta"] and not r["Descrição curta"].strip():
+            if p["curta"] and (p["nova"] or not r["Descrição curta"].strip()):
                 r["Descrição curta"] = p["curta"]
             r["Tags"] = ", ".join(t for t in p["tags"] if t != "destaques")
             if p["campos"] and "Ficha técnica" not in r["Descrição"]:
                 tabela = "".join(f"<tr><td><strong>{html.escape(ROTULO[k])}</strong></td><td>{html.escape(v)}</td></tr>"
                                  for k, v in sorted(p["campos"].items(), key=lambda kv: CHAVES.index(kv[0])))
-                r["Descrição"] = r["Descrição"] + f"\\n<h3>Ficha técnica</h3>\\n<table><tbody>{tabela}</tbody></table>"
+                base_desc = p["corpo"].replace("\n", "\\n") if p["nova"] else r["Descrição"]
+                r["Descrição"] = base_desc + f"\\n<h3>Ficha técnica</h3>\\n<table><tbody>{tabela}</tbody></table>"
             w.writerow(r)
 
     # ---------- planilha de revisão
@@ -221,7 +230,7 @@ def main():
     print(f"com ficha: {sum(1 for p in produtos if p['campos'])} | média de campos: {sum(len(p['campos']) for p in produtos) / len(produtos):.1f}")
     print(f"com peso de envio: {sum(1 for p in produtos if p['envio'].get('peso_kg'))} | correções: {sum(len(p['e'].get('correcoes') or []) for p in produtos)}")
     print(f"campos mais preenchidos: {uso.most_common(12)}")
-    print(f"campos novos para criar na loja: {novos}")
+    print(f"campos novos para criar na loja: {novos} | descrições reescritas: {sum(1 for p in produtos if p['nova'])}")
 
 
 if __name__ == "__main__":
