@@ -1,0 +1,1445 @@
+[
+ {
+  "id": 4842,
+  "campos": {
+   "modelo": "Ibanez Artcore Expressionist AG95K-NT",
+   "serie": "Artcore Expressionist",
+   "construcao": "Set-in (colado)",
+   "corpo": "Hollow body (totalmente oco) – fundo e laterais em Acácia",
+   "tampo": "Acácia",
+   "formato_corpo": "Hollow body AG (mais compacto que o AF)",
+   "braco_madeira": "Nyatoh/Maple (bordo), 3 peças",
+   "braco_perfil": "AG Expressionist",
+   "escala_madeira": "Ébano de Macassar com friso (binding)",
+   "raio": "305 mm (12″)",
+   "trastes": "22, médios",
+   "marcadores": "Blocos acrílicos",
+   "captadores": "2 humbuckers Ibanez Super 58 (braço e ponte), passivos",
+   "eletrica": "2 volumes, 2 tones, chave de 3 posições",
+   "ponte": "Gibraltar Performer com cordal VT06",
+   "hardware": "Dourado",
+   "cor": "Natural (NT)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Hollow body Artcore Expressionist com tampo, fundo e laterais em acácia, escala de ébano de Macassar e par de humbuckers Super 58: timbre de jazz/blues em corpo AG um pouco mais compacto.",
+  "tags": [
+   "hh",
+   "hollow-body",
+   "braco-colado",
+   "ponte-fixa",
+   "22-trastes",
+   "hardware-dourado",
+   "jazz"
+  ],
+  "envio": {
+   "peso_kg": 9,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 18
+  },
+  "correcoes": [
+   "Ficha atual: campo 'raio' está truncado ('305mm (12\"') e o raio foi repetido dentro de 'escala_madeira'; separar: escala = Ébano de Macassar com friso, raio = 305 mm (12″).",
+   "Ficha atual: 'braco_madeira' traz o nome do perfil junto ('AG Expressionist / 3pc Nyatoh/Maple'); perfil e madeira devem ficar em campos separados."
+  ],
+  "conferir": [
+   "Confirmar se a madeira de acácia é laminada (a descrição da loja diz laminada; fontes consultadas só dizem 'Acacia').",
+   "Largura do nut e espessuras do braço não foram confirmadas em fonte oficial (ibanez.com inacessível nesta pesquisa) – medir na peça se quiser publicar.",
+   "Conferir se acompanha bag/case."
+  ],
+  "fontes": [
+   "https://www.sweelee.com.sg/products/ibanez-artcore-ag95k-nt-electric-guitar-natural",
+   "https://www.adorama.com/ibag95kn.html",
+   "https://www.zzounds.com/item--IBAAG95K"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 4875,
+  "campos": {
+   "modelo": "Ibanez AZES40-MGR",
+   "serie": "AZ Essentials (AZES)",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Poplar (choupo)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "AZES",
+   "braco_espessura_1": "20,5",
+   "braco_espessura_12": "22,5",
+   "escala_madeira": "Jatobá",
+   "escala": "635 mm (25″)",
+   "raio": "250 mm",
+   "trastes": "22, médios",
+   "nut_largura": "42",
+   "marcadores": "Pontos brancos",
+   "captadores": "Ibanez Essentials (S) braço e meio, Ibanez Accord (H) ponte – passivos, cerâmicos (HSS)",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX9 – modo 'two hum tap' braço+meio em série)",
+   "ponte": "Ibanez T106 tremolo com carrinhos de aço arredondados",
+   "tarraxas": "Ibanez, eixo dividido (split-shaft)",
+   "hardware": "Cromado",
+   "cor": "Mint Green (MGR)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "AZ de entrada com corpo de poplar, escala de 25″ e captação HSS com Alter Switch (dyna-MIX9), em Mint Green com visual retrô.",
+  "tags": [
+   "hss",
+   "tremolo",
+   "22-trastes",
+   "superstrat",
+   "escala-25"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "Ficha atual: comprimento e raio estão dentro de 'escala_madeira' ('Jatobá (Comprimento de 635mm / 25\" - Raio...)'); separar escala = 635 mm (25″), raio = 250 mm.",
+   "Ficha atual: 'braco_madeira' mistura perfil e madeira ('AZES / Maple'). Perfil = AZES; madeira = Maple."
+  ],
+  "conferir": [
+   "Cor e material do escudo (a loja diz Mint Green 3 camadas) não confirmados em fonte – checar na peça.",
+   "Nut: loja diz PPS 42 mm; largura 42 mm confirmada, material não confirmado."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/azes40_1p_01.html",
+   "https://zedem.ca/collections/all/products/ibanez-azes40bk-az-standard-black",
+   "https://www.creamcitymusic.com/ibanez-azes40-az-standard-mint-green",
+   "https://www.peachguitars.com/ibanez-azes-essentials-series-azes40-mgr-mint-green.htm"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 4930,
+  "campos": {
+   "modelo": "Ibanez RG470DXW",
+   "serie": "RG Standard",
+   "fabricacao": "Indonésia",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Meranti",
+   "formato_corpo": "Superstrat (RG)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "Wizard III",
+   "braco_espessura_1": "19",
+   "braco_espessura_12": "21",
+   "escala_madeira": "Jatobá com friso (binding)",
+   "escala": "648 mm (25.5″)",
+   "raio": "400 mm",
+   "trastes": "24, jumbo",
+   "nut_largura": "43",
+   "marcadores": "Sharktooth",
+   "captadores": "Ibanez Quantum (H) braço, Quantum (S) meio, Quantum (H) ponte – passivos (HSH)",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições",
+   "ponte": "Edge-Zero II (tremolo)",
+   "hardware": "Preto",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "RG Standard com braço Wizard III, 24 trastes jumbo, captação HSH Quantum e ponte Edge-Zero II: plataforma clássica de shred/metal.",
+  "tags": [
+   "hsh",
+   "tremolo",
+   "24-trastes",
+   "superstrat",
+   "made-in-indonesia"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "O código WZM corresponde oficialmente a 'Wine Red Frozen Matte' (ibanez.com e lojas), não a tampo de Zebrano 'Natural Flat' como diz a descrição; nenhuma fonte mostra RG470DXW com tampo de Zebrano.",
+   "A descrição coloca '25.5\" (648 mm)' no campo Escala (madeira); a madeira da escala é Jatobá com friso.",
+   "A descrição cita 'sistema ZPS3Fe' e hardware 'Cosmo Black'; as fontes listam apenas Edge-Zero II e hardware preto – não confirmado."
+  ],
+  "conferir": [
+   "IMPORTANTE: conferir a cor/acabamento real da peça (Wine Red Frozen Matte x tampo de Zebrano). Se for zebrano, o código do modelo provavelmente não é RG470DXW-WZM – identificar pelo número de série/etiqueta.",
+   "Conferir se a ponte tem o bloco ZPS3Fe instalado."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/rg470dxw_1p_01.html",
+   "https://www.altomusic.com/products/ibanez-rg470dxw-rg-standard-6-string-electric-guitar-wine-red-frozen-matte",
+   "https://www.guitarcenter.com/Ibanez/RG-Standard-RG470DXW-Electric-Guitar-Wine-Red-Frozen-Matte-1500000469111.gc",
+   "https://www.musicstore.de/en_GB/GBP/Ibanez-Standard-RG470DXW-WZM-Wine-Red-Frozen-Matte/art-GIT0064479-000"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 6975,
+  "campos": {
+   "modelo": "Jet Guitars JS-350",
+   "construcao": "Bolt-on (parafusado)",
+   "braco_madeira": "Maple canadense torrado (roasted maple)",
+   "formato_corpo": "Strat (S-style)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Guitarra Jet da série 350 com braço de maple canadense torrado, boa opção custo-benefício com visual clássico.",
+  "tags": [
+   "roasted-maple",
+   "outlet"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição atual é genérica e lista alternativas ('Basswood ou Roasted Poplar', 'Roasted Maple ou Rosewood', 'SS ou H/S') – deve ser reescrita com a configuração real desta unidade.",
+   "'Tampo: Basswood' não é tampo; se o corpo é de uma madeira só, o campo tampo deve ficar vazio."
+  ],
+  "conferir": [
+   "Identificar a variante exata pelo código da etiqueta (ex.: JS-350 BSC/BK/SB, sufixo R = escala rosewood, SS/SH = captação). Fontes divergem até no formato (um anúncio Reverb de 'JS-350' é T-style).",
+   "Conferir na peça: madeira do corpo (basswood ou roasted poplar), madeira da escala, configuração de captadores, tipo de ponte (fixa x tremolo), raio e nut (anúncios citam 9.5″, 1.65″ e nut de osso, mas sem confirmação para este modelo)."
+  ],
+  "fontes": [
+   "https://reverb.com/item/80574505-jet-guitars-jet-js-350-bsc-t-style-namm-guitar-canadian-maple-neck-basswood-2x-single-coil",
+   "https://mattsmusic.com/?p=59218"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6985,
+  "campos": {
+   "modelo": "Jet Guitars JS-700",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Basswood",
+   "formato_corpo": "Strat (S-style)",
+   "braco_madeira": "Maple canadense torrado (roasted maple)",
+   "braco_perfil": "Modern C",
+   "escala": "648 mm (25.5″)",
+   "trastes": "22",
+   "ponte": "Wilkinson tremolo",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Jet JS-700 com corpo de basswood, braço de maple canadense torrado, ponte Wilkinson e captação Alnico V – visual marcante e boa tocabilidade.",
+  "tags": [
+   "tremolo",
+   "roasted-maple",
+   "22-trastes",
+   "outlet"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição atual lista alternativas para escala, captação, ponte, ferragens e cor ('ou ... dependendo da versão') – reescrever com a configuração real desta unidade.",
+   "'Tampo: Basswood' não é tampo – remover."
+  ],
+  "conferir": [
+   "Identificar a cor/variante (MBK Matte Black, CPR Copper, RD Red; sufixos H, HS) e então: captação (H, HS ou HH), ponte (Wilkinson tremolo comum ou de trava dupla), cor do hardware e madeira da escala.",
+   "Fontes divergem sobre a madeira da escala (roasted maple / rosewood)."
+  ],
+  "fontes": [
+   "https://reverb.com/item/80571336-jet-guitars-jet-js-700-rd-h-s-style-namm-guitar-wilkinson-trem-red-finish-roasted-maple-neck-basswood-body",
+   "https://www.prestomusic.com/instruments-accessories/products/9513271--jet-guitars-js700",
+   "https://www.bax-shop.co.uk/electric-guitars/jet-guitars-js-700-copper-electric-guitar"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 7632,
+  "campos": {
+   "modelo": "Fender Highway One Stratocaster",
+   "serie": "Highway One",
+   "fabricacao": "EUA",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "C",
+   "captadores": "3 single-coils Highway One (SSS)",
+   "eletrica": "1 volume, 2 tones, chave de 5 posições; circuito Greasebucket (versões a partir da revisão de 2006)",
+   "ponte": "Tremolo sincronizado estilo vintage",
+   "acabamento": "Laca de nitrocelulose acetinada (satin)",
+   "hardware": "Cromado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Strat americana da linha Highway One, com corpo de alder em laca nitro acetinada fina e circuito de tone Greasebucket – timbre clássico com pegada despojada.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "made-in-usa",
+   "nitro",
+   "semi-novo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição lista alternativas para escala ('Rosewood ou Maple') e cor ('Honey Blonde, Satin Wine Trans, Matte Black ou variações') – deve dizer a escala e cor reais da peça."
+  ],
+  "conferir": [
+   "Identificar ano pelo número de série: a série teve 1ª versão (2002–2005, trastes medium jumbo, sem Greasebucket) e revisão de 2006 (trastes jumbo 'super-size', Greasebucket, headstock com logo dos anos 70). Número de trastes (21 ou 22) não confirmado – contar na peça.",
+   "Conferir escala (rosewood ou maple), cor e se captadores/eletrônica são originais.",
+   "Verificar se acompanha o gig bag original."
+  ],
+  "fontes": [
+   "https://www.sweetwater.com/insync/summer-namm-2006-fender-highway-one-stratocaster/",
+   "https://www.zzounds.com/pagearea--61/item--FEN111162",
+   "https://fuzzfaced.net/highway-one-versione-1.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7649,
+  "campos": {
+   "modelo": "Squier Classic Vibe '50s Stratocaster",
+   "serie": "Classic Vibe",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "C",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "trastes": "21, narrow tall",
+   "nut_material": "Osso",
+   "nut_largura": "42 mm (1.650″)",
+   "marcadores": "Pontos pretos",
+   "captadores": "3 single-coils Fender Designed Alnico (SSS)",
+   "eletrica": "1 volume, 2 tones, chave de 5 posições",
+   "ponte": "Tremolo sincronizado vintage de 6 carrinhos",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Classic Vibe '50s Strat com braço e escala em maple, nut de osso e captadores Alnico – uma das Squier mais elogiadas pelo acabamento e timbre vintage.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "escala-maple",
+   "semi-novo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição diz corpo 'Nato ou Alder'; fontes da geração atual citam pinho (pine) – corpo deve ser informado após checar a peça.",
+   "Cor listada como alternativas ('2-Color Sunburst, White Blonde, Fiesta Red') – informar a cor real."
+  ],
+  "conferir": [
+   "Madeira do corpo varia conforme geração/lote: fontes citam pinho (geração atual, 2019+), alder, nato e nyatoh – checar etiqueta/ano pelo número de série antes de publicar.",
+   "Geração antiga (2008–2018, China/Indonésia) pode ter especificações diferentes (trastes, nut): confirmar o ano.",
+   "Conferir cor e se captadores/hardware são originais (peça usada)."
+  ],
+  "fontes": [
+   "https://www.zzounds.com/item--SQU0374005",
+   "https://squierwiki.com/CV+%2750s+Stratocaster",
+   "https://www.normans.co.uk/products/squier-classic-vibe-50s-stratocaster",
+   "https://www.long-mcquade.com/GearHunter/692184/Squier-CV-50S-STRAT-MN-WBL.htm"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7656,
+  "campos": {
+   "modelo": "G&L ASAT Classic (linha Fullerton, EUA)",
+   "fabricacao": "EUA (Fullerton, Califórnia)",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Tele (single cut)",
+   "braco_madeira": "Hard-rock maple",
+   "braco_perfil": "Modern Classic",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "trastes": "22, medium jumbo (Jescar 57110, alpaca 18%)",
+   "nut_material": "Osso",
+   "nut_largura": "42,9 mm (1 11/16″)",
+   "captadores": "2 single-coils G&L MFD ASAT Classic",
+   "eletrica": "1 volume, 1 tone, chave de 3 posições",
+   "hardware": "Cromado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "ASAT Classic feita em Fullerton, na antiga fábrica de Leo Fender: estilo Tele com captadores MFD, trastes medium jumbo Jescar e nut de osso.",
+  "tags": [
+   "ss",
+   "ponte-fixa",
+   "made-in-usa",
+   "22-trastes",
+   "semi-novo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição lista alternativas para corpo ('Alder ou Swamp Ash'), escala ('Maple ou Caribbean Rosewood'), marcadores e cor – informar o que esta peça tem."
+  ],
+  "conferir": [
+   "Confirmar se é ASAT Classic USA (antiga) ou Fullerton Deluxe ASAT Classic (2021+) pelo número de série/etiqueta; não é Bluesboy (que tem humbucker no braço).",
+   "Conferir madeira do corpo (alder ou swamp ash), escala, cor e se acompanha case/bag."
+  ],
+  "fontes": [
+   "https://www.zzounds.com/item--GLGFDAC",
+   "https://www.andertons.co.uk/gl-guitars/g-l-usa-fullerton-deluxe-asat-classic-3-tone-sunburst-caribbean-rosewood-fingerboard",
+   "https://reverb.com/item/77317914-g-l-fullerton-deluxe-asat-classic-jet-black-clf2203408"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7665,
+  "campos": {
+   "modelo": "Ibanez MB10-BKN (Marcelo Barbosa Signature)",
+   "serie": "Signature",
+   "construcao": "Bolt-on (parafusado)",
+   "braco_madeira": "Maple (bordo)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Modelo signature de Marcelo Barbosa (Angra) na Ibanez – guitarra com braço parafusado em maple e acabamento escuro.",
+  "tags": [
+   "signature"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição atual não menciona que é o signature do guitarrista Marcelo Barbosa (Angra) e é genérica, com alternativas ('Rosewood ou Tech Wood', 'Fixa ou Tremolo', 'H-S-H ou H-S-S', 'Cromadas / Cosmo Black') – deve ser reescrita com a ficha real.",
+   "O trecho da página oficial obtido indica 24 trastes jumbo de aço inox e dois humbuckers; a descrição diz 22 trastes medium jumbo e HSH/HSS – provável erro (confirmar na peça)."
+  ],
+  "conferir": [
+   "Trecho da página oficial (ibanez.com mb10) indicou: tampo de maple, corpo alder, braço MB roasted maple, escala 648 mm, raio 305 mm, escala de jatobá com pontos pretos, 24 trastes jumbo inox, 2 humbuckers Ibanez Modern Custom (Alnico V), ponte T106, tarraxas com trava, hardware cromado. Não foi possível abrir a página inteira – conferir cada item na peça antes de publicar.",
+   "Confirmar o nome oficial da cor BKN."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/na/products/detail/mb10_5n_01.html",
+   "https://www.ibanez.com/na/artists/detail/1282.html"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 7672,
+  "campos": {
+   "modelo": "Ibanez AZ42P1-PBE",
+   "serie": "AZ Premium",
+   "fabricacao": "Indonésia (Premium)",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "Roasted maple (bordo torrado)",
+   "braco_perfil": "AZ Oval C",
+   "braco_espessura_1": "20,5",
+   "braco_espessura_12": "22,5",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm (12″)",
+   "trastes": "24, jumbo de aço inoxidável",
+   "nut_largura": "42",
+   "captadores": "Seymour Duncan Hyperion (H) braço e ponte, passivos Alnico",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX10)",
+   "ponte": "Gotoh T1502 tremolo",
+   "tarraxas": "Gotoh MG-T com trava",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "AZ Premium HH com captadores Seymour Duncan Hyperion, braço roasted maple AZ Oval C e trastes inox – tocabilidade de Prestige a preço menor.",
+  "tags": [
+   "hh",
+   "tremolo",
+   "24-trastes",
+   "trastes-inox",
+   "superstrat",
+   "semi-novo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "PBE é 'Prussian Blue Metallic' (Thomann, Full Compass, Gear4music), não 'Prussian Blue Burst'.",
+   "Tampo de 'Poplar Burl' não aparece nas fontes do AZ42P1 (cor metálica sólida) – provável confusão com outro modelo AZ; confirmar."
+  ],
+  "conferir": [
+   "Conferir madeira do corpo e se há tampo (descrição diz basswood americano + poplar burl).",
+   "Madeira da escala: descrição diz roasted maple, uma fonte cita rosewood – checar na peça.",
+   "Pesquisa feita sem acesso direto ao ibanez.com; país 'Indonésia' é o padrão da linha Premium – confirmar na etiqueta. Verificar se acompanha gig bag."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/az42p1_1p_01.html",
+   "https://www.thomannmusic.com/ibanez_az42p1_pbe.htm",
+   "https://fullcompass.com/prod/629547-ibanez-az42p1-premium-series-az42p1-electric-guitar-prussian-blue-metallic",
+   "https://gear4music.ie/G4M/Ibanez-AZ42P1-PBE-Premium-Prussian-Blue-Metallic-Secondhand/6Z9L"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7673,
+  "campos": {
+   "modelo": "Ibanez Iceman IC420MFM-CML",
+   "serie": "Iceman (Standard)",
+   "construcao": "Set-in (colado)",
+   "corpo": "Okoume",
+   "tampo": "Flamed maple (bordo flameado)",
+   "formato_corpo": "Iceman",
+   "braco_espessura_1": "20",
+   "braco_espessura_12": "22",
+   "escala_madeira": "Maple (bordo) com friso",
+   "escala": "628 mm (24.7″)",
+   "raio": "305 mm",
+   "trastes": "22, médios",
+   "nut_largura": "43",
+   "marcadores": "Blocos acrílicos",
+   "captadores": "2 humbuckers Ibanez Super 80 'Flying Finger' (passivos, cerâmicos)",
+   "ponte": "Gibraltar Performer com cordal Quik Change III",
+   "cor": "Caramel Burst Low Gloss (CML)",
+   "cordas_fabrica": "D'Addario EXL110 (.010–.046)",
+   "acessorios": "Gig bag",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Iceman de braço colado com tampo de maple flameado, escala de maple (o 'M' do código) e os clássicos Super 80 'Flying Finger'.",
+  "tags": [
+   "hh",
+   "ponte-fixa",
+   "braco-colado",
+   "22-trastes",
+   "iceman",
+   "escala-maple"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "CML é 'Caramel Burst Low Gloss' (ibanez.com e lojas), não 'Cosmo Mocha Low Gloss'.",
+   "A escala do IC420MFM é de maple (código MFM = maple fingerboard), não Jatobá (Reverb/Thomann).",
+   "Captadores: são Ibanez Super 80 'Flying Finger', não genéricos 'Dual Humbuckers'."
+  ],
+  "conferir": [
+   "Madeira do braço: descrição diz Nyatoh/Maple 3 peças; fontes divergem (uma cita Okoume 3 peças) – conferir.",
+   "Controles: descrição diz 2 volumes e 1 tone; uma fonte cita 2 volumes e 2 tones – conferir na peça.",
+   "Cor do hardware (descrição diz Cosmo Black, fontes citam dourado) – conferir."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/ic420mfm_4l_01.html",
+   "https://www.thomannmusic.no/ibanez_ic420mfm_cml.htm",
+   "https://reverb.com/item/94088858-ibanez-ic420mfm-iceman-electric-guitar-maple-fingerboard-caramel-burst-low-gloss",
+   "https://www.musiciansfriend.com/guitars/ibanez-iceman-ic420mfm-electric-guitar-/m23869000001000?index=28",
+   "https://www.altomusic.com/products/ibanez-ic420mfm-iceman-6-string-electric-guitar-caramel-burst-low-gloss"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7674,
+  "campos": {
+   "modelo": "Ibanez RG631ALF-BCM",
+   "serie": "Axion Label",
+   "construcao": "Bolt-on (parafusado, AANJ)",
+   "corpo": "Nyatoh",
+   "formato_corpo": "Superstrat (RG)",
+   "braco_madeira": "Panga Panga/Walnut (nogueira), 5 peças",
+   "braco_perfil": "Nitro Wizard",
+   "braco_espessura_1": "19",
+   "braco_espessura_12": "21",
+   "escala_madeira": "Ébano de Macassar",
+   "escala": "648 mm (25.5″)",
+   "raio": "400 mm (15.75″)",
+   "trastes": "24, Jescar EVOgold tratados (sub-zero)",
+   "nut_largura": "43",
+   "marcadores": "Pontos brancos off-set, laterais Luminlay",
+   "captadores": "Fishman Fluence Modern Humbucker Alnico (braço) e Ceramic (ponte), ativos",
+   "eletrica": "1 volume, 1 tone, chave de 3 posições, chave de voicing Fishman",
+   "ponte": "Gibraltar Standard II (fixa)",
+   "tarraxas": "Gotoh MG-T com trava",
+   "hardware": "Cosmo Black",
+   "cor": "Blue Chameleon (BCM)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "RG Axion Label com Fishman Fluence Modern ativos, braço Nitro Wizard de panga panga/walnut e trastes EVOgold, em Blue Chameleon que muda de cor.",
+  "tags": [
+   "hh",
+   "ponte-fixa",
+   "ativo",
+   "24-trastes",
+   "superstrat",
+   "fishman"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [],
+  "conferir": [
+   "Ponte, tarraxas e trastes vieram da descrição da loja; não foi possível abrir a página oficial – conferir na peça.",
+   "Conferir alimentação/bateria dos Fishman (9V)."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/rg631alf_1p_04.html",
+   "https://global.ikebe-gakki.com/products/697497",
+   "https://www.creamcitymusic.com/ibanez-rg631alf-axion-label-blue-chameleon",
+   "https://www.long-mcquade.com/220254/Guitars/Electric-Guitars/Ibanez/RG631ALF-RG-Axion-Label-Electric-Guitar-Blue-Chameleon.htm"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8257,
+  "campos": {
+   "modelo": "Ibanez Prestige RGR5130",
+   "serie": "Prestige",
+   "fabricacao": "Japão",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Basswood",
+   "formato_corpo": "Superstrat (RG) com headstock invertido",
+   "braco_madeira": "Maple/Wenge, 5 peças",
+   "braco_perfil": "Super Wizard HP",
+   "braco_espessura_1": "17",
+   "braco_espessura_12": "19",
+   "escala_madeira": "Ébano de Macassar",
+   "escala": "648 mm (25.5″)",
+   "raio": "430 mm",
+   "trastes": "24, jumbo de aço inoxidável, acabamento de bordas Prestige",
+   "nut_material": "Nut com trava (locking nut)",
+   "nut_largura": "43",
+   "marcadores": "Pontos off-set, laterais Luminlay",
+   "captadores": "Fishman Fluence Modern Humbucker Ceramic (braço e ponte), ativos",
+   "eletrica": "1 volume, 1 tone, chave de 3 posições, chave de voicing Fishman",
+   "ponte": "Lo-Pro Edge (tremolo de trava dupla)",
+   "tarraxas": "Gotoh",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "RG Prestige japonesa com headstock invertido, braço Super Wizard HP finíssimo (17 mm na 1ª casa), Fishman Fluence Modern e Lo-Pro Edge – máquina de shred.",
+  "tags": [
+   "hh",
+   "floyd-rose",
+   "ativo",
+   "24-trastes",
+   "trastes-inox",
+   "made-in-japan",
+   "prestige",
+   "fishman"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Identificar a cor (GRM Gray Metallic ou KM Khaki Metallic) e se é RGR5130 ou RGR5130R.",
+   "Uma loja cita captador do braço Alnico; Ibanez e a maioria citam Ceramic – conferir etiqueta do captador."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/rgr5130r_00_01.html",
+   "https://thomannmusic.com/ibanez_rgr5130_grm_prestige.htm",
+   "https://www.andertons.co.uk/ibanez-rgr5130r-km-prestige-electric-guitar-khaki-metallic/"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8266,
+  "campos": {
+   "modelo": "Ibanez K7YIN (James 'Munky' Shaffer Signature)",
+   "serie": "Signature",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Superstrat 7 cordas (RG)",
+   "braco_madeira": "Maple/Walnut (nogueira), 5 peças",
+   "braco_perfil": "Wizard II-7",
+   "escala_madeira": "Ébano",
+   "escala": "648 mm (25.5″)",
+   "raio": "400 mm (15.75″)",
+   "trastes": "24, jumbo",
+   "captadores": "DiMarzio Blaze (H) braço e ponte, passivos",
+   "eletrica": "1 volume, 1 tone, chave de 3 posições",
+   "ponte": "Lo-Pro Edge 7 com U-Bar do Munky",
+   "tarraxas": "Gotoh",
+   "cor": "Preto fosco",
+   "cordas_qtd": "7",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Reedição da K7 do Munky (Korn): 7 cordas com braço Wizard II-7, DiMarzio Blaze e a icônica U-Bar na Lo-Pro Edge 7.",
+  "tags": [
+   "hh",
+   "floyd-rose",
+   "7-cordas",
+   "24-trastes",
+   "signature",
+   "dimarzio"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição diz raio de 16″; as fontes (Thomann, Alto Music) indicam 400 mm (15.75″)."
+  ],
+  "conferir": [
+   "Madeira do corpo: fontes divergem (nyatoh x okoume) – checar etiqueta/ficha da peça.",
+   "Confirmar se acompanha gig bag (vendido com bag nas lojas)."
+  ],
+  "fontes": [
+   "https://www.zzounds.com/item--IBAK7YIN",
+   "https://www.altomusic.com/products/ibanez-k7yin-munky-signature-7-string-electric-guitar",
+   "https://www.guitarcenter.com/Ibanez/K7YIN-Munky-Signature-7-String-Electric-Guitar-1500000463627.gc",
+   "https://www.thomann.fr/ibanez_k7yin.htm"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8274,
+  "campos": {
+   "modelo": "Ibanez Prestige LB1-BK (Lari Basilio Signature)",
+   "serie": "Prestige / Signature",
+   "fabricacao": "Japão",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Ash (freixo)",
+   "formato_corpo": "Strat (LB)",
+   "braco_madeira": "S-TECH WOOD Roasted Birdseye Maple",
+   "braco_perfil": "AZ Oval C",
+   "braco_espessura_1": "20,5",
+   "braco_espessura_12": "22,5",
+   "escala_madeira": "S-TECH WOOD Roasted Birdseye Maple",
+   "escala": "648 mm (25.5″)",
+   "raio": "Composto 228–305 mm",
+   "trastes": "22, jumbo de aço inoxidável, acabamento Prestige",
+   "nut_material": "Osso",
+   "nut_largura": "42",
+   "marcadores": "Pontos de madrepérola, laterais Luminlay",
+   "captadores": "Seymour Duncan Lari Basilio (S) braço e meio, (H) ponte – passivos Alnico",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX9)",
+   "ponte": "Gotoh T1702B tremolo",
+   "tarraxas": "Gotoh Magnum Lock com H.A.P.",
+   "hardware": "Dourado",
+   "cor": "Black (BK)",
+   "cordas_fabrica": "D'Addario EXL110 (.010–.046)",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Signature Prestige da brasileira Lari Basilio: corpo de ash, braço roasted birdseye maple AZ Oval C, captadores Seymour Duncan exclusivos HSS e hardware dourado.",
+  "tags": [
+   "hss",
+   "tremolo",
+   "22-trastes",
+   "trastes-inox",
+   "made-in-japan",
+   "prestige",
+   "signature",
+   "hardware-dourado"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Raio composto, ponte, tarraxas e hardware dourado vieram da descrição da loja (página oficial não acessível nesta pesquisa) – conferir.",
+   "Uma loja cita corpo de alder para uma unidade 2023; Ibanez indica ash – conferir."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/jp/products/detail/lb1_00_03.html",
+   "https://global.ikebe-gakki.com/products/836786",
+   "https://www.adorama.com/ibanez-lari-basilio-lb1-signature-electric-guitar-white/p/iblb1wh"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8283,
+  "campos": {
+   "modelo": "Ibanez Prestige PS10-BK (Paul Stanley Signature)",
+   "serie": "Prestige / Signature",
+   "fabricacao": "Japão (FujiGen)",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno",
+   "tampo": "Maple (bordo)",
+   "formato_corpo": "Iceman",
+   "braco_madeira": "Maple (bordo), 3 peças",
+   "escala_madeira": "Ébano com friso",
+   "escala": "628 mm (24.75″)",
+   "marcadores": "Blocos de acrílico e abalone",
+   "nut_material": "Meio osso / meio latão",
+   "captadores": "Seymour Duncan '59 (braço) e Custom 5 (ponte), passivos",
+   "eletrica": "2 volumes, 1 tone, chave de 3 posições",
+   "hardware": "Cromado",
+   "cor": "Black (BK)",
+   "cordas_fabrica": "D'Addario EXL120 (.009–.042)",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Iceman signature de Paul Stanley (KISS), feita no Japão: corpo de mogno com tampo de maple, braço colado e par Seymour Duncan '59/Custom 5.",
+  "tags": [
+   "hh",
+   "ponte-fixa",
+   "braco-colado",
+   "made-in-japan",
+   "prestige",
+   "signature",
+   "iceman"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Trastes: descrição diz 22 medium; uma fonte cita jumbo – conferir.",
+   "Ponte: descrição diz Gotoh GE103B-T; fontes divergem (Gibraltar / Tune-o-matic) – conferir a marcação na peça."
+  ],
+  "fontes": [
+   "https://ibanez.fandom.com/wiki/PS10",
+   "https://www.zzounds.com/item--IBAPS10",
+   "https://www.bax-shop.co.uk/electric-guitars/ibanez-ps10-bk-prestige-paul-stanley-signature"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8294,
+  "campos": {
+   "modelo": "Ibanez FLATV1 (Josh Smith Signature)",
+   "serie": "Prestige / Signature",
+   "fabricacao": "Japão",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Ash (freixo), slab body",
+   "braco_madeira": "S-TECH WOOD Roasted Maple, 1 peça",
+   "braco_perfil": "FLATV",
+   "escala_madeira": "S-TECH WOOD Roasted Maple",
+   "escala": "648 mm (25.5″)",
+   "nut_material": "Osso",
+   "marcadores": "Pontos pretos, laterais Luminlay",
+   "captadores": "2 single-coils Seymour Duncan signature Josh Smith (braço e ponte), passivos",
+   "eletrica": "1 volume, 1 tone, chave de 3 posições",
+   "ponte": "Gotoh F1803",
+   "tarraxas": "Gotoh",
+   "acabamento": "Poliéster brilhante",
+   "cor": "Black (BK)",
+   "cordas_fabrica": ".010–.046",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Signature do bluesman Josh Smith: corpo slab de ash, braço roasted maple de 1 peça e dois single-coils Seymour Duncan – visual clássico com fabricação japonesa.",
+  "tags": [
+   "ss",
+   "ponte-fixa",
+   "made-in-japan",
+   "prestige",
+   "signature"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Número de trastes (descrição diz 21 medium), raio e largura do nut não confirmados em fonte – conferir na peça.",
+   "Nome dos captadores ('FLAT5') não confirmado; fontes falam em set signature Seymour Duncan."
+  ],
+  "fontes": [
+   "https://guitarworld.com/news/ibanez-introduces-josh-smith-signature-flatv1-alongside-all-new-azs-series",
+   "https://www.adorama.com/ibflatv1bk.html",
+   "https://www.bonedo.de/?p=580128",
+   "https://www.chicagomusicexchange.com/products/ibanez-flatv1-josh-smith-signature-black-1172025"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8302,
+  "campos": {
+   "modelo": "Ibanez Prestige AZ2402-TFF",
+   "serie": "Prestige",
+   "fabricacao": "Japão",
+   "construcao": "Bolt-on (Super All Access Neck Joint)",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "S-TECH WOOD Roasted Maple, 1 peça",
+   "braco_perfil": "AZ Oval C",
+   "braco_espessura_1": "20,5",
+   "braco_espessura_12": "22,5",
+   "escala_madeira": "S-TECH WOOD Roasted Maple",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm (12″)",
+   "trastes": "24, jumbo de aço inoxidável, acabamento Prestige",
+   "nut_material": "Osso impregnado com óleo",
+   "nut_largura": "42",
+   "marcadores": "Pontos pretos, laterais Luminlay",
+   "captadores": "Seymour Duncan Hyperion (H) braço e ponte, passivos",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX10)",
+   "ponte": "Gotoh T1802 tremolo",
+   "tarraxas": "Gotoh Magnum Lock com H.A.P.",
+   "hardware": "Cromado",
+   "cor": "Tri Fade Burst Flat (TFF)",
+   "cordas_fabrica": "D'Addario EXL110 (.010–.046)",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "AZ Prestige japonesa HH com Seymour Duncan Hyperion, dyna-MIX10 e braço roasted maple AZ Oval C – uma das superstrats modernas mais versáteis.",
+  "tags": [
+   "hh",
+   "tremolo",
+   "24-trastes",
+   "trastes-inox",
+   "made-in-japan",
+   "prestige",
+   "superstrat"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição chama a cor de 'TFB'; o código correto é TFF (Tri Fade Burst Flat), como no título."
+  ],
+  "conferir": [
+   "Ano de fabricação (modelo existe desde 2019) pelo número de série."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/na/products/detail/az2402_00_02.html",
+   "https://musicstore.com/en_AT/EUR/Ibanez-AZ2402-TFF-Prestige-Tri-Fade-Burst-Flat-/art-GIT0044564-000",
+   "https://www.zzounds.com/item--IBAAZ2402"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8311,
+  "campos": {
+   "modelo": "Ibanez AZ22S2-BK (conferir código)",
+   "construcao": "Bolt-on (Super All Access Neck Joint)",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "Roasted maple (bordo torrado)",
+   "escala_madeira": "Jatobá",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm",
+   "trastes": "22, jumbo de aço inoxidável",
+   "marcadores": "Pontos brancos",
+   "captadores": "Ibanez Classic Custom (S) braço e meio (Alnico), Ibanez Classic Custom (H) ponte (cerâmico) – passivos",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX9)",
+   "ponte": "T106 tremolo",
+   "tarraxas": "Com trava",
+   "hardware": "Cromado",
+   "cor": "Black (BK)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "AZ HSS com corpo de alder, braço roasted maple, trastes inox e Alter Switch – superstrat versátil e confortável.",
+  "tags": [
+   "hss",
+   "tremolo",
+   "22-trastes",
+   "trastes-inox",
+   "superstrat"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item. Confirmar o código exato (AZ22S2?) na etiqueta e checar a ficha no ibanez.com antes de publicar.",
+   "Medir espessura do braço e largura do nut se quiser incluir."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8320,
+  "campos": {
+   "modelo": "Ibanez AZES40-BK",
+   "serie": "AZ Essentials (AZES)",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Poplar (choupo)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "AZES",
+   "braco_espessura_1": "20,5",
+   "braco_espessura_12": "22,5",
+   "escala_madeira": "Jatobá",
+   "escala": "635 mm (25″)",
+   "raio": "250 mm",
+   "trastes": "22, médios",
+   "nut_largura": "42",
+   "marcadores": "Pontos brancos",
+   "captadores": "Ibanez Essentials (S) braço e meio, Ibanez Accord (H) ponte – passivos, cerâmicos (HSS)",
+   "eletrica": "1 volume, 1 tone, chave de 5 posições + Alter Switch (dyna-MIX9)",
+   "ponte": "Ibanez T106 tremolo",
+   "tarraxas": "Ibanez, eixo dividido (split-shaft)",
+   "hardware": "Cromado",
+   "cor": "Black (BK)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "AZ de entrada em preto, com corpo de poplar, escala de 25″ e captação HSS com Alter Switch – ótima para começar com tocabilidade de AZ.",
+  "tags": [
+   "hss",
+   "tremolo",
+   "22-trastes",
+   "superstrat",
+   "escala-25"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição curta é cópia da AZES40-MGR: fala em 'AZES40-MGR' e acabamento/escudo Mint Green; esta peça é a AZES40-BK (preta).",
+   "A ficha longa também cita 'Escudo: Mint Green (3 camadas)' – incorreto para a versão BK."
+  ],
+  "conferir": [
+   "Conferir cor do escudo da peça.",
+   "Nut: material PPS da descrição não confirmado; largura 42 mm confirmada."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/azes40_1p_01.html",
+   "https://zedem.ca/collections/all/products/ibanez-azes40bk-az-standard-black",
+   "https://www.creamcitymusic.com/ibanez-azes40-az-standard-black/"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8327,
+  "campos": {
+   "modelo": "Schecter Synyster Gates Standard (Synyster Standard)",
+   "serie": "Signature",
+   "corpo": "Mogno",
+   "formato_corpo": "Avenger",
+   "braco_madeira": "Mogno, 3 peças, com reforço de fibra de carbono",
+   "braco_perfil": "Ultra Thin C",
+   "escala_madeira": "Ébano",
+   "escala": "648 mm (25.5″)",
+   "trastes": "24, X-jumbo",
+   "marcadores": "Pearloid 'Syn' com Death Bat na 12ª casa",
+   "captadores": "Schecter Diamond Synyster Gates (humbuckers)",
+   "hardware": "Preto",
+   "cor": "Gloss White com listras pretas (pinstripes)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Signature do Synyster Gates (Avenged Sevenfold) no corpo Avenger branco com listras pretas, escala de ébano e Floyd Rose – visual inconfundível.",
+  "tags": [
+   "hh",
+   "floyd-rose",
+   "24-trastes",
+   "signature"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Conferir na peça: construção (descrição diz bolt-on; checar se é colado/set-neck), modelo exato da ponte Floyd Rose, controles (push-pull para split), raio (descrição diz 16″) e nut (41,3 mm).",
+   "Cor do hardware: descrição diz preto mas cita 'detalhes cromados' na ponte – conferir."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8328,
+  "campos": {
+   "modelo": "Tom Anderson Drop Top Classic (1998)",
+   "fabricacao": "EUA",
+   "tampo": "Flamed maple 5A (bordo flameado)",
+   "braco_madeira": "Maple (bordo)",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "captadores": "Tom Anderson",
+   "eletrica": "Tom Anderson",
+   "ponte": "Floyd Rose",
+   "tarraxas": "Grover",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Tom Anderson Drop Top Classic de 1998 com tampo de maple flameado 5A, Floyd Rose e captação Anderson – peça de luthieria americana, toda original segundo a loja.",
+  "tags": [
+   "floyd-rose",
+   "made-in-usa",
+   "garimpo",
+   "boutique"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição curta tem erro de português: 'Fabricada pelo um dos maiores gênios Luthiers' → 'Fabricada por um dos maiores luthiers'."
+  ],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Conferir na peça e no certificado/data no tróculo do braço: madeira do corpo, configuração e modelos dos captadores (HSS/HH etc.), controles e chaves, raio, trastes, cor oficial e se acompanha case.",
+   "Confirmar que tudo é original (loja afirma)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8370,
+  "campos": {
+   "modelo": "G&L Tribute S-500",
+   "serie": "Tribute",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Hard-rock maple",
+   "braco_perfil": "Medium C",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm (12″)",
+   "trastes": "22, medium jumbo",
+   "nut_largura": "41,3 mm (1.625″)",
+   "captadores": "3 single-coils G&L MFD (SSS)",
+   "eletrica": "1 volume, sistema PTB (graves e agudos passivos), chave de 5 posições",
+   "ponte": "G&L Dual-Fulcrum vibrato",
+   "hardware": "Cromado",
+   "cor": "Preto",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "G&L Tribute S-500 em preto: projeto de Leo Fender com captadores MFD, ponte Dual-Fulcrum e controle de tonalidade PTB.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "22-trastes",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "Título 'STRAT BK' deve identificar o modelo: G&L Tribute S-500."
+  ],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Conferir madeira do corpo (descrição diz basswood), país de fabricação (etiqueta), cor do hardware e se captadores/eletrônica são originais."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8387,
+  "campos": {
+   "modelo": "Squier Affinity Series Stratocaster",
+   "serie": "Affinity",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "C",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "captadores": "3 single-coils (SSS)",
+   "eletrica": "1 volume, 2 tones, chave de 5 posições",
+   "ponte": "Tremolo sincronizado de 2 pontos",
+   "hardware": "Cromado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Squier Affinity Stratocaster: a Strat de entrada mais popular, leve e confortável, com captação SSS e tremolo de 2 pontos.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição lista alternativas para escala ('Maple ou Indian Laurel') e captadores ('Ceramic ou Fender Design') – informar o que esta peça tem."
+  ],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Identificar a geração pelo número de série (a geração 2021+ tem corpo de poplar e tremolo de 2 pontos; gerações antigas variam: alder/basswood, tremolo de 6 parafusos). Contar trastes (descrição diz 21) e conferir corpo, escala e cor."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8395,
+  "campos": {
+   "modelo": "Squier Classic Vibe '50s Stratocaster",
+   "serie": "Classic Vibe",
+   "construcao": "Bolt-on (parafusado)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "C",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "trastes": "21, narrow tall",
+   "nut_material": "Osso",
+   "nut_largura": "42 mm (1.650″)",
+   "marcadores": "Pontos pretos",
+   "captadores": "3 single-coils Fender Designed Alnico (SSS)",
+   "eletrica": "1 volume, 2 tones, chave de 5 posições",
+   "ponte": "Tremolo sincronizado vintage de 6 carrinhos",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Classic Vibe '50s Strat com braço e escala em maple, nut de osso e captadores Alnico – referência de custo-benefício vintage.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "escala-maple",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "A descrição diz corpo de Alder; fontes da geração atual (2019+) citam pinho – confirmar a geração.",
+   "Trastes listados como 'Narrow Tall ou Medium Jumbo'; as fontes da série indicam narrow tall."
+  ],
+  "conferir": [
+   "Madeira do corpo varia conforme geração/lote (pinho, alder, nato, nyatoh) – checar o ano pelo número de série.",
+   "Conferir cor e originalidade de captadores/hardware."
+  ],
+  "fontes": [
+   "https://www.zzounds.com/item--SQU0374005",
+   "https://squierwiki.com/CV+%2750s+Stratocaster",
+   "https://www.normans.co.uk/products/squier-classic-vibe-50s-stratocaster"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8402,
+  "campos": {
+   "modelo": "Fender Custom Shop 1956 Stratocaster Heavy Relic (2014)",
+   "serie": "Custom Shop",
+   "fabricacao": "EUA (Corona, Califórnia)",
+   "construcao": "Bolt-on (parafusado)",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo), 1 peça",
+   "braco_perfil": "V (10/56 Boat Neck)",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "trastes": "21",
+   "marcadores": "Pontos pretos",
+   "captadores": "3 single-coils Custom Shop (SSS), meio RWRP",
+   "eletrica": "1 volume, 2 tones, chave de 5 posições",
+   "ponte": "Tremolo sincronizado vintage",
+   "tarraxas": "Fender estilo vintage",
+   "acabamento": "Nitrocelulose fina, envelhecimento Heavy Relic",
+   "acessorios": "Case rígido tweed e certificado de autenticidade",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Custom Shop 1956 Strat Heavy Relic de 2014: alder, braço de maple em V 'boat neck', laca nitro envelhecida e captação Custom Shop.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "made-in-usa",
+   "custom-shop",
+   "relic",
+   "nitro",
+   "escala-maple",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Raio: descrição diz 9.5″, mas muitas CS '56 têm raio vintage de 7.25″ ou outro conforme a encomenda – conferir no certificado.",
+   "Nut: descrição diz 43 mm (1.6875″); confirmar (várias CS '56 têm 1.650″).",
+   "Trastes: descrição diz Dunlop 6105 'Narrow Jumbo'; 6105 é normalmente chamado de narrow/tall – conferir.",
+   "Confirmar cor, modelo dos captadores e números no certificado e na peça."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8414,
+  "campos": {
+   "modelo": "Gibson Les Paul Traditional (2012)",
+   "serie": "Traditional",
+   "fabricacao": "EUA (Nashville)",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno com alívio de peso tradicional (9 furos)",
+   "tampo": "Maple (bordo)",
+   "formato_corpo": "Les Paul (single cut)",
+   "braco_madeira": "Mogno",
+   "braco_perfil": "'50s Rounded",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "escala": "628 mm (24.75″)",
+   "raio": "305 mm (12″)",
+   "trastes": "22, medium jumbo",
+   "nut_material": "Corian",
+   "nut_largura": "43 mm (1.695″)",
+   "marcadores": "Trapézio",
+   "captadores": "Gibson '57 Classic (braço) e '57 Classic Plus (ponte), Alnico II",
+   "eletrica": "2 volumes, 2 tones, chave de 3 posições",
+   "ponte": "Tune-O-Matic com stopbar",
+   "hardware": "Cromado",
+   "cor": "Lemon Green (refinish)",
+   "acessorios": "Case rígido Gibson original",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Les Paul Traditional 2012 com corpo de mogno sem câmaras (alívio de 9 furos), braço '50s e par '57 Classic – refinish em Lemon Green.",
+  "tags": [
+   "hh",
+   "ponte-fixa",
+   "braco-colado",
+   "made-in-usa",
+   "22-trastes",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição diz 'refinish no tampo para a cor Lemon Green (Oficial Gibson)' – é contraditório: se é refinish não é acabamento de fábrica Gibson. Deixar claro que a cor não é original."
+  ],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Confirmar quem fez o refinish e se foi só o tampo ou o corpo todo; verificar se o tampo é plain ou figured.",
+   "Tarraxas: descrição cita 'TonePros / Kluson Keystone' – conferir modelo real.",
+   "Conferir se captadores e eletrônica são originais."
+  ],
+  "fontes": [],
+  "confianca": "media"
+ },
+ {
+  "id": 8426,
+  "campos": {
+   "modelo": "Gibson Nighthawk Special (1994)",
+   "serie": "Nighthawk",
+   "fabricacao": "EUA",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno com friso",
+   "tampo": "Maple (bordo)",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "escala": "648 mm (25.5″)",
+   "trastes": "22",
+   "marcadores": "Pontos",
+   "ponte": "Nighthawk fixa com cordas passantes pelo corpo",
+   "cor": "Ebony (preto)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Gibson Nighthawk Special de 1994: corpo de mogno com tampo de maple e escala de 25.5″, mistura de Les Paul com pegada Fender – modelo produzido só nos anos 90.",
+  "tags": [
+   "ponte-fixa",
+   "braco-colado",
+   "made-in-usa",
+   "22-trastes",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Conferir configuração real: descrição cita mini-humbucker no braço + humbucker inclinado na ponte (2 captadores) com chave de 5 posições – confirmar captadores, chave e controles.",
+   "Cor do hardware: descrição diz dourado – conferir.",
+   "Conferir originalidade de captadores, tarraxas e nut; verificar se acompanha case."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8433,
+  "campos": {
+   "modelo": "Ibanez AR2000 (1999)",
+   "serie": "Artist (AR) – Prestige",
+   "fabricacao": "Japão (FujiGen)",
+   "construcao": "Set-in (colado, smooth heel)",
+   "corpo": "Mogno",
+   "tampo": "Flame maple (bordo flameado)",
+   "formato_corpo": "Artist (AR) double cut",
+   "braco_madeira": "Maple (bordo), 3 peças",
+   "escala": "628 mm (24.75″)",
+   "trastes": "22, médios",
+   "nut_material": "Osso",
+   "eletrica": "2 volumes, 2 tones, chave de 3 posições",
+   "ponte": "Gibraltar II com cordal Quik Change II",
+   "hardware": "Dourado",
+   "acessorios": "Case rígido",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Ibanez AR2000 japonesa de 1999 (FujiGen): mogno com tampo flamed maple, braço colado e hardware dourado – clássico da série Artist.",
+  "tags": [
+   "hh",
+   "ponte-fixa",
+   "braco-colado",
+   "made-in-japan",
+   "22-trastes",
+   "hardware-dourado",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição dá 'Captação: GIBSON BURSTBUCKER' como especificação do modelo; a AR2000 saiu de fábrica com captadores Ibanez – se a peça tem Burstbuckers, isso é modificação e deve ser informado como tal."
+  ],
+  "conferir": [
+   "Ficha baseada só na descrição da loja: a cota de pesquisa web acabou antes deste item.",
+   "Confirmar captadores instalados (Burstbucker?) e se os originais acompanham.",
+   "Conferir madeira da escala (descrição diz rosewood com friso e pontos de abalone) e marcadores; confirmar ano pelo número de série (F99...)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ }
+]

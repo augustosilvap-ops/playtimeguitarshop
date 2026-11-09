@@ -1,0 +1,1053 @@
+[
+  {
+    "id": 6146,
+    "campos": {
+      "modelo": "Caline CP-12 Pure Sky Overdrive",
+      "fabricacao": "China",
+      "tipo_efeito": "Overdrive transparente (inspirado no Paul Cochrane Timmy)",
+      "controles": "Volume, Gain, Treble, Bass",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "acessorios": "Não acompanha fonte"
+    },
+    "descricao_curta": "Overdrive transparente de baixo ganho inspirado no Timmy, com graves e agudos que reforçam ou cortam; ótimo como boost ou drive leve.",
+    "tags": [
+      "overdrive",
+      "true-bypass",
+      "transparente",
+      "9v",
+      "made-in-china"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição mistura o efeito com o conceito do circuito: 'True Bypass' é o tipo de chaveamento, não um circuito que preserva o timbre (Reverb/listagens do CP-12)."
+    ],
+    "conferir": [
+      "Consumo divergente entre fontes (5 mA a 30 mA): não publicado oficialmente; não informar.",
+      "Acompanha caixa original?",
+      "Testar chave e jacks (pedal usado)."
+    ],
+    "fontes": [
+      "https://reverb.com/item/96513479-caline-cp-12-pure-sky-transparent-overdrive-timmy",
+      "https://www.galaxus.fr/en/s1/product/caline-cp-12-pure-sky-overdrive-overdrive-audio-effects-46492722"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6149,
+    "campos": {
+      "modelo": "AMT Electronics WH-1 Japanese Girl Wah",
+      "fabricacao": "Rússia",
+      "tipo_efeito": "Wah-wah com sensor óptico",
+      "controles": "Pedal de expressão (sensor óptico)",
+      "chaves": "Chave de 3 posições para faixa de frequência (0,2–1 kHz / 0,3–1,5 kHz / 0,4–2 kHz); footswitch liga/desliga",
+      "alimentacao": "9–12V DC, centro negativo",
+      "consumo_ma": "7 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "dimensoes": "110 × 62 × 58 mm",
+      "peso_produto": "450 g (sem bateria)"
+    },
+    "descricao_curta": "Wah óptico ultracompacto russo, sem potenciômetro para gastar, com chave de 3 faixas de frequência — cabe em qualquer pedalboard.",
+    "tags": [
+      "wah",
+      "optico",
+      "true-bypass",
+      "compacto",
+      "made-in-russia"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 12
+    },
+    "correcoes": [],
+    "conferir": [
+      "Confirmar se é WH-1 (guitarra) e não WH-1B (baixo, faixas diferentes) pela etiqueta.",
+      "Acompanha fonte? (não há espaço interno para bateria)",
+      "Testar curso do pedal e a chave de faixa."
+    ],
+    "fontes": [
+      "https://online.berklee.edu/takenote/?p=2247",
+      "https://equipboard.com/items/amt-japanese-girl-wah",
+      "https://reverb.com/item/470765-amt-electronics-japanese-girl-wah-wh-1-amt-electronics-japanese-girl-wah-wh-1"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6152,
+    "campos": {
+      "modelo": "Boss RV-2 Digital Reverb",
+      "fabricacao": "Japão",
+      "tipo_efeito": "Reverb digital (com modo de delay)",
+      "controles": "E.Level, Tone, Reverb Time, Mode (6 modos: Room, Hall 1, Hall 2, Plate, Gate e Delay)",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "Bateria 9V ou fonte Boss série PSA",
+      "consumo_ma": "130 mA",
+      "conexoes": "Entrada e saída P10 (1/4\")",
+      "dimensoes": "70 × 125 × 55 mm (dado Roland)",
+      "peso_produto": "420 g"
+    },
+    "descricao_curta": "Reverb digital vintage da Boss (1987–1990), primeiro reverb compacto da marca, com 6 modos incluindo gate e delay.",
+    "tags": [
+      "reverb",
+      "digital",
+      "vintage",
+      "boss",
+      "made-in-japan",
+      "anos-80"
+    ],
+    "envio": {
+      "peso_kg": 0.7,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição cita só 4 tipos (Room, Hall, Plate, Gated); o RV-2 tem 6 modos, incluindo dois Halls e um modo Delay (Roland/Modulargrid)."
+    ],
+    "conferir": [
+      "Tem alto consumo (cerca de 130 mA): avisar que bateria dura pouco e que precisa de fonte com corrente suficiente.",
+      "Conferir etiqueta (Made in Japan) e número de série para datar.",
+      "Acompanha fonte PSA ou caixa original?"
+    ],
+    "fontes": [
+      "https://support.roland.com/hc/en-us/articles/201967749-RV-2-Specifications",
+      "https://modulargrid.net/p/boss-rv-2-digital-reverb"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6155,
+    "campos": {
+      "modelo": "Carl Martin Rock Bug",
+      "fabricacao": "Dinamarca (East Sound Research)",
+      "tipo_efeito": "Simulador de amplificador/gabinete e amp de fone",
+      "controles": "Guitar (nível do instrumento), Master (nível geral, inclui Aux)",
+      "chaves": "Mini chave Open/Closed (simulação de gabinete aberto/fechado)",
+      "alimentacao": "Bateria 9V ou fonte 9V DC opcional",
+      "conexoes": "Entrada P10 de instrumento, entrada auxiliar estéreo, saída de fone P10, saída XLR balanceada",
+      "peso_produto": "Aprox. 450 g (1 lb)"
+    },
+    "descricao_curta": "Simulador analógico de amp e gabinete dinamarquês para estudar no fone ou gravar direto na mesa pela saída XLR.",
+    "tags": [
+      "simulador-de-amp",
+      "di",
+      "fone",
+      "made-in-denmark",
+      "analogico"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição lista controles Volume, Tone e Aux Input Level; os controles reais são Guitar e Master, mais a mini chave Open/Closed (manual Rock Bug / Thomann)."
+    ],
+    "conferir": [
+      "Conferir o tipo de jack da entrada auxiliar (RCA estéreo ou P2) na peça.",
+      "Testar saída XLR e de fone.",
+      "Acompanha fonte?"
+    ],
+    "fontes": [
+      "https://images.static-thomann.de/pics/atg/atgdata/document/brochure/223083_manual_rock_bug.pdf",
+      "https://www.greentoe.com/product/Carl_Martin_RockBug",
+      "https://deathcloud.com/products/carl-martin-rock-bug"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6158,
+    "campos": {
+      "modelo": "Catalinbread Galileo",
+      "fabricacao": "EUA (Portland, Oregon)",
+      "tipo_efeito": "Treble booster + overdrive (som de Brian May: Rangemaster em AC30)",
+      "controles": "Volume, Tone, Gain",
+      "chaves": "Dois footswitches independentes: overdrive e Top Boost (treble booster)",
+      "alimentacao": "9V DC, centro negativo (aceita bateria)",
+      "consumo_ma": "5 mA"
+    },
+    "descricao_curta": "Pedal duplo da Catalinbread que recria o timbre de Brian May: treble booster estilo Rangemaster somado a um overdrive estilo AC30.",
+    "tags": [
+      "overdrive",
+      "treble-booster",
+      "brian-may",
+      "made-in-usa",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 0.7,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição diz que é 'Treble Booster & Echo' com controles Echo Level, Feedback, Time e Mix; o Galileo não tem delay/eco — é treble booster + overdrive com Volume, Tone e Gain (manual Catalinbread / Premier Guitar)."
+    ],
+    "conferir": [
+      "Conferir se é o Galileo original, MKII ou 4K (o 4K tem Bass e Treble separados); ajustar controles conforme a peça.",
+      "Acompanha caixa/manual?"
+    ],
+    "fontes": [
+      "https://cdn.shopify.com/s/files/1/0370/1873/0628/files/galileo.pdf",
+      "https://www.premierguitar.com/gear/catalinbread-galileo-pedal-review"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6162,
+    "campos": {
+      "modelo": "Danelectro BAC-1 Back Talk Reverse Delay",
+      "fabricacao": "China",
+      "tipo_efeito": "Delay reverso",
+      "controles": "Speed (tempo), Repeats (realimentação), Mix",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "9V DC (reedição não aceita bateria)",
+      "consumo_ma": "82 mA",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Reedição do clássico delay reverso da Danelectro dos anos 90, para efeitos de 'fita ao contrário' psicodélicos.",
+    "tags": [
+      "delay",
+      "reverse",
+      "danelectro"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "O nome correto é 'Back Talk' (não 'Black Talk').",
+      "A descrição omite o controle Repeats; são três controles: Speed, Repeats e Mix (Thomann).",
+      "O BAC-1 é delay reverso (repetições invertidas), não processamento 'reverse' do sinal inteiro."
+    ],
+    "conferir": [
+      "Confirmar se é a reedição ou o original dos anos 90 (o original aceitava bateria).",
+      "Acompanha fonte?"
+    ],
+    "fontes": [
+      "https://www.thomann.de/be/danelectro_back_talk_reverse_delay.htm",
+      "https://foundsound.com.au/products/28930",
+      "https://www.guitarbrothers.com.au/products/danelectro-talk-back-reverse-delay-pedal"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6165,
+    "campos": {
+      "modelo": "Danelectro SKJ-1 Spring King Junior",
+      "fabricacao": "China",
+      "tipo_efeito": "Reverb de mola real (tanque de molas interno)",
+      "controles": "Reverb, Tone",
+      "chaves": "Footswitch (soft-switch)",
+      "alimentacao": "9V DC (sem compartimento de bateria)",
+      "bypass": "True bypass (soft-switch)",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "dimensoes": "Aprox. 64 × 152 × 54 mm (2,5″ × 6″ × 2,125″)"
+    },
+    "descricao_curta": "Reverb com tanque de molas de verdade num gabinete de pedalboard, para o splash clássico de amp vintage.",
+    "tags": [
+      "reverb",
+      "mola",
+      "analogico",
+      "true-bypass",
+      "danelectro"
+    ],
+    "envio": {
+      "peso_kg": 0.9,
+      "comprimento_cm": 25,
+      "largura_cm": 15,
+      "altura_cm": 12
+    },
+    "correcoes": [
+      "A descrição lista Volume, Tone e Depth; o SKJ-1 tem só Reverb e Tone (Thomann/Bonedo).",
+      "A descrição diz que aceita bateria; o SKJ-1 não tem compartimento de bateria, só fonte 9V DC."
+    ],
+    "conferir": [
+      "Testar o tanque de molas (batida no pedal deve dar o 'crash' típico, sem chiado anormal).",
+      "Acompanha fonte?"
+    ],
+    "fontes": [
+      "https://thomannmusic.com/danelectro_skj_1_spring_king_junior.htm",
+      "https://www.guitarworld.com/gear/effects-pedals/danelectro-spring-king-junior-review"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6173,
+    "campos": {
+      "modelo": "DOD Boneshaker",
+      "fabricacao": "EUA (projeto Black Arts Toneworks)",
+      "tipo_efeito": "Distorção com EQ paramétrico de 3 bandas",
+      "controles": "Distortion, Depth, Level, Low, Low Freq, Mid, Mid Freq, High, High Freq",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "Bateria 9V ou fonte 9V DC (não inclusa)",
+      "consumo_ma": "20 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 TS (1/4\")",
+      "dimensoes": "119 × 67 × 57 mm",
+      "peso_produto": "Aprox. 450 g",
+      "acessorios": "Sem fonte"
+    },
+    "descricao_curta": "Distorção de alto ganho com EQ paramétrico de 3 bandas e controle Depth, ótima para metal e instrumentos de extensão estendida.",
+    "tags": [
+      "distorcao",
+      "eq-parametrico",
+      "true-bypass",
+      "high-gain",
+      "dod"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição chama as bandas de 'Depth (Graves), Mids, Treble'; o pedal tem Depth separado e EQ com Low, Mid e High, cada um com controle de frequência (manual Harman/DOD)."
+    ],
+    "conferir": [
+      "Confirmar país de fabricação na etiqueta (não confirmado).",
+      "Caixa original?"
+    ],
+    "fontes": [
+      "https://www.harmanaudio.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw12ffab9a/pdfs/Manual - Boneshaker.pdf",
+      "https://www.bhphotovideo.com/c/product/1116777-REG/digitech_usm_boneshaker_distortion_pedal_with_parametric.html"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6176,
+    "campos": {
+      "modelo": "DOD Overdrive Preamp 250",
+      "tipo_efeito": "Overdrive / preamp",
+      "controles": "Gain, Level",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "Bateria 9V ou fonte 9V DC",
+      "conexoes": "Entrada e saída P10 (1/4\")",
+      "acessorios": "Sem fonte"
+    },
+    "descricao_curta": "Clássico overdrive DOD 250 de dois knobs, o mesmo circuito simples usado por gerações como drive ou boost.",
+    "tags": [
+      "overdrive",
+      "preamp",
+      "dod",
+      "classico"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Identificar versão: reedição (true bypass, LED azul) ou modelo vintage/250-X; isso muda bypass e construção.",
+      "Conferir etiqueta para país de fabricação.",
+      "Caixa original?"
+    ],
+    "fontes": [
+      "https://guitarplayer.com/reviews/dod-50th-anniversary-OD-Preamp-250-pedal",
+      "https://www.georgesmusic.com/products/dod-overdrive-preamp-250-true-bypass-pedal"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6179,
+    "campos": {
+      "modelo": "Mooer Groove Loop X2",
+      "fabricacao": "China",
+      "tipo_efeito": "Looper estéreo com bateria eletrônica",
+      "controles": "Loop (volume), Speed, Drum (volume) e seleção de gênero/padrão",
+      "chaves": "2 footswitches (gravar/reproduzir/overdub/parar, bateria e tap tempo)",
+      "alimentacao": "9V DC, centro negativo (2,1 × 5,5 mm)",
+      "consumo_ma": "300 mA",
+      "conexoes": "2 entradas P10 (estéreo), 2 saídas P10 (estéreo), entrada P2 TRS para controle externo",
+      "dimensoes": "115 × 75 × 33 mm",
+      "peso_produto": "334 g"
+    },
+    "descricao_curta": "Looper estéreo com 10 min por faixa, 14 slots de memória e bateria eletrônica com 121 grooves em 11 estilos, num gabinete compacto.",
+    "tags": [
+      "looper",
+      "bateria-eletronica",
+      "estereo",
+      "mooer"
+    ],
+    "envio": {
+      "peso_kg": 0.7,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Acompanha a fonte original? (o fabricante fornece fonte 9V)",
+      "Testar gravação/overdub e os dois footswitches."
+    ],
+    "fontes": [
+      "https://www.stringsandthings.co.uk/mooer-x2-series-groove-loop-mx2gl",
+      "https://www.bonedo.de/artikel/mooer-groove-loop-x2-test/",
+      "https://www.thomann.de/be/mooer_groove_loop_x2.htm"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6182,
+    "campos": {
+      "modelo": "DigiTech TRIO+ Band Creator + Looper",
+      "fabricacao": "Projeto EUA (Harman)",
+      "tipo_efeito": "Gerador de banda (baixo e bateria) + looper",
+      "controles": "Genre, Style, Tempo, Bass, Drums, Loop, Headphone; botão Song Part",
+      "chaves": "2 footswitches (Band e Looper)",
+      "alimentacao": "9V DC (fonte PS0913DC inclusa)",
+      "consumo_ma": "800 mA",
+      "conexoes": "Guitar In, Amp Out, Mixer Out, FX Send, FX Return, Control In (TRS), fone, mini-USB, slot microSD",
+      "dimensoes": "137 × 108 × 64 mm (5,4″ × 4,25″ × 2,5″)",
+      "peso_produto": "660 g",
+      "acessorios": "Fonte 9V (de fábrica)"
+    },
+    "descricao_curta": "Pedal que 'aprende' sua progressão e cria baixo e bateria automaticamente, com looper integrado — banda de bolso para estudo e show solo.",
+    "tags": [
+      "looper",
+      "acompanhamento",
+      "bateria-eletronica",
+      "digitech"
+    ],
+    "envio": {
+      "peso_kg": 1.2,
+      "comprimento_cm": 25,
+      "largura_cm": 20,
+      "altura_cm": 12
+    },
+    "correcoes": [],
+    "conferir": [
+      "Acompanha a fonte original (PS0913DC, 800 mA)? Sem ela o pedal precisa de fonte de alta corrente.",
+      "Há cartão microSD junto?",
+      "Footswitch externo FS3X acompanha?"
+    ],
+    "fontes": [
+      "https://support.harmanaudio.com/speakers/speakers-accessories/TRIOPLUS.html",
+      "https://rockboard.de/en/pedalPedia/DigiTech/Trio-Band-Creator--Looper/68977517"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6185,
+    "campos": {
+      "modelo": "Albieri Disjuntor Azul",
+      "fabricacao": "Brasil (artesanal)",
+      "tipo_efeito": "Overdrive / distorção",
+      "controles": "Volume, Gain, Tone",
+      "alimentacao": "9V DC, centro negativo"
+    },
+    "descricao_curta": "Pedal artesanal brasileiro de drive com controles de volume, ganho e tonalidade.",
+    "tags": [
+      "overdrive",
+      "distorcao",
+      "artesanal",
+      "made-in-brazil"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Nenhuma especificação encontrada online; dados vêm só da descrição da loja.",
+      "Conferir na peça: controles, tipo de bypass, jacks, entrada de bateria e se é overdrive ou distorção.",
+      "Medir dimensões e peso."
+    ],
+    "fontes": [],
+    "confianca": "baixa"
+  },
+  {
+    "id": 6195,
+    "campos": {
+      "modelo": "Fishman Aura Spectrum DI (PRO-AUR-SPC)",
+      "fabricacao": "EUA (projeto Fishman)",
+      "tipo_efeito": "Preamp/DI para violão com imagens acústicas Aura",
+      "controles": "Volume, Blend, seleção de imagem, compressor, EQ de 3 bandas, trim de entrada",
+      "chaves": "Footswitches para afinador (mute) e anti-feedback; chave de fase",
+      "alimentacao": "Bateria 9V ou fonte Fishman 910R (vendida à parte)",
+      "conexoes": "Entrada P10, saída P10 para amp/PA, saída XLR balanceada (DI), loop de efeitos P10, USB",
+      "acessorios": "Software Aura Image Gallery (download)"
+    },
+    "descricao_curta": "Preamp/DI acústico com 128 imagens Aura que simulam microfonação de estúdio, afinador, compressor e supressor de microfonia automático.",
+    "tags": [
+      "violao",
+      "preamp",
+      "di",
+      "xlr",
+      "afinador",
+      "fishman"
+    ],
+    "envio": {
+      "peso_kg": 1.1,
+      "comprimento_cm": 25,
+      "largura_cm": 20,
+      "altura_cm": 12
+    },
+    "correcoes": [
+      "A descrição diz que o adaptador AC vem incluso; de fábrica a fonte 910R é vendida à parte (Drummond Musique/max.guitars)."
+    ],
+    "conferir": [
+      "Acompanha fonte? Se sim, qual modelo.",
+      "Conferir cabo USB e caixa/manual.",
+      "Testar saída XLR e afinador."
+    ],
+    "fontes": [
+      "https://www.soundonsound.com/reviews/fishman-aura-spectrum",
+      "https://www.premierguitar.com/fishman-announces-aura-spectrum-di-preamp",
+      "https://www.zzounds.com/item--FSMAURSPC"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6196,
+    "campos": {
+      "modelo": "Flamma FC07 Drive (provável)",
+      "fabricacao": "China",
+      "tipo_efeito": "Overdrive",
+      "controles": "Volume, Tone, Overdrive",
+      "chaves": "Chave Warm/Hot; footswitch",
+      "alimentacao": "9V DC",
+      "bypass": "True bypass",
+      "peso_produto": "153 g"
+    },
+    "descricao_curta": "Overdrive compacto da Flamma com modos Warm e Hot, true bypass e gabinete metálico de mini pedal.",
+    "tags": [
+      "overdrive",
+      "mini-pedal",
+      "true-bypass",
+      "flamma"
+    ],
+    "envio": {
+      "peso_kg": 0.5,
+      "comprimento_cm": 18,
+      "largura_cm": 12,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Confirmar o código do modelo na etiqueta (FC07); a Flamma tem vários drives.",
+      "Acompanha fonte/caixa?"
+    ],
+    "fontes": [
+      "https://www.pedal-of-the-day.com/2021/10/01/flamma-innovation-fc07-drive/",
+      "https://www.rockboard.de/en/pedalPedia/Flamma/FC07-Drive/313933933/"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6202,
+    "campos": {
+      "modelo": "Friedman BE-OD",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Overdrive/distorção 'amp-in-a-box' (Friedman BE-100)",
+      "controles": "Volume, Gain, Tight, Bass, Treble, Presence; trimpot interno de ganho",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "9–18V DC, centro negativo (sem bateria)",
+      "bypass": "True bypass",
+      "dimensoes": "121 × 64 × 64 mm (4,75″ × 2,5″ × 2,25″)"
+    },
+    "descricao_curta": "O som do cabeçote Friedman BE-100 num pedal: drive britânico de alto ganho com Tight e Presence para afinar o ataque.",
+    "tags": [
+      "overdrive",
+      "distorcao",
+      "amp-in-a-box",
+      "true-bypass",
+      "made-in-usa",
+      "high-gain"
+    ],
+    "envio": {
+      "peso_kg": 0.7,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Consumo divergente entre fontes; não informado.",
+      "Confirmar país na etiqueta e se é o BE-OD (um canal) e não o BE-OD Deluxe.",
+      "Caixa original?"
+    ],
+    "fontes": [
+      "https://gearank.com/gear/friedman-be-od",
+      "https://www.zzounds.com/pagearea--61/item--FRDBEOD"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6205,
+    "campos": {
+      "modelo": "Empress Effects Fuzz",
+      "fabricacao": "Canadá",
+      "tipo_efeito": "Fuzz analógico",
+      "controles": "Gain, Treble, Bass, Output",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "9V DC, centro negativo (plug 2,1 mm)",
+      "consumo_ma": "30 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada (300 kΩ) e saída P10 (1/4\")"
+    },
+    "descricao_curta": "Fuzz analógico da canadense Empress com EQ de agudos e graves (shelving), versátil para guitarra e baixo.",
+    "tags": [
+      "fuzz",
+      "analogico",
+      "true-bypass",
+      "made-in-canada",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A marca está cadastrada como 'Fuzz'; o correto é Empress Effects.",
+      "A descrição lista Fuzz, Output, Tone e Bias e uma chave Smooth/Bright; o manual oficial indica Gain, Treble, Bass e Output, sem chave de voz (manual Empress Fuzz)."
+    ],
+    "conferir": [
+      "Conferir os rótulos dos knobs na peça.",
+      "Acompanha caixa/manual?"
+    ],
+    "fontes": [
+      "https://empresseffects.com/cdn/shop/files/fuzz.pdf",
+      "https://www.horn-fx.com/complexity-simple/empress-fuzz"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6208,
+    "campos": {
+      "modelo": "Hermida Audio EPH-3 Tape Echo Simulator",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Delay digital simulador de eco de fita (EP-3)",
+      "alimentacao": "9V DC (fonte não inclusa)",
+      "bypass": "True bypass"
+    },
+    "descricao_curta": "Simulador digital de eco de fita inspirado no Echoplex EP-3, de Alfonso Hermida (marca depois incorporada à Lovepedal).",
+    "tags": [
+      "delay",
+      "tape-echo",
+      "true-bypass",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Fontes divergem sobre controles (Level/Delay/Feedback vs Mix/Delay/Feedback/Flutter): conferir rótulos na peça.",
+      "Tempo máximo divergente (600 ou 700 ms).",
+      "Conferir se é versão Hermida ou Lovepedal."
+    ],
+    "fontes": [
+      "https://delaydude.de/en/lovepedal-hermida-eph-3/",
+      "https://rockboard.de/en/pedalPedia/Hermida-Audio/EPH--3-Tape-Echo-Simulator/322628294"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6213,
+    "campos": {
+      "modelo": "Hiwatt Tube Tremolo",
+      "tipo_efeito": "Tremolo valvulado",
+      "controles": "Depth, Speed, Wave (senoidal a quadrada), Master",
+      "alimentacao": "18V (fonte própria)",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Tremolo com válvula 12AU7 real e controle Wave que vai de onda senoidal a quadrada.",
+    "tags": [
+      "tremolo",
+      "valvulado",
+      "modulacao",
+      "hiwatt"
+    ],
+    "envio": {
+      "peso_kg": 1.0,
+      "comprimento_cm": 25,
+      "largura_cm": 18,
+      "altura_cm": 12
+    },
+    "correcoes": [],
+    "conferir": [
+      "Confirmar a válvula instalada (12AU7) e seu estado.",
+      "Acompanha a fonte 18V original? Não usar fonte 9V.",
+      "Conferir país de fabricação na etiqueta."
+    ],
+    "fontes": [
+      "https://mmguitarbar.com/products/hiwatt-tube-tremolo-guitar-effects-pedal-w-box-power-supply",
+      "https://www.artofguitar.me/products/hiwatt-tube-tremolo"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6225,
+    "campos": {
+      "modelo": "Ibanez DE7 Delay/Echo (Tone-Lok)",
+      "fabricacao": "China",
+      "tipo_efeito": "Delay digital / Echo",
+      "controles": "Level, Repeat, Delay Time; Range (3 faixas: 30–160 ms, 120–650 ms, 480–2600 ms); Mode (Delay/Echo)",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "Bateria 9V (006P) ou fonte 9V DC (Ibanez AC109/AC309/AC509)",
+      "conexoes": "Entrada, saída Mono Out e saída Dry Out P10",
+      "dimensoes": "125 × 75 × 53 mm",
+      "peso_produto": "460 g (com bateria)"
+    },
+    "descricao_curta": "Delay de até 2,6 s com modo Echo de repetições mais escuras e knobs retráteis Tone-Lok que não desregulam no palco.",
+    "tags": [
+      "delay",
+      "echo",
+      "tone-lok",
+      "ibanez"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição chama as saídas de 'estéreo Wet/Dry'; a ficha da Ibanez indica saídas Mono Out e Dry Out (pode ser usado em dois amps, mas não é estéreo verdadeiro)."
+    ],
+    "conferir": [
+      "Testar se os knobs Tone-Lok recolhem e travam.",
+      "Conferir tampa da bateria e caixa original."
+    ],
+    "fontes": [
+      "https://cf3.zzounds.com/media/DE7-63a9be01c34fd3abe7b6904e65a3ee64.pdf",
+      "https://delaydude.de/en/ibanez-de-7/"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6228,
+    "campos": {
+      "modelo": "IK Multimedia iRig BlueBoard",
+      "fabricacao": "Itália (projeto IK Multimedia)",
+      "tipo_efeito": "Controlador MIDI Bluetooth (pedaleira controladora)",
+      "controles": "4 pads retroiluminados programáveis",
+      "chaves": "4 footswitches (pads)",
+      "alimentacao": "4 pilhas AAA (alcalinas ou zinco-carbono, não recarregáveis)",
+      "conexoes": "Bluetooth LE (alcance até 10 m); 2 entradas P10 TRS para pedal de expressão/footswitch",
+      "peso_produto": "250 g"
+    },
+    "descricao_curta": "Controlador MIDI sem fio para iOS e Mac: 4 pads iluminados para trocar presets em apps como AmpliTube sem cabos.",
+    "tags": [
+      "controlador-midi",
+      "bluetooth",
+      "ios",
+      "sem-fio"
+    ],
+    "envio": {
+      "peso_kg": 0.7,
+      "comprimento_cm": 30,
+      "largura_cm": 15,
+      "altura_cm": 8
+    },
+    "correcoes": [
+      "A marca está cadastrada como 'Irig'; o fabricante é IK Multimedia (iRig é a linha)."
+    ],
+    "conferir": [
+      "Testar pareamento Bluetooth e os 4 pads.",
+      "Conferir compartimento de pilhas (oxidação).",
+      "Acompanha caixa?"
+    ],
+    "fontes": [
+      "https://www.musicmatter.co.uk/ik-multimedia-irig-blueboard",
+      "https://manuals.plus/ik-multimedia/irig-blueboard-wireless-midi-controller-page-turner-manual.pdf",
+      "https://midi.org/ik-multimedia-irig-blueboard"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6231,
+    "campos": {
+      "modelo": "Joyo JF-10 Dyna Compressor",
+      "fabricacao": "China",
+      "tipo_efeito": "Compressor (estilo MXR Dyna Comp)",
+      "controles": "Sustain, Attack, Level",
+      "chaves": "Footswitch liga/desliga",
+      "alimentacao": "9V DC, centro negativo ou bateria 9V",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\")",
+      "dimensoes": "120 × 64 × 55 mm",
+      "peso_produto": "Aprox. 300 g"
+    },
+    "descricao_curta": "Compressor clássico estilo Dyna Comp, com Attack ajustável, para sustain e regularidade em limpos e funk.",
+    "tags": [
+      "compressor",
+      "true-bypass",
+      "joyo",
+      "made-in-china"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição lista só Sustain e Level; o JF-10 tem três controles: Sustain, Attack e Level (swamp.net.au / manuais)."
+    ],
+    "conferir": [
+      "Acompanha fonte/caixa?"
+    ],
+    "fontes": [
+      "https://www.swamp.net.au/joyo-jf-10-dyna-compressor-guitar-pedal",
+      "https://www.waltons.ie/product/dyna-compressor"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6237,
+    "campos": {
+      "modelo": "Meris LVX Modular Delay System",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Delay modular / multiefeitos de delay",
+      "alimentacao": "9V DC, centro negativo (mínimo 300 mA, fonte não inclusa)",
+      "consumo_ma": "300 mA (mínimo da fonte)",
+      "conexoes": "2 entradas e 2 saídas P10 (estéreo real), entrada de pedal de expressão, MIDI In e MIDI Out/Thru (DIN 5 pinos), USB-C (atualização)",
+      "dimensoes": "184 × 114 × 51 mm (7,25″ × 4,5″ × 2″)",
+      "peso_produto": "680 g (24 oz)"
+    },
+    "descricao_curta": "Sistema de delay modular da Meris, estéreo real com MIDI e presets — um dos delays mais completos do mercado.",
+    "tags": [
+      "delay",
+      "estereo",
+      "midi",
+      "presets",
+      "made-in-usa",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 1.3,
+      "comprimento_cm": 25,
+      "largura_cm": 20,
+      "altura_cm": 12
+    },
+    "correcoes": [
+      "A descrição diz peso aprox. 0,6 kg; 24 oz equivale a cerca de 680 g (Meris)."
+    ],
+    "conferir": [
+      "Conferir versão do firmware.",
+      "Acompanha caixa/manual?",
+      "Testar entradas/saídas estéreo e MIDI."
+    ],
+    "fontes": [
+      "https://www.meris.us/product/lvx",
+      "https://www.thomann.de/be/meris_lvx_modular_delay_system.htm"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6240,
+    "campos": {
+      "modelo": "Mooer Micro Preamp 017 Cali MK IV",
+      "fabricacao": "China",
+      "tipo_efeito": "Preamp digital de 2 canais (inspirado no Mesa/Boogie Mark IV)",
+      "controles": "Por canal: Volume, Gain, Bass, Middle, Treble",
+      "chaves": "Footswitch (liga/desliga ou troca de canal); simulador de gabinete on/off",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "consumo_ma": "300 mA",
+      "conexoes": "Entrada P10 (1 MΩ), saída P10 (100 Ω)",
+      "dimensoes": "93,5 × 42 × 52 mm",
+      "peso_produto": "160 g"
+    },
+    "descricao_curta": "Preamp de dois canais inspirado no Mesa Mark IV com simulador de gabinete, para ligar direto na mesa ou no retorno de amp.",
+    "tags": [
+      "preamp",
+      "simulador-de-gabinete",
+      "mini-pedal",
+      "mooer"
+    ],
+    "envio": {
+      "peso_kg": 0.5,
+      "comprimento_cm": 18,
+      "largura_cm": 12,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Acompanha fonte/caixa?",
+      "Testar troca de canais e saída com simulador de gabinete."
+    ],
+    "fontes": [
+      "https://lazermusic.com.ph/products/mooer-017-cali-mkiv-micro-preamp-effects-pedal",
+      "https://www.bonedo.de/artikel/mooer-micro-preamp-017-cali-mk-iv-test/"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6243,
+    "campos": {
+      "modelo": "Mooer Green Mile (MOD1)",
+      "fabricacao": "China",
+      "tipo_efeito": "Overdrive (estilo Tube Screamer)",
+      "controles": "Level, Tone, Overdrive",
+      "chaves": "Chave Warm/Hot; footswitch",
+      "alimentacao": "9V DC, centro negativo (sem bateria)",
+      "consumo_ma": "7 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada P10 (500 kΩ), saída P10 (10 kΩ)",
+      "dimensoes": "93,5 × 42 × 52 mm",
+      "peso_produto": "150 g"
+    },
+    "descricao_curta": "Mini overdrive estilo Tube Screamer com modos Warm e Hot, true bypass e consumo baixíssimo.",
+    "tags": [
+      "overdrive",
+      "tube-screamer",
+      "mini-pedal",
+      "true-bypass",
+      "mooer"
+    ],
+    "envio": {
+      "peso_kg": 0.5,
+      "comprimento_cm": 18,
+      "largura_cm": 12,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Acompanha fonte/caixa?"
+    ],
+    "fontes": [
+      "https://www.promenademusic.co.uk/Mooer-Green-Mile-Overdrive-Pedal",
+      "https://www.andertons.co.uk/mooer-green-mile-overdrive-pedal-moomod1"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6249,
+    "campos": {
+      "modelo": "MXR M135 Smart Gate",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Noise gate",
+      "controles": "Threshold (sensibilidade)",
+      "chaves": "Chave de 3 posições Hiss / Mid / Full; footswitch liga/desliga",
+      "alimentacao": "Bateria 9V ou fonte 9V DC (Dunlop ECB003)",
+      "consumo_ma": "15 mA",
+      "bypass": "Hardwire (true bypass)",
+      "conexoes": "Entrada (1 MΩ) e saída (1 kΩ) P10 (1/4\")",
+      "peso_produto": "350 g"
+    },
+    "descricao_curta": "Noise gate MXR com chave de 3 faixas (Hiss/Mid/Full) que fecha rápido em palhetadas abafadas e preserva o sustain.",
+    "tags": [
+      "noise-gate",
+      "true-bypass",
+      "mxr",
+      "made-in-usa"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Confirmar país de fabricação na etiqueta.",
+      "Acompanha fonte/caixa?"
+    ],
+    "fontes": [
+      "https://manualmachine.com/dunlop/mxrm135smartgate/19061847-data-sheet",
+      "https://www.boullard.ch/en/product/guitars-bass/electric-acoustic-guitar-effects/effects-pedal/egaliseurs/111702-mxr-m135-smart-gate/",
+      "https://chucklevins.com/products/mxr-smart-gatre-noise-gate-electric-guitar-pedal"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6252,
+    "campos": {
+      "modelo": "Neunaber ExP Controller",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Controlador de presets para pedais Neunaber série Expanse",
+      "controles": "Seleção de 4 efeitos com 2 presets cada; LEDs multicoloridos",
+      "conexoes": "Porta ExP (cabo Cat5, 30 cm incluso); 3 entradas de expressão; entrada Preset Morph",
+      "alimentacao": "Alimentado pelo pedal Expanse conectado",
+      "dimensoes": "117 × 73 × 51 mm",
+      "peso_produto": "200 g",
+      "acessorios": "Cabo ExP de 30 cm (de fábrica)"
+    },
+    "descricao_curta": "Controlador que libera presets, expressão e morph nos pedais Neunaber da série Expanse — só funciona com eles.",
+    "tags": [
+      "controlador",
+      "presets",
+      "neunaber",
+      "made-in-usa"
+    ],
+    "envio": {
+      "peso_kg": 0.5,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 8
+    },
+    "correcoes": [],
+    "conferir": [
+      "Acompanha o cabo ExP?",
+      "Avisar no anúncio que não funciona sozinho: precisa de pedal Neunaber Expanse/compatível."
+    ],
+    "fontes": [
+      "https://www.imuso.co.uk/itm/neunaber-exp-controller",
+      "https://www.quilterlabs.com/pages/exp-tips-and-tricks"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6255,
+    "campos": {
+      "modelo": "Neunaber Seraphim Shimmer",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Reverb shimmer",
+      "controles": "Mix, Depth, Shimmer",
+      "alimentacao": "9V DC, centro negativo",
+      "consumo_ma": "Aprox. 100 mA",
+      "conexoes": "Entrada e saída P10 (1/4\")"
+    },
+    "descricao_curta": "Reverb shimmer de alta qualidade da Neunaber, com camada de oitava suave para ambiências etéreas.",
+    "tags": [
+      "reverb",
+      "shimmer",
+      "ambiente",
+      "made-in-usa",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 0.6,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Identificar versão: Seraphim original mono/estéreo (bypass selecionável true/buffered) ou v2 (só buffered); o tipo de bypass e a compatibilidade com ExP dependem disso.",
+      "Conferir se é mono ou estéreo (número de jacks).",
+      "Acompanha caixa/fonte?"
+    ],
+    "fontes": [
+      "https://www.quilterlabs.com/pages/seraphim-user-guide",
+      "https://reverb.com/item/40655959-neunaber-audio-seraphim-shimmer-true-bypass",
+      "https://www.rockboard.de/en/pedalPedia/Neunaber/Seraphim-Shimmer-V2/173229128/"
+    ],
+    "confianca": "media"
+  }
+]

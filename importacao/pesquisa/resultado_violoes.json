@@ -1,0 +1,1471 @@
+[
+ {
+  "id": 1675,
+  "campos": {
+   "modelo": "Takamine GD11MCE (G-Series, linha G11)",
+   "serie": "G-Series",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Mogno",
+   "corpo": "Mogno (fundo e laterais)",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Laurel",
+   "eletrica": "Preamp Takamine TP-4T com afinador cromático e EQ",
+   "acabamento": "Acetinado (fosco)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Takamine GD11MCE all-mahogany: dreadnought com cutaway, mogno no tampo, fundo, laterais e braço, acabamento acetinado e preamp TP-4T com afinador.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "cutaway",
+   "all-mahogany",
+   "cordas-de-aco",
+   "fosco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A descrição curta chama MGS de 'Mahogany Gloss/Satin', mas o acabamento é acetinado; MGS é o código usado no Brasil para Mahogany Satin (no exterior o mesmo modelo é vendido como GD11MCE-NS, Natural Satin).",
+   "A descrição informa nut de 42,8 mm; as fichas de revendedores do GD11MCE indicam 42,5 mm (comprimento de escala 644 mm). Medir na peça.",
+   "Texto da descrição curta está truncado ('permite que a madeira vi') e usa grafia de Portugal ('excecionalmente', 'harmónicos'); revisar."
+  ],
+  "conferir": [
+   "Medir largura do nut (42,5 mm x 42,8 mm) e comprimento de escala (644 mm segundo revendedores).",
+   "Fontes divergem sobre a madeira do tampo (mogno x sapele em alguns anúncios); conferir etiqueta/etiqueta interna.",
+   "Tampo não é anunciado como maciço em nenhuma fonte; tratar como laminado salvo confirmação.",
+   "Conferir encordoamento atual (a descrição diz .012-.053, não confirmado pelo fabricante).",
+   "Testar preamp TP-4T, afinador e compartimento de bateria."
+  ],
+  "fontes": [
+   "https://www.gak.co.uk/en/takamine-gd11mce-ns-all-mahogany-dreadnought-electro-acoustic-guitar/936000",
+   "https://www.zzounds.com/item--TAKGD11MCE",
+   "https://www.casasbahia.com.br/violao-takamine-aco-gd11mce-mgs-fosco-tp-4t/p/1571377438"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 1681,
+  "campos": {
+   "modelo": "Takamine GD14CE TOS",
+   "serie": "G-Series",
+   "formato_corpo": "Dreadnought com cutaway",
+   "acabamento": "Acetinado (fosco)",
+   "cor": "Tobacco Satin (TOS)",
+   "eletrica": "Preamp Takamine TP-4T com afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Takamine GD14CE em Tobacco Satin: dreadnought com cutaway e acabamento fosco, com preamp TP-4T e afinador.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "cutaway",
+   "cordas-de-aco",
+   "fosco",
+   "sunburst"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A ficha diz escala 'Laurel (ou Ovangkol dependendo do lote)'; isso não é especificação, é dúvida. Conferir na peça e publicar só a madeira real.",
+   "Descrição curta truncada ('otimizando a ressonân') e com grafia de Portugal; revisar."
+  ],
+  "conferir": [
+   "Não encontrei ficha oficial nem de revendedor estrangeiro do GD14CE (parece modelo de mercado regional). Confirmar na etiqueta interna: madeira do tampo (a loja diz mogno) e se é maciço ou laminado.",
+   "Confirmar madeira da escala (laurel x ovangkol), largura do nut e comprimento de escala.",
+   "Testar preamp TP-4T e afinador."
+  ],
+  "fontes": [
+   "https://melhoresparacomprar.com.br/mejor-violao-takamine"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 1689,
+  "campos": {
+   "modelo": "Takamine GD51CE",
+   "serie": "G-Series (G50)",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Spruce maciço",
+   "corpo": "Black walnut (nogueira) – fundo e laterais",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Laurel",
+   "trastes": "20",
+   "marcadores": "Pontos de madrepérola",
+   "nut_material": "Osso sintético",
+   "nut_largura": "42,8 mm (1.6875″)",
+   "ponte": "Rastilho bipartido (split saddle)",
+   "eletrica": "Preamp Takamine TP-4TD com afinador e EQ de 3 bandas",
+   "tarraxas": "Blindadas die-cast douradas",
+   "hardware": "Dourado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Takamine GD51CE: dreadnought cutaway com tampo de spruce maciço e fundo/laterais em black walnut, ferragens douradas, rastilho bipartido e preamp TP-4TD.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "cutaway",
+   "tampo-macico",
+   "cordas-de-aco",
+   "hardware-dourado"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "O nome e a ficha dizem 'NS / Natural Satin (fosco)', mas o GD51CE é vendido oficialmente como GD51CE NAT, acabamento brilhante (gloss). Conferir o acabamento da peça e corrigir nome/ficha se for brilhante.",
+   "Descrição curta truncada e com grafia de Portugal ('harmónicos'); revisar."
+  ],
+  "conferir": [
+   "Conferir acabamento (brilhante x fosco).",
+   "Fontes divergem sobre fundo/laterais (black walnut na maioria; rosewood em alguns anúncios antigos) e ponte (laurel x rosewood); conferir na peça.",
+   "Conferir comprimento de escala (25.3″ ou 25.4″ conforme a fonte).",
+   "Testar preamp TP-4TD e afinador."
+  ],
+  "fontes": [
+   "https://www.thomann.co.uk/takamine_gd51ce_2_nat.htm",
+   "https://www.esptakamine.com/products/15758-gd51ce-nat",
+   "https://buzzmusic.co/products/takamine-g50-series-dreadnought-ac-el-guitar-with-cutaway-in-natural-gloss-finish"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 5438,
+  "campos": {
+   "modelo": "Martin 000-10E",
+   "serie": "Road Series",
+   "fabricacao": "México (Martin, Navojoa)",
+   "construcao": "Mortise & tenon (encaixe espiga)",
+   "formato_corpo": "000-14 trastes (Auditorium)",
+   "tampo": "Sapele maciço",
+   "corpo": "Sapele maciço (fundo e laterais)",
+   "braco_madeira": "Select hardwood",
+   "braco_perfil": "Performing Artist, High-Performance Taper",
+   "escala_madeira": "Richlite (FSC)",
+   "escala": "632 mm (24.9″)",
+   "trastes": "20",
+   "nut_material": "Corian branco",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "ponte": "Richlite (FSC)",
+   "captadores": "Fishman MX-T",
+   "eletrica": "Fishman MX-T: volume e tom na boca, afinador com mute",
+   "acabamento": "Acetinado (satin)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Bag/soft case Martin"
+  },
+  "descricao_curta": "Martin 000-10E da Road Series: corpo 000 todo em sapele maciço, escala curta 24.9″ e captação Fishman MX-T com afinador no bocal.",
+  "tags": [
+   "eletroacustico",
+   "000",
+   "auditorium",
+   "all-solid",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fosco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Algumas unidades da linha vieram com Martin E-1 em vez de Fishman MX-T; conferir a eletrônica da peça.",
+   "País 'México' é o padrão da Road Series; confirmar na etiqueta interna.",
+   "Confirmar que o bag original acompanha."
+  ],
+  "fontes": [
+   "https://www.russomusic.com/products/martin-road-series-000-10e-satin-sapele-top-back-and-sides-with-soft-shell-case",
+   "https://www.zzounds.com/item--MRT000010E"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5449,
+  "campos": {
+   "modelo": "Martin 000-X2E",
+   "serie": "X Series",
+   "construcao": "Mortise & tenon (encaixe espiga)",
+   "formato_corpo": "000-14 trastes (Auditorium)",
+   "tampo": "Sitka spruce maciço",
+   "corpo": "HPL (laminado de alta pressão) com padrão de mogno figurado",
+   "braco_madeira": "Select hardwood",
+   "braco_perfil": "Performing Artist, High-Performance Taper",
+   "escala_madeira": "Select hardwood",
+   "escala": "632 mm (24.9″)",
+   "trastes": "20",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "ponte": "Select hardwood",
+   "captadores": "Fishman MX",
+   "eletrica": "Fishman MX: volume e tom no bocal",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Martin 000-X2E: corpo 000 confortável, tampo de Sitka maciço e fundo/laterais em HPL resistente a clima, com captação Fishman.",
+  "tags": [
+   "eletroacustico",
+   "000",
+   "auditorium",
+   "tampo-macico",
+   "cordas-de-aco",
+   "hpl"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A descrição diz que o afinador fica embutido no bocal; a Fishman MX padrão do 000-X2E não tem afinador (o afinador é da MX-T). Conferir qual sistema está instalado."
+  ],
+  "conferir": [
+   "Conferir se a eletrônica é Fishman MX ou MX-T (versões mais novas) e se há afinador.",
+   "Versões mais novas da X Series usam escala/ponte em Richlite; conferir material.",
+   "Conferir se acompanha bag (a descrição não cita)."
+  ],
+  "fontes": [
+   "https://shop.theartsmusicstore.com/products/martin-000x2e-x-series-auditorium-acoustic-electric-spruce-hpl-mahogany-wbag",
+   "https://www.themusiczoo.com/products/martin-000-x2e-acoustic-electric",
+   "https://www.zzounds.com/a--3970759/item--MRT000X2E"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5499,
+  "campos": {
+   "modelo": "Martin D-16E",
+   "serie": "16 Series",
+   "formato_corpo": "Dreadnought, 14 trastes",
+   "tampo": "Sitka spruce maciço",
+   "braco_perfil": "Modified Low Oval, High-Performance Taper",
+   "escala_madeira": "Ébano",
+   "escala": "645 mm (25.4″)",
+   "trastes": "20",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "ponte": "Ébano",
+   "captadores": "Fishman Matrix VT Enhance NT2",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Martin D-16E: dreadnought da 16 Series com tampo de Sitka maciço, escala e ponte em ébano e captação Fishman Matrix VT Enhance NT2.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "tampo-macico",
+   "cordas-de-aco",
+   "case"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [
+   "A eletrônica Fishman Matrix VT Enhance NT2 tem, além de volume e tom, o controle Enhance no bocal; a descrição cita só volume e tone. Conferir e corrigir."
+  ],
+  "conferir": [
+   "O D-16E existe em versões Mahogany, Rosewood e (em alguns mercados) Sapele; conferir a etiqueta interna para confirmar fundo/laterais em sapele maciço.",
+   "Junta 'Simple Dovetail' só foi confirmada para o D-16E Rosewood; conferir para esta versão.",
+   "Algumas lojas vendem o D-16E com soft shell case; conferir se o case é rígido como diz a descrição.",
+   "Marcadores 'Style 28' não confirmados; conferir.",
+   "Testar a eletrônica (bateria no endpin)."
+  ],
+  "fontes": [
+   "https://turramusic.com.au/collections/martin/products/martin-d16e",
+   "https://www.zzounds.com/item--MRTD16E02",
+   "https://www.martinguitar.com/10D16EBURST.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 5507,
+  "campos": {
+   "modelo": "Martin D-X2E",
+   "serie": "X Series",
+   "construcao": "Mortise & tenon (encaixe espiga)",
+   "formato_corpo": "Dreadnought, 14 trastes",
+   "tampo": "Sitka spruce maciço",
+   "corpo": "HPL (laminado de alta pressão) com padrão de mogno figurado",
+   "braco_madeira": "Select hardwood",
+   "braco_perfil": "Performing Artist, High-Performance Taper",
+   "escala": "645 mm (25.4″)",
+   "trastes": "20",
+   "nut_material": "Corian branco",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "captadores": "Fishman MX",
+   "eletrica": "Fishman MX: volume e tom no bocal",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Martin D-X2E: dreadnought de tampo Sitka maciço com fundo/laterais em HPL, resistente a variações de clima, com captação Fishman.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "tampo-macico",
+   "cordas-de-aco",
+   "hpl"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A descrição diz que o afinador fica embutido no bocal; a Fishman MX padrão não tem afinador (só a MX-T). Conferir qual sistema está instalado.",
+   "Descrição curta usa grafia de Portugal ('icónico', 'amplificaçã' truncado); revisar."
+  ],
+  "conferir": [
+   "Conferir eletrônica (Fishman MX x MX-T).",
+   "Material da escala/ponte varia por safra (select hardwood, Richlite ou katalox); conferir.",
+   "Conferir se acompanha bag."
+  ],
+  "fontes": [
+   "https://www.creamcitymusic.com/martin-d-x2e-dreadnought-acoustic-electric-natural-with-mahogany-hpl",
+   "https://www.chicagomusicexchange.com/en-gb/products/martin-d-x2e-sitkamahogany-hpl-natural-wfishman-mx-925016"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5556,
+  "campos": {
+   "modelo": "Sigma GMC-15E Aged",
+   "serie": "15 Series",
+   "construcao": "Dovetail (cauda de andorinha)",
+   "formato_corpo": "Grand OM-14 trastes com cutaway",
+   "tampo": "Mogno maciço",
+   "corpo": "Mogno (fundo e laterais)",
+   "braco_madeira": "Mogno",
+   "braco_perfil": "Low Profile",
+   "escala_madeira": "Pau-ferro",
+   "escala": "645 mm (25.4″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "ponte": "Pau-ferro, rastilho de osso",
+   "captadores": "Fishman Presys II",
+   "eletrica": "Preamp Fishman Presys II com afinador",
+   "tarraxas": "Grover open-gear niqueladas, botões ivoroid",
+   "acabamento": "Acetinado envelhecido (distressed satin)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Sigma GMC-15E Aged: Grand OM com cutaway, tampo de mogno maciço com visual envelhecido, nut e rastilho de osso, tarraxas Grover e Fishman Presys II.",
+  "tags": [
+   "eletroacustico",
+   "grand-om",
+   "cutaway",
+   "tampo-macico",
+   "all-mahogany",
+   "cordas-de-aco",
+   "aged"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "O nome do produto diz 'GMC15'; o modelo correto é Sigma GMC-15E Aged.",
+   "Ficha atual tem 'escala_madeira': 'e Ponte: Pau Ferro' (texto cortado); o correto é 'Pau-ferro'.",
+   "Produto está na categoria 'Martin Guitars'; Sigma é marca própria (não Martin). Conferir categoria.",
+   "Descrição curta truncada ('com laterais'); revisar."
+  ],
+  "conferir": [
+   "Fundo e laterais em mogno laminado (só o tampo é anunciado como maciço); confirmar.",
+   "Testar Presys II e afinador."
+  ],
+  "fontes": [
+   "https://www.kirstein.de/en/Guitar-Bass/Acoustic-Guitars/Grand-Auditorium-OM-Guitars/Sigma-GMC-15E-Aged.html",
+   "https://www.andertons.co.uk/new/new-acoustic-guitars/sigma-gmc-15e-aged-with-fishman-presys-ii",
+   "https://www.gak.co.uk/en/sigma-guitars-gmc-15e-aged-electro-acoustic-mahogany-distressed-satin/955049"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5565,
+  "campos": {
+   "modelo": "Martin D-10E-02 (Sitka/Sapele)",
+   "serie": "Road Series",
+   "fabricacao": "México (Martin, Navojoa)",
+   "construcao": "Mortise & tenon (encaixe espiga)",
+   "formato_corpo": "Dreadnought, 14 trastes",
+   "tampo": "Sitka spruce maciço",
+   "corpo": "Sapele maciço (fundo e laterais)",
+   "braco_madeira": "Select hardwood",
+   "braco_perfil": "Performing Artist, High-Performance Taper",
+   "escala_madeira": "Richlite (FSC)",
+   "escala": "645 mm (25.4″)",
+   "trastes": "20",
+   "nut_material": "Corian",
+   "nut_largura": "44,5 mm (1 3/4″)",
+   "ponte": "Richlite (FSC)",
+   "captadores": "Fishman MX-T",
+   "eletrica": "Fishman MX-T: volume e tom no bocal, afinador com mute",
+   "acabamento": "Acetinado (satin)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Bag/soft case Martin"
+  },
+  "descricao_curta": "Martin D-10E-02: dreadnought all-solid com tampo de Sitka e fundo/laterais em sapele, captação Fishman MX-T com afinador e bag Martin.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "all-solid",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fosco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "Descrição curta truncada ('O D-10E-02 Sit'); revisar."
+  ],
+  "conferir": [
+   "Algumas fontes citam travamento X scalloped e outras não; não publicar sem conferir.",
+   "País 'México' é o padrão da Road Series; confirmar na etiqueta interna.",
+   "Confirmar que o bag acompanha."
+  ],
+  "fontes": [
+   "https://zedem.ca/products/d-10e-02-martin-road-series-d-10e-02-sitka-sapele",
+   "https://www.zzounds.com/item--MRTD10E",
+   "https://www.elderly.com/products/martin-d10e-guitar-gigbag-fishman-mxt-pickup"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5737,
+  "campos": {
+   "modelo": "Takamine GD10 NS",
+   "serie": "G-Series (G10)",
+   "formato_corpo": "Dreadnought (sem cutaway)",
+   "tampo": "Spruce",
+   "corpo": "Mogno (fundo e laterais)",
+   "braco_madeira": "Mogno",
+   "nut_largura": "42,8 mm (1.6875″)",
+   "acabamento": "Acetinado (fosco)",
+   "cor": "Natural Satin (NS)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Takamine GD10 NS: dreadnought acústico de entrada, tampo de spruce com fundo e laterais em mogno e acabamento natural acetinado.",
+  "tags": [
+   "acustico",
+   "dreadnought",
+   "cordas-de-aco",
+   "fosco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A ficha traz campos 'Captação: N/A' e 'Controles: N/A'; melhor remover e indicar apenas 'acústico (sem captação)'.",
+   "Comprimento de escala 25,4″ e raio 12″ não foram confirmados para o GD10; outros G-Series dreadnought aparecem com 643 mm (25.3″). Medir."
+  ],
+  "conferir": [
+   "Fontes divergem sobre escala/ponte (ovangkol x rosewood); conferir na peça.",
+   "Medir comprimento de escala.",
+   "Tampo não é anunciado como maciço; tratar como laminado."
+  ],
+  "fontes": [
+   "https://frontend-rel.gak.co.uk/en/takamine-gd10-ns-natural-satin/96841",
+   "https://fleetsound.com/products/takamine-gd10-ns"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 5753,
+  "campos": {
+   "modelo": "Takamine GD30CE NAT",
+   "serie": "G-Series (G30)",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Spruce maciço",
+   "corpo": "Mogno (fundo e laterais)",
+   "braco_madeira": "Mogno",
+   "escala": "643 mm (25.3″)",
+   "raio": "305 mm (12″)",
+   "trastes": "20",
+   "nut_largura": "42,8 mm (1.6875″)",
+   "eletrica": "Preamp Takamine TP-4TD com afinador e EQ de 3 bandas",
+   "acabamento": "Brilhante (gloss)",
+   "cor": "Natural (NAT)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Takamine GD30CE natural brilhante: dreadnought cutaway com tampo de spruce maciço, fundo e laterais em mogno e preamp TP-4TD.",
+  "tags": [
+   "eletroacustico",
+   "dreadnought",
+   "cutaway",
+   "tampo-macico",
+   "cordas-de-aco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A descrição curta começa com texto de IA ('Com base nas informações sobre os modelos Takamine disponíveis, aqui está a descrição...'); remover.",
+   "Comprimento de escala está como 25,3″ (643 mm) — confere com as fontes; manter."
+  ],
+  "conferir": [
+   "Fontes divergem sobre escala/ponte (rosewood x ovangkol); conferir na peça.",
+   "Testar preamp TP-4TD e afinador."
+  ],
+  "fontes": [
+   "https://zzounds.com/item--TAKGD30CE",
+   "https://www.guitarcenter.com/Takamine/G-Series-GD30CE-Dreadnought-Cutaway-Acoustic-Electric-Guitar.gc"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8569,
+  "campos": {
+   "modelo": "Hertom Dread DLX",
+   "serie": "Unity DLX",
+   "construcao": "Dovetail colado",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Sitka spruce 5A maciço",
+   "corpo": "Fundo em ovangkol maciço; laterais em ovangkol 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Graph Tech Tusq",
+   "nut_largura": "43 mm (1.692″)",
+   "ponte": "Ébano",
+   "tarraxas": "Gotoh 301, blindadas",
+   "captadores": "Fishman Matrix Infinity",
+   "eletrica": "Fishman Matrix Infinity (preamp no endpin, volume e tonalidade no bocal)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case de madeira revestido em couro ecológico e veludo"
+  },
+  "descricao_curta": "Hertom Dread DLX (Unity): topo de linha com tampo Sitka 5A maciço, fundo de ovangkol maciço, Gotoh 301, Fishman Matrix Infinity e case de madeira.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "gotoh",
+   "case",
+   "dreadnought"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Revendedor descreve o case com veludo roxo; a descrição diz 'veludo vintage'. Conferir.",
+   "Cordas de fábrica: um revendedor cita D'Addario XS (calibre não informado); conferir.",
+   "Conferir se o case de madeira acompanha.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos",
+   "https://www.musicmakershop.com/product-page/hertom-dread-dlx",
+   "https://www.todamusica.com.br/violao-aco-folk-hertom-dread-std-n-natural-com-case",
+   "https://harmoniamusical.com.br/violao-hertom-j45-dlx-sb-j45-deluxe-c-192613.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8570,
+  "campos": {
+   "modelo": "Hertom OM STD",
+   "serie": "Unity STD",
+   "construcao": "Dovetail colado",
+   "formato_corpo": "OM / Orchestra Model (sem cutaway)",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em mogno maciço; laterais em mogno 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Graph Tech Tusq",
+   "nut_largura": "43 mm (1.692″)",
+   "ponte": "Ébano",
+   "tarraxas": "Gotoh 301, blindadas",
+   "captadores": "Fishman Matrix Infinity",
+   "eletrica": "Fishman Matrix Infinity (preamp no endpin, volume e tonalidade no bocal)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case de madeira revestido em couro ecológico e veludo"
+  },
+  "descricao_curta": "Hertom OM STD (Unity): tampo de Sitka 3A maciço, fundo de mogno maciço, escala de ébano, Gotoh 301 e Fishman Matrix Infinity, com case de madeira.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "gotoh",
+   "case",
+   "om"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Medir comprimento de escala.",
+   "Cordas de fábrica: um revendedor cita D'Addario XS (calibre não informado); conferir.",
+   "Conferir se o case de madeira acompanha.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos",
+   "https://www.musicmakershop.com/product-page/hertom-dread-dlx",
+   "https://www.todamusica.com.br/violao-aco-folk-hertom-dread-std-n-natural-com-case",
+   "https://harmoniamusical.com.br/violao-hertom-j45-dlx-sb-j45-deluxe-c-192613.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8571,
+  "campos": {
+   "modelo": "Hertom J45 STD",
+   "serie": "Unity STD",
+   "construcao": "Dovetail colado",
+   "formato_corpo": "J-45 / ombro caído (sem cutaway)",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em mogno maciço; laterais em mogno 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Graph Tech Tusq",
+   "nut_largura": "43 mm (1.692″)",
+   "ponte": "Ébano",
+   "tarraxas": "Gotoh 301, blindadas",
+   "captadores": "Fishman Matrix Infinity",
+   "eletrica": "Fishman Matrix Infinity (preamp no endpin, volume e tonalidade no bocal)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case de madeira revestido em couro ecológico e veludo",
+   "escala": "629 mm (24.75″)"
+  },
+  "descricao_curta": "Hertom J45 STD (Unity): ombro caído com tampo de Sitka 3A maciço, fundo de mogno maciço, escala 24.75″, Gotoh 301 e Fishman Matrix Infinity.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "gotoh",
+   "case",
+   "j45",
+   "round-shoulder"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Cordas de fábrica: um revendedor cita D'Addario XS (calibre não informado); conferir.",
+   "Conferir se o case de madeira acompanha.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos",
+   "https://www.musicmakershop.com/product-page/hertom-dread-dlx",
+   "https://www.todamusica.com.br/violao-aco-folk-hertom-dread-std-n-natural-com-case",
+   "https://harmoniamusical.com.br/violao-hertom-j45-dlx-sb-j45-deluxe-c-192613.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8572,
+  "campos": {
+   "modelo": "Hertom GA STD",
+   "serie": "Unity STD",
+   "construcao": "Dovetail colado",
+   "formato_corpo": "Grand Auditorium com cutaway",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em mogno maciço; laterais em mogno 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Graph Tech Tusq",
+   "nut_largura": "43 mm (1.692″)",
+   "ponte": "Ébano",
+   "tarraxas": "Gotoh 301, blindadas",
+   "captadores": "Fishman Matrix Infinity",
+   "eletrica": "Fishman Matrix Infinity (preamp no endpin, volume e tonalidade no bocal)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case de madeira revestido em couro ecológico e veludo"
+  },
+  "descricao_curta": "Hertom GA STD (Unity): Grand Auditorium com cutaway, tampo de Sitka 3A maciço, fundo de mogno maciço, Gotoh 301 e Fishman Matrix Infinity.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "gotoh",
+   "case",
+   "grand-auditorium",
+   "cutaway"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Medir comprimento de escala.",
+   "Cordas de fábrica: um revendedor cita D'Addario XS (calibre não informado); conferir.",
+   "Conferir se o case de madeira acompanha.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos",
+   "https://www.musicmakershop.com/product-page/hertom-dread-dlx",
+   "https://www.todamusica.com.br/violao-aco-folk-hertom-dread-std-n-natural-com-case",
+   "https://harmoniamusical.com.br/violao-hertom-j45-dlx-sb-j45-deluxe-c-192613.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8573,
+  "campos": {
+   "modelo": "Hertom J45 SB RW Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "J-45 / ombro caído (sem cutaway)",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em jacarandá indiano maciço; laterais em jacarandá indiano 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium"
+  },
+  "descricao_curta": "Hertom J45 Stage em sunburst com tampo de Sitka maciço e fundo maciço de jacarandá indiano, Fishman Flex Plus-T e bag.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "j45",
+   "round-shoulder",
+   "sunburst",
+   "rosewood"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Comprimento de escala do J45 não confirmado para a Stage (o J45 STD da linha Unity é 24.75″); medir.",
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8574,
+  "campos": {
+   "modelo": "Hertom Dreadnought CE Mahogany Satin Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Mogno 3A maciço",
+   "corpo": "Fundo em mogno maciço; laterais em mogno 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium",
+   "escala": "645 mm (25.4″)"
+  },
+  "descricao_curta": "Hertom Dreadnought Stage all-mahogany com cutaway: tampo e fundo de mogno maciço, acabamento acetinado e Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought",
+   "cutaway",
+   "all-mahogany",
+   "fosco"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8575,
+  "campos": {
+   "modelo": "Hertom Dreadnought Natural Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em jacarandá africano maciço; laterais em jacarandá africano 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium"
+  },
+  "descricao_curta": "Hertom Dreadnought Stage natural com tampo de Sitka maciço e fundo maciço de jacarandá africano, Fishman Flex Plus-T e bag.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "'Jacarandá africano' não confirmado em fonte externa para este modelo (revendedores citam mogno hondurenho no Dread Stage); conferir etiqueta/madeira.",
+   "Medir comprimento de escala (25.4″ no Dread Stage CE).",
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8576,
+  "campos": {
+   "modelo": "Hertom J45 All Mahogany Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "J-45 / ombro caído (sem cutaway)",
+   "tampo": "Mogno hondurenho 3A maciço (3,2 mm)",
+   "corpo": "Fundo em mogno hondurenho maciço; laterais em mogno hondurenho 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium"
+  },
+  "descricao_curta": "Hertom J45 Stage all-mahogany: tampo e fundo de mogno hondurenho maciço, Fishman Flex Plus-T e bag.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "j45",
+   "round-shoulder",
+   "all-mahogany"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Medir comprimento de escala.",
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8577,
+  "campos": {
+   "modelo": "Hertom OM All Mahogany Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "OM / Orchestra Model (sem cutaway)",
+   "tampo": "Mogno hondurenho 3A maciço (3,2 mm)",
+   "corpo": "Fundo em mogno hondurenho maciço; laterais em mogno hondurenho 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium",
+   "escala": "628 mm (24.72″)"
+  },
+  "descricao_curta": "Hertom OM Stage all-mahogany: tampo e fundo de mogno hondurenho maciço, escala 24.72″, Fishman Flex Plus-T e bag.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "om",
+   "all-mahogany"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8578,
+  "campos": {
+   "modelo": "Hertom Dreadnought Black Stage",
+   "serie": "Stage Series",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em mogno africano maciço; laterais em mogno africano 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Osso",
+   "ponte": "Ébano",
+   "tarraxas": "Hertom",
+   "captadores": "Fishman Flex Plus-T",
+   "eletrica": "Preamp Fishman Flex Plus-T com controles externos e afinador",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario XT Phosphor Bronze .011",
+   "acessorios": "Bag premium"
+  },
+  "descricao_curta": "Hertom Dreadnought Stage preto com tampo de Sitka maciço e fundo maciço de mogno, Fishman Flex Plus-T e bag.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought",
+   "preto"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Revendedores citam mogno hondurenho no Dread Stage; a descrição diz mogno africano. Conferir.",
+   "Medir comprimento de escala.",
+   "Proporção das tarraxas (1:15 na descrição) não confirmada.",
+   "Um revendedor anuncia o OM Stage 'com case'; conferir se acompanha bag ou case.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://www.pontodomusico.com.br/violoes/violao-hertom-om-stage-natural",
+   "https://www.guitarshopce.com.br/violo-hertom-om-stage-all-mahogany-slido-fishman-flex-plus-t-c-bag",
+   "https://barramusic.com.br/produto/violao-hertom-dread-stage-ce-natural/",
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8583,
+  "campos": {
+   "modelo": "Hertom Dreadnought Natural Street",
+   "serie": "Street Series",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Sitka spruce 2A maciço"
+  },
+  "descricao_curta": "Hertom Dreadnought Street natural: tampo de Sitka maciço com fundo em mogno e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A ficha cita só 'Fundo em Mogno Hondurenho'; falta informar as laterais (e se fundo/laterais são maciços ou laminados)."
+  ],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8584,
+  "campos": {
+   "modelo": "Hertom Dreadnought CE All Mahogany Street",
+   "serie": "Street Series",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Mogno hondurenho 2A maciço",
+   "corpo": "Mogno hondurenho (fundo e laterais)"
+  },
+  "descricao_curta": "Hertom Dreadnought Street all-mahogany com cutaway: tampo de mogno hondurenho maciço e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought",
+   "cutaway",
+   "all-mahogany"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "Grafia 'Cutway' na ficha; o correto é 'Cutaway'."
+  ],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8586,
+  "campos": {
+   "modelo": "Hertom Dreadnought CE Natural Street",
+   "serie": "Street Series",
+   "formato_corpo": "Dreadnought com cutaway",
+   "tampo": "Sitka spruce 2A maciço"
+  },
+  "descricao_curta": "Hertom Dreadnought Street natural com cutaway: tampo de Sitka maciço, fundo em mogno e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought",
+   "cutaway"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A ficha cita só 'Fundo em Mogno Hondurenho'; falta informar as laterais (e se fundo/laterais são maciços ou laminados).",
+   "Grafia 'Cutway' na ficha; o correto é 'Cutaway'."
+  ],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8587,
+  "campos": {
+   "modelo": "Hertom J45 Natural Street",
+   "serie": "Street Series",
+   "formato_corpo": "J-45 / ombro caído",
+   "tampo": "Sitka spruce 2A maciço",
+   "corpo": "Maple flameado (fundo e laterais)"
+  },
+  "descricao_curta": "Hertom J45 Street natural: tampo de Sitka maciço com fundo e laterais em maple flameado e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "j45",
+   "round-shoulder",
+   "maple"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8588,
+  "campos": {
+   "modelo": "Hertom OM All Mahogany Street",
+   "serie": "Street Series",
+   "formato_corpo": "OM / Orchestra Model",
+   "tampo": "Mogno hondurenho 2A maciço",
+   "corpo": "Mogno hondurenho (fundo e laterais)"
+  },
+  "descricao_curta": "Hertom OM Street all-mahogany: tampo de mogno hondurenho maciço e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "om",
+   "all-mahogany"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8589,
+  "campos": {
+   "modelo": "Hertom OM Natural Street",
+   "serie": "Street Series",
+   "formato_corpo": "OM / Orchestra Model",
+   "tampo": "Sitka spruce 2A maciço"
+  },
+  "descricao_curta": "Hertom OM Street natural: tampo de Sitka maciço, fundo em mogno e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "om"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A ficha cita só 'Fundo em Mogno Hondurenho'; falta informar as laterais (e se fundo/laterais são maciços ou laminados)."
+  ],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8591,
+  "campos": {
+   "modelo": "Hertom Dread STD",
+   "serie": "Unity STD",
+   "construcao": "Dovetail colado",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Sitka spruce 3A maciço",
+   "corpo": "Fundo em mogno maciço; laterais em mogno 3 camadas",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Ébano",
+   "raio": "406 mm (16″)",
+   "trastes": "20",
+   "nut_material": "Graph Tech Tusq",
+   "nut_largura": "43 mm (1.692″)",
+   "ponte": "Ébano",
+   "tarraxas": "Gotoh 301, blindadas",
+   "captadores": "Fishman Matrix Infinity",
+   "eletrica": "Fishman Matrix Infinity (preamp no endpin, volume e tonalidade no bocal)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case de madeira revestido em couro ecológico e veludo"
+  },
+  "descricao_curta": "Hertom Dread STD (Unity): tampo de Sitka 3A maciço, fundo de mogno maciço, escala de ébano, Gotoh 301 e Fishman Matrix Infinity, com case de madeira.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "gotoh",
+   "case",
+   "dreadnought"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Revendedor cita mogno africano no Dread STD; conferir.",
+   "Medir comprimento de escala.",
+   "Cordas de fábrica: um revendedor cita D'Addario XS (calibre não informado); conferir.",
+   "Conferir se o case de madeira acompanha.",
+   "Um revendedor indica fabricação na China (projeto com o luthier João Cassias); confirmar na etiqueta antes de publicar país.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos",
+   "https://www.musicmakershop.com/product-page/hertom-dread-dlx",
+   "https://www.todamusica.com.br/violao-aco-folk-hertom-dread-std-n-natural-com-case",
+   "https://harmoniamusical.com.br/violao-hertom-j45-dlx-sb-j45-deluxe-c-192613.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8592,
+  "campos": {
+   "modelo": "Hertom Dreadnought All Mahogany Street",
+   "serie": "Street Series",
+   "formato_corpo": "Dreadnought",
+   "tampo": "Mogno hondurenho 2A maciço",
+   "corpo": "Mogno hondurenho (fundo e laterais)"
+  },
+  "descricao_curta": "Hertom Dreadnought Street all-mahogany: tampo de mogno hondurenho maciço e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "dreadnought",
+   "all-mahogany"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8593,
+  "campos": {
+   "modelo": "Hertom Grand Auditorium Natural Street",
+   "serie": "Street Series",
+   "formato_corpo": "Grand Auditorium",
+   "tampo": "Sitka spruce 2A maciço",
+   "corpo": "Maple flameado (fundo e laterais)"
+  },
+  "descricao_curta": "Hertom Grand Auditorium Street natural: tampo de Sitka maciço com fundo e laterais em maple flameado e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "grand-auditorium",
+   "maple"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8594,
+  "campos": {
+   "modelo": "Hertom Grand Auditorium All Mahogany Street",
+   "serie": "Street Series",
+   "formato_corpo": "Grand Auditorium"
+  },
+  "descricao_curta": "Hertom Grand Auditorium Street com fundo em mogno e captação Fishman Flex Plus-T.",
+  "tags": [
+   "eletroacustico",
+   "tampo-macico",
+   "cordas-de-aco",
+   "fishman",
+   "grand-auditorium"
+  ],
+  "envio": {
+   "peso_kg": 8.0,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "Inconsistência: o nome diz 'All Mahogany', mas a ficha diz tampo 'Sitka Spruce 2A Maciço' e só 'Fundo em Mogno Hondurenho' (é a mesma ficha do GA/OM Natural). Se for all-mahogany, o tampo é mogno; conferir na peça e corrigir nome ou ficha.",
+   "A ficha cita só 'Fundo em Mogno Hondurenho'; falta informar as laterais (e se fundo/laterais são maciços ou laminados)."
+  ],
+  "conferir": [
+   "Não encontrei nenhuma fonte externa sobre a 'Street Series' da Hertom (nem no site, nem em revendedores). Toda a ficha (madeiras, braço em mogno africano, escala/ponte em jacarandá indiano, raio 16″, nut de osso, tarraxas 1:18, Fishman Flex Plus-T, bag) vem só da descrição da loja; validar com a Hertom/distribuidor e pela etiqueta interna.",
+   "Confirmar se fundo e laterais são maciços ou laminados.",
+   "O site hertomguitars.com.br não pôde ser acessado nesta pesquisa; validar a ficha final no site oficial."
+  ],
+  "fontes": [
+   "https://hertomguitars.com.br/instrumentos"
+  ],
+  "confianca": "baixa"
+ }
+]

@@ -1,0 +1,510 @@
+[
+ {
+  "id": 4780,
+  "campos": {
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Violão/guitarra acústica Stagg usada (outlet), opção acessível para estudo e uso no dia a dia.",
+  "tags": [
+   "acustico",
+   "semi-novo",
+   "outlet"
+  ],
+  "envio": {
+   "peso_kg": 8,
+   "comprimento_cm": 115,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [
+   "A descrição atual é genérica (lista alternativas: 'Nato ou Maple', 'Linden, Spruce ou Ash', 'aço ou nylon', 'acústico ou eletroacústico'); não descreve esta peça. Reescrever após identificar o modelo exato pela etiqueta interna."
+  ],
+  "conferir": [
+   "Identificar o modelo exato pela etiqueta dentro da boca (ex.: SA20D, SW203, SA35...), sem isso não há como confirmar madeiras, formato e escala",
+   "Cordas de aço ou nylon? Tem captação/preamp? Se sim, testar preamp e afinador",
+   "Tampo laminado ou maciço, formato do corpo (Dreadnought, Auditorium, clássico), cor",
+   "Se 'Shoulder' 'outlet', conferir trincas, empeno do braço, descolamento de ponte e altura de ação",
+   "Corrigir 'ergonómico' (PT-PT) para 'ergonômico'"
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 8311,
+  "campos": {
+   "modelo": "Ibanez AZ22S2-BK",
+   "serie": "AZ Standard",
+   "construcao": "Bolt-on (junção Super All Access Neck Joint)",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Superstrat (AZ)",
+   "braco_madeira": "Maple (bordo) torrado (Roasted Maple)",
+   "braco_perfil": "AZ Oval C",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "23",
+   "escala_madeira": "Jatobá",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm (12″)",
+   "trastes": "22, Jumbo, aço inoxidável",
+   "nut_largura": "42 mm",
+   "marcadores": "Pontos brancos (white dots)",
+   "captadores": "Ibanez Classic Custom: single-coil Alnico (braço), single-coil Alnico (meio), humbucker cerâmico (ponte) – HSS",
+   "eletrica": "Passiva; 1 volume, 1 tone, chave de 5 posições dyna-MIX9 com Alter Switch",
+   "ponte": "Tremolo T106",
+   "tarraxas": "Com trava (locking)",
+   "hardware": "Cromado",
+   "cor": "Black (BK)",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "cordas_fabrica": "Calibre .010/.013/.017/.026/.036/.046"
+  },
+  "descricao_curta": "AZ Standard com braço de maple torrado, trastes de aço inox e o sistema dyna-MIX9, que tira 9 timbres de uma configuração HSS.",
+  "tags": [
+   "hss",
+   "tremolo",
+   "trastes-inox",
+   "roasted-maple",
+   "superstrat",
+   "22-trastes",
+   "tarraxas-trava"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "O nome da série é 'AZ Standard' e a madeira de escala é Jatobá (confere). Nut: a loja diz 'Plástico'; o fabricante só informa largura (42 mm), material não confirmado."
+  ],
+  "conferir": [
+   "País de fabricação (Indonésia/China) pela etiqueta/serial, não confirmado",
+   "Se acompanha bag/alavanca",
+   "Espessuras do braço (21/23 mm) vêm de revendedor (Thomann), não da Ibanez"
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/az22s2_5n_01.html",
+   "https://www.thomann.co.uk/ibanez_az22s2_mgr.htm",
+   "https://www.russomusic.com/products/ibanez-az-standard-az22s2-electric-guitar-black"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8327,
+  "campos": {
+   "modelo": "Schecter Synyster Standard FR (1746)",
+   "serie": "Signature Synyster Gates",
+   "construcao": "Bolt-on",
+   "corpo": "Mogno",
+   "formato_corpo": "Avenger (signature Synyster)",
+   "braco_madeira": "Mogno 3 peças com reforço em fibra de carbono",
+   "braco_perfil": "Ultra Thin C",
+   "escala_madeira": "Ébano",
+   "escala": "648 mm (25.5″)",
+   "trastes": "24, X-Jumbo",
+   "nut_largura": "41,3 mm",
+   "captadores": "2x Schecter Diamond Synyster Gates Signature (braço e ponte) – HH",
+   "ponte": "Floyd Rose Special 'Hot Rod'",
+   "tarraxas": "Schecter",
+   "hardware": "Preto",
+   "acabamento": "Brilhante (gloss)",
+   "cor": "Gloss White with Black Pinstripes",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Signature do Synyster Gates (Avenged Sevenfold) no visual clássico branco com listras pretas, com Floyd Rose e 24 trastes X-Jumbo.",
+  "tags": [
+   "hh",
+   "floyd-rose",
+   "24-trastes",
+   "signature",
+   "ebano"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição cita 'Schecter Diamond Synyster Gates Signature Humbucker' no singular; o modelo tem dois (braço e ponte) (americanmusical.com, schecter-guitars.de).",
+   "Tarraxas: a ficha oficial (Schecter Alemanha) diz apenas 'Schecter'; 'Die-Cast' não confirmado.",
+   "Raio: fontes divergem (14″ x 16″); 16″ (406 mm) aparece em revendedor para a 1739. Não usar até medir."
+  ],
+  "conferir": [
+   "Raio da escala (14″ ou 16″)",
+   "Controles: conferir na peça quantos knobs/chaves e se há split (push-pull) – a ficha da loja diz 1 volume + 1 tone push-pull + chave de 3 posições, não confirmado em fonte oficial",
+   "Se tem Sustainiac (opcional em algumas versões; não é padrão na Standard)",
+   "Ano/país de fabricação pelo serial (Indonésia/Coreia)"
+  ],
+  "fontes": [
+   "https://schecter-guitars.de/en/farbvarianten/synyster-standard-fr",
+   "https://www.americanmusical.com/p/schecter-synyster-gates-standard-electric-guitar-white-with-black-stripes",
+   "https://www.musicianmadness.com/guitars/schecter-synyster-standard-gloss-white-with-black-pinstripes-1746"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8328,
+  "campos": {
+   "modelo": "Tom Anderson Drop Top Classic (1998)",
+   "fabricacao": "EUA (Tom Anderson Guitarworks, Califórnia)",
+   "construcao": "Bolt-on",
+   "tampo": "Flamed Maple (bordo flamed)",
+   "formato_corpo": "Strat (double cut)",
+   "braco_madeira": "Hard Rock Maple (bordo)",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "ponte": "Floyd Rose",
+   "tarraxas": "Grover",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Drop Top Classic de 1998, feita à mão na oficina de Tom Anderson nos EUA, com tampo de maple flamed e Floyd Rose; uma das boutiques mais respeitadas dos anos 90.",
+  "tags": [
+   "made-in-usa",
+   "floyd-rose",
+   "boutique",
+   "tampo-flamed",
+   "garimpo",
+   "vintage"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Madeira do corpo: na Drop Top Classic dos anos 90 o mais comum é Basswood (também houve Alder); conferir na cavidade/certificado",
+   "Captadores originais: exemplos dos anos 90 vêm com Anderson SD1R/SD1/H2+ (ex.: 1994: HSS) – registrar modelos impressos nas bases e configuração",
+   "Elétrica: Switcheroo e Blower switch são comuns; registrar a função de cada chave",
+   "Floyd Rose rebaixado (sunken)? Original ou trocado?",
+   "Data de fabricação na cavidade do braço/ certificado Tom Anderson (formato MM-DD-AA)",
+   "'5A' na descrição do tampo é termo comercial, não confirmado pelo fabricante",
+   "Se acompanha case original"
+  ],
+  "fontes": [
+   "https://wildwoodguitars.com/product/07-15-94P/1994-tom-anderson-drop-top-classic",
+   "https://www.themusiczoo.com/products/used-1998-tom-anderson-drop-top-classic-electric-guitar-transparent-black",
+   "https://bluebookofguitarvalues.com/products/tom-anderson-guitarworks-drop-top-classic"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8370,
+  "campos": {
+   "modelo": "G&L Tribute S-500",
+   "serie": "Tribute",
+   "construcao": "Bolt-on",
+   "formato_corpo": "Strat (double cut)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "Medium C",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "305 mm (12″)",
+   "trastes": "22, Medium Jumbo, níquel",
+   "nut_largura": "41,3 mm (1 5/8″)",
+   "captadores": "3x G&L Magnetic Field Design (MFD) single-coil – SSS",
+   "eletrica": "Passiva; volume master, PTB (Passive Treble & Bass: grave e agudo), chave de 5 posições",
+   "ponte": "G&L Dual-Fulcrum Vibrato",
+   "hardware": "Cromado",
+   "cor": "Preto (BK)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "S-500 da linha Tribute: o projeto final de Leo Fender para a Strat, com captadores MFD, controle PTB e ponte Dual-Fulcrum.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "dual-fulcrum",
+   "ptb",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Corpo: a loja diz Basswood; a madeira da Tribute S-500 variou por época (Basswood nas primeiras coreanas, depois Swamp Ash/Poplar/Nato). Confirmar na peça antes de afirmar."
+  ],
+  "conferir": [
+   "País de fabricação pelo serial/etiqueta (Coreia – Cort, ou Indonésia – Cort) e ano",
+   "Madeira do corpo (ver cavidade sob o escudo)",
+   "Se tem push-pull (Expander) no pot de agudo, presente em algumas séries",
+   "Confirmar que é S-500 (Dual-Fulcrum + PTB) e não Legacy (tremolo vintage, volume + 2 tones)",
+   "Tarraxas originais"
+  ],
+  "fontes": [
+   "https://glguitars.com/product/s_500",
+   "https://zzounds.com/item--GLGTS500",
+   "https://www.guitarsbyleo.com/FORUM/viewtopic.php?p=118381"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8387,
+  "campos": {
+   "modelo": "Squier Affinity Series Stratocaster",
+   "serie": "Affinity",
+   "construcao": "Bolt-on",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "trastes": "21, Medium Jumbo",
+   "captadores": "3x single-coil Squier – SSS",
+   "eletrica": "Passiva; 1 volume, 2 tones, chave de 5 posições",
+   "ponte": "Tremolo sincronizado de 2 pontos",
+   "hardware": "Cromado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Strat Squier da linha Affinity, usada, boa porta de entrada no som e na tocabilidade da Stratocaster.",
+  "tags": [
+   "sss",
+   "tremolo",
+   "iniciante",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição usa specs da Affinity atual (2021+: corpo Poplar, nut 42 mm, osso sintético). Affinity mais antigas usavam outras madeiras/nut (alguns exemplares com 41 mm). Sem ano, não afirmar corpo/nut/escala-madeira."
+  ],
+  "conferir": [
+   "Ano e país pelo serial (headstock/neckplate) para fixar a especificação",
+   "Madeira da escala (Maple ou Indian Laurel/Rosewood) e cor",
+   "Largura do nut (41 ou 42 mm)",
+   "Se tem alavanca",
+   "Marca vazia no cadastro: preencher 'Squier'"
+  ],
+  "fontes": [
+   "https://fender.com/en/affinity-series-stratocaster/0378002505.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8402,
+  "campos": {
+   "modelo": "Fender Custom Shop 1956 Stratocaster Heavy Relic (2014)",
+   "serie": "Custom Shop – Time Machine",
+   "fabricacao": "EUA (Fender Custom Shop, Corona – Califórnia)",
+   "construcao": "Bolt-on",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Strat",
+   "braco_madeira": "Maple (bordo), 1 peça",
+   "braco_perfil": "10/56 V",
+   "escala_madeira": "Maple (bordo)",
+   "escala": "648 mm (25.5″)",
+   "raio": "241 mm (9.5″)",
+   "trastes": "21, 6105",
+   "captadores": "3x Custom Shop Master Design single-coil, central RWRP – SSS",
+   "eletrica": "Passiva; 1 volume, 2 tones, chave de 5 posições",
+   "acabamento": "Nitrocelulose, envelhecimento Heavy Relic",
+   "cordas_qtd": "6",
+   "mao": "Destro",
+   "acessorios": "Case tweed e certificado de autenticidade (conforme descrição da loja)"
+  },
+  "descricao_curta": "'56 Strat Heavy Relic da Fender Custom Shop (linha Time Machine, 2014), com braço V de uma peça em maple, raio 9.5″ e trastes 6105, combinando visual surrado de época com tocabilidade moderna.",
+  "tags": [
+   "made-in-usa",
+   "custom-shop",
+   "relic",
+   "sss",
+   "tremolo",
+   "nitro",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Serial (CZ...) e certificado batem com 2014 e com o modelo",
+   "Captadores originais Master Design (ou Fat 50s/handwound em outras tiragens)?",
+   "Escudo, ponte e tarraxas originais; cor oficial da peça",
+   "Largura e material do nut não confirmados para 2014 (loja diz osso 43 mm)",
+   "Acompanha case tweed, COA, hang tag e kit? (o exemplar de referência tinha case, COA, hang tag, flanela, cabo, correia e kit)"
+  ],
+  "fontes": [
+   "https://tonewolf.com/products/fender-custom-shop-56-stratocaster-heavy-relic-2014-desert-sand",
+   "https://en.audiofanzine.com/stc-shaped-guitar/fender/1956-heavy-relic-stratocaster-2014-black/news/a.play,n.17488.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 8414,
+  "campos": {
+   "modelo": "Gibson Les Paul Traditional (2012)",
+   "fabricacao": "EUA (Gibson, Nashville)",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno com weight relief tradicional de 9 furos",
+   "tampo": "Maple (bordo)",
+   "formato_corpo": "Single cut (Les Paul)",
+   "braco_madeira": "Mogno",
+   "braco_perfil": "'50s Rounded",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "escala": "628 mm (24.75″)",
+   "trastes": "22, Medium Jumbo",
+   "nut_material": "Corian",
+   "nut_largura": "43 mm (1.695″)",
+   "marcadores": "Trapézio",
+   "captadores": "Gibson '57 Classic (braço) e '57 Classic Plus (ponte) – HH",
+   "eletrica": "Passiva; 2 volumes, 2 tones, chave de 3 posições",
+   "ponte": "Tune-O-Matic com stopbar",
+   "tarraxas": "Gibson Deluxe (TonePros) com botões keystone",
+   "acabamento": "Nitrocelulose",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Les Paul Traditional 2012 com o alívio de peso clássico de 9 furos, braço '50s Rounded e o par '57 Classic/'57 Classic Plus, a pegada da LP 'à moda antiga'.",
+  "tags": [
+   "made-in-usa",
+   "hh",
+   "ponte-fixa",
+   "set-neck",
+   "garimpo",
+   "refinish"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Lemon Green não consta como cor de fábrica da Traditional 2012 nas fontes; a própria descrição diz que é refinish no tampo. Não chamar de cor oficial Gibson sem prova.",
+   "Radius de 12″ não confirmado especificamente para 2012 (confirmado em listagem de 2013); manter só após conferir."
+  ],
+  "conferir": [
+   "Refinish: registrar claramente em anúncio (afeta valor); verificar se só o tampo ou o corpo todo",
+   "Serial (data 2012, Nashville) no headstock",
+   "Weight relief de 9 furos é padrão na Traditional (exceto 2013–2015); conferir peso real",
+   "Captadores: conferir se são os '57 Classic/'57 Classic Plus originais (adesivos/etiquetas na base) e potenciômetros originais",
+   "Tarraxas originais (Gibson Deluxe/TonePros keystone) ou trocadas",
+   "Acompanha case original Gibson?"
+  ],
+  "fontes": [
+   "https://archive.12fret.com/instruments/gibson-les-paul-traditional-lemon-burst-2016/",
+   "https://www.mooreguitars.com/gibson-2012-les-paul-traditional-tobacco-burst-w-ohsc-374-pre-owned/",
+   "https://www.themusiczoo.com/products/gibson-les-paul-traditional-desert-burst-2012"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8426,
+  "campos": {
+   "modelo": "Gibson Nighthawk Special (1994)",
+   "fabricacao": "EUA (Gibson)",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno",
+   "tampo": "Maple (bordo), plano",
+   "formato_corpo": "Single cut (Nighthawk)",
+   "braco_madeira": "Mogno",
+   "escala_madeira": "Rosewood (jacarandá indiano), sem binding",
+   "marcadores": "Pontos (dots)",
+   "captadores": "Mini-humbucker (braço) e humbucker inclinado (ponte)",
+   "eletrica": "Passiva; 1 volume, 1 tone, chave de 5 posições",
+   "cor": "Ebony",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Nighthawk Special de 1994, da curta linha Nighthawk (1993–98) que misturava construção Les Paul com versatilidade de chave de 5 posições.",
+  "tags": [
+   "made-in-usa",
+   "hh",
+   "set-neck",
+   "garimpo",
+   "vintage",
+   "anos-90"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Escala: fontes divergem (25.5″ x 24.75″) entre listagens de Nighthawk Special; não afirmar 25.5″ antes de medir.",
+   "'Firebird mini-humbucker' não confirmado: as fontes citam só 'mini-humbucker' no braço."
+  ],
+  "conferir": [
+   "Medir a escala (25.5″ ou 24.75″)",
+   "Cor do hardware: a loja diz dourado; não confirmado para Special preta (Standard/Custom usavam dourado). Conferir se é original",
+   "Versão SP-2 (2 captadores) ou SP-3 (com single central)",
+   "Captadores e chave originais",
+   "Serial 1994 no headstock",
+   "Se a ponte é string-through (cordas pelo corpo)"
+  ],
+  "fontes": [
+   "https://bluebookofguitarvalues.com/products/gibson-nighthawk-special-dsn",
+   "https://chicagomusicexchange.com/products/gibson-nighthawk-special-sp-2-ebony-1994-1330293",
+   "https://equipboard.com/items/gibson-nighthawk-special-sp-3"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 8433,
+  "campos": {
+   "modelo": "Ibanez AR2000 Artist Prestige",
+   "serie": "Prestige (Artist)",
+   "fabricacao": "Japão",
+   "construcao": "Set-in (colado)",
+   "corpo": "Mogno",
+   "tampo": "Flamed Maple (bordo flamed)",
+   "formato_corpo": "Double cut (Artist)",
+   "braco_madeira": "Maple (bordo) 3 peças",
+   "escala_madeira": "Rosewood (jacarandá indiano), com binding",
+   "trastes": "22, Medium",
+   "marcadores": "Pontos de abalone",
+   "captadores": "Originais de fábrica: 2x Ibanez Super 58 com capa dourada",
+   "eletrica": "Passiva; 2 volumes, 2 tones, chave de 3 posições",
+   "ponte": "Gibraltar II com tailpiece Quik-Change II",
+   "hardware": "Dourado",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Artist Prestige AR2000 japonesa de 1999, com corpo de mogno, tampo flamed, braço colado e hardware dourado; um clássico da Ibanez para quem quer timbre de humbucker encorpado.",
+  "tags": [
+   "made-in-japan",
+   "hh",
+   "ponte-fixa",
+   "set-neck",
+   "prestige",
+   "garimpo",
+   "vintage"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição lista 'Gibson Burstbucker' como captação; os de fábrica do AR2000 são Ibanez Super 58 (Blue Book, 12fret, Ikebe). Se a peça tem Burstbucker, é modificação e deve ser informada como tal."
+  ],
+  "conferir": [
+   "Captadores trocados por Gibson Burstbucker? Se sim, os Super 58 originais acompanham?",
+   "Serial F99xxxxx (FujiGen, 1999) – confirmar ano e fábrica",
+   "Escala (24.75″) e nut (osso?) não confirmados em fonte",
+   "Cor oficial (de fábrica: Vintage Violin – VV)",
+   "Tarraxas originais (Gotoh?) e se o case é o original"
+  ],
+  "fontes": [
+   "https://bluebookofguitarvalues.com/products/ibanez-ar2000-artist-prestige",
+   "https://archive.12fret.com/?p=19916",
+   "https://global.ikebe-gakki.com/products/860600"
+  ],
+  "confianca": "media"
+ }
+]

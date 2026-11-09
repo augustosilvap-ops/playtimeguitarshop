@@ -1,0 +1,605 @@
+[
+ {
+  "id": 6394,
+  "campos": {
+   "modelo": "Orange Crush Bass 25",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (analógico)",
+   "formato": "Combo",
+   "potencia": "25 W",
+   "alto_falantes": "1 x 8\" Orange Voice of the World, em gabinete com duto (reflex)",
+   "canais": "1",
+   "controles": "Volume, Treble, Middle, Frequency (médio paramétrico varrível), Bass, chave Pad -6 dB",
+   "efeitos": "Afinador cromático integrado",
+   "conexoes": "Entrada de instrumento P10, entrada auxiliar P2, saída de fone com CabSim",
+   "dimensoes": "325 x 365 x 235 mm",
+   "peso_produto": "8,3 kg"
+  },
+  "descricao_curta": "Combo de baixo compacto de 25 W com alto-falante de 8\" em gabinete com duto, EQ ativo de 3 bandas com médio paramétrico e afinador embutido. Ótimo para estudo, com saída de fone simulada.",
+  "tags": [
+   "transistor",
+   "combo",
+   "contrabaixo",
+   "afinador",
+   "saida-fone",
+   "cabsim",
+   "entrada-aux",
+   "25w"
+  ],
+  "envio": {
+   "peso_kg": 9.5,
+   "comprimento_cm": 42,
+   "largura_cm": 40,
+   "altura_cm": 28
+  },
+  "correcoes": [
+   "A descrição e a ficha citam controle 'Gain'; o Crush Bass 25 não tem Gain (Gain/Blend existem só no Crush Bass 50/100). O painel tem Volume, Treble, Middle, Frequency, Bass e chave Pad -6 dB (listas de especificação de revendas e anúncio da Orange)."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Confirmar cor da unidade (há versão laranja e preta 'BK'; o nome cita 25BK).",
+   "Testar afinador, saída de fone e entrada aux."
+  ],
+  "fontes": [
+   "https://orangeamps.com/crush-bass-25/",
+   "https://orangeamps.com/?p=228195",
+   "https://www.zzounds.com/item--ORACRUSHBA25",
+   "https://reverb.com/uk/item/5830916-orange-crush-25-25w-bass-combo-orange"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6413,
+  "campos": {
+   "modelo": "Orange Crush 12",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (analógico)",
+   "formato": "Combo",
+   "potencia": "12 W",
+   "alto_falantes": "1 x 6\" Orange Voice of the World",
+   "canais": "1 (com Gain e Overdrive independentes)",
+   "controles": "Volume, Treble, Middle, Bass, Overdrive, Gain",
+   "conexoes": "Entrada de instrumento P10, saída de fone com CabSim",
+   "dimensoes": "305 x 290 x 175 mm (L x A x P)",
+   "peso_produto": "4,7 kg",
+   "cor": "Laranja"
+  },
+  "descricao_curta": "Combo de estudo de 12 W com alto-falante de 6\", circuito analógico e controles separados de Gain e Overdrive, além de saída de fone com simulação de caixa.",
+  "tags": [
+   "transistor",
+   "combo",
+   "guitarra",
+   "saida-fone",
+   "cabsim",
+   "12w",
+   "estudo"
+  ],
+  "envio": {
+   "peso_kg": 5.5,
+   "comprimento_cm": 36,
+   "largura_cm": 34,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Confirmar a cor da unidade (o nome não indica; há laranja e preto)."
+  ],
+  "fontes": [
+   "https://orangeamps.com/products/crush-12",
+   "https://www.adorama.com/orcrsh12bk.html",
+   "https://richtonemusic.co.uk/Orange-Crush-12-Combo-Black/",
+   "https://fullcompass.com/prod/277125-orange-crush12-crush-12-12w-guitar-amplifier-with-6-speaker"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6421,
+  "campos": {
+   "modelo": "Orange Crush 12",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (analógico)",
+   "formato": "Combo",
+   "potencia": "12 W",
+   "alto_falantes": "1 x 6\" Orange Voice of the World",
+   "canais": "1 (com Gain e Overdrive independentes)",
+   "controles": "Volume, Treble, Middle, Bass, Overdrive, Gain",
+   "conexoes": "Entrada de instrumento P10, saída de fone com CabSim",
+   "dimensoes": "305 x 290 x 175 mm (L x A x P)",
+   "peso_produto": "4,7 kg",
+   "cor": "Preto (Black)"
+  },
+  "descricao_curta": "Versão preta do Crush 12: combo analógico de 12 W com alto-falante de 6\", Gain e Overdrive independentes e saída de fone com CabSim.",
+  "tags": [
+   "transistor",
+   "combo",
+   "guitarra",
+   "saida-fone",
+   "cabsim",
+   "12w",
+   "estudo",
+   "preto"
+  ],
+  "envio": {
+   "peso_kg": 5.5,
+   "comprimento_cm": 36,
+   "largura_cm": 34,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt."
+  ],
+  "fontes": [
+   "https://orangeamps.com/products/crush-12",
+   "https://www.adorama.com/orcrsh12bk.html",
+   "https://richtonemusic.co.uk/Orange-Crush-12-Combo-Black/",
+   "https://fullcompass.com/prod/277125-orange-crush12-crush-12-12w-guitar-amplifier-with-6-speaker"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6429,
+  "campos": {
+   "modelo": "Orange Crush 20RT",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (analógico, reverb digital)",
+   "formato": "Combo",
+   "potencia": "20 W",
+   "alto_falantes": "1 x 8\" Orange Voice of the World",
+   "canais": "2 (Clean e Dirty)",
+   "controles": "Clean Volume, Dirty Gain, Bass, Middle, Treble, Dirty Volume, Reverb, chave de canal",
+   "efeitos": "Reverb digital tipo mola; afinador cromático integrado",
+   "conexoes": "Entrada de instrumento P10, entrada auxiliar P2, saída de fone com CabSim (simula 4x12 Orange microfonada)",
+   "dimensoes": "375 x 325 x 197 mm",
+   "peso_produto": "7,2 kg"
+  },
+  "descricao_curta": "Combo de 20 W com dois canais (Clean/Dirty), reverb e afinador embutidos, entrada aux e saída de fone com simulação de caixa 4x12.",
+  "tags": [
+   "transistor",
+   "combo",
+   "guitarra",
+   "2-canais",
+   "reverb",
+   "afinador",
+   "saida-fone",
+   "cabsim",
+   "entrada-aux",
+   "20w"
+  ],
+  "envio": {
+   "peso_kg": 8.5,
+   "comprimento_cm": 43,
+   "largura_cm": 38,
+   "altura_cm": 26
+  },
+  "correcoes": [
+   "O nome do produto diz 'Clean e DI'; o correto é 'Clean e Dirty' (canais do Crush 20RT)."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Confirmar cor da unidade (laranja ou preto).",
+   "O título termina truncado ('...CLEAN E DI'); revisar."
+  ],
+  "fontes": [
+   "https://www.adorama.com/orcrsh20rtbk.html",
+   "https://www.americanmusical.com/p/orange-crush-20rt-guitar-combo-amplifier-with-reverb",
+   "https://www.kirstein.de/en/Guitar-Combos/Orange-Crush-20RT.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6442,
+  "campos": {
+   "modelo": "Orange Crush Pro CR60C",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (analógico, reverb digital)",
+   "formato": "Combo",
+   "potencia": "60 W RMS",
+   "alto_falantes": "1 x 12\" Orange Voice of the World",
+   "canais": "2 (Clean e Dirty), comutáveis por footswitch",
+   "controles": "Clean: Volume, Bass, Treble | Dirty: Gain, Bass, Middle, Treble, Volume | Global: Reverb (nível) e seletor de tipo",
+   "efeitos": "Reverb digital com 3 tipos (Spring, Plate, Hall), acionável por footswitch",
+   "conexoes": "Entrada P10, loop de efeitos bufferizado (Send/Return), entrada de footswitch",
+   "dimensoes": "550 x 450 x 290 mm",
+   "peso_produto": "20,25 kg",
+   "cor": "Preto (Black)"
+  },
+  "descricao_curta": "Combo Crush Pro de 60 W com alto-falante de 12\" Voice of the World, dois canais analógicos, reverb com três tipos e loop de efeitos bufferizado. Volume de sobra para ensaio e palco.",
+  "tags": [
+   "transistor",
+   "combo",
+   "guitarra",
+   "2-canais",
+   "reverb",
+   "fx-loop",
+   "1x12",
+   "60w",
+   "preto"
+  ],
+  "envio": {
+   "peso_kg": 23.5,
+   "comprimento_cm": 63,
+   "largura_cm": 52,
+   "altura_cm": 35
+  },
+  "correcoes": [
+   "A descrição cita 'Saída de Linha' e 'Master Volume' e 'gabinete de birch plywood'; não foi possível confirmar esses itens nas fontes. Revisar antes de publicar."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Footswitch não acompanha de fábrica (vendido à parte, FS-1/FS-2); confirmar se vem com a peça.",
+   "Conferir no painel traseiro se há saída de linha/fone ou afinador (não confirmados nas fontes).",
+   "Peso e medidas vêm de uma única revenda (Adorama)."
+  ],
+  "fontes": [
+   "https://www.long-mcquade.com/46200/Guitars/Amps/Orange-Amplifiers/CR60C-Crush-60W-2-Channel-Combo-Amp-w-Rev-FX-Loop.htm",
+   "https://chucklevins.com/products/orange-crush-pro-cr60c-1-x-12-combo-amplifier-orange",
+   "https://www.adorama.com/orcr60c.html",
+   "https://www.musicradar.com/reviews/guitars/orange-crush-pro-series-cr60c-587352",
+   "https://orangeamps.com/crush-pro-series-manual/"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 6471,
+  "campos": {
+   "modelo": "Orange Crush Acoustic 30",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (com efeitos digitais)",
+   "formato": "Combo (gabinete inclinado)",
+   "potencia": "30 W",
+   "alto_falantes": "1 x 8\" Orange Voice of the World com whizzer cone",
+   "canais": "2 (Canal 1: instrumento | Canal 2: microfone/linha, com phantom power +48V)",
+   "controles": "Canal 1: Gain, Bass, Middle, Treble, chave Colour | Canal 2: Gain, chave Mic/Line, phantom power | Global: Notch (anti-microfonia), FX Blend, FX Level, Master",
+   "efeitos": "Reverb e chorus digitais",
+   "conexoes": "Entrada de instrumento P10, entrada de microfone XLR, entrada auxiliar, saída de linha, saída XLR balanceada, loop de efeitos mono, saída de fone",
+   "dimensoes": "280 x 320 x 230 mm",
+   "peso_produto": "6,12 kg",
+   "acessorios": "Fonte DC externa",
+   "cor": "Preto (Black)"
+  },
+  "descricao_curta": "Amplificador de violão de 30 W com canal de instrumento e canal de microfone (com phantom), reverb e chorus, filtro notch e opção de funcionar com pilhas. Ótimo para voz e violão em pequenos shows.",
+  "tags": [
+   "transistor",
+   "combo",
+   "violao",
+   "acustico",
+   "2-canais",
+   "reverb",
+   "chorus",
+   "xlr",
+   "phantom-power",
+   "pilha",
+   "saida-fone",
+   "preto"
+  ],
+  "envio": {
+   "peso_kg": 7.5,
+   "comprimento_cm": 37,
+   "largura_cm": 34,
+   "altura_cm": 29
+  },
+  "correcoes": [
+   "A descrição lista controles que não correspondem ao modelo (Pad -10 dB, Reverb com modos Hall/Spring/Plate); o Crush Acoustic 30 tem reverb e chorus com Blend/Level, chave Colour e Notch (manual e revendas). Revisar a lista de controles.",
+   "A descrição omite chorus, phantom power, saída XLR balanceada e loop de efeitos."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt. A fonte DC externa acompanha?",
+   "Testar funcionamento com pilhas e com fonte; checar compartimento de pilhas (oxidação).",
+   "Conferir lista de controles do painel na própria peça."
+  ],
+  "fontes": [
+   "https://orangeamps.com/crush-acoustic-30/",
+   "https://www.adorama.com/col/productManuals/ORCRUSH30.pdf",
+   "https://www.guitarworld.com/reviews/orange-crush-acoustic-30-review",
+   "https://www.zzounds.com/item--ORACA30"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 6477,
+  "campos": {
+   "modelo": "Orange Crush Acoustic 30",
+   "fabricacao": "Projeto Orange (Reino Unido); fabricação na China",
+   "tipo_amp": "Transistor (com efeitos digitais)",
+   "formato": "Combo (gabinete inclinado)",
+   "potencia": "30 W",
+   "alto_falantes": "1 x 8\" Orange Voice of the World com whizzer cone",
+   "canais": "2 (Canal 1: instrumento | Canal 2: microfone/linha, com phantom power +48V)",
+   "controles": "Canal 1: Gain, Bass, Middle, Treble, chave Colour | Canal 2: Gain, chave Mic/Line, phantom power | Global: Notch (anti-microfonia), FX Blend, FX Level, Master",
+   "efeitos": "Reverb e chorus digitais",
+   "conexoes": "Entrada de instrumento P10, entrada de microfone XLR, entrada auxiliar, saída de linha, saída XLR balanceada, loop de efeitos mono, saída de fone",
+   "dimensoes": "280 x 320 x 230 mm",
+   "peso_produto": "6,12 kg",
+   "acessorios": "Fonte DC externa",
+   "cor": "Laranja"
+  },
+  "descricao_curta": "Amplificador de violão de 30 W com canal de instrumento e canal de microfone (com phantom), reverb e chorus, filtro notch e opção de funcionar com pilhas, no visual laranja clássico.",
+  "tags": [
+   "transistor",
+   "combo",
+   "violao",
+   "acustico",
+   "2-canais",
+   "reverb",
+   "chorus",
+   "xlr",
+   "phantom-power",
+   "pilha",
+   "saida-fone"
+  ],
+  "envio": {
+   "peso_kg": 7.5,
+   "comprimento_cm": 37,
+   "largura_cm": 34,
+   "altura_cm": 29
+  },
+  "correcoes": [
+   "A descrição lista controles que não correspondem ao modelo (Pad -10 dB, Reverb com modos Hall/Spring/Plate); o Crush Acoustic 30 tem reverb e chorus com Blend/Level, chave Colour e Notch (manual e revendas). Revisar a lista de controles.",
+   "A descrição omite chorus, phantom power, saída XLR balanceada e loop de efeitos."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt. A fonte DC externa acompanha?",
+   "Testar funcionamento com pilhas e com fonte; checar compartimento de pilhas (oxidação).",
+   "Conferir lista de controles do painel na própria peça."
+  ],
+  "fontes": [
+   "https://orangeamps.com/crush-acoustic-30/",
+   "https://www.adorama.com/col/productManuals/ORCRUSH30.pdf",
+   "https://www.guitarworld.com/reviews/orange-crush-acoustic-30-review",
+   "https://www.zzounds.com/item--ORACA30"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 6483,
+  "campos": {
+   "modelo": "Orange O Tone 40",
+   "fabricacao": "Projeto Orange (Reino Unido)",
+   "tipo_amp": "Transistor (pré JFET, potência classe A/B)",
+   "formato": "Combo",
+   "potencia": "40 W",
+   "alto_falantes": "1 x 12\" Orange Voice of the World",
+   "canais": "1",
+   "controles": "Volume, Treble, Middle, Bass, Tremolo Speed, Tremolo Depth, Reverb",
+   "efeitos": "Reverb digital tipo mola; tremolo (acionável por footswitch)",
+   "conexoes": "Entrada P10, loop de efeitos bufferizado, entrada auxiliar, saída de linha, saída de fone com CabSim, entrada de footswitch (tremolo)",
+   "dimensoes": "440 x 395 x 230 mm (17.32 x 15.56 x 9.06\")",
+   "peso_produto": "11,75 kg"
+  },
+  "descricao_curta": "Combo de 40 W de canal único focado em limpo, com alto-falante de 12\", reverb e tremolo embutidos, loop de efeitos e saída de fone com simulação. Ótima base para pedais.",
+  "tags": [
+   "transistor",
+   "combo",
+   "guitarra",
+   "1x12",
+   "reverb",
+   "tremolo",
+   "fx-loop",
+   "saida-fone",
+   "cabsim",
+   "entrada-aux",
+   "40w"
+  ],
+  "envio": {
+   "peso_kg": 13.5,
+   "comprimento_cm": 51,
+   "largura_cm": 46,
+   "altura_cm": 30
+  },
+  "correcoes": [
+   "A descrição diz alto-falante de 10\"; o O Tone 40 usa 1 x 12\" Voice of the World (revendas e Orange).",
+   "A descrição diz 2 canais (Clean e Dirty) com Gain; o O Tone 40 é de canal único, sem chave Clean/Dirty. Os controles são Volume, Treble, Middle, Bass, Tremolo Speed/Depth e Reverb.",
+   "A descrição omite tremolo, loop de efeitos e saída de linha."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Confirmar se há knob de Gain no painel (uma única review cita Gain; as demais fontes não).",
+   "Confirmar cor da unidade (laranja ou preto).",
+   "Footswitch de tremolo acompanha?"
+  ],
+  "fontes": [
+   "https://orangeamps.com/o-tone-40/",
+   "https://orangeamps.com/blogs/news/product-launch-o-tone-40",
+   "https://www.guitarworld.com/gear/combo-amps/orange-o-tone-40-review",
+   "https://www.long-mcquade.com/427764/Guitars/Amps/Orange-Amplifiers/O-Tone-40-Watt-Combo-Amp-w-FX-Loop.htm",
+   "https://avlgear.com/products/orange-o-tone-40-combo-amplifier"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 6500,
+  "campos": {
+   "fabricacao": "Projeto Orange (Reino Unido)",
+   "tipo_amp": "Transistor (classe A/B)",
+   "formato": "Cabeçote compacto (rackeável)",
+   "potencia": "100 W RMS em 8 ohms / 70 W em 16 ohms",
+   "impedancia": "Mínimo 8 ohms (1 x 8, 1 x 16 ou 2 x 16 ohms)",
+   "conexoes": "Entrada P10, loop de efeitos bufferizado, 2 saídas de caixa P10, saída XLR balanceada com ground lift, entrada de footswitch",
+   "dimensoes": "300 x 80 x 195 mm",
+   "peso_produto": "3,59 kg",
+   "acessorios": "Gig bag (de fábrica)",
+   "modelo": "Orange Dual Baby 100",
+   "canais": "2 (A e B), comutáveis por footswitch",
+   "controles": "Canal A: Gain, Volume, Presence, Bass, Middle, Treble, chave Tubby | Canal B: Gain, Volume, Presence, Bass, Middle, Treble, chave Tight | Seletor de canal"
+  },
+  "descricao_curta": "Cabeçote compacto de 100 W com dois canais de ganho independentes (cada um com EQ de 3 bandas e Presence), loop bufferizado e saída XLR para mesa/IR. Cabe na mochila.",
+  "tags": [
+   "transistor",
+   "cabecote",
+   "guitarra",
+   "2-canais",
+   "fx-loop",
+   "saida-xlr",
+   "100w",
+   "rack",
+   "compacto"
+  ],
+  "envio": {
+   "peso_kg": 4.5,
+   "comprimento_cm": 38,
+   "largura_cm": 28,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição cita 'pré-amplificação JFET' e 'acesso a IRs e simulações de coluna'; não confirmado: a saída XLR é DI balanceada (para usar IR externo), sem simulação embutida confirmada.",
+   "A descrição cita saídas '8/16 Ohm'; mais preciso: 2 saídas, carga mínima 8 ohms (100 W em 8 Ω, 70 W em 16 Ω).",
+   "Peso: a descrição diz ~3,6 kg; Orange/revendas: 3,59 kg (ok)."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Gig bag e footswitch acompanham?",
+   "Não ligar sem caixa conectada se for usar só a XLR? Conferir manual (review indica desconectar a caixa para uso só pela XLR)."
+  ],
+  "fontes": [
+   "https://www.dawsons.co.uk/products/orange-dual-baby-100-100w-twin-channel-guitar-amp-head-w-fx-loop",
+   "https://altomusic.com/products/orange-dual-baby-100-watt-amplifier-head",
+   "https://www.premierguitar.com/gear/reviews/orange-gain-tour-and-dual-baby-100",
+   "https://guitarworld.com/gear/combo-amps/orange-baby-100-series-tour-baby-gain-baby-dual-baby-review",
+   "https://www.musicradar.com/guitars/orange-dual-baby-100-and-gain-baby-100-review"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6508,
+  "campos": {
+   "fabricacao": "Projeto Orange (Reino Unido)",
+   "tipo_amp": "Transistor (classe A/B)",
+   "formato": "Cabeçote compacto (rackeável)",
+   "potencia": "100 W RMS em 8 ohms / 70 W em 16 ohms",
+   "impedancia": "Mínimo 8 ohms (1 x 8, 1 x 16 ou 2 x 16 ohms)",
+   "conexoes": "Entrada P10, loop de efeitos bufferizado, 2 saídas de caixa P10, saída XLR balanceada com ground lift, entrada de footswitch",
+   "dimensoes": "300 x 80 x 195 mm",
+   "peso_produto": "3,59 kg",
+   "acessorios": "Gig bag (de fábrica)",
+   "modelo": "Orange Gain Baby 100",
+   "canais": "2 (Clean e Dirty), comutáveis por footswitch",
+   "controles": "Clean: Volume, Compression, Bass, Treble | Dirty: Gain, Volume, FS Volume (2º volume por footswitch), Presence, Bass, Middle, Treble, chave Tight",
+   "efeitos": "Compressor VCA no canal limpo"
+  },
+  "descricao_curta": "Cabeçote compacto de 100 W com canal limpo com compressor e canal Dirty de alto ganho com Presence e chave Tight, loop bufferizado e saída XLR.",
+  "tags": [
+   "transistor",
+   "cabecote",
+   "guitarra",
+   "2-canais",
+   "high-gain",
+   "fx-loop",
+   "saida-xlr",
+   "100w",
+   "rack",
+   "compacto"
+  ],
+  "envio": {
+   "peso_kg": 4.5,
+   "comprimento_cm": 38,
+   "largura_cm": 28,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição diz 'canal único'; o Gain Baby 100 tem 2 canais (Clean com compressor e Dirty), comutáveis por footswitch (Premier Guitar, Guitar World, revendas).",
+   "Controles listados estão incompletos: faltam Compression (clean), FS Volume e chave Tight."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Gig bag e footswitch acompanham?"
+  ],
+  "fontes": [
+   "https://orangeamps.com/gain-baby-100/",
+   "https://www.zzounds.com/item--ORAGAINBABY100H",
+   "https://www.dawsons.co.uk/products/orange-gain-baby-100-100w-twin-channel-guitar-amp-head-w-fx-loop",
+   "https://www.premierguitar.com/gear/reviews/orange-gain-tour-and-dual-baby-100",
+   "https://guitarworld.com/gear/combo-amps/orange-baby-100-series-tour-baby-gain-baby-dual-baby-review",
+   "https://www.musicradar.com/guitars/orange-dual-baby-100-and-gain-baby-100-review"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6536,
+  "campos": {
+   "fabricacao": "Projeto Orange (Reino Unido)",
+   "tipo_amp": "Transistor (classe A/B)",
+   "formato": "Cabeçote compacto (rackeável)",
+   "potencia": "100 W RMS em 8 ohms / 70 W em 16 ohms",
+   "impedancia": "Mínimo 8 ohms (1 x 8, 1 x 16 ou 2 x 16 ohms)",
+   "conexoes": "Entrada P10, loop de efeitos bufferizado, 2 saídas de caixa P10, saída XLR balanceada com ground lift, entrada de footswitch",
+   "dimensoes": "300 x 80 x 195 mm",
+   "peso_produto": "3,59 kg",
+   "acessorios": "Gig bag (de fábrica)",
+   "modelo": "Orange Tour Baby 100",
+   "canais": "2 (Clean e Dirty), comutáveis por footswitch",
+   "controles": "Clean: Volume, Compression, Bass, Treble | Dirty: Gain, Volume, FS Volume, Presence, Bass, Middle, Treble",
+   "efeitos": "Compressor VCA no canal limpo"
+  },
+  "descricao_curta": "Cabeçote compacto de 100 W pensado como plataforma para pedais: canal limpo com compressor, canal Dirty, loop bufferizado e saída XLR para ligar direto na mesa.",
+  "tags": [
+   "transistor",
+   "cabecote",
+   "guitarra",
+   "2-canais",
+   "fx-loop",
+   "saida-xlr",
+   "100w",
+   "rack",
+   "compacto"
+  ],
+  "envio": {
+   "peso_kg": 4.5,
+   "comprimento_cm": 38,
+   "largura_cm": 28,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição cita 'Entrada Auxiliar' e 'Saída de linha/Headphone com simulação de gabinete'; não confirmado nas fontes. O Tour Baby tem saída XLR balanceada, loop de efeitos e 2 saídas de caixa.",
+   "A descrição omite compressor do canal limpo, Presence e loop de efeitos.",
+   "Texto curto tem erros de espanhol ('distorsiones', 'alta ganância', 'calidez'); revisar."
+  ],
+  "conferir": [
+   "Conferir voltagem de alimentação da unidade (110V/127V ou 220V/230V) na etiqueta traseira; Orange fabrica versões por região, não bivolt.",
+   "Conferir se há chave Tight no canal Dirty (fontes divergem).",
+   "Conferir no painel se há saída de fone (não confirmada).",
+   "Gig bag e footswitch acompanham?"
+  ],
+  "fontes": [
+   "https://www.musicorp.com.au/amplifiers/orange-tour-baby-100-class-ab-guitar-amp-head-100w-8-ohms-70w-16-ohms/950414-6246066/",
+   "https://www.dawsons.co.uk/products/orange-tour-baby-100-100w-twin-channel-guitar-amp-head-w-fx-loop",
+   "https://www.premierguitar.com/gear/reviews/orange-gain-tour-and-dual-baby-100",
+   "https://guitarworld.com/gear/combo-amps/orange-baby-100-series-tour-baby-gain-baby-dual-baby-review",
+   "https://www.musicradar.com/guitars/orange-dual-baby-100-and-gain-baby-100-review"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7446,
+  "campos": {
+   "modelo": "Custom Amps Hot Rod",
+   "tipo_amp": "Valvulado (segundo a loja)"
+  },
+  "descricao_curta": "Amplificador valvulado 'Hot Rod' de fabricação artesanal/boutique (Custom Amps), seminovo. Especificações a confirmar na peça.",
+  "tags": [
+   "valvulado",
+   "seminovo",
+   "garimpo"
+  ],
+  "envio": {
+   "peso_kg": 16,
+   "comprimento_cm": 65,
+   "largura_cm": 35,
+   "altura_cm": 35
+  },
+  "correcoes": [
+   "Não foi encontrado fabricante 'Custom Amps' com modelo 'Hot Rod' em fontes confiáveis (resultados apontam só Soldano Hot Rod e Fender Hot Rod). As especificações da descrição (2 canais, saídas 4/8/16 ohms, loop, saída de linha) não puderam ser confirmadas e parecem genéricas; validar na peça."
+  ],
+  "conferir": [
+   "Identificar fabricante/origem (etiqueta, número de série, plaquinha traseira) e se é cabeçote ou combo.",
+   "Listar válvulas instaladas (pré e potência) e estado; potência real.",
+   "Conferir controles do painel, número de canais, saídas de caixa/impedâncias e loop de efeitos de fato presentes.",
+   "Voltagem (110/220V, chave seletora?) e fusível.",
+   "Peso e medidas reais para frete (estimativa usada: 16 kg).",
+   "Se for clone de Fender Hot Rod/Soldano, citar a referência apenas se confirmada."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ }
+]

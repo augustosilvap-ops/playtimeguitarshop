@@ -1,0 +1,1012 @@
+[
+  {
+    "id": 6258,
+    "campos": {
+      "modelo": "NIG PHF Phaser & Flanger",
+      "fabricacao": "Brasil (NIG Music; também vendido como GNI PHF no exterior)",
+      "tipo_efeito": "Modulação dupla: Phaser e Flanger analógicos",
+      "controles": "Conjunto de controles independente para Phaser e para Flanger (inclui Speed, Range, Ress/Resonance e Mix, conforme o efeito)",
+      "chaves": "Footswitches para acionar Phaser e Flanger de forma independente ou simultânea",
+      "alimentacao": "9V DC, centro negativo"
+    },
+    "descricao_curta": "Pedal brasileiro artesanal da NIG que reúne phaser e flanger analógicos, com controles independentes e uso separado ou simultâneo.",
+    "tags": [
+      "phaser",
+      "flanger",
+      "modulacao",
+      "analogico",
+      "made-in-brazil",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Ficha atual e descrição trazem resíduo de formatação ('Controles: * 4 controles...'): remover o asterisco solto."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Conferir no painel os nomes exatos dos knobs de cada seção (a loja fala em 4+4+2 controles; não foi possível confirmar no site da NIG).",
+      "Conferir consumo em mA na etiqueta/manual (não localizado).",
+      "Não foi confirmado se é true bypass."
+    ],
+    "fontes": [
+      "https://www.effectsdatabase.com/model/nig/phf",
+      "https://www.rockboard.de/en/pedalPedia/GNI-Music/PHF-Phaser--Flanger/708581350"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6262,
+    "campos": {
+      "modelo": "NUX Horseman (NOD-1)",
+      "serie": "Mini Core",
+      "tipo_efeito": "Overdrive estilo Klon Centaur",
+      "controles": "Gain (potenciômetro duplo), Treble, Output",
+      "chaves": "Modos Gold e Silver; footswitch",
+      "alimentacao": "9V DC, centro negativo (conversor interno para 18V)",
+      "bypass": "Selecionável: True bypass (LED vermelho) ou Buffered (LED verde)",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "dimensoes": "94 x 51 x 53 mm",
+      "peso_produto": "174 g"
+    },
+    "descricao_curta": "Overdrive compacto da linha Mini Core inspirado no Klon Centaur, com conversor interno para 18V e bypass selecionável (true bypass ou buffer).",
+    "tags": [
+      "overdrive",
+      "klon",
+      "mini",
+      "true-bypass",
+      "buffer",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Consumo de 90 mA citado na descrição não é consistente entre fontes (há listagens com 20 mA); melhor não publicar o valor sem confirmar no manual."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Conferir consumo no manual/etiqueta antes de publicar o valor em mA.",
+      "Para trocar o modo de bypass: segurar o footswitch ao ligar a alimentação (LED vermelho = true bypass, verde = buffer)."
+    ],
+    "fontes": [
+      "https://www.andertons.co.uk/nux/nux-nod-1-horseman-overdrive-pedal",
+      "https://www.rubbermonkey.co.nz/NUX-NOD-1-Horseman-Overdrive-Pedal"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6268,
+    "campos": {
+      "modelo": "NUX Morning Star (NOD-3)",
+      "serie": "Mini Core",
+      "tipo_efeito": "Overdrive estilo Blues Breaker",
+      "controles": "Drive, Tone, Level",
+      "chaves": "Footswitch com função Shine (realce de agudos) e seleção de bypass",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "bypass": "Selecionável: True bypass (LED vermelho) ou Buffered (LED verde)",
+      "conexoes": "Entrada e saída P10 (1/4\") mono; impedância de entrada 1 MΩ, saída 1 kΩ",
+      "dimensoes": "94 x 51 x 53 mm",
+      "peso_produto": "174 g"
+    },
+    "descricao_curta": "Overdrive estilo Blues Breaker em formato mini, com função Shine para brilho extra e bypass selecionável.",
+    "tags": [
+      "overdrive",
+      "blues-breaker",
+      "mini",
+      "true-bypass",
+      "buffer",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Consumo exato não confirmado (varejistas indicam fonte de 9V com 100 mA ou mais)."
+    ],
+    "fontes": [
+      "https://www.rubbermonkey.co.nz/NUX-NOD-3-Morning-Star-Overdrive-Pedal",
+      "https://www.pitbullaudio.com/nux-effects-nod-3-morning-star-overdrive-pedal.html"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6271,
+    "campos": {
+      "modelo": "NUX Sculpture Compressor (NCP-2)",
+      "serie": "Mini Core",
+      "tipo_efeito": "Compressor",
+      "controles": "Sustain, Level, Blend",
+      "chaves": "Footswitch multifunção (modos Clean e Clip; seleção de bypass)",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "bypass": "Selecionável: True bypass ou Buffered",
+      "conexoes": "Entrada e saída P10 (1/4\") mono; impedância de entrada 1 MΩ, saída 20 Ω",
+      "dimensoes": "94 x 51 x 53 mm"
+    },
+    "descricao_curta": "Compressor mini da NUX com controle Blend (compressão paralela) e dois modos de compressão, ocupando pouco espaço na pedalboard.",
+    "tags": [
+      "compressor",
+      "mini",
+      "blend",
+      "true-bypass",
+      "buffer",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Faixa de consumo '20 mA a 100 mA' da descrição não foi confirmada; fontes só indicam fonte 9V de 100 mA ou mais."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Peso varia entre fontes (174 g x ~255 g); não publicado."
+    ],
+    "fontes": [
+      "https://tma-benelux.com/fi/product/473428/compressor-pedal-sculpture",
+      "https://musicmax.eu/fr/p22557fr/"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6274,
+    "campos": {
+      "modelo": "NUX Tube Man",
+      "tipo_efeito": "Overdrive",
+      "controles": "Drive, Tone, Level",
+      "alimentacao": "9V DC, centro negativo",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Overdrive NUX de 3 knobs (Drive, Tone, Level) com saturação de caráter valvulado, simples e direto.",
+    "tags": [
+      "overdrive",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição diz 'Tube Man (OD-3)'; o OD-3 da NUX é outro pedal (Vintage Overdrive). O Tube Man atual é o Tube Man MKII / NOD-2 (Mini Core) (Sweetwater, Effects Database)."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Identificar a versão pela etiqueta: Tube Man original, Tube Man MKII ou mini NOD-2 (formato e bypass mudam entre versões).",
+      "Conferir se aceita bateria e o tipo de bypass da versão em mãos."
+    ],
+    "fontes": [
+      "https://www.sweetwater.com/store/detail/TubeMan2",
+      "https://www.effectsdatabase.com/model/nux/minicore/tubeman"
+    ],
+    "confianca": "baixa"
+  },
+  {
+    "id": 6277,
+    "campos": {
+      "modelo": "Orange Terror Stamp",
+      "tipo_efeito": "Amplificador em formato de pedal (híbrido: pré valvulado 12AX7/ECC83 + power amp estado sólido classe AB)",
+      "controles": "Gain, Shape, Volume 1, Volume 2",
+      "chaves": "Footswitch seleciona Volume 1 / Volume 2",
+      "alimentacao": "15V DC, 2A, centro POSITIVO (fonte inclusa)",
+      "conexoes": "Entrada, saída de falante 8–16 Ω, FX loop (Send/Return, buffered), saída CabSim/fone",
+      "peso_produto": "aprox. 0,38 kg",
+      "acessorios": "Fonte 15V DC (segundo a loja e o fabricante)"
+    },
+    "descricao_curta": "Amplificador Orange de 20W no tamanho de um pedal, com pré valvulado 12AX7, FX loop e saída com simulação de gabinete para gravar direto.",
+    "tags": [
+      "amp-pedal",
+      "valvulado",
+      "hibrido",
+      "20w",
+      "fx-loop",
+      "cab-sim",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 1.2,
+      "comprimento_cm": 25,
+      "largura_cm": 20,
+      "altura_cm": 12
+    },
+    "correcoes": [
+      "Alimentação é 15V DC centro positivo, 2A; não usar fonte de pedal 9V comum (Long & McQuade / fabricante)."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Confirmar se a fonte 15V original acompanha a peça.",
+      "Conferir válvula 12AX7 (original/estado).",
+      "Testar saída de falante com caixa de 8–16 Ω e a saída CabSim/fone.",
+      "Dimensões variam entre fontes (aprox. 130–134 x 95–99 x 41 mm); medir antes de publicar."
+    ],
+    "fontes": [
+      "https://long-mcquade.com/191672/Guitars/Guitar-Amps/Orange-Amplifiers/Terror-Stamp-20W-Hybrid-Valve-Guitar-Amp-Pedal.htm",
+      "https://www.musicradar.com/reviews/orange-terror-stamp",
+      "https://www.guitarplayer.com/reviews/orange-terror-stamp-review"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6280,
+    "campos": {
+      "modelo": "Kappa Orion Reverb",
+      "fabricacao": "Brasil (Kappa Electronics)",
+      "tipo_efeito": "Reverb digital",
+      "alimentacao": "9V DC, centro negativo",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Reverb da fabricante brasileira Kappa Electronics, com vários modos de ambiência em formato compacto.",
+    "tags": [
+      "reverb",
+      "digital",
+      "made-in-brazil",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Modelo 'Orion' não foi localizado em fontes públicas da Kappa (a linha conhecida tem o reverb Cosmos): conferir nome e serigrafia no pedal.",
+      "Conferir no painel os controles e a quantidade de modos (descrição fala em 6 modos e knobs Selector, Mix, Tone/Decay).",
+      "Conferir consumo e tipo de bypass."
+    ],
+    "fontes": [
+      "https://equipboard.com/brands/kappa-electronics"
+    ],
+    "confianca": "baixa"
+  },
+  {
+    "id": 6283,
+    "campos": {
+      "modelo": "Mooer Tender Octaver X2",
+      "tipo_efeito": "Oitavador polifônico (oitava abaixo e acima, digital)",
+      "chaves": "2 footswitches (módulos Sub e Upper, liga/desliga independente); 14 presets (7 vermelhos + 7 azuis)",
+      "alimentacao": "9V DC, centro negativo (plug 2,1 mm)",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "dimensoes": "115 x 75 x 33 mm",
+      "peso_produto": "334 g",
+      "acessorios": "Fonte 9V DC (segundo o manual, quando novo)"
+    },
+    "descricao_curta": "Oitavador polifônico da série X2 da Mooer, com módulos de oitava abaixo e acima independentes e 14 presets.",
+    "tags": [
+      "octaver",
+      "oitavador",
+      "polifonico",
+      "digital",
+      "presets"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Conferir se acompanha a fonte 9V e a caixa original (o manual lista fonte como acessório).",
+      "Consumo não confirmado no manual (um varejista indica 300 mA).",
+      "Tipo de bypass ('True Bypass' na descrição) não confirmado em fonte oficial."
+    ],
+    "fontes": [
+      "https://media.rockboard.de/Artikell_PDF/Manual_PDF/Mooer/EN/ME_TENDER_OCTAVER_X2_Manual_EN.pdf",
+      "https://www.bax-shop.co.uk/pitch-shifter/mooer-tender-octaver-x2-dual-channel-octave-effects-pedal"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6286,
+    "campos": {
+      "modelo": "Pedrone Penta-Switch",
+      "fabricacao": "Brasil (Pedrone)",
+      "tipo_efeito": "Chaveador de loops programável (switcher)",
+      "chaves": "5 footswitches programáveis (até 10 combinações); saída extra para troca de canal do amplificador",
+      "alimentacao": "9V DC, centro negativo",
+      "consumo_ma": "270 mA (RockBoard); a loja informa máximo de 300 mA",
+      "bypass": "Circuito analógico, chaveamento por relés",
+      "dimensoes": "290 x 40 x 70 mm (segundo a loja)"
+    },
+    "descricao_curta": "Switcher programável brasileiro com 5 loops, até 10 combinações e saída para troca de canal do amplificador, em formato compacto.",
+    "tags": [
+      "switcher",
+      "loop",
+      "programavel",
+      "made-in-brazil",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Testar os 5 loops, a memória dos programas e a saída de controle de amplificador.",
+      "Conferir se acompanha manual/fonte."
+    ],
+    "fontes": [
+      "https://www.rockboard.de/en/pedalPedia/Pedrone/PENTA-SWITCH/295520465"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6292,
+    "campos": {
+      "modelo": "Mooer Reverie Chorus (TCH1)",
+      "serie": "Twin Series",
+      "tipo_efeito": "Chorus / modulação digital estéreo",
+      "chaves": "2 footswitches; 5 presets de usuário; tap tempo",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "consumo_ma": "130 mA",
+      "conexoes": "Entrada e saída estéreo P10 (1/4\"); impedância de entrada 1 MΩ, saída 100 Ω",
+      "dimensoes": "106 x 96 x 53 mm",
+      "peso_produto": "450 g"
+    },
+    "descricao_curta": "Chorus digital estéreo da Twin Series da Mooer, com vários modos de modulação, tap tempo e 5 presets.",
+    "tags": [
+      "chorus",
+      "modulacao",
+      "digital",
+      "estereo",
+      "presets",
+      "tap-tempo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Conferir caixa original e manual.",
+      "Lista de modos/efeitos da descrição não foi conferida item a item em fonte oficial; checar no painel.",
+      "Bypass 'True Bypass' só aparece em fonte secundária (Equipboard)."
+    ],
+    "fontes": [
+      "https://reverb.com/item/7137007-mooer-tch1-reverie-chorus-twin-series-digital-chorus-guitar-effects-pedal",
+      "https://eclipsemusic.org/products/mooer-reverie-chorus-twin-series-digital-effects-pedal"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6298,
+    "campos": {
+      "modelo": "Tech 21 SansAmp Blonde",
+      "serie": "SansAmp Character Series",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Pré-amplificador / overdrive / simulação de amplificador (analógico, estilo Fender)",
+      "controles": "Level, Drive, Character, Low, Mid, High",
+      "alimentacao": "9V DC (mín. 100 mA, fonte Tech 21 DC2 opcional) ou bateria 9V",
+      "conexoes": "Entrada e saída P10 (1/4\") mono; simulação de alto-falante integrada"
+    },
+    "descricao_curta": "SansAmp analógico da Tech 21 voltado a timbres de amplificadores Fender, do limpo ao saturado, com simulação de gabinete para gravar direto.",
+    "tags": [
+      "sansamp",
+      "amp-sim",
+      "preamp",
+      "overdrive",
+      "analogico",
+      "made-in-usa",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Título diz 'SAMSAMP'; o nome correto é SansAmp.",
+      "'Buffered Bypass' citado na descrição não foi confirmado para este modelo; remover ou confirmar."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Identificar se é a versão original ou a V2 (Blonde V2: 117 x 92 x 51 mm).",
+      "Conferir tipo de bypass."
+    ],
+    "fontes": [
+      "https://manualmachine.com/tech21/character/6482823-owners-manual",
+      "https://www.bax-shop.co.uk/distortion-overdrive/tech-21-blonde-v2-sansamp-character-series",
+      "https://zzounds.com/item--TCHBLONDEV2"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6301,
+    "campos": {
+      "modelo": "Skulacho Grump",
+      "fabricacao": "Brasil",
+      "controles": "Gain, Tone, Level",
+      "alimentacao": "9V DC, centro negativo",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Pedal de drive de fabricação nacional (Skulacho/Skullacho), com três controles: Gain, Tone e Level.",
+    "tags": [
+      "drive",
+      "made-in-brazil",
+      "boutique"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Modelo não localizado em fontes públicas; confirmar tipo de efeito (overdrive, distortion ou fuzz) testando o pedal.",
+      "Grafia da marca: aparece como 'Skullacho Effects' no Effects Database; conferir serigrafia.",
+      "Conferir se é true bypass (informado pela loja, não confirmado)."
+    ],
+    "fontes": [
+      "https://www.effectsdatabase.com/model/skullacho"
+    ],
+    "confianca": "baixa"
+  },
+  {
+    "id": 6307,
+    "campos": {
+      "modelo": "Strymon Cloudburst Ambient Reverb",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Reverb ambiente (digital, SHARC)",
+      "controles": "Decay, Pre-Delay, Mix, Tone, Mod; botão Ensemble",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa)",
+      "consumo_ma": "250 mA",
+      "bypass": "Selecionável: True bypass por relé ou Buffered",
+      "conexoes": "Entrada e saída estéreo P10 (1/4\"); jack EXP/MIDI (TRS); USB-C (MIDI e atualização de firmware)",
+      "dimensoes": "117 x 69 x 64 mm (4,6 x 2,7 x 2,5 pol.)",
+      "peso_produto": "aprox. 340 g"
+    },
+    "descricao_curta": "Reverb ambiente da Strymon com o algoritmo Ensemble, I/O estéreo, controle por expressão/MIDI e USB-C.",
+    "tags": [
+      "reverb",
+      "ambient",
+      "estereo",
+      "midi",
+      "true-bypass",
+      "buffer",
+      "made-in-usa",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Conferir versão do firmware e funcionamento do USB-C."
+    ],
+    "fontes": [
+      "https://www.strymon.net/manuals/cloudburst_UserManual_RevD.pdf",
+      "https://www.Andertons.co.uk/reverb-pedals/strymon-cloudburst-ambient-reverb-pedal",
+      "https://guitar.com/reviews/strymon-cloudburst-review"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6310,
+    "campos": {
+      "modelo": "T-Rex Mudhoney",
+      "tipo_efeito": "Overdrive / Distortion",
+      "controles": "Gain, Tone, Level",
+      "chaves": "Chave Boost (mais ganho)",
+      "alimentacao": "9V DC, centro negativo (8–12,5V) ou bateria 9V",
+      "dimensoes": "100 x 55 x 120 mm (com knobs)"
+    },
+    "descricao_curta": "Distorção clássica dinamarquesa da T-Rex, com chave Boost para levar do crunch ao drive saturado.",
+    "tags": [
+      "overdrive",
+      "distortion",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Confirmar que é o Mudhoney de canal único (não o Mudhoney II de dois canais) e se é da Danish Collection.",
+      "Tipo de bypass não confirmado em fonte oficial."
+    ],
+    "fontes": [
+      "https://www.perfectcircuit.com/t-rex-mudhoney.html",
+      "https://coleclarkguitars.com/portfolio-item/mudhoney-original/",
+      "https://reverb.com/item/39661981-t-rex-mudhoney-danish-collection-distortion-guitar-effect-pedal"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6314,
+    "campos": {
+      "modelo": "T-Rex Replicator Junior",
+      "tipo_efeito": "Tape echo (eco de fita real, 100% analógico, 1 cabeça de reprodução)",
+      "controles": "Saturation, Level, Feedback, Time",
+      "chaves": "Footswitch liga/desliga e footswitch Tap Tempo",
+      "alimentacao": "Fonte dedicada inclusa",
+      "conexoes": "Entrada e saída P10 (1/4\"); impedância de entrada 500 kΩ"
+    },
+    "descricao_curta": "Eco de fita de verdade em formato de pedal, com saturação ajustável e tap tempo; peça rara e cobiçada.",
+    "tags": [
+      "delay",
+      "tape-echo",
+      "analogico",
+      "tap-tempo",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 2.2,
+      "comprimento_cm": 35,
+      "largura_cm": 20,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "'Chaveamento: Tap Tempo' está incompleto: o tap tempo é um footswitch adicional ao liga/desliga."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Conferir se a fonte original acompanha e sua voltagem (fontes divergem entre 12V e 18V); não usar fonte de 9V.",
+      "Verificar estado da fita/cartucho, cabeça e motor (wow/flutter, ruído).",
+      "Peso e dimensões não confirmados em fonte oficial (um varejista indica 1,45 kg)."
+    ],
+    "fontes": [
+      "https://www.wwbw.com/T-Rex-Engineering-Replicator-Junior-Analog-Tape-Echo-Delay-Effects-Pedal-K47006.wwbw",
+      "https://www.gearnews.com/t-rex-replicator-junior-tape-echo-100-analogue-mini-tape-echo/"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6322,
+    "campos": {
+      "modelo": "Mooer Reecho Pro (TDL1)",
+      "serie": "Twin Series",
+      "tipo_efeito": "Delay digital estéreo",
+      "chaves": "2 footswitches; tap tempo; presets",
+      "alimentacao": "9V DC, centro negativo",
+      "consumo_ma": "210 mA",
+      "conexoes": "Entrada e saída estéreo P10 (1/4\"); impedância de saída 100 Ω",
+      "dimensoes": "106 x 96 x 53 mm",
+      "peso_produto": "440 g"
+    },
+    "descricao_curta": "Delay estéreo da Twin Series da Mooer com seis tipos de eco (incluindo Tape, Tube e Galaxy), tap tempo, ping-pong e presets.",
+    "tags": [
+      "delay",
+      "digital",
+      "estereo",
+      "tap-tempo",
+      "presets"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Nome correto é 'Reecho Pro' (TDL1, Twin Series), não 'Twin Reecho Pro'.",
+      "Tipos de delay: Digital, Analog, Real Echo, Tape Echo, Tube Echo e Galaxy; 'Mod' é modificador, não tipo de delay (MusicRadar)."
+    ],
+    "conferir": [
+      "Conferir caixa e manual.",
+      "Fonte recomendada: 9V com pelo menos 300 mA."
+    ],
+    "fontes": [
+      "https://reverb.com/item/37296368-mooer-reecho-pro-digital-delay-guitar-effects-pedal-tdl-1",
+      "https://musicradar.com/reviews/guitars/mooer-reecho-pro-620090"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6325,
+    "campos": {
+      "modelo": "Vox Valvenergy Mystic Edge (VE-ME)",
+      "serie": "Valvenergy",
+      "tipo_efeito": "Drive/pré-amp estilo AC30 com válvula Nutube",
+      "controles": "Gain, Volume, Tone Cut, Treble, Bass",
+      "chaves": "Chave Bright; chave de modo Standard / Preamp / Cab Sim",
+      "alimentacao": "9V DC, centro negativo, ou bateria 9V (recomendada fonte)",
+      "consumo_ma": "95 mA",
+      "conexoes": "Input, Output, Link, DC 9V",
+      "peso_produto": "350 g (com bateria)"
+    },
+    "descricao_curta": "Pedal Vox da linha Valvenergy com válvula Nutube, que reproduz o timbre do AC30 e pode funcionar como pré com simulação de gabinete.",
+    "tags": [
+      "overdrive",
+      "preamp",
+      "nutube",
+      "valvulado",
+      "cab-sim",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Série correta é Valvenergy (não 'AC30 Series').",
+      "Saída de fones não consta nas especificações oficiais; o pedal tem jack LINK (Vox).",
+      "Nome do controle é Tone Cut."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Conferir display/osciloscópio OLED e a chave de modos."
+    ],
+    "fontes": [
+      "https://voxamps.co.uk/products/ve-me",
+      "https://www.andertons.co.uk/vox-amps/vox-valvenergy-mystic-edge-pedal"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6331,
+    "campos": {
+      "modelo": "Zoom Ultra Fuzz UF-01",
+      "tipo_efeito": "Fuzz",
+      "controles": "Gain, Gate, Color, Tone, Reso, Level",
+      "alimentacao": "9V DC, centro negativo (Zoom AD-0006) ou bateria 9V (6F22)",
+      "consumo_ma": "18 mA"
+    },
+    "descricao_curta": "Fuzz da Zoom (descontinuado) com noise gate e controle Color que mistura duas vozes de fuzz.",
+    "tags": [
+      "fuzz",
+      "descontinuado",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Controles pelo manual da Zoom: Gain, Gate, Color, Tone, Reso e Level (a descrição cita 'Fuzz' e 'chave Resonance')."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "True bypass não confirmado em fonte oficial.",
+      "Conferir tampa da bateria."
+    ],
+    "fontes": [
+      "https://www.zoom.co.jp/sites/default/files/products/downloads/pdfs/E_UF01_0.pdf",
+      "https://www.effectsdatabase.com/model/zoom/uf01",
+      "https://modulargrid.com/p/modules/view/12068"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6334,
+    "campos": {
+      "modelo": "Zoom G2 FOUR",
+      "tipo_efeito": "Pedaleira multiefeitos com simulação de amplificadores",
+      "chaves": "Footswitches para patches, efeitos e looper",
+      "alimentacao": "Fonte 9V DC 500 mA centro negativo (Zoom AD-16) ou alimentação via USB-C",
+      "conexoes": "Entrada P10, saídas, fone, USB-C (interface de áudio)",
+      "dimensoes": "184 x 145 x 71 mm",
+      "peso_produto": "707 g",
+      "acessorios": "Fonte AD-16 (quando nova)"
+    },
+    "descricao_curta": "Pedaleira compacta da Zoom com simulações de amplificadores e efeitos, looper, ritmos e interface de áudio USB.",
+    "tags": [
+      "pedaleira",
+      "multiefeitos",
+      "amp-sim",
+      "looper",
+      "usb"
+    ],
+    "envio": {
+      "peso_kg": 1.6,
+      "comprimento_cm": 30,
+      "largura_cm": 25,
+      "altura_cm": 12
+    },
+    "correcoes": [],
+    "conferir": [
+      "Conferir se acompanha a fonte AD-16 e a caixa.",
+      "Conferir no painel traseiro as conexões exatas (AUX, saídas L/R, fone).",
+      "Atualizar firmware se necessário."
+    ],
+    "fontes": [
+      "https://www.adorama.com/zoom-g2-four-multi-effect-processor-guitar-pedal/p/zg2four",
+      "https://www.thomann.co.uk/zoom_g2_four_guitar_multi_effect.htm"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6341,
+    "campos": {
+      "modelo": "Zoom G2X FOUR",
+      "tipo_efeito": "Pedaleira multiefeitos com simulação de amplificadores e pedal de expressão",
+      "chaves": "Footswitches para patches, efeitos e looper; pedal de expressão integrado (volume, wah, pitch)",
+      "alimentacao": "Fonte 9V DC 500 mA centro negativo (Zoom AD-16) ou alimentação via USB-C",
+      "conexoes": "Entrada P10, saídas, fone, USB-C (interface de áudio)",
+      "dimensoes": "274 x 150 x 71 mm",
+      "peso_produto": "951 g",
+      "acessorios": "Fonte AD-16 (quando nova)"
+    },
+    "descricao_curta": "Versão da G2 FOUR com pedal de expressão integrado para wah e volume, looper, ritmos e interface de áudio USB.",
+    "tags": [
+      "pedaleira",
+      "multiefeitos",
+      "amp-sim",
+      "expressao",
+      "looper",
+      "usb"
+    ],
+    "envio": {
+      "peso_kg": 2.0,
+      "comprimento_cm": 36,
+      "largura_cm": 22,
+      "altura_cm": 12
+    },
+    "correcoes": [],
+    "conferir": [
+      "Conferir se acompanha a fonte AD-16 e a caixa.",
+      "Testar curso e chave do pedal de expressão.",
+      "Conferir no painel traseiro as conexões exatas."
+    ],
+    "fontes": [
+      "https://www.adorama.com/zoom-g2x-four-guitar-multi-effect-processor-expression-pedal/p/zg2xfour",
+      "https://www.musicstore.de/en_US/USD/Zoom-G2X-FOUR/art-GIT0059808-000"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6594,
+    "campos": {
+      "modelo": "Tech 21 SansAmp California",
+      "serie": "SansAmp Character Series",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Pré-amplificador / drive / simulação de amplificador (analógico)",
+      "controles": "Level, Drive, Character, Low, Mid, High",
+      "alimentacao": "9V DC (fonte Tech 21 DC2 opcional) ou bateria 9V",
+      "conexoes": "Entrada e saída P10 (1/4\"); simulação de alto-falante integrada"
+    },
+    "descricao_curta": "SansAmp analógico da Tech 21 com voz de amplificadores californianos de alto ganho, usável como pedal, pré ou para gravação direta.",
+    "tags": [
+      "sansamp",
+      "amp-sim",
+      "preamp",
+      "distortion",
+      "analogico",
+      "made-in-usa",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Identificar versão (original ou V2).",
+      "Tipo de bypass não confirmado em fonte oficial."
+    ],
+    "fontes": [
+      "https://www.tech21nyc.com/archive/california-cs",
+      "https://www.zzounds.com/item--TCHCALIFORNIA"
+    ],
+    "confianca": "media"
+  },
+  {
+    "id": 6597,
+    "campos": {
+      "modelo": "Electro-Harmonix Nano Doctor Q",
+      "serie": "Nano",
+      "fabricacao": "EUA",
+      "tipo_efeito": "Envelope filter / auto-wah (analógico)",
+      "controles": "Range",
+      "chaves": "Chave Bass",
+      "alimentacao": "Bateria 9V ou fonte 9V DC (EHX 9.6DC-200BI opcional)",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\") mono",
+      "dimensoes": "70 x 114 x 53 mm"
+    },
+    "descricao_curta": "Versão Nano do clássico envelope filter da Electro-Harmonix, com controle Range e chave Bass para baixo e cordas graves.",
+    "tags": [
+      "envelope-filter",
+      "auto-wah",
+      "analogico",
+      "true-bypass",
+      "made-in-usa",
+      "semi-novo"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A chave Bass deixa passar as frequências graves (útil para baixo); 'reforço de graves' é simplificação."
+    ],
+    "conferir": [
+      "Pedal usado: conferir funcionamento do footswitch, jacks, LED e ruído; verificar se acompanha caixa original e manual.",
+      "Bateria 'inclusa' vale para o pedal novo; conferir se há bateria/fonte."
+    ],
+    "fontes": [
+      "https://www.rubbermonkey.com.au/Electro-Harmonix-Nano-Doctor-Q-Envelope-Filter-Pedal",
+      "https://reverb.com/p/electro-harmonix-doctor-q-nano-envelope-filter"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6600,
+    "campos": {
+      "modelo": "DOD Compressor 280 (reedição)",
+      "tipo_efeito": "Compressor",
+      "controles": "Compression, Output",
+      "alimentacao": "9V DC, centro negativo, ou bateria 9V",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\") mono; impedância de entrada 470 kΩ",
+      "dimensoes": "119 x 67 x 57 mm (4,68 x 2,63 x 2,25 pol.)",
+      "peso_produto": "281 g"
+    },
+    "descricao_curta": "Reedição do compressor clássico DOD 280, com apenas dois knobs, true bypass e LED azul.",
+    "tags": [
+      "compressor",
+      "true-bypass",
+      "reissue"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "O segundo knob se chama Output (não Level).",
+      "'Compressor óptico' não confirmado em fonte oficial; remover se não houver fonte."
+    ],
+    "conferir": [
+      "Conferir caixa e manual."
+    ],
+    "fontes": [
+      "https://images.equipboard.com/uploads/item/manual/23320/dod-compressor-280-reissue-manual.pdf",
+      "https://www.chicagomusicexchange.com/products/dod-compressor-280-11004",
+      "https://modulargrid.net/p/dod-compressor-280-2014"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6603,
+    "campos": {
+      "modelo": "DOD Meatbox (reedição 2015)",
+      "tipo_efeito": "Sintetizador sub-harmônico / oitavador",
+      "controles": "Octave, Sub, Low, Output",
+      "alimentacao": "9V DC (fonte Harman PS0913DC opcional) ou bateria 9V",
+      "consumo_ma": "20 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada P10 TS (470 kΩ); saída P10 TRS (ponta = efeito, anel = sinal limpo; 100 Ω)"
+    },
+    "descricao_curta": "Reedição do DOD Meatbox, gerador de sub-graves com controles de oitava, sub e graves e saída TRS para separar sinal limpo e efeito.",
+    "tags": [
+      "octaver",
+      "subharmonico",
+      "baixo",
+      "true-bypass",
+      "reissue"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "A descrição fala em 'duas saídas P10'; o pedal tem uma única saída TRS (ponta = efeito, anel = seco) (manual DOD).",
+      "Também funciona com bateria 9V, não só fonte externa (manual)."
+    ],
+    "conferir": [
+      "Conferir caixa e manual.",
+      "Atenção: iniciar Output e Low no mínimo para não danificar alto-falantes (manual)."
+    ],
+    "fontes": [
+      "https://www.fullcompass.com/common/files/25828-DODMeatboxOwnersManual.pdf",
+      "https://www.premierguitar.com/digitech-reissues-the-dod-meatbox-subharmonic-bass-synthesizer"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6611,
+    "campos": {
+      "modelo": "TC Electronic 3rd Dimension Chorus",
+      "tipo_efeito": "Chorus analógico (BBD) estilo Dimension",
+      "controles": "4 botões de preset (sem knobs), combináveis",
+      "alimentacao": "9V DC, centro negativo (fonte não inclusa) ou bateria 9V",
+      "consumo_ma": "25 mA",
+      "bypass": "True bypass",
+      "conexoes": "Entrada e saída P10 (1/4\") mono"
+    },
+    "descricao_curta": "Chorus analógico da TC Electronic inspirado no clássico Dimension D, com 4 botões que se combinam em vez de knobs.",
+    "tags": [
+      "chorus",
+      "analogico",
+      "bbd",
+      "true-bypass"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 20,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Consumo é 25 mA (Long & McQuade), não '< 100 mA'."
+    ],
+    "conferir": [
+      "Conferir caixa e manual.",
+      "Dimensões e peso da descrição (58 x 74 x 132 mm; 0,5 kg) não foram confirmados; medir/pesar."
+    ],
+    "fontes": [
+      "https://www.long-mcquade.com/94661/Guitars/Pedals-Effects/T-C-Electronic/3rd-Dimension-Analog-Chorus.htm",
+      "https://www.harmonycentral.com/expert-reviews/tc-electronics-3rd-dimension-chorus"
+    ],
+    "confianca": "alta"
+  },
+  {
+    "id": 6614,
+    "campos": {
+      "modelo": "Orange FS-2",
+      "tipo_efeito": "Footswitch de 2 botões para amplificadores Orange",
+      "chaves": "2 botões com trava, 2 LEDs vermelhos (alimentados pelo cabo)",
+      "alimentacao": "Não usa fonte (LEDs alimentados pelo amplificador via cabo)",
+      "conexoes": "1 jack P10 (6,3 mm); cabo vendido separadamente"
+    },
+    "descricao_curta": "Footswitch duplo original Orange para troca de canal e reverb em amplificadores compatíveis como Crush Pro e Rockerverb.",
+    "tags": [
+      "footswitch",
+      "orange",
+      "acessorio"
+    ],
+    "envio": {
+      "peso_kg": 0.8,
+      "comprimento_cm": 25,
+      "largura_cm": 15,
+      "altura_cm": 10
+    },
+    "correcoes": [
+      "Compatibilidade com Dual Terror não confirmada; fontes citam Crush Pro, Rockerverb, Thunderverb, Dual Dark e OR100H."
+    ],
+    "conferir": [
+      "Confirmar se acompanha cabo (normalmente não acompanha).",
+      "Testar os LEDs e as duas funções num amplificador compatível."
+    ],
+    "fontes": [
+      "https://www.bax-shop.co.uk/foot-switch/orange-fs-2-dual-channel-footswitch",
+      "https://www.mannys.com.au/orange-fs2-dual-footswitch-for-orange-amps"
+    ],
+    "confianca": "media"
+  }
+]

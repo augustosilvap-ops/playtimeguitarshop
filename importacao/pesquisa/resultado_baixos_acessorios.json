@@ -1,0 +1,1113 @@
+[
+ {
+  "id": 1193,
+  "campos": {
+   "modelo": "Ibanez GSR200B-WK",
+   "serie": "GIO Soundgear (GSR)",
+   "construcao": "Bolt-on",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "GSR4",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "22",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "22, médios",
+   "nut_largura": "41 mm",
+   "marcadores": "Pontos brancos",
+   "captadores": "Dynamix P (braço) e Dynamix J (ponte), passivos",
+   "eletrica": "2 volumes, 1 tone e Phat II EQ (reforço de graves ativo, bateria 9V)",
+   "ponte": "B10 (espaçamento 19 mm)",
+   "hardware": "Preto",
+   "cor": "Weathered Black (WK)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo GIO Soundgear 4 cordas em Weathered Black, configuração PJ passiva com Phat II EQ ativo para reforço de graves. Braço GSR4 fino (41 mm no nut).",
+  "tags": [
+   "pj",
+   "4-cordas",
+   "22-trastes",
+   "phat-ii",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A ficha de 'captadores' está truncada (só mostra a ponte); são Dynamix P no braço e Dynamix J na ponte (ibanez.com).",
+   "Corpo: a loja diz 'Nyatoh ou Mahogany'; a Ibanez lista Okoume nos catálogos recentes. Ajustar conforme o ano da peça."
+  ],
+  "conferir": [
+   "Madeira da escala: Ibanez lista Jatobá (EUA) ou Purpleheart (NA/EU) conforme mercado/ano — conferir na peça.",
+   "Ano de fabricação (número de série) para definir madeira do corpo."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/gsr200b_02.html",
+   "https://www.ibanez.com/na/products/detail/gsr200b_4h_05.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 2449,
+  "campos": {
+   "modelo": "Ibanez ATK200-NT",
+   "serie": "ATK (Standard)",
+   "fabricacao": "China",
+   "construcao": "Bolt-on",
+   "corpo": "Ash (freixo)",
+   "braco_madeira": "Maple (bordo)",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "escala": "864 mm (34″)",
+   "trastes": "22, médios",
+   "captadores": "CAP double humbucker (1 captador)",
+   "eletrica": "Ativa (bateria 9V): volume, EQ 3 bandas (grave, médio, agudo) e chave de 3 posições para as bobinas do humbucker",
+   "ponte": "ATK4, com opção de encordoamento pelo corpo",
+   "cor": "Natural (NT)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "ATK200 em Natural: corpo de freixo, humbucker duplo CAP com chave de 3 vozes e EQ ativo de 3 bandas. Modelo descontinuado (2010–2015).",
+  "tags": [
+   "h",
+   "ativo",
+   "4-cordas",
+   "22-trastes",
+   "bolt-on",
+   "made-in-china",
+   "descontinuado"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Usado/outlet: conferir se o captador e o preamp são originais e se o compartimento da bateria 9V está ok.",
+   "Tarraxas 'Wilkinson', nut 42,5 mm e preamp 'ATK N2' citados pela loja não foram confirmados em fonte.",
+   "Ano pelo número de série."
+  ],
+  "fontes": [
+   "https://ibanez.fandom.com/wiki/ATK200",
+   "https://www.bax-shop.co.uk/right-handed-bass-guitar/ibanez-atk200nt-atk-electric-bass-guitar-natural"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 2467,
+  "campos": {
+   "modelo": "Ibanez SR300EDX-WZM",
+   "serie": "SR Standard (Soundgear)",
+   "construcao": "Bolt-on",
+   "braco_madeira": "5 peças Maple/Walnut (bordo/nogueira)",
+   "braco_perfil": "SR4",
+   "braco_espessura_1": "19.5",
+   "braco_espessura_12": "21.5",
+   "escala_madeira": "Jatobá",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "24, médios",
+   "nut_largura": "38 mm",
+   "captadores": "PowerSpan Dual Coil (braço e ponte), passivos",
+   "eletrica": "Ibanez Custom Electronics EQ ativo 3 bandas, balanço e chave Power Tap de 3 posições",
+   "ponte": "Accu-cast B500 (espaçamento 19 mm, ajustável ±1,5 mm)",
+   "hardware": "Dourado",
+   "cor": "Wine Red Frozen Matte (WZM)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "SR300EDX com acabamento Wine Red Frozen Matte e ferragens douradas; braço SR4 bem fino (38 mm no nut, 19,5 mm na 1ª casa) e EQ ativo de 3 bandas com Power Tap.",
+  "tags": [
+   "hh",
+   "ativo",
+   "4-cordas",
+   "24-trastes",
+   "bolt-on",
+   "hardware-dourado"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Corpo: a loja diz Nyatoh; a Ibanez lista Okoume para o SR300EDX atual. Conferir ano da peça.",
+   "Raio na ficha está truncado ('305mmR (12\"'); usar '305 mm'."
+  ],
+  "conferir": [
+   "Madeira do corpo conforme ano (Nyatoh em séries antigas, Okoume nas recentes)."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/eu/products/detail/sr300edx_1p_04.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 2521,
+  "campos": {
+   "modelo": "Tagima Ana Karina Black Diamond (assinatura)",
+   "construcao": "Bolt-on",
+   "cor": "Pink Sparkle (PKSK)",
+   "cordas_qtd": "4"
+  },
+  "descricao_curta": "Baixo assinatura da baixista Ana Karina, linha Black Diamond da Tagima, em Pink Sparkle com captador estilo P.",
+  "tags": [
+   "p",
+   "4-cordas",
+   "signature",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar madeiras (Okoumé, bordo torrado, jacarandá boliviano), nut 40 mm e captador P Alnico 5 com o catálogo Tagima."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 2587,
+  "campos": {
+   "modelo": "Schecter Justin Beck V Ani (2664)",
+   "cor": "Gloss Natural",
+   "cordas_qtd": "4"
+  },
+  "descricao_curta": "Baixo assinatura de Justin Beck (Glassjaw), Schecter, configuração PJ com captadores MonsterTone e escala de maple.",
+  "tags": [
+   "pj",
+   "4-cordas",
+   "signature"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Campo 'raio' truncado ('12\" (305mm'); 'escala_madeira' mistura madeira com comprimento e raio — separar."
+  ],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Nome tem 'V' mas a ficha não informa nº de cordas — confirmar se é 4 ou 5 cordas.",
+   "Confirmar perfil, espessuras, trastes, nut e origem com schecterguitars.com."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4990,
+  "campos": {
+   "modelo": "Ibanez SR400EQM-SCB",
+   "serie": "SR Standard (Soundgear)",
+   "construcao": "Bolt-on",
+   "tampo": "Quilted Maple (bordo acolchoado)",
+   "braco_madeira": "5 peças Maple/Walnut (bordo/nogueira)",
+   "braco_perfil": "SR4",
+   "braco_espessura_1": "19.5",
+   "braco_espessura_12": "21.5",
+   "escala_madeira": "Jatobá",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "24, médios",
+   "nut_largura": "38 mm",
+   "marcadores": "Pontos brancos",
+   "captadores": "PowerSpan Dual Coil (braço e ponte), passivos",
+   "eletrica": "EQ ativo 3 bandas, balanço e chave Power Tap de 3 posições",
+   "ponte": "Accu-cast B300 (espaçamento 19 mm)",
+   "hardware": "Cosmo Black",
+   "cor": "Stained Cosmic Blue Starburst (SCB)",
+   "cordas_qtd": "4",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario EXL165 (.045–.105)"
+  },
+  "descricao_curta": "SR400EQM com tampo de Quilted Maple em Stained Cosmic Blue Starburst, braço SR4 de 5 peças e EQ ativo de 3 bandas com Power Tap.",
+  "tags": [
+   "hh",
+   "ativo",
+   "4-cordas",
+   "24-trastes",
+   "bolt-on",
+   "tampo-quilted"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Na ficha, 'escala_madeira' traz o comprimento (34\"); a madeira é Jatobá.",
+   "Corpo: loja diz Nyatoh; a Ibanez (EUA) lista Okoume. Conferir ano."
+  ],
+  "conferir": [
+   "Madeira do corpo conforme ano (Nyatoh nas séries antigas, Okoume nas recentes)."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/sr400eqm_1p_05.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 4999,
+  "campos": {
+   "modelo": "Ibanez GSR186-PW",
+   "serie": "GIO Soundgear (GSR)",
+   "construcao": "Bolt-on",
+   "corpo": "Okoume",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "GSR6",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "22",
+   "escala_madeira": "Purpleheart",
+   "escala": "864 mm (34″)",
+   "raio": "400 mm",
+   "trastes": "22, médios",
+   "nut_largura": "54 mm",
+   "captadores": "Dynamix H (braço e ponte), passivos",
+   "eletrica": "Passiva: 2 volumes e 1 tone",
+   "ponte": "B16 (espaçamento 16,5 mm)",
+   "cor": "Pearl White (PW)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo de 6 cordas GIO acessível, em Pearl White, com braço GSR6 (54 mm no nut) e dois humbuckers Dynamix H passivos.",
+  "tags": [
+   "hh",
+   "6-cordas",
+   "22-trastes",
+   "bolt-on",
+   "passivo"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Corpo: a loja diz Poplar; a Ibanez lista Okoume.",
+   "Captadores: a loja diz Dynamix J; o correto é Dynamix H (humbucker) (ibanez.com).",
+   "Escala: loja diz Jatobá; Ibanez lista Purpleheart.",
+   "Campo 'escala_madeira' traz o comprimento (34\") em vez da madeira."
+  ],
+  "conferir": [
+   "Conferir madeira da escala na peça."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/eu/products/detail/gsr186_4h_01.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5056,
+  "campos": {
+   "modelo": "Ibanez GSR205",
+   "serie": "GIO Soundgear (GSR)",
+   "construcao": "Bolt-on",
+   "corpo": "Poplar (álamo)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "GSR5",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "22",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "22, médios",
+   "nut_largura": "45 mm",
+   "captadores": "Dynamix H (braço e ponte), passivos",
+   "eletrica": "2 volumes, 1 tone e Phat II EQ (reforço de graves ativo)",
+   "ponte": "B15 (espaçamento 16,5 mm)",
+   "hardware": "Cromado",
+   "cordas_qtd": "5",
+   "mao": "Destro",
+   "cor": "Black (BK)"
+  },
+  "tags": [
+   "hh",
+   "5-cordas",
+   "22-trastes",
+   "bolt-on",
+   "phat-ii"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/gsr205_10.html",
+   "https://www.ibanez.com/na/products/detail/gsr205_4h_07.html"
+  ],
+  "confianca": "media",
+  "descricao_curta": "GSR205 de 5 cordas em preto, com braço GSR5 (45 mm no nut), humbuckers Dynamix H e Phat II EQ.",
+  "correcoes": [
+   "A descrição curta fala em acabamento marrom (Brown), mas a cor da ficha é BK (preto) — texto copiado do outro GSR205; corrigir.",
+   "Campo 'escala_madeira' traz o comprimento (34\") em vez da madeira."
+  ],
+  "conferir": [
+   "Madeira da escala (Jatobá ou Purpleheart, varia por ano/mercado).",
+   "Peça outlet: conferir estado e funcionamento do Phat II."
+  ]
+ },
+ {
+  "id": 5064,
+  "campos": {
+   "modelo": "Ibanez GSR205",
+   "serie": "GIO Soundgear (GSR)",
+   "construcao": "Bolt-on",
+   "corpo": "Poplar (álamo)",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "GSR5",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "22",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "22, médios",
+   "nut_largura": "45 mm",
+   "captadores": "Dynamix H (braço e ponte), passivos",
+   "eletrica": "2 volumes, 1 tone e Phat II EQ (reforço de graves ativo)",
+   "ponte": "B15 (espaçamento 16,5 mm)",
+   "hardware": "Cromado",
+   "cordas_qtd": "5",
+   "mao": "Destro"
+  },
+  "tags": [
+   "hh",
+   "5-cordas",
+   "22-trastes",
+   "bolt-on",
+   "phat-ii"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/gsr205_10.html",
+   "https://www.ibanez.com/na/products/detail/gsr205_4h_07.html"
+  ],
+  "confianca": "media",
+  "descricao_curta": "GSR205 de 5 cordas em tom marrom, com braço GSR5 (45 mm no nut), humbuckers Dynamix H e Phat II EQ.",
+  "correcoes": [
+   "Campo 'escala_madeira' traz o comprimento (34\") em vez da madeira."
+  ],
+  "conferir": [
+   "Identificar o código oficial da cor marrom (provavelmente WNF – Walnut Flat; se for, pode ser a versão GSR205B com corpo Okoume e hardware preto).",
+   "Madeira da escala (Jatobá ou Purpleheart, varia por ano/mercado).",
+   "Peça outlet: conferir estado e funcionamento do Phat II."
+  ]
+ },
+ {
+  "id": 5086,
+  "campos": {
+   "modelo": "ESP LTD EC-104",
+   "corpo": "Basswood",
+   "braco_madeira": "Maple (bordo)",
+   "escala_madeira": "Rosewood (jacarandá indiano)",
+   "escala": "864 mm (34″)",
+   "cor": "Black (BLK)",
+   "cordas_qtd": "4"
+  },
+  "descricao_curta": "Baixo LTD EC-104 de corpo single-cut em preto, modelo descontinuado da série EC; peça seminova.",
+  "tags": [
+   "4-cordas",
+   "single-cut",
+   "semi-novo",
+   "descontinuado"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não há ficha oficial ESP acessível; captadores SB-4, EQ ABQ-2, ponte DB-4, trastes XJ e nut 40 mm não foram confirmados — conferir na peça.",
+   "Seminovo: conferir se captadores e eletrônica são originais e se há EQ ativo (bateria 9V).",
+   "Contar trastes na peça (fonte de terceiros indica 22)."
+  ],
+  "fontes": [
+   "https://chorder.com/electric-bass-guitars/esp/ec-104-4302"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 5103,
+  "campos": {
+   "modelo": "Michael Gravity BMG304",
+   "cor": "Vermelho (RD)",
+   "cordas_qtd": "4"
+  },
+  "descricao_curta": "Baixo Michael da linha Gravity, 4 cordas, em vermelho.",
+  "tags": [
+   "4-cordas"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Nenhuma ficha do BMG304 encontrada na web. A descrição atual (3 captadores ativos, trastes de aço inox, chave rotativa de 4 posições) parece genérica/improvável para a faixa de preço — conferir tudo na peça (nº de captadores, controles, trastes) antes de publicar."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 5133,
+  "campos": {
+   "modelo": "Ibanez EHB1000-AOM",
+   "serie": "EHB (Ergonomic Headless Bass)",
+   "construcao": "Bolt-on",
+   "corpo": "American Basswood",
+   "braco_madeira": "5 peças Roasted Maple/Walnut com reforço de grafite",
+   "braco_perfil": "EHB4",
+   "braco_espessura_1": "19.5",
+   "braco_espessura_12": "21.5",
+   "escala_madeira": "Roasted Birdseye Maple (bordo olho-de-pássaro torrado)",
+   "escala": "864 mm (34″)",
+   "raio": "500 mm",
+   "trastes": "24, médios, aço inox",
+   "nut_largura": "41 mm",
+   "marcadores": "Pontos off-set em abalone",
+   "captadores": "Bartolini BH2 (braço e ponte), passivos",
+   "eletrica": "EQ ativo 3 bandas Vari-mid com chave de bypass do EQ",
+   "ponte": "MR5HS (espaçamento 19 mm, ajustável ±1,5 mm)",
+   "cordas_qtd": "4",
+   "mao": "Destro",
+   "cordas_fabrica": "D'Addario EXL165"
+  },
+  "descricao_curta": "Baixo headless EHB1000 com corpo ergonômico de basswood, braço de 5 peças torrado, trastes de aço inox e captadores Bartolini BH2 com EQ Vari-mid.",
+  "tags": [
+   "headless",
+   "ativo",
+   "4-cordas",
+   "24-trastes",
+   "trastes-inox",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 8,
+   "comprimento_cm": 105,
+   "largura_cm": 40,
+   "altura_cm": 15
+  },
+  "correcoes": [
+   "Cor: a loja traduz AOM como 'Aged Orange Metallic'; na Ibanez AOM = Arctic Ocean Matte. Conferir a cor da peça."
+  ],
+  "conferir": [
+   "Confirmar se a cor da peça corresponde ao código AOM (Arctic Ocean Matte)."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/ehb1000_1p_02.html"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 5144,
+  "campos": {
+   "modelo": "Ibanez GSR205SM-NGT",
+   "serie": "GIO Soundgear (GSR)",
+   "construcao": "Bolt-on",
+   "corpo": "Poplar (álamo)",
+   "tampo": "Spalted Maple",
+   "braco_madeira": "Maple (bordo)",
+   "braco_perfil": "GSR5",
+   "escala": "864 mm (34″)",
+   "trastes": "22, médios",
+   "captadores": "Dynamix H (braço e ponte), passivos",
+   "eletrica": "2 volumes, 1 tone e Phat II EQ (reforço de graves ativo)",
+   "ponte": "B15 (espaçamento 16,5 mm)",
+   "hardware": "Preto",
+   "cor": "Natural Gray Burst (NGT)",
+   "cordas_qtd": "5",
+   "mao": "Destro"
+  },
+  "descricao_curta": "GSR205SM de 5 cordas com tampo de Spalted Maple em Natural Gray Burst e ferragens pretas; humbuckers Dynamix H e Phat II EQ.",
+  "tags": [
+   "hh",
+   "5-cordas",
+   "22-trastes",
+   "bolt-on",
+   "phat-ii"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Madeira da escala (Jatobá ou Purpleheart, varia por ano/mercado).",
+   "Peça outlet/garimpo: conferir estado e Phat II."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/gsr205sm_02.html",
+   "https://www.ibanez.com/na/products/detail/gsr205sm_4h_05.html"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7666,
+  "campos": {
+   "modelo": "Ibanez FAB1-WK (assinatura Felipe Andreoli)",
+   "serie": "Signature (base BTB)",
+   "construcao": "Neck-through",
+   "corpo": "Okoume (asas)",
+   "braco_madeira": "5 peças Maple/Walnut (bordo/nogueira)",
+   "braco_perfil": "BTB6",
+   "braco_espessura_1": "20",
+   "braco_espessura_12": "22",
+   "escala": "889 mm (35″)",
+   "raio": "950 mm",
+   "trastes": "24 + traste zero",
+   "nut_largura": "54 mm",
+   "marcadores": "Blocos em pearloid branco",
+   "captadores": "Ibanez α1 (braço e ponte), passivos",
+   "eletrica": "EQ ativo 3 bandas Ibanez Custom Electronics com chave de 3 posições para frequência de médios",
+   "ponte": "MR5 (espaçamento 17 mm)",
+   "hardware": "Preto",
+   "cor": "Weathered Black (WK)",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo de 6 cordas assinatura do brasileiro Felipe Andreoli (Angra): neck-through, escala de 35″ com traste zero, captadores α1 e EQ ativo de 3 bandas.",
+  "tags": [
+   "6-cordas",
+   "neck-through",
+   "ativo",
+   "24-trastes",
+   "signature",
+   "escala-35"
+  ],
+  "envio": {
+   "peso_kg": 12,
+   "comprimento_cm": 130,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição atual é genérica e em grande parte errada: construção é Neck-through (não bolt-on), corpo Okoume (não Mahogany/Ash), ponte MR5 (não Accu-cast), captadores α1 passivos, marcadores em bloco (não dots), escala 35″ (ibanez.com). Reescrever."
+  ],
+  "conferir": [
+   "Madeira da escala não confirmada — conferir na peça."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/na/products/detail/fab1_2y_01.html",
+   "https://skymusic.com.au/products/ibanez-fab1-wk-felipe-andreoli-6-string-signature-bass-guitar-weathered-black"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 7667,
+  "campos": {
+   "modelo": "Ibanez Iceman ICB720FM-CBS",
+   "serie": "Iceman (ICB)",
+   "corpo": "Okoume",
+   "tampo": "Flamed Maple",
+   "formato_corpo": "Iceman",
+   "braco_madeira": "3 peças Maple (bordo)",
+   "braco_espessura_1": "21",
+   "braco_espessura_12": "22",
+   "escala_madeira": "Panga Panga",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "trastes": "22, médios",
+   "nut_largura": "41 mm",
+   "captadores": "Nordstrand Big Break (braço e ponte), passivos",
+   "eletrica": "EQ ativo Ibanez de 2 bandas",
+   "ponte": "MR5S (espaçamento 19 mm)",
+   "hardware": "Preto",
+   "acabamento": "Poliuretano brilhante",
+   "cor": "Cosmic Blue Starburst (CBS)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo Iceman com tampo de Flamed Maple em Cosmic Blue Starburst, captadores Nordstrand Big Break e escala de Panga Panga.",
+  "tags": [
+   "4-cordas",
+   "22-trastes",
+   "ativo",
+   "nordstrand",
+   "iceman"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Trastes: loja diz 24; Ibanez lista 22.",
+   "Cor: CBS = Cosmic Blue Starburst (não 'Cosmo Burst Sunburst').",
+   "Corpo: Okoume (não Mahogany); escala Panga Panga (não Jatobá/Rosewood); captadores Nordstrand Big Break com EQ 2 bandas; hardware preto. Descrição atual é genérica ('conforme lote')."
+  ],
+  "conferir": [
+   "Tipo de junção do braço não confirmado na fonte — verificar na peça.",
+   "Revendedores citam gig bag incluso — conferir se acompanha."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/icb720fm_1p_01.html",
+   "https://www.thomannmusic.com/ibanez_icb720fm_cbs.htm"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 7668,
+  "campos": {
+   "modelo": "Ibanez MDM1600-NML",
+   "serie": "Mode (MDM)",
+   "construcao": "Bolt-on",
+   "corpo": "Alder (amieiro)",
+   "tampo": "Poplar Burl",
+   "braco_madeira": "Roasted Maple (bordo torrado)",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm",
+   "captadores": "Ibanez Delta S4J (braço e ponte), single coil",
+   "eletrica": "Preamp Sonitech S: EQ 3 bandas, chave de frequência de médios e bypass do EQ",
+   "ponte": "MR5S (espaçamento ajustável ±1,5 mm)",
+   "tarraxas": "Ibanez Aero Light",
+   "cor": "Natural Mocha Low Gloss (NML)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo da série Mode, corpo de alder com tampo Poplar Burl em Natural Mocha Low Gloss, captadores Delta S4J e preamp Sonitech S.",
+  "tags": [
+   "jj",
+   "4-cordas",
+   "ativo",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Cor: NML = Natural Mocha Low Gloss (não 'Natural Matte'); 'tampo' na ficha traz a cor em vez da madeira (Poplar Burl).",
+   "Descrição atual é genérica ('conforme lote'): corpo é Alder, braço Roasted Maple bolt-on, captadores Delta S4J, preamp Sonitech S. Reescrever."
+  ],
+  "conferir": [
+   "Madeira da escala, tipo/qtd de trastes e largura do nut não confirmados em fonte oficial (revendedores divergem) — conferir na peça.",
+   "Revendedores citam gig bag incluso — conferir."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/usa/products/detail/mdm1600_1p_01.html",
+   "https://haggertysmusic.com/products/ibanez-mdm1600-nml-mode-electric-bass-natural-mocha-low-gloss"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7669,
+  "campos": {
+   "modelo": "Ibanez SR1320SB-IVF",
+   "cordas_qtd": "4"
+  },
+  "descricao_curta": "Baixo Ibanez SR da linha Premium.",
+  "tags": [
+   "4-cordas"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "'Contrabasixo' na descrição curta (erro de digitação)."
+  ],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "A descrição atual usa 'conforme lote' e mistura nomes de cor (Island Lotus/Natural Low Gloss) — confirmar código de cor, madeiras e captadores na ibanez.com."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 7670,
+  "campos": {
+   "modelo": "Ibanez BTB605MS-MAM",
+   "serie": "BTB Multi-Scale",
+   "cordas_qtd": "5"
+  },
+  "descricao_curta": "Baixo Ibanez BTB de 5 cordas multiscale em Molten Amber Low Gloss.",
+  "tags": [
+   "5-cordas",
+   "multiscale"
+  ],
+  "envio": {
+   "peso_kg": 11,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar com ibanez.com: construção, madeiras, captadores ('T1' citado pela loja parece errado) e comprimentos da escala multiscale."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4178,
+  "campos": {
+   "modelo": "67 Lovers Humbucker Joe B. (braço)",
+   "compatibilidade": "Guitarra, posição braço; espaçamento de polos 50 mm",
+   "cor": "Zebra (creme/preto), polos niquelados",
+   "material": "Passivo, 4 condutores"
+  },
+  "descricao_curta": "Humbucker artesanal 67 Lovers Joe B. para a posição do braço, bobinas zebra, polos niquelados e 4 vias para split.",
+  "tags": [
+   "captador",
+   "humbucker",
+   "4-condutores",
+   "zebra"
+  ],
+  "envio": {
+   "peso_kg": 0.3,
+   "comprimento_cm": 20,
+   "largura_cm": 15,
+   "altura_cm": 8
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar com a 67 Lovers ímã, resistência (kΩ) e código de cores dos fios."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4182,
+  "campos": {
+   "modelo": "67 Lovers Humbucker Joe B. (ponte)",
+   "compatibilidade": "Guitarra, posição ponte; espaçamento de polos 52 mm",
+   "cor": "Zebra (creme/preto), polos niquelados",
+   "material": "Passivo, 4 condutores"
+  },
+  "descricao_curta": "Humbucker artesanal 67 Lovers Joe B. para a posição do ponte, bobinas zebra, polos niquelados e 4 vias para split.",
+  "tags": [
+   "captador",
+   "humbucker",
+   "4-condutores",
+   "zebra"
+  ],
+  "envio": {
+   "peso_kg": 0.3,
+   "comprimento_cm": 20,
+   "largura_cm": 15,
+   "altura_cm": 8
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar com a 67 Lovers ímã, resistência (kΩ) e código de cores dos fios."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4187,
+  "campos": {
+   "modelo": "67 Lovers Jimi Mojo S-Lover (meio)",
+   "compatibilidade": "Stratocaster, posição do meio (RWRP)",
+   "cor": "Capa preta",
+   "material": "Single coil passivo, ímãs Alnico"
+  },
+  "descricao_curta": "Single coil 67 Lovers Jimi Mojo para a posição do meio de Strat, RWRP (cancela ruído nas posições 2 e 4), capa preta.",
+  "tags": [
+   "captador",
+   "single-coil",
+   "stratocaster",
+   "rwrp"
+  ],
+  "envio": {
+   "peso_kg": 0.3,
+   "comprimento_cm": 20,
+   "largura_cm": 15,
+   "altura_cm": 8
+  },
+  "correcoes": [
+   "Texto em português de Portugal ('harmónico', 'intermédias') — ajustar para PT-BR."
+  ],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar resistência (kΩ) e tipo de Alnico com a 67 Lovers."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4692,
+  "campos": {
+   "modelo": "Schecter Tori Ruffin Freak Juice (#2299)",
+   "cordas_qtd": "6"
+  },
+  "descricao_curta": "Guitarra assinatura do guitarrista Tori Ruffin (Schecter).",
+  "tags": [
+   "signature"
+  ],
+  "envio": {
+   "peso_kg": 10,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "Item é uma guitarra, mas está neste lote de baixos/acessórios — verificar categoria.",
+   "A descrição atual é genérica e cheia de 'ou' ('Alder ou Mahogany', '22 ou 24 trastes', 'HSS ou SSS') — não serve como ficha; reescrever a partir da peça/fabricante."
+  ],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Conferir na peça: madeiras, nº de trastes, captação, ponte, cor e país (IDN no nome sugere Indonésia)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6565,
+  "campos": {
+   "modelo": "Gator GC-BASS-LED",
+   "compatibilidade": "Baixo elétrico (formato retangular)",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-BASS-LED em ABS, para baixo elétrico (formato retangular).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 7.5,
+   "comprimento_cm": 130,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo).",
+   "Nome sugere case com LED/iluminação ou edição especial — confirmar o que significa o sufixo 'LED'."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6570,
+  "campos": {
+   "modelo": "Gator GC-ELEC-XL-S",
+   "compatibilidade": "Guitarra elétrica (versão XL, para instrumentos maiores)",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-ELEC-XL-S em ABS, para guitarra elétrica (versão XL, para instrumentos maiores).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 6.5,
+   "comprimento_cm": 112,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo).",
+   "A descrição cita comprimento interno 106,43 cm e peso 4,72 kg — confirmar com o fabricante."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6573,
+  "campos": {
+   "modelo": "Gator GWE-EXTREME-S",
+   "compatibilidade": "Guitarras de formato 'extreme' (V, Explorer e similares)",
+   "cor": "Preto",
+   "material": "Madeira com revestimento em Tolex"
+  },
+  "descricao_curta": "Case rígido Gator GWE-EXTREME-S em madeira, para guitarras de formato 'extreme' (V, Explorer e similares).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 9,
+   "comprimento_cm": 120,
+   "largura_cm": 55,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6576,
+  "campos": {
+   "modelo": "Gator GC-ELECTRIC-T-S",
+   "compatibilidade": "Guitarra elétrica",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-ELECTRIC-T-S em ABS, para guitarra elétrica.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 6.5,
+   "comprimento_cm": 112,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6581,
+  "campos": {
+   "modelo": "Gator GC-LPS",
+   "compatibilidade": "Guitarra estilo Les Paul (single cut)",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-LPS em ABS, para guitarra estilo Les Paul (single cut).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 6.5,
+   "comprimento_cm": 112,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6584,
+  "campos": {
+   "modelo": "Gator GC-SG",
+   "compatibilidade": "Guitarra estilo SG",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-SG em ABS, para guitarra estilo SG.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 6.5,
+   "comprimento_cm": 112,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6587,
+  "campos": {
+   "modelo": "Gator GC-335",
+   "compatibilidade": "Guitarra semi-acústica estilo 335",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-335 em ABS, para guitarra semi-acústica estilo 335.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 7,
+   "comprimento_cm": 112,
+   "largura_cm": 50,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6591,
+  "campos": {
+   "modelo": "Gator GC-JUMBO-S",
+   "compatibilidade": "Violão formato Jumbo",
+   "cor": "Preto",
+   "material": "ABS moldado"
+  },
+  "descricao_curta": "Case rígido Gator GC-JUMBO-S em ABS, para violão formato Jumbo.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "gator"
+  ],
+  "envio": {
+   "peso_kg": 8,
+   "comprimento_cm": 118,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não foi possível pesquisar este item (limite de buscas web da sessão esgotado); ficha baseada só na descrição da loja — revisar com o site do fabricante antes de publicar.",
+   "Confirmar no gatorcases.com dimensões internas, peso e lista de instrumentos compatíveis (página de compatibilidade do modelo)."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ }
+]

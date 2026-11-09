@@ -1,0 +1,767 @@
+[
+ {
+  "id": 2521,
+  "campos": {
+   "modelo": "Tagima Ana Karina (assinatura) 4 cordas",
+   "serie": "Signature",
+   "construcao": "Bolt-on",
+   "corpo": "Okoumé",
+   "braco_madeira": "Maple (bordo) torrado",
+   "escala_madeira": "Jacarandá boliviano (Bolivian Rosewood)",
+   "nut_largura": "40",
+   "captadores": "1 captador estilo P (Alnico 5)",
+   "eletrica": "Passiva: 1 volume master, 1 tonalidade master",
+   "ponte": "Standard preta",
+   "tarraxas": "Vintage open gear pretas",
+   "hardware": "Preto",
+   "cor": "Pink Sparkle (PKSK)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Contrabaixo assinatura da baixista Ana Karina Sebastião pela Tagima, configuração P simples (1 captador, volume e tonalidade) em Pink Sparkle com ferragens pretas.",
+  "tags": [
+   "p-bass",
+   "4-cordas",
+   "signature",
+   "passivo",
+   "hardware-preto"
+  ],
+  "envio": {
+   "peso_kg": 10.5,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não achei ficha oficial de um modelo 'Black Diamond' da Ana Karina; o signature conhecido dela na Tagima é o 'Black Gold' (lançado em 2019). Confirmar o nome exato na etiqueta/caixa e no site da Tagima.",
+   "Todos os campos vieram só da descrição da loja: conferir madeiras, largura do nut (40 mm), escala (provavelmente 34\") e número de trastes na peça.",
+   "Confirmar se acompanha bag."
+  ],
+  "fontes": [
+   "https://www.mercadolivre.com.br/blog/baixos-tagima-historia-modelos-etc",
+   "https://www.soundhouse.co.jp/en/products/detail/item/368908"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 2587,
+  "campos": {
+   "modelo": "Schecter Justin Beck V Ani (item 2664)",
+   "serie": "Signature",
+   "fabricacao": "Indonésia",
+   "construcao": "Bolt-on",
+   "corpo": "Swamp ash",
+   "braco_madeira": "Hard rock maple (bordo)",
+   "braco_perfil": "Thin C",
+   "escala_madeira": "Hard rock maple (bordo)",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm (12″)",
+   "marcadores": "Laterais Luminlay (brilham no escuro)",
+   "captadores": "Schecter MonsterTone P (braço) e MonsterTone J (ponte), passivos",
+   "eletrica": "Passiva: volume, tonalidade com push-pull (split), chave de 3 posições",
+   "tarraxas": "Schecter Vintage Open-Gear",
+   "cor": "Gloss Natural (GNAT)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo assinatura de Justin Beck (Glassjaw), lançado no NAMM 2024: corpo swamp ash, braço e escala em maple, captação P/J MonsterTone passiva com split no push-pull.",
+  "tags": [
+   "pj",
+   "4-cordas",
+   "passivo",
+   "signature",
+   "made-in-indonesia",
+   "escala-maple"
+  ],
+  "envio": {
+   "peso_kg": 10.5,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Itens que só a descrição da loja informa e não consegui confirmar: 21 trastes X-Jumbo, nut Graph Tech Black Tusq XL 38 mm, varetas de carbono, espessuras 20/22 mm, marcadores em bloco com '1993', ferragens pretas e ponte Schecter Custom top-load/string-thru. Conferir na peça.",
+   "A loja chama os captadores de 'Schecter USA MonsterTone'; as fontes citam apenas 'MonsterTone P/J'. Conferir a marcação."
+  ],
+  "fontes": [
+   "https://www.schecter-guitars.de/en/basses/signature-bass-models/justin-beck-v-ani",
+   "https://www.musicianmadness.com/basses/schecter-justin-beck-v-ani-gloss-natural-2664",
+   "https://www.guitarcenter.com/Schecter-Guitar-Research/Justin-Beck-V-Ani-4-string-electric-bass-Gloss-Natural-1500000417414.gc",
+   "https://guitarworld.com/news/schecter-ani-justin-beck-signature"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 4178,
+  "campos": {
+   "modelo": "67 Lovers Humbucker Joe B. – braço (4 vias, espaçamento 50 mm)",
+   "fabricacao": "Brasil",
+   "material": "Bobinas zebra (creme/preta), sem capa; polos de parafuso niquelados",
+   "compatibilidade": "Posição braço, guitarras com humbucker padrão (espaçamento de polos 50 mm); 4 condutores (permite split)",
+   "cor": "Zebra (creme/preta), polos niquelados"
+  },
+  "descricao_curta": "Humbucker de braço da 67 Lovers, fabricante brasileira de captadores artesanais, com bobinas zebra (creme/preta) sem capa, polos de parafuso niquelados e fiação de 4 vias para split.",
+  "tags": [
+   "captador",
+   "humbucker",
+   "braco",
+   "4-condutores",
+   "zebra",
+   "sem-capa",
+   "nacional"
+  ],
+  "envio": {
+   "peso_kg": 0.3,
+   "comprimento_cm": 15,
+   "largura_cm": 10,
+   "altura_cm": 6
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei ficha técnica pública da 67 Lovers para este modelo: ímã, resistência DC (kΩ) e código de cores dos fios não confirmados. Medir a resistência DC com multímetro e anotar.",
+   "Conferir o diagrama de cores dos 4 fios (pedir à 67 Lovers) para quem for fazer split."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4182,
+  "campos": {
+   "modelo": "67 Lovers Humbucker Joe B. – ponte (4 vias, espaçamento 52 mm)",
+   "fabricacao": "Brasil",
+   "material": "Bobinas zebra (creme/preta), sem capa; polos de parafuso niquelados",
+   "compatibilidade": "Posição ponte, guitarras com humbucker padrão (espaçamento de polos 52 mm); 4 condutores (permite split)",
+   "cor": "Zebra (creme/preta), polos niquelados"
+  },
+  "descricao_curta": "Humbucker de ponte da 67 Lovers, fabricante brasileira de captadores artesanais, com bobinas zebra (creme/preta) sem capa, polos de parafuso niquelados e fiação de 4 vias para split.",
+  "tags": [
+   "captador",
+   "humbucker",
+   "ponte",
+   "4-condutores",
+   "zebra",
+   "sem-capa",
+   "nacional"
+  ],
+  "envio": {
+   "peso_kg": 0.3,
+   "comprimento_cm": 15,
+   "largura_cm": 10,
+   "altura_cm": 6
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei ficha técnica pública da 67 Lovers para este modelo: ímã, resistência DC (kΩ) e código de cores dos fios não confirmados. Medir a resistência DC com multímetro e anotar.",
+   "Conferir o diagrama de cores dos 4 fios (pedir à 67 Lovers) para quem for fazer split.",
+   "A loja indica espaçamento de 52 mm para trêmolo flutuante; confirmar se é o espaçamento 'F-spaced' (cerca de 52,6 mm) antes de anunciar para Floyd Rose."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4187,
+  "campos": {
+   "modelo": "67 Lovers Jimi Mojo S-Lover – meio (single coil Strat, RWRP)",
+   "fabricacao": "Brasil",
+   "material": "Ímãs de Alnico (liga não informada), capa plástica preta, base de fibra vulcanizada, 2 condutores",
+   "compatibilidade": "Posição meio de guitarras estilo Stratocaster (furação padrão de escudo)",
+   "cor": "Capa preta"
+  },
+  "descricao_curta": "Single coil estilo Strat da 67 Lovers para a posição do meio, com polaridade e enrolamento reversos (RWRP) para cancelar ruído nas posições 2 e 4, capa preta.",
+  "tags": [
+   "captador",
+   "single-coil",
+   "strat",
+   "meio",
+   "rwrp",
+   "alnico",
+   "nacional"
+  ],
+  "envio": {
+   "peso_kg": 0.2,
+   "comprimento_cm": 12,
+   "largura_cm": 8,
+   "altura_cm": 5
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei ficha técnica pública da 67 Lovers para este modelo: tipo exato de Alnico (2/3/5), resistência DC e altura dos polos (stagger) não confirmados. Medir a resistência DC e conferir o stagger.",
+   "Conferir se a fiação é de tecido (vintage) como diz a descrição da loja."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 4692,
+  "campos": {
+   "modelo": "Schecter Tori Ruffin Freak Juice Traditional (item 2299)",
+   "serie": "Signature",
+   "fabricacao": "Indonésia",
+   "construcao": "Bolt-on",
+   "corpo": "Alder (amieiro)",
+   "formato_corpo": "Strat (Traditional)",
+   "braco_madeira": "Roasted hard rock maple (bordo torrado)",
+   "braco_perfil": "Vintage C",
+   "escala_madeira": "Roasted maple (bordo torrado)",
+   "escala": "648 mm (25.5″)",
+   "raio": "356 mm (14″)",
+   "trastes": "22, X-Jumbo",
+   "nut_material": "Graph Tech TUSQ (Ivory)",
+   "captadores": "HSH: 2 humbuckers Schecter USA Pasadena (Classic e Plus) e 1 single coil Nick Johnston no meio",
+   "ponte": "Wilkinson tremolo (WVS50IIK)",
+   "tarraxas": "Schecter com trava (locking)",
+   "cor": "Juice Burst",
+   "cordas_qtd": "6",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Signature de Tori Ruffin (The Time / Prince): Traditional de alder com braço e escala em maple torrado, captação HSH com humbuckers Schecter USA Pasadena e single Nick Johnston no meio, Wilkinson e tarraxas com trava.",
+  "tags": [
+   "hsh",
+   "tremolo",
+   "wilkinson",
+   "tarraxas-trava",
+   "22-trastes",
+   "signature",
+   "escala-maple",
+   "made-in-indonesia"
+  ],
+  "envio": {
+   "peso_kg": 7.0,
+   "comprimento_cm": 110,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição diz 'Alder ou Mahogany', 'Maple ou Rosewood', '22 ou 24 trastes', 'HSS ou SSS' e 'Tremolo Diamond Vintage ou Wilkinson'. O correto é corpo em alder, braço e escala em maple torrado, 22 trastes X-Jumbo, captação HSH (Schecter USA Pasadena + Nick Johnston) e ponte Wilkinson (Schecter / zZounds / Sweetwater). A descrição precisa ser reescrita.",
+   "O formato não é 'vintage com acabamentos conforme lote': a cor de linha é Juice Burst."
+  ],
+  "conferir": [
+   "As fontes divergem na posição dos captadores: o site da Schecter na Alemanha indica Pasadena Plus na ponte, Pasadena Classic no meio e Nick Johnston no braço, e zZounds/Sweetwater indicam Classic no braço e Nick Johnston no meio. Conferir na peça.",
+   "Confirmar a origem na etiqueta/serial (a loja informa IDN, Indonésia).",
+   "Conferir os controles e a chave (5 posições?) e se há push-pull: não confirmado.",
+   "Confirmar se acompanha bag ou case."
+  ],
+  "fontes": [
+   "https://www.schecter-guitars.de/en/guitars/signature-guitar-models/tori-ruffin-freak-juice-traditional",
+   "https://www.zzounds.com/item--SCEFREAKJUICE",
+   "https://www.sweetwater.com/store/detail/ToriRFJ--schecter-tori-ruffin-freak-juice-electric-guitar-juice-burst",
+   "https://www.musicianmadness.com/guitars/schecter-tori-ruffin-freak-juice-traditional-juice-burst-2299"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 5103,
+  "campos": {
+   "modelo": "Michael Gravity BMG304",
+   "construcao": "Bolt-on",
+   "corpo": "Okoume",
+   "braco_madeira": "Maple (bordo) torrado",
+   "escala_madeira": "Purpleheart (amaranto)",
+   "escala": "864 mm (34″)",
+   "captadores": "3 captadores (ativos, segundo a loja)",
+   "eletrica": "Ativa: EQ de 3 bandas (grave, médio, agudo); seletora rotativa de 4 posições",
+   "cor": "Vermelho (RD)",
+   "cordas_qtd": "4",
+   "mao": "Destro"
+  },
+  "descricao_curta": "Baixo da linha Gravity da Michael com corpo em okoume, braço de maple torrado, escala em purpleheart, 3 captadores e EQ ativo de 3 bandas, na cor vermelha.",
+  "tags": [
+   "4-cordas",
+   "ativo",
+   "24-trastes",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 10.5,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei ficha oficial do BMG304 na web: todos os campos vêm só da descrição da loja.",
+   "Conferir na peça os '24 trastes extra-jumbo de aço inoxidável' (incomum nessa faixa de preço), o tipo e a posição dos 3 captadores, a alimentação (bateria 9V) e se o número de cordas é mesmo 4."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6185,
+  "campos": {
+   "modelo": "Albieri Disjuntor (azul)",
+   "fabricacao": "Brasil",
+   "tipo_efeito": "Distorção / Overdrive",
+   "controles": "Volume, Gain, Tone",
+   "alimentacao": "9V DC, centro negativo"
+  },
+  "descricao_curta": "Pedal de distorção/overdrive nacional da Albieri, de fabricação artesanal, com controles de volume, gain e tone.",
+  "tags": [
+   "distorcao",
+   "overdrive",
+   "nacional",
+   "artesanal"
+  ],
+  "envio": {
+   "peso_kg": 0.7,
+   "comprimento_cm": 18,
+   "largura_cm": 14,
+   "altura_cm": 9
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não encontrei nenhuma página do fabricante ou de loja sobre o Albieri Disjuntor: os campos vêm só da descrição da loja.",
+   "Conferir na peça a etiqueta de alimentação (9V, polaridade), o tipo de bypass (true bypass?), as dimensões e o peso, e se o pedal funciona com bateria."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6565,
+  "campos": {
+   "modelo": "Gator GC-BASS-LED (Deluxe Molded, LED Edition)",
+   "material": "ABS moldado; interior em espuma com forro de pelúcia; luz LED interna com liga/desliga",
+   "compatibilidade": "Baixos elétricos de formato padrão (34″), estilo Precision/Jazz",
+   "cor": "Preto",
+   "dimensoes": "Interno: comprimento total 1204 mm (47.4″), corpo 536 mm (21.1″) de comprimento e 348 mm (13.7″) de largura, altura 76 mm (3″). Externo: aprox. 1255 × 409 × 147 mm (49.4 × 16.1 × 5.8″)",
+   "peso_produto": "Aprox. 5,2 a 5,7 kg (11.4 a 12.6 lb; as fontes divergem)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator para baixo, com luz LED interna que ilumina o instrumento e o compartimento de acessórios (com chave liga/desliga para poupar a bateria).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "baixo",
+   "abs",
+   "led"
+  ],
+  "envio": {
+   "peso_kg": 7.0,
+   "comprimento_cm": 130,
+   "largura_cm": 45,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Testar se o LED funciona e verificar o tipo de pilha/bateria.",
+   "Conferir as travas e se acompanha chave.",
+   "A descrição da loja não menciona o LED, que é o diferencial do modelo."
+  ],
+  "fontes": [
+   "https://www.empirepro.com/collections/gator/products/gator-gc-bass-led",
+   "https://soundpro.com/products/gatcas-gc-bass-led",
+   "https://www.zzounds.com/item--GATGCBASSLED",
+   "https://www.fullcompass.com/prod/543827-gator-gc-bass-led-molded-case-for-electric-bass-guitars-led-edition"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6570,
+  "campos": {
+   "modelo": "Gator GC-ELEC-XL (Deluxe Molded, Extra Long)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia",
+   "compatibilidade": "Guitarras elétricas tipo Strat/Tele e similares, inclusive modelos mais longos",
+   "cor": "Preto",
+   "dimensoes": "Interno: comprimento total aprox. 1064 mm (41.9″), corpo 472 mm (18.6″) × 323 mm (12.7″), altura 61 mm (2.4″). Externo: aprox. 1110 × 400 × 155 mm (43.7 × 15.7 × 6.1″)",
+   "peso_produto": "Aprox. 4,45 a 4,7 kg (9.8 a 10.4 lb)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator em versão 'extra long', para guitarras elétricas de corpo sólido com braço ou headstock mais longos que o padrão.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "abs",
+   "extra-longo"
+  ],
+  "envio": {
+   "peso_kg": 6.0,
+   "comprimento_cm": 116,
+   "largura_cm": 45,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "O sufixo '-S' do código usado pela loja não aparece nas fontes consultadas (encontrei só o código sem '-S'); conferir a etiqueta do case.",
+   "Conferir as travas e se acompanha chave."
+  ],
+  "fontes": [
+   "https://www.empirepro.com/collections/gator/products/gator-gc-elec-xl",
+   "https://goknight.com/gator-gc-elec-xl-electric-guitar-case-extra-long/",
+   "https://www.zzounds.com/item--GATGCELECXL",
+   "https://www.klundertmusic.nl/en/gator-gc-elec-xl"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6573,
+  "campos": {
+   "modelo": "Gator GWE-EXTREME (Hard-Shell Wood Case)",
+   "material": "Madeira com revestimento externo; interior forrado em pelúcia",
+   "compatibilidade": "Guitarras de formato 'extreme': Flying V, Explorer, Dean ML e similares",
+   "cor": "Preto",
+   "dimensoes": "Interno: 1214 × 422 × 84 mm (comprimento total 47.8″, largura 16.6″, altura 3.3″; corpo 600 mm / 23.6″). Externo: aprox. 1280 × 500 × 221 mm (as fontes divergem)",
+   "peso_produto": "Aprox. 6,3 a 7,5 kg (as fontes divergem)"
+  },
+  "descricao_curta": "Case rígido de madeira da Gator, desenhado para guitarras de formato angular como Flying V, Explorer e Dean ML.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "madeira",
+   "flying-v",
+   "explorer"
+  ],
+  "envio": {
+   "peso_kg": 9.0,
+   "comprimento_cm": 133,
+   "largura_cm": 55,
+   "altura_cm": 27
+  },
+  "correcoes": [
+   "A descrição diz 'madeira compensada com revestimento em Tolex' e 'proteção contra temperatura'. As fontes confirmam a construção em madeira (hard-shell wood); o tipo de revestimento não foi confirmado."
+  ],
+  "conferir": [
+   "O sufixo '-S' do código usado pela loja não aparece nas fontes consultadas (encontrei só o código sem '-S'); conferir a etiqueta do case.",
+   "Conferir as travas e as dobradiças.",
+   "Medir a guitarra antes de vender junto: o formato interno serve para V/Explorer/ML, não para modelos tradicionais."
+  ],
+  "fontes": [
+   "https://soundpro.com/products/gatcas-gwe-extreme",
+   "https://www.sonovente.com/en-gb/gator-extreme-p94930.html",
+   "https://www.americanmusical.com/p/gator-gwe-extreme-extreme-wood-guitar-case",
+   "https://goknight.com/gator-gwe-extreme-extreme-guitar-wood-case/"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6576,
+  "campos": {
+   "modelo": "Gator GC-ELECTRIC-T (Deluxe Molded)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia (segundo a loja)",
+   "compatibilidade": null,
+   "cor": "Preto"
+  },
+  "descricao_curta": "Case rígido moldado da Gator para guitarra elétrica, da linha Deluxe Molded (GC).",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "abs"
+  ],
+  "envio": {
+   "peso_kg": 6.0,
+   "comprimento_cm": 112,
+   "largura_cm": 45,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não achei especificação do código 'GC-ELECTRIC-T' (achei GC-ELECTRIC-A, para Strat/Tele, e GC-ELEC-T em outras listagens). Conferir o código na etiqueta do case.",
+   "A loja diz 'Single Cut / Les Paul'; o sufixo 'T' na linha Gator costuma indicar Tele. Testar com uma guitarra Tele/Strat e uma single cut antes de definir a compatibilidade.",
+   "O sufixo '-S' do código usado pela loja não aparece nas fontes consultadas (encontrei só o código sem '-S'); conferir a etiqueta do case.",
+   "Medir o interior (comprimento total, corpo, altura) e pesar."
+  ],
+  "fontes": [
+   "https://goknight.com/gator-gc-electric-a-electric-guitar-case/",
+   "https://www.lamusic.com/products/gator-gc-guitar-series-electric-strat-only-guitar-case-gc-elec-t"
+  ],
+  "confianca": "baixa"
+ },
+ {
+  "id": 6581,
+  "campos": {
+   "modelo": "Gator GC-LPS (Deluxe Molded)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia",
+   "compatibilidade": "Guitarras single cut estilo Gibson/Epiphone Les Paul",
+   "cor": "Preto",
+   "dimensoes": "Interno: comprimento total 1059 mm (41.7″), corpo 470 mm (18.5″), altura 89 mm (3.5″). Externo: aprox. 1110 × 414 × 152 mm (43.7 × 16.3 × 6″)",
+   "peso_produto": "Aprox. 3,8 kg (8.4 lb)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator, sob medida para guitarras single cut estilo Les Paul.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "abs",
+   "les-paul",
+   "single-cut"
+  ],
+  "envio": {
+   "peso_kg": 5.5,
+   "comprimento_cm": 116,
+   "largura_cm": 46,
+   "altura_cm": 20
+  },
+  "correcoes": [],
+  "conferir": [
+   "Conferir as travas e se acompanha chave."
+  ],
+  "fontes": [
+   "https://goknight.com/gator-gc-lps-gibson-les-paul-guitar-case/",
+   "https://www.simsmusic.com/gator-gc-lps-molded-abs-les-paul-case.html",
+   "https://www.zzounds.com/item--GATGCLPS",
+   "https://reverb.com/item/49311233-gator-gc-lps-deluxe-molded-case-for-single-cutaway-electric-guitar"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6584,
+  "campos": {
+   "modelo": "Gator GC-SG (Deluxe Molded)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia",
+   "compatibilidade": "Guitarras estilo Gibson/Epiphone SG e outras de corpo sólido double cut",
+   "cor": "Preto",
+   "dimensoes": "Interno: comprimento total 1026 mm (40.4″), corpo 434 mm (17.1″), largura inferior 343 mm (13.5″), altura 71 mm (2.8″). Externo: aprox. 1087 × 419 × 160 mm (42.8 × 16.5 × 6.3″)",
+   "peso_produto": "Aprox. 3,9 kg (8.7 lb; algumas lojas indicam 5,5 kg)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator, sob medida para guitarras estilo SG.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "abs",
+   "sg",
+   "double-cut"
+  ],
+  "envio": {
+   "peso_kg": 5.5,
+   "comprimento_cm": 114,
+   "largura_cm": 46,
+   "altura_cm": 21
+  },
+  "correcoes": [],
+  "conferir": [
+   "Conferir as travas e se acompanha chave."
+  ],
+  "fontes": [
+   "https://www.empirepro.com/products/gator-gc-sg",
+   "https://soundpro.com/products/gatcas-gc-sg",
+   "https://www.zzounds.com/item--GATGCSG"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6587,
+  "campos": {
+   "modelo": "Gator GC-335 (Deluxe Molded)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia",
+   "compatibilidade": "Guitarras semi-acústicas estilo Gibson ES-335",
+   "cor": "Preto",
+   "dimensoes": "Interno: comprimento total 1125 mm (44.3″), corpo 569 mm (22.4″), largura inferior 409 mm (16.1″), altura 114 mm (4.5″). Externo: aprox. 1194 × 475 × 188 mm (47 × 18.7 × 7.4″)",
+   "peso_produto": "Aprox. 4,5 a 5,2 kg (9.9 a 11.5 lb)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator para semi-acústicas estilo 335.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "guitarra",
+   "abs",
+   "semi-acustica",
+   "335"
+  ],
+  "envio": {
+   "peso_kg": 6.5,
+   "comprimento_cm": 122,
+   "largura_cm": 50,
+   "altura_cm": 23
+  },
+  "correcoes": [],
+  "conferir": [
+   "Conferir as travas e se acompanha chave."
+  ],
+  "fontes": [
+   "https://www.empirepro.com/collections/gator/products/gator-gc-335",
+   "https://goknight.com/gator-gc-335-semi-hollow-style-guitar-case/",
+   "https://www.zzounds.com/pagearea--61/item--GATGC335"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 6591,
+  "campos": {
+   "modelo": "Gator GC-JUMBO (Deluxe Molded)",
+   "material": "ABS moldado; interior em espuma EPS com forro de pelúcia",
+   "compatibilidade": "Violões jumbo (estilo Gibson J-200 / super jumbo)",
+   "cor": "Preto",
+   "dimensoes": "Interno: aprox. 1118 × 533 × 140 mm (44 × 21 × 5.5″); largura inferior do corpo 438 mm (17.25″)",
+   "peso_produto": "Aprox. 4,8 a 5,5 kg (as fontes divergem)"
+  },
+  "descricao_curta": "Case rígido moldado da Gator para violões jumbo, com largura inferior interna de cerca de 44 cm.",
+  "tags": [
+   "case",
+   "case-rigido",
+   "violao",
+   "abs",
+   "jumbo"
+  ],
+  "envio": {
+   "peso_kg": 7.5,
+   "comprimento_cm": 122,
+   "largura_cm": 52,
+   "altura_cm": 22
+  },
+  "correcoes": [],
+  "conferir": [
+   "O sufixo '-S' do código usado pela loja não aparece nas fontes consultadas (encontrei só o código sem '-S'); conferir a etiqueta do case.",
+   "Conferir as travas e se acompanha chave."
+  ],
+  "fontes": [
+   "https://goknight.com/gator-gc-jumbo-deluxe-molded-case-for-jumbo-acoustic-guitars/",
+   "https://www.zzounds.com/item--GATGCJUMBO",
+   "https://www.dlxmusic.fi/tuotteet/muut-tuotteet/kotelot-rakit-ja-kantopussit/kuljetuskotelot/gator-gc-jumbo",
+   "https://www.andertons.co.uk/gator/gator-deluxe-abs-case-to-fit-super-jumbo"
+  ],
+  "confianca": "alta"
+ },
+ {
+  "id": 7446,
+  "campos": {
+   "modelo": "Custom Amps Hot Rod",
+   "tipo_amp": "Valvulado",
+   "canais": "2 (Clean e Lead)",
+   "controles": "Gain, Master Volume, Bass, Middle, Treble, Presence",
+   "conexoes": "Input alta/baixa sensibilidade; loop de efeitos (send/return); saída de linha",
+   "impedancia": "4, 8 e 16 Ω (chave seletora)"
+  },
+  "descricao_curta": "Amplificador valvulado 'Hot Rod' da Custom Amps, peça usada do Garimpo, com 2 canais, loop de efeitos e seletor de impedância 4/8/16 Ω.",
+  "tags": [
+   "valvulado",
+   "semi-novo",
+   "garimpo",
+   "loop-de-efeitos"
+  ],
+  "envio": {
+   "peso_kg": 18.0,
+   "comprimento_cm": 70,
+   "largura_cm": 35,
+   "altura_cm": 35
+  },
+  "correcoes": [],
+  "conferir": [
+   "Não achei nenhum fabricante 'Custom Amps' com um modelo Hot Rod: as buscas retornam só Soldano Hot Rod e Fender Hot Rod Deluxe. Provavelmente é um amp de construtor nacional ou artesanal. Identificar o fabricante pela placa traseira ou pelo chassi.",
+   "Todos os campos vêm só da descrição da loja. Conferir na peça: formato (combo ou cabeçote; o envio é uma estimativa genérica), potência, válvulas (pré e power), alto-falante, controles e saídas.",
+   "Peça usada: oficina deve checar válvulas, filtros, bias, jacks, chave de impedância e footswitch (se houver).",
+   "Pesar e medir para corrigir o frete."
+  ],
+  "fontes": [],
+  "confianca": "baixa"
+ },
+ {
+  "id": 7669,
+  "campos": {
+   "modelo": "Ibanez SR1320SB-IVF",
+   "serie": "Premium (SR)",
+   "construcao": "Bolt-on",
+   "corpo": "Mogno africano",
+   "tampo": "Ash (freixo) jateado",
+   "braco_madeira": "5 peças Panga Panga / Purpleheart com varetas KTS Titanium",
+   "braco_perfil": "Atlas-4",
+   "braco_espessura_1": "19.5",
+   "braco_espessura_12": "21.5",
+   "escala_madeira": "Panga Panga com binding",
+   "escala": "864 mm (34″)",
+   "raio": "305 mm (12″)",
+   "trastes": "24, médios",
+   "nut_material": "Graph Tech Black TUSQ XL",
+   "nut_largura": "38",
+   "marcadores": "Off-set dots; laterais Luminlay",
+   "captadores": "Nordstrand Big Break (braço e ponte)",
+   "eletrica": "Pré Ibanez Custom Electronics com EQ de 3 bandas, chave de frequência de médios e chave de bypass do EQ; volume e balanço",
+   "ponte": "MR5S (espaçamento 19 mm)",
+   "tarraxas": "Gotoh",
+   "acabamento": "Fosco (flat), jateado",
+   "cor": "Icebreaker Wave Flat (IVF)",
+   "cordas_qtd": "4",
+   "mao": "Destro",
+   "acessorios": "Bag (gig bag) Ibanez"
+  },
+  "descricao_curta": "SR Premium 4 cordas com tampo de ash jateado sobre mogno africano, braço Atlas-4 de 5 peças com varetas de titânio, captadores Nordstrand Big Break e pré de 3 bandas com seletor de médios. Cor Icebreaker Wave Flat.",
+  "tags": [
+   "4-cordas",
+   "ativo",
+   "24-trastes",
+   "nordstrand",
+   "premium",
+   "bolt-on"
+  ],
+  "envio": {
+   "peso_kg": 10.0,
+   "comprimento_cm": 125,
+   "largura_cm": 45,
+   "altura_cm": 16
+  },
+  "correcoes": [
+   "A descrição diz cor 'Island Lotus Low Gloss / Natural Low Gloss'; o código IVF é Icebreaker Wave Flat (Ibanez / Thomann / Music Store).",
+   "A descrição diz tampo 'Poplar Burl (Loureiro dos Alpes)'; as fontes indicam tampo de ash (freixo) jateado sobre corpo de mogno africano (Ibanez / revendedores).",
+   "A descrição diz captadores Nordstrand 'Big Single'; o modelo é Nordstrand Big Break (Ibanez).",
+   "A descrição cita frequências de médios 250/450/700 Hz e 'ferragens douradas ou Cosmo Black (conforme lote)'; isso não foi confirmado. Remover ou conferir na peça."
+  ],
+  "conferir": [
+   "Algumas lojas (Thomann) listam o braço como Panga Panga/Amaranth; Purpleheart e Amaranth são a mesma madeira.",
+   "Confirmar a origem na etiqueta/serial (a linha Premium costuma ser feita na Indonésia).",
+   "Conferir a cor das ferragens e se a bag original acompanha."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/eu/products/detail/sr1320sb_1p_01.html",
+   "https://www.thomannmusic.com/ibanez_sr1320sb_ivf.htm",
+   "https://www.musicstore.de/en_US/USD/Ibanez-Premium-SR1320SB-IVF-Icebreaker-Wave-Flat/art-BAS0013265-000",
+   "https://www.andertons.co.uk/ibanez-sr1320sb-ivf-premium-bass-guitar-icebreaker-wave-flat/"
+  ],
+  "confianca": "media"
+ },
+ {
+  "id": 7670,
+  "campos": {
+   "modelo": "Ibanez BTB605MS-MAM",
+   "serie": "Bass Workshop (BTB)",
+   "construcao": "Neck-through",
+   "corpo": "Asas em okoume",
+   "braco_madeira": "5 peças Maple / Walnut com varetas de reforço",
+   "escala_madeira": "Panga Panga com binding",
+   "escala": "Multi-scale 889–940 mm (35″–37″)",
+   "trastes": "24 + traste zero, médios de aço inoxidável",
+   "marcadores": "Off-set dots; laterais Luminlay",
+   "captadores": "Ibanez T1 (braço e ponte), passivos",
+   "eletrica": "Pré com EQ de 3 bandas; volume e balanço",
+   "ponte": "MR5S (espaçamento 18 mm)",
+   "acabamento": "Fosco (matte)",
+   "cor": "Midnight Arctic Ocean Matte (MAM)",
+   "cordas_qtd": "5",
+   "mao": "Destro",
+   "acessorios": "Case (segundo revendedores)"
+  },
+  "descricao_curta": "BTB de 5 cordas multi-scale (35″–37″) com braço neck-through de 5 peças em maple/walnut, asas de okoume, trastes de aço inox com traste zero e ponte MR5S, na cor Midnight Arctic Ocean Matte.",
+  "tags": [
+   "5-cordas",
+   "multiscale",
+   "neck-through",
+   "24-trastes",
+   "trastes-inox",
+   "traste-zero"
+  ],
+  "envio": {
+   "peso_kg": 11.5,
+   "comprimento_cm": 130,
+   "largura_cm": 45,
+   "altura_cm": 18
+  },
+  "correcoes": [
+   "A descrição diz cor 'MAM (Molten Amber Low Gloss)'; o código MAM é Midnight Arctic Ocean Matte (Music Store / Woodbrass / Reverb).",
+   "A descrição diz tampo 'Ash / Maple'; as fontes citam só corpo de okoume. Conferir se há tampo antes de manter."
+  ],
+  "conferir": [
+   "A descrição cita varetas KTS Titanium; uma fonte cita varetas de grafite. Conferir.",
+   "Os detalhes do pré (chave de médios 250/450/700 Hz, bypass do EQ) não foram confirmados para este modelo.",
+   "Confirmar a cor das ferragens (a loja diz Cosmo Black) e se o case acompanha."
+  ],
+  "fontes": [
+   "https://www.ibanez.com/eu/products/detail/btb605ms_1p_02.html",
+   "https://www.musicstore.de/en_DE/EUR/Ibanez-Bass-Workshop-BTB605MS-MAM-Midnight-Arctic-Ocean-Matte/art-BAS0012875-000",
+   "https://www.woodbrass.com/en-gb/5-string-electric-bass-ibanez-btb605ms-mam-midnight-arctic-ocean-matte-bass-workshop-p403775.html",
+   "https://reverb.com/item/86904054-ibanez-btb605ms-multi-scale-bass-guitar-5-string-with-case-midnight-arctic-ocean",
+   "https://www.andertons.co.uk/ibanez-btb605ms-cem-5-string-multi-scale-bass-cerulean-aura-burst-matte",
+   "https://equipboard.com/items/ibanez-btb605ms"
+  ],
+  "confianca": "media"
+ }
+]
