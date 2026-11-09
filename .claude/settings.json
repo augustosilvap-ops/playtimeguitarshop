@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "scrollcraft": { "source": { "source": "github", "repo": "singhharsh1708/scrollcraft" } },
+    "cinetic":     { "source": { "source": "github", "repo": "Leonxlnx/cinetic" } }
+  },
+  "enabledPlugins": {
+    "scrollcraft@scrollcraft": true,
+    "cinetic@cinetic": true
+  }
+}
