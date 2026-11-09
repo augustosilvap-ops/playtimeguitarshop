@@ -88,7 +88,8 @@
 
    O quadro do Passaporte, a Procedência, a Ficha técnica e o player "Ouça esta peça" só aparecem nos produtos que tiverem esses campos preenchidos.
    Para o selo dourado "Passaporte" aparecer no cartão do produto, adicione a tag `passaporte`.
-7. **Vídeos** — *Conteúdo › Arquivos* › envie `previa/videos/passaporte-loop.mp4` e `clinica-loop.mp4`.
+7. **Quadros da animação da página inicial** — descompacte `midia/quadros-hero.zip` (288 imagens) e envie todas de uma vez em *Conteúdo › Arquivos › Enviar arquivos*. Mantenha os nomes (`hero_0000.jpg`…). O tema busca os quadros ali. Enquanto não forem enviados, a abertura mostra uma imagem estática, sem erro.
+7. **Vídeos** — *Conteúdo › Arquivos* › envie `midia/passaporte-loop.mp4` e `midia/clinica-loop.mp4`.
    No editor do tema, escolha cada vídeo na seção "Vídeo com lista" (página inicial, Clínica e Passaporte).
    Até lá, a seção mostra a imagem de capa.
 8. **Logos das marcas** — no editor do tema, seção "Logos das marcas": em cada marca, envie o logo oficial (PNG ou SVG com fundo transparente; os distribuidores costumam fornecer). Sem logo, a seção mostra o nome da marca.

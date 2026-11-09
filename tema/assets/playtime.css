@@ -684,3 +684,6 @@ body:has(.compare-bar.is-on) .wa-float { bottom: 96px; }
 body:has(.compare-bar.is-on) { padding-bottom: 84px; }
 .ship__row input { min-width: 0; width: 100%; }
 body:has([data-compare-page]:not([hidden])) .compare-bar { display: none; } body:has([data-view="comparar"]) .compare-bar { display: block; } body:has([data-view="comparar"].is-current) .compare-bar { display: none; } body:has([data-compare-page]) { padding-bottom: 0; }
+
+/* abertura sem quadros: fica a imagem estática */
+.scroll-hero--static .scroll-hero__canvas { display: none; }

@@ -68,6 +68,14 @@
 
     function preloadSet(count, tpl, target) {
       if (!count || !tpl) return;
+      // Testa o primeiro quadro antes de pedir os outros: se os quadros não foram enviados
+      // (Conteúdo › Arquivos), não dispara centenas de erros 404 e a abertura fica estática.
+      var probe = new Image();
+      probe.onload = function () { target[0] = probe; draw(currentFrame); loadAll(count, tpl, target); };
+      probe.onerror = function () { root.classList.add('scroll-hero--static'); };
+      probe.src = framePath(tpl, 0);
+    }
+    function loadAll(count, tpl, target) {
       var STEP = 5, keys = [], settled = 0;
       for (var i = 0; i < count; i += STEP) keys.push(i);
       function one(idx, after) {

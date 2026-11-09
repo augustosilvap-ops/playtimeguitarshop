@@ -1,9 +1,20 @@
 {%- liquid
-  assign frames = 'hero_0000.jpg' | asset_url
-  assign frames_m = 'hero-m_0000.jpg' | asset_url
+  assign first = section.settings.prefix | append: '0000.jpg'
+  assign first_m = section.settings.prefix_mobile | append: '0000.jpg'
+  if section.settings.source == 'theme'
+    assign frames = first | asset_url
+    assign frames_m = first_m | asset_url
+  else
+    assign frames = first | file_url
+    assign frames_m = first_m | file_url
+  endif
+  assign poster = 'hero-poster.jpg' | asset_url
+  if section.settings.poster != blank
+    assign poster = section.settings.poster | image_url: width: 2000
+  endif
 -%}
 <section class="scroll-hero" data-scroll-hero data-frames="{{ frames }}" data-count="{{ section.settings.count }}" data-frames-mobile="{{ frames_m }}" data-count-mobile="{{ section.settings.count_mobile }}" aria-label="Apresentação">
-  <div class="scroll-hero__stage" style="background:#0f0b0a url('{{ frames }}') center/cover no-repeat">
+  <div class="scroll-hero__stage" style="background:#0f0b0a url('{{ poster }}') center/cover no-repeat">
     <canvas class="scroll-hero__canvas" aria-hidden="true"></canvas><div class="scroll-hero__shade"></div>
     <div class="scroll-hero__steps">
       {%- for block in section.blocks -%}
@@ -31,6 +42,13 @@
 {
   "name": "Abertura com rolagem",
   "settings": [
+    { "type": "select", "id": "source", "label": "Onde estão os quadros da animação", "default": "files", "options": [
+      { "value": "files", "label": "Conteúdo › Arquivos (recomendado)" },
+      { "value": "theme", "label": "Dentro do tema" } ],
+      "info": "Envie os arquivos hero_0000.jpg … hero_0143.jpg e hero-m_0000.jpg … hero-m_0143.jpg em Conteúdo › Arquivos. Sem eles, a abertura mostra a imagem estática." },
+    { "type": "image_picker", "id": "poster", "label": "Imagem estática (opcional)" },
+    { "type": "text", "id": "prefix", "label": "Nome dos quadros (computador)", "default": "hero_" },
+    { "type": "text", "id": "prefix_mobile", "label": "Nome dos quadros (celular)", "default": "hero-m_" },
     { "type": "number", "id": "count", "label": "Quadros (computador)", "default": 144 },
     { "type": "number", "id": "count_mobile", "label": "Quadros (celular)", "default": 144 }
   ],
