@@ -1,0 +1,140 @@
+# Cola tudo no app "GraphiQL" da Shopify e clica em Executar (▶).
+# Cria os 34 campos de produto do tema Playtime. Pode rodar de novo: os que já existem voltam com o código TAKEN.
+mutation CriarCamposPlaytime {
+  c01_passaporte_serie: metafieldDefinitionCreate(definition: {name: "Passaporte · Nº de série", namespace: "custom", key: "passaporte_serie", type: "single_line_text_field", ownerType: PRODUCT, description: "Número de série desta unidade. Também aparece na Procedência."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c02_passaporte_ano: metafieldDefinitionCreate(definition: {name: "Passaporte · Ano", namespace: "custom", key: "passaporte_ano", type: "single_line_text_field", ownerType: PRODUCT, description: "Ano de fabricação. Ex.: 1998"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c03_passaporte_origem: metafieldDefinitionCreate(definition: {name: "Passaporte · Fabricação", namespace: "custom", key: "passaporte_origem", type: "single_line_text_field", ownerType: PRODUCT, description: "País ou fábrica. Ex.: EUA, Japão (Fujigen)"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c04_passaporte_condicao: metafieldDefinitionCreate(definition: {name: "Passaporte · Condição", namespace: "custom", key: "passaporte_condicao", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: Original, ótimo estado"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c05_passaporte_peso: metafieldDefinitionCreate(definition: {name: "Passaporte · Peso desta peça", namespace: "custom", key: "passaporte_peso", type: "single_line_text_field", ownerType: PRODUCT, description: "Peso na balança. Ex.: 3,62 kg"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c06_passaporte_altura_cordas: metafieldDefinitionCreate(definition: {name: "Passaporte · Altura das cordas (12ª casa)", namespace: "custom", key: "passaporte_altura_cordas", type: "single_line_text_field", ownerType: PRODUCT, description: "Grave / aguda. Ex.: 1,6 / 1,4 mm"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c07_passaporte_trastes: metafieldDefinitionCreate(definition: {name: "Passaporte · Trastes", namespace: "custom", key: "passaporte_trastes", type: "single_line_text_field", ownerType: PRODUCT, description: "Estado dos trastes. Ex.: 90%, sem desgaste"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c08_passaporte_encordoamento: metafieldDefinitionCreate(definition: {name: "Passaporte · Encordoamento", namespace: "custom", key: "passaporte_encordoamento", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: .010–.046"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c09_passaporte_regulagem: metafieldDefinitionCreate(definition: {name: "Passaporte · Regulagem", namespace: "custom", key: "passaporte_regulagem", type: "multi_line_text_field", ownerType: PRODUCT, description: "O que a oficina ajustou."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c10_regulagem_tecnico: metafieldDefinitionCreate(definition: {name: "Passaporte · Regulado por", namespace: "custom", key: "regulagem_tecnico", type: "single_line_text_field", ownerType: PRODUCT, description: "Nome do técnico que assinou a ficha."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c11_regulagem_data: metafieldDefinitionCreate(definition: {name: "Passaporte · Data da regulagem", namespace: "custom", key: "regulagem_data", type: "date", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c12_audio_limpo: metafieldDefinitionCreate(definition: {name: "Áudio · Som limpo", namespace: "custom", key: "audio_limpo", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"File\"]"}]}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c13_audio_drive: metafieldDefinitionCreate(definition: {name: "Áudio · Com drive", namespace: "custom", key: "audio_drive", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"File\"]"}]}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c14_serial_foto: metafieldDefinitionCreate(definition: {name: "Procedência · Foto do número de série", namespace: "custom", key: "serial_foto", type: "file_reference", ownerType: PRODUCT, description: "Foto nítida do número de série desta peça.", validations: [{name: "file_type_options", value: "[\"Image\"]"}]}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c15_serial_link: metafieldDefinitionCreate(definition: {name: "Procedência · Link de conferência do fabricante", namespace: "custom", key: "serial_link", type: "url", ownerType: PRODUCT, description: "Página oficial do fabricante para conferir o número."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c16_nota_fiscal: metafieldDefinitionCreate(definition: {name: "Procedência · Nota fiscal", namespace: "custom", key: "nota_fiscal", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: Acompanha nota fiscal"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c17_garantia: metafieldDefinitionCreate(definition: {name: "Procedência · Garantia", namespace: "custom", key: "garantia", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: 1 ano pela Playtime"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c18_historico: metafieldDefinitionCreate(definition: {name: "Procedência · Histórico", namespace: "custom", key: "historico", type: "multi_line_text_field", ownerType: PRODUCT, description: "Para usados: dono anterior, peças trocadas, revisões."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c19_escala: metafieldDefinitionCreate(definition: {name: "Ficha · Escala (comprimento)", namespace: "custom", key: "escala", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: 25.5″ (648 mm)"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c20_nut_largura: metafieldDefinitionCreate(definition: {name: "Ficha · Largura do nut", namespace: "custom", key: "nut_largura", type: "single_line_text_field", ownerType: PRODUCT, description: "Em mm. Ex.: 43"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c21_raio: metafieldDefinitionCreate(definition: {name: "Ficha · Raio da escala", namespace: "custom", key: "raio", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: 430 mm / 16.9″"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c22_braco_perfil: metafieldDefinitionCreate(definition: {name: "Ficha · Perfil do braço", namespace: "custom", key: "braco_perfil", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: Modern C, Wizard, AZ Oval C"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c23_braco_espessura_1: metafieldDefinitionCreate(definition: {name: "Ficha · Espessura do braço na 1ª casa", namespace: "custom", key: "braco_espessura_1", type: "single_line_text_field", ownerType: PRODUCT, description: "Só o número, em mm. Ex.: 20,6"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c24_braco_espessura_12: metafieldDefinitionCreate(definition: {name: "Ficha · Espessura do braço na 12ª casa", namespace: "custom", key: "braco_espessura_12", type: "single_line_text_field", ownerType: PRODUCT, description: "Só o número, em mm. Ex.: 22,4"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c25_braco_madeira: metafieldDefinitionCreate(definition: {name: "Ficha · Braço", namespace: "custom", key: "braco_madeira", type: "single_line_text_field", ownerType: PRODUCT, description: "Madeira e construção do braço."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c26_escala_madeira: metafieldDefinitionCreate(definition: {name: "Ficha · Madeira da escala", namespace: "custom", key: "escala_madeira", type: "single_line_text_field", ownerType: PRODUCT, description: "Ex.: Rosewood, Ébano, Maple"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c27_trastes: metafieldDefinitionCreate(definition: {name: "Ficha · Trastes", namespace: "custom", key: "trastes", type: "single_line_text_field", ownerType: PRODUCT, description: "Quantidade e tipo. Ex.: 22 Jumbo em aço inoxidável"}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c28_corpo: metafieldDefinitionCreate(definition: {name: "Ficha · Corpo", namespace: "custom", key: "corpo", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c29_tampo: metafieldDefinitionCreate(definition: {name: "Ficha · Tampo", namespace: "custom", key: "tampo", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c30_captadores: metafieldDefinitionCreate(definition: {name: "Ficha · Captadores", namespace: "custom", key: "captadores", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c31_eletrica: metafieldDefinitionCreate(definition: {name: "Ficha · Elétrica", namespace: "custom", key: "eletrica", type: "single_line_text_field", ownerType: PRODUCT, description: "Controles e chaves."}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c32_ponte: metafieldDefinitionCreate(definition: {name: "Ficha · Ponte", namespace: "custom", key: "ponte", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c33_tarraxas: metafieldDefinitionCreate(definition: {name: "Ficha · Tarraxas", namespace: "custom", key: "tarraxas", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  c34_acabamento: metafieldDefinitionCreate(definition: {name: "Ficha · Acabamento", namespace: "custom", key: "acabamento", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+}

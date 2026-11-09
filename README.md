@@ -6,13 +6,14 @@
 | `tema/` | Código do tema (o mesmo conteúdo do .zip) |
 | `importacao/produtos-shopify.csv` | Os 185 produtos do site atual, com as 927 fotos |
 | `importacao/gerar_csv.py` | Gera a planilha de novo a partir do site atual |
-| `importacao/criar_metacampos.py` | Cria na Shopify, pela API, todos os campos de produto que o tema usa |
+| `importacao/criar_metacampos.graphql` | Os 34 campos de produto, para colar no app GraphiQL da Shopify |
+| `importacao/criar_metacampos.py` | O mesmo, em Python |
 | `previa/` | Prévia navegável (cópia do artefato no claude.ai) |
 | `previa/videos/` | Vídeos da Clínica e do Passaporte, para enviar à Shopify |
 
 ## Passo a passo na Shopify
 
-1. **Criar os campos de produto (antes de importar)**: o jeito rápido é o script `importacao/criar_metacampos.py`, que cria os 34 campos de uma vez pela API (instruções no topo do arquivo). Se preferir fazer à mão, veja o passo 6 e crie as definições de *Ficha técnica* e *Procedência*. A planilha já preenche a ficha técnica de 151 produtos, lida das descrições do site atual, mas a Shopify só aceita essas colunas se os campos já existirem.
+1. **Criar os campos de produto (antes de importar)**: o jeito rápido, sem instalar nada, é instalar na loja o app **GraphiQL** da Shopify (shopify-graphiql-app.shopifycloud.com) com permissão de produtos, colar o conteúdo de `importacao/criar_metacampos.graphql` e executar. Quem tem Python pode usar `importacao/criar_metacampos.py`, que faz o mesmo. Se preferir fazer à mão, veja o passo 6 e crie as definições de *Ficha técnica* e *Procedência*. A planilha já preenche a ficha técnica de 151 produtos, lida das descrições do site atual, mas a Shopify só aceita essas colunas se os campos já existirem.
 1. **Importar os produtos** — *Produtos › Importar* › escolha `importacao/produtos-shopify.csv`.
    As fotos são baixadas direto de playtimeguitarshop.com, então o site atual precisa estar no ar durante a importação.
    Instrumentos em estoque entram com quantidade 1; confira o estoque de cordas, cabos e outros itens com mais de uma unidade.
