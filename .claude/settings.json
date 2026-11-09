@@ -1,10 +1,12 @@
 {
   "extraKnownMarketplaces": {
     "scrollcraft": { "source": { "source": "github", "repo": "singhharsh1708/scrollcraft" } },
-    "cinetic":     { "source": { "source": "github", "repo": "Leonxlnx/cinetic" } }
+    "cinetic":     { "source": { "source": "github", "repo": "Leonxlnx/cinetic" } },
+    "ui-ux-pro-max-skill": { "source": { "source": "github", "repo": "nextlevelbuilder/ui-ux-pro-max-skill" } }
   },
   "enabledPlugins": {
     "scrollcraft@scrollcraft": true,
-    "cinetic@cinetic": true
+    "cinetic@cinetic": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
   }
 }
