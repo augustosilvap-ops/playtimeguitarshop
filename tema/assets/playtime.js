@@ -43,7 +43,7 @@
         }).then(function (r) { return r.json().then(function (j) { if (!r.ok) throw j; return j; }); })
           .then(function () { return fetch((window.Shopify && Shopify.routes ? Shopify.routes.root : '/') + 'cart.js').then(function (r) { return r.json(); }); })
           .then(function (c) {
-            $$('[data-cart-count]').forEach(function (el) { el.textContent = c.item_count; el.hidden = c.item_count === 0; });
+            $$('[data-cart-count]').forEach(function (el) { el.textContent = c.item_count; el.hidden = c.item_count === 0; el.classList.remove('is-bump'); void el.offsetWidth; el.classList.add('is-bump'); });
             if (btn) { btn.textContent = 'Adicionado ao carrinho'; }
             setTimeout(function () { if (btn) { btn.disabled = false; btn.innerHTML = label; } }, 2200);
           })
@@ -170,7 +170,104 @@
     vids.forEach(function (v) { io.observe(v); });
   }
 
-  function boot() { menu(); reveal(); cart(); toc(); sound(); viewer360(); tradeIn(); videos(); }
+
+  /* ---------- topbar: mensagens que se revezam ---------- */
+  function topbar() {
+    $$('[data-topbar]').forEach(function (bar) {
+      if (bar.getAttribute('data-topbar-done')) return;
+      bar.setAttribute('data-topbar-done', '1');
+      var msgs = $$('.topbar__msg', bar);
+      if (msgs.length < 2) { if (msgs[0]) msgs[0].classList.add('is-on'); return; }
+      var i = 0, every = parseInt(bar.getAttribute('data-interval'), 10) || 4500, timer;
+      msgs[0].classList.add('is-on');
+      function next() {
+        var cur = msgs[i]; i = (i + 1) % msgs.length; var nxt = msgs[i];
+        cur.classList.remove('is-on'); cur.classList.add('is-out');
+        nxt.classList.remove('is-out'); nxt.classList.add('is-on');
+        setTimeout(function () { cur.classList.remove('is-out'); }, 600);
+      }
+      function start() { clearInterval(timer); if (!reduce) timer = setInterval(next, every); }
+      bar.addEventListener('mouseenter', function () { clearInterval(timer); });
+      bar.addEventListener('mouseleave', start);
+      start();
+    });
+  }
+
+  /* ---------- header que encolhe + barra de progresso + parallax ---------- */
+  function scrollFx() {
+    var header = $('.site-header');
+    var bar = document.createElement('div'); bar.className = 'scroll-progress'; bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    var ticking = false;
+    function run() {
+      ticking = false;
+      var y = window.scrollY || window.pageYOffset;
+      if (header) header.classList.toggle('is-scrolled', y > 40);
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+      if (reduce) return;
+      $$('.media-frame').forEach(function (f) {
+        var r = f.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight || !r.height) return;
+        var p = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+        f.style.setProperty('--py', (p * -36).toFixed(1) + 'px');
+      });
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(run); } }, { passive: true });
+    run();
+  }
+
+  /* ---------- títulos palavra por palavra ---------- */
+  function split() {
+    $$('.scroll-hero__step h1, .scroll-hero__step h2, [data-reveal] h2, [data-split]').forEach(function (el) {
+      if (el.getAttribute('data-split-done')) return;
+      el.setAttribute('data-split-done', '1');
+      var text = el.textContent.trim();
+      el.setAttribute('aria-label', text);
+      var words = text.split(/\s+/);
+      el.innerHTML = words.map(function (w, i) {
+        var safe = w.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+        return '<span class="w" aria-hidden="true"><span style="--i:' + i + '">' + safe + '</span></span>';
+      }).join(' ');
+    });
+  }
+
+  /* ---------- números que contam ---------- */
+  function counters() {
+    var els = $$('[data-count-to]');
+    if (!els.length) return;
+    function fmt(v, el) { return (el.getAttribute('data-prefix') || '') + Math.round(v).toLocaleString('pt-BR') + (el.getAttribute('data-suffix') || ''); }
+    function go(el) {
+      var to = parseFloat(el.getAttribute('data-count-to')) || 0;
+      if (reduce) { el.textContent = fmt(to, el); return; }
+      var t0 = null, dur = 1600;
+      function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / dur); el.textContent = fmt(to * (1 - Math.pow(1 - k, 3)), el); if (k < 1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    if (!('IntersectionObserver' in window)) { els.forEach(go); return; }
+    var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { go(e.target); io.unobserve(e.target); } }); }, { threshold: 0.5 });
+    els.forEach(function (e) { io.observe(e); });
+  }
+
+  /* ---------- brilho que segue o cursor (cartões e marcas) ---------- */
+  function glow() {
+    if (reduce || !window.matchMedia('(hover: hover)').matches) return;
+    document.addEventListener('pointermove', function (e) {
+      var el = e.target.closest && e.target.closest('.product-card, .brand-tile');
+      if (!el) return;
+      var r = el.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      el.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+      el.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+      if (el.classList.contains('product-card')) el.style.transform = 'translateY(-4px) perspective(900px) rotateX(' + ((0.5 - y) * 5).toFixed(2) + 'deg) rotateY(' + ((x - 0.5) * 6).toFixed(2) + 'deg)';
+    }, { passive: true });
+    document.addEventListener('pointerout', function (e) {
+      var el = e.target.closest && e.target.closest('.product-card');
+      if (el && !el.contains(e.relatedTarget)) el.style.transform = '';
+    });
+  }
+
+  function boot() { split(); topbar(); scrollFx(); menu(); reveal(); cart(); toc(); sound(); viewer360(); tradeIn(); videos(); counters(); glow(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
-  document.addEventListener('shopify:section:load', function () { reveal(); videos(); viewer360(); sound(); });
+  document.addEventListener('shopify:section:load', function () { split(); topbar(); reveal(); videos(); viewer360(); sound(); counters(); });
 })();

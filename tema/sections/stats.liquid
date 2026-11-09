@@ -1,0 +1,34 @@
+<section class="stats" aria-label="{{ section.settings.label }}"><div class="container stats__grid">
+  {%- for block in section.blocks -%}
+    {%- liquid
+      assign n = block.settings.number
+      if block.settings.source == 'products'
+        assign n = collections.all.products_count
+      elsif block.settings.source == 'vendors'
+        assign n = shop.vendors.size
+      endif
+    -%}
+    <div class="stat" {{ block.shopify_attributes }}>
+      <div class="stat__num" data-count-to="{{ n }}" data-prefix="{{ block.settings.prefix }}" data-suffix="{{ block.settings.suffix }}">{{ block.settings.prefix }}{{ n }}{{ block.settings.suffix }}</div>
+      <div class="stat__label">{{ block.settings.label }}</div>
+    </div>
+  {%- endfor -%}
+</div></section>
+{% schema %}
+{
+  "name": "Números",
+  "settings": [ { "type": "text", "id": "label", "label": "Descrição para leitores de tela", "default": "Playtime em números" } ],
+  "blocks": [
+    { "type": "stat", "name": "Número", "settings": [
+      { "type": "select", "id": "source", "label": "Valor", "default": "fixed", "options": [
+        { "value": "fixed", "label": "Número fixo" }, { "value": "products", "label": "Total de produtos (automático)" }, { "value": "vendors", "label": "Total de marcas (automático)" } ] },
+      { "type": "number", "id": "number", "label": "Número fixo", "default": 10 },
+      { "type": "text", "id": "prefix", "label": "Antes do número" },
+      { "type": "text", "id": "suffix", "label": "Depois do número" },
+      { "type": "text", "id": "label", "label": "Legenda", "default": "Legenda" }
+    ]}
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "Números", "blocks": [{ "type": "stat" }, { "type": "stat" }, { "type": "stat" }, { "type": "stat" }] }]
+}
+{% endschema %}

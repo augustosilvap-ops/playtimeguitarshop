@@ -63,5 +63,6 @@
 7. **Vídeos** — *Conteúdo › Arquivos* › envie `previa/videos/passaporte-loop.mp4` e `clinica-loop.mp4`.
    No editor do tema, escolha cada vídeo na seção "Vídeo com lista" (página inicial, Clínica e Passaporte).
    Até lá, a seção mostra a imagem de capa.
-8. **Conferir** — *Configurações do tema*: WhatsApp (já vem com 55 41 3501-4977), parcelas e desconto no Pix.
+8. **Logos das marcas** — no editor do tema, seção "Logos das marcas": em cada marca, envie o logo oficial (PNG ou SVG com fundo transparente; os distribuidores costumam fornecer). Sem logo, a seção mostra o nome da marca.
+9. **Conferir** — *Configurações do tema*: WhatsApp (já vem com 55 41 3501-4977), parcelas e desconto no Pix.
    No rodapé, confira o horário de atendimento.

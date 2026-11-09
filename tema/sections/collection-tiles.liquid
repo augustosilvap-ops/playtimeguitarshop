@@ -18,6 +18,7 @@
         {%- else -%}<div class="ph ph--tall"></div>{%- endif -%}
         <div class="cat-tile__label"><h3>{{ block.settings.title | default: c.title }}</h3>
           {%- if c != blank -%}<span>{{ c.products_count }} {% if c.products_count == 1 %}peça{% else %}peças{% endif %}</span>{%- endif -%}
+          <span class="cat-tile__go">Ver peças {% render 'icon', name: 'arrow', size: 14 %}</span>
         </div>
       </a>
     {%- endfor -%}

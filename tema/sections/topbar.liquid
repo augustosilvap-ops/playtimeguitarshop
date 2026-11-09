@@ -1,0 +1,39 @@
+<div class="topbar" data-topbar data-interval="{{ section.settings.interval | times: 1000 }}">
+  <div class="container topbar__inner">
+    <div class="topbar__ticker" aria-live="off">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.link != blank -%}<a class="topbar__msg" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{%- else -%}<p class="topbar__msg" style="margin:0" {{ block.shopify_attributes }}>{%- endif -%}
+          {% render 'icon', name: block.settings.icon, size: 15 %}<span>{{ block.settings.text }}</span>
+        {%- if block.settings.link != blank -%}</a>{%- else -%}</p>{%- endif -%}
+      {%- endfor -%}
+    </div>
+    <div class="topbar__links">
+      {%- if section.settings.hours != blank -%}<span><i class="topbar__dot" aria-hidden="true"></i>{{ section.settings.hours }}</span>{%- endif -%}
+      {%- if settings.whatsapp != blank -%}<a href="https://wa.me/{{ settings.whatsapp }}" target="_blank" rel="noopener">{% render 'icon', name: 'whatsapp', size: 14 %}{{ section.settings.phone }}</a>{%- endif -%}
+      {%- if section.settings.track_label != blank -%}<a href="{{ section.settings.track_link | default: routes.account_url }}">{% render 'icon', name: 'box', size: 14 %}{{ section.settings.track_label }}</a>{%- endif -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Barra de informações",
+  "settings": [
+    { "type": "range", "id": "interval", "label": "Troca de mensagem a cada (segundos)", "min": 3, "max": 10, "step": 1, "default": 5 },
+    { "type": "text", "id": "hours", "label": "Horário de atendimento", "default": "Atendimento seg a sáb" },
+    { "type": "text", "id": "phone", "label": "Telefone exibido", "default": "(41) 3501-4977" },
+    { "type": "text", "id": "track_label", "label": "Texto do link de pedido", "default": "Meus pedidos" },
+    { "type": "url", "id": "track_link", "label": "Link de pedido" }
+  ],
+  "blocks": [
+    { "type": "message", "name": "Mensagem", "settings": [
+      { "type": "select", "id": "icon", "label": "Ícone", "default": "box", "options": [
+        { "value": "box", "label": "Caixa" }, { "value": "card", "label": "Cartão" }, { "value": "tools", "label": "Ferramenta" },
+        { "value": "swap", "label": "Troca" }, { "value": "shield", "label": "Escudo" }, { "value": "video", "label": "Vídeo" }, { "value": "passport", "label": "Passaporte" } ] },
+      { "type": "inline_richtext", "id": "text", "label": "Texto", "default": "Frete com seguro para todo o Brasil" },
+      { "type": "url", "id": "link", "label": "Link (opcional)" }
+    ]}
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Barra de informações", "blocks": [{ "type": "message" }] }]
+}
+{% endschema %}

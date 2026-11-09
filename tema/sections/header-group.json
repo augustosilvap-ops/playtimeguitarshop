@@ -2,8 +2,73 @@
   "type": "header",
   "name": "Cabeçalho",
   "sections": {
-    "announcement": { "type": "announcement-bar", "settings": {} },
-    "header": { "type": "header", "settings": {} }
+    "topbar": {
+      "type": "topbar",
+      "settings": {
+        "interval": 5,
+        "hours": "Atendimento seg a sáb",
+        "phone": "(41) 3501-4977",
+        "track_label": "Meus pedidos"
+      },
+      "blocks": {
+        "m1": {
+          "type": "message",
+          "settings": {
+            "icon": "tools",
+            "text": "Todo instrumento sai <strong>regulado</strong> pela nossa oficina"
+          }
+        },
+        "m2": {
+          "type": "message",
+          "settings": {
+            "icon": "card",
+            "text": "Até <strong>10x sem juros</strong> ou <strong>5% off no Pix</strong>"
+          }
+        },
+        "m3": {
+          "type": "message",
+          "settings": {
+            "icon": "box",
+            "text": "Frete com <strong>seguro</strong> e embalagem reforçada para todo o Brasil"
+          }
+        },
+        "m4": {
+          "type": "message",
+          "settings": {
+            "icon": "swap",
+            "text": "Seu usado vale como entrada: <strong>avalie em 1 minuto</strong>",
+            "link": "shopify://pages/troca"
+          }
+        },
+        "m5": {
+          "type": "message",
+          "settings": {
+            "icon": "video",
+            "text": "Veja a peça <strong>ao vivo por vídeo</strong> antes de comprar"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5"
+      ]
+    },
+    "announcement": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {}
+    },
+    "header": {
+      "type": "header",
+      "settings": {}
+    }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "topbar",
+    "announcement",
+    "header"
+  ]
 }

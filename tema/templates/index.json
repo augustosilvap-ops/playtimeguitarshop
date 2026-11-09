@@ -329,22 +329,265 @@
       }
     },
     "marcas": {
-      "type": "brands-marquee",
+      "type": "brand-logos",
       "settings": {
-        "brands": "Ibanez, Martin, Hertom, Takamine, Fender, Gibson, PRS, Schecter, D'Angelico, G&L, Tom Anderson, Squier, Jet Guitars, Cort, Tagima, Orange, Strymon, Meris, Friedman, Boss, MXR, Gator"
-      }
+        "eyebrow": "Marcas",
+        "heading": "As marcas do nosso acervo",
+        "rows": 2,
+        "speed": 55
+      },
+      "blocks": {
+        "b1": {
+          "type": "brand",
+          "settings": {
+            "name": "Ibanez",
+            "style": "sans"
+          }
+        },
+        "b2": {
+          "type": "brand",
+          "settings": {
+            "name": "Fender",
+            "style": "serif"
+          }
+        },
+        "b3": {
+          "type": "brand",
+          "settings": {
+            "name": "Gibson",
+            "style": "serif"
+          }
+        },
+        "b4": {
+          "type": "brand",
+          "settings": {
+            "name": "Martin",
+            "style": "serif"
+          }
+        },
+        "b5": {
+          "type": "brand",
+          "settings": {
+            "name": "Hertom",
+            "style": "wide"
+          }
+        },
+        "b6": {
+          "type": "brand",
+          "settings": {
+            "name": "Takamine",
+            "style": "sans"
+          }
+        },
+        "b7": {
+          "type": "brand",
+          "settings": {
+            "name": "PRS",
+            "style": "sans"
+          }
+        },
+        "b8": {
+          "type": "brand",
+          "settings": {
+            "name": "Schecter",
+            "style": "wide"
+          }
+        },
+        "b9": {
+          "type": "brand",
+          "settings": {
+            "name": "Tom Anderson",
+            "style": "serif"
+          }
+        },
+        "b10": {
+          "type": "brand",
+          "settings": {
+            "name": "D'Angelico",
+            "style": "serif"
+          }
+        },
+        "b11": {
+          "type": "brand",
+          "settings": {
+            "name": "G&L",
+            "style": "sans"
+          }
+        },
+        "b12": {
+          "type": "brand",
+          "settings": {
+            "name": "Squier",
+            "style": "serif"
+          }
+        },
+        "b13": {
+          "type": "brand",
+          "settings": {
+            "name": "Orange",
+            "style": "wide"
+          }
+        },
+        "b14": {
+          "type": "brand",
+          "settings": {
+            "name": "Strymon",
+            "style": "sans"
+          }
+        },
+        "b15": {
+          "type": "brand",
+          "settings": {
+            "name": "Meris",
+            "style": "wide"
+          }
+        },
+        "b16": {
+          "type": "brand",
+          "settings": {
+            "name": "Friedman",
+            "style": "serif"
+          }
+        },
+        "b17": {
+          "type": "brand",
+          "settings": {
+            "name": "Boss",
+            "style": "sans"
+          }
+        },
+        "b18": {
+          "type": "brand",
+          "settings": {
+            "name": "MXR",
+            "style": "sans"
+          }
+        },
+        "b19": {
+          "type": "brand",
+          "settings": {
+            "name": "Electro Harmonix",
+            "style": "wide"
+          }
+        },
+        "b20": {
+          "type": "brand",
+          "settings": {
+            "name": "Mooer",
+            "style": "wide"
+          }
+        },
+        "b21": {
+          "type": "brand",
+          "settings": {
+            "name": "Fishman",
+            "style": "serif"
+          }
+        },
+        "b22": {
+          "type": "brand",
+          "settings": {
+            "name": "TC Electronic",
+            "style": "wide"
+          }
+        },
+        "b23": {
+          "type": "brand",
+          "settings": {
+            "name": "Gator",
+            "style": "sans"
+          }
+        },
+        "b24": {
+          "type": "brand",
+          "settings": {
+            "name": "Jet Guitars",
+            "style": "serif"
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22",
+        "b23",
+        "b24"
+      ]
+    },
+    "numeros": {
+      "type": "stats",
+      "settings": {},
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "source": "products",
+            "label": "peças no acervo"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "source": "vendors",
+            "label": "marcas"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "source": "fixed",
+            "number": 10,
+            "suffix": "x",
+            "label": "sem juros no cartão"
+          }
+        },
+        "s4": {
+          "type": "stat",
+          "settings": {
+            "source": "fixed",
+            "number": 7,
+            "label": "dias para devolver"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
     }
   },
   "order": [
     "hero",
     "trust",
+    "numeros",
     "cats",
     "vitrine",
+    "marcas",
     "passaporte",
     "garimpo",
     "clinica",
     "guias",
-    "troca",
-    "marcas"
+    "troca"
   ]
 }
