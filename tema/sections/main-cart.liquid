@@ -8,7 +8,9 @@
           {%- for item in cart.items -%}
             <tr>
               <td style="width:110px">{%- if item.image -%}<a href="{{ item.url }}">{{ item.image | image_url: width: 200 | image_tag: alt: item.title, loading: 'lazy' }}</a>{%- endif -%}</td>
-              <td><span class="product-card__brand">{{ item.vendor }}</span><br><a href="{{ item.url }}">{{ item.product.title }}</a>{%- unless item.product.has_only_default_variant -%}<br><small class="muted">{{ item.variant.title }}</small>{%- endunless -%}</td>
+              <td><span class="product-card__brand">{{ item.vendor }}</span><br><a href="{{ item.url }}">{{ item.product.title }}</a>{%- unless item.product.has_only_default_variant -%}<br><small class="muted">{{ item.variant.title }}</small>{%- endunless -%}
+                {%- assign props = item.properties | default: empty -%}
+                {%- if props != empty -%}<ul class="cart-props">{%- for prop in props -%}{%- assign first = prop.first | slice: 0 -%}{%- if prop.last != blank and first != '_' -%}<li><span>{{ prop.first | remove: 'Regulagem · ' }}:</span> {{ prop.last }}</li>{%- endif -%}{%- endfor -%}</ul>{%- endif -%}</td>
               <td><label class="visually-hidden" for="Qty-{{ forloop.index }}">Quantidade</label><input id="Qty-{{ forloop.index }}" type="number" name="updates[]" value="{{ item.quantity }}" min="0"> <a href="{{ item.url_to_remove }}" class="muted" style="font-size:.8rem">Remover</a></td>
               <td style="text-align:right">{{ item.final_line_price | money }}</td>
             </tr>
@@ -18,7 +20,8 @@
       <div class="cart-summary">
         <div style="display:flex;justify-content:space-between"><strong>Subtotal</strong><strong>{{ cart.total_price | money }}</strong></div>
         {%- assign n = settings.installments | default: 10 -%}{%- if n > 1 -%}<span class="muted">ou {{ n }}x de {{ cart.total_price | divided_by: n | money }} sem juros</span>{%- endif -%}
-        <p class="muted" style="font-size:.85rem;margin:0">Frete e prazo calculados no checkout pelo CEP.</p>
+        {%- assign first_item = cart.items.first -%}
+        {% render 'shipping-estimate', variant: first_item.variant, in_cart: true %}
         <label class="field"><span>Observação para a oficina (opcional)</span><textarea name="note" style="min-height:80px;padding:10px;border:1px solid var(--line-light);border-radius:4px;font:inherit">{{ cart.note }}</textarea></label>
         <button class="btn btn--ghost" type="submit" name="update">Atualizar</button>
         <button class="btn btn--dark btn--block" type="submit" name="checkout">Finalizar compra</button>

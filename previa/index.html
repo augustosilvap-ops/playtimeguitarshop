@@ -539,13 +539,156 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 }
 
 .topbar__msg { margin: 0; }
+
+/* ==========================================================================
+   v3 — regulagem, frete, procedência, ficha técnica, comparador e consultoria
+   ========================================================================== */
+.legend { font-size: .85rem; font-weight: 600; margin-bottom: 6px; }
+.section--light .choice span { border-color: var(--line-light); color: var(--text-dark); background: var(--card); }
+.section--light .choice input:checked + span { border-color: var(--gold-ink); background: rgba(236,167,0,.12); color: var(--text-dark); }
+
+/* regulagem */
+.setup { border: 1px solid var(--line-light); border-radius: var(--radius-lg); background: var(--card); overflow: hidden; }
+.setup__summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding: 14px 16px; }
+.setup__summary::-webkit-details-marker { display: none; }
+.setup__summary svg { color: var(--gold-ink); }
+.setup__summary strong { display: block; }
+.setup__summary small { display: block; color: var(--text-dark-2); font-size: .8rem; }
+.setup__badge { font-size: .66rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ok); border: 1px solid currentColor; border-radius: 999px; padding: 3px 9px; }
+.setup[open] .setup__summary { border-bottom: 1px solid var(--line-light); }
+.setup__body { display: grid; gap: var(--space-4); padding: var(--space-4); animation: drop-in var(--dur-3) var(--ease-out); }
+.setup__ticket { display: flex; gap: 8px; margin: 0; font-size: .82rem; color: var(--text-dark); background: var(--paper-2); padding: 10px 12px; border-radius: var(--radius); }
+.setup__ticket svg { color: var(--ok); flex: none; margin-top: 2px; }
+@keyframes drop-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.cart-props { list-style: none; margin: 6px 0 0; padding: 0; font-size: .78rem; color: var(--text-dark-2); }
+.cart-props span { color: var(--text-dark); font-weight: 600; }
+
+/* frete */
+.ship { border: 1px solid var(--line-light); border-radius: var(--radius-lg); padding: var(--space-4); background: var(--card); color: var(--text-dark); }
+.ship__form label { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: .92rem; margin-bottom: 10px; }
+.ship__form label svg { color: var(--gold-ink); }
+.ship__row { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.ship__row input { min-height: 48px; padding: 0 14px; border: 1px solid var(--line-light); border-radius: var(--radius); font: inherit; letter-spacing: .08em; background: #fff; color: var(--text-dark); }
+.ship__help { display: inline-block; margin-top: 8px; font-size: .78rem; color: var(--text-dark-2); }
+.ship__out:empty { display: none; }
+.ship__out { margin-top: 12px; animation: drop-in var(--dur-3) var(--ease-out); }
+.ship__place { margin: 0 0 8px; font-size: .8rem; color: var(--text-dark-2); }
+.ship__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ship__list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 12px; border-radius: var(--radius); background: var(--paper); }
+.ship__name small { display: block; font-size: .76rem; color: var(--text-dark-2); }
+.ship__note { margin: 8px 0 0; font-size: .76rem; color: var(--text-dark-2); }
+.ship__msg { margin: 0; font-size: .85rem; display: flex; align-items: center; gap: 8px; }
+.ship__msg--err { color: var(--danger); }
+.ship__spin { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line-light); border-top-color: var(--gold-ink); animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.cart-summary .ship { margin: 4px 0; }
+
+/* vitrine ao vivo + consultoria */
+.live-card__more { justify-self: start; margin-top: -8px; font-size: .85rem; color: var(--text-dark); }
+
+/* procedência */
+.prov { border: 1px solid var(--line-light); border-radius: var(--radius-lg); background: var(--card); padding: var(--space-4); color: var(--text-dark); display: grid; gap: var(--space-3); }
+.prov__head { display: flex; justify-content: space-between; align-items: center; }
+.prov__title { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 1.45rem; }
+.prov__title svg { color: var(--gold-ink); }
+.prov__tag { font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; background: var(--text-dark); color: var(--paper); padding: 4px 9px; border-radius: 3px; }
+.prov__grid { display: grid; grid-template-columns: 140px 1fr; gap: var(--space-4); align-items: start; }
+.prov__grid:not(:has(.prov__photo)) { grid-template-columns: 1fr; }
+.prov__photo { position: relative; display: block; border-radius: var(--radius); overflow: hidden; aspect-ratio: 1; background: #111; }
+.prov__photo img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-4) var(--ease-out); }
+.prov__photo:hover img { transform: scale(1.12); }
+.prov__zoom { position: absolute; left: 6px; bottom: 6px; display: inline-flex; gap: 4px; align-items: center; font-size: .68rem; font-weight: 600; background: rgba(15,11,10,.8); color: #fff; padding: 3px 8px; border-radius: 999px; }
+.prov__list { margin: 0; display: grid; gap: 10px; }
+.prov__list dt { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-dark-2); }
+.prov__list dd { margin: 2px 0 0; font-weight: 600; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.prov__serial { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.05rem; letter-spacing: .06em; background: var(--paper); padding: 2px 8px; border-radius: 3px; }
+.prov__copy { border: 1px solid var(--line-light); background: transparent; border-radius: 999px; padding: 3px 10px; font-size: .74rem; font-weight: 600; min-height: 30px; }
+.prov__check { gap: 8px; }
+.prov__hint { margin: -4px 0 0; font-size: .76rem; color: var(--text-dark-2); text-align: center; }
+@media (max-width: 599px) { .prov__grid { grid-template-columns: 1fr; } .prov__photo { aspect-ratio: 16/10; } }
+
+/* ficha técnica */
+.specs { display: grid; gap: var(--space-4); }
+.specs__title { font-size: 1.6rem; margin: 0; color: var(--text-dark); }
+.specs__table { margin: 0; border-top: 1px solid var(--line-light); }
+.specs__table > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line-light); font-size: .9rem; }
+.specs__table dt { color: var(--text-dark-2); }
+.specs__table dd { margin: 0; font-weight: 600; color: var(--text-dark); }
+.neck { border: 1px solid var(--line-light); border-radius: var(--radius-lg); background: var(--card); }
+.neck > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 14px 16px; font-weight: 600; color: var(--text-dark); }
+.neck > summary::-webkit-details-marker { display: none; }
+.neck > summary svg { color: var(--gold-ink); }
+.neck__body { display: grid; gap: var(--space-4); padding: 0 16px 16px; animation: drop-in var(--dur-3) var(--ease-out); }
+.neck__row { display: grid; gap: 6px; padding-top: 4px; }
+.neck__row p { margin: 0 0 4px; font-size: .9rem; color: var(--text-dark); }
+.neck__bar { display: grid; grid-template-columns: 52px 1fr 64px; align-items: center; gap: 8px; font-size: .76rem; color: var(--text-dark-2); }
+.neck__bar i { display: block; height: 10px; border-radius: 5px; background: var(--gold-ink); width: var(--w); animation: grow 700ms var(--ease-out); transform-origin: left; }
+.neck__bar--mine i { background: var(--text-dark-2); }
+.neck__bar b { color: var(--text-dark); text-align: right; font-variant-numeric: tabular-nums; }
+@keyframes grow { from { transform: scaleX(0); } }
+.compare-btn { gap: 8px; }
+.compare-btn::before { content: "+"; font-size: 1.2rem; line-height: 1; transition: transform var(--dur-3) var(--ease-out); }
+.compare-btn.is-on { background: var(--text-dark); color: var(--paper); border-color: var(--text-dark); }
+.compare-btn.is-on::before { content: "✓"; }
+
+/* barra de comparação */
+.compare-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 70; background: rgba(15,11,10,.97); border-top: 1px solid rgba(236,167,0,.35); color: var(--text-light); transform: translateY(110%); transition: transform var(--dur-3) var(--ease-out); box-shadow: 0 -18px 40px -24px rgba(0,0,0,.9); }
+.compare-bar.is-on { transform: none; }
+.compare-bar__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding-top: 12px; padding-bottom: 12px; }
+.compare-bar__slots { display: flex; gap: var(--space-3); min-width: 0; }
+.compare-bar__slot { position: relative; display: flex; align-items: center; gap: 10px; width: 220px; min-width: 0; padding: 6px 30px 6px 6px; border: 1px solid var(--line-dark); border-radius: var(--radius); background: var(--ink-2); font-size: .78rem; }
+.compare-bar__slot img { width: 44px; height: 44px; object-fit: cover; border-radius: 3px; flex: none; }
+.compare-bar__slot span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.compare-bar__slot button { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; border: 0; border-radius: 50%; background: transparent; color: var(--text-light-2); font-size: 1.1rem; }
+.compare-bar__slot--empty { justify-content: center; color: var(--text-light-2); border-style: dashed; padding: 6px; min-height: 58px; }
+.compare-bar__actions { display: flex; gap: var(--space-3); align-items: center; }
+.compare-bar__clear { background: transparent; border: 0; color: var(--text-light-2); text-decoration: underline; font-size: .85rem; }
+.compare-bar a[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+@media (max-width: 989px) { .compare-bar__slot { width: auto; flex: 1; } .compare-bar__slot span { display: none; } .compare-bar__slot--empty { display: none; } }
+body:has(.compare-bar.is-on) .wa-float { bottom: 96px; }
+.pt-toast { position: fixed; left: 50%; bottom: 110px; transform: translate(-50%, 20px); opacity: 0; z-index: 90; background: var(--text-light); color: var(--ink); padding: 10px 16px; border-radius: 999px; font-size: .85rem; font-weight: 600; transition: opacity var(--dur-3), transform var(--dur-3) var(--ease-out); pointer-events: none; }
+.pt-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+/* página de comparação */
+.cmp__scroll { overflow-x: auto; border: 1px solid var(--line-light); border-radius: var(--radius-lg); background: var(--card); }
+.cmp { width: 100%; border-collapse: collapse; min-width: 640px; color: var(--text-dark); }
+.cmp th, .cmp td { padding: 12px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line-light); font-size: .9rem; }
+.cmp thead th { vertical-align: bottom; width: 28%; }
+.cmp thead th:first-child, .cmp tbody th { width: 16%; color: var(--text-dark-2); font-weight: 500; }
+.cmp tr.is-diff td { background: rgba(236,167,0,.08); font-weight: 600; }
+.cmp__prod { display: grid; gap: 4px; text-decoration: none; }
+.cmp__prod img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); margin-bottom: 6px; }
+.cmp__prod strong { font-family: var(--font-display); font-size: 1.2rem; line-height: 1.15; }
+.cmp__price { font-weight: 700; }
+.cmp__rm { margin-top: 8px; background: transparent; border: 0; color: var(--text-dark-2); text-decoration: underline; font-size: .8rem; padding: 0; }
+
+/* garantias em passos */
+.promise { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-5); counter-reset: promise; }
+.promise__item { counter-increment: promise; position: relative; padding: var(--space-6) var(--space-5) var(--space-5); border-radius: var(--radius-lg); border: 1px solid var(--line-dark); background: var(--ink-2); }
+.section--light .promise__item { background: var(--card); border-color: var(--line-light); }
+.promise__item::before { content: counter(promise, decimal-leading-zero); position: absolute; right: 18px; top: 14px; font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; line-height: 1; color: rgba(236,167,0,.25); }
+.promise__icon { display: inline-grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: rgba(236,167,0,.12); color: var(--gold); margin-bottom: var(--space-4); }
+.section--light .promise__icon { color: var(--gold-ink); }
+.promise__item h3 { font-size: 1.45rem; margin: 0 0 8px; }
+.promise__item .rte p { margin: 0; color: var(--text-light-2); font-size: .92rem; }
+.section--light .promise__item .rte p { color: var(--text-dark-2); }
+@media (max-width: 989px) { .promise { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 599px) { .promise { grid-template-columns: 1fr; } }
+
+.setup__body > *, .setup .field, .neck__body > *, .neck .field, .ship, .prov, .specs { min-width: 0; }
+.setup select, .setup input, .neck input { width: 100%; min-width: 0; }
+.product__info > * { min-width: 0; }
+.cmp__prod img { aspect-ratio: 1; max-width: 220px; }
+body:has(.compare-bar.is-on) { padding-bottom: 84px; }
+.ship__row input { min-width: 0; width: 100%; }
+body:has([data-compare-page]:not([hidden])) .compare-bar { display: none; } body:has([data-view="comparar"]) .compare-bar { display: block; } body:has([data-view="comparar"].is-current) .compare-bar { display: none; } body:has([data-compare-page]) { padding-bottom: 0; }
 </style>
-<a class="skip-link" href="#MainContent">Pular para o conteúdo</a>
+<script>document.body.setAttribute("data-compare-url", "#comparar");</script><a class="skip-link" href="#MainContent">Pular para o conteúdo</a>
 <div class="preview-note"><strong>Prévia</strong> · Produtos, preços e fotos reais do site atual da Playtime.</div>
 <div class="topbar" data-topbar data-interval="4500"><div class="container topbar__inner"><div class="topbar__ticker" aria-live="off"><p class="topbar__msg"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><span>Todo instrumento sai <strong>regulado</strong> pela nossa oficina</span></p><p class="topbar__msg"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg><span>Até <strong>10x sem juros</strong> ou <strong>5% off no Pix</strong></span></p><p class="topbar__msg"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><span>Frete com <strong>seguro</strong> e embalagem reforçada para todo o Brasil</span></p><a class="topbar__msg" href="#troca"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><span>Seu usado vale como entrada: <strong>avalie em 1 minuto</strong></span></a><p class="topbar__msg"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg><span>Veja a peça <strong>ao vivo por vídeo</strong> antes de comprar</span></p></div><div class="topbar__links"><span><i class="topbar__dot" aria-hidden="true"></i>Atendimento seg a sáb</span><a href="https://wa.me/554135014977" target="_blank" rel="noopener"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>(41) 3501-4977</a><a href="#inicio"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg>Meus pedidos</a></div></div></div>
 <header class="site-header"><div class="container site-header__inner">
 <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="SiteNav" aria-label="Abrir menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-<nav class="site-nav" id="SiteNav" aria-label="Principal"><a href="#inicio">Início</a><a href="#produto">Produto</a><a href="#passaporte">Passaporte</a><a href="#clinica">Clínica</a><a href="#afinador">Afinador</a><a href="#troca">Troca</a></nav>
+<nav class="site-nav" id="SiteNav" aria-label="Principal"><a href="#inicio">Início</a><a href="#produto">Produto</a><a href="#passaporte">Passaporte</a><a href="#clinica">Clínica</a><a href="#afinador">Afinador</a><a href="#troca">Troca</a><a href="#consultoria">Consultoria</a></nav>
 <a class="site-header__logo" href="#inicio" aria-label="Playtime — página inicial"><img src="logo-dourado.svg" alt="Playtime Instrumentos Musicais" width="76" height="52"></a>
 <div class="site-header__actions"><a class="icon-btn" href="#inicio" aria-label="Buscar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a><a class="icon-btn" href="#produto" aria-label="Carrinho"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count hidden>0</span></a></div>
 </div></header>
@@ -641,9 +784,30 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 <div class="product__info">
  <div><p class="product__brand" style="margin:0 0 8px">Tom Anderson</p><h1 class="product__title">Drop Top Classic 1998</h1></div>
  <div class="product__price"><div class="price" style="font-size:1.9rem"><span>R$ 49.990,00</span><span class="price__installments">ou 10x de R$ 4.999,00 sem juros</span><span class="price__pix">R$ 47.490,50 no Pix (5% off)</span></div></div>
- <div class="product__buy"><button class="btn btn--dark btn--block" type="button" data-demo-cart>Adicionar ao carrinho</button>
+ <div class="product__buy"><details class="setup" data-setup>
+  <summary class="setup__summary"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><span><strong>Regulagem do seu jeito</strong><small>Cordas, afinação e altura escolhidas por você</small></span><span class="setup__badge">Grátis</span></summary>
+  <div class="setup__body">
+    <p class="field__help" style="margin:0">Antes do envio, nossa oficina regula a peça com as suas preferências. Se não escolher nada, ela sai com a regulagem padrão da oficina.</p>
+    <div class="field"><label for="Setup-cordas">Calibre das cordas</label><select id="Setup-cordas"><option>Manter o da oficina</option><option>.009–.042</option><option>.009–.046 (híbrido)</option><option>.010–.046</option><option>.010–.052 (afinações graves)</option><option>.011–.049</option><option>.011–.056 (Drop C)</option></select></div>
+    <div class="field-row">
+      <div class="field"><label for="Setup-afinacao">Afinação</label><select id="Setup-afinacao"><option>Padrão (E)</option><option>Meio tom abaixo (Eb)</option><option>Drop D</option><option>Um tom abaixo (D)</option><option>Drop C</option><option>Open G / Open D (slide)</option></select></div>
+      <div class="field"><label for="Setup-acao">Altura das cordas</label><select id="Setup-acao"><option>Média (equilíbrio)</option><option>Baixa (pegada leve, bends e velocidade)</option><option>Alta (ataque forte ou slide)</option></select></div>
+    </div>
+    <div class="field"><label for="Setup-obs">Algo mais para a oficina? (opcional)</label><input id="Setup-obs" maxlength="200" placeholder="Ex.: toco com palheta pesada; prefiro o tremolo travado"></div>
+    <p class="setup__ticket"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Vai junto a ficha de regulagem com as medidas e a assinatura do técnico.</span></p>
+  </div>
+</details>
+<button class="btn btn--dark btn--block" type="button" data-demo-cart>Adicionar ao carrinho</button>
  <p class="field__help" data-demo-cart-msg hidden role="status">Prévia: na loja real o item entra no carrinho sem recarregar a página.</p></div>
+ <div class="ship" data-ship data-variant="0" data-demo='[{"name": "Transportadora com seguro", "price": "189.90", "delivery_days": [5, 8]}, {"name": "SEDEX com seguro", "price": "264.50", "delivery_days": [2, 4]}]'>
+  <form class="ship__form" novalidate><label for="Ship-demo"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><span>Calcule frete e prazo</span></label>
+  <div class="ship__row"><input id="Ship-demo" name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" required><button class="btn btn--dark" type="submit">Calcular</button></div>
+  <a class="ship__help" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener">Não sei meu CEP</a></form>
+  <div class="ship__out" data-ship-out aria-live="polite"></div>
+  <p class="ship__note" style="margin-top:8px">Prévia: valores de exemplo. Na loja, aparecem as tarifas reais configuradas na Shopify.</p>
+</div>
  <a class="live-card" href="#produto" data-demo-live><span class="live-card__dot" aria-hidden="true"></span><div><strong>Vitrine ao vivo</strong><span>Veja esta peça por videochamada antes de comprar. A gente toca pra você.</span></div></a>
+ <a class="link-arrow live-card__more" href="#consultoria">Prefere agendar uma consultoria? <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
  <section class="passport" aria-labelledby="pp-t"><div class="passport__head"><h2 class="passport__title" id="pp-t">Passaporte do Instrumento</h2><span class="passport__seal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>Verificado Playtime</span></div>
   <dl class="passport__grid">
    <div class="passport__cell"><dt>Nº de série</dt><dd>exemplo</dd></div><div class="passport__cell"><dt>Ano</dt><dd>1998</dd></div>
@@ -652,10 +816,36 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
    <div class="passport__cell"><dt>Trastes</dt><dd>Inspecionados <small class="ex">ex.</small></dd></div><div class="passport__cell"><dt>Encordoamento</dt><dd>.010–.046 <small class="ex">ex.</small></dd></div>
    <div class="passport__cell" style="grid-column:1/-1"><dt>Regulagem</dt><dd>Oficina Playtime: tensor, ponte Floyd Rose e oitavas <small class="ex">ex.</small></dd></div></dl>
   <p class="passport__foot"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>As fotos e medidas são desta unidade, não do catálogo do fabricante. Os valores marcados “ex.” são exemplos: a oficina preenche no cadastro de cada peça.</span></p></section>
+ <section class="prov" aria-labelledby="Prov-demo">
+  <div class="prov__head"><h2 class="prov__title" id="Prov-demo"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>Procedência</h2><span class="prov__tag">Original</span></div>
+  <div class="prov__grid">
+   <a class="prov__photo" href="#produto" aria-label="Foto do número de série (exemplo)"><div class="ph" style="position:absolute;inset:0"><div class="ph__brand" style="font-size:1rem">foto do<br>nº de série</div></div><span class="prov__zoom"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Ampliar</span></a>
+   <dl class="prov__list">
+    <div><dt>Número de série</dt><dd><span class="prov__serial" data-copy="exemplo">exemplo</span><button type="button" class="prov__copy" data-copy-btn aria-label="Copiar número de série">Copiar</button></dd></div>
+    <div><dt>Nota fiscal</dt><dd>Acompanha nota fiscal <small class="ex">ex.</small></dd></div>
+    <div><dt>Garantia</dt><dd>Pela Playtime <small class="ex">ex.</small></dd></div>
+   </dl>
+  </div>
+  <a class="btn btn--ghost btn--block prov__check" href="#produto"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Conferir o número no site da Tom Anderson</a>
+  <p class="prov__hint">Copie o número acima e cole na página oficial do fabricante. Na prévia, foto, número e link são exemplos.</p>
+ </section>
  <div class="sound-demo"><div class="sound-demo__head"><strong><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg> Ouça esta peça</strong><button type="button" class="btn btn--dark" style="min-height:40px;padding:0 18px" data-demo-sound>Ouvir</button></div>
   <div class="sound-demo__tracks" role="group" aria-label="Escolha o timbre"><button type="button" aria-pressed="true">Limpo</button><button type="button" aria-pressed="false">Com drive</button></div>
   <div class="sound-demo__wave" aria-hidden="true"><i style="height:48%"></i><i style="height:72%"></i><i style="height:96%"></i><i style="height:33%"></i><i style="height:57%"></i><i style="height:81%"></i><i style="height:105%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:27%"></i><i style="height:51%"></i><i style="height:75%"></i><i style="height:99%"></i><i style="height:36%"></i><i style="height:60%"></i><i style="height:84%"></i><i style="height:108%"></i><i style="height:45%"></i><i style="height:69%"></i><i style="height:93%"></i><i style="height:30%"></i><i style="height:54%"></i><i style="height:78%"></i><i style="height:102%"></i><i style="height:39%"></i><i style="height:63%"></i><i style="height:87%"></i><i style="height:24%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:96%"></i><i style="height:33%"></i><i style="height:57%"></i><i style="height:81%"></i><i style="height:105%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:27%"></i><i style="height:51%"></i><i style="height:75%"></i><i style="height:99%"></i><i style="height:36%"></i><i style="height:60%"></i><i style="height:84%"></i><i style="height:108%"></i><i style="height:45%"></i></div><p class="field__help" data-demo-sound-msg style="margin:0">Gravado na Playtime com esta unidade, sem efeitos de pós-produção.</p></div>
- <ul class="service-list"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><span><strong>Regulado antes do envio.</strong> Nossa oficina ajusta altura das cordas, oitavas e tensor.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><span><strong>Embalagem reforçada.</strong> Caixa dupla e proteção no headstock.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><span><strong>Seu usado como entrada.</strong> Pré-avaliação em um minuto na página Troca.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>7 dias para devolução.</strong> Direito de arrependimento garantido pelo CDC.</span></li></ul>
+ <div class="specs" data-specs>
+  <h2 class="specs__title">Ficha técnica</h2>
+  <dl class="specs__table"><div><dt>Espessura do braço na 1ª casa</dt><dd>20,6 mm <small class="ex">ex.</small></dd></div><div><dt>Espessura do braço na 12ª casa</dt><dd>22,4 mm <small class="ex">ex.</small></dd></div><div><dt>Braço</dt><dd>Maple</dd></div><div><dt>Madeira da escala</dt><dd>Rosewood</dd></div><div><dt>Tampo</dt><dd>Flamed Maple 5A</dd></div><div><dt>Captadores</dt><dd>Exclusivos Tom Anderson</dd></div><div><dt>Elétrica</dt><dd>Tom Anderson</dd></div><div><dt>Ponte</dt><dd>Floyd Rose</dd></div><div><dt>Tarraxas</dt><dd>Grover</dd></div></dl>
+  <details class="neck" data-neck data-e1="20.6" data-e12="22.4">
+   <summary><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 14-14 4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg><span>Compare o braço com o do seu instrumento</span></summary>
+   <div class="neck__body">
+    <p class="field__help" style="margin:0">Meça o seu com um paquímetro: da superfície da escala até as costas do braço, logo atrás do traste da 1ª e da 12ª casa.</p>
+    <div class="field-row"><div class="field"><label for="Neck1">Seu braço na 1ª casa (mm)</label><input id="Neck1" inputmode="decimal" data-neck-in="e1" placeholder="Ex.: 20,5"></div><div class="field"><label for="Neck12">Seu braço na 12ª casa (mm)</label><input id="Neck12" inputmode="decimal" data-neck-in="e12" placeholder="Ex.: 22,0"></div></div>
+    <div class="neck__bars" data-neck-out aria-live="polite"></div>
+   </div>
+  </details>
+  <button type="button" class="btn btn--ghost btn--block compare-btn" data-compare-toggle data-handle="guitarra-tom-anderson-drop-top-classic" data-title="DROP TOP CLASSIC 1998" data-image="fotos/tom_0.jpg" aria-pressed="false"><span data-compare-label>Adicionar à comparação</span></button>
+ </div>
+ <ul class="service-list"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><span><strong>Regulado antes do envio.</strong> Nossa oficina ajusta altura das cordas, oitavas e tensor.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><span><strong>Chegou com avaria? A gente resolve.</strong> Embalagem reforçada e seguro por nossa conta. Se algo acontecer no caminho, quem trata com a transportadora somos nós · <a href="#compra-segura">como funciona</a>.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><span><strong>Seu usado como entrada.</strong> Pré-avaliação em um minuto na página Troca.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>7 dias para devolução.</strong> Direito de arrependimento garantido pelo CDC.</span></li></ul>
  <div class="accordion"><details open><summary>Descrição</summary><div class="rte"><div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x78zum5 x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
 <div class="html-div xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x9f619 xjbqb8w x1rg5ohu x15mokao x1ga7v0g x16uus16 xbiv7yw x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1oa3qoh"></div>
 </div>
@@ -824,11 +1014,42 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 
 </div>
-</main>
+<div data-view="compra-segura"><section class="section"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Garantia de transporte</p><h2>Chegou com avaria? A gente resolve.</h2><p class="lead">Instrumento é frágil e caro. Por isso o risco do caminho é nosso, não seu.</p></div></div><ol class="promise"><li class="promise__item" data-reveal data-reveal-delay="0"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg></span><h3>Embalado como se fosse nosso</h3><div class="rte"><p>Caixa dupla, proteção no headstock e nas tarraxas, cordas na tensão certa para viajar e case quando a peça acompanha.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="1"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Seguro por nossa conta</h3><div class="rte"><p>Todo envio sai com seguro pelo valor total da peça. Você não paga nada a mais por isso.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="2"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><h3>Recebeu? Confira com calma</h3><div class="rte"><p>Se notar qualquer avaria, fotografe a peça e a caixa e nos chame no WhatsApp em até 7 dias.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="3"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg></span><h3>A gente resolve com a transportadora</h3><div class="rte"><p>Você não precisa abrir chamado nem discutir com ninguém. Reparamos na nossa oficina, trocamos ou devolvemos o dinheiro, como você preferir.</p></div></li></ol></div></section><section class="section section--light"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Procedência</p><h2>Original, e você mesmo pode conferir.</h2><p class="lead">Instrumento falsificado existe, principalmente no mercado de usados. Na Playtime, a prova está na página de cada peça.</p></div></div><ol class="promise"><li class="promise__item" data-reveal data-reveal-delay="0"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg></span><h3>Foto do número de série</h3><div class="rte"><p>Fotografamos o número de série da própria peça, no headstock, no salto do braço ou dentro do corpo.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="1"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><h3>Confira no fabricante</h3><div class="rte"><p>Quando a marca tem consulta oficial, o link fica ao lado do número. Você copia, cola e confere.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="2"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><h3>Nota fiscal e garantia</h3><div class="rte"><p>Toda peça sai com nota fiscal. A página informa quem dá a garantia e por quanto tempo.</p></div></li><li class="promise__item" data-reveal data-reveal-delay="3"><span class="promise__icon"><svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></span><h3>Usados com história</h3><div class="rte"><p>No Garimpo, contamos o que sabemos da peça: dono anterior, peças trocadas e o que a oficina revisou.</p></div></li></ol></div></section></div><div data-view="consultoria"><section class="section"><div class="container trade-grid">
+  <div><p class="eyebrow">Consultoria Playtime</p><h1 class="h2">Escolha com calma, com quem entende.</h1>
+   <p class="lead">Uma conversa por vídeo com a nossa equipe, sem compromisso e sem empurrar produto. A gente mostra as peças, toca para você ouvir e responde o que precisar.</p>
+   <ul class="feature-list"><li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><strong>Sem pressão</strong><span>Ninguém aqui vai te julgar por perguntar o básico. A conversa é para você decidir melhor, mesmo que não compre.</span></div></li><li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg><div><strong>A gente toca para você</strong><span>Mostramos a peça de perto, com som limpo e com drive, e comparamos com outras ao vivo.</span></div></li><li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div><strong>No seu horário</strong><span>Escolha dia e período. Confirmamos pelo WhatsApp.</span></div></li></ul></div>
+  <div><form class="form" data-consult data-whatsapp="554135014977" novalidate>
+      <div class="field"><label for="C-nome">Como podemos te chamar?</label><input id="C-nome" name="nome" autocomplete="given-name" required></div>
+      <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend">O que você toca? (pode marcar mais de um)</legend>
+        <div class="choice-group">
+          <label class="choice"><input type="checkbox" name="toca" value="Guitarra"><span>Guitarra</span></label><label class="choice"><input type="checkbox" name="toca" value="Violão"><span>Violão</span></label><label class="choice"><input type="checkbox" name="toca" value="Baixo"><span>Baixo</span></label><label class="choice"><input type="checkbox" name="toca" value="Ainda não toco"><span>Ainda não toco</span></label>
+        </div></fieldset>
+      <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend">Há quanto tempo?</legend>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="nivel" value="Começando agora" checked><span>Começando agora</span></label><label class="choice"><input type="radio" name="nivel" value="Alguns anos"><span>Alguns anos</span></label><label class="choice"><input type="radio" name="nivel" value="Toco há muito tempo"><span>Toco há muito tempo</span></label><label class="choice"><input type="radio" name="nivel" value="Profissional"><span>Profissional</span></label>
+        </div></fieldset>
+      <div class="field"><label for="C-procura">O que você procura? (opcional)</label><textarea id="C-procura" name="procura" placeholder="Ex.: uma guitarra para tocar blues em casa; quero sair da minha Strat; não sei por onde começar"></textarea></div>
+      <div class="field-row">
+        <div class="field"><label for="C-orc">Orçamento</label><select id="C-orc" name="orcamento"><option>Prefiro não dizer agora</option><option>Até R$ 3.000</option><option>R$ 3.000 a R$ 8.000</option><option>R$ 8.000 a R$ 20.000</option><option>Acima de R$ 20.000</option></select></div>
+        <div class="field"><label for="C-formato">Como prefere</label><select id="C-formato" name="formato"><option>Chamada de vídeo no WhatsApp</option><option>Só mensagens, sem chamada</option><option>Visita à loja</option></select></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="C-dia">Melhor dia</label><select id="C-dia" name="dia"><option>Qualquer dia</option><option>Segunda</option><option>Terça</option><option>Quarta</option><option>Quinta</option><option>Sexta</option><option>Sábado</option></select></div>
+        <div class="field"><label for="C-hora">Melhor horário</label><select id="C-hora" name="hora"><option>Manhã</option><option>Hora do almoço</option><option selected>Tarde</option><option>Fim do dia</option></select></div>
+      </div>
+      <button class="btn btn--gold" type="submit"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Agendar pelo WhatsApp</button>
+      
+    </form><p class="field__help" style="margin-top:12px">Seus dados vão só na mensagem do WhatsApp. Não guardamos nada neste formulário.</p>
+   <div class="estimate" data-consult-ok hidden style="margin-top:24px"><p class="eyebrow" style="margin-bottom:8px">Pronto</p><p style="margin:0 0 16px">Abrimos o WhatsApp com a sua mensagem. Se não abriu, toque abaixo.</p><a class="btn btn--gold" href="#" target="_blank" rel="noopener">Abrir o WhatsApp</a></div></div>
+ </div></section></div><div data-view="comparar"><section class="section section--light" style="padding-top:48px"><div class="container" data-compare-page>
+  <div class="section-head"><div><p class="eyebrow">Comparar</p><h1 class="h2">Lado a lado</h1><p class="lead">Até três peças, com as medidas que importam na mão: escala, braço, raio, peso.</p></div></div>
+  <div class="empty-state" data-compare-empty hidden><p class="lead" style="margin:0 auto 24px">Escolha pelo menos duas peças. Na página de cada instrumento, toque em “Adicionar à comparação”.</p><a class="btn btn--dark" href="#inicio-vitrine">Ver instrumentos</a></div>
+  <div data-compare-table></div>
+ </div></section></div></main>
 <footer class="site-footer"><div class="container"><div class="site-footer__grid">
 <div><img class="site-footer__logo" src="logo-dourado.svg" alt="Playtime Instrumentos Musicais" width="180" height="123" loading="lazy"><p class="muted">Guitarras, baixos, violões e pedais escolhidos a dedo. Cada peça passa pela nossa oficina antes de chegar até você.</p></div>
 <div><h4>Loja</h4><ul><li><a href="#inicio-vitrine">Guitarras</a></li><li><a href="#inicio-vitrine">Violões</a></li><li><a href="#inicio-vitrine">Baixos</a></li><li><a href="#inicio-garimpo">Garimpo</a></li></ul></div>
-<div><h4>Serviços</h4><ul><li><a href="#clinica">Clínica Playtime</a></li><li><a href="#afinador">Afinador online</a></li><li><a href="#troca">Avalie sua troca</a></li><li><a href="#passaporte">Passaporte do Instrumento</a></li></ul></div>
+<div><h4>Serviços</h4><ul><li><a href="#clinica">Clínica Playtime</a></li><li><a href="#afinador">Afinador online</a></li><li><a href="#troca">Avalie sua troca</a></li><li><a href="#passaporte">Passaporte do Instrumento</a></li><li><a href="#consultoria">Consultoria por vídeo</a></li><li><a href="#compra-segura">Compra segura</a></li><li><a href="#comparar">Comparar peças</a></li></ul></div>
 <div><h4>Atendimento</h4><p class="muted">Seg a sex, 10h às 19h<br>Sáb, 10h às 16h<br>contato@playtimeguitarshop.com</p></div>
 </div><div class="site-footer__bottom"><span>© 2026 Playtime Instrumentos Musicais</span><div class="pay-icons"><span>Pix</span><span>Visa</span><span>Master</span><span>Elo</span><span>Boleto</span></div></div></div></footer>
 <script>/* Playtime — interações do tema (sem dependências) */
@@ -1378,16 +1599,17 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 </script>
 <script>
 (function () {
-  var views = ['inicio', 'produto', 'clinica', 'afinador', 'troca', 'passaporte'];
+  var views = ['inicio', 'produto', 'clinica', 'afinador', 'troca', 'passaporte', 'consultoria', 'compra-segura', 'comparar'];
   function show() {
     var h = (location.hash || '#inicio').slice(1);
     var target = h, anchor = null;
-    if (views.indexOf(h) < 0) { var base = h.split('-')[0]; target = views.indexOf(base) >= 0 ? base : 'inicio'; anchor = document.getElementById(h); }
+    if (views.indexOf(h) < 0) { var base = views.filter(function (v) { return h.indexOf(v + '-') === 0; })[0] || h.split('-')[0]; target = views.indexOf(base) >= 0 ? base : 'inicio'; anchor = document.getElementById(h); }
     document.querySelectorAll('[data-view]').forEach(function (v) { v.classList.toggle('is-current', v.dataset.view === target); });
     document.querySelectorAll('.site-nav a').forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('href') === '#' + target); });
     var nav = document.querySelector('.site-nav'); if (nav && nav.classList.contains('is-open')) document.querySelector('.menu-toggle').click();
     if (anchor) anchor.scrollIntoView(); else window.scrollTo(0, 0);
     window.dispatchEvent(new Event('resize'));
+    if (target === 'comparar' && window.PlaytimeExtras) { try { if (!JSON.parse(localStorage.getItem('pt-compare') || '[]').length && window.PT_COMPARE_SEED) localStorage.setItem('pt-compare', JSON.stringify(window.PT_COMPARE_SEED)); } catch (e) {} window.PlaytimeExtras.sync(); window.PlaytimeExtras.comparePage(); }
   }
   window.addEventListener('hashchange', show);
   show();
@@ -1401,4 +1623,270 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 })();
 </script>
 
+<script>window.PT_COMPARE_DATA = {"guitarra-ibanez-s-vai-pia3761c-blp": {"handle": "guitarra-ibanez-s-vai-pia3761c-blp", "title": "S VAI PIA3761C-BLP", "vendor": "Ibanez", "url": "#produto", "price": "R$ 49.999,00", "available": true, "image": "fotos/p4626_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": ""}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": "430mmR / 16.9″"}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "PIA / 5 peças de Maple (Bordo) e Walnut (Nogueira)"}, {"label": "Madeira da escala", "value": "Rosewood selecionado (Raio de 430mmR / 16.9″)"}, {"label": "Trastes", "value": "24 (Trastes do 21 ao 24 são escalopados) · Jumbo de Aço Inoxidável (Stainless Steel) com tratamento Prestige nas bordas"}, {"label": "Corpo", "value": "Alder (Albackground)"}, {"label": "Tampo", "value": "Não possui (Corpo sólido esculpido com relevo tridimensional e Petal Grip)"}, {"label": "Captadores", "value": "Configuração HSH – Linha DiMarzio UtoPIA (Custom Design)"}, {"label": "Elétrica", "value": "1 Volume Master (com filtro passa-altas Push-Pull de volume), 1 Tone Master"}, {"label": "Ponte", "value": "Edge tremolo bridge com cavidade Lion’s Claw e alavanca Ultralite Tremolo Arm"}, {"label": "Tarraxas", "value": ""}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-tom-anderson-drop-top-classic": {"handle": "guitarra-tom-anderson-drop-top-classic", "title": "DROP TOP CLASSIC 1998", "vendor": "Tom Anderson", "url": "#produto", "price": "R$ 49.990,00", "available": true, "image": "fotos/tom_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": ""}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": ""}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": "20,6 mm (ex.)"}, {"label": "Espessura do braço na 12ª casa", "value": "22,4 mm (ex.)"}, {"label": "Braço", "value": "Maple"}, {"label": "Madeira da escala", "value": "Rosewood"}, {"label": "Trastes", "value": ""}, {"label": "Corpo", "value": ""}, {"label": "Tampo", "value": "Flamed Maple 5A"}, {"label": "Captadores", "value": "Exclusivos Tom Anderson"}, {"label": "Elétrica", "value": "Tom Anderson"}, {"label": "Ponte", "value": "Floyd Rose"}, {"label": "Tarraxas", "value": "Grover"}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-ibanez-prestige-ps10-bk": {"handle": "guitarra-ibanez-prestige-ps10-bk", "title": "PRESTIGE PS10-BK", "vendor": "Ibanez", "url": "#produto", "price": "R$ 47.999,00", "available": true, "image": "fotos/p8283_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": "24.7″ (628 mm)"}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": ""}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "3 peças em Maple"}, {"label": "Madeira da escala", "value": "Ébano com binding e marcação block inlay em Acrílico e Abalone"}, {"label": "Trastes", "value": "22 Medium com tratamento de borda Prestige"}, {"label": "Corpo", "value": "Mogno Africano (African Mahogany) com tampo em Maple"}, {"label": "Tampo", "value": ""}, {"label": "Captadores", "value": "Seymour Duncan® ’59 model™ (braço) e Seymour Duncan® Custom 5™ (ponte), todos Passivos em Alnico"}, {"label": "Elétrica", "value": "2 Volumes + 1 Tone + Chave Seletora 3 Posições"}, {"label": "Ponte", "value": "Gotoh® GE103B-T (com Sustain block)"}, {"label": "Tarraxas", "value": ""}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-ibanez-prestige-lb1-bk": {"handle": "guitarra-ibanez-prestige-lb1-bk", "title": "PRESTIGE LB1 BK", "vendor": "Ibanez", "url": "#produto", "price": "R$ 39.990,00", "available": true, "image": "fotos/p8274_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": "25.5″ (648 mm)"}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": "228mm a 305mm"}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "AZ Oval C em S-TECH WOOD Roasted Birdseye Maple"}, {"label": "Madeira da escala", "value": "S-TECH WOOD Roasted Birdseye Maple com marcação dot em Madrepérola e raio composto (228mm a 305mm)"}, {"label": "Trastes", "value": "22 Jumbo em Aço Inoxidável com tratamento de borda Prestige"}, {"label": "Corpo", "value": "Ash"}, {"label": "Tampo", "value": ""}, {"label": "Captadores", "value": "Seymour Duncan® Lari Basilio (S) no braço, (S) no meio e (H) na ponte; todos Passivos em Alnico"}, {"label": "Elétrica", "value": "1 Volume + 1 Tone + Chave Seletora de 5 Posições + Sistema dyna-MIX9 com Alter Switch"}, {"label": "Ponte", "value": "Gotoh® T1702B tremolo"}, {"label": "Tarraxas", "value": "Gotoh® Magnum Lock com H.A.P. (Height Adjustable Post)"}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-ibanez-prestige-flatv1": {"handle": "guitarra-ibanez-prestige-flatv1", "title": "PRESTIGE FLATV1", "vendor": "Ibanez", "url": "#produto", "price": "R$ 34.990,00", "available": true, "image": "fotos/p8294_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": "25.5″ (648 mm)"}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": ""}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "FLATV / S-TECH WOOD 1 peça em Roasted Maple"}, {"label": "Madeira da escala", "value": "S-TECH WOOD Roasted Maple com marcação em black dot"}, {"label": "Trastes", "value": "21 Trastes Medium com tratamento Prestige nas bordas"}, {"label": "Corpo", "value": "Ash (Slab body sem contornos)"}, {"label": "Tampo", "value": ""}, {"label": "Captadores", "value": "Seymour Duncan® FLAT5™ (S) no braço e Seymour Duncan® FLAT5™ (S) na ponte, Passivos em Alnico"}, {"label": "Elétrica", "value": "1 Volume + 1 Tone + Chave Seletora de 3 Posições"}, {"label": "Ponte", "value": "Gotoh® F1803 com saddles de titânio In-Tune"}, {"label": "Tarraxas", "value": "Gotoh® Machine Heads"}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-ibanez-prestige-rgr5130": {"handle": "guitarra-ibanez-prestige-rgr5130", "title": "PRESTIGE RGR5130", "vendor": "Ibanez", "url": "#produto", "price": "R$ 31.990,00", "available": true, "image": "fotos/p8257_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": "25.5″ (648 mm)"}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": ""}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "Super Wizard HP em 5 peças de Maple e Wenge"}, {"label": "Madeira da escala", "value": "Macassar Ebony (Ébano de Macassar) com marcação em off-set dot de Madrepérola"}, {"label": "Trastes", "value": "24 Trastes Jumbo em Aço Inoxidável com tratamento Prestige nas bordas"}, {"label": "Corpo", "value": "Basswood"}, {"label": "Tampo", "value": ""}, {"label": "Captadores", "value": "Fishman® Fluence™ Modern Humbucker Ceramic (Braço) e Fishman® Fluence™ Modern Humbucker Ceramic (Ponte), Ativos"}, {"label": "Elétrica", "value": "1 Volume + 1 Tone + Chave Seletora de 3 Posições + Fishman Fluence Voicing Switch"}, {"label": "Ponte", "value": "Lo-Pro Edge Tremolo"}, {"label": "Tarraxas", "value": "Gotoh® Machine Heads"}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}, "violao-martin-d-16e-c-case": {"handle": "violao-martin-d-16e-c-case", "title": "D-16E C/CASE", "vendor": "Martin", "url": "#produto", "price": "R$ 29.129,00", "available": true, "image": "fotos/p5499_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": "25,4″"}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": ""}, {"label": "Perfil do braço", "value": "Modified Low Oval com High-Performance Taper"}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "Madeira de Lei Selecionada (Select Hardwood)"}, {"label": "Madeira da escala", "value": "Ebony (Ébano)"}, {"label": "Trastes", "value": "20"}, {"label": "Corpo", "value": "Sapele Maciço"}, {"label": "Tampo", "value": "Sitka Spruce Maciço"}, {"label": "Captadores", "value": "Fishman Matrix VT Enhance NT2"}, {"label": "Elétrica", "value": "Volume e Tone (Acesso pelo bocal)"}, {"label": "Ponte", "value": "Ebony (Ébano)"}, {"label": "Tarraxas", "value": ""}, {"label": "Acabamento", "value": "Gloss (Tampo) / Satin (Corpo)"}, {"label": "Peso desta peça", "value": ""}]}, "guitarra-ibanez-az-az2204n-pbm": {"handle": "guitarra-ibanez-az-az2204n-pbm", "title": "AZ AZ2204N-PBM", "vendor": "Ibanez", "url": "#produto", "price": "R$ 27.999,00", "available": true, "image": "fotos/p4204_0.jpg", "specs": [{"label": "Escala (comprimento)", "value": ""}, {"label": "Largura do nut", "value": ""}, {"label": "Raio da escala", "value": "228mm a 305mm"}, {"label": "Perfil do braço", "value": ""}, {"label": "Espessura do braço na 1ª casa", "value": ""}, {"label": "Espessura do braço na 12ª casa", "value": ""}, {"label": "Braço", "value": "AZ Oval C / S-TECH WOOD Roasted Maple (Bordo Tostado)"}, {"label": "Madeira da escala", "value": "Rosewood (Jacarandá) com raio composto (228mm a 305mm)"}, {"label": "Trastes", "value": "22 Stainless Steel (Aço Inoxidável) · Jumbo com tratamento de arestas Prestige (Prestige Fret Edge Treatment)"}, {"label": "Corpo", "value": "Alder (Alveiro)"}, {"label": "Tampo", "value": "Não possui (Design sólido com contornos ergonómicos AZ)"}, {"label": "Captadores", "value": "* Ponte: Seymour Duncan Fortuna Humbucker (Passivo/Alnico)"}, {"label": "Elétrica", "value": "1 Volume, 1 Tone, Sistema de Comutação dyna-MIX9 com Alter Switch"}, {"label": "Ponte", "value": "Gotoh T1702B Tremolo"}, {"label": "Tarraxas", "value": ""}, {"label": "Acabamento", "value": ""}, {"label": "Peso desta peça", "value": ""}]}};
+window.PT_COMPARE_SEED = [{"handle": "guitarra-ibanez-s-vai-pia3761c-blp", "title": "S VAI PIA3761C-BLP", "image": "fotos/p4626_0.jpg"}, {"handle": "guitarra-tom-anderson-drop-top-classic", "title": "DROP TOP CLASSIC 1998", "image": "fotos/tom_0.jpg"}, {"handle": "guitarra-ibanez-prestige-ps10-bk", "title": "PRESTIGE PS10-BK", "image": "fotos/p8283_0.jpg"}];</script>
+<script>/* Playtime — frete pelo CEP, comparador, medida do braço, procedência e consultoria (sem dependências) */
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var root = (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
+  var brl = function (v) { return 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var num = function (v) { return Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }); };
+  var store = {
+    get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+
+  /* ---------------------------------------------------------------- frete */
+  function maskCep(input) {
+    input.addEventListener('input', function () {
+      var d = input.value.replace(/\D/g, '').slice(0, 8);
+      input.value = d.length > 5 ? d.slice(0, 5) + '-' + d.slice(5) : d;
+    });
+  }
+
+  function lookupCep(d) {
+    return fetch('https://viacep.com.br/ws/' + d + '/json/').then(function (r) { return r.json(); }).then(function (a) {
+      if (!a || a.erro) throw new Error('cep');
+      return a;
+    });
+  }
+
+  function fetchRates(variant, cep, uf, inCart) {
+    var params = new URLSearchParams({ 'shipping_address[zip]': cep, 'shipping_address[country]': 'Brazil', 'shipping_address[province]': uf });
+    var added = null;
+    var json = function (r) { return r.json(); };
+    return fetch(root + 'cart.js').then(json).then(function (cart) {
+      var has = cart.items.some(function (i) { return String(i.variant_id) === String(variant); });
+      if (inCart || has || !variant) return null;
+      // Peça ainda fora do carrinho: entra por alguns segundos só para a Shopify calcular, e sai logo depois.
+      return fetch(root + 'cart/add.js', {
+        method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ items: [{ id: Number(variant), quantity: 1, properties: { _estimativa_frete: '1' } }] })
+      }).then(json).then(function (r) { added = r.items && r.items[0] && r.items[0].key; });
+    }).then(function () {
+      return fetch(root + 'cart/prepare_shipping_rates.json?' + params, { method: 'POST' });
+    }).then(function () {
+      var tries = 0;
+      function poll() {
+        return fetch(root + 'cart/async_shipping_rates.json?' + params).then(function (r) {
+          if (r.status === 200) return r.json();
+          return null;
+        }).then(function (j) {
+          if (j && j.shipping_rates) return j.shipping_rates;
+          if (++tries > 12) throw new Error('timeout');
+          return sleep(700).then(poll);
+        });
+      }
+      return poll();
+    }).finally(function () {
+      if (added) return fetch(root + 'cart/change.js', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: added, quantity: 0 }) });
+    });
+  }
+
+  function days(rate) {
+    var d = rate.delivery_days;
+    if (d && d.length) { var a = d[0], b = d[d.length - 1]; return a === b ? a + ' dias úteis' : a + ' a ' + b + ' dias úteis'; }
+    return '';
+  }
+
+  function renderRates(out, addr, rates) {
+    if (!rates.length) { out.innerHTML = '<p class="ship__msg">Ainda não temos entrega automática para esse CEP. Fale com a gente no WhatsApp que a gente cota.</p>'; return; }
+    rates.sort(function (a, b) { return parseFloat(a.price) - parseFloat(b.price); });
+    out.innerHTML = '<p class="ship__place">' + esc(addr.localidade) + '/' + esc(addr.uf) + (addr.bairro ? ' · ' + esc(addr.bairro) : '') + '</p><ul class="ship__list">' +
+      rates.map(function (r) {
+        var p = parseFloat(r.price);
+        return '<li><span class="ship__name">' + esc(r.presentment_name || r.name) + '<small>' + days(r) + '</small></span><strong>' + (p === 0 ? 'Grátis' : brl(p)) + '</strong></li>';
+      }).join('') + '</ul><p class="ship__note">Com seguro e embalagem reforçada. O prazo conta a partir da regulagem e do envio.</p>';
+  }
+
+  function shipping() {
+    $$('[data-ship]').forEach(function (box) {
+      if (box.dataset.ready) return; box.dataset.ready = '1';
+      var form = $('form', box), input = $('input', box), out = $('[data-ship-out]', box);
+      maskCep(input);
+      var saved = store.get('pt-cep', '');
+      if (saved) input.value = saved;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var d = input.value.replace(/\D/g, '');
+        if (d.length !== 8) { out.innerHTML = '<p class="ship__msg ship__msg--err">Digite os 8 números do CEP.</p>'; input.focus(); return; }
+        var cep = d.slice(0, 5) + '-' + d.slice(5);
+        store.set('pt-cep', cep);
+        var btn = $('button', form); btn.disabled = true;
+        out.innerHTML = '<p class="ship__msg"><span class="ship__spin" aria-hidden="true"></span>Calculando…</p>';
+        var demo = box.hasAttribute('data-demo');
+        lookupCep(d).catch(function () { if (demo) return { localidade: 'Curitiba', uf: 'PR', bairro: '' }; throw new Error('cep'); }).then(function (addr) {
+          if (demo) return sleep(700).then(function () { renderRates(out, addr, JSON.parse(box.getAttribute('data-demo'))); });
+          return fetchRates(box.dataset.variant, cep, addr.uf, box.hasAttribute('data-in-cart')).then(function (rates) { renderRates(out, addr, rates); });
+        }).catch(function (err) {
+          out.innerHTML = '<p class="ship__msg ship__msg--err">' + (err && err.message === 'cep' ? 'Não encontramos esse CEP. Confira os números.' : 'Não foi possível calcular agora. Tente de novo ou fale com a gente no WhatsApp.') + '</p>';
+        }).finally(function () { btn.disabled = false; });
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------- comparador */
+  var MAX = 3, KEY = 'pt-compare';
+  function list() { return store.get(KEY, []); }
+  function save(l) { store.set(KEY, l); sync(); }
+  function toggle(item) {
+    var l = list(), i = l.findIndex(function (x) { return x.handle === item.handle; });
+    if (i >= 0) l.splice(i, 1);
+    else if (l.length >= MAX) { toast('Dá para comparar até 3 peças. Tire uma para incluir esta.'); return; }
+    else l.push(item);
+    save(l);
+  }
+  function toast(msg) {
+    var t = $('.pt-toast') || document.body.appendChild(Object.assign(document.createElement('div'), { className: 'pt-toast', role: 'status' }));
+    t.textContent = msg; t.classList.add('is-on');
+    clearTimeout(t._t); t._t = setTimeout(function () { t.classList.remove('is-on'); }, 2800);
+  }
+  function compareUrl() { return document.body.getAttribute('data-compare-url') || (root + 'pages/comparar'); }
+  function sync() {
+    var l = list();
+    $$('[data-compare-toggle]').forEach(function (b) {
+      var on = l.some(function (x) { return x.handle === b.dataset.handle; });
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.classList.toggle('is-on', on);
+      var lab = $('[data-compare-label]', b) || b;
+      lab.textContent = on ? 'Na comparação (' + l.length + '/3)' : (b.dataset.short ? 'Comparar' : 'Adicionar à comparação');
+    });
+    var bar = $('.compare-bar');
+    if (!l.length) { if (bar) bar.classList.remove('is-on'); return; }
+    if (!bar) {
+      bar = document.createElement('div'); bar.className = 'compare-bar'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Comparação');
+      document.body.appendChild(bar);
+      bar.addEventListener('click', function (e) {
+        var rm = e.target.closest('[data-compare-rm]');
+        if (rm) { save(list().filter(function (x) { return x.handle !== rm.dataset.compareRm; })); }
+        if (e.target.closest('[data-compare-clear]')) save([]);
+      });
+    }
+    var slots = '';
+    for (var i = 0; i < MAX; i++) {
+      var x = l[i];
+      slots += x ? '<div class="compare-bar__slot"><img src="' + esc(x.image) + '" alt=""><span>' + esc(x.title) + '</span><button type="button" data-compare-rm="' + esc(x.handle) + '" aria-label="Tirar ' + esc(x.title) + ' da comparação">×</button></div>'
+                 : '<div class="compare-bar__slot compare-bar__slot--empty">+ peça</div>';
+    }
+    bar.innerHTML = '<div class="container compare-bar__inner"><div class="compare-bar__slots">' + slots + '</div><div class="compare-bar__actions"><button type="button" class="compare-bar__clear" data-compare-clear>Limpar</button><a class="btn btn--gold" href="' + compareUrl() + '"' + (l.length < 2 ? ' aria-disabled="true"' : '') + '>Comparar ' + l.length + '</a></div></div>';
+    requestAnimationFrame(function () { bar.classList.add('is-on'); });
+  }
+  function compareButtons() {
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-compare-toggle]');
+      if (!b) return;
+      e.preventDefault(); e.stopPropagation();
+      toggle({ handle: b.dataset.handle, title: b.dataset.title, image: b.dataset.image });
+    });
+    sync();
+  }
+
+  function comparePage() {
+    var box = $('[data-compare-page]');
+    if (!box) return;
+    var l = list();
+    var empty = $('[data-compare-empty]', box), table = $('[data-compare-table]', box);
+    if (l.length < 2) { empty.hidden = false; table.innerHTML = ''; return; }
+    empty.hidden = true;
+    table.innerHTML = '<p class="muted">Carregando…</p>';
+    var get = function (h) {
+      if (window.PT_COMPARE_DATA) return Promise.resolve(window.PT_COMPARE_DATA[h]);
+      return fetch(root + 'products/' + encodeURIComponent(h) + '?view=comparar').then(function (r) { return r.text(); }).then(function (t) { return JSON.parse(t); });
+    };
+    Promise.all(l.map(function (x) { return get(x.handle).catch(function () { return null; }); })).then(function (items) {
+      items = items.filter(Boolean);
+      if (items.length < 2) { empty.hidden = false; table.innerHTML = ''; return; }
+      var labels = items[0].specs.map(function (s) { return s.label; });
+      var head = '<tr><th scope="col"><span class="visually-hidden">Característica</span></th>' + items.map(function (p) {
+        return '<th scope="col"><a class="cmp__prod" href="' + esc(p.url) + '"><img src="' + esc(p.image) + '" alt="" loading="lazy"><span class="product-card__brand">' + esc(p.vendor) + '</span><strong>' + esc(p.title) + '</strong><span class="cmp__price">' + esc(p.price) + '</span></a>' +
+          '<button type="button" class="cmp__rm" data-cmp-rm="' + esc(p.handle) + '">Tirar</button></th>';
+      }).join('') + '</tr>';
+      var rows = labels.map(function (lab, i) {
+        var vals = items.map(function (p) { return (p.specs[i] && p.specs[i].value) || ''; });
+        if (!vals.some(Boolean)) return '';
+        var diff = vals.filter(Boolean).some(function (v) { return v !== vals.filter(Boolean)[0]; });
+        return '<tr class="' + (diff ? 'is-diff' : '') + '"><th scope="row">' + esc(lab) + '</th>' + vals.map(function (v) { return '<td>' + (v ? esc(v) : '<span class="muted">—</span>') + '</td>'; }).join('') + '</tr>';
+      }).join('');
+      if (!rows) rows = '<tr><td colspan="' + (items.length + 1) + '" class="muted">Essas peças ainda não têm ficha técnica cadastrada. Veja a descrição de cada uma.</td></tr>';
+      table.innerHTML = '<div class="cmp__scroll"><table class="cmp"><thead>' + head + '</thead><tbody>' + rows + '</tbody></table></div><p class="field__help">Linhas destacadas mostram onde as peças são diferentes.</p>';
+    });
+    if (box.dataset.ready) return; box.dataset.ready = '1';
+    box.addEventListener('click', function (e) {
+      var rm = e.target.closest('[data-cmp-rm]');
+      if (rm) { save(list().filter(function (x) { return x.handle !== rm.dataset.cmpRm; })); comparePage(); }
+    });
+  }
+
+  /* ------------------------------------------------------ medida do braço */
+  function neck() {
+    $$('[data-neck]').forEach(function (box) {
+      if (box.dataset.ready) return; box.dataset.ready = '1';
+      var out = $('[data-neck-out]', box);
+      var refs = { e1: parseFloat(box.dataset.e1), e12: parseFloat(box.dataset.e12) };
+      var names = { e1: '1ª casa', e12: '12ª casa' };
+      function run() {
+        var html = '';
+        $$('[data-neck-in]', box).forEach(function (inp) {
+          var k = inp.dataset.neckIn, mine = parseFloat(inp.value.replace(',', '.')), ref = refs[k];
+          if (!(mine > 5 && mine < 40) || !ref) return;
+          var d = ref - mine, abs = Math.abs(d);
+          var txt = abs < 0.25 ? 'praticamente igual ao seu' : num(abs) + ' mm ' + (d < 0 ? 'mais fino' : 'mais grosso') + ' que o seu';
+          var max = Math.max(ref, mine) * 1.08;
+          html += '<div class="neck__row"><p><strong>' + names[k] + ':</strong> este braço é ' + txt + '.</p>' +
+            '<div class="neck__bar"><span>Este</span><i style="--w:' + (ref / max * 100).toFixed(1) + '%"></i><b>' + num(ref) + ' mm</b></div>' +
+            '<div class="neck__bar neck__bar--mine"><span>O seu</span><i style="--w:' + (mine / max * 100).toFixed(1) + '%"></i><b>' + num(mine) + ' mm</b></div></div>';
+        });
+        out.innerHTML = html;
+      }
+      $$('[data-neck-in]', box).forEach(function (i) { i.addEventListener('input', run); });
+    });
+  }
+
+  /* -------------------------------------------------- copiar nº de série */
+  function copySerial() {
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-copy-btn]');
+      if (!b) return;
+      var v = $('[data-copy]', b.parentNode).getAttribute('data-copy');
+      var done = function () { b.textContent = 'Copiado'; setTimeout(function () { b.textContent = 'Copiar'; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(v).then(done, done); else done();
+    });
+  }
+
+  /* --------------------------------------------------------- consultoria */
+  function consult() {
+    var form = $('[data-consult]');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      var name = (fd.get('nome') || '').trim();
+      if (!name) { var n = form.querySelector('[name="nome"]'); n.focus(); n.setAttribute('aria-invalid', 'true'); return; }
+      var lines = [
+        'Olá, Playtime! Quero agendar uma consultoria por vídeo.',
+        '• Nome: ' + name,
+        '• Toco: ' + (fd.getAll('toca').join(', ') || '-'),
+        '• Nível: ' + (fd.get('nivel') || '-'),
+        '• Procuro: ' + (fd.get('procura') || '-'),
+        '• Orçamento: ' + (fd.get('orcamento') || '-'),
+        '• Melhor horário: ' + (fd.get('dia') || '-') + ', ' + (fd.get('hora') || '-'),
+        '• Formato: ' + (fd.get('formato') || '-')
+      ];
+      var wa = form.getAttribute('data-whatsapp');
+      var url = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(lines.join('\n'));
+      var ok = $('[data-consult-ok]');
+      if (ok) { ok.hidden = false; $('a', ok).href = url; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      window.open(url, '_blank', 'noopener');
+    });
+  }
+
+  function boot() { shipping(); compareButtons(); comparePage(); neck(); copySerial(); consult(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+  document.addEventListener('shopify:section:load', function () { shipping(); sync(); comparePage(); neck(); });
+  window.PlaytimeExtras = { sync: sync, comparePage: comparePage };
+})();
+</script>
 </body></html>

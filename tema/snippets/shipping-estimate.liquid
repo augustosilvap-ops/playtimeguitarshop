@@ -1,0 +1,12 @@
+{%- comment -%} Frete e prazo pelo CEP, com os valores reais da Shopify. {%- endcomment -%}
+<div class="ship" data-ship data-variant="{{ variant.id }}"{% if in_cart %} data-in-cart{% endif %}>
+  <form class="ship__form" novalidate>
+    <label for="Ship-{{ variant.id }}">{% render 'icon', name: 'box', size: 18 %}<span>Calcule frete e prazo</span></label>
+    <div class="ship__row">
+      <input id="Ship-{{ variant.id }}" name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" required>
+      <button class="btn btn--dark" type="submit">Calcular</button>
+    </div>
+    <a class="ship__help" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener">Não sei meu CEP</a>
+  </form>
+  <div class="ship__out" data-ship-out aria-live="polite"></div>
+</div>

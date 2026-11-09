@@ -7,6 +7,9 @@ Saída: produtos-shopify.csv na mesma pasta.
 import csv, html, json, re, sys, unicodedata, urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from specs import CAMPOS, extrair  # noqa: E402
+
 SITE = "https://playtimeguitarshop.com/wp-json/wc/store/v1/products?per_page=100&page={}"
 OUT = Path(__file__).with_name("produtos-shopify.csv")
 
@@ -69,6 +72,7 @@ def converter(p):
         "type": tipo, "tags": sorted(tags), "price": preco, "compare": regular if regular > preco else "",
         "qty": p["low_stock_remaining"] or (1 if p["is_in_stock"] else 0),
         "images": [i["src"] for i in p["images"]], "seo": resumo, "instrumento": tipo in INSTRUMENTOS,
+        "specs": extrair(p["description"]),
     }
 
 COLS = ["Handle", "Title", "Body (HTML)", "Vendor", "Product Category", "Type", "Tags", "Published",
@@ -76,6 +80,13 @@ COLS = ["Handle", "Title", "Body (HTML)", "Vendor", "Product Category", "Type", 
         "Variant Inventory Qty", "Variant Inventory Policy", "Variant Fulfillment Service", "Variant Price",
         "Variant Compare At Price", "Variant Requires Shipping", "Variant Taxable", "Image Src",
         "Image Position", "Image Alt Text", "SEO Title", "SEO Description", "Status"]
+# Ficha técnica: colunas de metafields (crie as definições custom.* antes de importar; veja o README)
+ROTULOS_FICHA = {"escala": "Escala", "nut_largura": "Largura do nut", "raio": "Raio da escala",
+                 "braco_perfil": "Perfil do braço", "braco_madeira": "Braço", "escala_madeira": "Madeira da escala",
+                 "trastes": "Trastes", "corpo": "Corpo", "tampo": "Tampo", "captadores": "Captadores",
+                 "eletrica": "Elétrica", "ponte": "Ponte", "tarraxas": "Tarraxas", "acabamento": "Acabamento"}
+COL_FICHA = {k: f"{ROTULOS_FICHA[k]} (product.metafields.custom.{k})" for k in CAMPOS}
+COLS += list(COL_FICHA.values())
 
 def main():
     dados = json.load(open(sys.argv[1])) if len(sys.argv) > 1 else baixar()
@@ -102,8 +113,10 @@ def main():
                         "Variant Compare At Price": f'{x["compare"]:.2f}' if x["compare"] else "",
                         "Variant Requires Shipping": "TRUE", "Variant Taxable": "TRUE",
                         "SEO Title": x["title"], "SEO Description": x["seo"], "Status": "active"})
+                    row.update({COL_FICHA[k]: v for k, v in x["specs"].items()})
                 w.writerow(row)
-    print(f"{len(produtos)} produtos, {sum(len(x['images']) for x in produtos)} fotos -> {OUT}")
+    com_ficha = sum(1 for x in produtos if x["specs"])
+    print(f"{len(produtos)} produtos, {sum(len(x['images']) for x in produtos)} fotos, {com_ficha} com ficha técnica -> {OUT}")
 
 if __name__ == "__main__":
     main()

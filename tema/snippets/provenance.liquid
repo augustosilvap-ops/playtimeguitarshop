@@ -1,0 +1,43 @@
+{%- comment -%} Procedência: foto do número de série, conferência no fabricante, nota e garantia. {%- endcomment -%}
+{%- liquid
+  assign m = product.metafields.custom
+  assign serial = m.passaporte_serie | default: ''
+  assign link = m.serial_link | default: ''
+  if link == blank and settings.serial_links != blank
+    assign lines = settings.serial_links | newline_to_br | split: '<br />'
+    for line in lines
+      assign parts = line | split: '|'
+      assign brand = parts[0] | strip | downcase
+      assign vend = product.vendor | downcase
+      if brand == vend and parts[1] != blank
+        assign link = parts[1] | strip
+        break
+      endif
+    endfor
+  endif
+-%}
+{%- if m.serial_foto != blank or serial != blank -%}
+<section class="prov" aria-labelledby="Prov-{{ product.id }}">
+  <div class="prov__head"><h2 class="prov__title" id="Prov-{{ product.id }}">{% render 'icon', name: 'shield', size: 20 %}Procedência</h2><span class="prov__tag">Original</span></div>
+  <div class="prov__grid">
+    {%- if m.serial_foto != blank -%}
+      <a class="prov__photo" href="{{ m.serial_foto | image_url: width: 2000 }}" target="_blank" rel="noopener" aria-label="Ampliar foto do número de série">
+        {{ m.serial_foto | image_url: width: 700 | image_tag: loading: 'lazy', alt: 'Número de série desta peça' }}
+        <span class="prov__zoom">{% render 'icon', name: 'search', size: 14 %}Ampliar</span>
+      </a>
+    {%- endif -%}
+    <dl class="prov__list">
+      {%- if serial != blank -%}
+        <div><dt>Número de série</dt><dd><span class="prov__serial" data-copy="{{ serial | escape }}">{{ serial }}</span><button type="button" class="prov__copy" data-copy-btn aria-label="Copiar número de série">Copiar</button></dd></div>
+      {%- endif -%}
+      {%- if m.nota_fiscal != blank -%}<div><dt>Nota fiscal</dt><dd>{{ m.nota_fiscal }}</dd></div>{%- endif -%}
+      {%- if m.garantia != blank -%}<div><dt>Garantia</dt><dd>{{ m.garantia }}</dd></div>{%- endif -%}
+      {%- if m.historico != blank -%}<div><dt>Histórico</dt><dd>{{ m.historico }}</dd></div>{%- endif -%}
+    </dl>
+  </div>
+  {%- if link != blank -%}
+    <a class="btn btn--ghost btn--block prov__check" href="{{ link }}" target="_blank" rel="noopener">{% render 'icon', name: 'arrow', size: 16 %}Conferir o número no site da {{ product.vendor }}</a>
+    <p class="prov__hint">Copie o número acima e cole na página oficial do fabricante.</p>
+  {%- endif -%}
+</section>
+{%- endif -%}

@@ -18,6 +18,8 @@
     {%- if m.passaporte_trastes != blank -%}<div class="passport__cell"><dt>Trastes</dt><dd>{{ m.passaporte_trastes }}</dd></div>{%- endif -%}
     {%- if m.passaporte_encordoamento != blank -%}<div class="passport__cell"><dt>Encordoamento</dt><dd>{{ m.passaporte_encordoamento }}</dd></div>{%- endif -%}
     {%- if m.passaporte_regulagem != blank -%}<div class="passport__cell" style="grid-column:1/-1"><dt>Regulagem</dt><dd>{{ m.passaporte_regulagem }}</dd></div>{%- endif -%}
+    {%- if m.regulagem_tecnico != blank -%}<div class="passport__cell"><dt>Regulado por</dt><dd>{{ m.regulagem_tecnico }}</dd></div>{%- endif -%}
+    {%- if m.regulagem_data != blank -%}<div class="passport__cell"><dt>Data da regulagem</dt><dd>{{ m.regulagem_data.value | date: '%d/%m/%Y' | default: m.regulagem_data }}</dd></div>{%- endif -%}
   </dl>
   <p class="passport__foot">{% render 'icon', name: 'check', size: 16 %}<span>As fotos e medidas são desta unidade, não do catálogo do fabricante.</span></p>
 </section>

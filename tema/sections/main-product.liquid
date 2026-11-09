@@ -44,8 +44,13 @@
               {%- else -%}
                 <input type="hidden" name="id" value="{{ v.id }}">
               {%- endunless -%}
+              {%- if product.available and block.settings.show_setup -%}
+                {%- assign t = product.type | downcase -%}
+                {%- if t contains 'guitarra' or t contains 'viol' or t contains 'baixo' -%}{% render 'setup-options', product: product, block: block %}{%- endif -%}
+              {%- endif -%}
               {%- if product.available -%}
                 <button class="btn btn--dark btn--block" type="submit">Adicionar ao carrinho</button>
+                <p class="field__help" data-cart-error hidden role="alert"></p>
                 {{ form | payment_button }}
               {%- else -%}
                 <button class="btn btn--dark btn--block" type="button" disabled>Vendido</button>
@@ -56,7 +61,14 @@
           {%- when 'live' -%}
             {%- if settings.whatsapp != blank -%}
               <a class="live-card" href="https://wa.me/{{ settings.whatsapp }}?text={{ 'Olá, Playtime! Quero ver por vídeo a peça: ' | append: product.title | append: ' — ' | append: shop.url | append: product.url | url_encode }}" target="_blank" rel="noopener" {{ block.shopify_attributes }}><span class="live-card__dot" aria-hidden="true"></span><div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></a>
+              {%- if block.settings.consult_link != blank -%}<a class="link-arrow live-card__more" href="{{ block.settings.consult_link }}">{{ block.settings.consult_label }} {% render 'icon', name: 'arrow', size: 14 %}</a>{%- endif -%}
             {%- endif -%}
+          {%- when 'shipping' -%}
+            <div {{ block.shopify_attributes }}>{% render 'shipping-estimate', variant: v %}</div>
+          {%- when 'provenance' -%}
+            <div {{ block.shopify_attributes }}>{% render 'provenance', product: product %}</div>
+          {%- when 'specs' -%}
+            <div {{ block.shopify_attributes }}>{% render 'specs', product: product %}</div>
           {%- when 'passport' -%}
             <div {{ block.shopify_attributes }}>{% render 'passport', product: product %}</div>
           {%- when 'sound' -%}
@@ -74,7 +86,7 @@
           {%- when 'services' -%}
             <ul class="service-list" {{ block.shopify_attributes }}>
               <li>{% render 'icon', name: 'tools' %}<span><strong>Regulado antes do envio.</strong> Nossa oficina ajusta altura das cordas, oitavas e tensor.</span></li>
-              <li>{% render 'icon', name: 'box' %}<span><strong>Embalagem reforçada.</strong> Caixa dupla e proteção no headstock.</span></li>
+              <li>{% render 'icon', name: 'box' %}<span><strong>Chegou com avaria? A gente resolve.</strong> Embalagem reforçada e seguro por nossa conta. Se algo acontecer no caminho, quem trata com a transportadora somos nós{% if block.settings.safe_link != blank %} · <a href="{{ block.settings.safe_link }}">como funciona</a>{% endif %}.</span></li>
               <li>{% render 'icon', name: 'swap' %}<span><strong>Seu usado como entrada.</strong> Pré-avaliação em um minuto na página Troca.</span></li>
               <li>{% render 'icon', name: 'check' %}<span><strong>7 dias para devolução.</strong> Direito de arrependimento garantido pelo CDC.</span></li>
             </ul>
@@ -93,17 +105,135 @@
 {
   "name": "Produto",
   "blocks": [
-    { "type": "title", "name": "Marca e título", "limit": 1 },
-    { "type": "price", "name": "Preço", "limit": 1 },
-    { "type": "buy", "name": "Botão de compra", "limit": 1 },
-    { "type": "live", "name": "Vitrine ao vivo", "limit": 1, "settings": [
-      { "type": "text", "id": "title", "label": "Título", "default": "Vitrine ao vivo" },
-      { "type": "text", "id": "text", "label": "Texto", "default": "Veja esta peça por videochamada antes de comprar. A gente toca pra você." } ] },
-    { "type": "passport", "name": "Passaporte", "limit": 1 },
-    { "type": "sound", "name": "Ouça esta peça", "limit": 1 },
-    { "type": "services", "name": "Serviços", "limit": 1 },
-    { "type": "description", "name": "Descrição e envio", "limit": 1, "settings": [
-      { "type": "textarea", "id": "shipping", "label": "Texto de envio", "default": "Enviamos para todo o Brasil com seguro. O prazo aparece no checkout pelo CEP." } ] }
+    {
+      "type": "title",
+      "name": "Marca e título",
+      "limit": 1
+    },
+    {
+      "type": "price",
+      "name": "Preço",
+      "limit": 1
+    },
+    {
+      "type": "buy",
+      "name": "Botão de compra",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_setup",
+          "label": "Oferecer regulagem personalizada",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título",
+          "default": "Regulagem do seu jeito"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtítulo",
+          "default": "Cordas, afinação e altura escolhidas por você"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Texto",
+          "default": "Antes do envio, nossa oficina regula a peça com as suas preferências. Se não escolher nada, ela sai com a regulagem padrão da oficina."
+        },
+        {
+          "type": "text",
+          "id": "ticket",
+          "label": "Texto da ficha",
+          "default": "Vai junto a ficha de regulagem com as medidas e a assinatura do técnico."
+        }
+      ]
+    },
+    {
+      "type": "shipping",
+      "name": "Frete pelo CEP",
+      "limit": 1
+    },
+    {
+      "type": "live",
+      "name": "Vitrine ao vivo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título",
+          "default": "Vitrine ao vivo"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texto",
+          "default": "Veja esta peça por videochamada antes de comprar. A gente toca pra você."
+        },
+        {
+          "type": "text",
+          "id": "consult_label",
+          "label": "Texto do link de consultoria",
+          "default": "Prefere agendar uma consultoria?"
+        },
+        {
+          "type": "url",
+          "id": "consult_link",
+          "label": "Link da consultoria",
+          "default": "/pages/consultoria"
+        }
+      ]
+    },
+    {
+      "type": "passport",
+      "name": "Passaporte",
+      "limit": 1
+    },
+    {
+      "type": "provenance",
+      "name": "Procedência",
+      "limit": 1
+    },
+    {
+      "type": "sound",
+      "name": "Ouça esta peça",
+      "limit": 1
+    },
+    {
+      "type": "specs",
+      "name": "Ficha técnica e comparar",
+      "limit": 1
+    },
+    {
+      "type": "services",
+      "name": "Serviços",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "url",
+          "id": "safe_link",
+          "label": "Página Compra segura",
+          "default": "/pages/compra-segura"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Descrição e envio",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "shipping",
+          "label": "Texto de envio",
+          "default": "Enviamos para todo o Brasil com seguro. O prazo aparece no checkout pelo CEP."
+        }
+      ]
+    }
   ]
 }
 {% endschema %}

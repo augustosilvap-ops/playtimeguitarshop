@@ -1,0 +1,24 @@
+{%- comment -%}
+  Lista única dos campos da ficha técnica: chave do metafield (custom.*) e rótulo.
+  Usada na página do produto, no comparador e no JSON de comparação.
+{%- endcomment -%}
+{%- capture spec_fields -%}
+escala|Escala (comprimento)
+nut_largura|Largura do nut
+raio|Raio da escala
+braco_perfil|Perfil do braço
+braco_espessura_1|Espessura do braço na 1ª casa
+braco_espessura_12|Espessura do braço na 12ª casa
+braco_madeira|Braço
+escala_madeira|Madeira da escala
+trastes|Trastes
+corpo|Corpo
+tampo|Tampo
+captadores|Captadores
+eletrica|Elétrica
+ponte|Ponte
+tarraxas|Tarraxas
+acabamento|Acabamento
+passaporte_peso|Peso desta peça
+{%- endcapture -%}
+{{- spec_fields | strip -}}

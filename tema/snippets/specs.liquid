@@ -1,0 +1,50 @@
+{%- comment -%} Ficha técnica padronizada + comparação de braço + botão comparar. {%- endcomment -%}
+{%- liquid
+  assign m = product.metafields.custom
+  capture fields
+    render 'spec-fields'
+  endcapture
+  assign rows = fields | newline_to_br | split: '<br />'
+  assign count = 0
+  for r in rows
+    assign kv = r | strip | split: '|'
+    assign key = kv[0]
+    if m[key] != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+  assign e1 = m.braco_espessura_1.value | default: m.braco_espessura_1
+  assign e12 = m.braco_espessura_12.value | default: m.braco_espessura_12
+-%}
+<div class="specs" data-specs>
+  {%- if count > 0 -%}
+    <h2 class="specs__title">Ficha técnica</h2>
+    <dl class="specs__table">
+      {%- for r in rows -%}
+        {%- assign kv = r | strip | split: '|' -%}
+        {%- assign key = kv[0] -%}
+        {%- if m[key] != blank -%}
+          <div><dt>{{ kv[1] }}</dt><dd>{{ m[key] }}{% if key contains 'espessura' or key == 'nut_largura' %}{% unless m[key] contains 'mm' %} mm{% endunless %}{% endif %}</dd></div>
+        {%- endif -%}
+      {%- endfor -%}
+    </dl>
+  {%- endif -%}
+
+  {%- if e1 != blank or e12 != blank -%}
+    <details class="neck" data-neck data-e1="{{ e1 | replace: ',', '.' }}" data-e12="{{ e12 | replace: ',', '.' }}">
+      <summary>{% render 'icon', name: 'ruler', size: 18 %}<span>Compare o braço com o do seu instrumento</span></summary>
+      <div class="neck__body">
+        <p class="field__help" style="margin:0">Meça o seu com um paquímetro: da superfície da escala até as costas do braço, logo atrás do traste da 1ª e da 12ª casa.</p>
+        <div class="field-row">
+          {%- if e1 != blank -%}<div class="field"><label for="Neck1-{{ product.id }}">Seu braço na 1ª casa (mm)</label><input id="Neck1-{{ product.id }}" inputmode="decimal" data-neck-in="e1" placeholder="Ex.: 20,5"></div>{%- endif -%}
+          {%- if e12 != blank -%}<div class="field"><label for="Neck12-{{ product.id }}">Seu braço na 12ª casa (mm)</label><input id="Neck12-{{ product.id }}" inputmode="decimal" data-neck-in="e12" placeholder="Ex.: 22,0"></div>{%- endif -%}
+        </div>
+        <div class="neck__bars" data-neck-out aria-live="polite"></div>
+      </div>
+    </details>
+  {%- endif -%}
+
+  <button type="button" class="btn btn--ghost btn--block compare-btn" data-compare-toggle data-handle="{{ product.handle }}" data-title="{{ product.title | escape }}" data-image="{{ product.featured_media | image_url: width: 200 }}" aria-pressed="false">
+    <span data-compare-label>Adicionar à comparação</span>
+  </button>
+</div>

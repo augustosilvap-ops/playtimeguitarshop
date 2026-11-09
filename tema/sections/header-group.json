@@ -44,7 +44,8 @@
           "type": "message",
           "settings": {
             "icon": "video",
-            "text": "Veja a peça <strong>ao vivo por vídeo</strong> antes de comprar"
+            "text": "Veja a peça <strong>ao vivo por vídeo</strong>: agende uma consultoria",
+            "link": "shopify://pages/consultoria"
           }
         }
       },

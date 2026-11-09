@@ -11,6 +11,7 @@
 
 ## Passo a passo na Shopify
 
+1. **Criar os campos de produto (antes de importar)**: veja o passo 6 e crie as definições de *Ficha técnica* e *Procedência*. A planilha já preenche a ficha técnica de 151 produtos, lida das descrições do site atual, mas a Shopify só aceita essas colunas se os campos já existirem.
 1. **Importar os produtos** — *Produtos › Importar* › escolha `importacao/produtos-shopify.csv`.
    As fotos são baixadas direto de playtimeguitarshop.com, então o site atual precisa estar no ar durante a importação.
    Instrumentos em estoque entram com quantidade 1; confira o estoque de cordas, cabos e outros itens com mais de uma unidade.
@@ -37,11 +38,14 @@
    | Afinador online | `afinador` | `page.afinador` |
    | Troca | `troca` | `page.troca` |
    | Passaporte do Instrumento | `passaporte` | `page.passaporte` |
+   | Compra segura | `compra-segura` | `page.compra-segura` |
+   | Consultoria por vídeo | `consultoria` | `page.consultoria` |
+   | Comparar | `comparar` | `page.comparar` |
 
 5. **Menus** — *Loja virtual › Navegação*:
    - `main-menu`: Início, Guitarras, Violões, Baixos, Pedais e amps, Garimpo, Clínica, Troca
    - `footer` (Loja): Guitarras, Violões, Baixos, Garimpo
-   - `servicos` (Serviços): Clínica Playtime, Afinador online, Avalie sua troca, Passaporte do Instrumento
+   - `servicos` (Serviços): Clínica Playtime, Afinador online, Avalie sua troca, Passaporte do Instrumento, Consultoria por vídeo, Compra segura
 6. **Passaporte e áudio** — *Configurações › Dados personalizados › Produtos › Adicionar definição*, com namespace `custom`:
 
    | Nome | Chave | Tipo |
@@ -58,7 +62,26 @@
    | Áudio limpo | `custom.audio_limpo` | Arquivo |
    | Áudio com drive | `custom.audio_drive` | Arquivo |
 
-   O quadro do Passaporte e o player "Ouça esta peça" só aparecem nos produtos que tiverem esses campos preenchidos.
+   | Regulado por | `custom.regulagem_tecnico` | Texto de linha única |
+   | Data da regulagem | `custom.regulagem_data` | Data |
+
+   **Procedência**
+
+   | Nome | Chave | Tipo |
+   |---|---|---|
+   | Foto do número de série | `custom.serial_foto` | Arquivo (imagem) |
+   | Link de conferência do fabricante | `custom.serial_link` | URL |
+   | Nota fiscal | `custom.nota_fiscal` | Texto de linha única (ex.: "Acompanha nota fiscal") |
+   | Garantia | `custom.garantia` | Texto de linha única (ex.: "1 ano pela Playtime") |
+   | Histórico | `custom.historico` | Texto com várias linhas |
+
+   O número exibido é o mesmo de `custom.passaporte_serie`. Em *Configurações do tema › Procedência* dá para cadastrar uma vez a página oficial de cada marca (`Marca | link`), e ela vale para todos os produtos daquela marca.
+   Use só páginas do próprio fabricante. Não consegui confirmar daqui quais marcas têm consulta oficial: a Fender costuma indicar a sua, mas confira no site dela antes de cadastrar.
+
+   **Ficha técnica** (todos *Texto de linha única*): `custom.escala`, `custom.nut_largura`, `custom.raio`, `custom.braco_perfil`, `custom.braco_espessura_1`, `custom.braco_espessura_12`, `custom.braco_madeira`, `custom.escala_madeira`, `custom.trastes`, `custom.corpo`, `custom.tampo`, `custom.captadores`, `custom.eletrica`, `custom.ponte`, `custom.tarraxas`, `custom.acabamento`.
+   As espessuras do braço (1ª e 12ª casa, em mm, ex.: `20,6`) ativam o "Compare o braço com o do seu instrumento". A planilha não traz essas medidas: a oficina mede com paquímetro.
+
+   O quadro do Passaporte, a Procedência, a Ficha técnica e o player "Ouça esta peça" só aparecem nos produtos que tiverem esses campos preenchidos.
    Para o selo dourado "Passaporte" aparecer no cartão do produto, adicione a tag `passaporte`.
 7. **Vídeos** — *Conteúdo › Arquivos* › envie `previa/videos/passaporte-loop.mp4` e `clinica-loop.mp4`.
    No editor do tema, escolha cada vídeo na seção "Vídeo com lista" (página inicial, Clínica e Passaporte).
@@ -66,3 +89,10 @@
 8. **Logos das marcas** — no editor do tema, seção "Logos das marcas": em cada marca, envie o logo oficial (PNG ou SVG com fundo transparente; os distribuidores costumam fornecer). Sem logo, a seção mostra o nome da marca.
 9. **Conferir** — *Configurações do tema*: WhatsApp (já vem com 55 41 3501-4977), parcelas e desconto no Pix.
    No rodapé, confira o horário de atendimento.
+
+## Recursos da página do produto
+
+- **Regulagem do seu jeito**: o cliente escolhe cordas, afinação e altura das cordas, sem custo. As escolhas aparecem no pedido (*Pedidos › detalhes do item*), para a oficina. Só aparece em guitarras, violões e baixos (pelo *Tipo* do produto).
+- **Frete pelo CEP**: usa as tarifas reais configuradas em *Configurações › Frete e entrega*. A cidade vem do ViaCEP. Para calcular, a Shopify precisa da peça no carrinho: se ela ainda não estiver lá, o tema coloca e tira em seguida, sem o cliente perceber.
+- **Comparar**: até 3 peças lado a lado na página `/pages/comparar`, com as diferenças destacadas.
+- **Consultoria por vídeo** (`/pages/consultoria`): o formulário abre o WhatsApp com a mensagem pronta. Nada fica salvo no site.

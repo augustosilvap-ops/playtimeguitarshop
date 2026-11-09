@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "main": {
+      "type": "consultation",
+      "settings": {},
+      "blocks": {
+        "item1": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Sem pressão",
+            "text": "Ninguém aqui vai te julgar por perguntar o básico. A conversa é para você decidir melhor, mesmo que não compre."
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "icon": "headphones",
+            "title": "A gente toca para você",
+            "text": "Mostramos a peça de perto, com som limpo e com drive, e comparamos com outras ao vivo."
+          }
+        },
+        "item3": {
+          "type": "item",
+          "settings": {
+            "icon": "calendar",
+            "title": "No seu horário",
+            "text": "Escolha dia e período. Confirmamos pelo WhatsApp."
+          }
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3"
+      ]
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

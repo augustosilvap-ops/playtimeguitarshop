@@ -1,0 +1,54 @@
+{%- comment -%}
+  Regulagem personalizada: campos dentro do formulário do produto.
+  Viram "propriedades" do item no pedido, e a oficina vê tudo no painel.
+  Uso (dentro do {% form 'product' %}): {% render 'setup-options', product: product, block: block %}
+{%- endcomment -%}
+{%- liquid
+  assign t = product.type | downcase
+  assign kind = 'guitarra'
+  if t contains 'baixo'
+    assign kind = 'baixo'
+  elsif t contains 'viol'
+    assign kind = 'violao'
+  endif
+-%}
+<details class="setup" data-setup>
+  <summary class="setup__summary">
+    {% render 'icon', name: 'tools', size: 22 %}
+    <span><strong>{{ block.settings.title }}</strong><small>{{ block.settings.subtitle }}</small></span>
+    <span class="setup__badge">Grátis</span>
+  </summary>
+  <div class="setup__body">
+    <p class="field__help" style="margin:0">{{ block.settings.text }}</p>
+    <div class="field">
+      <label for="Setup-cordas-{{ product.id }}">Calibre das cordas</label>
+      <select id="Setup-cordas-{{ product.id }}" name="properties[Regulagem · cordas]">
+        <option value="Manter o da oficina">Manter o da oficina</option>
+        {%- case kind -%}
+          {%- when 'baixo' -%}<option>.040–.095 (leve)</option><option>.045–.105 (padrão)</option><option>.045–.130 (5 cordas)</option><option>.050–.110 (pesado)</option>
+          {%- when 'violao' -%}<option>.010–.047 (extra leve)</option><option>.011–.052 (leve)</option><option>.012–.053 (médio)</option><option>.028–.043 (nylon, tensão normal)</option><option>Nylon, tensão alta</option>
+          {%- else -%}<option>.009–.042</option><option>.009–.046 (híbrido)</option><option>.010–.046</option><option>.010–.052 (afinações graves)</option><option>.011–.049</option><option>.011–.056 (Drop C)</option>
+        {%- endcase -%}
+      </select>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="Setup-afinacao-{{ product.id }}">Afinação</label>
+        <select id="Setup-afinacao-{{ product.id }}" name="properties[Regulagem · afinação]">
+          <option>Padrão (E)</option><option>Meio tom abaixo (Eb)</option><option>Drop D</option><option>Um tom abaixo (D)</option><option>Drop C</option><option>Open G / Open D (slide)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="Setup-acao-{{ product.id }}">Altura das cordas</label>
+        <select id="Setup-acao-{{ product.id }}" name="properties[Regulagem · altura]">
+          <option>Média (equilíbrio)</option><option>Baixa (pegada leve, bends e velocidade)</option><option>Alta (ataque forte ou slide)</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label for="Setup-obs-{{ product.id }}">Algo mais para a oficina? (opcional)</label>
+      <input id="Setup-obs-{{ product.id }}" name="properties[Regulagem · observação]" maxlength="200" placeholder="Ex.: toco com palheta pesada; prefiro o tremolo travado">
+    </div>
+    <p class="setup__ticket">{% render 'icon', name: 'check', size: 16 %}<span>{{ block.settings.ticket }}</span></p>
+  </div>
+</details>

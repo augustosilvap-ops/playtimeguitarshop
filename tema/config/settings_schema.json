@@ -10,21 +10,64 @@
   {
     "name": "Marca",
     "settings": [
-      { "type": "image_picker", "id": "logo", "label": "Logo (opcional)", "info": "Se ficar vazio, usamos o logo dourado do tema." },
-      { "type": "image_picker", "id": "favicon", "label": "Ícone da aba (favicon)" }
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo (opcional)",
+        "info": "Se ficar vazio, usamos o logo dourado do tema."
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Ícone da aba (favicon)"
+      }
     ]
   },
   {
     "name": "Preço e pagamento",
     "settings": [
-      { "type": "range", "id": "installments", "label": "Parcelas sem juros", "min": 1, "max": 12, "step": 1, "default": 10 },
-      { "type": "range", "id": "pix_discount", "label": "Desconto no Pix (%)", "min": 0, "max": 20, "step": 1, "unit": "%", "default": 5, "info": "Só exibe o valor. O desconto em si é configurado no app de pagamento ou em Descontos." }
+      {
+        "type": "range",
+        "id": "installments",
+        "label": "Parcelas sem juros",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "pix_discount",
+        "label": "Desconto no Pix (%)",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "%",
+        "default": 5,
+        "info": "Só exibe o valor. O desconto em si é configurado no app de pagamento ou em Descontos."
+      }
     ]
   },
   {
     "name": "Contato",
     "settings": [
-      { "type": "text", "id": "whatsapp", "label": "WhatsApp (só números, com 55 e DDD)", "default": "554135014977" }
+      {
+        "type": "text",
+        "id": "whatsapp",
+        "label": "WhatsApp (só números, com 55 e DDD)",
+        "default": "554135014977"
+      }
+    ]
+  },
+  {
+    "name": "Procedência",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "serial_links",
+        "label": "Página oficial de número de série por marca",
+        "info": "Uma marca por linha, no formato Marca | link. Ex.: Fender | https://... Use só páginas oficiais do fabricante. Um link no campo custom.serial_link do produto tem prioridade."
+      }
     ]
   }
 ]

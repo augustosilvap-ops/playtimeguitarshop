@@ -1,0 +1,57 @@
+<section class="section"><div class="container trade-grid">
+  <div>
+    {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h1 class="h2">{{ section.settings.heading }}</h1>
+    <p class="lead">{{ section.settings.text }}</p>
+    <ul class="feature-list">
+      {%- for block in section.blocks -%}<li {{ block.shopify_attributes }}>{% render 'icon', name: block.settings.icon, size: 22 %}<div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></li>{%- endfor -%}
+    </ul>
+  </div>
+  <div>
+    <form class="form" data-consult data-whatsapp="{{ settings.whatsapp }}" novalidate>
+      <div class="field"><label for="C-nome">Como podemos te chamar?</label><input id="C-nome" name="nome" autocomplete="given-name" required></div>
+      <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend">O que você toca? (pode marcar mais de um)</legend>
+        <div class="choice-group">
+          {%- assign opts = 'Guitarra,Violão,Baixo,Ainda não toco' | split: ',' -%}
+          {%- for o in opts -%}<label class="choice"><input type="checkbox" name="toca" value="{{ o }}"><span>{{ o }}</span></label>{%- endfor -%}
+        </div></fieldset>
+      <fieldset class="field" style="border:0;padding:0;margin:0"><legend class="legend">Há quanto tempo?</legend>
+        <div class="choice-group">
+          {%- assign opts = 'Começando agora,Alguns anos,Toco há muito tempo,Profissional' | split: ',' -%}
+          {%- for o in opts -%}<label class="choice"><input type="radio" name="nivel" value="{{ o }}"{% if forloop.first %} checked{% endif %}><span>{{ o }}</span></label>{%- endfor -%}
+        </div></fieldset>
+      <div class="field"><label for="C-procura">O que você procura? (opcional)</label><textarea id="C-procura" name="procura" placeholder="Ex.: uma guitarra para tocar blues em casa; quero sair da minha Strat; não sei por onde começar"></textarea></div>
+      <div class="field-row">
+        <div class="field"><label for="C-orc">Orçamento</label><select id="C-orc" name="orcamento"><option>Prefiro não dizer agora</option><option>Até R$ 3.000</option><option>R$ 3.000 a R$ 8.000</option><option>R$ 8.000 a R$ 20.000</option><option>Acima de R$ 20.000</option></select></div>
+        <div class="field"><label for="C-formato">Como prefere</label><select id="C-formato" name="formato"><option>Chamada de vídeo no WhatsApp</option><option>Só mensagens, sem chamada</option><option>Visita à loja</option></select></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="C-dia">Melhor dia</label><select id="C-dia" name="dia"><option>Qualquer dia</option><option>Segunda</option><option>Terça</option><option>Quarta</option><option>Quinta</option><option>Sexta</option><option>Sábado</option></select></div>
+        <div class="field"><label for="C-hora">Melhor horário</label><select id="C-hora" name="hora"><option>Manhã</option><option>Hora do almoço</option><option selected>Tarde</option><option>Fim do dia</option></select></div>
+      </div>
+      <button class="btn btn--gold" type="submit">{% render 'icon', name: 'whatsapp' %} Agendar pelo WhatsApp</button>
+      <p class="field__help">{{ section.settings.privacy }}</p>
+    </form>
+    <div class="estimate" data-consult-ok hidden style="margin-top:24px"><p class="eyebrow" style="margin-bottom:8px">Pronto</p><p style="margin:0 0 16px">Abrimos o WhatsApp com a sua mensagem. Se não abriu, toque abaixo.</p><a class="btn btn--gold" href="#" target="_blank" rel="noopener">Abrir o WhatsApp</a></div>
+  </div>
+</div></section>
+{% schema %}
+{
+  "name": "Consultoria por vídeo",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Sobretítulo", "default": "Consultoria Playtime" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Escolha com calma, com quem entende." },
+    { "type": "textarea", "id": "text", "label": "Texto", "default": "Uma conversa por vídeo com a nossa equipe, sem compromisso e sem empurrar produto. A gente mostra as peças, toca para você ouvir e responde o que precisar." },
+    { "type": "text", "id": "privacy", "label": "Nota", "default": "Seus dados vão só na mensagem do WhatsApp. Não guardamos nada neste formulário." }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Item", "settings": [
+      { "type": "select", "id": "icon", "label": "Ícone", "default": "video", "options": [
+        { "value": "video", "label": "Vídeo" }, { "value": "headphones", "label": "Fone" }, { "value": "check", "label": "Visto" }, { "value": "shield", "label": "Escudo" }, { "value": "calendar", "label": "Calendário" } ] },
+      { "type": "text", "id": "title", "label": "Título", "default": "Item" },
+      { "type": "text", "id": "text", "label": "Texto" }
+    ]}
+  ],
+  "presets": [{ "name": "Consultoria por vídeo" }]
+}
+{% endschema %}

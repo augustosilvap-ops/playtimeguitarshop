@@ -1,0 +1,105 @@
+{
+  "sections": {
+    "transporte": {
+      "type": "safe-purchase",
+      "settings": {
+        "eyebrow": "Garantia de transporte",
+        "heading": "Chegou com avaria? A gente resolve.",
+        "text": "Instrumento é frágil e caro. Por isso o risco do caminho é nosso, não seu."
+      },
+      "blocks": {
+        "step1": {
+          "type": "step",
+          "settings": {
+            "icon": "box",
+            "title": "Embalado como se fosse nosso",
+            "text": "<p>Caixa dupla, proteção no headstock e nas tarraxas, cordas na tensão certa para viajar e case quando a peça acompanha.</p>"
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "icon": "shield",
+            "title": "Seguro por nossa conta",
+            "text": "<p>Todo envio sai com seguro pelo valor total da peça. Você não paga nada a mais por isso.</p>"
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "icon": "search",
+            "title": "Recebeu? Confira com calma",
+            "text": "<p>Se notar qualquer avaria, fotografe a peça e a caixa e nos chame no WhatsApp em até 7 dias.</p>"
+          }
+        },
+        "step4": {
+          "type": "step",
+          "settings": {
+            "icon": "tools",
+            "title": "A gente resolve com a transportadora",
+            "text": "<p>Você não precisa abrir chamado nem discutir com ninguém. Reparamos na nossa oficina, trocamos ou devolvemos o dinheiro, como você preferir.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ]
+    },
+    "procedencia": {
+      "type": "safe-purchase",
+      "settings": {
+        "eyebrow": "Procedência",
+        "heading": "Original, e você mesmo pode conferir.",
+        "text": "Instrumento falsificado existe, principalmente no mercado de usados. Na Playtime, a prova está na página de cada peça.",
+        "light": true
+      },
+      "blocks": {
+        "step1": {
+          "type": "step",
+          "settings": {
+            "icon": "passport",
+            "title": "Foto do número de série",
+            "text": "<p>Fotografamos o número de série da própria peça, no headstock, no salto do braço ou dentro do corpo.</p>"
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "icon": "search",
+            "title": "Confira no fabricante",
+            "text": "<p>Quando a marca tem consulta oficial, o link fica ao lado do número. Você copia, cola e confere.</p>"
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Nota fiscal e garantia",
+            "text": "<p>Toda peça sai com nota fiscal. A página informa quem dá a garantia e por quanto tempo.</p>"
+          }
+        },
+        "step4": {
+          "type": "step",
+          "settings": {
+            "icon": "swap",
+            "title": "Usados com história",
+            "text": "<p>No Garimpo, contamos o que sabemos da peça: dono anterior, peças trocadas e o que a oficina revisou.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ]
+    }
+  },
+  "order": [
+    "transporte",
+    "procedencia"
+  ]
+}
