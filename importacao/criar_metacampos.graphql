@@ -45,11 +45,11 @@ mutation CriarCamposPlaytime {
     createdDefinition { key }
     userErrors { code message }
   }
-  c12_audio_limpo: metafieldDefinitionCreate(definition: {name: "Áudio · Som limpo", namespace: "custom", key: "audio_limpo", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"File\"]"}]}) {
+  c12_audio_limpo: metafieldDefinitionCreate(definition: {name: "Áudio · Som limpo", namespace: "custom", key: "audio_limpo", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"GenericFile\"]"}]}) {
     createdDefinition { key }
     userErrors { code message }
   }
-  c13_audio_drive: metafieldDefinitionCreate(definition: {name: "Áudio · Com drive", namespace: "custom", key: "audio_drive", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"File\"]"}]}) {
+  c13_audio_drive: metafieldDefinitionCreate(definition: {name: "Áudio · Com drive", namespace: "custom", key: "audio_drive", type: "file_reference", ownerType: PRODUCT, description: "Arquivo de áudio (MP3) gravado com esta peça.", validations: [{name: "file_type_options", value: "[\"GenericFile\"]"}]}) {
     createdDefinition { key }
     userErrors { code message }
   }

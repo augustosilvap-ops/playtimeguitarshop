@@ -83,7 +83,7 @@ def definicao(chave, nome, tipo, descricao):
     if chave in SO_IMAGEM:
         d["validations"] = [{"name": "file_type_options", "value": json.dumps(["Image"])}]
     elif chave in SO_ARQUIVO:
-        d["validations"] = [{"name": "file_type_options", "value": json.dumps(["File"])}]
+        d["validations"] = [{"name": "file_type_options", "value": json.dumps(["GenericFile"])}]
     return d
 
 
