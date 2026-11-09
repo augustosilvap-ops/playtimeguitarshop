@@ -1,0 +1,1192 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Playtime Guitar Shop</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>/* ==========================================================================
+   Playtime Instrumentos Musicais — tema Shopify
+   Design system: ui-ux-pro-max ("premium dark + gold accent", Cormorant + Montserrat)
+   ajustado às cores da marca (vinho #4A0000, dourado #ECA700).
+   ========================================================================== */
+
+/* Fontes hospedadas no próprio tema (CDN da Shopify) */
+
+:root {
+  --ink: #0f0b0a;            /* fundo escuro principal */
+  --ink-2: #1a1311;          /* superfícies escuras */
+  --ink-3: #261b18;          /* bordas / cartões escuros */
+  --paper: #f6f1e8;          /* fundo claro (catálogo / produto) */
+  --paper-2: #ece4d6;
+  --card: #ffffff;
+  --text-dark: #1c1917;      /* texto em fundo claro */
+  --text-dark-2: #57534e;    /* secundário em fundo claro (7.0:1 no paper) */
+  --text-light: #f4efe6;     /* texto em fundo escuro */
+  --text-light-2: #c9bfb1;   /* secundário em fundo escuro (10:1 no ink) */
+  --wine: #4a0000;           /* marca */
+  --wine-2: #6e1212;
+  --gold: #eca700;           /* marca — acento */
+  --gold-ink: #8a5a00;       /* dourado legível sobre claro (5.2:1 no paper) */
+  --ok: #3f8f5a;
+  --danger: #b42318;
+  --line-dark: rgba(244, 239, 230, .14);
+  --line-light: #d6cfc3;
+
+  --font-display: "Cormorant", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+  --radius: 4px;
+  --radius-lg: 10px;
+  --max: 1320px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 72px;
+
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --dur-1: 160ms; --dur-2: 260ms; --dur-3: 520ms; --dur-4: 900ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 16px); }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-light);
+  background: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: .2em; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 8px; top: -60px; z-index: 1000; background: var(--gold); color: var(--ink); padding: 10px 16px; border-radius: var(--radius); font-weight: 600; }
+.skip-link:focus { top: 8px; }
+
+/* ---------- tipografia ---------- */
+.h-display, h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 .4em; }
+h1, .h1 { font-size: clamp(2.6rem, 6vw, 5rem); }
+h2, .h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+h3, .h3 { font-size: clamp(1.4rem, 2.2vw, 1.9rem); }
+.h-display { font-size: clamp(3rem, 9vw, 7.5rem); font-style: italic; font-weight: 700; }
+.eyebrow { font-family: var(--font-body); font-size: .75rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin: 0 0 var(--space-4); }
+.lead { font-size: clamp(1.05rem, 1.4vw, 1.25rem); color: var(--text-light-2); max-width: 46ch; }
+.rte p { margin: 0 0 1em; }
+.rte ul { padding-left: 1.2em; }
+.muted { color: var(--text-light-2); }
+
+/* ---------- layout ---------- */
+.container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+.section { padding: var(--space-9) 0; }
+.section--tight { padding: var(--space-7) 0; }
+.section--light { background: var(--paper); color: var(--text-dark); }
+.section--light .lead, .section--light .muted { color: var(--text-dark-2); }
+.section--light .eyebrow { color: var(--gold-ink); }
+.section--wine { background: radial-gradient(120% 140% at 80% 0%, var(--wine-2) 0%, var(--wine) 45%, #2a0000 100%); }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-5); margin-bottom: var(--space-7); flex-wrap: wrap; }
+.section-head > div { max-width: 640px; }
+.grid { display: grid; gap: var(--space-5); }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 989px) { .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 599px) { .grid--2, .grid--3 { grid-template-columns: 1fr; } .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); } .section { padding: var(--space-8) 0; } }
+
+/* ---------- botões ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 26px; border-radius: var(--radius); border: 1px solid transparent; font-weight: 600; font-size: .95rem; letter-spacing: .02em; text-decoration: none; transition: background var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out), border-color var(--dur-2), transform var(--dur-1); cursor: pointer; }
+.btn:active { transform: translateY(1px); }
+.btn--gold { background: var(--gold); color: var(--ink); }
+.btn--gold:hover { background: #ffbd1f; }
+.btn--ghost { border-color: rgba(244,239,230,.4); color: var(--text-light); background: transparent; }
+.btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn--dark { background: var(--ink); color: var(--text-light); }
+.btn--dark:hover { background: var(--wine); }
+.section--light .btn--ghost { border-color: var(--text-dark); color: var(--text-dark); }
+.section--light .btn--ghost:hover { background: var(--text-dark); color: var(--paper); }
+.btn--block { width: 100%; }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.link-arrow { display: inline-flex; gap: 8px; align-items: center; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.link-arrow svg { transition: transform var(--dur-2) var(--ease-out); }
+.link-arrow:hover svg { transform: translateX(4px); }
+.icon { width: 20px; height: 20px; flex: none; }
+
+/* ---------- barra de anúncio + header ---------- */
+.announce { background: var(--wine); color: var(--text-light); font-size: .8rem; text-align: center; padding: 8px var(--gutter); letter-spacing: .04em; }
+.announce a { color: var(--gold); }
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(15, 11, 10, .88); backdrop-filter: saturate(140%) blur(12px); -webkit-backdrop-filter: saturate(140%) blur(12px); border-bottom: 1px solid var(--line-dark); }
+.site-header__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: var(--header-h); gap: var(--space-4); }
+.site-header__logo img { height: 52px; width: auto; }
+.site-nav { display: flex; gap: var(--space-5); align-items: center; }
+.site-nav a { text-decoration: none; font-size: .85rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--text-light-2); padding: 8px 0; border-bottom: 1px solid transparent; transition: color var(--dur-2), border-color var(--dur-2); }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--text-light); border-color: var(--gold); }
+.site-header__actions { display: flex; justify-content: flex-end; gap: var(--space-2); }
+.icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: transparent; border: 0; color: var(--text-light); position: relative; text-decoration: none; transition: background var(--dur-2); }
+.icon-btn:hover { background: var(--ink-3); }
+.cart-count { position: absolute; top: 4px; right: 2px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--gold); color: var(--ink); font-size: .7rem; font-weight: 700; display: grid; place-items: center; }
+.menu-toggle { display: none; }
+@media (max-width: 989px) {
+  .site-header__inner { grid-template-columns: auto 1fr auto; }
+  .site-header__logo { justify-self: center; }
+  .site-header__logo img { height: 44px; }
+  .menu-toggle { display: inline-flex; }
+  .site-nav { position: fixed; inset: var(--header-h) 0 0 0; background: var(--ink); flex-direction: column; align-items: flex-start; padding: var(--space-6) var(--gutter); gap: var(--space-2); transform: translateX(-100%); transition: transform var(--dur-3) var(--ease-out); visibility: hidden; }
+  .site-nav.is-open { transform: none; visibility: visible; }
+  .site-nav a { font-size: 1.4rem; font-family: var(--font-display); text-transform: none; letter-spacing: 0; color: var(--text-light); padding: 10px 0; }
+}
+
+/* ---------- hero com scroll (motor scrollcraft adaptado) ---------- */
+.scroll-hero { position: relative; background: var(--ink); }
+.scroll-hero__stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.scroll-hero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.scroll-hero__shade { position: absolute; inset: 0; background: radial-gradient(70% 60% at 50% 50%, transparent 0%, rgba(15,11,10,.35) 70%, rgba(15,11,10,.85) 100%), linear-gradient(180deg, rgba(15,11,10,.55) 0%, transparent 20%, transparent 70%, var(--ink) 100%); pointer-events: none; }
+.scroll-hero__steps { position: absolute; inset: 0; pointer-events: none; }
+.scroll-hero__step { position: absolute; inset: 0; display: flex; padding: calc(var(--header-h) + 24px) var(--gutter) var(--space-8); opacity: 0; transform: translateY(28px); transition: opacity var(--dur-4) var(--ease-out), transform var(--dur-4) var(--ease-out); }
+.scroll-hero__step.is-active { opacity: 1; transform: none; pointer-events: auto; }
+.scroll-hero__step[data-layout="center"] { align-items: center; justify-content: center; text-align: center; }
+.scroll-hero__step[data-layout="left"] { align-items: center; justify-content: flex-start; }
+.scroll-hero__step[data-layout="right"] { align-items: center; justify-content: flex-end; text-align: right; }
+.scroll-hero__step[data-layout="lower-third"] { align-items: flex-end; justify-content: center; text-align: center; }
+.scroll-hero__copy { max-width: 620px; text-shadow: 0 2px 24px rgba(0,0,0,.55); }
+.scroll-hero__step[data-layout="center"] .scroll-hero__copy, .scroll-hero__step[data-layout="lower-third"] .scroll-hero__copy { max-width: 860px; }
+.scroll-hero__copy .lead { margin-left: inherit; margin-right: inherit; color: rgba(244,239,230,.82); }
+.scroll-hero__step[data-layout="center"] .lead, .scroll-hero__step[data-layout="lower-third"] .lead { margin: 0 auto; }
+.scroll-hero__step[data-layout="right"] .lead { margin-left: auto; }
+.scroll-hero__ctas { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-6); }
+.scroll-hero__step[data-layout="center"] .scroll-hero__ctas, .scroll-hero__step[data-layout="lower-third"] .scroll-hero__ctas { justify-content: center; }
+.scroll-hero__hint { position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); font-size: .7rem; letter-spacing: .3em; text-transform: uppercase; color: var(--text-light-2); display: flex; flex-direction: column; align-items: center; gap: 10px; transition: opacity var(--dur-3); }
+.scroll-hero__hint::after { content: ""; width: 1px; height: 40px; background: linear-gradient(var(--gold), transparent); animation: hint 2.2s var(--ease-in-out) infinite; transform-origin: top; }
+@keyframes hint { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+.scroll-hero__progress { position: absolute; right: var(--gutter); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 10px; }
+.scroll-hero__progress span { width: 2px; height: 26px; background: rgba(244,239,230,.2); border-radius: 2px; transition: background var(--dur-2); }
+.scroll-hero__progress span.is-on { background: var(--gold); }
+@media (max-width: 599px) { .scroll-hero__progress { display: none; } .scroll-hero__step[data-layout="left"], .scroll-hero__step[data-layout="right"] { align-items: flex-end; text-align: left; justify-content: flex-start; } .scroll-hero__step[data-layout="right"] .lead { margin-left: 0; } }
+
+/* ---------- faixa de confiança ---------- */
+.trust { border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); background: var(--ink-2); }
+.trust__list { list-style: none; margin: 0; padding: var(--space-5) 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); }
+.trust__item { display: flex; gap: var(--space-3); align-items: flex-start; }
+.trust__item svg { color: var(--gold); width: 28px; height: 28px; flex: none; margin-top: 2px; }
+.trust__item strong { display: block; font-size: .92rem; }
+.trust__item span { font-size: .82rem; color: var(--text-light-2); }
+@media (max-width: 989px) { .trust__list { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 599px) { .trust__list { grid-template-columns: 1fr; gap: var(--space-4); } }
+
+/* ---------- cartões de produto ---------- */
+.product-card { position: relative; display: flex; flex-direction: column; background: var(--card); color: var(--text-dark); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; border: 1px solid var(--line-light); transition: transform var(--dur-3) var(--ease-out), box-shadow var(--dur-3) var(--ease-out); }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px rgba(28, 25, 23, .35); }
+.product-card__media { position: relative; aspect-ratio: 4 / 5; background: #efe9df; overflow: hidden; }
+.product-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-4) var(--ease-out), opacity var(--dur-3); }
+.product-card__media img + img { position: absolute; inset: 0; opacity: 0; }
+.product-card:hover .product-card__media img:first-child { transform: scale(1.04); }
+.product-card:hover .product-card__media img + img { opacity: 1; }
+.product-card__badges { position: absolute; top: 12px; left: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 9px; border-radius: 3px; background: var(--ink); color: var(--text-light); }
+.badge--gold { background: var(--gold); color: var(--ink); }
+.badge--wine { background: var(--wine); color: var(--text-light); }
+.badge svg { width: 12px; height: 12px; }
+.product-card__body { padding: var(--space-4) var(--space-4) var(--space-5); display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.product-card__brand { font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); }
+.product-card__title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; line-height: 1.15; margin: 0; }
+.product-card__price { margin-top: auto; padding-top: var(--space-3); }
+.price { font-weight: 700; font-size: 1.1rem; }
+.price__compare { color: var(--text-dark-2); text-decoration: line-through; font-weight: 400; font-size: .9rem; margin-right: 6px; }
+.price__installments { display: block; font-size: .8rem; color: var(--text-dark-2); font-weight: 500; }
+.price__pix { display: block; font-size: .8rem; color: var(--ok); font-weight: 600; }
+
+/* ---------- rolagem horizontal de coleções ---------- */
+.rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 23%); gap: var(--space-5); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: var(--space-4); scrollbar-width: thin; }
+.rail > * { scroll-snap-align: start; }
+@media (max-width: 599px) { .rail { grid-auto-columns: 78%; } }
+
+/* ---------- categorias ---------- */
+.cat-tile { position: relative; display: block; aspect-ratio: 3 / 4; border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: var(--text-light); background: var(--ink-2); }
+.cat-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-4) var(--ease-out); }
+.cat-tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(15,11,10,.9)); }
+.cat-tile:hover img { transform: scale(1.05); }
+.cat-tile__label { position: absolute; left: var(--space-5); right: var(--space-5); bottom: var(--space-5); z-index: 1; }
+.cat-tile__label h3 { margin: 0; font-size: 1.8rem; }
+.cat-tile__label span { font-size: .8rem; color: var(--text-light-2); }
+
+/* ---------- passaporte ---------- */
+.passport-intro { display: grid; grid-template-columns: 1.05fr 1fr; gap: var(--space-8); align-items: center; }
+@media (max-width: 989px) { .passport-intro { grid-template-columns: 1fr; gap: var(--space-6); } }
+.media-frame { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: var(--ink-2); border: 1px solid var(--line-dark); aspect-ratio: 16 / 9; }
+.media-frame video, .media-frame img { width: 100%; height: 100%; object-fit: cover; }
+.feature-list { list-style: none; margin: var(--space-6) 0; padding: 0; display: grid; gap: var(--space-4); }
+.feature-list li { display: grid; grid-template-columns: 28px 1fr; gap: var(--space-3); }
+.feature-list svg { color: var(--gold); width: 22px; height: 22px; margin-top: 3px; }
+.feature-list strong { display: block; }
+.feature-list span { color: var(--text-light-2); font-size: .92rem; }
+.section--light .feature-list span { color: var(--text-dark-2); }
+.section--light .feature-list svg { color: var(--gold-ink); }
+
+/* passaporte na página de produto */
+.passport { background: linear-gradient(160deg, #1d1412, #120c0b); color: var(--text-light); border: 1px solid rgba(236,167,0,.35); border-radius: var(--radius-lg); padding: var(--space-5); position: relative; overflow: hidden; }
+.passport::before { content: ""; position: absolute; right: -60px; top: -60px; width: 200px; height: 200px; background: url("emblema.svg") center / contain no-repeat; opacity: .08; }
+.passport__head { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
+.passport__title { font-family: var(--font-display); font-size: 1.5rem; font-style: italic; font-weight: 700; margin: 0; }
+.passport__seal { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+.passport__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line-dark); border: 1px solid var(--line-dark); border-radius: var(--radius); overflow: hidden; }
+.passport__cell { background: #160f0d; padding: 12px 14px; }
+.passport__cell dt { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-light-2); }
+.passport__cell dd { margin: 2px 0 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.passport__foot { margin-top: var(--space-4); font-size: .8rem; color: var(--text-light-2); display: flex; gap: 8px; align-items: flex-start; }
+.passport__foot svg { color: var(--gold); width: 16px; height: 16px; margin-top: 2px; flex: none; }
+.passport--empty .passport__grid { display: none; }
+
+/* ---------- produto ---------- */
+.product { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--space-8); align-items: start; }
+@media (max-width: 989px) { .product { grid-template-columns: 1fr; gap: var(--space-6); } }
+.product__gallery { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.product__gallery > :first-child { grid-column: 1 / -1; }
+.product__gallery img { width: 100%; border-radius: var(--radius-lg); background: #efe9df; aspect-ratio: 4 / 5; object-fit: cover; cursor: zoom-in; }
+.product__gallery > :first-child img { aspect-ratio: 1 / 1; }
+@media (max-width: 599px) { .product__gallery { grid-auto-flow: column; grid-auto-columns: 88%; grid-template-columns: none; overflow-x: auto; scroll-snap-type: x mandatory; } .product__gallery > * { scroll-snap-align: center; } .product__gallery > :first-child { grid-column: auto; } }
+.product__info { position: sticky; top: calc(var(--header-h) + 24px); display: grid; gap: var(--space-5); }
+@media (max-width: 989px) { .product__info { position: static; } }
+.product__brand { font-size: .75rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-ink); }
+.product__title { font-size: clamp(2rem, 3.4vw, 2.9rem); margin: 0; color: var(--text-dark); }
+.product__price .price { font-size: 1.9rem; }
+.product__buy { display: grid; gap: var(--space-3); }
+.qty { display: inline-flex; border: 1px solid var(--line-light); border-radius: var(--radius); }
+.qty button { width: 44px; height: 48px; background: transparent; border: 0; }
+.qty input { width: 52px; text-align: center; border: 0; background: transparent; font: inherit; }
+.service-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; border-top: 1px solid var(--line-light); padding-top: var(--space-4); font-size: .9rem; }
+.service-list li { display: flex; gap: 10px; align-items: flex-start; }
+.service-list svg { width: 20px; height: 20px; color: var(--gold-ink); flex: none; margin-top: 2px; }
+.accordion { border-top: 1px solid var(--line-light); }
+.accordion details { border-bottom: 1px solid var(--line-light); }
+.accordion summary { list-style: none; cursor: pointer; padding: 18px 0; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion summary::after { content: "+"; font-size: 1.4rem; font-weight: 300; transition: transform var(--dur-2); }
+.accordion details[open] summary::after { transform: rotate(45deg); }
+.accordion .rte { padding-bottom: 20px; color: var(--text-dark-2); }
+
+/* som da peça */
+.sound-demo { display: grid; gap: var(--space-3); padding: var(--space-4); border: 1px solid var(--line-light); border-radius: var(--radius-lg); background: var(--card); }
+.sound-demo__head { display: flex; justify-content: space-between; align-items: center; }
+.sound-demo__tracks { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.sound-demo__tracks button { border: 1px solid var(--line-light); background: transparent; border-radius: 999px; padding: 8px 16px; font-size: .85rem; font-weight: 600; min-height: 40px; }
+.sound-demo__tracks button[aria-pressed="true"] { background: var(--text-dark); color: var(--paper); border-color: var(--text-dark); }
+.sound-demo__wave { height: 48px; display: flex; align-items: center; gap: 2px; }
+.sound-demo__wave i { flex: 1; background: var(--line-light); border-radius: 2px; transition: background var(--dur-1); }
+.sound-demo__wave i.is-played { background: var(--gold-ink); }
+
+/* visualizador 360 */
+.viewer360 { position: relative; aspect-ratio: 1 / 1; border-radius: var(--radius-lg); overflow: hidden; background: #efe9df; cursor: grab; touch-action: pan-y; user-select: none; }
+.viewer360:active { cursor: grabbing; }
+.viewer360 img { width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+.viewer360__hint { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); background: rgba(15,11,10,.8); color: var(--text-light); font-size: .75rem; padding: 6px 12px; border-radius: 999px; display: flex; gap: 6px; align-items: center; }
+
+/* ---------- vitrine ao vivo / whatsapp ---------- */
+.live-card { display: grid; grid-template-columns: auto 1fr; gap: var(--space-4); align-items: center; padding: var(--space-4); border-radius: var(--radius-lg); background: var(--ink); color: var(--text-light); text-decoration: none; }
+.live-card__dot { width: 12px; height: 12px; border-radius: 50%; background: #e5484d; box-shadow: 0 0 0 0 rgba(229,72,77,.6); animation: pulse 2s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 12px rgba(229,72,77,0); } 100% { box-shadow: 0 0 0 0 rgba(229,72,77,0); } }
+.live-card strong { display: block; }
+.live-card span { font-size: .85rem; color: var(--text-light-2); }
+
+/* ---------- clínica ---------- */
+.care-card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5); border-radius: var(--radius-lg); background: var(--ink-2); border: 1px solid var(--line-dark); text-decoration: none; color: inherit; transition: border-color var(--dur-2), transform var(--dur-3) var(--ease-out); }
+.care-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+.care-card svg { width: 32px; height: 32px; color: var(--gold); }
+.care-card h3 { margin: 0; font-size: 1.5rem; }
+.care-card p { margin: 0; color: var(--text-light-2); font-size: .92rem; }
+.care-card__meta { margin-top: auto; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-light-2); }
+.guide { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: var(--space-8); }
+@media (max-width: 989px) { .guide { grid-template-columns: 1fr; } .guide__toc { position: static !important; } }
+.guide__toc { position: sticky; top: calc(var(--header-h) + 24px); align-self: start; display: grid; gap: 4px; }
+.guide__toc a { text-decoration: none; padding: 8px 12px; border-left: 2px solid var(--line-light); color: var(--text-dark-2); font-size: .9rem; }
+.guide__toc a:hover, .guide__toc a.is-active { border-color: var(--gold-ink); color: var(--text-dark); }
+.guide__body h2 { font-size: 2.2rem; margin-top: var(--space-7); }
+.guide__body h2:first-child { margin-top: 0; }
+.guide__body p, .guide__body li { color: var(--text-dark-2); max-width: 70ch; }
+.steps { counter-reset: step; list-style: none; padding: 0; display: grid; gap: var(--space-4); }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: var(--space-3); }
+.steps li::before { content: counter(step); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--gold-ink); color: var(--gold-ink); font-weight: 700; display: grid; place-items: center; font-size: .9rem; }
+.callout { border-left: 3px solid var(--gold-ink); background: var(--paper-2); padding: var(--space-4) var(--space-5); border-radius: 0 var(--radius) var(--radius) 0; color: var(--text-dark); }
+.humidity { display: grid; gap: 8px; margin: var(--space-5) 0; }
+.humidity__bar { height: 14px; border-radius: 7px; background: linear-gradient(90deg, #b42318 0%, #d97706 25%, #3f8f5a 40%, #3f8f5a 60%, #d97706 75%, #b42318 100%); position: relative; }
+.humidity__labels { display: flex; justify-content: space-between; font-size: .75rem; color: var(--text-dark-2); }
+
+/* afinador */
+.tuner { max-width: 760px; margin: 0 auto; text-align: center; }
+.tuner__dial { position: relative; width: min(520px, 100%); aspect-ratio: 2 / 1.1; margin: var(--space-6) auto var(--space-4); }
+.tuner__dial svg { width: 100%; height: 100%; overflow: visible; }
+.tuner__needle { transform-origin: 260px 270px; transition: transform 120ms linear; }
+.tuner__note { font-family: var(--font-display); font-size: clamp(4rem, 12vw, 7rem); font-weight: 700; line-height: 1; }
+.tuner__freq { font-variant-numeric: tabular-nums; color: var(--text-light-2); }
+.tuner__status { min-height: 1.6em; font-weight: 600; letter-spacing: .06em; }
+.tuner__status.is-in { color: var(--gold); }
+.tuner__strings { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; margin: var(--space-5) 0; }
+.tuner__strings button { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--line-dark); background: var(--ink-2); font-weight: 700; }
+.tuner__strings button.is-target { border-color: var(--gold); color: var(--gold); }
+.tuner__presets { display: inline-flex; border: 1px solid var(--line-dark); border-radius: 999px; padding: 4px; gap: 4px; }
+.tuner__presets button { border: 0; background: transparent; border-radius: 999px; padding: 8px 16px; font-size: .85rem; min-height: 40px; }
+.tuner__presets button[aria-pressed="true"] { background: var(--gold); color: var(--ink); font-weight: 700; }
+
+/* troca / formulários */
+.form { display: grid; gap: var(--space-4); }
+.field { display: grid; gap: 6px; }
+.field label { font-size: .85rem; font-weight: 600; }
+.field input, .field select, .field textarea { min-height: 48px; padding: 12px 14px; border-radius: var(--radius); border: 1px solid var(--line-light); background: var(--card); color: var(--text-dark); font: inherit; }
+.field textarea { min-height: 110px; }
+.section:not(.section--light) .field input, .section:not(.section--light) .field select, .section:not(.section--light) .field textarea { background: var(--ink-2); border-color: var(--line-dark); color: var(--text-light); }
+.field__help { font-size: .78rem; color: var(--text-dark-2); }
+.section:not(.section--light) .field__help { color: var(--text-light-2); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+@media (max-width: 599px) { .field-row { grid-template-columns: 1fr; } }
+.choice-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: var(--space-2); }
+.choice { position: relative; }
+.choice input { position: absolute; opacity: 0; }
+.choice span { display: grid; place-items: center; text-align: center; min-height: 52px; padding: 8px; border: 1px solid var(--line-dark); border-radius: var(--radius); font-size: .88rem; font-weight: 600; cursor: pointer; transition: border-color var(--dur-2), background var(--dur-2); }
+.choice input:checked + span { border-color: var(--gold); background: rgba(236,167,0,.12); color: var(--gold); }
+.choice input:focus-visible + span { outline: 2px solid var(--gold); outline-offset: 2px; }
+.estimate { border: 1px solid rgba(236,167,0,.4); border-radius: var(--radius-lg); padding: var(--space-5); background: rgba(236,167,0,.06); }
+.estimate__value { font-family: var(--font-display); font-size: 2.6rem; font-weight: 700; color: var(--gold); line-height: 1.1; }
+
+/* marcas */
+.marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.marquee__track { display: flex; gap: var(--space-8); width: max-content; animation: marquee 40s linear infinite; }
+.marquee__track span { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; font-style: italic; color: var(--text-light-2); white-space: nowrap; }
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* depoimentos */
+.quote { padding: var(--space-6); border-radius: var(--radius-lg); background: var(--card); border: 1px solid var(--line-light); display: flex; flex-direction: column; gap: var(--space-4); }
+.quote blockquote { margin: 0; font-family: var(--font-display); font-size: 1.45rem; line-height: 1.3; color: var(--text-dark); }
+.quote cite { font-style: normal; font-size: .85rem; color: var(--text-dark-2); }
+.stars { color: var(--gold-ink); display: flex; gap: 2px; }
+.stars svg { width: 16px; height: 16px; }
+
+/* coleção */
+.collection-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6); flex-wrap: wrap; }
+.filters { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.filter-chip { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line-light); text-decoration: none; font-size: .85rem; font-weight: 600; color: var(--text-dark); background: var(--card); }
+.filter-chip.is-active, .filter-chip:hover { background: var(--text-dark); color: var(--paper); border-color: var(--text-dark); }
+.select { min-height: 44px; padding: 0 14px; border-radius: var(--radius); border: 1px solid var(--line-light); background: var(--card); font: inherit; }
+.pagination { display: flex; gap: var(--space-2); justify-content: center; margin-top: var(--space-7); }
+.pagination a, .pagination span { min-width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--radius); border: 1px solid var(--line-light); text-decoration: none; }
+.pagination .current { background: var(--text-dark); color: var(--paper); }
+
+/* carrinho */
+.cart-table { width: 100%; border-collapse: collapse; }
+.cart-table td, .cart-table th { padding: var(--space-4) var(--space-2); border-bottom: 1px solid var(--line-light); text-align: left; vertical-align: middle; }
+.cart-table img { width: 96px; border-radius: var(--radius); }
+.cart-summary { margin-left: auto; max-width: 420px; display: grid; gap: var(--space-3); padding-top: var(--space-5); }
+
+/* rodapé */
+.site-footer { background: #0a0706; border-top: 1px solid var(--line-dark); padding: var(--space-9) 0 var(--space-6); font-size: .9rem; }
+.site-footer__grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: var(--space-7); }
+@media (max-width: 989px) { .site-footer__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 599px) { .site-footer__grid { grid-template-columns: 1fr; } }
+.site-footer h4 { font-family: var(--font-body); font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin: 0 0 var(--space-4); }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.site-footer a { text-decoration: none; color: var(--text-light-2); }
+.site-footer a:hover { color: var(--text-light); }
+.site-footer__logo { width: 180px; margin-bottom: var(--space-4); }
+.site-footer__bottom { margin-top: var(--space-8); padding-top: var(--space-5); border-top: 1px solid var(--line-dark); display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; color: var(--text-light-2); font-size: .8rem; }
+.pay-icons { display: flex; gap: 8px; flex-wrap: wrap; }
+.pay-icons span { border: 1px solid var(--line-dark); border-radius: 4px; padding: 4px 8px; font-size: .72rem; font-weight: 700; }
+
+/* whatsapp flutuante */
+.wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 56px; height: 56px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 10px 30px -8px rgba(0,0,0,.5); transition: transform var(--dur-2) var(--ease-out); }
+.wa-float:hover { transform: scale(1.06); }
+.wa-float svg { width: 28px; height: 28px; }
+
+/* revelação ao rolar */
+[data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity var(--dur-4) var(--ease-out), transform var(--dur-4) var(--ease-out); }
+[data-reveal].is-in { opacity: 1; transform: none; }
+[data-reveal-delay="1"] { transition-delay: 80ms; } [data-reveal-delay="2"] { transition-delay: 160ms; } [data-reveal-delay="3"] { transition-delay: 240ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  [data-reveal] { opacity: 1; transform: none; }
+  .marquee__track { animation: none; }
+}
+
+/* ---- só da prévia ---- */
+:root { color-scheme: dark; }
+body { background: var(--ink); }
+.site-header { top: env(safe-area-inset-top, 0px); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--ink); }
+.container { padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+[data-reveal] { opacity: 1; transform: translateY(14px); }
+[data-reveal].is-in { transform: none; }
+.ph { position: relative; width: 100%; height: 100%; display: grid; place-items: center; overflow: hidden;
+  background: radial-gradient(120% 90% at 30% 20%, #3a0a0a 0%, #1a1311 55%, #0f0b0a 100%); }
+.ph::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; background: url("emblema.svg") center/contain no-repeat; opacity: .12; filter: grayscale(.2); }
+.ph__brand { position: relative; font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--text-light); text-align: center; padding: 0 12px; }
+.ph__note { position: absolute; bottom: 12px; right: 12px; font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--text-light-2); }
+.ph--tall { aspect-ratio: 3/4; } .ph--sq { aspect-ratio: 1/1; } .ph--wide { aspect-ratio: 16/9; }
+.product__gallery .ph { border-radius: var(--radius-lg); }
+.cat-tile .ph { position: absolute; inset: 0; aspect-ratio: auto; }
+.passport-intro.flip > :first-child { order: 2; }
+@media (max-width: 989px) { .passport-intro.flip > :first-child { order: 0; } }
+.cta-row { display: grid; grid-template-columns: minmax(0, 1.3fr) auto; gap: 32px; align-items: center; }
+.cta-row__btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.trade-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; align-items: start; }
+@media (max-width: 989px) { .cta-row, .trade-grid { grid-template-columns: 1fr; gap: 32px; } }
+.crumbs { font-size: .85rem; margin-bottom: 24px; }
+.ex { font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-left: 4px; }
+.preview-note { background: var(--ink-2); border-bottom: 1px solid var(--line-dark); color: var(--text-light-2); font-size: .78rem; text-align: center; padding: 8px 16px; }
+.preview-note strong { color: var(--gold); }
+[data-view] { display: none; } [data-view].is-current { display: block; }
+.site-nav a.is-current { color: var(--text-light); border-color: var(--gold); }
+.min0 > * { min-width: 0; }
+</style>
+<a class="skip-link" href="#MainContent">Pular para o conteúdo</a>
+<div class="preview-note"><strong>Prévia</strong> · Prévia navegável. Fotos de produto aparecem quando os produtos forem cadastrados no Shopify.</div>
+<div class="announce">Todo instrumento sai <strong>regulado</strong> pela nossa oficina · 10x sem juros · Aceitamos seu instrumento na troca</div>
+<header class="site-header"><div class="container site-header__inner">
+<button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="SiteNav" aria-label="Abrir menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav class="site-nav" id="SiteNav" aria-label="Principal"><a href="#inicio">Início</a><a href="#produto">Produto</a><a href="#passaporte">Passaporte</a><a href="#clinica">Clínica</a><a href="#afinador">Afinador</a><a href="#troca">Troca</a></nav>
+<a class="site-header__logo" href="#inicio" aria-label="Playtime — página inicial"><img src="logo-dourado.svg" alt="Playtime Instrumentos Musicais" width="76" height="52"></a>
+<div class="site-header__actions"><a class="icon-btn" href="#inicio" aria-label="Buscar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a><a class="icon-btn" href="#produto" aria-label="Carrinho"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="cart-count" data-cart-count hidden>0</span></a></div>
+</div></header>
+<main id="MainContent" tabindex="-1">
+<div data-view="inicio"><section class="scroll-hero" data-scroll-hero data-frames="frames/hero_0000.jpg" data-count="144" data-frames-mobile="frames/hero-m_0000.jpg" data-count-mobile="144" aria-label="Apresentação">
+<div class="scroll-hero__stage" style="background:#0f0b0a url('frames/hero_0000.jpg') center/cover no-repeat">
+<canvas class="scroll-hero__canvas" aria-hidden="true"></canvas><div class="scroll-hero__shade"></div>
+<div class="scroll-hero__steps"><div class="scroll-hero__step is-active" data-layout="center" data-scroll="1400">
+  <div class="scroll-hero__copy"><p class="eyebrow">Playtime Instrumentos Musicais</p><h1 class="h-display">Instrumentos com história.</h1><p class="lead">Guitarras, baixos e violões escolhidos a dedo e regulados antes de chegar até você.</p></div></div><div class="scroll-hero__step" data-layout="left" data-scroll="1500">
+  <div class="scroll-hero__copy"><p class="eyebrow">Passaporte do Instrumento</p><h2 class="h1">Cada peça tem passaporte.</h2><p class="lead">Número de série, peso e medidas da unidade que você vai receber. Não do catálogo.</p></div></div><div class="scroll-hero__step" data-layout="right" data-scroll="1300">
+  <div class="scroll-hero__copy"><p class="eyebrow">Ouça antes de comprar</p><h2 class="h1">O som é o desta peça.</h2><p class="lead">Gravamos os instrumentos aqui na loja e mostramos ao vivo por vídeo.</p></div></div><div class="scroll-hero__step" data-layout="lower-third" data-scroll="1200">
+  <div class="scroll-hero__copy"><p class="eyebrow">Clínica Playtime</p><h2 class="h1">Toque por décadas.</h2><p class="lead">Afinador, guias de cuidado e oficina própria depois da compra.</p><div class="scroll-hero__ctas"><a class="btn btn--gold" href="#inicio-vitrine">Ver instrumentos</a><a class="btn btn--ghost" href="#clinica">Conhecer a Clínica</a></div></div></div></div><div class="scroll-hero__progress" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="scroll-hero__hint" aria-hidden="true">Role</div></div></section><section class="trust"><div class="container"><ul class="trust__list"><li class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><div><strong>Regulado antes do envio</strong><span>Altura das cordas, oitavas e tensor ajustados.</span></div></li><li class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg><div><strong>Passaporte da peça</strong><span>Série, peso e medidas desta unidade.</span></div></li><li class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg><div><strong>Até 10x sem juros</strong><span>Ou desconto no Pix.</span></div></li><li class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><div><strong>Seu usado na troca</strong><span>Pré-avaliação em um minuto.</span></div></li></ul></div></section>
+<section class="section"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Acervo</p><h2>Escolha pelo que você toca</h2></div></div><div class="grid grid--4"><a class="cat-tile" href="#inicio-vitrine" data-reveal data-reveal-delay="0"><div class="ph ph--tall"></div>
+<div class="cat-tile__label"><h3>Guitarras</h3><span>59 peças em estoque</span></div></a><a class="cat-tile" href="#inicio-vitrine" data-reveal data-reveal-delay="1"><div class="ph ph--tall"></div>
+<div class="cat-tile__label"><h3>Violões</h3><span>31 peças em estoque</span></div></a><a class="cat-tile" href="#inicio-vitrine" data-reveal data-reveal-delay="2"><div class="ph ph--tall"></div>
+<div class="cat-tile__label"><h3>Baixos</h3><span>18 peças em estoque</span></div></a><a class="cat-tile" href="#inicio-vitrine" data-reveal data-reveal-delay="3"><div class="ph ph--tall"></div>
+<div class="cat-tile__label"><h3>Pedais e amps</h3><span>63 peças em estoque</span></div></a></div></div></section>
+<section class="section section--light" id="inicio-vitrine"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Vitrine</p><h2>Peças em destaque</h2>
+<p class="lead">Da Ibanez Prestige ao Fender Custom Shop: instrumentos que chegaram esta semana.</p></div><a class="link-arrow" href="#produto">Ver todos <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="rail"><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">Fender</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Fender</span>
+    <h3 class="product-card__title">Custom Shop 1956 Heavy Relic (2014)</h3><div class="product-card__price"><div class="price"><span>R$ 54.990,00</span><span class="price__installments">ou 10x de R$ 5.499,00 sem juros</span><span class="price__pix">R$ 52.240,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Tom Anderson</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Tom Anderson</span>
+    <h3 class="product-card__title">Drop Top Classic (1998)</h3><div class="product-card__price"><div class="price"><span>R$ 49.990,00</span><span class="price__installments">ou 10x de R$ 4.999,00 sem juros</span><span class="price__pix">R$ 47.490,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="2">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">PIA3761C Steve Vai</h3><div class="product-card__price"><div class="price"><span>R$ 49.999,00</span><span class="price__installments">ou 10x de R$ 4.999,90 sem juros</span><span class="price__pix">R$ 47.499,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="3">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige PS10 Paul Stanley</h3><div class="product-card__price"><div class="price"><span>R$ 47.999,00</span><span class="price__installments">ou 10x de R$ 4.799,90 sem juros</span><span class="price__pix">R$ 45.599,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige LB1 Lari Basilio</h3><div class="product-card__price"><div class="price"><span>R$ 39.990,00</span><span class="price__installments">ou 10x de R$ 3.999,00 sem juros</span><span class="price__pix">R$ 37.990,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Martin</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Martin</span>
+    <h3 class="product-card__title">D-16E com case</h3><div class="product-card__price"><div class="price"><span>R$ 29.129,00</span><span class="price__installments">ou 10x de R$ 2.912,90 sem juros</span><span class="price__pix">R$ 27.672,55 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="2">
+  <div class="product-card__media ph"><div class="ph__brand">D&#x27;Angelico</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">D&#x27;Angelico</span>
+    <h3 class="product-card__title">Excel 59 Hollowbody</h3><div class="product-card__price"><div class="price"><span>R$ 23.199,00</span><span class="price__installments">ou 10x de R$ 2.319,90 sem juros</span><span class="price__pix">R$ 22.039,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="3">
+  <div class="product-card__media ph"><div class="ph__brand">Gibson</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Gibson</span>
+    <h3 class="product-card__title">Les Paul Traditional Lemon Green (2012)</h3><div class="product-card__price"><div class="price"><span>R$ 21.990,00</span><span class="price__installments">ou 10x de R$ 2.199,00 sem juros</span><span class="price__pix">R$ 20.890,50 no Pix (5% off)</span></div></div></div></a></div></div></section>
+<section class="section "><div class="container passport-intro">
+<div class="media-frame" data-reveal><video data-autoplay autoplay muted loop playsinline preload="metadata" poster="videos/passaporte-loop-poster.jpg" aria-label="Passaporte do Instrumento"><source src="videos/passaporte-loop.mp4" type="video/mp4"></video></div>
+<div><div data-reveal><p class="eyebrow">Exclusivo Playtime</p><h2>Passaporte do Instrumento</h2><p class="lead">Instrumento caro não se compra pela foto do fabricante. Cada peça da Playtime tem uma ficha própria, medida pela nossa oficina.</p></div>
+<ul class="feature-list"><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg><div><strong>Fotos e número de série da unidade</strong><span>Você vê exatamente a peça que vai receber.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l2 13H4L6 7z"/><circle cx="12" cy="5" r="2"/></svg><div><strong>Peso e medidas reais</strong><span>Peso na balança e altura das cordas na 12ª casa.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><div><strong>Regulagem registrada</strong><span>O que a oficina ajustou, com data.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg><div><strong>Áudio gravado na loja</strong><span>Limpo e com drive, sem pós-produção.</span></div></li></ul><a class="btn btn--gold" href="#passaporte">Como funciona</a></div></div></section>
+<section class="section section--light" id="inicio-garimpo"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Garimpo</p><h2>Peças únicas</h2>
+<p class="lead">Usados e vintage revisados pela oficina. Quando sai, não volta.</p></div></div><div class="rail"><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">Gibson</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Gibson</span>
+    <h3 class="product-card__title">Nighthawk Special (1994)</h3><div class="product-card__price"><div class="price"><span>R$ 14.999,00</span><span class="price__installments">ou 10x de R$ 1.499,90 sem juros</span><span class="price__pix">R$ 14.249,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige AR2000 (1999)</h3><div class="product-card__price"><div class="price"><span>R$ 22.990,00</span><span class="price__installments">ou 10x de R$ 2.299,00 sem juros</span><span class="price__pix">R$ 21.840,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="2">
+  <div class="product-card__media ph"><div class="ph__brand">Columbus</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Columbus</span>
+    <h3 class="product-card__title">Stratocaster Japan (1970)</h3><div class="product-card__price"><div class="price"><span>R$ 5.999,00</span><span class="price__installments">ou 10x de R$ 599,90 sem juros</span><span class="price__pix">R$ 5.699,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="3">
+  <div class="product-card__media ph"><div class="ph__brand">Fender</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Fender</span>
+    <h3 class="product-card__title">Highway One Stratocaster USA</h3><div class="product-card__price"><div class="price"><span>R$ 11.999,00</span><span class="price__installments">ou 10x de R$ 1.199,90 sem juros</span><span class="price__pix">R$ 11.399,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">G&amp;L</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">G&amp;L</span>
+    <h3 class="product-card__title">Fullerton ASAT Classic</h3><div class="product-card__price"><div class="price"><span>R$ 14.999,00</span><span class="price__installments">ou 10x de R$ 1.499,90 sem juros</span><span class="price__pix">R$ 14.249,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Schecter</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Schecter</span>
+    <h3 class="product-card__title">Justin Beck V ANI</h3><div class="product-card__price"><div class="price"><span>R$ 16.849,00</span><span class="price__installments">ou 10x de R$ 1.684,90 sem juros</span><span class="price__pix">R$ 16.006,55 no Pix (5% off)</span></div></div></div></a></div></div></section>
+<section class="section section--light"><div class="container passport-intro flip">
+<div class="media-frame" data-reveal><video data-autoplay autoplay muted loop playsinline preload="metadata" poster="videos/clinica-loop-poster.jpg" aria-label="Clínica Playtime"><source src="videos/clinica-loop.mp4" type="video/mp4"></video></div>
+<div><div data-reveal><p class="eyebrow">Clínica Playtime</p><h2>Depois da compra, a gente continua junto.</h2><p class="lead">O que nossa oficina faz todo dia, explicado para você fazer em casa.</p></div>
+<ul class="feature-list"><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><path d="m12 16 4-6"/><circle cx="12" cy="16" r="1.4"/></svg><div><strong>Afinador online</strong><span>Pelo microfone do celular, direto no site.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></svg><div><strong>Umidade certa</strong><span>Por que 45% a 55% protege madeira e braço.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 3v18M10 3v18M14 3v18M17 3v18"/><path d="M5 7h14"/></svg><div><strong>Troca de cordas</strong><span>Passo a passo, com o calibre certo.</span></div></li></ul><a class="btn btn--dark" href="#clinica">Abrir a Clínica</a></div></div></section>
+<section class="section"><div class="container"><div class="section-head" data-reveal><div><p class="eyebrow">Clínica Playtime</p><h2>Guias e ferramentas</h2></div>
+<a class="link-arrow" href="#clinica">Ver todos os guias <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="grid grid--4"><a class="care-card" href="#afinador" data-reveal data-reveal-delay="0"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><path d="m12 16 4-6"/><circle cx="12" cy="16" r="1.4"/></svg><h3>Afinador</h3><p>Guitarra, baixo, violão e Drop D.</p><span class="care-card__meta">Ferramenta</span></a><a class="care-card" href="#clinica" data-reveal data-reveal-delay="1"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 3v18M10 3v18M14 3v18M17 3v18"/><path d="M5 7h14"/></svg><h3>Trocar cordas</h3><p>Sem descalibrar a ponte nem riscar o tampo.</p><span class="care-card__meta">6 passos</span></a><a class="care-card" href="#clinica" data-reveal data-reveal-delay="2"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></svg><h3>Clima e umidade</h3><p>Verão úmido, inverno seco e ar-condicionado.</p><span class="care-card__meta">Guia</span></a><a class="care-card" href="#clinica" data-reveal data-reveal-delay="3"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><h3>Agenda de revisão</h3><p>Quando regular, limpar e trocar trastes.</p><span class="care-card__meta">Calendário</span></a></div></div></section><section class="section section--wine"><div class="container cta-row" data-reveal><div><p class="eyebrow">Troca com avaliação justa</p><h2>Seu instrumento vale como entrada</h2>
+<p class="lead" style="color:rgba(244,239,230,.82)">Responda seis perguntas e receba uma faixa de valor na hora. A avaliação final é feita pela nossa oficina, por vídeo ou na loja.</p></div><div class="cta-row__btns"><a class="btn btn--gold" href="#troca">Avaliar meu instrumento</a><a class="btn btn--ghost" href="#inicio-garimpo">Ver peças de garimpo</a></div></div></section><section class="section section--tight" aria-label="Marcas"><div class="container"><p class="eyebrow" style="text-align:center">Marcas que trabalhamos</p></div><div class="marquee"><div class="marquee__track"><span>Ibanez</span><span>Martin</span><span>Hertom</span><span>Takamine</span><span>Fender</span><span>Gibson</span><span>PRS</span><span>Schecter</span><span>D&#x27;Angelico</span><span>G&amp;L</span><span>Tom Anderson</span><span>Orange</span><span>Strymon</span><span>Meris</span><span>Friedman</span><span>Boss</span><span>MXR</span><span>Gator</span><span aria-hidden="true">Ibanez</span><span aria-hidden="true">Martin</span><span aria-hidden="true">Hertom</span><span aria-hidden="true">Takamine</span><span aria-hidden="true">Fender</span><span aria-hidden="true">Gibson</span><span aria-hidden="true">PRS</span><span aria-hidden="true">Schecter</span><span aria-hidden="true">D&#x27;Angelico</span><span aria-hidden="true">G&amp;L</span><span aria-hidden="true">Tom Anderson</span><span aria-hidden="true">Orange</span><span aria-hidden="true">Strymon</span><span aria-hidden="true">Meris</span><span aria-hidden="true">Friedman</span><span aria-hidden="true">Boss</span><span aria-hidden="true">MXR</span><span aria-hidden="true">Gator</span></div></div></section></div>
+<div data-view="produto"><section class="section section--light" style="padding-top:48px"><div class="container">
+<nav aria-label="Você está em" class="muted crumbs"><a href="#inicio">Início</a> / <a href="#inicio-vitrine">Guitarras</a> / <span aria-current="page">Drop Top Classic (1998)</span></nav>
+<div class="product"><div class="product__gallery"><div><div class="ph ph--sq"><div class="ph__brand">Tom Anderson</div><div class="ph__note">foto da unidade · frente</div></div></div><div><div class="ph ph--tall"><div class="ph__brand">Tom Anderson</div><div class="ph__note">tampo flamed maple 5A</div></div></div><div><div class="ph ph--tall"><div class="ph__brand">Tom Anderson</div><div class="ph__note">headstock e série</div></div></div><div><div class="ph ph--tall"><div class="ph__brand">Tom Anderson</div><div class="ph__note">costas</div></div></div></div>
+<div class="product__info">
+ <div><p class="product__brand" style="margin:0 0 8px">Tom Anderson</p><h1 class="product__title">Drop Top Classic (1998)</h1></div>
+ <div class="product__price"><div class="price" style="font-size:1.9rem"><span>R$ 49.990,00</span><span class="price__installments">ou 10x de R$ 4.999,00 sem juros</span><span class="price__pix">R$ 47.490,50 no Pix (5% off)</span></div></div>
+ <div class="product__buy"><button class="btn btn--dark btn--block" type="button" data-demo-cart>Adicionar ao carrinho</button>
+ <p class="field__help" data-demo-cart-msg hidden role="status">Prévia: na loja real o item entra no carrinho sem recarregar a página.</p></div>
+ <a class="live-card" href="#produto" data-demo-live><span class="live-card__dot" aria-hidden="true"></span><div><strong>Vitrine ao vivo</strong><span>Veja esta peça por videochamada antes de comprar. A gente toca pra você.</span></div></a>
+ <section class="passport" aria-labelledby="pp-t"><div class="passport__head"><h2 class="passport__title" id="pp-t">Passaporte do Instrumento</h2><span class="passport__seal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>Verificado Playtime</span></div>
+  <dl class="passport__grid">
+   <div class="passport__cell"><dt>Nº de série</dt><dd>exemplo</dd></div><div class="passport__cell"><dt>Ano</dt><dd>1998</dd></div>
+   <div class="passport__cell"><dt>Fabricação</dt><dd>EUA</dd></div><div class="passport__cell"><dt>Condição</dt><dd>Original, ótimo estado</dd></div>
+   <div class="passport__cell"><dt>Peso desta peça</dt><dd>3,62 kg <small class="ex">ex.</small></dd></div><div class="passport__cell"><dt>Altura das cordas (12ª casa)</dt><dd>1,6 / 1,4 mm <small class="ex">ex.</small></dd></div>
+   <div class="passport__cell"><dt>Trastes</dt><dd>Inspecionados <small class="ex">ex.</small></dd></div><div class="passport__cell"><dt>Encordoamento</dt><dd>.010–.046 <small class="ex">ex.</small></dd></div>
+   <div class="passport__cell" style="grid-column:1/-1"><dt>Regulagem</dt><dd>Oficina Playtime: tensor, ponte Floyd Rose e oitavas <small class="ex">ex.</small></dd></div></dl>
+  <p class="passport__foot"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>As fotos e medidas são desta unidade, não do catálogo do fabricante. Os valores marcados “ex.” são exemplos: a oficina preenche no cadastro de cada peça.</span></p></section>
+ <div class="sound-demo"><div class="sound-demo__head"><strong><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg> Ouça esta peça</strong><button type="button" class="btn btn--dark" style="min-height:40px;padding:0 18px" data-demo-sound>Ouvir</button></div>
+  <div class="sound-demo__tracks" role="group" aria-label="Escolha o timbre"><button type="button" aria-pressed="true">Limpo</button><button type="button" aria-pressed="false">Com drive</button></div>
+  <div class="sound-demo__wave" aria-hidden="true"><i style="height:48%"></i><i style="height:72%"></i><i style="height:96%"></i><i style="height:33%"></i><i style="height:57%"></i><i style="height:81%"></i><i style="height:105%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:27%"></i><i style="height:51%"></i><i style="height:75%"></i><i style="height:99%"></i><i style="height:36%"></i><i style="height:60%"></i><i style="height:84%"></i><i style="height:108%"></i><i style="height:45%"></i><i style="height:69%"></i><i style="height:93%"></i><i style="height:30%"></i><i style="height:54%"></i><i style="height:78%"></i><i style="height:102%"></i><i style="height:39%"></i><i style="height:63%"></i><i style="height:87%"></i><i style="height:24%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:96%"></i><i style="height:33%"></i><i style="height:57%"></i><i style="height:81%"></i><i style="height:105%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:90%"></i><i style="height:27%"></i><i style="height:51%"></i><i style="height:75%"></i><i style="height:99%"></i><i style="height:36%"></i><i style="height:60%"></i><i style="height:84%"></i><i style="height:108%"></i><i style="height:45%"></i></div><p class="field__help" data-demo-sound-msg style="margin:0">Gravado na Playtime com esta unidade, sem efeitos de pós-produção.</p></div>
+ <ul class="service-list"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><span><strong>Regulado antes do envio.</strong> Nossa oficina ajusta altura das cordas, oitavas e tensor.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><span><strong>Embalagem reforçada.</strong> Caixa dupla e proteção no headstock.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><span><strong>Seu usado como entrada.</strong> Pré-avaliação em um minuto na página Troca.</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>7 dias para devolução.</strong> Direito de arrependimento garantido pelo CDC.</span></li></ul>
+ <div class="accordion"><details open><summary>Descrição</summary><div class="rte"><p>Fabricada por um dos maiores luthiers, esta guitarra é da década de ouro da Tom Anderson. Toda original e em ótimo estado.</p>
+  <ul><li>Tampo em flamed maple 5A</li><li>Braço em maple, escala em rosewood</li><li>Tarraxas Grover, ponte Floyd Rose</li><li>Captadores e elétrica Tom Anderson</li></ul></div></details>
+  <details><summary>Envio e embalagem</summary><div class="rte"><p>Enviamos para todo o Brasil com seguro. O prazo aparece no checkout pelo CEP.</p></div></details></div>
+</div></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">Continue vendo</p><h2>Você também pode gostar</h2></div></div><div class="rail"><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">PIA3761C Steve Vai</h3><div class="product-card__price"><div class="price"><span>R$ 49.999,00</span><span class="price__installments">ou 10x de R$ 4.999,90 sem juros</span><span class="price__pix">R$ 47.499,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige PS10 Paul Stanley</h3><div class="product-card__price"><div class="price"><span>R$ 47.999,00</span><span class="price__installments">ou 10x de R$ 4.799,90 sem juros</span><span class="price__pix">R$ 45.599,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="2">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige LB1 Lari Basilio</h3><div class="product-card__price"><div class="price"><span>R$ 39.990,00</span><span class="price__installments">ou 10x de R$ 3.999,00 sem juros</span><span class="price__pix">R$ 37.990,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="3">
+  <div class="product-card__media ph"><div class="ph__brand">Martin</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Martin</span>
+    <h3 class="product-card__title">D-16E com case</h3><div class="product-card__price"><div class="price"><span>R$ 29.129,00</span><span class="price__installments">ou 10x de R$ 2.912,90 sem juros</span><span class="price__pix">R$ 27.672,55 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">D&#x27;Angelico</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">D&#x27;Angelico</span>
+    <h3 class="product-card__title">Excel 59 Hollowbody</h3><div class="product-card__price"><div class="price"><span>R$ 23.199,00</span><span class="price__installments">ou 10x de R$ 2.319,90 sem juros</span><span class="price__pix">R$ 22.039,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Gibson</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge">Peça única</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Gibson</span>
+    <h3 class="product-card__title">Les Paul Traditional Lemon Green (2012)</h3><div class="product-card__price"><div class="price"><span>R$ 21.990,00</span><span class="price__installments">ou 10x de R$ 2.199,00 sem juros</span><span class="price__pix">R$ 20.890,50 no Pix (5% off)</span></div></div></div></a></div></div></section></div>
+<div data-view="passaporte"><section class="section "><div class="container passport-intro">
+<div class="media-frame" data-reveal><video data-autoplay autoplay muted loop playsinline preload="metadata" poster="videos/passaporte-loop-poster.jpg" aria-label="Passaporte do Instrumento"><source src="videos/passaporte-loop.mp4" type="video/mp4"></video></div>
+<div><div data-reveal><p class="eyebrow">Exclusivo Playtime</p><h2>Passaporte do Instrumento</h2><p class="lead">Duas guitarras do mesmo modelo nunca são iguais: muda o peso, a madeira, a regulagem. Por isso cada peça da Playtime tem a sua ficha, medida pela nossa oficina.</p></div>
+<ul class="feature-list"><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg><div><strong>Número de série e ano</strong><span>Conferidos na peça, com foto do serial.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l2 13H4L6 7z"/><circle cx="12" cy="5" r="2"/></svg><div><strong>Peso na balança</strong><span>Faz diferença em três horas de show.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 14-14 4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg><div><strong>Altura das cordas</strong><span>Medida na 12ª casa, nas cordas grave e aguda.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><div><strong>Trastes e regulagem</strong><span>Estado dos trastes e o que foi ajustado, com data.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg><div><strong>Áudio e vídeo da unidade</strong><span>Gravados aqui, sem pós-produção.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2"/></svg><div><strong>Impresso na case</strong><span>O passaporte vai junto com o instrumento.</span></div></li></ul><a class="btn btn--gold" href="#inicio-vitrine">Ver instrumentos com passaporte</a></div></div></section><section class="section section--light"><div class="container"><div class="section-head"><div><p class="eyebrow">Vitrine</p><h2>Peças com passaporte</h2></div></div><div class="rail"><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">PIA3761C Steve Vai</h3><div class="product-card__price"><div class="price"><span>R$ 49.999,00</span><span class="price__installments">ou 10x de R$ 4.999,90 sem juros</span><span class="price__pix">R$ 47.499,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="1">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige PS10 Paul Stanley</h3><div class="product-card__price"><div class="price"><span>R$ 47.999,00</span><span class="price__installments">ou 10x de R$ 4.799,90 sem juros</span><span class="price__pix">R$ 45.599,05 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="2">
+  <div class="product-card__media ph"><div class="ph__brand">Ibanez</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Ibanez</span>
+    <h3 class="product-card__title">Prestige LB1 Lari Basilio</h3><div class="product-card__price"><div class="price"><span>R$ 39.990,00</span><span class="price__installments">ou 10x de R$ 3.999,00 sem juros</span><span class="price__pix">R$ 37.990,50 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="3">
+  <div class="product-card__media ph"><div class="ph__brand">Martin</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">Martin</span>
+    <h3 class="product-card__title">D-16E com case</h3><div class="product-card__price"><div class="price"><span>R$ 29.129,00</span><span class="price__installments">ou 10x de R$ 2.912,90 sem juros</span><span class="price__pix">R$ 27.672,55 no Pix (5% off)</span></div></div></div></a><a class="product-card" href="#produto" data-reveal data-reveal-delay="0">
+  <div class="product-card__media ph"><div class="ph__brand">D&#x27;Angelico</div><div class="ph__note">foto da peça</div>
+    <div class="product-card__badges"><span class="badge badge--gold"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg>Passaporte</span></div></div>
+  <div class="product-card__body"><span class="product-card__brand">D&#x27;Angelico</span>
+    <h3 class="product-card__title">Excel 59 Hollowbody</h3><div class="product-card__price"><div class="price"><span>R$ 23.199,00</span><span class="price__installments">ou 10x de R$ 2.319,90 sem juros</span><span class="price__pix">R$ 22.039,05 no Pix (5% off)</span></div></div></div></a></div></div></section></div>
+<div data-view="clinica"><section class="section "><div class="container passport-intro">
+<div class="media-frame" data-reveal><video data-autoplay autoplay muted loop playsinline preload="metadata" poster="videos/clinica-loop-poster.jpg" aria-label="Clínica Playtime"><source src="videos/clinica-loop.mp4" type="video/mp4"></video></div>
+<div><div data-reveal><p class="eyebrow">Clínica Playtime</p><h2>Afine. Cuide. Toque por décadas.</h2><p class="lead">Guias da nossa oficina para manter o instrumento tocando como no dia em que chegou.</p></div>
+<ul class="feature-list"><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><path d="m12 16 4-6"/><circle cx="12" cy="16" r="1.4"/></svg><div><strong>Afinador online</strong><span>Abra no celular e afine pelo microfone.</span></div></li><li data-reveal><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></svg><div><strong>Revisão na oficina</strong><span>Regulagem, troca de trastes e elétrica com quem conhece a peça. Agende pelo WhatsApp.</span></div></li></ul><a class="btn btn--gold" href="#afinador">Abrir o afinador</a></div></div></section><section class="section section--light"><div class="container">
+<div class="section-head"><div><p class="eyebrow">Clínica Playtime</p><h2>Como cuidar do seu instrumento</h2><p class="lead">O que nossa oficina faz todo dia, explicado para você fazer em casa.</p></div></div>
+<div class="guide"><nav class="guide__toc" aria-label="Capítulos"><a href="#clinica" data-goto="cap-0">Afinação do dia a dia</a><a href="#clinica" data-goto="cap-1">Troca de cordas</a><a href="#clinica" data-goto="cap-2">Clima e umidade</a><a href="#clinica" data-goto="cap-3">Limpeza</a><a href="#clinica" data-goto="cap-4">Transporte e armazenamento</a><a href="#clinica" data-goto="cap-5">Agenda de revisão</a></nav><div class="guide__body"><section id="cap-0"><h2>Afinação do dia a dia</h2><div class="rte"><p>Afine sempre subindo até a nota: se passou, afrouxe um pouco e suba de novo. Assim a corda assenta na tarraxa e a afinação segura por mais tempo.</p><ul><li><strong>Guitarra e violão (padrão):</strong> Mi, Lá, Ré, Sol, Si, Mi (E A D G B E).</li><li><strong>Baixo de 4 cordas:</strong> Mi, Lá, Ré, Sol (E A D G).</li><li><strong>Drop D:</strong> abaixe só a 6ª corda para Ré.</li></ul><p>Cordas novas esticam nos primeiros dias. É normal precisar afinar várias vezes.</p></div><p class="callout">Use o <a href="#afinador">afinador online da Playtime</a>: funciona pelo microfone do celular.</p></section><section id="cap-1"><h2>Troca de cordas</h2><div class="rte"><ol class="steps"><li><div><strong>Troque uma corda por vez.</strong> Mantém a tensão no braço e a ponte no lugar, principalmente em guitarras com ponte flutuante.</div></li><li><div><strong>Aproveite para limpar.</strong> Com as cordas fora, passe um pano seco no escala e nos trastes.</div></li><li><div><strong>Deixe folga para 2 a 3 voltas</strong> no pino da tarraxa (no baixo, 1 a 2). Voltas demais deixam a afinação instável.</div></li><li><div><strong>Enrole de cima para baixo</strong> no pino, para a corda sair baixa e aumentar o ângulo sobre o nut.</div></li><li><div><strong>Estique com cuidado</strong> puxando cada corda alguns centímetros e afine de novo. Repita duas ou três vezes.</div></li><li><div><strong>Corte o excesso</strong> deixando cerca de 5 mm após o pino.</div></li></ol><p>Quem toca todo dia costuma trocar a cada 1 a 2 meses. Se a corda perdeu brilho, escureceu ou não segura afinação, está na hora.</p></div><p class="callout">Mudou o calibre (ex.: de 0.09 para 0.10)? A regulagem muda junto. Traga para a oficina ou fale com a gente.</p></section><section id="cap-2"><h2>Clima e umidade</h2><div class="rte"><p>Madeira absorve e perde água do ar. Variações bruscas empenam o braço, levantam trastes e, em violões de tampo maciço, podem rachar a madeira.</p><ul><li><strong>Faixa ideal:</strong> umidade relativa entre 45% e 55%, temperatura entre 20 °C e 25 °C.</li><li><strong>Ar-condicionado e inverno seco</strong> derrubam a umidade: use um umidificador de case.</li><li><strong>Verão úmido e litoral:</strong> guarde na case com sachês de sílica ou desumidificador.</li><li><strong>Nunca deixe no carro</strong> ao sol nem perto de janela ou parede externa.</li></ul></div><div class="humidity" aria-label="Faixa de umidade ideal: 45 a 55 por cento"><div class="humidity__bar"></div><div class="humidity__labels"><span>20% seco</span><span><strong>45–55% ideal</strong></span><span>80% úmido</span></div></div><p class="callout">Chegou de viagem ou de outro clima? Deixe o instrumento na case fechada por uma hora antes de abrir.</p></section><section id="cap-3"><h2>Limpeza</h2><div class="rte"><ul><li><strong>Depois de tocar:</strong> pano de microfibra seco nas cordas, no braço e no corpo. Suor e gordura oxidam cordas e trastes.</li><li><strong>Corpo com verniz:</strong> polidor próprio para instrumentos. Evite produtos de casa com silicone ou álcool.</li><li><strong>Acabamento fosco ou nitro:</strong> só pano seco. Polidor deixa manchas brilhantes.</li><li><strong>Escala de rosewood ou ébano:</strong> óleo de limão próprio para escala, uma ou duas vezes por ano, em pouca quantidade.</li><li><strong>Escala de maple:</strong> tem verniz. Limpe com pano levemente úmido; não use óleo.</li></ul></div></section><section id="cap-4"><h2>Transporte e armazenamento</h2><div class="rte"><ul><li><strong>Case rígido</strong> para viagens e instrumentos de alto valor; bag acolchoado para o dia a dia.</li><li><strong>Avião:</strong> leve na cabine sempre que possível. Se despachar, use case rígido e afrouxe um pouco as cordas.</li><li><strong>Na parede ou no suporte:</strong> longe de sol direto, ar-condicionado e cozinha.</li><li><strong>Suportes de espuma</strong> podem reagir com alguns vernizes nitro: prefira suportes compatíveis.</li></ul></div></section><section id="cap-5"><h2>Agenda de revisão</h2><div class="rte"><ul><li><strong>A cada troca de cordas:</strong> limpeza de escala e checagem das tarraxas.</li><li><strong>A cada 6 meses ou mudança de estação:</strong> regulagem (tensor, altura das cordas e oitavas).</li><li><strong>Uma vez por ano:</strong> limpeza de potenciômetros e chaves, revisão de jacks e parafusos.</li><li><strong>Quando trastejar ou a nota morrer:</strong> avaliação dos trastes (nivelamento ou troca).</li></ul></div><p class="callout">Quer que a nossa oficina faça? Agende pelo WhatsApp.</p></section></div></div></div></section></div>
+<div data-view="afinador"><section class="section">
+  <div class="container tuner" data-tuner>
+    <p class="eyebrow">Clínica Playtime</p>
+    <h1 class="h2">Afinador online</h1>
+    <p class="lead" style="margin:0 auto">Funciona com o microfone do celular ou do computador. Afine em silêncio, uma corda por vez.</p>
+
+    <div class="tuner__presets" role="group" aria-label="Afinação" style="margin-top:32px">
+      <button type="button" data-preset="guitarra" aria-pressed="true">Guitarra/violão</button>
+      <button type="button" data-preset="baixo" aria-pressed="false">Baixo 4 cordas</button>
+      <button type="button" data-preset="dropd" aria-pressed="false">Drop D</button>
+    </div>
+
+    <div class="tuner__dial" aria-hidden="true">
+      <svg viewBox="0 0 520 290">
+        <defs><linearGradient id="arc" x1="0" x2="1"><stop offset="0" stop-color="#6e1212"/><stop offset=".42" stop-color="#eca700"/><stop offset=".5" stop-color="#f4efe6"/><stop offset=".58" stop-color="#eca700"/><stop offset="1" stop-color="#6e1212"/></linearGradient></defs>
+        <path d="M40 270 A220 220 0 0 1 480 270" fill="none" stroke="url(#arc)" stroke-width="6" stroke-linecap="round"/>
+        <line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-90 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-81 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-72 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-63 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-54 260 270)"/><line x1="260" y1="62" x2="260" y2="80" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-45 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-36 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-27 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-18 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(-9 260 270)"/><line x1="260" y1="62" x2="260" y2="88" stroke="#eca700" stroke-width="3" transform="rotate(0 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(9 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(18 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(27 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(36 260 270)"/><line x1="260" y1="62" x2="260" y2="80" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(45 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(54 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(63 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(72 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(81 260 270)"/><line x1="260" y1="62" x2="260" y2="74" stroke="rgba(244,239,230,.35)" stroke-width="1.5" transform="rotate(90 260 270)"/>
+        <text x="40" y="290" fill="#c9bfb1" font-size="13" font-family="Montserrat" text-anchor="middle">−50</text>
+        <text x="480" y="290" fill="#c9bfb1" font-size="13" font-family="Montserrat" text-anchor="middle">+50</text>
+        <g class="tuner__needle"><line x1="260" y1="270" x2="260" y2="70" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/><circle cx="260" cy="270" r="9" fill="#eca700"/></g>
+      </svg>
+    </div>
+
+    <div class="tuner__note" data-note aria-live="polite">–</div>
+    <p class="tuner__freq" data-freq>Toque uma corda</p>
+    <p class="tuner__status" data-status role="status"></p>
+
+    <button class="btn btn--gold" type="button" data-start style="margin-top:16px">Ativar microfone</button>
+    <p class="muted" style="font-size:.85rem;margin-top:12px">Na prévia o navegador bloqueia o microfone. Na loja publicada o afinador funciona pelo microfone, e o áudio é analisado só no aparelho. As notas de referência abaixo já tocam aqui.</p>
+
+    <h2 class="h3" style="margin-top:56px">Nota de referência</h2>
+    <p class="muted" style="margin:0">Toque no botão para ouvir a nota de cada corda.</p>
+    <div class="tuner__strings"></div>
+  </div>
+</section>
+
+
+</div>
+<div data-view="troca">
+<section class="section">
+  <div class="container trade-grid">
+    <div>
+      <p class="eyebrow">Troca Playtime</p>
+      <h1 class="h2">Quanto vale o seu instrumento?</h1>
+      <p class="lead">Responda em um minuto e receba uma faixa de valor para usar como entrada.</p>
+      <ul class="feature-list">
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><strong>Faixa de valor na hora</strong><span>Calculada pelo estado e pelo valor de mercado do modelo.</span></div></li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg><div><strong>Avaliação por vídeo</strong><span>Nossa oficina confere a peça numa chamada, sem você sair de casa.</span></div></li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><div><strong>Vale como entrada</strong><span>Use o valor em qualquer instrumento da loja.</span></div></li>
+      </ul>
+    </div>
+
+    <div>
+      <form class="form" data-trade-in novalidate>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.85rem;font-weight:600;margin-bottom:6px">O que você quer trocar?</legend>
+          <div class="choice-group">
+            <label class="choice"><input type="radio" name="tipo" value="Guitarra" checked><span>Guitarra</span></label><label class="choice"><input type="radio" name="tipo" value="Baixo"><span>Baixo</span></label><label class="choice"><input type="radio" name="tipo" value="Violão"><span>Violão</span></label><label class="choice"><input type="radio" name="tipo" value="Amplificador"><span>Amplificador</span></label><label class="choice"><input type="radio" name="tipo" value="Pedal"><span>Pedal</span></label>
+          </div>
+        </fieldset>
+        <div class="field-row">
+          <div class="field"><label for="ti-marca">Marca</label><input id="ti-marca" name="marca" required placeholder="Ex.: Ibanez"></div>
+          <div class="field"><label for="ti-modelo">Modelo</label><input id="ti-modelo" name="modelo" required placeholder="Ex.: RG550"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="ti-ano">Ano (aprox.)</label><input id="ti-ano" name="ano" inputmode="numeric" placeholder="Ex.: 2018"></div>
+          <div class="field"><label for="ti-ref">Valor do modelo novo hoje (R$)</label><input id="ti-ref" name="referencia" inputmode="decimal" placeholder="Ex.: 8.000"><span class="field__help">Opcional. Usamos para calcular a faixa.</span></div>
+        </div>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.85rem;font-weight:600;margin-bottom:6px">Estado</legend>
+          <div class="choice-group">
+            <label class="choice"><input type="radio" name="condicao" value="impecavel"><span>Impecável</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="otimo" checked><span>Ótimo</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="bom"><span>Bom, com marcas</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="regular"><span>Precisa de reparo</span></label>
+          </div>
+        </fieldset>
+        <div class="field-row">
+          <div class="field"><label for="ti-case">Tem case original?</label><select id="ti-case" name="case"><option value="sim">Sim</option><option value="nao" selected>Não</option></select></div>
+          <div class="field"><label for="ti-mod">Tem modificações?</label><select id="ti-mod" name="modificado"><option value="nao" selected>Não</option><option value="sim">Sim</option></select></div>
+        </div>
+        <div class="field"><label for="ti-int">Qual peça da loja te interessa? (opcional)</label><input id="ti-int" name="interesse" placeholder="Ex.: Ibanez Prestige AZ2402"></div>
+        <button class="btn btn--gold" type="submit">Ver faixa de valor</button>
+      </form>
+
+      <div class="estimate" data-estimate data-whatsapp="5511999999999" hidden aria-live="polite" style="margin-top:24px">
+        <p class="eyebrow" style="margin-bottom:8px">Pré-avaliação</p>
+        <p class="estimate__value" data-estimate-range></p>
+        <p class="muted" style="font-size:.85rem">Estimativa para uso como entrada. O valor final sai depois que nossa oficina vê a peça (por vídeo ou na loja).</p>
+        <a class="btn btn--gold" data-estimate-link href="#" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Enviar para avaliação no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+</main>
+<footer class="site-footer"><div class="container"><div class="site-footer__grid">
+<div><img class="site-footer__logo" src="logo-dourado.svg" alt="Playtime Instrumentos Musicais" width="180" height="123" loading="lazy"><p class="muted">Guitarras, baixos, violões e pedais escolhidos a dedo. Cada peça passa pela nossa oficina antes de chegar até você.</p></div>
+<div><h4>Loja</h4><ul><li><a href="#inicio-vitrine">Guitarras</a></li><li><a href="#inicio-vitrine">Violões</a></li><li><a href="#inicio-vitrine">Baixos</a></li><li><a href="#inicio-garimpo">Garimpo</a></li></ul></div>
+<div><h4>Serviços</h4><ul><li><a href="#clinica">Clínica Playtime</a></li><li><a href="#afinador">Afinador online</a></li><li><a href="#troca">Avalie sua troca</a></li><li><a href="#passaporte">Passaporte do Instrumento</a></li></ul></div>
+<div><h4>Atendimento</h4><p class="muted">Seg a sex, 10h às 19h<br>Sáb, 10h às 16h<br>contato@playtimeguitarshop.com</p></div>
+</div><div class="site-footer__bottom"><span>© 2026 Playtime Instrumentos Musicais</span><div class="pay-icons"><span>Pix</span><span>Visa</span><span>Master</span><span>Elo</span><span>Boleto</span></div></div></div></footer>
+<script>/* Playtime — interações do tema (sem dependências) */
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var money = function (v) { return 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  /* ---------- menu mobile ---------- */
+  function menu() {
+    var btn = $('.menu-toggle'), nav = $('.site-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) { btn.click(); btn.focus(); }
+    });
+  }
+
+  /* ---------- revelação ao rolar ---------- */
+  function reveal() {
+    var els = $$('[data-reveal]');
+    if (reduce || !('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('is-in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  }
+
+  /* ---------- adicionar ao carrinho sem recarregar ---------- */
+  function cart() {
+    $$('form[data-ajax-cart]').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        if (!window.fetch) return;
+        e.preventDefault();
+        var btn = form.querySelector('[type="submit"]');
+        var label = btn ? btn.innerHTML : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Adicionando…'; }
+        fetch((window.Shopify && Shopify.routes ? Shopify.routes.root : '/') + 'cart/add.js', {
+          method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form)
+        }).then(function (r) { return r.json().then(function (j) { if (!r.ok) throw j; return j; }); })
+          .then(function () { return fetch((window.Shopify && Shopify.routes ? Shopify.routes.root : '/') + 'cart.js').then(function (r) { return r.json(); }); })
+          .then(function (c) {
+            $$('[data-cart-count]').forEach(function (el) { el.textContent = c.item_count; el.hidden = c.item_count === 0; });
+            if (btn) { btn.textContent = 'Adicionado ao carrinho'; }
+            setTimeout(function () { if (btn) { btn.disabled = false; btn.innerHTML = label; } }, 2200);
+          })
+          .catch(function (err) {
+            if (btn) { btn.disabled = false; btn.innerHTML = label; }
+            var msg = form.querySelector('[data-cart-error]');
+            if (msg) { msg.textContent = (err && err.description) || 'Não foi possível adicionar. Tente novamente.'; msg.hidden = false; }
+          });
+      });
+    });
+    $$('[data-qty]').forEach(function (wrap) {
+      var input = wrap.querySelector('input');
+      wrap.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        var v = Math.max(1, (parseInt(input.value, 10) || 1) + (b.dataset.step === 'up' ? 1 : -1));
+        input.value = v;
+      });
+    });
+  }
+
+  /* ---------- índice do guia (Clínica) ---------- */
+  function toc() {
+    var links = $$('.guide__toc a');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {};
+    links.forEach(function (a) { var id = a.getAttribute('href').slice(1); var t = document.getElementById(id); if (t) map[id] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { links.forEach(function (l) { l.classList.remove('is-active'); }); var a = map[en.target.id]; if (a) a.classList.add('is-active'); }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    Object.keys(map).forEach(function (id) { io.observe(document.getElementById(id)); });
+  }
+
+  /* ---------- "Ouça esta peça" ---------- */
+  function sound() {
+    $$('[data-sound-demo]').forEach(function (box) {
+      var audio = new Audio();
+      audio.preload = 'none';
+      var bars = $$('.sound-demo__wave i', box);
+      var btns = $$('.sound-demo__tracks button', box);
+      var play = $('[data-sound-play]', box);
+      var status = $('[data-sound-status]', box);
+      function paint() {
+        var p = audio.duration ? audio.currentTime / audio.duration : 0;
+        var n = Math.round(p * bars.length);
+        bars.forEach(function (b, i) { b.classList.toggle('is-played', i < n); });
+        if (!audio.paused) requestAnimationFrame(paint);
+      }
+      function select(btn) {
+        btns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+        audio.src = btn.getAttribute('data-src');
+        audio.play().then(function () { play.textContent = 'Pausar'; status.textContent = 'Tocando: ' + btn.textContent; paint(); }).catch(function () {});
+      }
+      btns.forEach(function (b) { b.addEventListener('click', function () { select(b); }); });
+      play.addEventListener('click', function () {
+        if (!audio.src) { if (btns[0]) select(btns[0]); return; }
+        if (audio.paused) { audio.play(); play.textContent = 'Pausar'; paint(); } else { audio.pause(); play.textContent = 'Ouvir'; }
+      });
+      audio.addEventListener('ended', function () { play.textContent = 'Ouvir'; status.textContent = ''; });
+    });
+  }
+
+  /* ---------- visualizador 360° (arrastar) ---------- */
+  function viewer360() {
+    $$('[data-viewer360]').forEach(function (v) {
+      var img = $('img', v);
+      var srcs = JSON.parse(v.getAttribute('data-frames') || '[]');
+      if (srcs.length < 2) return;
+      srcs.forEach(function (s) { var i = new Image(); i.src = s; });
+      var idx = 0, startX = null, startIdx = 0;
+      function show(i) { idx = (i % srcs.length + srcs.length) % srcs.length; img.src = srcs[idx]; }
+      v.addEventListener('pointerdown', function (e) { startX = e.clientX; startIdx = idx; v.setPointerCapture(e.pointerId); });
+      v.addEventListener('pointermove', function (e) { if (startX === null) return; show(startIdx + Math.round((e.clientX - startX) / 12)); });
+      v.addEventListener('pointerup', function () { startX = null; });
+      v.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1); });
+    });
+  }
+
+  /* ---------- pré-avaliação de troca ---------- */
+  function tradeIn() {
+    var form = $('[data-trade-in]');
+    if (!form) return;
+    var out = $('[data-estimate]', form.parentNode) || $('[data-estimate]');
+    var factor = { 'impecavel': [0.68, 0.78], 'otimo': [0.58, 0.68], 'bom': [0.46, 0.58], 'regular': [0.32, 0.46] };
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      var ref = parseFloat(String(fd.get('referencia') || '').replace(/\./g, '').replace(',', '.'));
+      var cond = fd.get('condicao') || 'bom';
+      var f = factor[cond] || factor.bom;
+      if (fd.get('case') === 'sim') f = [f[0] + 0.02, f[1] + 0.02];
+      if (fd.get('modificado') === 'sim') f = [f[0] - 0.04, f[1] - 0.02];
+      var text = 'Olá, Playtime! Quero avaliar meu instrumento para troca:%0A' +
+        '• Tipo: ' + encodeURIComponent(fd.get('tipo') || '') + '%0A' +
+        '• Marca/modelo: ' + encodeURIComponent((fd.get('marca') || '') + ' ' + (fd.get('modelo') || '')) + '%0A' +
+        '• Ano: ' + encodeURIComponent(fd.get('ano') || '-') + '%0A' +
+        '• Estado: ' + encodeURIComponent(cond) + '%0A' +
+        '• Case original: ' + encodeURIComponent(fd.get('case') || '-') + '%0A' +
+        '• Modificações: ' + encodeURIComponent(fd.get('modificado') || '-') + '%0A' +
+        '• Interesse: ' + encodeURIComponent(fd.get('interesse') || '-');
+      var wa = out.getAttribute('data-whatsapp');
+      var range = $('[data-estimate-range]', out), link = $('[data-estimate-link]', out);
+      if (ref > 0) {
+        range.textContent = money(Math.round(ref * f[0] / 50) * 50) + ' a ' + money(Math.round(ref * f[1] / 50) * 50);
+      } else {
+        range.textContent = 'Informe o valor de referência para ver a faixa';
+      }
+      link.href = 'https://wa.me/' + wa + '?text=' + text;
+      out.hidden = false;
+      out.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    });
+  }
+
+  /* ---------- vídeos: pausa quando sai da tela / respeita movimento reduzido ---------- */
+  function videos() {
+    var vids = $$('video[data-autoplay]');
+    if (!vids.length) return;
+    if (reduce) { vids.forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }); return; }
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { var p = en.target.play(); if (p && p.catch) p.catch(function () {}); } else en.target.pause(); });
+    }, { threshold: 0.2 });
+    vids.forEach(function (v) { io.observe(v); });
+  }
+
+  function boot() { menu(); reveal(); cart(); toc(); sound(); viewer360(); tradeIn(); videos(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+  document.addEventListener('shopify:section:load', function () { reveal(); videos(); viewer360(); sound(); });
+})();
+</script>
+<script>/*
+ * Playtime — hero com rolagem cinematográfica.
+ * Adaptação do runtime do ScrollCraft (frames em canvas controlados pela rolagem)
+ * para funcionar como uma seção do Shopify: o canvas fica "preso" (sticky) apenas
+ * enquanto a seção está na tela, e o progresso é calculado dentro da seção.
+ * Mantém as regras do motor original: pré-carregamento por quadros-chave (a cada 5),
+ * escala "cover", DPR limitado a 2, conjunto mobile separado e um único rAF por vez.
+ */
+(function () {
+  function framePath(tpl, idx) {
+    var s = String(idx);
+    while (s.length < 4) s = '0' + s;
+    return tpl.replace('0000', s);
+  }
+
+  function init(root) {
+    var canvas = root.querySelector('.scroll-hero__canvas');
+    var stage = root.querySelector('.scroll-hero__stage');
+    if (!canvas || !stage) return;
+    var ctx = canvas.getContext('2d');
+    var steps = Array.prototype.slice.call(root.querySelectorAll('.scroll-hero__step'));
+    var dots = Array.prototype.slice.call(root.querySelectorAll('.scroll-hero__progress span'));
+    var hint = root.querySelector('.scroll-hero__hint');
+
+    var desktopTpl = root.getAttribute('data-frames') || '';
+    var mobileTpl = root.getAttribute('data-frames-mobile') || '';
+    var desktopCount = parseInt(root.getAttribute('data-count'), 10) || 0;
+    var mobileCount = parseInt(root.getAttribute('data-count-mobile'), 10) || 0;
+    var hasMobile = !!(mobileTpl && mobileCount);
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Altura da pista: soma das alturas de cada passo (como no scrollcraft.json)
+    var heights = steps.map(function (s) { return parseInt(s.getAttribute('data-scroll'), 10) || 1200; });
+    var total = heights.reduce(function (a, b) { return a + b; }, 0);
+    root.style.height = 'calc(100vh + ' + total + 'px)';
+    var bounds = [];
+    var acc = 0;
+    heights.forEach(function (h) { bounds.push([acc / total, (acc + h) / total]); acc += h; });
+
+    var mq = window.matchMedia('(max-width: 767px)');
+    var isMobile = hasMobile && mq.matches;
+    var desktopImages = new Array(desktopCount);
+    var mobileImages = hasMobile ? new Array(mobileCount) : null;
+    var currentFrame = 0;
+    var activeStep = -1;
+
+    function frameCount() { return isMobile ? mobileCount : desktopCount; }
+    function images() { return (isMobile && mobileImages) ? mobileImages : desktopImages; }
+
+    function resize() {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var w = stage.clientWidth, h = stage.clientHeight;
+      canvas.width = Math.max(1, Math.round(w * dpr));
+      canvas.height = Math.max(1, Math.round(h * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw(currentFrame);
+    }
+
+    function draw(i) {
+      var img = images()[i];
+      if (!img || !img.complete || !img.naturalWidth || !img.naturalHeight) return;
+      var w = stage.clientWidth, h = stage.clientHeight;
+      var s = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+      var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
+      ctx.clearRect(0, 0, w, h);
+      ctx.drawImage(img, (w - dw) / 2, (h - dh) / 2, dw, dh);
+    }
+
+    function preloadSet(count, tpl, target) {
+      if (!count || !tpl) return;
+      var STEP = 5, keys = [], settled = 0;
+      for (var i = 0; i < count; i += STEP) keys.push(i);
+      function one(idx, after) {
+        var img = new Image();
+        img.decoding = 'async';
+        img.src = framePath(tpl, idx);
+        img.onload = function () { target[idx] = img; if (idx === currentFrame) draw(idx); if (after) after(); };
+        img.onerror = function () { if (after) after(); };
+      }
+      keys.forEach(function (k) {
+        one(k, function () {
+          settled++;
+          if (settled === keys.length) for (var j = 0; j < count; j++) if (j % STEP) one(j);
+        });
+      });
+    }
+
+    var loaded = { d: false, m: false };
+    function preload() {
+      if (isMobile) { if (!loaded.m) { preloadSet(mobileCount, mobileTpl, mobileImages); loaded.m = true; } }
+      else if (!loaded.d) { preloadSet(desktopCount, desktopTpl, desktopImages); loaded.d = true; }
+    }
+
+    function setStep(i) {
+      if (i === activeStep) return;
+      activeStep = i;
+      steps.forEach(function (s, n) {
+        var on = n === i;
+        s.classList.toggle('is-active', on);
+        s.setAttribute('aria-hidden', on ? 'false' : 'true');
+        Array.prototype.forEach.call(s.querySelectorAll('a, button'), function (el) { el.tabIndex = on ? 0 : -1; });
+      });
+      dots.forEach(function (d, n) { d.classList.toggle('is-on', n <= i); });
+    }
+
+    var raf = 0;
+    function update() {
+      raf = 0;
+      var rect = root.getBoundingClientRect();
+      var track = root.offsetHeight - window.innerHeight;
+      var p = track > 0 ? -rect.top / track : 0;
+      p = Math.min(1, Math.max(0, p));
+      var last = frameCount() - 1;
+      var idx = last > 0 ? Math.round((reduce ? 0 : p) * last) : 0;
+      if (idx !== currentFrame) { currentFrame = idx; draw(idx); }
+      var step = 0;
+      for (var i = 0; i < bounds.length; i++) if (p >= bounds[i][0]) step = i;
+      setStep(step);
+      if (hint) hint.style.opacity = p > 0.02 ? '0' : '1';
+    }
+    function onScroll() { if (!raf) raf = requestAnimationFrame(update); }
+
+    if (hasMobile) {
+      mq.addEventListener('change', function (e) { isMobile = e.matches; preload(); currentFrame = -1; resize(); onScroll(); });
+    }
+
+    // Só começa a baixar os quadros quando a seção está perto da tela
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { preload(); io.disconnect(); }
+      }, { rootMargin: '200px' });
+      io.observe(root);
+    } else { preload(); }
+
+    window.addEventListener('resize', resize, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
+    resize();
+    update();
+  }
+
+  function boot() { Array.prototype.forEach.call(document.querySelectorAll('[data-scroll-hero]'), init); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+  document.addEventListener('shopify:section:load', boot);
+})();
+</script>
+<script>/*
+ * Playtime — Afinador cromático no navegador (Web Audio API, autocorrelação).
+ * Nada é gravado nem enviado: o áudio do microfone é analisado só no aparelho.
+ */
+(function () {
+  var root = document.querySelector('[data-tuner]');
+  if (!root) return;
+  var NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+  var PT = { C: 'Dó', 'C#': 'Dó#', D: 'Ré', 'D#': 'Ré#', E: 'Mi', F: 'Fá', 'F#': 'Fá#', G: 'Sol', 'G#': 'Sol#', A: 'Lá', 'A#': 'Lá#', B: 'Si' };
+  var PRESETS = {
+    guitarra: [['E', 2], ['A', 2], ['D', 3], ['G', 3], ['B', 3], ['E', 4]],
+    baixo: [['E', 1], ['A', 1], ['D', 2], ['G', 2]],
+    dropd: [['D', 2], ['A', 2], ['D', 3], ['G', 3], ['B', 3], ['E', 4]]
+  };
+  var noteEl = root.querySelector('[data-note]');
+  var freqEl = root.querySelector('[data-freq]');
+  var statusEl = root.querySelector('[data-status]');
+  var needle = root.querySelector('.tuner__needle');
+  var startBtn = root.querySelector('[data-start]');
+  var stringsEl = root.querySelector('.tuner__strings');
+  var preset = 'guitarra';
+  var ctx, analyser, buf, raf, stream, smooth = 0;
+
+  function freqOf(name, oct) { var n = NOTES.indexOf(name) + (oct + 1) * 12; return 440 * Math.pow(2, (n - 69) / 12); }
+
+  function renderStrings() {
+    stringsEl.innerHTML = '';
+    PRESETS[preset].forEach(function (s) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = s[0];
+      b.setAttribute('aria-label', 'Corda ' + PT[s[0]] + ' (' + freqOf(s[0], s[1]).toFixed(2).replace('.', ',') + ' Hz)');
+      b.dataset.freq = freqOf(s[0], s[1]);
+      b.addEventListener('click', function () { playRef(parseFloat(b.dataset.freq)); });
+      stringsEl.appendChild(b);
+    });
+  }
+
+  function playRef(f) {
+    var c = ctx || new (window.AudioContext || window.webkitAudioContext)();
+    ctx = c;
+    var o = c.createOscillator(), g = c.createGain();
+    o.type = 'triangle'; o.frequency.value = f;
+    g.gain.setValueAtTime(0.0001, c.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.25, c.currentTime + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 2.2);
+    o.connect(g).connect(c.destination); o.start(); o.stop(c.currentTime + 2.3);
+  }
+
+  function autoCorrelate(b, rate) {
+    var size = b.length, rms = 0, i;
+    for (i = 0; i < size; i++) rms += b[i] * b[i];
+    rms = Math.sqrt(rms / size);
+    if (rms < 0.01) return -1;
+    var r1 = 0, r2 = size - 1, th = 0.2;
+    for (i = 0; i < size / 2; i++) if (Math.abs(b[i]) < th) { r1 = i; break; }
+    for (i = 1; i < size / 2; i++) if (Math.abs(b[size - i]) < th) { r2 = size - i; break; }
+    b = b.slice(r1, r2); size = b.length;
+    var c = new Array(size).fill(0);
+    for (i = 0; i < size; i++) for (var j = 0; j < size - i; j++) c[i] += b[j] * b[j + i];
+    var d = 0; while (c[d] > c[d + 1]) d++;
+    var max = -1, pos = -1;
+    for (i = d; i < size; i++) if (c[i] > max) { max = c[i]; pos = i; }
+    var T0 = pos, x1 = c[T0 - 1], x2 = c[T0], x3 = c[T0 + 1];
+    var a = (x1 + x3 - 2 * x2) / 2, bb = (x3 - x1) / 2;
+    if (a) T0 = T0 - bb / (2 * a);
+    return rate / T0;
+  }
+
+  function tick() {
+    analyser.getFloatTimeDomainData(buf);
+    var f = autoCorrelate(buf, ctx.sampleRate);
+    if (f > 25 && f < 1500) {
+      var n = 12 * Math.log2(f / 440) + 69;
+      var r = Math.round(n);
+      var cents = Math.round((n - r) * 100);
+      smooth = smooth * 0.7 + cents * 0.3;
+      var name = NOTES[(r % 12 + 12) % 12];
+      noteEl.textContent = name;
+      noteEl.setAttribute('aria-label', PT[name]);
+      freqEl.textContent = f.toFixed(1).replace('.', ',') + ' Hz · ' + (cents > 0 ? '+' : '') + cents + ' cents';
+      needle.style.transform = 'rotate(' + Math.max(-50, Math.min(50, smooth)) * 0.9 + 'deg)';
+      var inTune = Math.abs(cents) <= 4;
+      statusEl.textContent = inTune ? 'Afinado' : (cents < 0 ? 'Abaixo — aperte a tarraxa' : 'Acima — afrouxe a tarraxa');
+      statusEl.classList.toggle('is-in', inTune);
+      Array.prototype.forEach.call(stringsEl.children, function (b) {
+        b.classList.toggle('is-target', Math.abs(12 * Math.log2(f / parseFloat(b.dataset.freq))) < 0.5);
+      });
+    }
+    raf = requestAnimationFrame(tick);
+  }
+
+  startBtn.addEventListener('click', function () {
+    if (stream) { stop(); return; }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { statusEl.textContent = 'Seu navegador não permite usar o microfone.'; return; }
+    navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } }).then(function (s) {
+      stream = s;
+      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+      var src = ctx.createMediaStreamSource(s);
+      analyser = ctx.createAnalyser(); analyser.fftSize = 2048;
+      buf = new Float32Array(analyser.fftSize);
+      src.connect(analyser);
+      startBtn.textContent = 'Parar afinador';
+      statusEl.textContent = 'Toque uma corda solta';
+      tick();
+    }).catch(function () { statusEl.textContent = 'Permita o acesso ao microfone para afinar.'; });
+  });
+
+  function stop() {
+    cancelAnimationFrame(raf);
+    stream.getTracks().forEach(function (t) { t.stop(); });
+    stream = null;
+    startBtn.textContent = 'Ativar microfone';
+    statusEl.textContent = '';
+  }
+
+  Array.prototype.forEach.call(root.querySelectorAll('.tuner__presets button'), function (b) {
+    b.addEventListener('click', function () {
+      preset = b.dataset.preset;
+      Array.prototype.forEach.call(root.querySelectorAll('.tuner__presets button'), function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      renderStrings();
+    });
+  });
+  renderStrings();
+})();
+</script>
+<script>
+(function () {
+  var views = ['inicio', 'produto', 'clinica', 'afinador', 'troca', 'passaporte'];
+  function show() {
+    var h = (location.hash || '#inicio').slice(1);
+    var target = h, anchor = null;
+    if (views.indexOf(h) < 0) { var base = h.split('-')[0]; target = views.indexOf(base) >= 0 ? base : 'inicio'; anchor = document.getElementById(h); }
+    document.querySelectorAll('[data-view]').forEach(function (v) { v.classList.toggle('is-current', v.dataset.view === target); });
+    document.querySelectorAll('.site-nav a').forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('href') === '#' + target); });
+    var nav = document.querySelector('.site-nav'); if (nav && nav.classList.contains('is-open')) document.querySelector('.menu-toggle').click();
+    if (anchor) anchor.scrollIntoView(); else window.scrollTo(0, 0);
+    window.dispatchEvent(new Event('resize'));
+  }
+  window.addEventListener('hashchange', show);
+  show();
+  document.addEventListener('click', function (ev) {
+    var g = ev.target.closest('[data-goto]'); if (g) { ev.preventDefault(); document.getElementById(g.dataset.goto).scrollIntoView({ behavior: 'smooth' }); }
+    if (ev.target.closest('[data-demo-cart]')) { var m = document.querySelector('[data-demo-cart-msg]'); m.hidden = false; var c = document.querySelector('[data-cart-count]'); c.hidden = false; c.textContent = (+c.textContent || 0) + 1; }
+    if (ev.target.closest('[data-demo-sound]')) document.querySelector('[data-demo-sound-msg]').textContent = 'Na loja, este botão toca o áudio gravado com a peça (arquivo enviado no cadastro do produto).';
+    if (ev.target.closest('[data-demo-live]')) { ev.preventDefault(); alertBox(); }
+  });
+  function alertBox() { var l = document.querySelector('[data-demo-live] span:last-child'); if (l) l.textContent = 'Na loja, abre o WhatsApp com a mensagem pronta para agendar a videochamada.'; }
+})();
+</script>
+
+</body></html>
