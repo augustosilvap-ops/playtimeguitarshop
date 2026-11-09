@@ -1,0 +1,17 @@
+<section class="section section--light" style="padding-top:48px"><div class="container">
+  <h1 class="h2">Buscar</h1>
+  <form class="search-form" action="{{ routes.search_url }}" method="get" role="search">
+    <label class="visually-hidden" for="Search">Buscar</label>
+    <input id="Search" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Marca, modelo ou tipo de instrumento">
+    <input type="hidden" name="type" value="product">
+    <button class="btn btn--dark" type="submit">Buscar</button>
+  </form>
+  {%- if search.performed -%}
+    <p class="muted" style="margin:24px 0">{{ search.results_count }} resultado(s) para “{{ search.terms }}”</p>
+    {%- paginate search.results by 24 -%}
+      <div class="grid grid--4">{%- for item in search.results -%}{%- if item.object_type == 'product' -%}{% render 'product-card', product: item, delay: forloop.index0 %}{%- endif -%}{%- endfor -%}</div>
+      {%- if paginate.pages > 1 -%}<nav class="pagination">{{ paginate | default_pagination }}</nav>{%- endif -%}
+    {%- endpaginate -%}
+  {%- endif -%}
+</div></section>
+{% schema %}{ "name": "Busca" }{% endschema %}

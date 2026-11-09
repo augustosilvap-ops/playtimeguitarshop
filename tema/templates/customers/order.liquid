@@ -1,0 +1,9 @@
+<section class="section section--light"><div class="container customer">
+<p><a href="{{ routes.account_url }}">← Minha conta</a></p>
+<h1 class="h2">Pedido {{ order.name }}</h1>
+<p class="muted">Feito em {{ order.created_at | date: '%d/%m/%Y' }} · {{ order.financial_status_label }} · {{ order.fulfillment_status_label }}</p>
+<table class="cart-table"><tbody>
+{%- for item in order.line_items -%}<tr><td>{{ item.title }} × {{ item.quantity }}</td><td style="text-align:right">{{ item.final_line_price | money }}</td></tr>{%- endfor -%}
+<tr><td><strong>Total</strong></td><td style="text-align:right"><strong>{{ order.total_price | money }}</strong></td></tr>
+</tbody></table>
+</div></section>

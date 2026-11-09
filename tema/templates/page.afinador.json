@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "tuner": {
+      "type": "tuner",
+      "settings": {}
+    }
+  },
+  "order": [
+    "tuner"
+  ]
+}

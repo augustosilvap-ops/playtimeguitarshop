@@ -1,0 +1,30 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Playtime",
+    "theme_version": "1.0.0",
+    "theme_author": "Playtime Instrumentos Musicais",
+    "theme_documentation_url": "https://github.com/augustosilvap-ops/playtimeguitarshop",
+    "theme_support_url": "https://github.com/augustosilvap-ops/playtimeguitarshop"
+  },
+  {
+    "name": "Marca",
+    "settings": [
+      { "type": "image_picker", "id": "logo", "label": "Logo (opcional)", "info": "Se ficar vazio, usamos o logo dourado do tema." },
+      { "type": "image_picker", "id": "favicon", "label": "Ícone da aba (favicon)" }
+    ]
+  },
+  {
+    "name": "Preço e pagamento",
+    "settings": [
+      { "type": "range", "id": "installments", "label": "Parcelas sem juros", "min": 1, "max": 12, "step": 1, "default": 10 },
+      { "type": "range", "id": "pix_discount", "label": "Desconto no Pix (%)", "min": 0, "max": 20, "step": 1, "unit": "%", "default": 5, "info": "Só exibe o valor. O desconto em si é configurado no app de pagamento ou em Descontos." }
+    ]
+  },
+  {
+    "name": "Contato",
+    "settings": [
+      { "type": "text", "id": "whatsapp", "label": "WhatsApp (só números, com 55 e DDD)", "default": "554135014977" }
+    ]
+  }
+]

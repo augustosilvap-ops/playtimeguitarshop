@@ -1,0 +1,17 @@
+{
+  "type": "footer",
+  "name": "Rodapé",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "loja": { "type": "menu", "settings": { "title": "Loja", "menu": "footer" } },
+        "servicos": { "type": "menu", "settings": { "title": "Serviços", "menu": "servicos" } },
+        "atendimento": { "type": "text", "settings": { "title": "Atendimento", "text": "<p>Seg a sex, 10h às 19h<br>Sáb, 10h às 16h<br>(41) 3501-4977<br>contato@playtimeguitarshop.com</p>" } }
+      },
+      "block_order": ["loja", "servicos", "atendimento"],
+      "settings": {}
+    }
+  },
+  "order": ["footer"]
+}

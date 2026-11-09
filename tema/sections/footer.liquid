@@ -1,0 +1,40 @@
+<footer class="site-footer"><div class="container"><div class="site-footer__grid">
+  <div>
+    <img class="site-footer__logo" src="{{ 'logo-dourado.svg' | asset_url }}" alt="{{ shop.name }}" width="180" height="123" loading="lazy">
+    {%- if section.settings.about != blank -%}<p class="muted">{{ section.settings.about }}</p>{%- endif -%}
+  </div>
+  {%- for block in section.blocks -%}
+    <div {{ block.shopify_attributes }}>
+      <h4>{{ block.settings.title }}</h4>
+      {%- if block.type == 'menu' -%}
+        <ul>{%- for link in block.settings.menu.links -%}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{%- endfor -%}</ul>
+      {%- else -%}
+        <div class="muted">{{ block.settings.text }}</div>
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>
+<div class="site-footer__bottom"><span>&copy; {{ 'now' | date: '%Y' }} {{ section.settings.legal | default: shop.name }}</span>
+  <div class="pay-icons">{%- assign pays = section.settings.payments | split: ',' -%}{%- for p in pays -%}<span>{{ p | strip }}</span>{%- endfor -%}</div>
+</div></div></footer>
+{% schema %}
+{
+  "name": "Rodapé",
+  "settings": [
+    { "type": "textarea", "id": "about", "label": "Sobre a loja", "default": "Guitarras, baixos, violões e pedais escolhidos a dedo. Cada peça passa pela nossa oficina antes de chegar até você." },
+    { "type": "text", "id": "legal", "label": "Nome no copyright", "default": "Playtime Instrumentos Musicais" },
+    { "type": "text", "id": "payments", "label": "Formas de pagamento (separadas por vírgula)", "default": "Pix, Visa, Master, Elo, Boleto" }
+  ],
+  "blocks": [
+    { "type": "menu", "name": "Menu", "settings": [
+      { "type": "text", "id": "title", "label": "Título", "default": "Loja" },
+      { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" }
+    ]},
+    { "type": "text", "name": "Texto", "settings": [
+      { "type": "text", "id": "title", "label": "Título", "default": "Atendimento" },
+      { "type": "richtext", "id": "text", "label": "Texto", "default": "<p>Seg a sex, 10h às 19h<br>Sáb, 10h às 16h<br>(41) 3501-4977<br>contato@playtimeguitarshop.com</p>" }
+    ]}
+  ],
+  "presets": [{ "name": "Rodapé" }]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+<section class="section"><div class="container">
+  <div class="section-head" data-reveal><div>
+    {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2>{{ section.settings.heading }}</h2>
+  </div></div>
+  <div class="grid grid--4">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign c = block.settings.collection
+        assign img = block.settings.image | default: c.featured_image
+        if img == blank and c.products.size > 0
+          assign img = c.products.first.featured_media
+        endif
+      -%}
+      <a class="cat-tile" href="{{ c.url | default: '#' }}" data-reveal data-reveal-delay="{{ forloop.index0 | modulo: 4 }}" {{ block.shopify_attributes }}>
+        {%- if img != blank -%}
+          {{ img | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400,600,900', sizes: '(max-width: 989px) 50vw, 25vw', alt: '' }}
+        {%- else -%}<div class="ph ph--tall"></div>{%- endif -%}
+        <div class="cat-tile__label"><h3>{{ block.settings.title | default: c.title }}</h3>
+          {%- if c != blank -%}<span>{{ c.products_count }} {% if c.products_count == 1 %}peça{% else %}peças{% endif %}</span>{%- endif -%}
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+</div></section>
+{% schema %}
+{
+  "name": "Categorias",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Sobretítulo", "default": "Acervo" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Escolha pelo que você toca" }
+  ],
+  "blocks": [
+    { "type": "collection", "name": "Coleção", "settings": [
+      { "type": "collection", "id": "collection", "label": "Coleção" },
+      { "type": "text", "id": "title", "label": "Título (opcional)" },
+      { "type": "image_picker", "id": "image", "label": "Imagem (opcional)", "info": "Se ficar vazia, usamos a foto da coleção ou do primeiro produto." }
+    ]}
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Categorias", "blocks": [{ "type": "collection" }, { "type": "collection" }, { "type": "collection" }, { "type": "collection" }] }]
+}
+{% endschema %}

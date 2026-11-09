@@ -1,0 +1,11 @@
+{%- if section.settings.text != blank -%}
+<div class="announce">{{ section.settings.text }}</div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Barra de anúncio",
+  "settings": [
+    { "type": "inline_richtext", "id": "text", "label": "Texto", "default": "Todo instrumento sai <strong>regulado</strong> pela nossa oficina · 10x sem juros · Aceitamos seu instrumento na troca" }
+  ]
+}
+{% endschema %}

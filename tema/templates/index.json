@@ -1,0 +1,350 @@
+{
+  "sections": {
+    "hero": {
+      "type": "scroll-hero",
+      "settings": {
+        "count": 144,
+        "count_mobile": 144
+      },
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "layout": "center",
+            "scroll": 1400,
+            "eyebrow": "Playtime Instrumentos Musicais",
+            "heading": "Instrumentos com história.",
+            "text": "Guitarras, baixos e violões escolhidos a dedo e regulados antes de chegar até você."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "layout": "left",
+            "scroll": 1500,
+            "eyebrow": "Passaporte do Instrumento",
+            "heading": "Cada peça tem passaporte.",
+            "text": "Número de série, peso e medidas da unidade que você vai receber. Não do catálogo."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "layout": "right",
+            "scroll": 1300,
+            "eyebrow": "Ouça antes de comprar",
+            "heading": "O som é o desta peça.",
+            "text": "Gravamos os instrumentos aqui na loja e mostramos ao vivo por vídeo."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "layout": "lower-third",
+            "scroll": 1200,
+            "eyebrow": "Clínica Playtime",
+            "heading": "Toque por décadas.",
+            "text": "Afinador, guias de cuidado e oficina própria depois da compra.",
+            "btn1_label": "Ver instrumentos",
+            "btn1_link": "shopify://collections/all",
+            "btn2_label": "Conhecer a Clínica",
+            "btn2_link": "shopify://pages/clinica"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ]
+    },
+    "trust": {
+      "type": "trust-bar",
+      "settings": {},
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "tools",
+            "title": "Regulado antes do envio",
+            "text": "Altura das cordas, oitavas e tensor ajustados."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "passport",
+            "title": "Passaporte da peça",
+            "text": "Série, peso e medidas desta unidade."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "card",
+            "title": "Até 10x sem juros",
+            "text": "Ou desconto no Pix."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "icon": "swap",
+            "title": "Seu usado na troca",
+            "text": "Pré-avaliação em um minuto."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "cats": {
+      "type": "collection-tiles",
+      "settings": {
+        "eyebrow": "Acervo",
+        "heading": "Escolha pelo que você toca"
+      },
+      "blocks": {
+        "collection_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "guitarras",
+            "title": "Guitarras"
+          }
+        },
+        "collection_2": {
+          "type": "collection",
+          "settings": {
+            "collection": "violoes",
+            "title": "Violões"
+          }
+        },
+        "collection_3": {
+          "type": "collection",
+          "settings": {
+            "collection": "baixos",
+            "title": "Baixos"
+          }
+        },
+        "collection_4": {
+          "type": "collection",
+          "settings": {
+            "collection": "pedais",
+            "title": "Pedais e amps"
+          }
+        }
+      },
+      "block_order": [
+        "collection_1",
+        "collection_2",
+        "collection_3",
+        "collection_4"
+      ]
+    },
+    "vitrine": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "destaques",
+        "limit": 8,
+        "eyebrow": "Vitrine",
+        "heading": "Peças em destaque",
+        "text": "Da Ibanez Prestige ao Fender Custom Shop: instrumentos que chegaram esta semana.",
+        "light": true,
+        "anchor": "vitrine"
+      }
+    },
+    "passaporte": {
+      "type": "media-feature",
+      "settings": {
+        "poster_asset": "passaporte-loop-poster.jpg",
+        "eyebrow": "Exclusivo Playtime",
+        "heading": "Passaporte do Instrumento",
+        "text": "Instrumento caro não se compra pela foto do fabricante. Cada peça da Playtime tem uma ficha própria, medida pela nossa oficina.",
+        "btn_label": "Como funciona",
+        "btn_link": "shopify://pages/passaporte"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "passport",
+            "title": "Fotos e número de série da unidade",
+            "text": "Você vê exatamente a peça que vai receber."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "weight",
+            "title": "Peso e medidas reais",
+            "text": "Peso na balança e altura das cordas na 12ª casa."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "tools",
+            "title": "Regulagem registrada",
+            "text": "O que a oficina ajustou, com data."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "icon": "wave",
+            "title": "Áudio gravado na loja",
+            "text": "Limpo e com drive, sem pós-produção."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "garimpo": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "garimpo",
+        "limit": 8,
+        "eyebrow": "Garimpo",
+        "heading": "Peças únicas",
+        "text": "Usados e vintage revisados pela oficina. Quando sai, não volta.",
+        "light": true,
+        "anchor": "garimpo"
+      }
+    },
+    "clinica": {
+      "type": "media-feature",
+      "settings": {
+        "poster_asset": "clinica-loop-poster.jpg",
+        "flip": true,
+        "light": true,
+        "eyebrow": "Clínica Playtime",
+        "heading": "Depois da compra, a gente continua junto.",
+        "text": "O que nossa oficina faz todo dia, explicado para você fazer em casa.",
+        "btn_label": "Abrir a Clínica",
+        "btn_link": "shopify://pages/clinica"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "gauge",
+            "title": "Afinador online",
+            "text": "Pelo microfone do celular, direto no site."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "drop",
+            "title": "Umidade certa",
+            "text": "Por que 45% a 55% protege madeira e braço."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "strings",
+            "title": "Troca de cordas",
+            "text": "Passo a passo, com o calibre certo."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    },
+    "guias": {
+      "type": "care-cards",
+      "settings": {
+        "link": "shopify://pages/clinica"
+      },
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "icon": "gauge",
+            "title": "Afinador",
+            "text": "Guitarra, baixo, violão e Drop D.",
+            "meta": "Ferramenta",
+            "link": "shopify://pages/afinador"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "icon": "strings",
+            "title": "Trocar cordas",
+            "text": "Sem descalibrar a ponte nem riscar o tampo.",
+            "meta": "6 passos",
+            "link": "shopify://pages/clinica"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "icon": "drop",
+            "title": "Clima e umidade",
+            "text": "Verão úmido, inverno seco e ar-condicionado.",
+            "meta": "Guia",
+            "link": "shopify://pages/clinica"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "icon": "calendar",
+            "title": "Agenda de revisão",
+            "text": "Quando regular, limpar e trocar trastes.",
+            "meta": "Calendário",
+            "link": "shopify://pages/clinica"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3",
+        "card_4"
+      ]
+    },
+    "troca": {
+      "type": "cta-banner",
+      "settings": {
+        "text": "Responda seis perguntas e receba uma faixa de valor na hora. A avaliação final é feita pela nossa oficina, por vídeo ou na loja.",
+        "btn1_link": "shopify://pages/troca",
+        "btn2_label": "Ver peças de garimpo",
+        "btn2_link": "shopify://collections/garimpo"
+      }
+    },
+    "marcas": {
+      "type": "brands-marquee",
+      "settings": {
+        "brands": "Ibanez, Martin, Hertom, Takamine, Fender, Gibson, PRS, Schecter, D'Angelico, G&L, Tom Anderson, Squier, Jet Guitars, Cort, Tagima, Orange, Strymon, Meris, Friedman, Boss, MXR, Gator"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust",
+    "cats",
+    "vitrine",
+    "passaporte",
+    "garimpo",
+    "clinica",
+    "guias",
+    "troca",
+    "marcas"
+  ]
+}

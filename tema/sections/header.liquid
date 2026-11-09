@@ -1,0 +1,30 @@
+<header class="site-header"><div class="container site-header__inner">
+  <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="SiteNav" aria-label="Abrir menu">{% render 'icon', name: 'menu' %}</button>
+  <nav class="site-nav" id="SiteNav" aria-label="Principal">
+    {%- for link in section.settings.menu.links -%}
+      <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+    {%- endfor -%}
+  </nav>
+  <a class="site-header__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }} — página inicial">
+    {%- if settings.logo != blank -%}
+      {{ settings.logo | image_url: width: 240 | image_tag: alt: shop.name, height: 52 }}
+    {%- else -%}
+      <img src="{{ 'logo-dourado.svg' | asset_url }}" alt="{{ shop.name }}" width="76" height="52">
+    {%- endif -%}
+  </a>
+  <div class="site-header__actions">
+    <a class="icon-btn" href="{{ routes.search_url }}" aria-label="Buscar">{% render 'icon', name: 'search' %}</a>
+    {%- if shop.customer_accounts_enabled -%}
+      <a class="icon-btn" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" aria-label="Minha conta">{% render 'icon', name: 'user' %}</a>
+    {%- endif -%}
+    <a class="icon-btn" href="{{ routes.cart_url }}" aria-label="Carrinho">{% render 'icon', name: 'bag' %}<span class="cart-count" data-cart-count{% if cart.item_count == 0 %} hidden{% endif %}>{{ cart.item_count }}</span></a>
+  </div>
+</div></header>
+{% schema %}
+{
+  "name": "Cabeçalho",
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" }
+  ]
+}
+{% endschema %}

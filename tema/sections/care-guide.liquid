@@ -1,0 +1,44 @@
+<section class="section section--light"><div class="container">
+  <div class="section-head"><div>
+    {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2>{{ section.settings.heading }}</h2>
+    {%- if section.settings.text != blank -%}<p class="lead">{{ section.settings.text }}</p>{%- endif -%}
+  </div></div>
+  <div class="guide">
+    <nav class="guide__toc" aria-label="Capítulos">
+      {%- for block in section.blocks -%}<a href="#cap-{{ block.id }}">{{ block.settings.title }}</a>{%- endfor -%}
+    </nav>
+    <div class="guide__body">
+      {%- for block in section.blocks -%}
+        <section id="cap-{{ block.id }}" {{ block.shopify_attributes }}>
+          <h2>{{ block.settings.title }}</h2>
+          <div class="rte{% if block.settings.numbered %} steps-wrap{% endif %}">{{ block.settings.body }}</div>
+          {%- if block.settings.humidity -%}
+            <div class="humidity" aria-label="Faixa de umidade ideal: 45 a 55 por cento"><div class="humidity__bar"></div><div class="humidity__labels"><span>20% seco</span><span><strong>45–55% ideal</strong></span><span>80% úmido</span></div></div>
+          {%- endif -%}
+          {%- if block.settings.callout != blank -%}<div class="callout">{{ block.settings.callout }}</div>{%- endif -%}
+        </section>
+      {%- endfor -%}
+    </div>
+  </div>
+</div></section>
+{% schema %}
+{
+  "name": "Guia de cuidados",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Sobretítulo", "default": "Clínica Playtime" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Como cuidar do seu instrumento" },
+    { "type": "textarea", "id": "text", "label": "Texto" }
+  ],
+  "blocks": [
+    { "type": "chapter", "name": "Capítulo", "settings": [
+      { "type": "text", "id": "title", "label": "Título", "default": "Capítulo" },
+      { "type": "richtext", "id": "body", "label": "Conteúdo" },
+      { "type": "checkbox", "id": "numbered", "label": "Mostrar lista numerada como passos", "default": false },
+      { "type": "checkbox", "id": "humidity", "label": "Mostrar barra de umidade", "default": false },
+      { "type": "richtext", "id": "callout", "label": "Destaque" }
+    ]}
+  ],
+  "presets": [{ "name": "Guia de cuidados" }]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+{
+  "sections": {
+    "intro": {
+      "type": "media-feature",
+      "settings": {
+        "poster_asset": "passaporte-loop-poster.jpg",
+        "eyebrow": "Exclusivo Playtime",
+        "heading": "Passaporte do Instrumento",
+        "text": "Duas guitarras do mesmo modelo nunca são iguais: muda o peso, a madeira, a regulagem. Por isso cada peça da Playtime tem a sua ficha, medida pela nossa oficina.",
+        "btn_label": "Ver instrumentos com passaporte",
+        "btn_link": "shopify://collections/passaporte"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "passport",
+            "title": "Número de série e ano",
+            "text": "Conferidos na peça, com foto do serial."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "weight",
+            "title": "Peso na balança",
+            "text": "Faz diferença em três horas de show."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "ruler",
+            "title": "Altura das cordas",
+            "text": "Medida na 12ª casa, nas cordas grave e aguda."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "icon": "tools",
+            "title": "Trastes e regulagem",
+            "text": "Estado dos trastes e o que foi ajustado, com data."
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "icon": "video",
+            "title": "Áudio e vídeo da unidade",
+            "text": "Gravados aqui, sem pós-produção."
+          }
+        },
+        "item_6": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "title": "Impresso na case",
+            "text": "O passaporte vai junto com o instrumento."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "item_6"
+      ]
+    },
+    "vitrine": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "passaporte",
+        "limit": 8,
+        "eyebrow": "Vitrine",
+        "heading": "Peças com passaporte",
+        "light": true
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "vitrine"
+  ]
+}

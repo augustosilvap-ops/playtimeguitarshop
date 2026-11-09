@@ -1,0 +1,42 @@
+<section class="section section--light" style="padding-top:48px"><div class="container">
+  <nav aria-label="Você está em" class="muted crumbs"><a href="{{ routes.root_url }}">Início</a> / <span aria-current="page">{{ collection.title }}</span></nav>
+  <div class="section-head"><div><p class="eyebrow">Acervo</p><h1 class="h2">{{ collection.title }}</h1>
+    {%- if collection.description != blank -%}<div class="lead rte">{{ collection.description }}</div>{%- endif -%}</div></div>
+  {%- paginate collection.products by section.settings.per_page -%}
+    <div class="collection-bar">
+      <div class="filters">
+        {%- for filter in collection.filters -%}
+          {%- if filter.type == 'list' and filter.label != 'Disponibilidade' -%}
+            {%- for value in filter.values limit: 12 -%}
+              <a class="filter-chip{% if value.active %} is-active{% endif %}" href="{% if value.active %}{{ value.url_to_remove }}{% else %}{{ value.url_to_add }}{% endif %}">{{ value.label }} <span class="muted">({{ value.count }})</span></a>
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <form>
+        {%- for filter in collection.filters -%}{%- for value in filter.active_values -%}<input type="hidden" name="{{ value.param_name }}" value="{{ value.value }}">{%- endfor -%}{%- endfor -%}
+        <label class="visually-hidden" for="SortBy">Ordenar por</label>
+        {%- assign sort_now = collection.sort_by | default: collection.default_sort_by -%}
+        <select class="select" id="SortBy" name="sort_by" onchange="this.form.submit()">
+          {%- for option in collection.sort_options -%}<option value="{{ option.value }}"{% if option.value == sort_now %} selected{% endif %}>{{ option.name }}</option>{%- endfor -%}
+        </select>
+      </form>
+    </div>
+    <div class="grid grid--4">
+      {%- for product in collection.products -%}{% render 'product-card', product: product, delay: forloop.index0 %}{%- else -%}<p class="empty-state">Nenhuma peça nesta coleção ainda.</p>{%- endfor -%}
+    </div>
+    {%- if paginate.pages > 1 -%}
+      <nav class="pagination" aria-label="Páginas">
+        {%- for part in paginate.parts -%}
+          {%- if part.is_link -%}<a href="{{ part.url }}">{{ part.title }}</a>{%- elsif part.title == paginate.current_page -%}<span class="current" aria-current="page">{{ part.title }}</span>{%- else -%}<span>{{ part.title }}</span>{%- endif -%}
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  {%- endpaginate -%}
+</div></section>
+{% schema %}
+{
+  "name": "Coleção",
+  "settings": [ { "type": "range", "id": "per_page", "label": "Produtos por página", "min": 8, "max": 48, "step": 4, "default": 24 } ]
+}
+{% endschema %}

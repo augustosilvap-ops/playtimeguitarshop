@@ -1,0 +1,35 @@
+{%- comment -%} Uso: {% render 'product-card', product: product, delay: forloop.index0 %} {%- endcomment -%}
+{%- liquid
+  assign d = delay | default: 0 | modulo: 4
+  assign tags = product.tags | join: ',' | downcase
+  assign unica = false
+  if tags contains 'peca-unica' or tags contains 'peça única' or tags contains 'garimpo'
+    assign unica = true
+  endif
+  assign tem_passaporte = false
+  if product.metafields.custom.passaporte_serie != blank or tags contains 'passaporte'
+    assign tem_passaporte = true
+  endif
+-%}
+<a class="product-card" href="{{ product.url }}" data-reveal data-reveal-delay="{{ d }}">
+  <div class="product-card__media">
+    {%- if product.featured_media -%}
+      {{ product.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360,540,720,900', sizes: '(max-width: 599px) 78vw, 25vw', alt: product.featured_media.alt | default: product.title }}
+      {%- if product.media.size > 1 -%}
+        {{ product.media[1] | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360,540,720,900', sizes: '(max-width: 599px) 78vw, 25vw', alt: '' }}
+      {%- endif -%}
+    {%- else -%}
+      <div class="ph"><div class="ph__brand">{{ product.vendor }}</div></div>
+    {%- endif -%}
+    <div class="product-card__badges">
+      {%- unless product.available -%}<span class="badge badge--wine">Vendido</span>{%- endunless -%}
+      {%- if tem_passaporte -%}<span class="badge badge--gold">{% render 'icon', name: 'passport', size: 12 %}Passaporte</span>
+      {%- elsif unica -%}<span class="badge">Peça única</span>{%- endif -%}
+    </div>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__brand">{{ product.vendor }}</span>
+    <h3 class="product-card__title">{{ product.title }}</h3>
+    <div class="product-card__price">{% render 'price', product: product %}</div>
+  </div>
+</a>

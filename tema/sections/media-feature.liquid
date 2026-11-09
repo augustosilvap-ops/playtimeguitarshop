@@ -1,0 +1,57 @@
+<section class="section{% if section.settings.light %} section--light{% endif %}"><div class="container passport-intro{% if section.settings.flip %} flip{% endif %}">
+  <div class="media-frame" data-reveal>
+    {%- if section.settings.video != blank -%}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, controls: false, preload: 'metadata', image_size: '1280x' }}
+    {%- elsif section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600,900,1200,1400', sizes: '(max-width: 989px) 100vw, 55vw' }}
+    {%- elsif section.settings.poster_asset != blank -%}
+      <img src="{{ section.settings.poster_asset | asset_url }}" alt="" loading="lazy" width="1280" height="720">
+    {%- else -%}<div class="ph ph--wide"></div>{%- endif -%}
+  </div>
+  <div>
+    <div data-reveal>
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}<p class="lead">{{ section.settings.text }}</p>{%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <ul class="feature-list">
+        {%- for block in section.blocks -%}<li data-reveal {{ block.shopify_attributes }}>{% render 'icon', name: block.settings.icon, size: 22 %}<div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if section.settings.btn_label != blank -%}<a class="btn {% if section.settings.light %}btn--dark{% else %}btn--gold{% endif %}" href="{{ section.settings.btn_link | default: '#' }}">{{ section.settings.btn_label }}</a>{%- endif -%}
+  </div>
+</div></section>
+{% schema %}
+{
+  "name": "Vídeo com lista",
+  "settings": [
+    { "type": "video", "id": "video", "label": "Vídeo", "info": "Envie o vídeo em Conteúdo > Arquivos e escolha aqui." },
+    { "type": "image_picker", "id": "image", "label": "Imagem (se não houver vídeo)" },
+    { "type": "select", "id": "poster_asset", "label": "Imagem padrão do tema", "default": "", "options": [
+      { "value": "", "label": "Nenhuma" },
+      { "value": "passaporte-loop-poster.jpg", "label": "Passaporte" },
+      { "value": "clinica-loop-poster.jpg", "label": "Clínica" } ] },
+    { "type": "checkbox", "id": "flip", "label": "Vídeo à direita", "default": false },
+    { "type": "checkbox", "id": "light", "label": "Fundo claro", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Sobretítulo" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Passaporte do Instrumento" },
+    { "type": "textarea", "id": "text", "label": "Texto" },
+    { "type": "text", "id": "btn_label", "label": "Botão" },
+    { "type": "url", "id": "btn_link", "label": "Link do botão" }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Item da lista", "settings": [
+      { "type": "select", "id": "icon", "label": "Ícone", "default": "check", "options": [
+        { "value": "check", "label": "Visto" }, { "value": "passport", "label": "Passaporte" }, { "value": "weight", "label": "Peso" },
+        { "value": "ruler", "label": "Régua" }, { "value": "tools", "label": "Ferramenta" }, { "value": "wave", "label": "Áudio" },
+        { "value": "gauge", "label": "Afinador" }, { "value": "drop", "label": "Umidade" }, { "value": "strings", "label": "Cordas" },
+        { "value": "calendar", "label": "Calendário" }, { "value": "video", "label": "Vídeo" }, { "value": "box", "label": "Caixa" },
+        { "value": "card", "label": "Cartão" }, { "value": "swap", "label": "Troca" }, { "value": "shield", "label": "Escudo" } ] },
+      { "type": "text", "id": "title", "label": "Título", "default": "Título do item" },
+      { "type": "text", "id": "text", "label": "Texto" }
+    ]}
+  ],
+  "presets": [{ "name": "Vídeo com lista" }]
+}
+{% endschema %}

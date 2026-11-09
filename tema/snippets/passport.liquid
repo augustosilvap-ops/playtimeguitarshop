@@ -1,0 +1,24 @@
+{%- liquid
+  assign m = product.metafields.custom
+  assign has = false
+  if m.passaporte_serie != blank or m.passaporte_peso != blank or m.passaporte_regulagem != blank
+    assign has = true
+  endif
+-%}
+{%- if has -%}
+<section class="passport" aria-labelledby="pp-{{ product.id }}">
+  <div class="passport__head"><h2 class="passport__title" id="pp-{{ product.id }}">Passaporte do Instrumento</h2><span class="passport__seal">{% render 'icon', name: 'shield', size: 14 %}Verificado Playtime</span></div>
+  <dl class="passport__grid">
+    {%- if m.passaporte_serie != blank -%}<div class="passport__cell"><dt>Nº de série</dt><dd>{{ m.passaporte_serie }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_ano != blank -%}<div class="passport__cell"><dt>Ano</dt><dd>{{ m.passaporte_ano }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_origem != blank -%}<div class="passport__cell"><dt>Fabricação</dt><dd>{{ m.passaporte_origem }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_condicao != blank -%}<div class="passport__cell"><dt>Condição</dt><dd>{{ m.passaporte_condicao }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_peso != blank -%}<div class="passport__cell"><dt>Peso desta peça</dt><dd>{{ m.passaporte_peso }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_altura_cordas != blank -%}<div class="passport__cell"><dt>Altura das cordas (12ª casa)</dt><dd>{{ m.passaporte_altura_cordas }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_trastes != blank -%}<div class="passport__cell"><dt>Trastes</dt><dd>{{ m.passaporte_trastes }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_encordoamento != blank -%}<div class="passport__cell"><dt>Encordoamento</dt><dd>{{ m.passaporte_encordoamento }}</dd></div>{%- endif -%}
+    {%- if m.passaporte_regulagem != blank -%}<div class="passport__cell" style="grid-column:1/-1"><dt>Regulagem</dt><dd>{{ m.passaporte_regulagem }}</dd></div>{%- endif -%}
+  </dl>
+  <p class="passport__foot">{% render 'icon', name: 'check', size: 16 %}<span>As fotos e medidas são desta unidade, não do catálogo do fabricante.</span></p>
+</section>
+{%- endif -%}

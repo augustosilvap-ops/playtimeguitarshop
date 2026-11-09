@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "troca": {
+      "type": "trade-in",
+      "settings": {},
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "card",
+            "title": "Faixa de valor na hora",
+            "text": "Calculada pelo estado e pelo valor de mercado do modelo."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "video",
+            "title": "Avaliação por vídeo",
+            "text": "Nossa oficina confere a peça numa chamada, sem você sair de casa."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "icon": "swap",
+            "title": "Vale como entrada",
+            "text": "Use o valor em qualquer instrumento da loja."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    }
+  },
+  "order": [
+    "troca"
+  ]
+}

@@ -1,0 +1,31 @@
+<section class="section section--light" style="padding-top:48px"><div class="container">
+  <h1 class="h2">Carrinho</h1>
+  {%- if cart.item_count > 0 -%}
+    <form action="{{ routes.cart_url }}" method="post" novalidate>
+      <table class="cart-table">
+        <thead><tr><th colspan="2">Produto</th><th>Quantidade</th><th style="text-align:right">Total</th></tr></thead>
+        <tbody>
+          {%- for item in cart.items -%}
+            <tr>
+              <td style="width:110px">{%- if item.image -%}<a href="{{ item.url }}">{{ item.image | image_url: width: 200 | image_tag: alt: item.title, loading: 'lazy' }}</a>{%- endif -%}</td>
+              <td><span class="product-card__brand">{{ item.vendor }}</span><br><a href="{{ item.url }}">{{ item.product.title }}</a>{%- unless item.product.has_only_default_variant -%}<br><small class="muted">{{ item.variant.title }}</small>{%- endunless -%}</td>
+              <td><label class="visually-hidden" for="Qty-{{ forloop.index }}">Quantidade</label><input id="Qty-{{ forloop.index }}" type="number" name="updates[]" value="{{ item.quantity }}" min="0"> <a href="{{ item.url_to_remove }}" class="muted" style="font-size:.8rem">Remover</a></td>
+              <td style="text-align:right">{{ item.final_line_price | money }}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+      <div class="cart-summary">
+        <div style="display:flex;justify-content:space-between"><strong>Subtotal</strong><strong>{{ cart.total_price | money }}</strong></div>
+        {%- assign n = settings.installments | default: 10 -%}{%- if n > 1 -%}<span class="muted">ou {{ n }}x de {{ cart.total_price | divided_by: n | money }} sem juros</span>{%- endif -%}
+        <p class="muted" style="font-size:.85rem;margin:0">Frete e prazo calculados no checkout pelo CEP.</p>
+        <label class="field"><span>Observação para a oficina (opcional)</span><textarea name="note" style="min-height:80px;padding:10px;border:1px solid var(--line-light);border-radius:4px;font:inherit">{{ cart.note }}</textarea></label>
+        <button class="btn btn--ghost" type="submit" name="update">Atualizar</button>
+        <button class="btn btn--dark btn--block" type="submit" name="checkout">Finalizar compra</button>
+      </div>
+    </form>
+  {%- else -%}
+    <div class="empty-state"><p class="lead" style="margin:0 auto 24px">Seu carrinho está vazio.</p><a class="btn btn--dark" href="{{ routes.all_products_collection_url }}">Ver instrumentos</a></div>
+  {%- endif -%}
+</div></section>
+{% schema %}{ "name": "Carrinho" }{% endschema %}

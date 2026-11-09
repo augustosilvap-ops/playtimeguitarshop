@@ -1,0 +1,10 @@
+<section class="section"><div class="container">
+  <div class="section-head"><div><p class="eyebrow">Acervo</p><h1 class="h2">Coleções</h1></div></div>
+  <div class="grid grid--4">
+    {%- for c in collections -%}{%- unless c.handle == 'frontpage' -%}
+      {%- assign img = c.featured_image | default: c.products.first.featured_media -%}
+      <a class="cat-tile" href="{{ c.url }}">{%- if img -%}{{ img | image_url: width: 700 | image_tag: loading: 'lazy', alt: '' }}{%- else -%}<div class="ph ph--tall"></div>{%- endif -%}<div class="cat-tile__label"><h3>{{ c.title }}</h3><span>{{ c.products_count }} peças</span></div></a>
+    {%- endunless -%}{%- endfor -%}
+  </div>
+</div></section>
+{% schema %}{ "name": "Lista de coleções" }{% endschema %}

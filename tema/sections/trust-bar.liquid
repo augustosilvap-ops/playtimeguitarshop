@@ -1,0 +1,21 @@
+<section class="trust"><div class="container"><ul class="trust__list">
+  {%- for block in section.blocks -%}
+    <li class="trust__item" {{ block.shopify_attributes }}>{% render 'icon', name: block.settings.icon, size: 28 %}<div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></li>
+  {%- endfor -%}
+</ul></div></section>
+{% schema %}
+{
+  "name": "Faixa de confiança",
+  "blocks": [
+    { "type": "item", "name": "Item", "settings": [
+      { "type": "select", "id": "icon", "label": "Ícone", "default": "tools", "options": [
+        { "value": "tools", "label": "Ferramenta" }, { "value": "passport", "label": "Passaporte" }, { "value": "card", "label": "Cartão" },
+        { "value": "swap", "label": "Troca" }, { "value": "box", "label": "Caixa" }, { "value": "shield", "label": "Escudo" } ] },
+      { "type": "text", "id": "title", "label": "Título", "default": "Regulado antes do envio" },
+      { "type": "text", "id": "text", "label": "Texto", "default": "Altura das cordas, oitavas e tensor ajustados." }
+    ]}
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "Faixa de confiança", "blocks": [{ "type": "item" }, { "type": "item" }, { "type": "item" }, { "type": "item" }] }]
+}
+{% endschema %}

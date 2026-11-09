@@ -1,0 +1,16 @@
+<section class="section section--light"><div class="container customer">
+<p><a href="{{ routes.account_url }}">← Minha conta</a></p>
+<h1 class="h2">Endereços</h1>
+{%- for address in customer.addresses -%}<div style="margin-bottom:16px">{{ address | format_address }}</div>{%- endfor -%}
+<h2 class="h3">Novo endereço</h2>
+{%- form 'customer_address', customer.new_address, class: 'form' -%}
+  {{ form.errors | default_errors }}
+  <div class="field-row"><div class="field"><label>Nome</label><input name="address[first_name]" value="{{ form.first_name }}"></div><div class="field"><label>Sobrenome</label><input name="address[last_name]" value="{{ form.last_name }}"></div></div>
+  <div class="field"><label>Endereço</label><input name="address[address1]" value="{{ form.address1 }}"></div>
+  <div class="field"><label>Complemento</label><input name="address[address2]" value="{{ form.address2 }}"></div>
+  <div class="field-row"><div class="field"><label>Cidade</label><input name="address[city]" value="{{ form.city }}"></div><div class="field"><label>CEP</label><input name="address[zip]" value="{{ form.zip }}"></div></div>
+  <div class="field-row"><div class="field"><label>País</label><select name="address[country]" data-default="{{ form.country }}">{{ all_country_option_tags }}</select></div><div class="field"><label>Estado</label><input name="address[province]" value="{{ form.province }}"></div></div>
+  <div class="field"><label>Telefone</label><input name="address[phone]" value="{{ form.phone }}"></div>
+  <button class="btn btn--dark" type="submit">Salvar</button>
+{%- endform -%}
+</div></section>

@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy": {
+          "type": "buy",
+          "settings": {}
+        },
+        "live": {
+          "type": "live",
+          "settings": {}
+        },
+        "passport": {
+          "type": "passport",
+          "settings": {}
+        },
+        "sound": {
+          "type": "sound",
+          "settings": {}
+        },
+        "services": {
+          "type": "services",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "buy",
+        "live",
+        "passport",
+        "sound",
+        "services",
+        "description"
+      ],
+      "settings": {}
+    },
+    "related": {
+      "type": "related-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related"
+  ]
+}

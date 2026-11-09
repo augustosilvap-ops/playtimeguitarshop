@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "intro": {
+      "type": "media-feature",
+      "settings": {
+        "poster_asset": "clinica-loop-poster.jpg",
+        "eyebrow": "Clínica Playtime",
+        "heading": "Afine. Cuide. Toque por décadas.",
+        "text": "Guias da nossa oficina para manter o instrumento tocando como no dia em que chegou.",
+        "btn_label": "Abrir o afinador",
+        "btn_link": "shopify://pages/afinador"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "icon": "gauge",
+            "title": "Afinador online",
+            "text": "Abra no celular e afine pelo microfone."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "icon": "tools",
+            "title": "Revisão na oficina",
+            "text": "Regulagem, troca de trastes e elétrica com quem conhece a peça. Agende pelo WhatsApp."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2"
+      ]
+    },
+    "guia": {
+      "type": "care-guide",
+      "settings": {
+        "text": "O que nossa oficina faz todo dia, explicado para você fazer em casa."
+      },
+      "blocks": {
+        "chapter_1": {
+          "type": "chapter",
+          "settings": {
+            "title": "Afinação do dia a dia",
+            "body": "<p>Afine sempre subindo até a nota: se passou, afrouxe um pouco e suba de novo. Assim a corda assenta na tarraxa e a afinação segura por mais tempo.</p><ul><li><strong>Guitarra e violão (padrão):</strong> Mi, Lá, Ré, Sol, Si, Mi (E A D G B E).</li><li><strong>Baixo de 4 cordas:</strong> Mi, Lá, Ré, Sol (E A D G).</li><li><strong>Drop D:</strong> abaixe só a 6ª corda para Ré.</li></ul><p>Cordas novas esticam nos primeiros dias. É normal precisar afinar várias vezes.</p>",
+            "numbered": false,
+            "humidity": false,
+            "callout": "<p>Use o <a href=\"/pages/afinador\">afinador online da Playtime</a>: funciona pelo microfone do celular.</p>"
+          }
+        },
+        "chapter_2": {
+          "type": "chapter",
+          "settings": {
+            "title": "Troca de cordas",
+            "body": "<ol><li><strong>Troque uma corda por vez.</strong> Mantém a tensão no braço e a ponte no lugar, principalmente em guitarras com ponte flutuante.</li><li><strong>Aproveite para limpar.</strong> Com as cordas fora, passe um pano seco no escala e nos trastes.</li><li><strong>Deixe folga para 2 a 3 voltas</strong> no pino da tarraxa (no baixo, 1 a 2). Voltas demais deixam a afinação instável.</li><li><strong>Enrole de cima para baixo</strong> no pino, para a corda sair baixa e aumentar o ângulo sobre o nut.</li><li><strong>Estique com cuidado</strong> puxando cada corda alguns centímetros e afine de novo. Repita duas ou três vezes.</li><li><strong>Corte o excesso</strong> deixando cerca de 5 mm após o pino.</li></ol><p>Quem toca todo dia costuma trocar a cada 1 a 2 meses. Se a corda perdeu brilho, escureceu ou não segura afinação, está na hora.</p>",
+            "numbered": true,
+            "humidity": false,
+            "callout": "<p>Mudou o calibre (ex.: de 0.09 para 0.10)? A regulagem muda junto. Traga para a oficina ou fale com a gente.</p>"
+          }
+        },
+        "chapter_3": {
+          "type": "chapter",
+          "settings": {
+            "title": "Clima e umidade",
+            "body": "<p>Madeira absorve e perde água do ar. Variações bruscas empenam o braço, levantam trastes e, em violões de tampo maciço, podem rachar a madeira.</p><ul><li><strong>Faixa ideal:</strong> umidade relativa entre 45% e 55%, temperatura entre 20 °C e 25 °C.</li><li><strong>Ar-condicionado e inverno seco</strong> derrubam a umidade: use um umidificador de case.</li><li><strong>Verão úmido e litoral:</strong> guarde na case com sachês de sílica ou desumidificador.</li><li><strong>Nunca deixe no carro</strong> ao sol nem perto de janela ou parede externa.</li></ul>",
+            "numbered": false,
+            "humidity": true,
+            "callout": "<p>Chegou de viagem ou de outro clima? Deixe o instrumento na case fechada por uma hora antes de abrir.</p>"
+          }
+        },
+        "chapter_4": {
+          "type": "chapter",
+          "settings": {
+            "title": "Limpeza",
+            "body": "<ul><li><strong>Depois de tocar:</strong> pano de microfibra seco nas cordas, no braço e no corpo. Suor e gordura oxidam cordas e trastes.</li><li><strong>Corpo com verniz:</strong> polidor próprio para instrumentos. Evite produtos de casa com silicone ou álcool.</li><li><strong>Acabamento fosco ou nitro:</strong> só pano seco. Polidor deixa manchas brilhantes.</li><li><strong>Escala de rosewood ou ébano:</strong> óleo de limão próprio para escala, uma ou duas vezes por ano, em pouca quantidade.</li><li><strong>Escala de maple:</strong> tem verniz. Limpe com pano levemente úmido; não use óleo.</li></ul>",
+            "numbered": false,
+            "humidity": false,
+            "callout": ""
+          }
+        },
+        "chapter_5": {
+          "type": "chapter",
+          "settings": {
+            "title": "Transporte e armazenamento",
+            "body": "<ul><li><strong>Case rígido</strong> para viagens e instrumentos de alto valor; bag acolchoado para o dia a dia.</li><li><strong>Avião:</strong> leve na cabine sempre que possível. Se despachar, use case rígido e afrouxe um pouco as cordas.</li><li><strong>Na parede ou no suporte:</strong> longe de sol direto, ar-condicionado e cozinha.</li><li><strong>Suportes de espuma</strong> podem reagir com alguns vernizes nitro: prefira suportes compatíveis.</li></ul>",
+            "numbered": false,
+            "humidity": false,
+            "callout": ""
+          }
+        },
+        "chapter_6": {
+          "type": "chapter",
+          "settings": {
+            "title": "Agenda de revisão",
+            "body": "<ul><li><strong>A cada troca de cordas:</strong> limpeza de escala e checagem das tarraxas.</li><li><strong>A cada 6 meses ou mudança de estação:</strong> regulagem (tensor, altura das cordas e oitavas).</li><li><strong>Uma vez por ano:</strong> limpeza de potenciômetros e chaves, revisão de jacks e parafusos.</li><li><strong>Quando trastejar ou a nota morrer:</strong> avaliação dos trastes (nivelamento ou troca).</li></ul>",
+            "numbered": false,
+            "humidity": false,
+            "callout": "<p>Quer que a nossa oficina faça? Agende pelo WhatsApp.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "chapter_1",
+        "chapter_2",
+        "chapter_3",
+        "chapter_4",
+        "chapter_5",
+        "chapter_6"
+      ]
+    }
+  },
+  "order": [
+    "intro",
+    "guia"
+  ]
+}

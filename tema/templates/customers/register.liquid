@@ -1,0 +1,10 @@
+<section class="section section--light"><div class="container customer">
+<h1 class="h2">Criar conta</h1>
+{%- form 'create_customer', class: 'form' -%}
+  {{ form.errors | default_errors }}
+  <div class="field-row"><div class="field"><label for="First">Nome</label><input id="First" name="customer[first_name]" autocomplete="given-name"></div><div class="field"><label for="Last">Sobrenome</label><input id="Last" name="customer[last_name]" autocomplete="family-name"></div></div>
+  <div class="field"><label for="Email">E-mail</label><input id="Email" type="email" name="customer[email]" autocomplete="email" required></div>
+  <div class="field"><label for="Password">Senha</label><input id="Password" type="password" name="customer[password]" autocomplete="new-password" required></div>
+  <button class="btn btn--dark" type="submit">Criar conta</button>
+{%- endform -%}
+</div></section>

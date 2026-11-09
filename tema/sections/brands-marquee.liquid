@@ -1,0 +1,16 @@
+{%- assign brands = section.settings.brands | split: ',' -%}
+<section class="section section--tight" aria-label="Marcas"><div class="container"><p class="eyebrow" style="text-align:center">{{ section.settings.heading }}</p></div>
+<div class="marquee"><div class="marquee__track">
+  {%- for b in brands -%}<span>{{ b | strip }}</span>{%- endfor -%}
+  {%- for b in brands -%}<span aria-hidden="true">{{ b | strip }}</span>{%- endfor -%}
+</div></div></section>
+{% schema %}
+{
+  "name": "Marcas",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "Marcas que trabalhamos" },
+    { "type": "textarea", "id": "brands", "label": "Marcas (separadas por vírgula)", "default": "Ibanez, Martin, Hertom, Takamine, Fender, Gibson, PRS, Schecter" }
+  ],
+  "presets": [{ "name": "Marcas" }]
+}
+{% endschema %}

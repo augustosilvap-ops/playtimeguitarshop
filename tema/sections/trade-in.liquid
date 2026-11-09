@@ -1,0 +1,70 @@
+<section class="section">
+  <div class="container trade-grid">
+    <div>
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h1 class="h2">{{ section.settings.heading }}</h1>
+      <p class="lead">{{ section.settings.text }}</p>
+      <ul class="feature-list">
+        {%- for block in section.blocks -%}<li {{ block.shopify_attributes }}>{% render 'icon', name: block.settings.icon, size: 22 %}<div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></li>{%- endfor -%}
+      </ul>
+    </div>
+    <div>
+      <form class="form" data-trade-in novalidate>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.85rem;font-weight:600;margin-bottom:6px">O que você quer trocar?</legend>
+          <div class="choice-group">
+            <label class="choice"><input type="radio" name="tipo" value="Guitarra" checked><span>Guitarra</span></label><label class="choice"><input type="radio" name="tipo" value="Baixo"><span>Baixo</span></label><label class="choice"><input type="radio" name="tipo" value="Violão"><span>Violão</span></label><label class="choice"><input type="radio" name="tipo" value="Amplificador"><span>Amplificador</span></label><label class="choice"><input type="radio" name="tipo" value="Pedal"><span>Pedal</span></label>
+          </div>
+        </fieldset>
+        <div class="field-row">
+          <div class="field"><label for="ti-marca">Marca</label><input id="ti-marca" name="marca" required placeholder="Ex.: Ibanez"></div>
+          <div class="field"><label for="ti-modelo">Modelo</label><input id="ti-modelo" name="modelo" required placeholder="Ex.: RG550"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="ti-ano">Ano (aprox.)</label><input id="ti-ano" name="ano" inputmode="numeric" placeholder="Ex.: 2018"></div>
+          <div class="field"><label for="ti-ref">Valor do modelo novo hoje (R$)</label><input id="ti-ref" name="referencia" inputmode="decimal" placeholder="Ex.: 8.000"><span class="field__help">Opcional. Usamos para calcular a faixa.</span></div>
+        </div>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.85rem;font-weight:600;margin-bottom:6px">Estado</legend>
+          <div class="choice-group">
+            <label class="choice"><input type="radio" name="condicao" value="impecavel"><span>Impecável</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="otimo" checked><span>Ótimo</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="bom"><span>Bom, com marcas</span></label>
+            <label class="choice"><input type="radio" name="condicao" value="regular"><span>Precisa de reparo</span></label>
+          </div>
+        </fieldset>
+        <div class="field-row">
+          <div class="field"><label for="ti-case">Tem case original?</label><select id="ti-case" name="case"><option value="sim">Sim</option><option value="nao" selected>Não</option></select></div>
+          <div class="field"><label for="ti-mod">Tem modificações?</label><select id="ti-mod" name="modificado"><option value="nao" selected>Não</option><option value="sim">Sim</option></select></div>
+        </div>
+        <div class="field"><label for="ti-int">Qual peça da loja te interessa? (opcional)</label><input id="ti-int" name="interesse" placeholder="Ex.: Ibanez Prestige AZ2402"></div>
+        <button class="btn btn--gold" type="submit">Ver faixa de valor</button>
+      </form>
+      <div class="estimate" data-estimate data-whatsapp="{{ settings.whatsapp }}" hidden aria-live="polite" style="margin-top:24px">
+        <p class="eyebrow" style="margin-bottom:8px">Pré-avaliação</p>
+        <p class="estimate__value" data-estimate-range></p>
+        <p class="muted" style="font-size:.85rem">Estimativa para uso como entrada. O valor final sai depois que nossa oficina vê a peça (por vídeo ou na loja).</p>
+        <a class="btn btn--gold" data-estimate-link href="#" target="_blank" rel="noopener">{% render 'icon', name: 'whatsapp' %} Enviar para avaliação no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Pré-avaliação de troca",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Sobretítulo", "default": "Troca Playtime" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Quanto vale o seu instrumento?" },
+    { "type": "textarea", "id": "text", "label": "Texto", "default": "Responda em um minuto e receba uma faixa de valor para usar como entrada." }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Item", "settings": [
+      { "type": "select", "id": "icon", "label": "Ícone", "default": "card", "options": [
+        { "value": "card", "label": "Cartão" }, { "value": "video", "label": "Vídeo" }, { "value": "swap", "label": "Troca" }, { "value": "check", "label": "Visto" } ] },
+      { "type": "text", "id": "title", "label": "Título", "default": "Faixa de valor na hora" },
+      { "type": "text", "id": "text", "label": "Texto" }
+    ]}
+  ],
+  "presets": [{ "name": "Pré-avaliação de troca" }]
+}
+{% endschema %}

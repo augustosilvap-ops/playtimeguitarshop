@@ -1,0 +1,10 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "installments": 10,
+      "pix_discount": 5,
+      "whatsapp": "554135014977"
+    }
+  }
+}

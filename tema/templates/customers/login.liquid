@@ -1,0 +1,17 @@
+<section class="section section--light"><div class="container customer">
+<h1 class="h2">Entrar</h1>
+{%- form 'customer_login', class: 'form' -%}
+  {{ form.errors | default_errors }}
+  <div class="field"><label for="Email">E-mail</label><input id="Email" type="email" name="customer[email]" autocomplete="email" required></div>
+  <div class="field"><label for="Password">Senha</label><input id="Password" type="password" name="customer[password]" autocomplete="current-password" required></div>
+  <button class="btn btn--dark" type="submit">Entrar</button>
+  <p><a href="#recover" onclick="document.getElementById('recover').hidden=false;return false;">Esqueci a senha</a> · <a href="{{ routes.account_register_url }}">Criar conta</a></p>
+{%- endform -%}
+<div id="recover" hidden>
+{%- form 'recover_customer_password', class: 'form' -%}
+  {{ form.errors | default_errors }}{%- if form.posted_successfully? -%}<p>Enviamos um e-mail com o link para trocar a senha.</p>{%- endif -%}
+  <div class="field"><label for="RecoverEmail">E-mail</label><input id="RecoverEmail" type="email" name="email" required></div>
+  <button class="btn btn--ghost" type="submit">Enviar link</button>
+{%- endform -%}
+</div>
+</div></section>

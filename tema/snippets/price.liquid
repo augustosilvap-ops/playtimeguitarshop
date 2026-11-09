@@ -1,0 +1,15 @@
+{%- comment -%} Uso: {% render 'price', product: product, variant: variant, big: true %} {%- endcomment -%}
+{%- liquid
+  assign v = variant | default: product.selected_or_first_available_variant
+  assign p = v.price
+  assign n = settings.installments | default: 10
+  assign pix = settings.pix_discount | default: 5
+  assign parcela = p | divided_by: n
+  assign pix_price = p | times: pix | divided_by: 100.0 | round | times: -1 | plus: p
+-%}
+<div class="price"{% if big %} style="font-size:1.9rem"{% endif %} data-price>
+  {%- if v.compare_at_price > p -%}<span class="price__compare">{{ v.compare_at_price | money }}</span>{%- endif -%}
+  <span>{{ p | money }}</span>
+  {%- if n > 1 and p > 0 -%}<span class="price__installments">ou {{ n }}x de {{ parcela | money }} sem juros</span>{%- endif -%}
+  {%- if pix > 0 and p > 0 -%}<span class="price__pix">{{ pix_price | money }} no Pix ({{ pix }}% off)</span>{%- endif -%}
+</div>
