@@ -101,3 +101,20 @@
 - **Frete pelo CEP**: usa as tarifas reais configuradas em *Configurações › Frete e entrega*. A cidade vem do ViaCEP. Para calcular, a Shopify precisa da peça no carrinho: se ela ainda não estiver lá, o tema coloca e tira em seguida, sem o cliente perceber.
 - **Comparar**: até 3 peças lado a lado na página `/pages/comparar`, com as diferenças destacadas.
 - **Consultoria por vídeo** (`/pages/consultoria`): o formulário abre o WhatsApp com a mensagem pronta. Nada fica salvo no site.
+
+## Estoque enriquecido (ficha técnica completa)
+
+Gerado por `importacao/enriquecer.py` a partir do CSV de estoque do WooCommerce e de uma pesquisa por produto (fabricantes, manuais e lojas especializadas). Nada foi inventado: o que não foi confirmado ficou de fora e foi para a coluna *Conferir na peça* da planilha de revisão.
+
+| Arquivo | Para quê |
+|---|---|
+| `importacao/saida/revisao-enriquecimento.xlsx` | **Comece por aqui.** Confiança de cada produto, erros encontrados nas descrições atuais, o que a oficina deve conferir na peça e as fontes |
+| `importacao/criar_metacampos_novos.graphql` | Os 32 campos novos da ficha (modelo, fabricação, nut, cor, cordas de fábrica, alimentação de pedais, potência de amps…) |
+| `importacao/saida/produtos-shopify-enriquecido.csv` | Planilha para a Shopify, com a ficha completa, peso de envio e tags de filtro |
+| `importacao/saida/woocommerce-enriquecido.csv` | O mesmo estoque no formato do WooCommerce, com tabela "Ficha técnica" na descrição e peso/medidas de envio |
+
+**Ordem na Shopify:**
+1. Cole `criar_metacampos_novos.graphql` no app GraphiQL e execute (igual da outra vez).
+2. *Produtos › Importar* › `produtos-shopify-enriquecido.csv` e marque **"Substituir produtos com o mesmo identificador"**. Os produtos já importados são atualizados, sem duplicar.
+
+O peso de envio é uma estimativa do pacote (instrumento + case/caixa) e é o que a Shopify usa para calcular o frete. Vale pesar as peças de maior valor.

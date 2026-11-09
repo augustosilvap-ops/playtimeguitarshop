@@ -103,7 +103,7 @@ def main():
             if k in campos:
                 m = re.search(r"\d+(?:[.,]\d+)?", campos[k])
                 campos[k] = m.group(0).replace(".", ",") if m else campos.pop(k)
-        tags = {t.strip().lower() for t in r["Tags"].split(",") if t.strip()}
+        tags = {slug(t) for t in r["Tags"].split(",") if t.strip()}
         tags |= {slug(c) for c in cats} | {slug(tipo)}
         tags |= {slug(t) for t in (e.get("tags") or []) if t}
         if tipo in ("Pedais", "Amplificadores"):
