@@ -1,24 +1,56 @@
 {%- comment -%}
   Lista única dos campos da ficha técnica: chave do metafield (custom.*) e rótulo.
-  Usada na página do produto, no comparador e no JSON de comparação.
+  Gerada por importacao/enriquecer.py --tema a partir de importacao/campos.py.
 {%- endcomment -%}
 {%- capture spec_fields -%}
-escala|Escala (comprimento)
-nut_largura|Largura do nut
-raio|Raio da escala
+modelo|Modelo
+serie|Série / linha
+fabricacao|Fabricação
+construcao|Construção
+formato_corpo|Formato do corpo
+corpo|Corpo
+tampo|Tampo
+braco_madeira|Braço
 braco_perfil|Perfil do braço
 braco_espessura_1|Espessura do braço na 1ª casa
 braco_espessura_12|Espessura do braço na 12ª casa
-braco_madeira|Braço
 escala_madeira|Madeira da escala
+escala|Escala (comprimento)
+raio|Raio da escala
 trastes|Trastes
-corpo|Corpo
-tampo|Tampo
+nut_material|Nut
+nut_largura|Largura do nut
+marcadores|Marcadores
 captadores|Captadores
 eletrica|Elétrica
 ponte|Ponte
 tarraxas|Tarraxas
+hardware|Hardware
 acabamento|Acabamento
+cor|Cor
+cordas_qtd|Número de cordas
+mao|Mão
+cordas_fabrica|Cordas de fábrica
+tipo_efeito|Tipo de efeito
+chaves|Chaves e modos
+alimentacao|Alimentação
+consumo_ma|Consumo
+bypass|Bypass
+tipo_amp|Tipo
+formato|Formato
+potencia|Potência
+alto_falantes|Alto-falantes
+valvulas|Válvulas
+canais|Canais
+efeitos|Efeitos
+impedancia|Impedância
+controles|Controles
+conexoes|Conexões
+material|Material
+compatibilidade|Compatibilidade
+dimensoes|Dimensões
+peso_produto|Peso do produto
+acessorios|Acompanha
 passaporte_peso|Peso desta peça
 {%- endcapture -%}
 {{- spec_fields | strip -}}

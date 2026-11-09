@@ -1,0 +1,132 @@
+# Campos novos da ficha técnica. Cole no app GraphiQL da Shopify e execute (▶).
+# Pode rodar de novo: os que já existem voltam com o código TAKEN.
+mutation CamposFichaNovos {
+  n01_modelo: metafieldDefinitionCreate(definition: {name: "Ficha · Modelo", namespace: "custom", key: "modelo", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n02_serie: metafieldDefinitionCreate(definition: {name: "Ficha · Série / linha", namespace: "custom", key: "serie", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n03_fabricacao: metafieldDefinitionCreate(definition: {name: "Ficha · Fabricação", namespace: "custom", key: "fabricacao", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n04_construcao: metafieldDefinitionCreate(definition: {name: "Ficha · Construção", namespace: "custom", key: "construcao", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n05_formato_corpo: metafieldDefinitionCreate(definition: {name: "Ficha · Formato do corpo", namespace: "custom", key: "formato_corpo", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n06_nut_material: metafieldDefinitionCreate(definition: {name: "Ficha · Nut", namespace: "custom", key: "nut_material", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n07_marcadores: metafieldDefinitionCreate(definition: {name: "Ficha · Marcadores", namespace: "custom", key: "marcadores", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n08_hardware: metafieldDefinitionCreate(definition: {name: "Ficha · Hardware", namespace: "custom", key: "hardware", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n09_cor: metafieldDefinitionCreate(definition: {name: "Ficha · Cor", namespace: "custom", key: "cor", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n10_cordas_qtd: metafieldDefinitionCreate(definition: {name: "Ficha · Número de cordas", namespace: "custom", key: "cordas_qtd", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n11_mao: metafieldDefinitionCreate(definition: {name: "Ficha · Mão", namespace: "custom", key: "mao", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n12_cordas_fabrica: metafieldDefinitionCreate(definition: {name: "Ficha · Cordas de fábrica", namespace: "custom", key: "cordas_fabrica", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n13_tipo_efeito: metafieldDefinitionCreate(definition: {name: "Ficha · Tipo de efeito", namespace: "custom", key: "tipo_efeito", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n14_chaves: metafieldDefinitionCreate(definition: {name: "Ficha · Chaves e modos", namespace: "custom", key: "chaves", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n15_alimentacao: metafieldDefinitionCreate(definition: {name: "Ficha · Alimentação", namespace: "custom", key: "alimentacao", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n16_consumo_ma: metafieldDefinitionCreate(definition: {name: "Ficha · Consumo", namespace: "custom", key: "consumo_ma", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n17_bypass: metafieldDefinitionCreate(definition: {name: "Ficha · Bypass", namespace: "custom", key: "bypass", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n18_tipo_amp: metafieldDefinitionCreate(definition: {name: "Ficha · Tipo", namespace: "custom", key: "tipo_amp", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n19_formato: metafieldDefinitionCreate(definition: {name: "Ficha · Formato", namespace: "custom", key: "formato", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n20_potencia: metafieldDefinitionCreate(definition: {name: "Ficha · Potência", namespace: "custom", key: "potencia", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n21_alto_falantes: metafieldDefinitionCreate(definition: {name: "Ficha · Alto-falantes", namespace: "custom", key: "alto_falantes", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n22_valvulas: metafieldDefinitionCreate(definition: {name: "Ficha · Válvulas", namespace: "custom", key: "valvulas", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n23_canais: metafieldDefinitionCreate(definition: {name: "Ficha · Canais", namespace: "custom", key: "canais", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n24_efeitos: metafieldDefinitionCreate(definition: {name: "Ficha · Efeitos", namespace: "custom", key: "efeitos", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n25_impedancia: metafieldDefinitionCreate(definition: {name: "Ficha · Impedância", namespace: "custom", key: "impedancia", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n26_controles: metafieldDefinitionCreate(definition: {name: "Ficha · Controles", namespace: "custom", key: "controles", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n27_conexoes: metafieldDefinitionCreate(definition: {name: "Ficha · Conexões", namespace: "custom", key: "conexoes", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n28_material: metafieldDefinitionCreate(definition: {name: "Ficha · Material", namespace: "custom", key: "material", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n29_compatibilidade: metafieldDefinitionCreate(definition: {name: "Ficha · Compatibilidade", namespace: "custom", key: "compatibilidade", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n30_dimensoes: metafieldDefinitionCreate(definition: {name: "Ficha · Dimensões", namespace: "custom", key: "dimensoes", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n31_peso_produto: metafieldDefinitionCreate(definition: {name: "Ficha · Peso do produto", namespace: "custom", key: "peso_produto", type: "single_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+  n32_acessorios: metafieldDefinitionCreate(definition: {name: "Ficha · Acompanha", namespace: "custom", key: "acessorios", type: "multi_line_text_field", ownerType: PRODUCT}) {
+    createdDefinition { key }
+    userErrors { code message }
+  }
+}
