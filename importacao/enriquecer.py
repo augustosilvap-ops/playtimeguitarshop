@@ -126,7 +126,7 @@ def main():
         if nova.get("resumo"):
             curta = limpar(nova["resumo"])
         produtos.append({"id": pid, "linha": r, "handle": handles.get(str(pid)) or slug(r["Nome"]), "nome": html.unescape(r["Nome"]),
-                         "marca": html.unescape(r["Marcas"]) or "", "tipo": tipo, "cats": cats, "corpo": nova.get("descricao_html") or desc, "nova": bool(nova.get("descricao_html")), "campos": campos,
+                         "marca": html.unescape(r["Marcas"]) or (campos.get("modelo", "").split() or [""])[0], "tipo": tipo, "cats": cats, "corpo": nova.get("descricao_html") or desc, "nova": bool(nova.get("descricao_html")), "campos": campos,
                          "tags": sorted(tags), "imgs": imgs, "qtd": estoque_qtd, "preco": preco(r["Preço"]),
                          "promo": preco(r["Preço promocional"]) if r["Preço promocional"].strip() else 0,
                          "envio": envio, "curta": curta, "e": e})
@@ -192,14 +192,14 @@ def main():
     wb = Workbook()
     ws = wb.active
     ws.title = "Revisão"
-    hdr = ["ID", "Produto", "Tipo", "Confiança", "Campos preenchidos", "Correções na descrição", "Conferir na peça", "Fontes"]
+    hdr = ["ID", "Produto", "Tipo", "Confiança", "Campos preenchidos", "Correções na descrição", "Conferir na peça", "Observação da reescrita", "Fontes"]
     ws.append(hdr)
     cor = {"alta": "D9F2E3", "media": "FFF1CC", "baixa": "F9D6D5"}
     for p in produtos:
         e = p["e"]
         conf = (e.get("confianca") or "sem pesquisa").replace("é", "e").lower()
         ws.append([p["id"], p["nome"], p["tipo"], conf, len(p["campos"]), "\n".join(e.get("correcoes") or []),
-                   "\n".join(e.get("conferir") or []), "\n".join(e.get("fontes") or [])])
+                   "\n".join(e.get("conferir") or []), (novas.get(p["id"]) or {}).get("observacao", ""), "\n".join(e.get("fontes") or [])])
         if conf in cor:
             ws.cell(ws.max_row, 4).fill = PatternFill("solid", fgColor=cor[conf])
     ws2 = wb.create_sheet("Ficha técnica")
