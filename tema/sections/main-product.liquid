@@ -61,7 +61,7 @@
           {%- when 'live' -%}
             {%- if settings.whatsapp != blank -%}
               <a class="live-card" href="https://wa.me/{{ settings.whatsapp }}?text={{ 'Olá, Playtime! Quero ver por vídeo a peça: ' | append: product.title | append: ' — ' | append: shop.url | append: product.url | url_encode }}" target="_blank" rel="noopener" {{ block.shopify_attributes }}><span class="live-card__dot" aria-hidden="true"></span><div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></div></a>
-              {%- if block.settings.consult_link != blank -%}<a class="link-arrow live-card__more" href="{{ block.settings.consult_link }}">{{ block.settings.consult_label }} {% render 'icon', name: 'arrow', size: 14 %}</a>{%- endif -%}
+              {%- if block.settings.consult_label != blank -%}<a class="link-arrow live-card__more" href="{{ block.settings.consult_link | default: '/pages/consultoria' }}">{{ block.settings.consult_label }} {% render 'icon', name: 'arrow', size: 14 %}</a>{%- endif -%}
             {%- endif -%}
           {%- when 'shipping' -%}
             <div {{ block.shopify_attributes }}>{% render 'shipping-estimate', variant: v %}</div>
@@ -86,7 +86,7 @@
           {%- when 'services' -%}
             <ul class="service-list" {{ block.shopify_attributes }}>
               <li>{% render 'icon', name: 'tools' %}<span><strong>Regulado antes do envio.</strong> Nossa oficina ajusta altura das cordas, oitavas e tensor.</span></li>
-              <li>{% render 'icon', name: 'box' %}<span><strong>Chegou com avaria? A gente resolve.</strong> Embalagem reforçada e seguro por nossa conta. Se algo acontecer no caminho, quem trata com a transportadora somos nós{% if block.settings.safe_link != blank %} · <a href="{{ block.settings.safe_link }}">como funciona</a>{% endif %}.</span></li>
+              <li>{% render 'icon', name: 'box' %}<span><strong>Chegou com avaria? A gente resolve.</strong> Embalagem reforçada e seguro por nossa conta. Se algo acontecer no caminho, quem trata com a transportadora somos nós · <a href="{{ block.settings.safe_link | default: '/pages/compra-segura' }}">como funciona</a>.</span></li>
               <li>{% render 'icon', name: 'swap' %}<span><strong>Seu usado como entrada.</strong> Pré-avaliação em um minuto na página Troca.</span></li>
               <li>{% render 'icon', name: 'check' %}<span><strong>7 dias para devolução.</strong> Direito de arrependimento garantido pelo CDC.</span></li>
             </ul>
@@ -184,7 +184,7 @@
           "type": "url",
           "id": "consult_link",
           "label": "Link da consultoria",
-          "default": "/pages/consultoria"
+          "info": "Se ficar vazio, usa /pages/consultoria."
         }
       ]
     },
@@ -217,7 +217,7 @@
           "type": "url",
           "id": "safe_link",
           "label": "Página Compra segura",
-          "default": "/pages/compra-segura"
+          "info": "Se ficar vazio, usa /pages/compra-segura."
         }
       ]
     },

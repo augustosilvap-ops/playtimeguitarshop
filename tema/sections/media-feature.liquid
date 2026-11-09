@@ -4,7 +4,7 @@
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, controls: false, preload: 'metadata', image_size: '1280x' }}
     {%- elsif section.settings.image != blank -%}
       {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600,900,1200,1400', sizes: '(max-width: 989px) 100vw, 55vw' }}
-    {%- elsif section.settings.poster_asset != blank -%}
+    {%- elsif section.settings.poster_asset != blank and section.settings.poster_asset != 'none' -%}
       <img src="{{ section.settings.poster_asset | asset_url }}" alt="" loading="lazy" width="1280" height="720">
     {%- else -%}<div class="ph ph--wide"></div>{%- endif -%}
   </div>
@@ -28,8 +28,8 @@
   "settings": [
     { "type": "video", "id": "video", "label": "Vídeo", "info": "Envie o vídeo em Conteúdo > Arquivos e escolha aqui." },
     { "type": "image_picker", "id": "image", "label": "Imagem (se não houver vídeo)" },
-    { "type": "select", "id": "poster_asset", "label": "Imagem padrão do tema", "default": "", "options": [
-      { "value": "", "label": "Nenhuma" },
+    { "type": "select", "id": "poster_asset", "label": "Imagem padrão do tema", "default": "none", "options": [
+      { "value": "none", "label": "Nenhuma" },
       { "value": "passaporte-loop-poster.jpg", "label": "Passaporte" },
       { "value": "clinica-loop-poster.jpg", "label": "Clínica" } ] },
     { "type": "checkbox", "id": "flip", "label": "Vídeo à direita", "default": false },

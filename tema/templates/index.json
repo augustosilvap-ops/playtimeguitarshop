@@ -48,7 +48,7 @@
             "btn1_label": "Ver instrumentos",
             "btn1_link": "shopify://collections/all",
             "btn2_label": "Conhecer a Clínica",
-            "btn2_link": "shopify://pages/clinica"
+            "btn2_link": "/pages/clinica"
           }
         }
       },
@@ -166,7 +166,7 @@
         "heading": "Passaporte do Instrumento",
         "text": "Instrumento caro não se compra pela foto do fabricante. Cada peça da Playtime tem uma ficha própria, medida pela nossa oficina.",
         "btn_label": "Como funciona",
-        "btn_link": "shopify://pages/passaporte"
+        "btn_link": "/pages/passaporte"
       },
       "blocks": {
         "item_1": {
@@ -231,7 +231,7 @@
         "heading": "Depois da compra, a gente continua junto.",
         "text": "O que nossa oficina faz todo dia, explicado para você fazer em casa.",
         "btn_label": "Abrir a Clínica",
-        "btn_link": "shopify://pages/clinica"
+        "btn_link": "/pages/clinica"
       },
       "blocks": {
         "item_1": {
@@ -268,7 +268,7 @@
     "guias": {
       "type": "care-cards",
       "settings": {
-        "link": "shopify://pages/clinica"
+        "link": "/pages/clinica"
       },
       "blocks": {
         "card_1": {
@@ -278,7 +278,7 @@
             "title": "Afinador",
             "text": "Guitarra, baixo, violão e Drop D.",
             "meta": "Ferramenta",
-            "link": "shopify://pages/afinador"
+            "link": "/pages/afinador"
           }
         },
         "card_2": {
@@ -288,7 +288,7 @@
             "title": "Trocar cordas",
             "text": "Sem descalibrar a ponte nem riscar o tampo.",
             "meta": "6 passos",
-            "link": "shopify://pages/clinica"
+            "link": "/pages/clinica"
           }
         },
         "card_3": {
@@ -298,7 +298,7 @@
             "title": "Clima e umidade",
             "text": "Verão úmido, inverno seco e ar-condicionado.",
             "meta": "Guia",
-            "link": "shopify://pages/clinica"
+            "link": "/pages/clinica"
           }
         },
         "card_4": {
@@ -308,7 +308,7 @@
             "title": "Agenda de revisão",
             "text": "Quando regular, limpar e trocar trastes.",
             "meta": "Calendário",
-            "link": "shopify://pages/clinica"
+            "link": "/pages/clinica"
           }
         }
       },
@@ -323,7 +323,7 @@
       "type": "cta-banner",
       "settings": {
         "text": "Responda seis perguntas e receba uma faixa de valor na hora. A avaliação final é feita pela nossa oficina, por vídeo ou na loja.",
-        "btn1_link": "shopify://pages/troca",
+        "btn1_link": "/pages/troca",
         "btn2_label": "Ver peças de garimpo",
         "btn2_link": "shopify://collections/garimpo"
       }

@@ -8,7 +8,7 @@
         "heading": "Afine. Cuide. Toque por décadas.",
         "text": "Guias da nossa oficina para manter o instrumento tocando como no dia em que chegou.",
         "btn_label": "Abrir o afinador",
-        "btn_link": "shopify://pages/afinador"
+        "btn_link": "/pages/afinador"
       },
       "blocks": {
         "item_1": {

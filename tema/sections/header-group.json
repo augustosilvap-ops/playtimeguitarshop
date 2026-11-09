@@ -37,7 +37,7 @@
           "settings": {
             "icon": "swap",
             "text": "Seu usado vale como entrada: <strong>avalie em 1 minuto</strong>",
-            "link": "shopify://pages/troca"
+            "link": "/pages/troca"
           }
         },
         "m5": {
@@ -45,7 +45,7 @@
           "settings": {
             "icon": "video",
             "text": "Veja a peça <strong>ao vivo por vídeo</strong>: agende uma consultoria",
-            "link": "shopify://pages/consultoria"
+            "link": "/pages/consultoria"
           }
         }
       },
