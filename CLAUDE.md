@@ -16,5 +16,5 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
   - `ruah/scripts/` usa caminhos da sessão antiga; ajuste `SP` e os caminhos de fontes/logos antes de rodar.
 
 ## Outras frentes
-- **Mercado Livre:** conta ativa com ~300 anúncios, só dropshipping, produtos variados. Ainda sem acesso à API.
+- **Mercado Livre:** conta ativa com ~300 anúncios, só dropshipping, produtos variados. Fornecedor: B2Drop. Todos os anúncios em Premium (avaliar Clássico). Zero vendas até 13/11/2026; termômetro ainda não ativo; avaliando o programa Decola. Ainda sem acesso à API.
 - Canal infantil.
