@@ -15,6 +15,6 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - `ruah/` — pacote da marca (logos, fontes, fotos de produto, conteúdo, vídeos, textos, scripts).
   - `ruah/scripts/` usa caminhos da sessão antiga; ajuste `SP` e os caminhos de fontes/logos antes de rodar.
 
-## Outras frentes (ainda sem material)
-- Dropshipping no Mercado Livre.
+## Outras frentes
+- **Mercado Livre:** conta ativa com ~300 anúncios, só dropshipping, produtos variados. Ainda sem acesso à API.
 - Canal infantil.
