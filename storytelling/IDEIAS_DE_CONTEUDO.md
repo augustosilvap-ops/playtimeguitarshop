@@ -13,7 +13,8 @@
 | Story | Founder Nº | Cada novo Founder ganha o seu número; contador de vagas restantes. |
 | Carrossel | Black Friday · Leve 2 | “Um para você, um para quem você quer alcançar.” Combo Leve 2 por R$ 269,90 (18 a 24/11). |
 | Reel | Drop de Natal | Contagem regressiva e bastidores do próximo drop (se for confirmado). |
-| Reel | Origem do nome | “Ruach”: uma palavra para espírito, sopro e vento. A história em 3 cenas. |
+| Reel | Fora das quatro paredes | 4 cenas: “Por que aquilo em que você acredita fica só dentro da igreja?” → “Uma geração que não tem vergonha de carregar o Espírito.” → WE CARRY THE SPIRIT. |
+| Carrossel | O arco das 4 estampas | Origem (RUACH) → identidade (WE CARRY THE SPIRIT) → convicção (INVISÍVEL MOVE) → convite (WHAT DO YOU CARRY?). |
 
 ## @augustosilva.p
 
