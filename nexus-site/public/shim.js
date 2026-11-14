@@ -54,7 +54,9 @@
   };
   const db = {
     doc: (k) => ({
-      onSnapshot: (cb, err) => poll(k, (j) => ({ exists: j != null, data: () => j ?? undefined }), cb, err),
+      onSnapshot: (cb, err) => k === "briefing/hoje"
+        ? (() => { const run = () => api("/api/briefing").then((j) => cb({ exists: !!j, data: () => j })).catch((e) => err && err(e)); run(); const id = setInterval(run, 3600000); return () => clearInterval(id); })()
+        : poll(k, (j) => ({ exists: j != null, data: () => j ?? undefined }), cb, err),
       set: (obj) => api("/api/state?k=" + encodeURIComponent(k), { method: "PUT", body: JSON.stringify(obj) }),
     }),
     collection: (k) => ({
