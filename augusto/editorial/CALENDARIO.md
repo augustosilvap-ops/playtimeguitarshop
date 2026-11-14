@@ -11,9 +11,9 @@
 | 04 | Ter 17/11 | 08h30 | Carrossel 7 | Precificação | B · Editorial clean | Faturamento não é lucro: entenda sua margem antes de vender | MARGEM | Mini-guia Faturamento × Lucro × Margem (PDF) | — | Pronto p/ revisão |
 | 05 | Ter 17/11 | 12h30 | Estático | Precificação | D · Conceitual | Margem não é markup | MARKUP | Tabela de conversão markup → margem (PDF 1 p.) | — | Pronto p/ revisão |
 | 06 | Ter 17/11 | 19h30 | Reel 7s | IA aplicada | B · Editorial clean (capa) + filmagem real | Quer usar IA para encontrar produtos com potencial? Leia a legenda. | GARIMPO | Pack de prompts de pesquisa de produto (PDF) | Mixkit #4938 | Pronto p/ revisão |
-| 07 | Qua 18/11 | 08h30 | Carrossel 7 | IA aplicada | D · Conceitual (claro) | Produto certo com IA: valide antes de comprar | VALIDAR | Checklist de validação de produto (PDF) | — | Capa p/ revisão |
-| 08 | Qua 18/11 | 12h30 | Estático | Estratégia comercial | A · Fotográfico | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | Mixkit #4705 | Capa p/ revisão |
-| 09 | Qua 18/11 | 19h30 | Reel 7s | Estratégia comercial | C · Glass Dashboard (capa) + filmagem real | Quer fazer Black Friday sem destruir sua margem? Leia a legenda. | DESCONTO | Calculadora de desconto máximo (XLSX) | Mixkit #42137 | Capa p/ revisão |
+| 07 | Qua 18/11 | 08h30 | Carrossel 7 | IA aplicada | D · Conceitual (claro) | Produto certo com IA: valide antes de comprar | VALIDAR | Checklist de validação de produto (PDF) | — | Pronto p/ revisão |
+| 08 | Qua 18/11 | 12h30 | Estático | Estratégia comercial | A · Fotográfico | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | Mixkit #4705 | Pronto p/ revisão |
+| 09 | Qua 18/11 | 19h30 | Reel 7s | Estratégia comercial | C · Glass Dashboard (capa) + filmagem real | Quer fazer Black Friday sem destruir sua margem? Leia a legenda. | DESCONTO | Calculadora de desconto máximo (XLSX) | Mixkit #42137 | Pronto p/ revisão |
 | 10 | Qui 19/11 | 08h30 | Carrossel 8 | Estratégia comercial | C · Glass Dashboard | Black Friday: oferta com margem protegida | BLACK | Planejador de ofertas da Black Friday (XLSX) | — | Planejado |
 | 11 | Qui 19/11 | 12h30 | Estático | Precificação | D · Conceitual | Pare de precificar no escuro | ESCURO | Prompt de preço mínimo (PDF 1 p.) | — | Planejado |
 | 12 | Qui 19/11 | 19h30 | Reel 7s | Marketplace e operação | A · Filmagem real | Quer saber se seu anúncio está perdendo vendas? Leia a legenda. | ANUNCIO | Checklist de anúncio (PDF) | Mixkit #1781 | Planejado |
