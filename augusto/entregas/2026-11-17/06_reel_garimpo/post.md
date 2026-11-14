@@ -34,3 +34,7 @@ Comente GARIMPO e eu te envio no Direct os 5 prompts prontos para copiar e colar
 - **Gatilho:** `GARIMPO` (aceitar `garimpo`) somente neste Reel.
 - **Mensagem:** "Aqui estão os 5 prompts de garimpo, {primeiro nome}. Use com os dados reais dos anúncios: a IA organiza, quem decide é você."
 - **Botão:** "Baixar os prompts" → link público do PDF (a definir).
+
+
+## Versão Cinética (14/11, formato aprovado)
+- Vídeo: `reel_cinetico_1080x1920_11s.mp4` · capa `capa_cinetico_1080x1920.png`. Substitui a versão com filmagem. Sem narração (entra quando a chave do ElevenLabs chegar).

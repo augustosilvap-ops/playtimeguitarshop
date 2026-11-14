@@ -24,3 +24,6 @@ Coleção 001 disponível · useruah.com · link na bio
 ## Observações
 - Só afirmações aprovadas; sem prazo de produção; sem "nosso lema"/"nascida na rua".
 - Estampas usadas como estão (fotos oficiais de costas).
+
+## Versão v2 (14/11) — `v2/01–06.png`
+Estampa em close no fundo com opacidade baixa + palavra gigante em Cinzel 900 passando por trás do modelo e com a parte de baixo na frente dos ombros (recorte rembg das fotos oficiais). Estampas usadas como estão, sem cobrir a arte. Substitui os slides anteriores.

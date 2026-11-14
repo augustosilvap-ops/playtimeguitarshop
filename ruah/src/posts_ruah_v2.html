@@ -1,0 +1,52 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- RUAH v2 · estampa em baixa opacidade no fundo + palavra gigante entrelaçada com o modelo (parte atrás, parte na frente). Estampas usadas como estão. -->
+<link rel="stylesheet" href="ruah.css">
+<style>
+.art{background:#080808}
+.L{position:absolute;inset:0}
+.est{position:absolute;inset:-20px;background-size:cover;background-position:center;filter:grayscale(1) contrast(1.1)}
+.big{position:absolute;left:0;right:0;text-align:center;font-family:'Cinzel',serif;font-weight:900;text-transform:uppercase;line-height:1;white-space:nowrap;letter-spacing:.02em}
+.mod{position:absolute;left:50%;transform:translateX(-50%);height:1080px;top:250px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+.shade{position:absolute;left:0;right:0;bottom:0;height:270px}
+.cap{position:absolute;left:84px;right:84px;bottom:105px;text-align:center}
+.cap .lab{display:block;margin-bottom:18px}
+.cap .it{font-size:46px}
+</style></head><body>
+<section class="art" data-out="../ruah/entregas/2026-11-16/R01_carrossel_arco/v2/01.png" style="background:#080808">
+  <div class="est" style="background-image:url('../fotos_produtos/03_INVISIVEL_MOVE/03_5_detalhe.jpg');opacity:.18;mix-blend-mode:screen"></div>
+  <img class="logo" src="../marca/logos/logo-bone.png" alt="" style="height:40px"><div class="cnt" style="color:#9A9893">1/6</div>
+  <p class="lab" style="position:absolute;left:0;right:0;top:190px;text-align:center;color:#B9A88C">Coleção 001 · Quatro estampas</p>
+  <div class="big wrd" style="top:300px;color:#EEEAE1;font-size:300px"><span>CARRY</span></div>
+  <img class="mod" src="recortes/02_1_modelo_frente.png" alt="">
+  <div class="L" style="clip-path:inset(440px 64% 0 0)"><div class="big wrd" style="top:300px;color:#EEEAE1;font-size:300px"><span>CARRY</span></div></div>
+  <div class="L" style="clip-path:inset(440px 0 0 64%)"><div class="big wrd" style="top:300px;color:#EEEAE1;font-size:300px"><span>CARRY</span></div></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(8,8,8,0),rgba(8,8,8,.96) 60%)"></div>
+  <div class="cap"><p class="it" style="color:#E3DED3;font-size:52px">Quatro estampas. Uma única história.</p><span class="lab" style="color:#9A9893;margin-top:14px">Arraste e leia na ordem →</span></div>
+  <div class="handle" style="color:#9A9893">@ruahwear_</div>
+</section>
+<script>
+// cada slide: estampa de fundo, palavra, tema claro/escuro
+const S=[
+ {n:'01',dir:'01_RUACH',w:'RUACH',lab:'I · A origem de tudo',t:'O sopro que gera vida, movimento e transformação.',tema:'claro',out:'02'},
+ {n:'02',dir:'02_WE_CARRY_THE_SPIRIT',w:'SPIRIT',lab:'II · O que carregamos',t:'Mais do que um slogan: uma declaração de identidade.',tema:'escuro',out:'03'},
+ {n:'03',dir:'03_INVISIVEL_MOVE',w:'MOVE',lab:'III · O que não vemos também transforma',t:'Você não vê o vento. Vê o que ele move.',tema:'claro',out:'04'},
+ {n:'04',dir:'04_WHAT_DO_YOU_CARRY',w:'CARRY?',lab:'IV · A pergunta',t:'O que você carrega?',tema:'escuro',out:'05'}];
+for(const s of S){
+ const claro=s.tema==='claro',bg=claro?'#EEEAE1':'#080808',fg=claro?'#0F0D0B':'#EEEAE1',sub=claro?'#3A332B':'#E3DED3';
+ const word=`<div class="big wrd" style="top:300px;color:${fg};font-size:260px"><span>${s.w}</span></div>`;
+ document.write(`<section class="art" data-out="../ruah/entregas/2026-11-16/R01_carrossel_arco/v2/${s.out}.png" style="background:${bg}">
+  <div class="est" style="background-image:url('../fotos_produtos/${s.dir}/${s.n}_5_detalhe.jpg');opacity:${claro?.10:.16};mix-blend-mode:${claro?'multiply':'screen'}"></div>
+  <img class="logo" src="../marca/logos/${claro?'RUAH_logo_preto_600dpi.png':'logo-bone.png'}" alt="" style="height:40px">
+  <div class="cnt" style="color:${claro?'#6B645B':'#9A9893'}">${+s.out}/6</div>
+  ${word}
+  <img class="mod" src="recortes/${s.n}_2_modelo_costas.png" alt="">
+  <div class="L front-l" style="clip-path:inset(440px 64% 0 0)">${word}</div>
+  <div class="L front-r" style="clip-path:inset(440px 0 0 64%)">${word}</div>
+  <div class="shade" style="background:linear-gradient(180deg,${claro?'rgba(238,234,225,0)':'rgba(8,8,8,0)'},${claro?'rgba(238,234,225,.96)':'rgba(8,8,8,.96)'} 70%)"></div>
+  <div class="cap"><span class="lab" style="color:#B9A88C">${s.lab}</span><p class="it" style="color:${sub}">${s.t}</p></div>
+  <div class="handle" style="color:${claro?'#6B645B':'#9A9893'}">@ruahwear_</div>
+ </section>`)}
+// ajusta a palavra para caber em 940px
+document.fonts.ready.then(()=>document.querySelectorAll('section').forEach(sec=>{const ws=sec.querySelectorAll('.wrd');const w=ws[0];let f=260;w.style.fontSize=f+'px';const sp=w.firstChild;while(sp.offsetWidth>940&&f>120){f-=4;w.style.fontSize=f+'px'}while(sp.offsetWidth<880&&f<380){f+=4;w.style.fontSize=f+'px'}ws.forEach(x=>x.style.fontSize=f+'px')}));
+</script>
+</body></html>

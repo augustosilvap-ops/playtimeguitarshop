@@ -31,3 +31,7 @@ Comente DESCONTO e eu te envio no Direct a calculadora que faz essa conta e avis
 - **Gatilho:** `DESCONTO` (aceitar `desconto`).
 - **Mensagem:** "Aqui está a Calculadora de Desconto, {primeiro nome}. Troque os valores azuis pelos seus e veja o desconto máximo antes de anunciar a promoção."
 - **Botão:** "Abrir a calculadora" → link do Drive (a criar).
+
+
+## Versão Cinética (14/11, formato aprovado)
+- Vídeo: `reel_cinetico_1080x1920_11s.mp4` · capa `capa_cinetico_1080x1920.png`. Substitui a versão com filmagem. Sem narração (entra quando a chave do ElevenLabs chegar).
