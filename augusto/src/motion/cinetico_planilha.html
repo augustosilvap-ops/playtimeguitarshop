@@ -1,0 +1,46 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Formato "Cinético" (identidade @augustosilva.p): tipografia em tela cheia no ritmo da fala, cortes rápidos navy/branco/azul, UI da marca contando a história. -->
+<style>
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I;letter-spacing:-.01em}
+.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I;letter-spacing:-.01em}
+.card{position:absolute;left:140px;right:140px;border-radius:36px;background:#fff;box-shadow:0 30px 70px rgba(10,20,60,.18);padding:40px 48px}
+.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-cl(x),3),eb=x=>{x=cl(x);const c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const NAVY='#08090E',WHITE='#F5F7FB',BLUE='#2F6BFF',BLUE2='#7FA3FF',RED='#E5384A',INK='#0A0B10';
+// palavra: entra de baixo com escala e desfoque; sai cortada na troca de cena
+function w(t,t0,txt,x,y,size,c,o={}){if(t<t0)return'';const p=cl((t-t0)/.18),s=(o.s||1.35)-((o.s||1.35)-1)*eb(p);
+ return `<div class="w" style="left:${x}px;top:${y}px;font-size:${size}px;color:${c};transform:translateY(${(1-eo(p))*60}px) scale(${s});transform-origin:${o.o||'0 50%'};filter:blur(${(1-p)*12}px);opacity:${cl(p*3)}">${txt}</div>`}
+const brl=v=>v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const SC=[
+ [0,1.6,NAVY,lt=>w(lt,0,'VOCÊ',84,560,120,'#fff')+w(lt,.18,'VENDE',84,690,260,'#fff')+w(lt,.55,'E NÃO',84,930,140,'#fff')+w(lt,.8,'SOBRA',84,1070,260,BLUE2),'você vende e não sobra nada?'],
+ [1.6,3.6,WHITE,lt=>{const p=eo((lt-.15)/.35),drops=[[-45,'produto'],[-14,'comissão'],[-6,'imposto'],[-18,'frete e anúncios']];let v=100,h='';
+   drops.forEach((d,i)=>{const td=.55+i*.25;if(lt>td){v+=d[0];h+=`<div style="position:absolute;left:${120+(i%2)*400}px;top:${1180+Math.floor(i/2)*110-eo((lt-td)/.3)*30}px;opacity:${cl((lt-td)/.15)};font:700 44px I;color:${RED}">−${Math.abs(d[0])} <span style="font:600 28px I;color:#7A7F8C">${d[1]}</span></div>`}});
+   return `<div class="card" style="top:${560+(1-p)*80}px;opacity:${p}"><div style="font:500 24px M;color:#7A7F8C;letter-spacing:.14em">VENDA APROVADA · EXEMPLO</div><div style="font:800 170px/1 I;letter-spacing:-.06em;color:${lt>1.35?BLUE:v<100?RED:INK};margin-top:18px">R$ ${brl(v)}</div><div style="font:600 30px I;color:#7A7F8C;margin-top:14px">${v<100?'é o que sobra':'entrou na conta'}</div></div>`+h},'de cada R$ 100, sobram só R$ 17.'],
+ [3.6,5.0,BLUE,lt=>w(lt,0,'O PROBLEMA',84,620,130,'#fff')+w(lt,.3,'NÃO É',84,780,200,'#fff')+w(lt,.6,'VENDER.',84,990,230,NAVY),'o problema não é vender.'],
+ [5.0,6.2,NAVY,lt=>w(lt,0,'É O',84,640,160,'#fff')+w(lt,.25,'PREÇO.',84,830,250,BLUE2,{s:1.6}),'é o preço.'],
+ [6.2,7.8,WHITE,lt=>w(lt,0,'PREÇO',84,520,200,INK)+w(lt,.2,'CERTO',84,710,200,BLUE)+`<div class="card" style="top:${1000+(1-eo((lt-.55)/.3))*60}px;opacity:${cl((lt-.55)/.2)};font:500 40px M;color:${INK};text-align:center">custo ÷ (1 − taxas − margem)</div>`,'preço certo tem conta.'],
+ [7.8,9.8,BLUE,lt=>w(lt,0,'COMENTE',84,560,150,'#fff')+w(lt,.25,'PLANILHA',84,740,205,NAVY,{s:1.5})+`<div style="position:absolute;left:84px;top:1060px;padding:34px 64px;border-radius:99px;background:#fff;color:${BLUE};font:800 54px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};transform:translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px)">Leia a legenda ↓</div>`,'e receba a planilha no Direct.']];
+const DUR=9.8;
+window.R=function(t){
+ const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length-1:i],lt=t-s[0];
+ const dark=s[2]===NAVY,blue=s[2]===BLUE,fg=dark||blue?'#fff':INK;
+ const punch=1+(lt<.15?.04*(1-lt/.15):0)+.02*lt;
+ document.getElementById('v').innerHTML=`<div style="position:absolute;inset:0;background:${s[2]}"></div>
+  <div style="position:absolute;inset:0;transform:scale(${punch});transform-origin:30% 50%">${s[3](lt)}</div>
+  <div class="chip" style="color:${fg}"><i style="background:${blue?'#fff':BLUE};color:${blue?BLUE:'#fff'}">↗</i>@augustosilva.p</div>
+  <div class="cap" style="color:${fg};opacity:.9">${s[4]}</div>
+  <div class="bar" style="width:912px;background:${dark||blue?'rgba(255,255,255,.2)':'rgba(10,11,16,.12)'}"></div>
+  <div class="bar" style="width:${912*t/DUR}px;background:${blue?'#fff':BLUE}"></div>`};
+R(0);
+</script></body></html>
