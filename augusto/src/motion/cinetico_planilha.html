@@ -22,16 +22,47 @@ const NAVY='#08090E',WHITE='#F5F7FB',BLUE='#2F6BFF',BLUE2='#7FA3FF',RED='#E5384A
 function w(t,t0,txt,x,y,size,c,o={}){if(t<t0)return'';const p=cl((t-t0)/.18),s=(o.s||1.35)-((o.s||1.35)-1)*eb(p);
  return `<div class="w" style="left:${x}px;top:${y}px;font-size:${size}px;color:${c};transform:translateY(${(1-eo(p))*60}px) scale(${s});transform-origin:${o.o||'0 50%'};filter:blur(${(1-p)*12}px);opacity:${cl(p*3)}">${txt}</div>`}
 const brl=v=>v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+// vidro: trinca e estilhaça
+function glass(lt,tc,tb,x,y,W,H,inner,imp=[.55,.48]){
+ const slab=`<div style="position:absolute;inset:0;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(255,255,255,.10) 55%,rgba(255,255,255,.22));border:3px solid rgba(255,255,255,.75);box-shadow:inset 0 2px 0 rgba(255,255,255,.8)">${inner}</div>`;
+ const ix=imp[0]*W,iy=imp[1]*H,R=rng(7),N=16,P=[];
+ for(let i=0;i<N;i++){const a=(i+R()*.6)/N*2*Math.PI,dx=Math.cos(a),dy=Math.sin(a);let k=1e9;if(dx>0)k=Math.min(k,(W-ix)/dx);if(dx<0)k=Math.min(k,-ix/dx);if(dy>0)k=Math.min(k,(H-iy)/dy);if(dy<0)k=Math.min(k,-iy/dy);P.push([ix+dx*k,iy+dy*k])}
+ if(lt<tb){let cr='';if(lt>tc){const q=eo((lt-tc)/.18);cr=`<svg style="position:absolute;left:0;top:0" width="${W}" height="${H}">${P.map((p,i)=>`<line x1="${ix}" y1="${iy}" x2="${ix+(p[0]-ix)*q*(.5+((i*37)%10)/20)}" y2="${iy+(p[1]-iy)*q*(.5+((i*37)%10)/20)}" stroke="#fff" stroke-width="3" opacity=".9"/>`).join('')}<circle cx="${ix}" cy="${iy}" r="${10*q}" fill="#fff"/></svg>`}
+  const sh=lt>tc?(Math.sin(lt*90)*4*(1-cl((lt-tc)/.3))):0;
+  return `<div style="position:absolute;left:${x+sh}px;top:${y}px;width:${W}px;height:${H}px">${slab}${cr}</div>`}
+ const q=cl((lt-tb)/.8);let h='';
+ for(let i=0;i<N;i++){const p1=P[i],p2=P[(i+1)%N];for(const part of [0,1]){const f=.42,m1=[ix+(p1[0]-ix)*f,iy+(p1[1]-iy)*f],m2=[ix+(p2[0]-ix)*f,iy+(p2[1]-iy)*f];
+  const poly=part?[m1,p1,p2,m2]:[[ix,iy],m1,m2];const cx=poly.reduce((a,p)=>a+p[0],0)/poly.length,cy=poly.reduce((a,p)=>a+p[1],0)/poly.length;
+  let dx=cx-ix,dy=cy-iy;const L=Math.hypot(dx,dy)||1;dx/=L;dy/=L;const r=rng(i*2+part+3)(),d=(260+r*520)*eo(q);
+  h+=`<div style="position:absolute;left:${x}px;top:${y}px;width:${W}px;height:${H}px;clip-path:polygon(${poly.map(p=>p[0].toFixed(1)+'px '+p[1].toFixed(1)+'px').join(',')});transform-origin:${cx}px ${cy}px;transform:translate(${dx*d}px,${dy*d+1100*q*q}px) rotate(${(r-.5)*160*q}deg);opacity:${1-cl((q-.45)/.5)}">${slab}</div>`}}
+ return h+`<div style="position:absolute;inset:0;background:#fff;opacity:${.55*(1-cl((lt-tb)/.12))}"></div>`}
+const notif=(lt,t0,y,txt)=>lt<t0?'':`<div style="position:absolute;right:84px;top:${y+(1-eo((lt-t0)/.2))*-40}px;opacity:${cl((lt-t0)/.15)};display:flex;align-items:center;gap:16px;padding:18px 26px;border-radius:24px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.18);color:#fff;font:700 28px I"><span style="width:40px;height:40px;border-radius:50%;background:#22A06B;display:grid;place-items:center;font-size:22px">✓</span>${txt}</div>`;
+function line(lt,t0,x,y,W,H,pts,col,dur=.8){const q=eo((lt-t0)/dur);if(lt<t0)return'';const P=pts.map(([a,b])=>[x+a*W,y+b*H]);let L=0;for(let i=1;i<P.length;i++)L+=Math.hypot(P[i][0]-P[i-1][0],P[i][1]-P[i-1][1]);
+ const d=P.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' '),e=P[P.length-1],pv=P[P.length-2],ang=Math.atan2(e[1]-pv[1],e[0]-pv[0])*180/Math.PI;
+ return `<svg style="position:absolute;left:0;top:0" width="1080" height="1920"><path d="${d}" fill="none" stroke="${col}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-q)}"/>${q>.97?`<g transform="translate(${e[0]} ${e[1]}) rotate(${ang})"><path d="M-6 -26 L30 0 L-6 26 Z" fill="${col}"/></g>`:''}</svg>`}
 const SC=[
- [0,1.6,NAVY,lt=>w(lt,0,'VOCÊ',84,560,120,'#fff')+w(lt,.18,'VENDE',84,690,260,'#fff')+w(lt,.55,'E NÃO',84,930,140,'#fff')+w(lt,.8,'SOBRA',84,1070,260,BLUE2),'você vende e não sobra nada?'],
- [1.6,3.6,WHITE,lt=>{const p=eo((lt-.15)/.35),drops=[[-45,'produto'],[-14,'comissão'],[-6,'imposto'],[-18,'frete e anúncios']];let v=100,h='';
-   drops.forEach((d,i)=>{const td=.55+i*.25;if(lt>td){v+=d[0];h+=`<div style="position:absolute;left:${120+(i%2)*400}px;top:${1180+Math.floor(i/2)*110-eo((lt-td)/.3)*30}px;opacity:${cl((lt-td)/.15)};font:700 44px I;color:${RED}">−${Math.abs(d[0])} <span style="font:600 28px I;color:#7A7F8C">${d[1]}</span></div>`}});
-   return `<div class="card" style="top:${560+(1-p)*80}px;opacity:${p}"><div style="font:500 24px M;color:#7A7F8C;letter-spacing:.14em">VENDA APROVADA · EXEMPLO</div><div style="font:800 170px/1 I;letter-spacing:-.06em;color:${lt>1.35?BLUE:v<100?RED:INK};margin-top:18px">R$ ${brl(v)}</div><div style="font:600 30px I;color:#7A7F8C;margin-top:14px">${v<100?'é o que sobra':'entrou na conta'}</div></div>`+h},'de cada R$ 100, sobram só R$ 17.'],
- [3.6,5.0,BLUE,lt=>w(lt,0,'O PROBLEMA',84,620,130,'#fff')+w(lt,.3,'NÃO É',84,780,200,'#fff')+w(lt,.6,'VENDER.',84,990,230,NAVY),'o problema não é vender.'],
- [5.0,6.2,NAVY,lt=>w(lt,0,'É O',84,640,160,'#fff')+w(lt,.25,'PREÇO.',84,830,250,BLUE2,{s:1.6}),'é o preço.'],
- [6.2,7.8,WHITE,lt=>w(lt,0,'PREÇO',84,520,200,INK)+w(lt,.2,'CERTO',84,710,200,BLUE)+`<div class="card" style="top:${1000+(1-eo((lt-.55)/.3))*60}px;opacity:${cl((lt-.55)/.2)};font:500 40px M;color:${INK};text-align:center">custo ÷ (1 − taxas − margem)</div>`,'preço certo tem conta.'],
- [7.8,9.8,BLUE,lt=>w(lt,0,'COMENTE',84,560,150,'#fff')+w(lt,.25,'PLANILHA',84,740,205,NAVY,{s:1.5})+`<div style="position:absolute;left:84px;top:1060px;padding:34px 64px;border-radius:99px;background:#fff;color:${BLUE};font:800 54px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};transform:translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px)">Leia a legenda ↓</div>`,'e receba a planilha no Direct.']];
-const DUR=9.8;
+ [0,1.8,NAVY,lt=>notif(lt,.1,300,'Venda aprovada')+notif(lt,.35,400,'Venda aprovada')+notif(lt,.6,500,'Venda aprovada')+w(lt,0,'VOCÊ',84,660,120,'#fff')+w(lt,.18,'VENDE',84,790,240,'#fff')+w(lt,.6,'E NÃO',84,1020,130,'#fff')+w(lt,.85,'SOBRA',84,1150,240,BLUE2),'você vende e não sobra nada?'],
+ [1.8,3.9,WHITE,lt=>{const p=eo((lt-.1)/.3),drops=[[-45,'produto'],[-14,'comissão'],[-6,'imposto'],[-18,'frete e anúncios']];let v=100,h='';
+   drops.forEach((d,i)=>{const td=.45+i*.22;if(lt>td){v+=d[0];h+=`<div style="position:absolute;left:${120+(i%2)*400}px;top:${960+Math.floor(i/2)*100-eo((lt-td)/.3)*30}px;opacity:${cl((lt-td)/.15)};font:700 44px I;color:${RED}">−${Math.abs(d[0])} <span style="font:600 28px I;color:#7A7F8C">${d[1]}</span></div>`}});
+   return `<div class="card" style="top:${380+(1-p)*80}px;opacity:${p}"><div style="font:500 24px M;color:#7A7F8C;letter-spacing:.14em">VENDA APROVADA · EXEMPLO</div><div style="font:800 170px/1 I;letter-spacing:-.06em;color:${lt>1.3?BLUE:v<100?RED:INK};margin-top:18px">R$ ${brl(v)}</div><div style="font:600 30px I;color:#7A7F8C;margin-top:14px">${v<100?'é o que sobra':'entrou na conta'}</div></div>`+h
+    +line(lt,.45,120,1230,840,330,[[0,0],[.22,.18],[.4,.12],[.6,.5],[.78,.42],[.95,.95]],RED,1.1)+(lt>.6?`<div style="position:absolute;left:120px;top:1200px;font:500 24px M;letter-spacing:.14em;color:${RED};opacity:${cl((lt-.6)/.2)}">LUCRO ↓</div>`:'')},'de cada R$ 100, sobram só R$ 17.'],
+ [3.9,5.7,BLUE,lt=>w(lt,0,'O PROBLEMA',84,520,130,'#fff')+w(lt,.25,'NÃO É',84,680,200,'#fff')+(lt>.5?glass(lt-.5,.45,.75,84,940,912,330,`<div style="position:absolute;left:56px;top:50%;transform:translateY(-50%);font:800 210px/1 I;letter-spacing:-.06em;color:#fff">VENDER.</div>`):''),'o problema não é vender.'],
+ [5.7,7.3,NAVY,lt=>{const q=eo((lt-.55)/.6),pr=129.9-50*q;return w(lt,0,'É O',84,480,150,'#fff')+w(lt,.2,'PREÇO.',84,650,240,BLUE2,{s:1.6})
+   +`<div style="position:absolute;left:84px;top:${980+(1-eo((lt-.3)/.25))*50}px;opacity:${cl((lt-.3)/.2)};width:640px;padding:36px 44px;border-radius:28px;background:#11131C;border:2px solid #23263A">
+     <div style="font:500 24px M;color:#8C92A3;letter-spacing:.14em">PREÇO NO CHUTE · EXEMPLO</div>
+     <div style="font:700 44px I;color:#8C92A3;text-decoration:line-through;margin-top:10px;opacity:${cl((lt-.55)/.1)}">R$ 129,90</div>
+     <div style="font:800 120px/1 I;letter-spacing:-.05em;color:${lt>.55?RED:'#fff'};margin-top:4px">R$ ${brl(pr)}</div></div>`
+   +(lt>.75?`<div style="position:absolute;left:770px;top:${1060+(1-eo((lt-.75)/.2))*-30}px;padding:18px 26px;border-radius:99px;background:${RED};color:#fff;font:800 44px I;opacity:${cl((lt-.75)/.15)}">↓ −38%</div>`:'')
+   +line(lt,.6,770,1180,230,260,[[0,0],[.35,.3],[.55,.22],[1,1]],RED,.7)},'baixar preço no chute derruba sua margem.'],
+ [7.3,9.0,WHITE,lt=>{const bars=[.18,.3,.45,.62,.85],m=2+13*eo((lt-.45)/.9);
+   return w(lt,0,'PREÇO',84,420,190,INK)+w(lt,.18,'CERTO',84,600,190,BLUE)
+   +bars.map((b,i)=>{const g=eo((lt-.4-i*.1)/.45);return `<div style="position:absolute;left:${84+i*118}px;bottom:${1920-1460}px;width:86px;height:${420*b*g}px;border-radius:16px 16px 6px 6px;background:${i===4?BLUE:'#C9D6F5'}"></div>`}).join('')
+   +line(lt,.5,127,1000,480,400,[[0,.9],[.25,.72],[.5,.55],[.75,.3],[1,0]],BLUE,.9)
+   +`<div style="position:absolute;right:84px;top:${1180}px;text-align:right;opacity:${cl((lt-.45)/.2)}"><div style="font:500 24px M;letter-spacing:.14em;color:#7A7F8C">MARGEM ↑</div><div style="font:800 150px/1 I;letter-spacing:-.06em;color:${BLUE}">${Math.round(m)}%</div></div>`
+   +`<div style="position:absolute;left:84px;top:1500px;font:500 34px M;color:${INK};opacity:${cl((lt-.9)/.2)}">custo ÷ (1 − taxas − margem)</div>`},'preço certo faz a margem subir.'],
+ [9.0,10.9,BLUE,lt=>w(lt,0,'COMENTE',84,560,150,'#fff')+w(lt,.25,'PLANILHA',84,740,205,NAVY,{s:1.5})+`<div style="position:absolute;left:84px;top:1060px;padding:34px 64px;border-radius:99px;background:#fff;color:${BLUE};font:800 54px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};transform:translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px)">Leia a legenda ↓</div>`,'e receba a planilha no Direct.']];
+const DUR=10.9;
 window.R=function(t){
  const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length-1:i],lt=t-s[0];
  const dark=s[2]===NAVY,blue=s[2]===BLUE,fg=dark||blue?'#fff':INK;
