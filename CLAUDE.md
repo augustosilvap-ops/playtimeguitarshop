@@ -24,6 +24,11 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Dados ao vivo pela capacidade `mcp` (Shopify list-orders; Windsor_ai get_data para Meta Ads e Instagram @ruahwear_ 17841452465952355 e @augustosilva.p 17841407424879500). Chat via `sample`, voz via `tts`/`dictation`, execução via Claude Code Remote `create_session`.
 - Banco do artifact: `estado/tarefas` (tarefas por projeto: ruah, aug, ml, pq) e `briefing/hoje` (gravado todo dia às 6h38 pela tarefa agendada "Nexus briefing diário").
 
+## Nexus site próprio (sem login no Claude)
+- https://nexusautomatic.vercel.app · Vercel publica a branch `main` · código em `nexus-site/` (front em `public/`, funções em `api/` reexportadas na raiz `api/`).
+- Login por senha (`NEXUS_PASSWORD`, token HMAC com `NEXUS_SECRET`). Dados: `/api/shopify` (SHOPIFY_STORE/SHOPIFY_TOKEN), `/api/windsor` (WINDSOR_API_KEY), `/api/state` (Upstash Redis). `public/shim.js` emula `window.claude.use` para reaproveitar o Nexus.
+- Sem chat (exige créditos da API da Anthropic). Ao mudar `nexus/index.html`, regenere `nexus-site/public/index.html`.
+
 ## Instagram pessoal @augustosilva.p (pasta `augusto/`)
 - Documento mestre: `augusto/sistema/BRIEFING_MESTRE.md`. Regras de produção: `augusto/sistema/SISTEMA_VISUAL_E_EDITORIAL.md`. Leia os dois antes de qualquer peça.
 - Foco: marketplace, e-commerce, gestão e IA. **Sem fé/ministério nas peças comerciais.** Não recriar o rosto do Augusto. Assinatura apenas `@augustosilva.p`.
