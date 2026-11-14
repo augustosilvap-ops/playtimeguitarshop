@@ -1,6 +1,7 @@
 // Tarefas, aprovações e briefing (Upstash Redis).
 import { ok, deny } from "../lib/auth.js";
 import * as kv from "../lib/kv.js";
+const SEED = { "estado/tarefas": {"ruah": [{"texto": "Enviar os pedidos pagos que aguardam envio", "feito": false}, {"texto": "Comparar métricas da home antes/depois do tema", "feito": false}, {"texto": "Prévia do combo \"Leve 2 por R$ 269,90\" (17/11)", "feito": false}, {"texto": "Revisar menções a \"25/11\" no fluxo Founders", "feito": false}, {"texto": "Falar com especialista sobre o registro no INPI", "feito": false}], "aug": [{"texto": "Testar os 6 fluxos do Manychat", "feito": false}, {"texto": "Aprovar e publicar os posts 01–06 (16 e 17/11)", "feito": false}, {"texto": "Produzir os posts 07–21", "feito": false}], "ml": [{"texto": "Exportar planilhas de vendas e anúncios do Mercado Livre", "feito": false}, {"texto": "Ativar o programa Decola", "feito": false}, {"texto": "Confirmar se a B2Drop sincroniza preço e estoque", "feito": false}, {"texto": "Escolher os 20–30 anúncios prioritários", "feito": false}], "pq": [{"texto": "Revisar o EP01 \"Bem-vindos ao Reino\"", "feito": false}, {"texto": "Fechar a ficha visual dos 4 personagens", "feito": false}, {"texto": "Montar a grade de Shorts da semana", "feito": false}, {"texto": "Enviar os arquivos do Drive para o projeto", "feito": false}]} };
 const KEYS = new Set(["estado/tarefas", "aprovacoes", "briefing/hoje"]);
 const pre = (req) => {
   if (!ok(req)) return deny();
@@ -11,7 +12,10 @@ const pre = (req) => {
 };
 export async function GET(req) {
   const e = pre(req); if (e) return e;
-  return Response.json(await kv.get("nexus:" + new URL(req.url).searchParams.get("k")));
+  const k = new URL(req.url).searchParams.get("k");
+  let v = await kv.get("nexus:" + k);
+  if (v == null && SEED[k]) { v = SEED[k]; await kv.set("nexus:" + k, v); }
+  return Response.json(v);
 }
 export async function PUT(req) {
   const e = pre(req); if (e) return e;
