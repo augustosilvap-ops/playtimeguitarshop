@@ -1,0 +1,92 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<style>
+.V{font-family:var(--f-display)}
+/* 01-B · editorial clean com recibo leitoso */
+.b1 .t{position:absolute;left:var(--m);top:200px;width:900px;color:var(--ink)}
+.b1 .rc{position:absolute;right:var(--m);bottom:170px;width:560px;padding:40px 44px;transform:rotate(3deg)}
+.b1 .rc .l{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:28px;padding:18px 0;border-bottom:1px dashed var(--gray-300)}
+.b1 .rc .l b{color:var(--electric)}
+.b1 .rc .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:22px;font-weight:800;font-size:34px}
+.b1 .halo{position:absolute;width:800px;height:800px;right:-240px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(47,107,255,.22),transparent 65%)}
+/* 01-C · conceitual: % de vidro */
+.c1x .pct{position:absolute;left:50%;top:150px;transform:translateX(-50%);width:640px;height:640px;border-radius:50%;display:grid;place-items:center}
+.c1x .pct span{font-family:var(--f-serif);font-style:italic;font-size:470px;line-height:1;color:#fff;text-shadow:0 0 60px rgba(91,140,255,.6)}
+.c1x .orb{position:absolute;left:50%;top:120px;transform:translateX(-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#5B8CFF,#1B3A8C 55%,transparent 72%)}
+.c1x .t{position:absolute;left:var(--m);right:var(--m);bottom:170px;text-align:center}
+/* 02-B · fotográfico com chips */
+.b2 .bg-photo{background-image:url('../img/f1781.jpg');background-position:40% 50%;filter:brightness(.8) saturate(.8)}
+.b2 .tint{position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,11,31,.95) 8%,rgba(5,11,31,.55) 50%,rgba(5,11,31,.2) 75%,rgba(5,11,31,.6))}
+.b2 .t{position:absolute;left:var(--m);right:var(--m);bottom:330px}
+.b2 .chips{position:absolute;left:var(--m);right:var(--m);bottom:160px;display:flex;flex-wrap:wrap;gap:14px}
+.b2 .chips .glass{padding:14px 24px;border-radius:999px;font-family:var(--f-mono);font-size:24px}
+/* 02-C · editorial clean com “5” gigante */
+.c2x .five{position:absolute;right:110px;top:60px;font-family:var(--f-serif);font-style:italic;font-size:780px;line-height:.8;color:var(--electric);opacity:.95}
+.c2x .t{position:absolute;left:var(--m);top:620px;width:620px;color:var(--ink)}
+.c2x .s{position:absolute;left:var(--m);top:1000px;width:520px;font-size:32px;color:var(--gray-700);font-weight:500;line-height:1.35}
+/* 03 · capas de Reel */
+.r{width:1080px;height:1920px}
+.b3 .t{position:absolute;left:var(--m);top:400px;width:920px;color:var(--ink)}
+.b3 .frame{position:absolute;left:var(--m);right:var(--m);top:1000px;height:560px;border-radius:44px;padding:16px}
+.b3 .frame .ph{position:absolute;inset:16px;border-radius:30px;background:url('../img/reel03_frame.jpg') center 35%/cover}
+.b3 .chip2{position:absolute;left:var(--m);top:880px;font-family:var(--f-mono);font-size:28px;font-weight:600;color:#fff;background:var(--electric);padding:14px 24px;border-radius:999px}
+.c3x .bg-photo{background-image:url('../img/reel03_frame.jpg')}
+.c3x .tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,31,.96) 0%,rgba(5,11,31,.9) 38%,rgba(5,11,31,.2) 62%,rgba(5,11,31,.5) 100%)}
+.c3x .t{position:absolute;left:var(--m);right:var(--m);top:330px}
+.c3x .big{font-weight:800;font-size:120px;line-height:.95;letter-spacing:-.045em}
+.c3x .cta{position:absolute;left:var(--m);top:1000px;font-family:var(--f-mono);font-size:30px;font-weight:600;padding:16px 26px;border-radius:999px;background:var(--electric)}
+.rsig{position:absolute;left:0;right:0;top:1600px;text-align:center;font-family:var(--f-mono);font-size:26px;letter-spacing:.06em;opacity:.85}
+</style></head><body>
+
+<section class="art light b1 V" data-out="previa/variacoes/01_B.png">
+  <div class="halo"></div>
+  <div style="position:absolute;left:var(--m);top:120px;color:var(--ink)" class="kicker">Taxas &amp; comissões</div>
+  <h1 class="t h-xl">Você perde lucro <span class="em">nas taxas?</span></h1>
+  <div class="glass light rc">
+    <div class="l"><span>Comissão</span><b>− %</b></div>
+    <div class="l"><span>Tarifa fixa</span><b>− R$</b></div>
+    <div class="l"><span>Parcelamento</span><b>− %</b></div>
+    <div class="tot"><span>Sobra pra você</span><span class="em" style="font-size:44px">?</span></div>
+  </div>
+  <div class="sig" style="color:var(--ink)">@augustosilva.p</div>
+</section>
+
+<section class="art dark c1x V" data-out="previa/variacoes/01_C.png">
+  <div class="bg-deep"></div><div class="orb"></div>
+  <div class="glass pct"><span>%</span></div>
+  <h1 class="t h-l">Você perde lucro <span class="em">nas taxas?</span></h1>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div>
+</section>
+
+<section class="art dark b2 V" data-out="previa/variacoes/02_B.png">
+  <div class="bg-photo"></div><div class="tint"></div>
+  <div style="position:absolute;left:var(--m);top:110px" class="kicker">Precificação &amp; margem</div>
+  <h1 class="t h-xl">5 custos que <span class="em">comem</span> seu lucro</h1>
+  <div class="chips"><div class="glass">Comissão</div><div class="glass">Impostos</div><div class="glass">Frete</div><div class="glass">Taxa financeira</div><div class="glass">Anúncios</div></div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div><div class="next">arraste →</div>
+</section>
+
+<section class="art white c2x V" data-out="previa/variacoes/02_C.png">
+  <div class="five">5</div>
+  <div style="position:absolute;left:var(--m);top:120px;color:var(--ink)" class="kicker">Precificação &amp; margem</div>
+  <h1 class="t h-l">custos que <span class="em">comem</span> seu lucro</h1>
+  <p class="s">E que quase ninguém coloca no preço antes de vender.</p>
+  <div class="sig" style="color:var(--ink)">@augustosilva.p</div><div class="next" style="color:var(--ink)">arraste →</div>
+</section>
+
+<section class="art r light b3 V" data-out="previa/variacoes/03_B.png">
+  <div style="position:absolute;left:var(--m);top:320px;color:var(--ink)" class="kicker">Precificação</div>
+  <h1 class="t h-l">Quer aprender a precificar <span class="em">mesmo sendo leigo?</span></h1>
+  <div class="chip2">Leia a legenda ↓</div>
+  <div class="glass light frame"><div class="ph"></div></div>
+  <div class="rsig" style="color:var(--gray-700)">@augustosilva.p</div>
+</section>
+
+<section class="art r dark c3x V" data-out="previa/variacoes/03_C.png">
+  <div class="bg-photo"></div><div class="tint"></div>
+  <div style="position:absolute;left:var(--m);top:250px" class="kicker">Precificação</div>
+  <div class="t"><div class="big">Precificar<br><span class="em" style="font-size:132px">mesmo sendo</span><br>leigo?</div></div>
+  <div class="cta">Leia a legenda ↓</div>
+  <div class="rsig">@augustosilva.p</div>
+</section>
+</body></html>
