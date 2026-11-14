@@ -1,0 +1,74 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Formato "TV na sala": tipografia cinética dentro de uma TV em perspectiva, sala construída em código (sem imagem de terceiros). -->
+<style>
+@font-face{font-family:A;src:url('../fonts/Anton.woff2')}
+@font-face{font-family:K;src:url('../fonts/ArchivoBlack.woff2')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#v{position:absolute;inset:0;overflow:hidden}
+.cam{position:absolute;inset:-40px;transform-origin:50% 45%}
+.wall{position:absolute;inset:0;background:
+  radial-gradient(900px 600px at 50% 8%,rgba(255,236,210,.10),transparent 70%),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 3px,transparent 3px 7px),
+  linear-gradient(180deg,#1b1917 0%,#151311 55%,#0d0c0b 100%)}
+.frame{position:absolute;width:250px;height:320px;background:#0a0a0a;padding:16px;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.frame div{width:100%;height:100%;background:#E9E6E0;display:grid;place-items:center}
+.frame svg{width:120px;height:120px}
+.tvwrap{position:absolute;left:-170px;top:600px;width:1360px;height:765px;perspective:2000px}
+.tv{position:absolute;inset:0;transform:rotateY(-17deg) rotateX(1.5deg);transform-origin:20% 50%;background:#050505;border-radius:10px;padding:14px;box-shadow:0 40px 80px rgba(0,0,0,.7)}
+.scr{position:relative;width:100%;height:100%;overflow:hidden;border-radius:4px}
+.gl{position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 35%);pointer-events:none}
+.desk{position:absolute;left:-40px;right:-40px;top:1540px;bottom:-40px;background:
+  repeating-linear-gradient(176deg,rgba(255,255,255,.02) 0 2px,transparent 2px 9px),linear-gradient(180deg,#2a1d14,#140d09)}
+.spill{position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none}
+.cap{position:absolute;left:60px;right:60px;top:1420px;text-align:center;font:800 50px I;color:#fff;letter-spacing:-.01em;text-shadow:0 4px 18px rgba(0,0,0,.9)}
+.w{position:absolute;white-space:nowrap;line-height:.9}
+.an{font-family:A;text-transform:uppercase}
+.kb{font-family:K;text-transform:uppercase;letter-spacing:-.01em}
+</style></head><body><div id="v"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3), eb=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const BLUE='#2F6BFF',RED='#E5383B',WHITE='#F2F0EC',BLACK='#0C0C0E';
+// pop: palavra entra com escala + blur de movimento
+function pop(t,t0,html,x,y,size,o={}){const p=cl((t-t0)/.16);if(t<t0)return'';const s=(o.from||1.6)-((o.from||1.6)-1)*eb(p),b=(1-p)*14;
+  return `<div class="w ${o.f||'an'}" style="left:${x}px;top:${y}px;font-size:${size}px;color:${o.c||'#fff'};transform:translate(-50%,-50%) scale(${s}) ${o.sk?`skewX(${o.sk*(1-p)}deg)`:''};filter:blur(${b}px);opacity:${cl(p*3)};${o.st||''}">${html}</div>`}
+const ext=(c,n=14,col='#9a968f')=>`text-shadow:${Array.from({length:n},(_,i)=>`${i+1}px ${i+1}px 0 ${col}`).join(',')},${n+6}px ${n+10}px 24px rgba(0,0,0,.45);color:${c}`;
+// HUD de câmera
+const hud=(t)=>`<div style="position:absolute;inset:34px;border:0"><div style="position:absolute;left:0;top:0;width:60px;height:60px;border-left:4px solid #fff;border-top:4px solid #fff"></div><div style="position:absolute;right:0;top:0;width:60px;height:60px;border-right:4px solid #fff;border-top:4px solid #fff"></div><div style="position:absolute;left:0;bottom:0;width:60px;height:60px;border-left:4px solid #fff;border-bottom:4px solid #fff"></div><div style="position:absolute;right:0;bottom:0;width:60px;height:60px;border-right:4px solid #fff;border-bottom:4px solid #fff"></div>
+ <div style="position:absolute;left:250px;top:22px;font:500 22px M;color:#fff">● REC</div><div style="position:absolute;right:84px;top:22px;font:500 22px M;color:#fff">00:00:${String(Math.floor(t*30)%60).padStart(2,'0')}:${String(Math.floor(t*30*7)%30).padStart(2,'0')}</div></div>`;
+const sheet=`<div style="position:absolute;left:250px;top:250px;width:340px;height:260px;border:2px solid #333;border-radius:10px;background:#141416;padding:18px;font:500 15px M;color:#888">
+ <div style="color:#bbb;margin-bottom:10px">precificacao.xlsx</div>${['custo','comissão','imposto','frete','anúncios','margem'].map((r,i)=>`<div style="display:flex;justify-content:space-between;border-bottom:1px solid #2a2a2e;padding:5px 0"><span>${r}</span><span style="color:${i===5?RED:'#888'}">${i===5?'?? %':'—'}</span></div>`).join('')}</div>`;
+// cenas: [início, fim, cor de fundo, função conteúdo(t local), legenda]
+const SC=[
+ [0,1.35,BLUE,lt=>pop(lt,0,'PREJUÍZO<span style="font-size:.8em">OOO</span>',770,320,132,{f:'kb',st:ext(WHITE,14,'#b8c6ea'),from:1.25})+pop(lt,.55,'de novo?',760,500,44,{f:'kb',c:'#fff',from:1.2}),'prejuízo de novo?'],
+ [1.35,3.0,WHITE,lt=>pop(lt,0,'TÁ',560,120,90,{c:BLACK,sk:-12})+pop(lt,.22,'VENDENDO',760,235,130,{c:BLACK})+pop(lt,.55,'NO <span style="color:'+BLUE+'">CHUTE,</span>',700,370,150,{c:BLACK,f:'kb'})+pop(lt,1.05,'NÉ<span style="color:'+BLUE+'">?</span>',1010,540,170,{c:BLACK,from:2.2}),'tá vendendo no chute, né?'],
+ [3.0,4.3,BLACK,lt=>pop(lt,0,'PERA.',760,280,200,{c:'#fff'})+pop(lt,.55,'PERA AÍ<span style="color:'+BLUE+'">.</span>',760,500,130,{c:'#fff',f:'kb'}),'pera, pera aí.'],
+ [4.3,6.1,BLACK,lt=>`<div style="opacity:${eo(lt/.3)}">${sheet}</div>`+pop(lt,.15,'VOCÊ NÃO SOMOU',920,250,54,{f:'kb',c:'#fff'})+pop(lt,.5,'AS TAXAS',920,400,170,{c:RED,st:`text-shadow:0 0 40px rgba(229,56,59,.7)`})
+   +(lt>1.05?`<svg style="position:absolute;inset:0" width="1332" height="737"><line x1="690" y1="480" x2="${690+470*eo((lt-1.05)/.25)}" y2="${480-170*eo((lt-1.05)/.25)}" stroke="${RED}" stroke-width="7"/></svg>`:''),'você não somou as taxas?'],
+ [6.1,7.7,BLUE,lt=>hud(lt)+pop(lt,0,'ESSE',500,260,130,{c:'#fff'})+pop(lt,.2,'VÍDEO',890,260,130,{c:'#fff',f:'kb'})+pop(lt,.45,'AQUI',760,450,170,{c:'#fff',f:'kb'}),'esse vídeo aqui resolve.'],
+ [7.7,9.6,BLACK,lt=>pop(lt,0,'COMENTE',760,230,96,{c:'#fff',f:'kb'})+pop(lt,.3,'PLANILHA',760,410,200,{c:BLUE,st:`text-shadow:0 0 50px rgba(47,107,255,.6)`,from:1.9})+pop(lt,.8,'e receba no Direct ↓',760,570,42,{f:'kb',c:'#fff',from:1.1}),'comente PLANILHA e receba no Direct.']];
+const DUR=9.6;
+function frame(sx,sy,icon){return `<div class="frame" style="left:${sx}px;top:${sy}px"><div>${icon}</div></div>`}
+const ic=d=>`<svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+window.R=function(t){
+ const i=SC.findIndex(s=>t>=s[0]&&t<s[1]), s=SC[i<0?SC.length-1:i], lt=t-s[0];
+ // pequeno "flash" de corte
+ const cut=lt<.06?.35:0;
+ const sh=(Math.sin(t*1.3)*4), zoom=1.0+0.03*t/DUR+(lt<.12?0.012*(1-lt/.12):0);
+ const spillCol=s[2]===WHITE?'rgba(255,255,255,.22)':s[2]===BLUE?'rgba(47,107,255,.32)':'rgba(40,40,60,.08)';
+ document.getElementById('v').innerHTML=`<div class="cam" style="transform:scale(${zoom}) translate(${sh}px,${sh*.5}px)">
+  <div class="wall"></div>
+  <div class="spill" style="background:radial-gradient(1100px 760px at 45% 52%,${spillCol},transparent 70%)"></div>
+  ${frame(110,90,ic('<path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/>'))}
+  ${frame(420,90,ic('<path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/>'))}
+  ${frame(730,90,ic('<path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/>'))}
+  <div class="tvwrap"><div class="tv"><div class="scr" style="background:${s[2]}">${s[3](lt)}<div style="position:absolute;inset:0;background:#fff;opacity:${cut}"></div><div class="gl"></div></div></div></div>
+  <div class="desk"></div>
+  <div class="spill" style="background:radial-gradient(900px 300px at 45% 1560px,${spillCol},transparent 70%)"></div>
+  <div class="cap">${s[4]}</div>
+ </div>`};
+R(0);
+</script></body></html>
