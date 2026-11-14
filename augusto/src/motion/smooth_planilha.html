@@ -1,0 +1,84 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+@font-face{font-family:S;font-style:italic;src:url('../fonts/InstrumentSerif-400i.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif;-webkit-font-smoothing:antialiased}
+#v{position:absolute;inset:0;overflow:hidden}
+.bg{position:absolute;inset:0}
+.lt{background:radial-gradient(1100px 900px at 50% 38%,#FFFFFF 0%,#F2F5FC 55%,#E4EAF7 100%)}
+.dk{background:radial-gradient(900px 1100px at 50% 55%,#132A66 0%,#0A1430 45%,#05070D 100%)}
+.orb{position:absolute;border-radius:50%;filter:blur(38px)}
+.hd{position:absolute;top:250px;left:0;right:0;text-align:center;font:600 30px I;letter-spacing:.01em}
+.sc{position:absolute;inset:0;transform-origin:50% 62%}
+.dial{position:absolute;left:340px;top:520px;width:400px;height:400px}
+.tile{position:absolute;left:90px;top:90px;width:220px;height:220px;border-radius:60px;
+  background:linear-gradient(160deg,#6E97FF 0%,#2F6BFF 45%,#1C47C9 100%);
+  box-shadow:0 30px 60px rgba(28,71,201,.35),inset 0 2px 0 rgba(255,255,255,.55),inset 0 -10px 24px rgba(10,30,120,.35);display:grid;place-items:center}
+.tile:after{content:'';position:absolute;left:14px;right:14px;top:10px;height:46%;border-radius:50px 50px 30px 30px;background:linear-gradient(180deg,rgba(255,255,255,.38),rgba(255,255,255,0))}
+.tile svg{width:110px;height:110px}
+.num{position:absolute;left:0;right:0;top:990px;text-align:center;font:800 200px/1 I;letter-spacing:-.06em}
+.lab{position:absolute;left:0;right:0;top:1210px;text-align:center;font:500 26px M;letter-spacing:.28em}
+.txt{position:absolute;left:90px;right:90px;top:1300px;text-align:center;font:700 74px/1.08 I;letter-spacing:-.045em}
+.txt span{display:inline-block;margin:0 .12em}
+.txt .s{font:400 84px/1 S;letter-spacing:-.01em}
+.pill{position:absolute;left:50%;top:1600px;transform:translateX(-50%);padding:24px 44px;border-radius:99px;background:#2F6BFF;color:#fff;font:700 36px I;box-shadow:0 0 60px rgba(47,107,255,.55);white-space:nowrap}
+.bar{position:absolute;left:84px;bottom:90px;height:6px;border-radius:6px;background:#2F6BFF}
+.track{position:absolute;left:84px;right:84px;bottom:90px;height:6px;border-radius:6px;background:rgba(127,140,170,.25)}
+</style></head><body><div id="v"></div>
+<script>
+const ICON={
+ bag:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>',
+ tag:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4"/></svg>',
+ down:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l7 7 4-4 7 7"/><path d="M21 11v5h-5"/></svg>',
+ grid:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M4 15h16M10 4v16"/></svg>'};
+const DUR=10, SC=[ // cenas
+ {a:0,b:2.6,bg:'lt',ic:'bag',words:['Você','quer','vender','*online?'],num:null},
+ {a:2.6,b:5.1,bg:'lt',ic:'tag',words:['Mas','não','sabe','precificar','seu','*produto?'],num:{to:83.62,pre:'R$ ',lab:'PREÇO CERTO · EXEMPLO HIPOTÉTICO'}},
+ {a:5.1,b:7.6,bg:'dk',ic:'down',words:['…e','está','tomando','!prejuízo','sem','perceber?'],num:{to:-12.40,pre:'R$ ',lab:'POR VENDA · SIMULAÇÃO'}},
+ {a:7.6,b:10,bg:'lt',ic:'grid',words:['Vou','te','ensinar','a','precificar','mesmo','sendo','*leigo.'],num:null,end:true}];
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3), eio=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const brl=v=>(v<0?'− ':'')+Math.abs(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const T=0.38; // transição
+function ticks(dark){let s='';for(let i=0;i<60;i++){const a=i*6*Math.PI/180,r1=188,r2=i%5?178:170;s+=`<line x1="${200+r1*Math.sin(a)}" y1="${200-r1*Math.cos(a)}" x2="${200+r2*Math.sin(a)}" y2="${200-r2*Math.cos(a)}" stroke="${dark?'rgba(255,255,255,.25)':'rgba(30,50,110,.22)'}" stroke-width="2"/>`}return s}
+function scene(c,t,i){
+ const lt=t-c.a, dur=c.b-c.a, dk=c.bg==='dk', ink=dk?'#fff':'#0A0B10', acc=dk?'#FF5A5A':'#2F6BFF';
+ // entrada/saída
+ const inn=i===0?1:eo((lt+T)/T), out=c.end?0:eio((t-(c.b-T))/T);
+ const op=Math.min(inn,1-out), blur=(1-inn)*18+out*18, zs=1+0.04*lt/dur+(1-inn)*-.06+out*.12;
+ const prog=cl(lt/(dur-.2)), R=180, L=2*Math.PI*R, arc=(c.end?Math.max(prog,eo(lt/1.2)):prog);
+ const hx=200+R*Math.sin(arc*2*Math.PI), hy=200-R*Math.cos(arc*2*Math.PI);
+ const pop=eo(lt/.5), tileS=.6+.4*pop+.06*Math.sin(cl(lt/.5)*Math.PI);
+ // camera chega na palavra: aproxima no fim da cena
+ const cam=1+0.10*eio((lt-dur*.45)/(dur*.55));
+ let words=c.words.map((w,k)=>{const st=.25+k*.13,p=eo((lt-st)/.35);const cls=w[0]==='*'?'s':'';const col=w[0]==='*'?'#2F6BFF':w[0]==='!'?acc:ink;
+   return `<span class="${cls}" style="color:${col};opacity:${p};filter:blur(${(1-p)*10}px);transform:translateY(${(1-p)*30}px)">${w.replace(/^[*!]/,'')}</span>`}).join('');
+ let num='';if(c.num){const p=eo((lt-.15)/1.3);num=`<div class="num" style="color:${dk?'#FF5A5A':'#0A0B10'};opacity:${cl(lt/.3)}">${(c.num.to<0&&p>0?'− ':'')+c.num.pre+brl(Math.abs(c.num.to*p)).replace('− ','')}</div><div class="lab" style="color:${dk?'rgba(255,255,255,.6)':'#7A7F8C'};opacity:${cl((lt-.3)/.4)}">${c.num.lab}</div>`}
+ let lines='';if(dk){const d=1400,p=eo((lt-.1)/1.6);lines=`<svg style="position:absolute;left:0;top:1440px" width="1080" height="420" viewBox="0 0 1080 420" fill="none">
+   ${[0,1,2].map(k=>`<path d="M-20 ${120+k*26} C 200 ${60+k*26}, 380 ${90+k*26}, 560 ${170+k*26} S 860 ${330+k*26}, 1100 ${370+k*26}" stroke="${k?'rgba(255,255,255,.28)':'#FF5A5A'}" stroke-width="${k?2:4}" stroke-dasharray="${d}" stroke-dashoffset="${d*(1-cl(p*1.1-k*.08))}"/>`).join('')}</svg>`}
+ const txtTop=c.num?1300:1040, numOff=c.num?0:0;
+ return `<div class="sc" style="opacity:${op};filter:blur(${blur}px);transform:scale(${zs*cam})">
+  <div class="bg ${c.bg}"></div>
+  ${dk?'':`<div class="orb" style="left:-120px;top:${1150+40*Math.sin(t)}px;width:260px;height:260px;background:rgba(47,107,255,.45)"></div><div class="orb" style="right:-90px;top:${1620-30*Math.sin(t*.8)}px;width:220px;height:220px;background:rgba(91,140,255,.55)"></div><div class="orb" style="right:-60px;top:340px;width:140px;height:140px;background:rgba(157,187,255,.5)"></div>`}
+  ${dk?`<div class="orb" style="left:-80px;top:1500px;width:240px;height:240px;background:rgba(255,90,90,.25)"></div>`:''}
+  ${lines}
+  <svg class="dial" viewBox="0 0 400 400" style="top:${c.num?470:620}px">${ticks(dk)}<circle cx="200" cy="200" r="${R}" stroke="${dk?'rgba(255,255,255,.12)':'rgba(30,50,110,.10)'}" stroke-width="3" fill="none"/>
+   <circle cx="200" cy="200" r="${R}" stroke="${acc}" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-arc)}" transform="rotate(-90 200 200)"/>
+   <circle cx="${hx}" cy="${hy}" r="9" fill="${acc}"/></svg>
+  <div class="tile" style="left:430px;top:${(c.num?470:620)+90}px;transform:scale(${tileS});${dk?'background:linear-gradient(160deg,#FF8A8A,#E5484D 50%,#A8262B);box-shadow:0 30px 60px rgba(229,72,77,.35),inset 0 2px 0 rgba(255,255,255,.5)':''}">${ICON[c.ic]}</div>
+  ${num}
+  <div class="txt" style="top:${txtTop}px">${words}</div>
+  ${c.end?`<div class="pill" style="opacity:${eo((lt-1.25)/.3)};transform:translateX(-50%) translateY(${(1-eo((lt-1.25)/.35))*30-6*Math.abs(Math.sin(Math.PI*cl(lt-1.6)/0.9))}px)">Leia a legenda ↓</div>`:''}
+ </div>`}
+window.R=function(t){
+ // sobreposição na transição: a cena seguinte entra enquanto a anterior sai
+ h='';SC.forEach((c,i)=>{const s=i===0?0:c.a-T, e=c.end?DUR+1:c.b; if(t>=s&&t<e) h+=scene(c,t,i)});
+ const dkNow=SC.find(c=>t>=c.a&&t<c.b)?.bg==='dk';
+ h+=`<div class="hd" style="color:${dkNow?'rgba(255,255,255,.7)':'#7A7F8C'}">@augustosilva.p</div><div class="track"></div><div class="bar" style="width:${912*t/DUR}px"></div>`;
+ document.getElementById('v').innerHTML=h};
+R(0);
+</script></body></html>

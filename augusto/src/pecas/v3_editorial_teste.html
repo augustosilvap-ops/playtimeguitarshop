@@ -1,0 +1,80 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:S;src:url('../fonts/InstrumentSerif-400.ttf')}
+@font-face{font-family:S;font-style:italic;src:url('../fonts/InstrumentSerif-400i.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#222}
+.art{position:relative;width:1080px;height:1350px;overflow:hidden;font-family:I,sans-serif;color:#0A0B10;background:#F4F6FA}
+.nv{background:#0B1530;color:#F4F6FA}
+.top{position:absolute;left:0;right:0;top:96px;text-align:center;font:400 30px S;letter-spacing:.32em;text-transform:uppercase}
+.cnt{position:absolute;right:70px;top:84px;font:600 24px I;padding:10px 18px;border-radius:99px;background:rgba(10,20,48,.08)}
+.nv .cnt{background:rgba(255,255,255,.12)}
+.h{font:600 86px/1.02 I;letter-spacing:-.05em}
+.e{font:italic 400 1.1em/1 S;letter-spacing:-.01em;color:#2F6BFF}
+.nv .e{color:#7FA3FF}
+.no{font:400 34px S;letter-spacing:.3em;color:#2F6BFF}
+.chips{display:flex;flex-wrap:wrap;gap:18px}
+.chips span{border:2px solid #0A0B10;border-radius:99px;padding:14px 30px;font:600 38px I;letter-spacing:-.02em;text-decoration:line-through;text-decoration-color:#E5484D;text-decoration-thickness:3px}
+.cmp{position:absolute;left:84px;right:84px;top:600px;display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.card{position:relative;height:500px;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px rgba(10,20,48,.18)}
+.mk{position:absolute;top:-22px;right:-22px;width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 40px I;border:5px solid #F4F6FA;z-index:2}
+.nv .mk{border-color:#0B1530}
+.cap{margin-top:34px;text-align:center;font:600 36px/1.15 I;letter-spacing:-.03em}
+.wrap{position:relative}
+.foot{position:absolute;left:84px;right:84px;bottom:60px;display:flex;justify-content:space-between;font:500 24px I;opacity:.55}
+</style></head><body>
+
+<!-- 1 capa -->
+<section class="art" data-out="entregas/testes/v3_editorial/01.png">
+  <div style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:0">
+    <div style="background:url('../img/f308.jpg') center/cover;filter:grayscale(.25)"></div>
+    <div style="background:#0B1530;display:grid;place-items:center;padding:60px"><img src="../../entregas/2026-11-16/01_estatico_taxas/arte.png" style="width:100%;border-radius:10px;box-shadow:0 20px 40px rgba(0,0,0,.4)"></div>
+    <div style="background:#E8EDF7;display:grid;place-items:center;padding:60px"><img src="../../entregas/2026-11-17/04_carrossel_margem/slides/01.png" style="width:100%;border-radius:10px;box-shadow:0 20px 40px rgba(10,20,48,.25)"></div>
+    <div style="background:url('../img/f4705.jpg') center/cover;filter:grayscale(.25)"></div>
+  </div>
+  <div style="position:absolute;left:110px;right:110px;top:410px;background:#F4F6FA;padding:64px 60px 58px;text-align:center;box-shadow:0 30px 70px rgba(10,20,48,.3)">
+    <div style="font:400 26px S;letter-spacing:.3em">@AUGUSTOSILVA.P</div>
+    <h1 class="h" style="margin-top:30px;font-size:84px">Como criar artes com IA <span class="e">sem cara de IA</span></h1>
+    <p style="margin-top:26px;font:500 32px I;color:#2F6BFF">(todos os posts desta página são feitos assim)</p>
+  </div>
+</section>
+
+<!-- 2 vícios -->
+<section class="art" data-out="entregas/testes/v3_editorial/02.png">
+  <div class="top">Augusto Silva · E-commerce & IA</div><div class="cnt">2/4</div>
+  <div style="position:absolute;left:96px;right:96px;top:300px">
+    <h2 class="h" style="font-size:66px;line-height:1.12">A IA cria artes, carrosséis e páginas em segundos. Mas, sem direção, ela cai sempre nos <span style="color:#2F6BFF">mesmos vícios visuais:</span></h2>
+    <div class="chips" style="margin-top:60px"><span>degradê roxo</span><span>brilhos ✨</span><span>formas flutuando</span><span>emoji no lugar de foto</span><span>tudo centralizado</span></div>
+    <p style="margin-top:110px;font:italic 400 120px/1 S;color:#2F6BFF">Por isso, faça ajustes:</p>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 3 N01 -->
+<section class="art nv" data-out="entregas/testes/v3_editorial/03.png">
+  <div class="top">Augusto Silva · E-commerce & IA</div><div class="cnt">3/4</div>
+  <div style="position:absolute;left:84px;right:84px;top:220px"><div class="no">Nº 01</div>
+    <h2 class="h" style="margin-top:22px;font-size:76px">Ensine a <span class="e">identidade visual</span> da sua marca para a IA</h2></div>
+  <div class="cmp">
+    <div class="wrap"><div class="mk" style="background:#E5484D">×</div><div class="card" style="background:linear-gradient(150deg,#8B5CF6,#EC4899);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:40px">
+      <div style="font-size:40px">✨</div><div style="font:700 46px/1.1 I;margin-top:18px">5 dicas para vender mais!</div><div style="font:500 26px I;margin-top:20px;opacity:.9">🚀 Arraste para o lado 👉</div></div>
+      <div class="cap">→ Genérico e<br>sem personalidade</div></div>
+    <div class="wrap"><div class="mk" style="background:#22A06B">✓</div><div class="card"><img src="../../entregas/2026-11-16/02_carrossel_5-custos/slides/01.png" style="width:100%;height:100%;object-fit:cover;object-position:top"></div>
+      <div class="cap">→ Cores, fontes e<br>moldura da marca</div></div>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 4 CTA -->
+<section class="art" data-out="entregas/testes/v3_editorial/04.png">
+  <div class="top">Augusto Silva · E-commerce & IA</div><div class="cnt">4/4</div>
+  <div style="position:absolute;left:96px;right:96px;top:50%;transform:translateY(-50%);text-align:center">
+    <h2 class="h" style="font-size:80px">Quer o meu <span class="e">guia de direção visual</span> para IA?</h2>
+    <p style="margin:40px auto 0;width:820px;font:500 36px/1.35 I;color:#3B3F4C">Comente a palavra abaixo e eu te envio no Direct os prompts e as regras que uso nos meus posts.</p>
+    <div style="margin-top:64px;display:inline-block;padding:26px 60px;border-radius:99px;background:#2F6BFF;color:#fff;font:700 44px I;letter-spacing:.04em">DIREÇÃO</div>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span></span></div>
+</section>
+</body></html>
