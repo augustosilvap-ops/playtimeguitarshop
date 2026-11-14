@@ -30,7 +30,7 @@ const cam=new THREE.PerspectiveCamera(30,W/H,.1,100);cam.position.set(0,0,19);
 
 /* fundo: textura com brilhos para o vidro refratar */
 function backdrop(spots){const c=document.createElement('canvas');c.width=1024;c.height=1280;const g=c.getContext('2d');
-  const lg=g.createLinearGradient(0,0,0,1280);lg.addColorStop(0,'#071436');lg.addColorStop(1,'#03081A');g.fillStyle=lg;g.fillRect(0,0,1024,1280);
+  const lg=g.createLinearGradient(0,0,0,1280);const LIGHT=P==='c1';lg.addColorStop(0,LIGHT?'#FFFFFF':'#071436');lg.addColorStop(1,LIGHT?'#E9EFFF':'#03081A');g.fillStyle=lg;g.fillRect(0,0,1024,1280);
   for(const [x,y,rad,col,a] of spots){const rg=g.createRadialGradient(x,y,0,x,y,rad);rg.addColorStop(0,col.replace('A',a));rg.addColorStop(1,col.replace('A',0));g.fillStyle=rg;g.fillRect(0,0,1024,1280)}
   const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;
   const m=new THREE.Mesh(new THREE.PlaneGeometry(26,26*1280/1024*(H/1350)),new THREE.MeshBasicMaterial({map:t}));m.position.z=-8;scene.add(m)}
@@ -67,6 +67,21 @@ if(P==='01'){
   ov.innerHTML=`<div class="kicker" style="position:absolute;left:84px;top:96px;color:#fff">Taxas &amp; comissões</div>
    <h1 class="h-xl" style="position:absolute;left:84px;right:84px;bottom:150px;color:#fff;font-size:100px;text-align:left">Você perde lucro <span class="em" style="color:#CFE0FF">nas taxas?</span></h1>
    <div style="position:absolute;left:84px;bottom:56px;font:500 22px var(--f-mono);color:#fff;opacity:.8">@augustosilva.p</div>`;
+}
+if(P==='c1'){
+  r.toneMappingExposure=1.45;backdrop([[1000,1250,700,'rgba(91,140,255,A)',.6],[560,380,330,'rgba(47,107,255,A)',.55],[700,300,120,'rgba(255,255,255,A)',.9],[560,640,260,'rgba(16,34,87,A)',.25]]);
+  scene.children.find(o=>o.isMesh&&o.position.z===-8).material.map.image.getContext('2d');
+  // coin mordida
+  const R=1.75,B=[[.62,.62],[1.02,.5],[.25,.42]];const pts=[];
+  for(let i=0;i<=720;i++){const t=i/720*Math.PI*2,u=[Math.cos(t),Math.sin(t)];let r=R;
+    for(const [a,b] of B){const c=[Math.cos(a)*(R+.12),Math.sin(a)*(R+.12)];const uc=u[0]*c[0]+u[1]*c[1];const disc=uc*uc-(c[0]*c[0]+c[1]*c[1]-b*b);if(disc>0){const s1=uc-Math.sqrt(disc);if(s1>0&&s1<r)r=s1}}
+    pts.push(new THREE.Vector2(u[0]*r,u[1]*r))}
+  const g=new THREE.ExtrudeGeometry(new THREE.Shape(pts),{depth:.34,bevelEnabled:true,bevelThickness:.1,bevelSize:.08,bevelSegments:8,curveSegments:64});g.center();
+  const coin=new THREE.Group();coin.add(new THREE.Mesh(g,glass({tint:0x5b8cff,att:1.6,extra:{thickness:1.2}})));
+  const rs=new THREE.Mesh(txt('R$',1.15,.14),glass({tint:0x2f6bff,att:.9}));rs.position.z=.33;coin.add(rs);
+  coin.scale.setScalar(1.45);coin.position.set(.25,1.65,0);coin.rotation.set(.32,-.62,.16);scene.add(coin);
+  for(const [x,y,z,s] of [[3.3,3.9,.8,.22],[3.9,3.0,1.2,.15],[2.8,4.8,.3,.12],[4.3,4.3,.5,.09],[3.6,2.2,1.6,.07]]){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(s,0),glass({tint:0x9db8ff,att:2}));m.position.set(x,y,z);m.rotation.set(x,y,z);scene.add(m)}
+  key.intensity=3;scene.children.filter(o=>o.isPointLight).forEach(l=>l.intensity*=.6);
 }
 r.render(scene,cam);await document.fonts.ready;r.render(scene,cam);window.READY=true;
 </script></body></html>

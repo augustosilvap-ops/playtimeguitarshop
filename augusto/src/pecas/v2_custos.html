@@ -1,0 +1,152 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+/* v2 · padrão das referências: tipografia limpa, moldura fixa, UI contando a história, vidro 3D */
+:root{--blue:#2F6BFF;--blue2:#5B8CFF;--blue3:#9DBBFF;--ink:#0A0B10;--dark:#08090E;--g7:#3B3F4C;--g5:#7A7F8C;--white:#fff;
+  --f:'Inter Display','Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#222;font-family:var(--f);-webkit-font-smoothing:antialiased}
+.s{position:relative;width:1080px;height:1350px;overflow:hidden}
+.light{background:radial-gradient(900px 700px at 105% 105%,rgba(47,107,255,.45),transparent 60%),radial-gradient(700px 500px at 100% 60%,rgba(157,187,255,.35),transparent 70%),#fff;color:var(--ink)}
+.dark{background:radial-gradient(900px 600px at 0% 0%,rgba(47,107,255,.22),transparent 60%),var(--dark);color:#fff}
+.blue{background:radial-gradient(900px 700px at 20% 0%,rgba(157,187,255,.65),transparent 60%),linear-gradient(170deg,#3D7BFF,#2456E6 55%,#1A3FB0);color:#fff}
+/* moldura */
+.chip{position:absolute;left:84px;top:84px;display:flex;align-items:center;gap:16px;font-weight:600;font-size:28px;letter-spacing:-.01em}
+.chip i{width:56px;height:56px;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:#fff;font-style:normal;font-size:28px;font-weight:700}
+.blue .chip i{background:#fff;color:var(--blue)}
+.cnt{position:absolute;right:60px;top:70px;font-weight:600;font-size:26px;padding:12px 20px;border-radius:99px;background:rgba(0,0,0,.08)}
+.dark .cnt,.blue .cnt{background:rgba(255,255,255,.12)}
+.foot{position:absolute;left:84px;right:84px;bottom:64px;display:flex;justify-content:space-between;font-size:24px;font-weight:500;opacity:.55}
+/* tipografia */
+.h{font-weight:700;letter-spacing:-.055em;line-height:.98}
+.h1{font-size:118px}.h2{font-size:96px}.h3{font-size:80px}
+.a{color:var(--blue)}.dark .a{color:var(--blue2)}.blue .a{color:#0A1A4A}
+.p{font-size:38px;font-weight:500;letter-spacing:-.015em;line-height:1.3;color:var(--g7)}
+.dark .p{color:#B9BECB}.blue .p{color:#E3ECFF}
+.tag{display:inline-block;font-size:24px;font-weight:600;letter-spacing:.02em;padding:10px 18px;border-radius:99px;background:rgba(47,107,255,.1);color:var(--blue)}
+.dark .tag{background:rgba(91,140,255,.16);color:var(--blue3)}.blue .tag{background:rgba(255,255,255,.18);color:#fff}
+/* UI */
+.glass{background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.06));border:1.5px solid rgba(255,255,255,.35);border-radius:40px;backdrop-filter:blur(24px);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 30px 80px rgba(0,0,0,.25)}
+.light .glass{background:linear-gradient(150deg,rgba(255,255,255,.9),rgba(235,241,255,.7));border-color:#fff;box-shadow:0 30px 70px rgba(26,63,176,.16)}
+.row{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-top:1px solid rgba(255,255,255,.12);font-size:34px;font-weight:500}
+.light .row{border-color:#E6EAF3}
+.row:first-child{border-top:0}
+.row b{font-weight:600;font-variant-numeric:tabular-nums}
+.pill{display:inline-flex;align-items:center;gap:20px;padding:22px 34px;border-radius:99px;font-size:36px;font-weight:600;background:#fff;color:var(--ink);box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.pill .d{width:22px;height:22px;border-radius:50%;background:#FF4D5E}
+.pill .x{opacity:.45;font-weight:500;margin-left:24px}
+.notif{display:flex;gap:24px;align-items:center;padding:28px 32px;border-radius:34px;background:rgba(255,255,255,.92);box-shadow:0 20px 50px rgba(26,63,176,.18);font-size:30px;color:var(--ink)}
+.notif .ic{width:72px;height:72px;border-radius:20px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:700;font-size:34px;flex:0 0 auto}
+.notif small{display:block;font-size:24px;color:var(--g5);font-weight:500}
+.notif b{font-weight:600}
+.neg{color:#E5384A}
+.btn{display:inline-grid;place-items:center;height:130px;padding:0 70px;border-radius:99px;font-size:56px;font-weight:700;letter-spacing:.02em}
+</style></head><body>
+
+<!-- 1 · CAPA -->
+<section class="art s light" data-out="previa/v2/02/01.png" style="background:url('../img/v2_coin.png') center/cover">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">1/8</div>
+  <div style="position:absolute;left:84px;right:84px;bottom:190px">
+    <h1 class="h h1">Seu lucro está sendo <span class="a">comido.</span></h1>
+    <p class="p" style="margin-top:34px;width:820px">5 custos que quase ninguém coloca no preço antes de vender.</p>
+  </div>
+  <div class="foot"><span>Precificação</span><span>Arraste →</span></div>
+</section>
+
+<!-- 2 · R$100 -->
+<section class="art s dark" data-out="previa/v2/02/02.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">2/8</div>
+  <h2 class="h h2" style="position:absolute;left:84px;right:84px;top:220px">R$ 100 vendidos não são R$ 100 <span class="a">no bolso.</span></h2>
+  <div class="glass" style="position:absolute;left:84px;right:84px;top:500px;padding:20px 48px 26px">
+    <div class="row"><span>Venda</span><b>R$ 100</b></div>
+    <div class="row"><span>Produto</span><b class="neg">− 45</b></div>
+    <div class="row"><span>Comissão e tarifa</span><b class="neg">− 14</b></div>
+    <div class="row"><span>Impostos</span><b class="neg">− 6</b></div>
+    <div class="row"><span>Frete + embalagem · Taxa · Anúncios</span><b class="neg">− 18</b></div>
+    <div class="row" style="font-size:40px;font-weight:700"><span>Sobra</span><b style="color:var(--blue2)">R$ 17</b></div>
+  </div>
+  <div style="position:absolute;left:84px;bottom:130px"><span class="tag">Simulação ilustrativa · varia por canal e categoria</span></div>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 3 · Comissão -->
+<section class="art s light" data-out="previa/v2/02/03.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">3/8</div>
+  <div style="position:absolute;left:84px;right:84px;top:240px;display:grid;gap:26px">
+    <div class="notif"><div class="ic">✓</div><div><small>Marketplace · agora</small><b>Venda aprovada</b> · R$ 100,00</div></div>
+    <div class="notif" style="margin-left:90px"><div class="ic" style="background:#E5384A">−</div><div><small>Repasse</small><b>Tarifa de venda</b> · <span class="neg">− R$ 14,00</span></div></div>
+  </div>
+  <div style="position:absolute;left:84px;right:84px;bottom:190px">
+    <span class="tag">01 · Comissão e tarifa</span>
+    <h2 class="h h3" style="margin-top:28px">A comissão leva um <span class="a">pedaço</span> de cada venda.</h2>
+    <p class="p" style="margin-top:26px">Use o percentual da sua categoria e some a tarifa fixa por unidade.</p>
+  </div>
+  <div class="foot"><span>Exemplo hipotético</span><span>Arraste →</span></div>
+</section>
+
+<!-- 4 · Impostos -->
+<section class="art s blue" data-out="previa/v2/02/04.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">4/8</div>
+  <div style="position:absolute;left:84px;right:84px;top:50%;transform:translateY(-50%);text-align:center">
+    <span class="tag">02 · Impostos</span>
+    <h2 class="h" style="font-size:112px;margin-top:36px">Imposto é sobre o que você <span class="a">vende.</span></h2>
+    <p class="p" style="margin-top:36px">Não sobre o que sobra. No Simples, vendeu, pagou.</p>
+  </div>
+  <div class="foot" style="opacity:.7"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 5 · Frete -->
+<section class="art s dark" data-out="previa/v2/02/05.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">5/8</div>
+  <div style="position:absolute;left:84px;top:220px"><span class="tag">03 · Frete e embalagem</span>
+    <h2 class="h h2" style="margin-top:28px;width:900px">“Frete grátis” tem <span class="a">dono.</span></h2></div>
+  <div style="position:absolute;left:84px;right:84px;top:640px;height:360px">
+    <div class="pill" style="position:absolute;left:0;top:0"><span class="d"></span>Frete subsidiado<span class="x">×</span></div>
+    <div class="pill" style="position:absolute;left:300px;top:125px"><span class="d"></span>Caixa e fita<span class="x">×</span></div>
+    <div class="pill" style="position:absolute;left:80px;top:250px"><span class="d"></span>Etiqueta e enchimento<span class="x">×</span></div>
+  </div>
+  <h2 class="h h3" style="position:absolute;left:84px;bottom:180px">Quem paga? <span class="a">Sua margem.</span></h2>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 6 · Taxa financeira -->
+<section class="art s light" data-out="previa/v2/02/06.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">6/8</div>
+  <div style="position:absolute;left:84px;top:220px"><span class="tag">04 · Taxa financeira</span>
+    <h2 class="h h2" style="margin-top:28px;width:900px">Parcelar <span class="a">tem preço.</span></h2></div>
+  <div class="glass" style="position:absolute;left:84px;right:84px;top:600px;padding:36px 48px">
+    <div class="row" style="border:0"><span>Parcelar em até 12x</span>
+      <span style="width:120px;height:68px;border-radius:99px;background:var(--blue);position:relative;display:inline-block"><span style="position:absolute;right:6px;top:6px;width:56px;height:56px;border-radius:50%;background:#fff"></span></span></div>
+    <div class="row"><span>Taxa do intermediador</span><b class="neg">− %</b></div>
+    <div class="row"><span>Antecipação do recebível</span><b class="neg">− %</b></div>
+  </div>
+  <p class="p" style="position:absolute;left:84px;right:84px;bottom:180px">Use a taxa do seu plano de recebimento como percentual do preço.</p>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 7 · Anúncios -->
+<section class="art s blue" data-out="previa/v2/02/07.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">7/8</div>
+  <div style="position:absolute;left:84px;right:84px;top:220px"><span class="tag">05 · Anúncios</span>
+    <h2 class="h h2" style="margin-top:28px">Pagou pra vender?<br><span class="a">É custo do produto.</span></h2></div>
+  <div class="glass" style="position:absolute;left:84px;right:84px;bottom:180px;padding:22px 48px">
+    <div class="row" style="justify-content:flex-start;gap:24px">✓ <span>Defina um teto, ex.: 5% do preço</span></div>
+    <div class="row" style="justify-content:flex-start;gap:24px">✓ <span>Divida o gasto pelas vendas geradas</span></div>
+    <div class="row" style="justify-content:flex-start;gap:24px">✓ <span>Coloque no preço antes de anunciar</span></div>
+  </div>
+  <div class="foot" style="opacity:.7"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 8 · CTA -->
+<section class="art s dark" data-out="previa/v2/02/08.png">
+  <div class="chip"><i>↗</i>@augustosilva.p</div><div class="cnt">8/8</div>
+  <div style="position:absolute;left:84px;right:84px;top:50%;transform:translateY(-55%);text-align:center">
+    <h2 class="h h2">Quer a conta <span class="a">pronta?</span></h2>
+    <p class="p" style="margin:36px auto 0;width:860px">Comente a palavra abaixo e eu te envio no Direct o Guia de Precificação para Leigos com IA.</p>
+    <div style="margin-top:70px;display:flex;justify-content:center;gap:28px">
+      <span class="btn" style="background:var(--blue);color:#fff;box-shadow:0 0 60px rgba(47,107,255,.7)">CUSTOS</span>
+    </div>
+    <p style="margin-top:34px;font-size:26px;color:#8C92A3;font-weight:500">Guia em PDF · exemplo resolvido · prompt da planilha</p>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span></span></div>
+</section>
+</body></html>
