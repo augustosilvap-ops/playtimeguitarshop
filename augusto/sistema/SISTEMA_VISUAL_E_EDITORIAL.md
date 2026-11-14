@@ -103,3 +103,16 @@ Nos Reels, o desfoque é feito no próprio vídeo: o painel ganha uma máscara, 
 - [ ] A recompensa existe, abre no celular e o conteúdo foi conferido.
 - [ ] Reel: MP4 em H.264, 30 fps, 7 s, com o vídeo em movimento do início ao fim.
 - [ ] Licença da imagem ou do vídeo registrada em `CREDITOS.md`.
+
+---
+
+## 8. Padrão v2 (aprovado em 14/11/2026), que substitui as direções acima nas peças novas
+
+Referências do Augusto: @alefmiranda e @enzo.saints.
+- **Moldura fixa:** selo `↗ @augustosilva.p` no topo à esquerda, contador `1/8` no topo à direita e rodapé com o @ e "Arraste →" (ou "Leia a legenda ↓" em estáticos e Reels).
+- **Tipografia:** Inter Display 700, bem fechada (−0,055em), em tamanho grande. Uma palavra-chave em azul elétrico. Sem serifa itálica.
+- **Fundos alternados:** branco com degradê azul, preto `#08090E` e azul cheio em degradê.
+- **Elementos de interface contando a história:** notificações, etiquetas com "×", botões, recibos e checklists em vidro, além de comparativos lado a lado.
+- **Objeto 3D de vidro real (Three.js, `src/3d/scene.html`)** como herói de capa quando houver uma metáfora forte. Exemplo: a moeda mordida.
+- **Cores:** azul elétrico, branco, preto e azul-marinho, que aparece como destaque sobre o azul. O vermelho fica só para valores que saem do bolso.
+- **Código:** `src/v2.css`, `src/pecas/v2_custos.html` e `src/pecas/v2_novos.html`.
