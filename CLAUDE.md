@@ -27,7 +27,7 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 ## Nexus site próprio (sem login no Claude)
 - https://nexusautomatic.vercel.app · Vercel publica a branch `main` · código em `nexus-site/` (front em `public/`, funções em `api/` reexportadas na raiz `api/`).
 - Login por senha (`NEXUS_PASSWORD`, token HMAC com `NEXUS_SECRET`). Dados: `/api/shopify` (SHOPIFY_STORE/SHOPIFY_TOKEN), `/api/windsor` (WINDSOR_API_KEY), `/api/state` (Upstash Redis). `public/shim.js` emula `window.claude.use` para reaproveitar o Nexus.
-- Versão celular (≤760px) no próprio `nexus/index.html`: cabeçalho compacto, abas fixas embaixo (Início, Conteúdo, Negócios, Agenda, Tendências…), cérebro como banner só no Início, microfone flutuante.
+- Versão celular (≤760px) no próprio `nexus/index.html`: cabeçalho compacto, abas fixas embaixo (Início, Conteúdo, Negócios, Agenda, Tendências…), cérebro como banner só no Início, microfone flutuante. Conteúdo separado por página do Instagram (abas @augustosilva.p e @ruahwear_; posts da RUAH têm `marca:"ruah"`).
 - Sem chat (exige créditos da API da Anthropic). Ao mudar `nexus/index.html`, regenere `nexus-site/public/index.html`.
 
 ## Instagram pessoal @augustosilva.p (pasta `augusto/`)

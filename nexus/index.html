@@ -420,7 +420,9 @@ function renderSys(){const c=S.conn,st=v=>v==='ok'?'':v==='wait'?'':'off';
   $('#syncB').innerHTML=`<span class="dot ${S.brief?'ok':''}"></span>briefing ${S.brief?S.brief.data:'às 6h38'}`;}
 
 /* ---------- seções ---------- */
-let cur='inicio',tab='moda',stTab='RUAH',diaSel='todos';
+let cur='inicio',tab='moda',stTab='RUAH',diaSel='todos',perf='aug';
+const PERFIS={aug:{nome:'@augustosilva.p',sub:'Marketplace, e-commerce e IA'},ruah:{nome:'@ruahwear_',sub:'RUAH · streetwear cristão'}};
+const PL=()=>POSTS.filter(p=>(p.marca||'aug')===perf);
 function route(){setTimeout(layoutOrbit,50);cur=(location.hash||'#inicio').slice(1);if(!PAGES[cur])cur='inicio';$$('nav a').forEach(a=>{if(a.dataset.v===cur)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const home=cur==='inicio';document.body.classList.toggle('home',home);$('#speech').hidden=!home;$('#view').hidden=home;$('#brain').style.opacity=home?1:.35;$('#holo').style.opacity=home?1:.25;renderView()}
 function renderView(){if(cur==='inicio')return;const v=$('#view');const keep=cur==='conversar'&&v.dataset.v==='conversar';if(keep)return;v.dataset.v=cur;v.innerHTML=PAGES[cur]();v.scrollTop=0;if(cur==='conversar')paintLog()}
@@ -430,14 +432,15 @@ const POSTS=[{"id": "01", "tit": "Você perde lucro nas taxas?", "fmt": "Estáti
 const slide={};
 function stBadge(id){const a=(S.ap||{})[id];return a?.status==='aprovado'?'<span class="k" style="color:var(--ok)">● Aprovado</span>':a?.status==='ajuste'?'<span class="k" style="color:var(--warn)">● Ajuste pedido</span>':'<span class="k" style="color:var(--dim)">● Aguardando aprovação</span>'}
 const PAGES={
- conteudo:()=>`<div class="hd"><h2>Conteúdo · @augustosilva.p e @ruahwear_</h2><span class="src">${POSTS.filter(p=>(S.ap||{})[p.id]?.status==='aprovado').length}/${POSTS.length} aprovados · nada é publicado sem você</span></div>
-  <div class="cal"><button data-dia="todos" aria-pressed="${diaSel==='todos'}"><small>semana</small><b>Todos</b><i>${POSTS.length} posts</i></button>${['16','17','18','19','20','21','22'].map((d,i)=>{const n=POSTS.filter(p=>(p.data||'').includes(d+'/11')).length;return `<button data-dia="${d}" aria-pressed="${diaSel===d}" ${n?'':'disabled'}><small>${['seg','ter','qua','qui','sex','sáb','dom'][i]}</small><b>${d}</b><i>${n?n+' posts':'—'}</i></button>`}).join('')}</div>
-  <div class="g2">${POSTS.filter(p=>diaSel==='todos'||(p.data||'').includes(diaSel+'/11')).map(p=>{const i=slide[p.id]||0,n=p.imgs.length,a=(S.ap||{})[p.id];return `<div class="box post">${stBadge(p.id)}<h3>${p.id!=='grade'?p.id+' · ':''}${esc(p.tit)}</h3><p>${esc(p.fmt)} · ${esc(p.data)}${p.kw!=='—'?` · palavra <b style="color:var(--cy2)">${p.kw}</b> → ${esc(p.rec)}`:''}</p>
+ conteudo:()=>{const L=PL();return `<div class="hd"><h2>Conteúdo · ${PERFIS[perf].nome}</h2><span class="src">${L.filter(p=>(S.ap||{})[p.id]?.status==='aprovado').length}/${L.length} aprovados · nada é publicado sem você</span></div>
+  <div class="tabs">${Object.entries(PERFIS).map(([k,v])=>`<button class="tab" data-perf="${k}" aria-selected="${k===perf}">${v.nome} <small style="opacity:.7">· ${POSTS.filter(p=>(p.marca||'aug')===k).length}</small></button>`).join('')}</div>
+  <div class="cal"><button data-dia="todos" aria-pressed="${diaSel==='todos'}"><small>semana</small><b>Todos</b><i>${L.length} posts</i></button>${['16','17','18','19','20','21','22'].map((d,i)=>{const n=L.filter(p=>(p.data||'').includes(d+'/11')).length;return `<button data-dia="${d}" aria-pressed="${diaSel===d}" ${n?'':'disabled'}><small>${['seg','ter','qua','qui','sex','sáb','dom'][i]}</small><b>${d}</b><i>${n?n+' posts':'—'}</i></button>`}).join('')}</div>
+  <div class="g2">${L.filter(p=>diaSel==='todos'||(p.data||'').includes(diaSel+'/11')).map(p=>{const i=slide[p.id]||0,n=p.imgs.length,a=(S.ap||{})[p.id];return `<div class="box post">${stBadge(p.id)}<h3>${p.id!=='grade'?p.id+' · ':''}${esc(p.tit)}</h3><p>${esc(p.fmt)} · ${esc(p.data)}${p.kw!=='—'?` · palavra <b style="color:var(--cy2)">${p.kw}</b> → ${esc(p.rec)}`:''}</p>
    <div class="pv">${p.video&&i===0?`<video src="${p.video}" poster="${p.imgs[0]}" controls muted loop playsinline preload="none"></video>`:`<img src="${p.imgs[i]}" alt="${esc(p.tit)} — slide ${i+1}" loading="lazy">`}${n>1?`<button class="nv l" data-nav="${p.id}" data-d="-1" aria-label="Slide anterior">‹</button><button class="nv r" data-nav="${p.id}" data-d="1" aria-label="Próximo slide">›</button><span class="ct">${i+1}/${n}</span>`:''}</div>
    <details><summary>Ver legenda</summary><pre class="leg">${esc(p.leg)}</pre></details>
    ${a?.nota?`<p style="color:var(--warn)">Seu ajuste: ${esc(a.nota)}</p>`:''}
    <textarea class="adj" id="adj-${p.id}" placeholder="O que ajustar? (opcional)" rows="2"></textarea>
-   <div class="sugs"><button class="act solid" data-ap="${p.id}">✓ Aprovar</button><button class="act" data-adj="${p.id}">Pedir ajuste</button>${a?.status==='ajuste'&&a?.nota?`<button class="act" data-run="${esc('Ajuste no post '+p.id+' ('+p.tit+') do @augustosilva.p, em augusto/entregas/2026-11-16: '+a.nota+'. Siga o sistema visual e gere prévia antes de qualquer publicação.')}">▶ Enviar ajuste ao Claude Code</button>`:''}</div></div>`}).join('')}</div>`,
+   <div class="sugs"><button class="act solid" data-ap="${p.id}">✓ Aprovar</button><button class="act" data-adj="${p.id}">Pedir ajuste</button>${a?.status==='ajuste'&&a?.nota?`<button class="act" data-run="${esc('Ajuste no post '+p.id+' ('+p.tit+') do @augustosilva.p, em augusto/entregas/2026-11-16: '+a.nota+'. Siga o sistema visual e gere prévia antes de qualquer publicação.')}">▶ Enviar ajuste ao Claude Code</button>`:''}</div></div>`}).join('')}</div>`},
  inicio:()=>'',
  conversar:()=>`<div class="hd"><h2>Conversa com o Nexus</h2><span class="src">${sample?'Claude · lê os dados ao vivo':'chat indisponível nesta visualização'}</span></div>
   <div class="sugs"><button class="act" data-q="Qual é a ação mais urgente agora e por quê?">Mais urgente?</button><button class="act" data-q="Como estão os anúncios da RUAH nos últimos 7 dias? O que eu deveria mudar?">Anúncios</button><button class="act" data-q="Resuma as tendências de hoje e o que eu posso postar.">O que postar hoje</button><button class="act" data-q="Monte meu plano de hoje em 5 passos, por prioridade.">Plano do dia</button></div>
@@ -513,6 +516,7 @@ function layoutOrbit(){const o=$('#orbit'),st=$('#stage'),h=$('#holo');if(!o)ret
 addEventListener('resize',()=>layoutOrbit());
 addEventListener('hashchange',route);
 document.addEventListener('click',e=>{
+  const pf=e.target.closest('[data-perf]');if(pf){perf=pf.dataset.perf;diaSel='todos';renderView();return}
   const stb=e.target.closest('[data-st]');if(stb){stTab=stb.dataset.st;renderView();return}
   const dy=e.target.closest('[data-dia]');if(dy){diaSel=dy.dataset.dia;renderView();return}
   const t=e.target.closest('[data-tab]');if(t){tab=t.dataset.tab;renderView();return}
