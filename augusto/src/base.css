@@ -1,0 +1,104 @@
+/* ============================================================
+   @augustosilva.p — Sistema visual "Glassmorfismo A"
+   Tokens + componentes. Para ajustar a paleta, edite só :root.
+   ============================================================ */
+@import url('fonts.css');
+
+:root{
+  /* Paleta — azul-marinho, azul elétrico, branco, preto + neutros */
+  --ink:        #070A12;   /* preto de marca */
+  --navy-950:   #050B1F;
+  --navy-900:   #0A1638;
+  --navy-800:   #102257;
+  --navy-600:   #1B3A8C;
+  --electric:   #2F6BFF;   /* azul elétrico — ação, destaque */
+  --electric-2: #5B8CFF;
+  --electric-3: #9DBBFF;
+  --ice:        #DDE7FF;
+  --white:      #FFFFFF;
+  --paper:      #F3F5F9;   /* fundo claro editorial */
+  --paper-2:    #E7EBF2;
+  --gray-300:   #C5CCD8;
+  --gray-500:   #7D879A;
+  --gray-700:   #3A4356;
+
+  /* Vidro */
+  --glass-fill:   linear-gradient(140deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.06) 55%, rgba(255,255,255,.10) 100%);
+  --glass-line:   rgba(255,255,255,.30);
+  --glass-shadow: 0 40px 90px rgba(2,8,30,.50);
+  --glass-light-fill: linear-gradient(140deg, rgba(255,255,255,.78), rgba(255,255,255,.42));
+  --glass-light-line: rgba(255,255,255,.95);
+  --glass-light-shadow: 0 30px 70px rgba(16,34,87,.16);
+
+  /* Tipografia */
+  --f-display: 'Manrope', system-ui, sans-serif;
+  --f-serif:   'Instrument Serif', Georgia, serif;
+  --f-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* Grade 4:5 — margens seguras */
+  --m: 84px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#111;}
+body{font-family:var(--f-display);-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+
+/* ---------- Pranchetas ---------- */
+.art{position:relative;width:1080px;height:1350px;overflow:hidden;color:var(--white)}
+.art.story{height:1920px}
+.art.dark{background:var(--navy-950)}
+.art.light{background:var(--paper);color:var(--ink)}
+.art.white{background:var(--white);color:var(--ink)}
+.pad{position:absolute;inset:var(--m)}
+
+/* Fundos */
+.bg-deep{position:absolute;inset:0;
+  background:
+    radial-gradient(900px 700px at 85% 10%, rgba(47,107,255,.40), transparent 60%),
+    radial-gradient(800px 800px at 0% 100%, rgba(16,34,87,.95), transparent 70%),
+    linear-gradient(180deg, #071233 0%, #050B1F 100%);}
+.bg-photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.shade-b{position:absolute;inset:0;background:linear-gradient(180deg, rgba(5,11,31,0) 30%, rgba(5,11,31,.88) 78%, rgba(5,11,31,.96) 100%)}
+.shade-t{position:absolute;inset:0;background:linear-gradient(0deg, rgba(5,11,31,0) 40%, rgba(5,11,31,.85) 100%)}
+.grain{position:absolute;inset:0;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+/* ---------- Vidro ---------- */
+.glass{position:relative;border-radius:36px;background:var(--glass-fill);
+  border:1px solid var(--glass-line);
+  -webkit-backdrop-filter:blur(26px) saturate(150%);backdrop-filter:blur(26px) saturate(150%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55), inset 0 -1px 0 rgba(255,255,255,.08), var(--glass-shadow)}
+.glass::after{/* reflexo azul elétrico na borda */
+  content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;padding:1px;
+  background:linear-gradient(130deg, rgba(157,187,255,.9), rgba(47,107,255,0) 30%, rgba(47,107,255,0) 70%, rgba(91,140,255,.7));
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.glass.light{background:var(--glass-light-fill);border-color:var(--glass-light-line);box-shadow:inset 0 1px 0 #fff, var(--glass-light-shadow);color:var(--ink)}
+
+/* ---------- Tipografia ---------- */
+.kicker{font-family:var(--f-mono);font-size:21px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--electric);box-shadow:0 0 0 5px rgba(47,107,255,.22)}
+.h-xl{font-weight:800;font-size:118px;line-height:.94;letter-spacing:-.045em}
+.h-l {font-weight:800;font-size:92px;line-height:.96;letter-spacing:-.04em}
+.h-m {font-weight:800;font-size:68px;line-height:1.0;letter-spacing:-.035em}
+.h-s {font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-.02em}
+.em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--electric-2)}
+.light .em,.white .em{color:var(--electric)}
+.body{font-weight:500;font-size:34px;line-height:1.38;letter-spacing:-.005em}
+.body-s{font-weight:500;font-size:28px;line-height:1.4}
+.muted{opacity:.72}
+.mono{font-family:var(--f-mono)}
+.num{font-family:var(--f-mono);font-feature-settings:"tnum"}
+
+/* ---------- Assinatura e paginação ---------- */
+.sig{position:absolute;left:var(--m);bottom:56px;font-family:var(--f-mono);font-size:22px;font-weight:500;letter-spacing:.04em;opacity:.78}
+.pager{position:absolute;right:var(--m);bottom:56px;font-family:var(--f-mono);font-size:22px;letter-spacing:.08em;opacity:.6}
+.next{position:absolute;right:var(--m);bottom:52px;font-family:var(--f-mono);font-size:22px;letter-spacing:.06em;display:flex;gap:12px;align-items:center;opacity:.85}
+.tag-sim{display:inline-block;font-family:var(--f-mono);font-size:19px;letter-spacing:.12em;text-transform:uppercase;padding:9px 16px;border-radius:999px;border:1px solid currentColor;opacity:.75}
+
+/* ---------- Utilitários ---------- */
+.row{display:flex;gap:24px}
+.col{display:flex;flex-direction:column}
+.chip{font-family:var(--f-mono);font-size:22px;padding:12px 20px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22)}
+.light .chip,.white .chip{background:#fff;border-color:var(--paper-2)}
+.rule{height:1px;background:currentColor;opacity:.18}
+.bigno{font-family:var(--f-serif);font-style:italic;font-size:260px;line-height:.8;color:var(--electric-2)}

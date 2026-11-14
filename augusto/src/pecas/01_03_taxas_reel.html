@@ -1,0 +1,72 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<style>
+/* ---------- 02 · Estático fotográfico ---------- */
+.p2 .bg-photo{background-image:url('../img/f242.jpg');background-position:22% 50%;filter:saturate(.8) contrast(1.05) brightness(1.04)}
+.p2 .tint{position:absolute;inset:0;background:linear-gradient(180deg, rgba(5,11,31,.92) 0%, rgba(5,11,31,.55) 34%, rgba(5,11,31,0) 55%, rgba(5,11,31,.15) 80%, rgba(5,11,31,.75) 100%)}
+.p2 .title{position:absolute;left:var(--m);top:170px;width:900px}
+.p2 .lines{position:absolute;left:var(--m);bottom:150px;padding:30px 34px;width:560px}
+.p2 .lines .k{font-family:var(--f-mono);font-size:18px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:16px}
+.p2 .lines .l{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:25px;padding:12px 0;border-top:1px solid rgba(255,255,255,.18)}
+.p2 .lines .l b{color:var(--electric-3);font-weight:600}
+
+/* ---------- 03 · Reel: overlay transparente e capa ---------- */
+.reel{width:1080px;height:1920px}
+.reel.ov{background:transparent}
+.reel .scrim{position:absolute;left:0;right:0;top:0;height:1250px;background:linear-gradient(180deg, rgba(5,11,31,.78) 0%, rgba(5,11,31,.55) 45%, rgba(5,11,31,0) 100%)}
+.reel .panel{position:absolute;left:70px;right:70px;top:470px;padding:56px 60px 54px;background:linear-gradient(140deg, rgba(10,22,56,.72), rgba(5,11,31,.55))}
+.reel .panel .em{color:#A9C4FF}
+.reel .panel .q{font-weight:800;font-size:84px;line-height:1.0;letter-spacing:-.04em}
+.reel .panel .q .em{font-size:96px}
+.reel .panel .cta{margin-top:40px;display:inline-flex;align-items:center;gap:16px;font-family:var(--f-mono);font-size:30px;font-weight:600;letter-spacing:.04em;padding:16px 26px;border-radius:999px;background:var(--electric);box-shadow:0 14px 40px rgba(47,107,255,.55)}
+.reel .rsig{position:absolute;left:0;right:0;top:1290px;text-align:center;font-family:var(--f-mono);font-size:26px;letter-spacing:.06em;opacity:.85;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.reel.cover .bg-photo{background-image:url('../img/reel03_frame.jpg')}
+</style></head><body>
+
+<!-- 02 · ESTÁTICO -->
+<section class="art dark p2" data-out="entregas/2026-11-16/01_estatico_taxas/arte.png">
+  <div class="bg-photo"></div><div class="tint"></div>
+  <div style="position:absolute;left:var(--m);top:96px" class="kicker">Taxas &amp; comissões</div>
+  <h1 class="title h-xl">Você perde lucro <span class="em">nas taxas?</span></h1>
+  <div class="glass lines">
+    <div class="k">Confira antes de anunciar</div>
+    <div class="l"><span>Comissão da categoria</span><b>%</b></div>
+    <div class="l"><span>Tarifa fixa por unidade</span><b>R$</b></div>
+    <div class="l"><span>Parcelamento / recebimento</span><b>%</b></div>
+  </div>
+  <div class="grain"></div>
+  <div class="sig">@augustosilva.p</div>
+</section>
+
+<!-- 03 · OVERLAY DO REEL (fundo transparente) -->
+<section class="art reel ov" data-out="src/build/reel03_overlay.png" data-transparent="1">
+  <div class="scrim"></div>
+  <div class="glass panel">
+    <div class="kicker" style="margin-bottom:30px">Precificação</div>
+    <div class="q">Quer aprender a precificar <span class="em">mesmo sendo leigo?</span></div>
+    <div class="cta">Leia a legenda <span>↓</span></div>
+  </div>
+  <div class="rsig">@augustosilva.p</div>
+</section>
+
+<!-- 03 · CAPA DO REEL -->
+<section class="art reel cover" data-out="entregas/2026-11-16/03_reel_precificar-leigo/capa_1080x1920.png">
+  <div class="bg-photo"></div>
+  <div class="scrim"></div>
+  <div class="glass panel">
+    <div class="kicker" style="margin-bottom:30px">Precificação</div>
+    <div class="q">Quer aprender a precificar <span class="em">mesmo sendo leigo?</span></div>
+    <div class="cta">Leia a legenda <span>↓</span></div>
+  </div>
+  <div class="rsig">@augustosilva.p</div>
+</section>
+
+<!-- 03 · MÁSCARA DO VIDRO (para desfocar o vídeo atrás do painel) -->
+<section class="art reel" data-out="src/build/reel03_mask.png" style="background:#000">
+  <div class="panel" style="position:absolute;left:70px;right:70px;top:470px;padding:56px 60px 54px;border-radius:36px;background:#fff;color:#fff">
+    <div class="kicker" style="margin-bottom:30px">Precificação</div>
+    <div class="q">Quer aprender a precificar <span class="em" style="color:#fff">mesmo sendo leigo?</span></div>
+    <div class="cta" style="box-shadow:none">Leia a legenda <span>↓</span></div>
+  </div>
+</section>
+</body></html>

@@ -1,0 +1,292 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<title>Guia de Precificação para Leigos com IA — @augustosilva.p</title>
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="guia_base.css"></head><body>
+
+<!-- 1 · CAPA -->
+<section class="pg dark">
+  <div class="glowc" style="width:220mm;height:220mm;right:-90mm;top:-60mm"></div>
+  <div style="position:absolute;left:20mm;top:22mm" class="k">Material gratuito · Precificação</div>
+  <h1 style="position:absolute;left:20mm;right:20mm;top:70mm;font-size:52pt">Guia de Precificação <span class="em" style="color:var(--electric-3)">para leigos</span> com IA</h1>
+  <p style="position:absolute;left:20mm;width:130mm;top:160mm;font-size:13pt;line-height:1.5">Do custo do produto ao preço final: o que entra na conta, a fórmula certa, um exemplo resolvido e os prompts para a IA montar a sua planilha.</p>
+  <div style="position:absolute;left:20mm;right:20mm;bottom:40mm;display:flex;gap:4mm;flex-wrap:wrap">
+    <span class="chip" style="font-size:9pt">Termos explicados</span><span class="chip" style="font-size:9pt">Passo a passo</span><span class="chip" style="font-size:9pt">Exemplo resolvido</span><span class="chip" style="font-size:9pt">Prompts prontos</span><span class="chip" style="font-size:9pt">Checklist</span>
+  </div>
+  <div class="ft"><span>@augustosilva.p</span><span>Edição nov/2026</span></div>
+</section>
+
+<!-- 2 · COMO USAR -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Antes de começar</div>
+  <h2>Como usar este guia</h2>
+  <p class="lead">Você não precisa gostar de matemática. Precisa só de três coisas: os seus custos anotados, uma calculadora (ou a IA) e 20 minutos.</p>
+  <div class="card" style="margin-top:8mm">
+    <table>
+      <tr><th>Página</th><th>O que você vai aprender</th></tr>
+      <tr><td class="n">3</td><td>Os termos de precificação, em português simples</td></tr>
+      <tr><td class="n">4</td><td>Por que faturamento não é lucro</td></tr>
+      <tr><td class="n">5</td><td>O passo a passo para chegar ao preço</td></tr>
+      <tr><td class="n">6</td><td>A fórmula e um exemplo resolvido</td></tr>
+      <tr><td class="n">7</td><td>Margem não é markup (o erro mais comum)</td></tr>
+      <tr><td class="n">8</td><td>Preço mínimo e desconto máximo</td></tr>
+      <tr><td class="n">9</td><td>Erros frequentes</td></tr>
+      <tr><td class="n">10</td><td>Prompt para a IA criar a sua planilha</td></tr>
+      <tr><td class="n">11</td><td>Prompt de conferência e checklist final</td></tr>
+    </table>
+  </div>
+  <div class="card blue" style="margin-top:8mm">
+    <h3>Um aviso importante</h3>
+    <p>Todos os números deste guia são <b>exemplos hipotéticos</b>, criados para ensinar a conta. Comissões, tarifas e impostos mudam por marketplace, categoria, tipo de anúncio e regime tributário. Use sempre os valores da tabela oficial do seu canal e a alíquota informada pelo seu contador.</p>
+  </div>
+  <div class="ft"><span>@augustosilva.p</span><span>02</span></div>
+</section>
+
+<!-- 3 · GLOSSÁRIO -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Glossário</div>
+  <h2>Os termos, sem complicação</h2>
+  <div class="grid2" style="gap:4mm">
+    <div class="card term"><b>Custo do produto</b><p>Quanto você paga para ter uma unidade pronta para vender: compra, frete do fornecedor até você, etiqueta.</p></div>
+    <div class="card term"><b>Comissão</b><p>Percentual que o marketplace fica de cada venda. Ex.: 14% de R$ 100 = R$ 14.</p></div>
+    <div class="card term"><b>Tarifa fixa</b><p>Valor em reais cobrado por unidade em alguns canais, normalmente em produtos de preço baixo.</p></div>
+    <div class="card term"><b>Impostos</b><p>No Simples Nacional, um percentual sobre o valor vendido. Incide mesmo quando a venda dá prejuízo.</p></div>
+    <div class="card term"><b>Frete e embalagem</b><p>A parte do frete que sai do seu bolso e o material de envio de cada pedido.</p></div>
+    <div class="card term"><b>Taxa financeira</b><p>O que o meio de pagamento cobra: parcelamento, antecipação, gateway.</p></div>
+    <div class="card term"><b>Publicidade</b><p>O que você investe em anúncios, dividido pelas vendas que eles trouxeram.</p></div>
+    <div class="card term"><b>Devoluções</b><p>Uma reserva para trocas, arrependimentos e defeitos. Trate como um pequeno percentual.</p></div>
+    <div class="card term"><b>Lucro</b><p>O que sobra depois de pagar tudo. É o seu dinheiro de verdade.</p></div>
+    <div class="card term"><b>Margem</b><p>O lucro dividido pelo <b style="display:inline;font-size:inherit">preço de venda</b>. Margem de 15% = R$ 15 de lucro a cada R$ 100 vendidos.</p></div>
+  </div>
+  <div class="card blue" style="margin-top:4mm"><p><b style="color:#fff">Markup</b> é outra coisa: é quanto você aumenta <b style="color:#fff">em cima do custo</b>. Os dois não são iguais — a página 7 mostra por quê.</p></div>
+  <div class="ft"><span>@augustosilva.p</span><span>03</span></div>
+</section>
+
+<!-- 4 · FATURAMENTO ≠ LUCRO -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">O ponto de partida</div>
+  <h2>Faturamento <span class="em">não é</span> lucro</h2>
+  <p class="lead">Quando entram R$ 100 na sua conta, a maior parte já tem dono. Veja para onde vai o dinheiro em uma simulação:</p>
+  <div class="card" style="margin-top:8mm">
+    <span class="sim">Simulação ilustrativa · a cada R$ 100 vendidos</span>
+    <div class="bar">
+      <div style="width:45%;background:#3A4356">Produto 45</div>
+      <div style="width:14%;background:#1B3A8C">Comissão 14</div>
+      <div style="width:6%;background:#264BB0">Imp. 6</div>
+      <div style="width:10%;background:#2F5BD6">Frete 10</div>
+      <div style="width:3%;background:#4A78F0"></div>
+      <div style="width:5%;background:#7D9BF0">Ads</div>
+      <div style="width:17%;background:#2F6BFF;font-weight:700">Sobra 17</div>
+    </div>
+    <table style="margin-top:6mm">
+      <tr><th>Item</th><th class="n">Valor</th></tr>
+      <tr><td>Venda</td><td class="n">R$ 100,00</td></tr>
+      <tr><td>Custo do produto</td><td class="n">− R$ 45,00</td></tr>
+      <tr><td>Comissão e tarifa</td><td class="n">− R$ 14,00</td></tr>
+      <tr><td>Impostos</td><td class="n">− R$ 6,00</td></tr>
+      <tr><td>Frete e embalagem</td><td class="n">− R$ 10,00</td></tr>
+      <tr><td>Taxa financeira</td><td class="n">− R$ 3,00</td></tr>
+      <tr><td>Anúncios</td><td class="n">− R$ 5,00</td></tr>
+      <tr class="tot"><td>Lucro</td><td class="n">R$ 17,00</td></tr>
+    </table>
+  </div>
+  <p style="margin-top:7mm">Quem olha só para o faturamento acha que está indo bem. Quem olha para a última linha sabe se o negócio se sustenta. <b style="color:var(--ink)">Precificar é decidir essa última linha antes de vender.</b></p>
+  <div class="ft"><span>@augustosilva.p</span><span>04</span></div>
+</section>
+
+<!-- 5 · PASSO A PASSO -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Método</div>
+  <h2>O passo a passo do preço</h2>
+  <div class="steps" style="margin-top:4mm">
+    <div class="step card"><div class="no">1</div><div><h3>Liste o custo da unidade</h3><p>Produto + frete do fornecedor + embalagem + etiqueta. Tudo em reais, por unidade.</p></div></div>
+    <div class="step card"><div class="no">2</div><div><h3>Some os valores fixos do canal</h3><p>Tarifa fixa por unidade e a parte do frete que você paga, se houver. Some ao item 1. Esse total é o seu <b style="color:var(--ink)">custo por unidade</b>.</p></div></div>
+    <div class="step card"><div class="no">3</div><div><h3>Liste o que é percentual da venda</h3><p>Comissão, imposto, taxa financeira, teto de anúncios e reserva de devoluções. Some os percentuais.</p></div></div>
+    <div class="step card"><div class="no">4</div><div><h3>Escolha a margem que você quer</h3><p>Quanto quer que sobre, em % do preço. Comece realista e revise com o tempo.</p></div></div>
+    <div class="step card"><div class="no">5</div><div><h3>Aplique a fórmula</h3><p>Custo por unidade ÷ (1 − soma dos percentuais − margem). A próxima página mostra a conta.</p></div></div>
+    <div class="step card"><div class="no">6</div><div><h3>Confira e compare</h3><p>Refaça a conta de trás para frente e compare com o preço da concorrência. Se não fechar, mude o custo, o canal ou o produto — não a matemática.</p></div></div>
+  </div>
+  <div class="ft"><span>@augustosilva.p</span><span>05</span></div>
+</section>
+
+<!-- 6 · FÓRMULA + EXEMPLO -->
+<section class="pg tight">
+  <div class="glowc"></div>
+  <div class="k">A conta</div>
+  <h2>A fórmula, com um exemplo</h2>
+  <div class="card blue"><div class="formula">Preço = <span class="frac"><span>custo por unidade</span><span>1 − (soma dos % + margem)</span></span></div></div>
+  <div class="grid2" style="margin-top:5mm">
+    <div class="card">
+      <span class="sim">Exemplo hipotético</span>
+      <table>
+        <tr><th>Custo por unidade</th><th class="n">R$</th></tr>
+        <tr><td>Produto</td><td class="n">40,00</td></tr>
+        <tr><td>Embalagem</td><td class="n">2,50</td></tr>
+        <tr><td>Tarifa fixa</td><td class="n">6,00</td></tr>
+        <tr class="tot"><td>Total</td><td class="n">48,50</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <span class="sim" style="visibility:hidden">.</span>
+      <table>
+        <tr><th>Percentuais</th><th class="n">%</th></tr>
+        <tr><td>Comissão</td><td class="n">14</td></tr>
+        <tr><td>Imposto</td><td class="n">6</td></tr>
+        <tr><td>Anúncios</td><td class="n">5</td></tr>
+        <tr><td>Devoluções</td><td class="n">2</td></tr>
+        <tr><td>Margem desejada</td><td class="n">15</td></tr>
+        <tr class="tot"><td>Total</td><td class="n">42</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="card" style="margin-top:5mm">
+    <p class="lead" style="font-size:11.5pt">48,50 ÷ (1 − 0,42) = 48,50 ÷ 0,58 = <b>R$ 83,62</b> → arredonde para <span class="hl">R$ 83,90</span></p>
+    <table style="margin-top:4mm">
+      <tr><th>Conferência a R$ 83,90</th><th class="n">R$</th></tr>
+      <tr><td>Custo por unidade</td><td class="n">48,50</td></tr>
+      <tr><td>Comissão (14%)</td><td class="n">11,75</td></tr>
+      <tr><td>Imposto (6%)</td><td class="n">5,03</td></tr>
+      <tr><td>Anúncios (5%)</td><td class="n">4,20</td></tr>
+      <tr><td>Devoluções (2%)</td><td class="n">1,68</td></tr>
+      <tr class="tot"><td>Lucro · margem de 15,2%</td><td class="n">12,75</td></tr>
+    </table>
+  </div>
+  <p class="note" style="margin-top:4mm">Neste exemplo, o frete é pago pelo cliente e a taxa financeira já está incluída na comissão. Se não for o seu caso, inclua esses itens na conta.</p>
+  <div class="ft"><span>@augustosilva.p</span><span>06</span></div>
+</section>
+
+<!-- 7 · MARGEM x MARKUP -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">O erro mais comum</div>
+  <h2>Margem <span class="em">não é</span> markup</h2>
+  <div class="grid2">
+    <div class="card"><h3>Markup</h3><p>Quanto você soma <b style="color:var(--ink)">em cima do custo</b>.</p><p style="font-family:var(--f-mono);font-size:9.5pt;color:var(--ink)">(preço − custo) ÷ custo</p></div>
+    <div class="card"><h3>Margem</h3><p>Quanto do <b style="color:var(--ink)">preço de venda</b> sobra.</p><p style="font-family:var(--f-mono);font-size:9.5pt;color:var(--ink)">(preço − custo) ÷ preço</p></div>
+  </div>
+  <div class="card" style="margin-top:5mm">
+    <p class="lead" style="font-size:11.5pt">Produto de R$ 40 com markup de 50% → preço de R$ 60. A margem é R$ 20 ÷ R$ 60 = <span class="hl">33,3%</span>, não 50%.</p>
+    <table style="margin-top:4mm">
+      <tr><th>Markup sobre o custo</th><th class="n">Margem sobre o preço</th></tr>
+      <tr><td>25%</td><td class="n">20,0%</td></tr>
+      <tr><td>50%</td><td class="n">33,3%</td></tr>
+      <tr><td>100% (dobrar o custo)</td><td class="n">50,0%</td></tr>
+      <tr><td>150%</td><td class="n">60,0%</td></tr>
+      <tr><td>200% (triplicar o custo)</td><td class="n">66,7%</td></tr>
+    </table>
+    <p class="note" style="margin-top:3mm">Conversão: margem = markup ÷ (1 + markup). Esta tabela considera só o custo do produto, antes de comissões e impostos.</p>
+  </div>
+  <div class="card blue" style="margin-top:5mm">
+    <h3 style="color:#fff">Por isso “dobrar o preço” engana</h3>
+    <p>No exemplo da página 6, o preço de R$ 83,90 é mais que o dobro do produto (markup de 110%). Mesmo assim, depois de comissão, imposto, anúncios e devoluções, a margem real é de 15,2%.</p>
+  </div>
+  <div class="ft"><span>@augustosilva.p</span><span>07</span></div>
+</section>
+
+<!-- 8 · PREÇO MÍNIMO E DESCONTO -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Proteção da margem</div>
+  <h2>Preço mínimo e desconto máximo</h2>
+  <div class="card"><h3>Preço mínimo (lucro zero)</h3><p>É o menor preço em que você não perde dinheiro. Use a mesma fórmula com margem 0%.</p>
+    <p class="lead" style="font-size:11pt;margin-top:3mm">48,50 ÷ (1 − 0,27) = <span class="hl">R$ 66,44</span></p>
+    <p class="note">Abaixo disso, cada venda tira dinheiro do seu bolso.</p></div>
+  <div class="card" style="margin-top:5mm"><h3>Desconto máximo com margem protegida</h3><p>Defina a menor margem que você aceita numa promoção — por exemplo, 5% — e calcule o preço da oferta.</p>
+    <p class="lead" style="font-size:11pt;margin-top:3mm">48,50 ÷ (1 − 0,27 − 0,05) = <span class="hl">R$ 71,32</span></p>
+    <p>Partindo de R$ 83,90, o desconto máximo é de <b style="color:var(--ink)">15%</b>. Um cupom de 20% já faria a margem ficar abaixo do limite.</p></div>
+  <div class="card blue" style="margin-top:5mm"><h3 style="color:#fff">Regra de bolso</h3><p>Antes de qualquer promoção, anote três números por produto: preço normal, preço mínimo e preço da oferta com margem protegida. Nenhum desconto passa da terceira linha.</p></div>
+  <div class="ft"><span>@augustosilva.p</span><span>08</span></div>
+</section>
+
+<!-- 9 · ERROS -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Atenção</div>
+  <h2>Erros frequentes</h2>
+  <div class="card"><ul class="x e">
+    <li><b style="color:var(--ink)">Copiar o preço do concorrente</b> sem saber os seus custos. O custo dele não é o seu.</li>
+    <li><b style="color:var(--ink)">Somar os percentuais ao custo</b> (custo × 1,42) em vez de dividir por 0,58. Somar dá um preço menor do que o necessário.</li>
+    <li><b style="color:var(--ink)">Confundir margem com markup</b> e achar que dobrar o custo garante 50% de lucro.</li>
+    <li><b style="color:var(--ink)">Esquecer a tarifa fixa</b> em produtos baratos, onde ela pesa mais.</li>
+    <li><b style="color:var(--ink)">Ignorar o imposto</b> porque “ainda é pequeno”. Ele incide sobre cada venda.</li>
+    <li><b style="color:var(--ink)">Não reservar nada para devoluções</b> e descobrir o custo só depois.</li>
+    <li><b style="color:var(--ink)">Fazer promoção sem preço mínimo</b> e vender mais com prejuízo.</li>
+    <li><b style="color:var(--ink)">Nunca revisar o preço</b> depois que o fornecedor ou a comissão mudou.</li>
+  </ul></div>
+  <div class="card blue" style="margin-top:6mm"><p>Por que dividir e não multiplicar? Porque comissão, imposto e anúncios são cobrados <b style="color:#fff">sobre o preço final</b>, não sobre o custo. A divisão garante que, depois de descontar os percentuais do preço, o que sobra cobre o custo e a margem.</p></div>
+  <div class="ft"><span>@augustosilva.p</span><span>09</span></div>
+</section>
+
+<!-- 10 · PROMPT PLANILHA -->
+<section class="pg dark">
+  <div class="glowc"></div>
+  <div class="k">Copie e cole na IA</div>
+  <h2>Prompt: a IA monta a sua planilha</h2>
+  <p style="margin-bottom:5mm">Funciona no ChatGPT, no Claude ou no Gemini. Cole, envie e peça o arquivo para Excel ou Google Planilhas.</p>
+<pre>Você é um especialista em precificação para vendedores de marketplace.
+Crie uma planilha de precificação para iniciantes com estas colunas:
+
+A Produto | B Custo do produto (R$) | C Embalagem (R$) | D Tarifa fixa (R$)
+E Frete pago por mim (R$) | F Comissão (%) | G Imposto (%)
+H Taxa financeira (%) | I Anúncios (%) | J Devoluções (%) | K Margem desejada (%)
+
+Colunas calculadas:
+L Custo por unidade = B+C+D+E
+M Soma dos % = F+G+H+I+J
+N Preço sugerido = L/(1-M-K)
+O Preço mínimo (lucro zero) = L/(1-M)
+P Lucro em R$ no preço sugerido = N-L-N*M
+Q Margem real = P/N
+R Markup sobre o produto = (N-B)/B
+
+Regras:
+- Percentuais em formato de porcentagem; valores em reais com 2 casas.
+- Se M+K for maior ou igual a 100%, mostre "Revise os percentuais".
+- Destaque em vermelho quando a margem real for menor que 5%.
+- Preencha 3 linhas de exemplo marcadas como "EXEMPLO HIPOTÉTICO".
+- Crie uma aba "Como usar" explicando cada coluna em linguagem simples.
+- Ao final, confira as fórmulas com o exemplo: custo 40; embalagem 2,50;
+  tarifa 6; frete 0; comissão 14%; imposto 6%; taxa 0%; anúncios 5%;
+  devoluções 2%; margem 15%. O preço sugerido deve dar R$ 83,62.</pre>
+  <div class="ft"><span>@augustosilva.p</span><span>10</span></div>
+</section>
+
+<!-- 11 · CONFERÊNCIA + CHECKLIST -->
+<section class="pg">
+  <div class="glowc"></div>
+  <div class="k">Conferência</div>
+  <h2>A IA ajuda. Você confere.</h2>
+  <p>A IA pode errar uma fórmula ou inventar uma taxa. Use este segundo prompt e confira os números com a tabela oficial do seu canal.</p>
+<pre style="margin:5mm 0">Revise a planilha que você criou. Para cada coluna calculada, mostre a
+fórmula e refaça a conta da linha de exemplo passo a passo. Aponte
+qualquer fórmula que some percentuais ao custo em vez de dividir.
+Não invente comissões nem impostos: deixe esses campos para eu
+preencher com os valores oficiais.</pre>
+  <div class="card"><h3>Checklist antes de publicar o preço</h3>
+  <ul class="x" style="margin-top:3mm">
+    <li>Custo do produto atualizado com o último pedido ao fornecedor</li>
+    <li>Embalagem e etiqueta incluídas por unidade</li>
+    <li>Comissão e tarifa fixa conferidas na tabela oficial da categoria</li>
+    <li>Alíquota de imposto confirmada com o contador</li>
+    <li>Parte do frete que você paga incluída (se houver)</li>
+    <li>Teto de anúncios e reserva de devoluções definidos</li>
+    <li>Preço mínimo anotado e desconto máximo calculado</li>
+    <li>Conta refeita de trás para frente: o lucro bate com a margem</li>
+  </ul></div>
+  <div class="ft"><span>@augustosilva.p</span><span>11</span></div>
+</section>
+
+<!-- 12 · ENCERRAMENTO -->
+<section class="pg dark">
+  <div class="glowc" style="width:220mm;height:220mm;left:-80mm;top:120mm;right:auto"></div>
+  <div class="k">Próximo passo</div>
+  <h1 style="margin-top:20mm;font-size:42pt">Preço certo <span class="em" style="color:var(--electric-3)">não é sorte.</span> É conta.</h1>
+  <p style="margin-top:12mm;width:140mm;font-size:12.5pt">Escolha um produto hoje, faça a conta deste guia e compare com o preço que você pratica. Se a diferença assustar, você acabou de evitar um prejuízo.</p>
+  <p style="margin-top:6mm;width:140mm;font-size:12.5pt">Todo dia tem conteúdo prático sobre marketplace, e-commerce e IA no <b style="color:#fff">@augustosilva.p</b>.</p>
+  <p class="note" style="position:absolute;left:20mm;right:20mm;bottom:24mm;color:#8C97B3">Conteúdo educativo. Os exemplos são hipotéticos e não representam resultados reais. Valores de comissão, tarifas e impostos variam por canal, categoria e regime tributário: consulte as fontes oficiais e o seu contador.</p>
+  <div class="ft"><span>@augustosilva.p</span><span>12</span></div>
+</section>
+</body></html>

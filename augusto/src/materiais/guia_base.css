@@ -1,0 +1,49 @@
+@page{size:A4;margin:0}
+html,body{background:#fff}
+.pg{position:relative;width:210mm;height:297mm;overflow:hidden;page-break-after:always;background:var(--paper);color:var(--ink);padding:22mm 20mm 26mm}
+.pg.dark{background:var(--navy-950);color:#fff}
+.pg .ft{position:absolute;left:20mm;right:20mm;bottom:11mm;display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:9pt;letter-spacing:.06em;opacity:.65}
+.pg .glowc{position:absolute;width:150mm;height:150mm;right:-50mm;top:-50mm;border-radius:50%;background:radial-gradient(circle, rgba(47,107,255,.20), transparent 65%)}
+.dark .glowc{background:radial-gradient(circle, rgba(47,107,255,.55), transparent 65%)}
+.k{font-family:var(--f-mono);font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--electric);font-weight:600;margin-bottom:5mm;display:flex;align-items:center;gap:3mm}
+.k::before{content:"";width:2.4mm;height:2.4mm;border-radius:50%;background:var(--electric)}
+.dark .k{color:var(--electric-3)}
+h1{font-weight:800;font-size:40pt;line-height:.98;letter-spacing:-.04em}
+h2{font-weight:800;font-size:25pt;line-height:1.05;letter-spacing:-.03em;margin-bottom:6mm}
+h3{font-weight:700;font-size:13pt;letter-spacing:-.01em;margin-bottom:2mm}
+p,li{font-size:10.6pt;line-height:1.55;font-weight:500;color:var(--gray-700)}
+.dark p{color:#C9D3EA}
+p+p{margin-top:3mm}
+.lead{font-size:12.5pt;line-height:1.5;color:var(--ink);font-weight:500}
+.card{background:linear-gradient(140deg,rgba(255,255,255,.95),rgba(255,255,255,.7));border:1px solid #fff;border-radius:5mm;box-shadow:0 6mm 14mm rgba(16,34,87,.10);padding:6mm 7mm}
+.card.blue{background:linear-gradient(140deg,#123081,#0A1638);color:#fff;border:1px solid rgba(157,187,255,.45)}
+.card.blue p,.card.blue li{color:#D6E0FA}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm}
+.term b{display:block;font-weight:800;font-size:11pt;color:var(--ink);margin-bottom:1mm}
+.term p{font-size:9.6pt;line-height:1.45}
+table{width:100%;border-collapse:collapse;font-size:10pt}
+td,th{padding:2.6mm 3mm;border-bottom:1px solid var(--paper-2);text-align:left}
+th{font-family:var(--f-mono);font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--gray-500);font-weight:500}
+td.n,th.n{text-align:right;font-family:var(--f-mono);font-feature-settings:"tnum"}
+tr.tot td{font-weight:800;border-top:2px solid var(--ink);border-bottom:none;color:var(--ink)}
+.hl{color:var(--electric);font-weight:800}
+.sim{display:inline-block;font-family:var(--f-mono);font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;border:1px solid currentColor;border-radius:99px;padding:1mm 3mm;color:var(--electric);margin-bottom:4mm}
+.steps{counter-reset:s;display:grid;gap:3.6mm}
+.step{display:grid;grid-template-columns:12mm 1fr;gap:4mm;align-items:start}
+.step .no{font-family:var(--f-serif);font-style:italic;font-size:26pt;line-height:.9;color:var(--electric)}
+.formula{font-weight:700;font-size:15pt;display:flex;align-items:center;gap:4mm;color:#fff}
+.frac{display:inline-flex;flex-direction:column;text-align:center}
+.frac span:first-child{border-bottom:2px solid var(--electric-3);padding:0 3mm 1.5mm}
+.frac span:last-child{padding-top:1.5mm}
+pre{white-space:pre-wrap;font-family:var(--f-mono);font-size:8.6pt;line-height:1.55;color:#E6ECFF;background:#071233;border:1px solid rgba(157,187,255,.35);border-radius:4mm;padding:6mm}
+ul.x{list-style:none;display:grid;gap:2.6mm}
+ul.x li{padding-left:7mm;position:relative}
+ul.x li::before{content:"";position:absolute;left:0;top:1.6mm;width:3.4mm;height:3.4mm;border-radius:1mm;border:1.5px solid var(--electric)}
+ul.e li::before{content:"×";border:none;top:-.6mm;color:#D23B3B;font-weight:800;font-size:13pt}
+.bar{height:9mm;border-radius:2mm;display:flex;overflow:hidden;font-family:var(--f-mono);font-size:7.5pt;color:#fff}
+.bar div{display:flex;align-items:center;justify-content:center}
+.tight td,.tight th{padding:1.8mm 3mm}.tight h2{margin-bottom:4mm}.tight .card{padding:5mm 6mm}
+.note{font-size:8.6pt;color:var(--gray-500);line-height:1.45}
+.fill td{vertical-align:top;font-size:9.2pt;padding:1.9mm 2.6mm;line-height:1.35}
+.fill td b{color:var(--ink)}

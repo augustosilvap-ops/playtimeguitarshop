@@ -1,0 +1,138 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<style>
+/* 04 · Editorial clean */
+.c4 .t{position:absolute;left:var(--m);top:250px;width:900px;color:var(--ink)}
+.c4 .s{position:absolute;left:var(--m);top:620px;width:560px;font-size:36px;line-height:1.35;font-weight:500;color:var(--gray-700)}
+.c4 .stack{position:absolute;right:var(--m);bottom:170px;width:420px;display:flex;flex-direction:column;gap:18px}
+.c4 .stack .glass{padding:26px 32px;border-radius:26px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700}
+.c4 .stack .glass span:last-child{font-family:var(--f-mono);font-size:24px;font-weight:500;color:var(--gray-500)}
+.c4 .stack .glass.res{background:linear-gradient(140deg,#2F6BFF,#1B3A8C);color:#fff;border-color:rgba(255,255,255,.4)}
+.c4 .stack .glass.res span:last-child{color:#DDE7FF}
+.c4 .halo{position:absolute;width:760px;height:760px;right:-260px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(47,107,255,.20),transparent 65%)}
+
+/* 05 · Conceitual: etiqueta de vidro */
+.c5 .tagwrap{position:absolute;left:250px;top:150px;width:600px;height:700px;transform:rotate(-12deg)}
+.c5 .tag{position:absolute;inset:0;border-radius:60px 60px 48px 48px;clip-path:polygon(50% 0, 100% 16%, 100% 100%, 0 100%, 0 16%)}
+.c5 .tag.glass{border-radius:48px}
+.c5 .hole{position:absolute;left:50%;top:110px;width:70px;height:70px;margin-left:-35px;border-radius:50%;background:var(--navy-950);box-shadow:inset 0 3px 8px rgba(0,0,0,.6),0 0 0 2px rgba(157,187,255,.6)}
+.c5 .tagtxt{position:absolute;left:0;right:0;top:260px;text-align:center}
+.c5 .tagtxt .a{font-family:var(--f-mono);font-size:26px;letter-spacing:.16em;opacity:.75}
+.c5 .tagtxt .b{font-weight:800;font-size:150px;letter-spacing:-.05em;line-height:1;margin-top:10px}
+.c5 .tagtxt .c{font-family:var(--f-serif);font-style:italic;font-size:46px;color:var(--electric-3);margin-top:8px}
+.c5 .string{position:absolute;left:520px;top:-40px;width:4px;height:330px;background:linear-gradient(#9DBBFF,rgba(157,187,255,.2));transform:rotate(-30deg);transform-origin:top;border-radius:4px}
+.c5 .t{position:absolute;left:var(--m);right:var(--m);bottom:150px}
+.c5 .orb{position:absolute;width:640px;height:640px;left:220px;top:180px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#5B8CFF,#1B3A8C 55%,transparent 72%);opacity:.9}
+
+/* 06 · Reel cover clean */
+.c6 .t{position:absolute;left:var(--m);top:420px;width:900px;color:var(--ink)}
+.c6 .frame{position:absolute;left:var(--m);right:var(--m);top:940px;height:620px;border-radius:44px;padding:18px}
+.c6 .frame .ph{position:absolute;inset:18px;border-radius:30px;background:url('../img/f4938.jpg') center/cover}
+.c6 .chip2{position:absolute;left:var(--m);top:820px;font-family:var(--f-mono);font-size:28px;font-weight:600;color:#fff;background:var(--electric);padding:14px 24px;border-radius:999px;box-shadow:0 12px 34px rgba(47,107,255,.45)}
+.c6 .halo{position:absolute;width:900px;height:900px;right:-300px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(47,107,255,.18),transparent 65%)}
+.c6 .rsig{position:absolute;left:0;right:0;top:1600px;text-align:center;font-family:var(--f-mono);font-size:26px;color:var(--gray-700);letter-spacing:.06em}
+
+/* 07 · Conceitual claro: lupa */
+.c7 .card{position:absolute;left:150px;top:200px;width:600px;padding:44px 48px}
+.c7 .card .r{display:flex;align-items:center;gap:22px;font-size:38px;font-weight:700;padding:22px 0;border-bottom:1px solid var(--paper-2)}
+.c7 .card .r:last-child{border:none}
+.c7 .card .ck{width:46px;height:46px;border-radius:14px;border:2.5px solid var(--electric);display:grid;place-items:center;color:var(--electric);font-size:28px;font-weight:800}
+.c7 .lens{position:absolute;left:520px;top:300px;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.7),rgba(221,231,255,.25) 60%,rgba(47,107,255,.15));
+  -webkit-backdrop-filter:blur(3px) saturate(160%);backdrop-filter:blur(3px) saturate(160%);
+  border:22px solid rgba(255,255,255,.75);box-shadow:0 0 0 2px #9DBBFF inset,0 0 0 2px rgba(16,34,87,.12),0 40px 80px rgba(16,34,87,.22)}
+.c7 .handle{position:absolute;left:840px;top:640px;width:70px;height:240px;border-radius:40px;background:linear-gradient(90deg,#1B3A8C,#2F6BFF 50%,#102257);transform:rotate(-45deg);transform-origin:top center;box-shadow:0 20px 40px rgba(16,34,87,.3)}
+.c7 .t{position:absolute;left:var(--m);right:var(--m);bottom:160px;color:var(--ink)}
+
+/* 08 · Fotográfico */
+.c8 .bg-photo{background-image:url('../img/f4705.jpg');background-position:62% 40%}
+.c8 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,31,0) 35%,rgba(5,11,31,.82) 70%,rgba(5,11,31,.95) 100%)}
+.c8 .bign{position:absolute;left:var(--m);bottom:330px;font-family:var(--f-serif);font-style:italic;font-size:300px;line-height:.75;color:#fff}
+.c8 .t{position:absolute;left:300px;right:var(--m);bottom:340px}
+.c8 .chips{position:absolute;left:var(--m);bottom:170px;display:flex;gap:16px}
+.c8 .chips .glass{padding:16px 26px;border-radius:999px;font-family:var(--f-mono);font-size:24px}
+
+/* 09 · Reel cover glass dashboard */
+.c9 .bg-photo{background-image:url('../img/f42137.jpg');filter:blur(14px) brightness(.55) saturate(.7);transform:scale(1.1)}
+.c9 .tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,31,.75),rgba(5,11,31,.35) 50%,rgba(5,11,31,.85))}
+.c9 .t{position:absolute;left:var(--m);right:var(--m);top:380px}
+.c9 .dash{position:absolute;left:var(--m);right:var(--m);top:880px;padding:44px 48px}
+.c9 .dash .r{display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:32px;font-weight:600}
+.c9 .dash .r:last-child{border:none}
+.c9 .dash .r b{font-family:var(--f-mono);font-size:40px;font-weight:600}
+.c9 .dash .r.hi b{color:var(--electric-3)}
+.c9 .rsig{position:absolute;left:0;right:0;top:1580px;text-align:center;font-family:var(--f-mono);font-size:26px;opacity:.85;letter-spacing:.06em}
+</style></head><body>
+
+<!-- 04 · Carrossel · Editorial clean -->
+<section class="art light c4" data-out="previa/capas/04.png">
+  <div class="halo"></div>
+  <div style="position:absolute;left:var(--m);top:150px;color:var(--ink)" class="kicker">Margem</div>
+  <h1 class="t h-xl">Faturamento <span class="em">não é</span> lucro.</h1>
+  <p class="s">Entenda sua margem antes de vender o próximo produto.</p>
+  <div class="stack">
+    <div class="glass light"><span>Faturamento</span><span>entra</span></div>
+    <div class="glass light"><span>− Custos e taxas</span><span>sai</span></div>
+    <div class="glass res"><span>= Lucro</span><span>fica</span></div>
+  </div>
+  <div class="sig" style="color:var(--ink)">@augustosilva.p</div><div class="next" style="color:var(--ink)">arraste →</div>
+</section>
+
+<!-- 05 · Estático · Conceitual -->
+<section class="art dark c5" data-out="previa/capas/05.png">
+  <div class="bg-deep"></div><div class="orb"></div>
+  <div class="tagwrap">
+        <div class="glass tag"></div>
+    <div class="hole"></div>
+    <div class="tagtxt"><div class="a">MARKUP</div><div class="b">+50%</div><div class="c">≠ 50% de margem</div></div>
+  </div>
+  <h1 class="t h-l">Margem <span class="em">não é</span> markup.</h1>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div>
+</section>
+
+<!-- 06 · Capa de Reel · Editorial clean -->
+<section class="art reel light c6" style="height:1920px" data-out="previa/capas/06.png">
+  <div class="halo"></div>
+  <div style="position:absolute;left:var(--m);top:340px;color:var(--ink)" class="kicker">IA aplicada</div>
+  <h1 class="t h-l">Quer usar IA para encontrar produtos <span class="em">com potencial?</span></h1>
+  <div class="chip2">Leia a legenda ↓</div>
+  <div class="glass light frame"><div class="ph"></div></div>
+  <div class="rsig">@augustosilva.p</div>
+</section>
+
+<!-- 07 · Carrossel · Conceitual claro -->
+<section class="art white c7" data-out="previa/capas/07.png">
+  <div class="glass light card">
+    <div class="r"><div class="ck">✓</div>Demanda</div>
+    <div class="r"><div class="ck">✓</div>Concorrência</div>
+    <div class="r"><div class="ck">✓</div>Margem</div>
+  </div>
+  <div class="handle"></div><div class="lens"></div>
+  <div style="position:absolute;left:var(--m);top:110px;color:var(--ink)" class="kicker">IA aplicada</div>
+  <h1 class="t h-l">Produto certo: <span class="em">valide</span> antes de comprar.</h1>
+  <div class="sig" style="color:var(--ink)">@augustosilva.p</div><div class="next" style="color:var(--ink)">arraste →</div>
+</section>
+
+<!-- 08 · Estático · Fotográfico -->
+<section class="art dark c8" data-out="previa/capas/08.png">
+  <div class="bg-photo"></div><div class="shade"></div>
+  <div class="bign">3</div>
+  <h1 class="t h-m">sinais de um produto <span class="em">com potencial</span></h1>
+  <div class="chips"><div class="glass">Demanda</div><div class="glass">Concorrência</div><div class="glass">Margem</div></div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div>
+</section>
+
+<!-- 09 · Capa de Reel · Glass Dashboard -->
+<section class="art reel dark c9" style="height:1920px" data-out="previa/capas/09.png">
+  <div class="bg-photo"></div><div class="tint"></div>
+  <div style="position:absolute;left:var(--m);top:290px" class="kicker">Black Friday · 27/11</div>
+  <h1 class="t h-l">Quer fazer Black Friday <span class="em">sem destruir</span> sua margem?</h1>
+  <div class="glass dash">
+    <div style="margin-bottom:10px" class="tag-sim">Exemplo hipotético</div>
+    <div class="r"><span>Preço normal</span><b>R$ 83,90</b></div>
+    <div class="r"><span>Preço mínimo</span><b>R$ 66,44</b></div>
+    <div class="r hi"><span>Oferta com margem de 5%</span><b>R$ 71,32</b></div>
+  </div>
+  <div class="rsig">@augustosilva.p</div>
+</section>
+</body></html>

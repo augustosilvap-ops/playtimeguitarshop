@@ -1,0 +1,157 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<style>
+/* ---------- Capa: recibo de vidro em camadas ---------- */
+.c1 .orb{position:absolute;border-radius:50%;filter:blur(2px)}
+.c1 .o1{width:520px;height:520px;right:-140px;top:600px;background:radial-gradient(circle at 35% 35%, #6E9BFF, #2F6BFF 45%, #102257 80%);opacity:.9}
+.c1 .o2{width:200px;height:200px;right:560px;top:1060px;background:radial-gradient(circle at 35% 35%, #9DBBFF, #1B3A8C 70%);opacity:.8}
+.c1 .title{position:absolute;left:var(--m);top:200px;width:900px}
+.c1 .sub{position:absolute;left:var(--m);top:480px;width:640px;font-size:34px;line-height:1.35;font-weight:500;opacity:.8}
+.receipt{position:absolute;width:470px;padding:40px 40px 34px;font-family:var(--f-mono)}
+.receipt.back{right:170px;top:700px;transform:rotate(9deg);opacity:.55;height:520px}
+.receipt.front{right:110px;top:660px;transform:rotate(-4deg)}
+.receipt h4{font-family:var(--f-mono);font-size:19px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;font-weight:500;margin-bottom:26px}
+.receipt .ln{display:flex;justify-content:space-between;font-size:25px;padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.22)}
+.receipt .ln span:last-child{color:var(--electric-3)}
+.receipt .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:24px;font-size:26px}
+.receipt .tot b{font-family:var(--f-display);font-size:46px;font-weight:800;letter-spacing:-.02em}
+
+/* ---------- Slide 2: cascata ---------- */
+.wf{position:absolute;left:var(--m);right:var(--m);top:560px;height:600px;padding:44px 44px 30px}
+.wf .bars{position:absolute;left:44px;right:44px;bottom:96px;top:44px}
+.wf .bar{position:absolute;bottom:0;width:86px;border-radius:12px 12px 4px 4px}
+.wf .lab{position:absolute;bottom:-74px;width:104px;margin-left:-9px;text-align:center;font-family:var(--f-mono);font-size:16px;letter-spacing:-.02em;line-height:1.2;opacity:.8}
+.wf .val{position:absolute;width:120px;margin-left:-17px;text-align:center;font-family:var(--f-mono);font-size:21px;font-weight:600}
+/* ---------- Custos ---------- */
+.cost .no{position:absolute;left:var(--m);top:150px}
+.cost .t{position:absolute;left:var(--m);top:470px;width:900px}
+.cost .d{position:absolute;left:var(--m);top:700px;width:860px}
+.cost .tip{position:absolute;left:var(--m);right:var(--m);bottom:150px;padding:40px 44px;display:flex;gap:30px;align-items:flex-start}
+.cost .tip .ic{flex:0 0 64px;height:64px;border-radius:20px;display:grid;place-items:center;background:var(--electric);color:#fff;font-family:var(--f-mono);font-size:30px;font-weight:600;box-shadow:0 10px 30px rgba(47,107,255,.45)}
+.cost .tip .k{font-family:var(--f-mono);font-size:19px;letter-spacing:.16em;text-transform:uppercase;opacity:.65;margin-bottom:10px}
+.cost .tip p{font-size:31px;line-height:1.36;font-weight:600}
+.cost.right .no{left:auto;right:var(--m)}
+.glow-r{position:absolute;width:700px;height:700px;right:-260px;top:-180px;border-radius:50%;background:radial-gradient(circle, rgba(47,107,255,.55), transparent 65%)}
+.glow-l{position:absolute;width:800px;height:800px;left:-320px;bottom:-300px;border-radius:50%;background:radial-gradient(circle, rgba(47,107,255,.45), transparent 65%)}
+.light .glow-r{background:radial-gradient(circle, rgba(47,107,255,.22), transparent 65%)}
+/* ---------- CTA ---------- */
+.cta .t{position:absolute;left:var(--m);top:170px;width:900px}
+.cta .formula{position:absolute;left:var(--m);right:var(--m);top:520px;padding:46px 50px}
+.cta .formula .k{font-family:var(--f-mono);font-size:19px;letter-spacing:.16em;text-transform:uppercase;opacity:.65;margin-bottom:22px}
+.cta .formula .f{font-size:40px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.cta .formula .f .frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin-left:10px}
+.cta .formula .f .frac span:first-child{border-bottom:3px solid var(--electric-2);padding:0 10px 8px}
+.cta .formula .f .frac span:last-child{padding-top:8px}
+.cta .kw{position:absolute;left:var(--m);right:var(--m);top:930px}
+.cta .kw .box{display:inline-block;font-family:var(--f-mono);font-weight:600;font-size:56px;letter-spacing:.06em;padding:16px 34px;border-radius:22px;background:var(--electric);color:#fff;box-shadow:0 18px 50px rgba(47,107,255,.55);margin:0 6px}
+</style></head><body>
+
+<!-- 01 · CAPA -->
+<section class="art dark c1" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/01.png">
+  <div class="bg-deep"></div><div class="orb o1"></div><div class="orb o2"></div>
+  <div style="position:absolute;left:var(--m);top:110px" class="kicker">Precificação &amp; margem</div>
+  <h1 class="title h-xl">5 custos que <span class="em">comem</span> seu lucro</h1>
+  <p class="sub">E que quase ninguém coloca no preço antes de vender.</p>
+  <div class="glass receipt back"></div>
+  <div class="glass receipt front">
+    <h4>Pedido · Exemplo</h4>
+    <div class="ln"><span>Comissão</span><span>−</span></div>
+    <div class="ln"><span>Impostos</span><span>−</span></div>
+    <div class="ln"><span>Frete + embalagem</span><span>−</span></div>
+    <div class="ln"><span>Taxa financeira</span><span>−</span></div>
+    <div class="ln"><span>Anúncios</span><span>−</span></div>
+    <div class="tot"><span>Lucro real</span><b>?</b></div>
+  </div>
+  <div class="grain"></div>
+  <div class="sig">@augustosilva.p</div><div class="next">arraste <span style="font-size:30px">→</span></div>
+</section>
+
+<!-- 02 · R$100 ≠ R$100 -->
+<section class="art dark" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/02.png">
+  <div class="bg-deep"></div><div class="glow-l"></div>
+  <div style="position:absolute;left:var(--m);top:120px" class="kicker">Antes de tudo</div>
+  <h2 class="h-l" style="position:absolute;left:var(--m);top:200px;width:920px">R$ 100 vendidos <span class="em">não são</span> R$ 100 no bolso.</h2>
+  <div class="glass wf">
+    <div style="position:absolute;right:44px;top:30px" class="tag-sim">Simulação ilustrativa</div>
+    <div class="bars" id="bars"></div>
+  </div>
+  <p class="body-s muted" style="position:absolute;left:var(--m);right:var(--m);top:1180px;font-size:24px">Valores hipotéticos para cada R$ 100 de venda. Os percentuais reais mudam por canal, categoria e regime tributário.</p>
+  <div class="grain"></div>
+  <div class="sig">@augustosilva.p</div><div class="pager">02 / 08</div>
+  <script>
+  const d=[['Venda',100,0,'v'],['Produto',45,55,'c'],['Comissão\ne tarifa',14,41,'c'],['Impostos',6,35,'c'],['Frete +\nembalagem',10,25,'c'],['Taxa\nfinanceira',3,22,'c'],['Anúncios',5,17,'c'],['Sobra',17,0,'s']];
+  const B=document.getElementById('bars');const H=360, step=(1080-168-88-86)/7;
+  d.forEach(([n,v,base,k],i)=>{const b=document.createElement('div');b.className='bar';b.style.left=(i*step)+'px';b.style.height=(v/100*H)+'px';b.style.bottom=(base/100*H)+'px';
+    b.style.background=k==='v'?'linear-gradient(180deg,#9DBBFF,#5B8CFF)':k==='s'?'linear-gradient(180deg,#2F6BFF,#1B3A8C)':'rgba(255,255,255,.16)';
+    if(k==='c'){b.style.border='1px solid rgba(255,255,255,.35)'} if(k==='s'){b.style.boxShadow='0 0 0 2px #9DBBFF, 0 14px 40px rgba(47,107,255,.6)'}
+    B.appendChild(b);
+    const val=document.createElement('div');val.className='val';val.style.left=(i*step)+'px';val.style.bottom=((base+v)/100*H+12)+'px';val.textContent=(k==='c'?'−':'')+v;if(k==='s')val.style.color='#9DBBFF';B.appendChild(val);
+    const l=document.createElement('div');l.className='lab';l.style.left=(i*step)+'px';l.innerHTML=n.replace('\n','<br>');B.appendChild(l);});
+  </script>
+</section>
+
+<!-- 03 · Comissão -->
+<section class="art dark cost" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/03.png">
+  <div class="bg-deep"></div><div class="glow-r"></div>
+  <div class="no bigno">01</div>
+  <h2 class="t h-m">Comissão e tarifa <span class="em">do marketplace</span></h2>
+  <p class="d body muted">A comissão é um percentual sobre o preço de venda. Em alguns canais, produtos de valor baixo ainda pagam uma tarifa fixa por unidade.</p>
+  <div class="glass tip"><div class="ic">→</div><div><div class="k">Como levar para o preço</div><p>Use o percentual da sua categoria e some a tarifa fixa ao custo da unidade. Confira sempre a tabela oficial do canal.</p></div></div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div><div class="pager">03 / 08</div>
+</section>
+
+<!-- 04 · Impostos -->
+<section class="art light cost right" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/04.png">
+  <div class="glow-r"></div>
+  <div class="no bigno" style="color:var(--electric)">02</div>
+  <h2 class="t h-m">Impostos <span class="em">sobre a venda</span></h2>
+  <p class="d body" style="color:var(--gray-700)">No Simples Nacional, o imposto incide sobre o faturamento, não sobre o lucro. Vendeu, pagou — mesmo que a venda tenha dado prejuízo.</p>
+  <div class="glass light tip"><div class="ic">→</div><div><div class="k">Como levar para o preço</div><p>Peça ao seu contador a alíquota efetiva do seu negócio e trate esse número como um percentual do preço.</p></div></div>
+  <div class="sig">@augustosilva.p</div><div class="pager">04 / 08</div>
+</section>
+
+<!-- 05 · Frete e embalagem -->
+<section class="art dark cost" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/05.png">
+  <div class="bg-deep"></div><div class="glow-l"></div>
+  <div class="no bigno">03</div>
+  <h2 class="t h-m">Frete <span class="em">e</span> embalagem</h2>
+  <p class="d body muted">Frete grátis para o cliente quase nunca é grátis para você. E caixa, fita, etiqueta e enchimento também custam em cada pedido.</p>
+  <div class="glass tip"><div class="ic">→</div><div><div class="k">Como levar para o preço</div><p>Some a embalagem de um pedido e a parte do frete que você paga ao custo de cada unidade.</p></div></div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div><div class="pager">05 / 08</div>
+</section>
+
+<!-- 06 · Taxa financeira -->
+<section class="art light cost right" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/06.png">
+  <div class="glow-r"></div>
+  <div class="no bigno" style="color:var(--electric)">04</div>
+  <h2 class="t h-m">Taxa <span class="em">financeira</span></h2>
+  <p class="d body" style="color:var(--gray-700)">Parcelamento, antecipação e intermediador de pagamento cobram um percentual. No marketplace, parte pode vir dentro da comissão; na loja própria, o gateway cobra à parte.</p>
+  <div class="glass light tip"><div class="ic">→</div><div><div class="k">Como levar para o preço</div><p>Use a taxa do seu plano de recebimento (com parcelamento, se você oferece) como percentual do preço.</p></div></div>
+  <div class="sig">@augustosilva.p</div><div class="pager">06 / 08</div>
+</section>
+
+<!-- 07 · Anúncios -->
+<section class="art dark cost" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/07.png">
+  <div class="bg-deep"></div><div class="glow-r"></div>
+  <div class="no bigno">05</div>
+  <h2 class="t h-m">Anúncios <span class="em">pagos</span></h2>
+  <p class="d body muted">Se você paga para vender, esse gasto pertence ao produto. Divida o investimento em anúncios pelas vendas que ele gerou.</p>
+  <div class="glass tip"><div class="ic">→</div><div><div class="k">Como levar para o preço</div><p>Defina um teto de anúncio como percentual do preço — por exemplo, 5% — e respeite esse limite na precificação.</p></div></div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div><div class="pager">07 / 08</div>
+</section>
+
+<!-- 08 · CTA -->
+<section class="art dark cta" data-out="entregas/2026-11-16/02_carrossel_5-custos/slides/08.png">
+  <div class="bg-deep"></div><div class="glow-l"></div><div class="glow-r"></div>
+  <h2 class="t h-l">Coloque os 5 no preço <span class="em">antes</span> de vender.</h2>
+  <div class="glass formula">
+    <div class="k">A conta, em uma linha</div>
+    <div class="f">Preço =<span class="frac"><span>custos por unidade</span><span>1 − (% sobre a venda + margem)</span></span></div>
+  </div>
+  <div class="kw">
+    <p class="h-s" style="font-weight:700;line-height:1.5">Comente <span class="box">CUSTOS</span></p>
+    <p class="body muted" style="margin-top:26px;width:860px">e eu te envio no Direct o <b style="opacity:1;color:#fff">Guia de Precificação para Leigos com IA</b> — com exemplo resolvido e o prompt que monta a planilha para você.</p>
+  </div>
+  <div class="grain"></div><div class="sig">@augustosilva.p</div><div class="pager">08 / 08</div>
+</section>
+</body></html>
