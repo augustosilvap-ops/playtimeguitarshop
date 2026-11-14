@@ -1,3 +1,4 @@
+@import url('../fonts_pdf.css');
 @page{size:A4;margin:0}
 html,body{background:#fff}
 .pg{position:relative;width:210mm;height:297mm;overflow:hidden;page-break-after:always;background:var(--paper);color:var(--ink);padding:22mm 20mm 26mm}
@@ -82,3 +83,12 @@ pre{background:#0D0F17;border:1px solid rgba(91,140,255,.35);font-size:9.4pt;lin
 ul.x{gap:3.4mm}
 .bar{height:12mm;font-family:'Inter',sans-serif;font-size:8.5pt;font-weight:600}
 .cover-v2{padding:0!important;background:#fff}
+
+/* PDF limpo: fonte TrueType e sem sombras rasterizadas */
+.pg,.pg *{font-family:'InterPDF',sans-serif!important}
+.pg pre,.pg pre *{font-family:'JetBrains Mono',monospace!important}
+.card,.pg .card,.glass,.chip{box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.card{border:1px solid #DCE3F1}
+.pg{background:#fff}
+.pg.dark{background:#08090E}
+.cover-v2{background-color:#fff}
