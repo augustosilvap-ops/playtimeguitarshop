@@ -22,6 +22,8 @@ async function feed(q) {
 export async function GET(req) {
   if (!ok(req)) return deny();
   const hoje = new Date().toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" });
+  const ia = kv.ready() ? await kv.get("nexus:briefing_ia").catch(() => null) : null;
+  if (ia?.data === hoje) return Response.json({ ...ia, fonte: "Briefing do Nexus (IA)" });
   if (kv.ready()) { const c = await kv.get("nexus:briefing").catch(() => null); if (c?.data === hoje) return Response.json(c); }
   const out = { data: hoje, insights: [], alertas: [], fonte: "Google Notícias" };
   for (const [k, qs] of Object.entries(Q)) {

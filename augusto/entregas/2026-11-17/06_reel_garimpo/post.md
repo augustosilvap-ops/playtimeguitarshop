@@ -1,9 +1,9 @@
-# 06 · Reel 7s — Quer usar IA para achar produtos com potencial?
+# 06 · Reel 10s (roteiro em 4 cenas) — Quer usar IA para achar produtos com potencial?
 
 | Campo | Definição |
 |---|---|
 | Data proposta | Ter 17/11/2026 · 19h30 (horário a validar) |
-| Formato | Reel 9:16 · `reel_1080x1920_7s.mp4` (H.264, 30 fps, 7 s, sem música) + `capa_1080x1920.png` |
+| Formato | Reel 9:16 · `reel_1080x1920_10s.mp4` (H.264, 30 fps, 10 s, roteiro: gancho → dor → agravamento → solução + CTA; sem música) + `capa_1080x1920.png` |
 | Filmagem | Real: Mixkit #4938 "Hands of a girl working on a computer" (Free License) |
 | Pilar | IA aplicada |
 | Palavra-chave Manychat | **GARIMPO** |

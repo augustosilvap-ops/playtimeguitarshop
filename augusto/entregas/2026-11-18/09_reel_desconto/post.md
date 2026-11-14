@@ -1,9 +1,9 @@
-# 09 · Reel 7s — Quer fazer Black Friday sem destruir sua margem?
+# 09 · Reel 10s (roteiro em 4 cenas) — Quer fazer Black Friday sem destruir sua margem?
 
 | Campo | Definição |
 |---|---|
 | Data proposta | Qua 18/11/2026 · 19h30 (horário a validar) |
-| Formato | Reel 9:16 · `reel_1080x1920_7s.mp4` (sem música) + `capa_1080x1920.png` |
+| Formato | Reel 9:16 · `reel_1080x1920_10s.mp4` (sem música) + `capa_1080x1920.png` |
 | Filmagem | Real: Mixkit #42137 "Hands of two people sealing a package with tape" (Free License) |
 | Pilar | Estratégia comercial |
 | Palavra-chave Manychat | **DESCONTO** |
