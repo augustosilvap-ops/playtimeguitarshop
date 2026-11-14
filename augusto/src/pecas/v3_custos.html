@@ -1,0 +1,137 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- v3 · método: identidade da marca + sem vícios visuais (sem brilho, degradê, vidro, 3D, emoji) + fotos reais + layout editorial assimétrico -->
+<style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+@font-face{font-family:S;src:url('../fonts/InstrumentSerif-400.ttf')}
+@font-face{font-family:S;font-style:italic;src:url('../fonts/InstrumentSerif-400i.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#222}
+.art{position:relative;width:1080px;height:1350px;overflow:hidden;font-family:I,sans-serif;color:#0A0B10;background:#F4F6FA}
+.nv{background:#0B1530;color:#F4F6FA}
+.hdr{position:absolute;left:84px;right:84px;top:76px;display:flex;justify-content:space-between;align-items:center;font:500 22px M;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.no{font:400 40px S;letter-spacing:.24em;color:#2F6BFF}.nv .no{color:#7FA3FF}
+.h{font:600 84px/1.0 I;letter-spacing:-.05em}
+.e{font:italic 400 1.12em/1 S;letter-spacing:-.015em;color:#2F6BFF}.nv .e{color:#7FA3FF}
+.p{font:500 34px/1.38 I;letter-spacing:-.015em;color:#3B3F4C}.nv .p{color:#B9C3DA}
+.ph{background-size:cover;background-position:center}
+.fr{border:12px solid #fff;box-shadow:0 18px 40px rgba(10,20,48,.18)}
+.foot{position:absolute;left:84px;right:84px;bottom:56px;display:flex;justify-content:space-between;font:500 22px M;letter-spacing:.12em;text-transform:uppercase;opacity:.5}
+.rule{height:2px;background:currentColor;opacity:.15}
+.tb{font:500 34px I}.tb div{display:flex;justify-content:space-between;padding:20px 0;border-bottom:2px solid rgba(10,11,16,.1)}
+.tb b{font:500 34px M}.neg{color:#D93A4A}
+.note{font:500 22px M;letter-spacing:.08em;text-transform:uppercase;color:#7A7F8C}
+</style></head><body>
+
+<!-- 1 capa -->
+<section class="art" data-out="entregas/testes/v3_custos/01.png">
+  <div class="ph" style="position:absolute;left:0;right:0;top:0;height:760px;background-image:url('../img/ph_capa.jpg')"></div>
+  <div style="position:absolute;left:0;right:0;top:0;height:150px;background:linear-gradient(180deg,rgba(10,20,48,.55),rgba(10,20,48,0))"></div>
+  <div class="hdr" style="color:#fff;opacity:.9"><span>@augustosilva.p</span><span>Precificação · 1/8</span></div>
+  <div style="position:absolute;left:84px;right:84px;top:830px">
+    <h1 class="h" style="font-size:104px">Seu lucro está<br>sendo <span class="e">comido.</span></h1>
+    <p class="p" style="margin-top:30px;width:760px">5 custos que quase ninguém coloca no preço antes de vender.</p>
+  </div>
+  <div class="foot"><span>Guia em 8 partes</span><span>Arraste →</span></div>
+</section>
+
+<!-- 2 R$100 -->
+<section class="art" data-out="entregas/testes/v3_custos/02.png">
+  <div class="hdr"><span>@augustosilva.p</span><span>2/8</span></div>
+  <div style="position:absolute;left:84px;right:84px;top:200px">
+    <h2 class="h" style="font-size:88px">R$ 100 vendidos não são R$ 100 <span class="e">no bolso.</span></h2>
+  </div>
+  <div class="tb" style="position:absolute;left:84px;right:84px;top:560px">
+    <div><span>Venda</span><b>100,00</b></div>
+    <div><span>Produto</span><b class="neg">− 45,00</b></div>
+    <div><span>Comissão e tarifa</span><b class="neg">− 14,00</b></div>
+    <div><span>Impostos</span><b class="neg">− 6,00</b></div>
+    <div><span>Frete, taxa e anúncios</span><b class="neg">− 18,00</b></div>
+    <div style="border:0;font-weight:700;font-size:44px"><span>Sobra</span><b style="font-size:44px;color:#2F6BFF">17,00</b></div>
+  </div>
+  <div class="foot"><span>Simulação ilustrativa</span><span>Arraste →</span></div>
+</section>
+
+<!-- 3 comissão: foto à direita -->
+<section class="art" data-out="entregas/testes/v3_custos/03.png">
+  <div class="hdr"><span>@augustosilva.p</span><span>3/8</span></div>
+  <div class="ph fr" style="position:absolute;right:84px;top:180px;width:420px;height:560px;background-image:url('../img/ph_comissao.jpg');transform:rotate(2deg)"></div>
+  <div style="position:absolute;left:84px;top:220px;width:480px"><div class="no">Nº 01</div><p class="note" style="margin-top:16px">Comissão e tarifa</p></div>
+  <div style="position:absolute;left:84px;right:84px;top:830px">
+    <h2 class="h">A comissão leva um <span class="e">pedaço</span> de cada venda.</h2>
+    <p class="p" style="margin-top:28px">Use o percentual da sua categoria e some a tarifa fixa por unidade.</p>
+  </div>
+  <div class="foot"><span>Exemplo hipotético</span><span>Arraste →</span></div>
+</section>
+
+<!-- 4 impostos: navy, foto inteira em cima -->
+<section class="art nv" data-out="entregas/testes/v3_custos/04.png">
+  <div class="ph" style="position:absolute;left:84px;right:84px;top:160px;height:520px;background-image:url('../img/ph_imposto.jpg')"></div>
+  <div class="hdr" style="top:84px"><span>@augustosilva.p</span><span>4/8</span></div>
+  <div style="position:absolute;left:84px;right:84px;top:740px">
+    <div class="no">Nº 02</div>
+    <h2 class="h" style="margin-top:20px">Imposto é sobre o que você <span class="e">vende.</span></h2>
+    <p class="p" style="margin-top:26px">Não sobre o que sobra. No Simples, vendeu, pagou.</p>
+  </div>
+  <div class="foot"><span>Confirme com seu contador</span><span>Arraste →</span></div>
+</section>
+
+<!-- 5 frete: foto vertical à esquerda -->
+<section class="art" data-out="entregas/testes/v3_custos/05.png">
+  <div class="hdr" style="left:540px"><span>@augustosilva.p</span><span>5/8</span></div>
+  <div class="ph" style="position:absolute;left:0;top:0;bottom:0;width:470px;background-image:url('../img/ph_frete.jpg')"></div>
+  <div style="position:absolute;left:540px;right:84px;top:240px">
+    <div class="no">Nº 03</div>
+    <h2 class="h" style="margin-top:22px;font-size:80px">“Frete grátis” tem <span class="e">dono.</span></h2>
+    <div class="rule" style="margin:44px 0"></div>
+    <p class="p">Frete subsidiado, caixa, fita, etiqueta e enchimento saem de cada pedido.</p>
+    <p class="p" style="margin-top:28px;color:#0A0B10;font-weight:600">Quem paga? Sua margem.</p>
+  </div>
+  <div class="foot" style="left:540px"><span></span><span>Arraste →</span></div>
+</section>
+
+<!-- 6 taxa financeira -->
+<section class="art" data-out="entregas/testes/v3_custos/06.png">
+  <div class="hdr"><span>@augustosilva.p</span><span>6/8</span></div>
+  <div style="position:absolute;left:84px;right:84px;top:200px"><div class="no">Nº 04</div>
+    <h2 class="h" style="margin-top:22px">Parcelar <span class="e">tem preço.</span></h2></div>
+  <div class="ph fr" style="position:absolute;left:84px;top:500px;width:460px;height:460px;background-image:url('../img/ph_taxa.jpg');transform:rotate(-2deg)"></div>
+  <div class="tb" style="position:absolute;left:600px;right:84px;top:540px;font-size:30px">
+    <div><span>Parcelado em 12x</span><b>sim</b></div>
+    <div><span>Intermediador</span><b class="neg">− %</b></div>
+    <div style="border:0"><span>Antecipação</span><b class="neg">− %</b></div>
+  </div>
+  <p class="p" style="position:absolute;left:84px;right:84px;top:1060px">Use a taxa do seu plano de recebimento como percentual do preço.</p>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 7 anúncios: navy, foto à direita -->
+<section class="art nv" data-out="entregas/testes/v3_custos/07.png">
+  <div class="hdr"><span>@augustosilva.p</span><span>7/8</span></div>
+  <div class="ph" style="position:absolute;right:0;top:170px;width:520px;height:640px;background-image:url('../img/ph_anuncio.jpg')"></div>
+  <div style="position:absolute;left:84px;top:220px;width:420px"><div class="no">Nº 05</div>
+    <h2 class="h" style="margin-top:22px;font-size:76px">Pagou pra vender?<br><span class="e">É custo.</span></h2></div>
+  <div style="position:absolute;left:84px;right:84px;top:900px;font:500 34px/1.3 I">
+    <p>1 · Defina um teto, ex.: 5% do preço.</p><div class="rule" style="margin:22px 0"></div>
+    <p>2 · Divida o gasto pelas vendas geradas.</p><div class="rule" style="margin:22px 0"></div>
+    <p>3 · Coloque no preço antes de anunciar.</p>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span>Arraste →</span></div>
+</section>
+
+<!-- 8 CTA -->
+<section class="art" data-out="entregas/testes/v3_custos/08.png">
+  <div class="ph" style="position:absolute;left:0;right:0;top:0;height:560px;background-image:url('../img/ph_cta.jpg')"></div>
+  <div style="position:absolute;left:0;right:0;top:0;height:170px;background:linear-gradient(180deg,rgba(10,20,48,.6),rgba(10,20,48,0))"></div><div class="hdr" style="color:#fff;opacity:.9"><span>@augustosilva.p</span><span>8/8</span></div>
+  <div style="position:absolute;left:84px;right:84px;top:640px">
+    <h2 class="h">Quer a conta <span class="e">pronta?</span></h2>
+    <p class="p" style="margin-top:28px;width:840px">Comente a palavra abaixo e eu te envio no Direct o Guia de Precificação para Leigos com IA.</p>
+    <div style="margin-top:56px;display:flex;align-items:center;gap:30px">
+      <span style="padding:24px 54px;background:#2F6BFF;color:#fff;font:700 44px I;letter-spacing:.04em;border-radius:6px">CUSTOS</span>
+      <span class="note">PDF · exemplo resolvido<br>· prompt da planilha</span>
+    </div>
+  </div>
+  <div class="foot"><span>@augustosilva.p</span><span></span></div>
+</section>
+</body></html>

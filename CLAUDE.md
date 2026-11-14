@@ -34,9 +34,10 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Foco: marketplace, e-commerce, gestão e IA. **Sem fé/ministério nas peças comerciais.** Não recriar o rosto do Augusto. Assinatura apenas `@augustosilva.p`.
 - Paleta navy/azul elétrico/branco/preto; Glassmorfismo A alternando 4 direções (foto, clean, glass dashboard, conceitual). Gráfico só quando há análise; números sempre marcados como hipotéticos.
 - CTA: "Comente PALAVRA e eu te envio X no Direct" — nunca "siga para receber". Palavra-chave única por post (`augusto/editorial/calendario.py` valida).
-- Reels (NOVO, em teste 14/11): motion gráfico estilo "Smooth" — interface em vidro, ícone em mostrador animado, número que conta, texto palavra por palavra, câmera que aproxima. Protótipo: `augusto/src/motion/smooth_planilha.html` + `render_motion.js`. Se aprovado, substitui o modelo antigo abaixo.
+- Reels: MESCLAR 3 formatos — (1) motion gráfico "Smooth" (APROVADO 14/11, ~7,5 s, ritmo rápido), (2) motion sobre vídeo real (reel_story.py), (3) vídeos gravados pelo Augusto (estúdio em preparação). Narração: quer gerada automaticamente (sem gravar); voz neural PT-BR pendente de permissão de instalação.
+- Motion "Smooth" — interface em vidro, ícone em mostrador animado, número que conta, texto palavra por palavra, câmera que aproxima. Protótipo: `augusto/src/motion/smooth_planilha.html` + `render_motion.js`. Se aprovado, substitui o modelo antigo abaixo.
 - Reels (modelo antigo): filmagem real (Mixkit Free License, conferir licença por vídeo), 1080×1920, 30 fps, 10 s, roteiro em 4 cenas (gancho → dor → agravamento → solução + "Leia a legenda"), gerado por `augusto/src/reel_story.py`. Nada de GIF ou foto com zoom.
-- Carrossel editorial (teste v3, aguardando opinião): `augusto/src/pecas/v3_editorial_teste.html` — serifada itálica de destaque, fotos reais, comparações ✗/✓, nas cores da marca.
+- Carrossel v3 (método das referências ABSM aplicado ao design, NÃO como tema): identidade da marca + proibir vícios visuais (brilho, degradê, vidro, 3D, emoji, tudo centralizado) + fotos reais + layout editorial assimétrico com serifada itálica de destaque. Prova: `augusto/src/pecas/v3_custos.html` (aguardando aprovação).
 - Storytelling: `storytelling/RUAH_storytelling.md` e `storytelling/AUGUSTO_storytelling.md`.
 - Manychat: configurado pelo Augusto em 14/11 (links em `augusto/editorial/MANYCHAT_LINKS.md`). Agendamento: NÃO configurado. Nunca marcar como publicado/agendado sem confirmação.
 
