@@ -3,6 +3,7 @@
 (() => {
   const TK = "nexus_token";
   const tok = () => { try { return localStorage.getItem(TK) || ""; } catch { return ""; } };
+  window.nexusDiag = () => api("/api/status");
   window.nexusLogout = () => { try { localStorage.removeItem(TK); } catch {} location.reload(); };
   async function api(path, opts = {}) {
     const r = await fetch(path, { ...opts, headers: { "Content-Type": "application/json", Authorization: "Bearer " + tok(), ...(opts.headers || {}) } });
