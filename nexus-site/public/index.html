@@ -205,6 +205,8 @@ details summary{cursor:pointer;color:var(--cy2);font:500 13px var(--f-ui)}
 .od{display:grid;grid-template-columns:80px 60px 1fr auto;gap:10px;align-items:center;font-size:13.5px;padding:8px 12px;border-radius:10px;background:rgba(2,10,18,.45)}
 .okc{color:var(--ok)}.badc{color:var(--bad);font-weight:600}
 .bsp{width:100%;height:60px;display:block}
+.acao{border-left:3px solid var(--cy);background:rgba(56,214,255,.08);border-radius:8px;padding:8px 12px;font-size:13px}
+.acao b{display:block;font:600 10.5px var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--cy);margin-bottom:2px}
 /* órbita do cérebro */
 .orbit{position:absolute;inset:0;z-index:2;pointer-events:none}
 .orbit svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
@@ -430,7 +432,7 @@ const PAGES={
  tendencias:()=>{const b=S.brief,L=b?.[tab]||[];
   return `<div class="hd"><h2>Tendências e notícias</h2><span class="src">${b?'briefing de '+esc(b.data):'o primeiro briefing chega às 6h38'}</span></div>
   <div class="tabs">${[['moda','Moda e streetwear'],['negocios','Marketplace e IA'],['infantil','Conteúdo infantil'],['insights','Insights']].map(t=>`<button class="tab" data-tab="${t[0]}" aria-selected="${t[0]===tab}">${t[1]}</button>`).join('')}</div>
-  ${!b?'<div class="empty">Assim que o briefing for gravado, ele aparece aqui sozinho.</div>':tab==='insights'?L.map(x=>`<div class="al"><i></i><div>${esc(x)}</div></div>`).join('')||'<div class="empty">Sem insights hoje.</div>':L.map(n=>`<div class="box nw">${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a>`:`<b>${esc(n.titulo)}</b>`}<p>${esc(n.resumo||'')}</p><span class="src">${esc(n.fonte||'')}</span></div>`).join('')||'<div class="empty">Nada novo nesta categoria hoje.</div>'}`},
+  ${!b?'<div class="empty">Assim que o briefing for gravado, ele aparece aqui sozinho.</div>':tab==='insights'?L.map(x=>`<div class="al"><i></i><div>${esc(x)}</div></div>`).join('')||'<div class="empty">Sem insights hoje.</div>':L.map(n=>`<div class="box nw">${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a>`:`<b>${esc(n.titulo)}</b>`}<p>${esc(n.resumo||'')}</p>${n.acao?`<div class="acao"><b>${esc(n.projeto||'Como usar')}</b>${esc(n.acao)}</div>`:''}<span class="src">${esc(n.fonte||'')}</span></div>`).join('')||'<div class="empty">Nada novo nesta categoria hoje.</div>'}`},
  automacao:()=>`<div class="hd"><h2>Automação</h2><span class="src">o que roda sozinho</span></div>
   <div class="g2"><div class="box"><span class="k" style="color:var(--ok)">● Ativo</span><h3>Briefing diário · 6h38</h3><p>Pesquisa notícias e tendências, grava aqui e manda notificação no celular.</p></div>
   <div class="box"><span class="k" style="color:var(--ok)">● Ativo</span><h3>Métricas ao vivo</h3><p>Loja a cada 5 min, anúncios a cada 15 min, Instagram a cada 30 min, enquanto o Nexus estiver aberto.</p></div>
