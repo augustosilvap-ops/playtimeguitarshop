@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Ter 17/11/2026 · 12h30 (horário a validar) |
+| Data proposta | Dom 15/11/2026 · 20h |
 | Formato | Estático 4:5 · `arte.png` |
 | Pilar | Precificação e lucro |
 | Palavra-chave Manychat | **MARKUP** |

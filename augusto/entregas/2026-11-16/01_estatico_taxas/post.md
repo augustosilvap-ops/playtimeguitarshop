@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Seg 16/11/2026 · 08h30 (horário a validar) |
+| Data proposta | Dom 15/11/2026 · 12h |
 | Formato | Post estático 4:5 · `arte.png` 1080×1350 |
 | Pilar | Precificação e lucro / marketplace |
 | Direção visual | Fotográfico editorial (filmagem real Mixkit #242, frame) — sem gráfico |

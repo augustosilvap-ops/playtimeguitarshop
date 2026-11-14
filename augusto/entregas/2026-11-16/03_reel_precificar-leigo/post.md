@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Seg 16/11/2026 · 19h30 (horário a validar) |
+| Data proposta | Dom 15/11/2026 · 18h |
 | Formato | Reel 9:16 · `reel_1080x1920_10s.mp4` (H.264, 30 fps, 7,0 s, faixa de áudio silenciosa) + `capa_1080x1920.png` |
 | Filmagem | Real: Mixkit #308 "Man working on his laptop" (Mixkit Stock Video **Free License**), recorte vertical |
 | Texto | Fixo do início ao fim, sobre painel de vidro com desfoque real do vídeo |

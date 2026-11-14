@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Qua 18/11/2026 · 19h30 (horário a validar) |
+| Data proposta | Ter 17/11/2026 · 18h |
 | Formato | Reel 9:16 · `reel_1080x1920_10s.mp4` (sem música) + `capa_1080x1920.png` |
 | Filmagem | Real: Mixkit #42137 "Hands of two people sealing a package with tape" (Free License) |
 | Pilar | Estratégia comercial |

@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Seg 16/11/2026 · 12h30 (horário a validar com as métricas da conta) |
+| Data proposta | Dom 15/11/2026 · 10h |
 | Formato | Carrossel 4:5 · 8 slides PNG 1080×1350 (`slides/01.png` a `08.png`) |
 | Pilar | Precificação e lucro |
 | Direção visual | Glass Dashboard (alterna slides escuros e claros) |

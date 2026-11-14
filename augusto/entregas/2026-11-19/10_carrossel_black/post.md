@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Qui 19/11/2026 · 08h30 |
+| Data proposta | Ter 17/11/2026 · 10h |
 | Formato | Carrossel 1080×1350 · `slides/01.png` a `08.png` (padrão v4) |
 | Pilar | Estratégia comercial |
 | Palavra-chave Manychat | **BLACK** |

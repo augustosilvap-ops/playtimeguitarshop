@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Ter 17/11/2026 · 08h30 (horário a validar) |
+| Data proposta | Seg 16/11/2026 · 10h |
 | Formato | Carrossel 4:5 · 7 slides (`slides/01.png` a `07.png`) |
 | Pilar | Precificação e lucro |
 | Palavra-chave Manychat | **MARGEM** |

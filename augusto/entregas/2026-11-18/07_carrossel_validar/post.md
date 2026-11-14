@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Qua 18/11/2026 · 08h30 (horário a validar) |
+| Data proposta | Seg 16/11/2026 · 20h |
 | Formato | Carrossel 4:5 · 7 slides |
 | Pilar | IA aplicada |
 | Palavra-chave Manychat | **VALIDAR** |

@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Qua 18/11/2026 · 12h30 (horário a validar) |
+| Data proposta | Ter 17/11/2026 · 12h |
 | Formato | Estático 4:5 · `arte.png` |
 | Pilar | Estratégia comercial |
 | Palavra-chave Manychat | **SINAIS** |

@@ -2,7 +2,7 @@
 
 | Campo | Definição |
 |---|---|
-| Data proposta | Qui 19/11/2026 · 12h30 |
+| Data proposta | Seg 16/11/2026 · 12h |
 | Formato | Estático 1080×1350 · `arte.png` (padrão v4) |
 | Pilar | Precificação |
 | Palavra-chave Manychat | **ESCURO** |
