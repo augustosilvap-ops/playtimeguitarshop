@@ -19,10 +19,13 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - **Mercado Livre:** conta ativa com ~300 anúncios, só dropshipping, produtos variados. Fornecedor: B2Drop. Todos os anúncios em Premium (avaliar Clássico). Zero vendas até 13/11/2026; termômetro ainda não ativo; avaliando o programa Decola. Ainda sem acesso à API.
 - **Canal infantil — Pequeninos do Reino:** briefing em `pequeninos/BRIEFING_MESTRE.txt` (original .docx ao lado). Universo Reino Feliz; Davi e Rafaella co-protagonistas; Theo (leão, sempre 4 patas) e Jasmin (cordeirinha). YouTube/TikTok @pequeninosdoreinoofc. EP01 não aprovado. Arquivos no Google Drive (pasta compartilhada pelo Augusto).
 
+- **Sales360Pro** (pasta `sales360pro/`): CRM de WhatsApp vendido como SaaS (mensalidade). Contexto completo em `sales360pro/CONTEXTO.md` — ler antes de qualquer tarefa. Código fica fora deste repositório (pedir o zip). Prioridade de segurança: rotacionar chaves expostas e movê-las para credenciais do n8n; nunca pedir chaves no chat. Não mexer na sidebar nem nas cores do CRM; revisar a tela inteira antes de dizer "corrigi".
+- **Brothers Supply** (pasta `brothers/`): projeto novo, contexto ainda não enviado (`brothers/CONTEXTO.md` lista o que perguntar).
+
 ## Nexus (pasta `nexus/`)
 - Central de comando: `nexus/index.html`, publicada em https://claude.ai/artifact/6SYuGnMN62uD1UMRiFaZrm (republique o mesmo arquivo para manter o link).
 - Dados ao vivo pela capacidade `mcp` (Shopify list-orders; Windsor_ai get_data para Meta Ads e Instagram @ruahwear_ 17841452465952355 e @augustosilva.p 17841407424879500). Chat via `sample`, voz via `tts`/`dictation`, execução via Claude Code Remote `create_session`.
-- Banco do artifact: `estado/tarefas` (tarefas por projeto: ruah, aug, ml, pq) e `briefing/hoje` (gravado todo dia às 6h38 pela tarefa agendada "Nexus briefing diário").
+- Banco do artifact: `estado/tarefas` (tarefas por projeto: ruah, aug, ml, pq, s360, bro) e `briefing/hoje` (gravado todo dia às 6h38 pela tarefa agendada "Nexus briefing diário").
 
 ## Nexus site próprio (sem login no Claude)
 - https://nexusautomatic.vercel.app · Vercel publica a branch `main` · código em `nexus-site/` (front em `public/`, funções em `api/` reexportadas na raiz `api/`).

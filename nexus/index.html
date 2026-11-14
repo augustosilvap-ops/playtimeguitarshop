@@ -262,14 +262,14 @@ details summary{cursor:pointer;color:var(--cy2);font:500 13px var(--f-ui)}
   .view{padding:14px;max-height:none!important;overflow:visible}
   .view .hd h2{font-size:20px}
   .right{gap:10px}.card{padding:14px}
-  .kp,.g2,.g3,.bks{grid-template-columns:1fr 1fr!important}
+  .kp,.g3,.bks{grid-template-columns:1fr 1fr!important}.g2{grid-template-columns:1fr!important}
   .g2 .box.post,.post{grid-column:1/-1}
   .od{grid-template-columns:70px 1fr auto}.od>*:nth-child(2){display:none}
   /* voz: só o botão do microfone, flutuando acima das abas */
   .voicebar{left:auto;right:14px;transform:none;width:auto;bottom:calc(84px + env(safe-area-inset-bottom,0px))}
   .vb,.vtools{display:none!important}
   .mic{position:static;transform:none;width:62px;height:62px}
-  body:not(.home) #brain,body:not(.home) .holo,body:not(.home) .clockbox{display:none!important}
+  body:not(.home) #brain,body:not(.home) .holo,body:not(.home) .clockbox,body:not(.home) .right{display:none!important}
   nav.side a{order:9}nav.side a[data-v=inicio]{order:0}nav.side a[data-v=conteudo]{order:1}nav.side a[data-v=negocios]{order:2}nav.side a[data-v=agenda]{order:3}nav.side a[data-v=tendencias]{order:4}nav.side a[data-v=ideias]{order:5}
   button,.pill,a{min-height:40px}
 }
@@ -368,11 +368,14 @@ tick();setInterval(tick,15000);
 
 /* ---------- dados fixos ---------- */
 const AGENDA=[['2026-11-14','10:00','RUAH · comparar a home antes/depois do tema'],['2026-11-16','08:30','@augustosilva.p · post 01 (Taxas)'],['2026-11-16','12:30','@augustosilva.p · post 02 (5 custos)'],['2026-11-16','19:30','@augustosilva.p · Reel 03'],['2026-11-17','—','RUAH · prévia do combo Leve 2'],['2026-11-18','—','RUAH · combo no ar até 24/11'],['2026-11-27','—','Black Friday']];
+const DEF_T={"s360": [{"texto": "Confirmar VPS regularizada e n8n no ar", "feito": false}, {"texto": "Rotacionar chaves (Asaas, Anthropic, Evolution) e mover para credenciais do n8n", "feito": false}, {"texto": "Inbound: ignorar sessões em modo monitoramento", "feito": false}, {"texto": "Reconectar números da Nicolle e validar o maturador", "feito": false}, {"texto": "Webhook da Evolution nas instâncias novas", "feito": false}, {"texto": "Subir CRM no Netlify e hospedar a landing page v2", "feito": false}, {"texto": "Corrigir loop da Evolution e certificado do domínio", "feito": false}], "bro": [{"texto": "Enviar o contexto da Brothers Supply", "feito": false}, {"texto": "Definir canais e prioridades", "feito": false}]};
 const PROJ=[
  {id:'ruah',nome:'RUAH',k:'Marca',meta:'Streetwear cristão · useruah.com · @ruahwear_',acts:[['Comparar home','Compare as métricas da home da RUAH antes e depois do tema novo (Shopify Analytics) e me entregue o resumo.'],['Prévia do combo','Prepare a prévia do combo "Leve 2 por R$ 269,90" da RUAH (celular e desktop), tema NÃO publicado.']]},
  {id:'aug',nome:'@augustosilva.p',k:'Autoridade',meta:'Marketplace, e-commerce e IA · 3 posts/dia',acts:[['Produzir posts 04–06','Produza completos os posts 04 a 06 do @augustosilva.p seguindo augusto/editorial/CALENDARIO.md e o sistema visual.'],['Status do calendário','Resuma o calendário de 16 a 22/11 do @augustosilva.p com o status de cada post.']]},
  {id:'ml',nome:'Mercado Livre',k:'Vendas',meta:'Dropshipping · B2Drop · ~300 anúncios',acts:[['Auditar anúncios','O app do Mercado Livre está criado. Conecte a API e audite os anúncios, escolhendo os 20–30 prioritários.'],['Premium × Clássico','Compare Premium e Clássico para meus anúncios do Mercado Livre usando o custo da B2Drop.']]},
  {id:'pq',nome:'Pequeninos do Reino',k:'Canal',meta:'Animação infantil cristã · @pequeninosdoreinoofc',acts:[['Roteiro de Short','Escreva o roteiro de um Short de Pequeninos do Reino seguindo pequeninos/BRIEFING_MESTRE.txt, take por take.'],['Revisar EP01','Analise o EP01 de Pequeninos do Reino e proponha o que mudar para não parecer vídeos de IA concatenados.']]},
+ {id:'s360',nome:'Sales360Pro',k:'SaaS',meta:'CRM de WhatsApp · n8n · Evolution · Supabase',acts:[['Checar pendências','Leia sales360pro/CONTEXTO.md e me diga o status de cada pendência do Sales360Pro, começando pela VPS e pelo n8n.'],['Plano de segurança','Leia sales360pro/CONTEXTO.md e monte o passo a passo para rotacionar as chaves do Asaas, Anthropic e Evolution e movê-las para credenciais do n8n.']]},
+ {id:'bro',nome:'Brothers Supply',k:'Novo',meta:'Contexto a enviar',acts:[['Montar briefing','Leia brothers/CONTEXTO.md e me faça as perguntas para montar o briefing da Brothers Supply.']]},
 ];
 const SKILLS=[['Design','frontend-design','Interfaces e páginas com direção de arte, fugindo do visual genérico.'],['Design','canvas-design','Pôsteres, capas e artes estáticas em PNG e PDF.'],['Design','design:design-critique','Crítica estruturada de arte ou tela: hierarquia, leitura e consistência.'],['Design','design:design-system','Organiza cores, fontes e componentes de uma marca.'],['Web design','ui-ux-pro-max','Plugin ativo no projeto: padrões de UI/UX, paletas e layouts.'],['Web design','web-artifacts-builder','Apps e sites interativos completos, como este Nexus.'],['Motion','scrollcraft','Plugin ativo: sites com animação guiada pela rolagem.'],['Animação','cinetic','Plugin ativo: animações e transições para web.'],['Vídeo · instalado','remotion','Vídeos em código: legendas animadas, transições e textos em movimento para Reels e anúncios.'],['Vídeo · instalado','video-shotcraft','Vídeos de produto com cara de cinema: movimentos de câmera, cortes no ritmo e efeitos sonoros.'],['Vídeo · instalado','watch-video','O Claude assiste a um vídeo (quadros + transcrição) para revisar o EP01 ou analisar Reels de referência.'],['Vídeo','Reels com filmagem real','Fluxo do projeto em ffmpeg: vídeo real + vidro + texto fixo, 1080×1920.'],['Copy','design:ux-copy','Textos de botões, telas e CTAs com clareza.']];
 
@@ -409,7 +412,7 @@ function renderPrio(){const o=openTasks();$('#tkMeta').textContent=o.length+' pe
   $('#prio').innerHTML=o.length?o.slice(0,4).map(x=>`<label class="tk"><input type="checkbox" data-p="${x.p}" data-i="${x.i}"><span>${esc(x.t)}<span class="pj">${esc(x.pn)}</span></span></label>`).join(''):`<div class="empty">${S.tasks?'Tudo em dia.':'Carregando tarefas…'}</div>`}
 async function setAp(id,status,nota){S.ap={...(S.ap||{}),[id]:{status,nota,em:new Date().toISOString()}};computeAlerts();renderView();
   try{await db?.collection('aprovacoes').doc(id).set({status,nota,em:new Date().toISOString()})}catch(e){note('Não consegui salvar a aprovação. Tente de novo.')}}
-async function toggle(p,i,v){const T=structuredClone(S.tasks||{});if(!T[p]?.[i])return;T[p][i].feito=v;S.tasks=T;computeAlerts();try{await db?.doc('estado/tarefas').set(T)}catch(e){note('Não consegui salvar a tarefa.')}}
+async function toggle(p,i,v){const T=structuredClone(S.tasks||{});if(!T[p]&&DEF_T[p])T[p]=structuredClone(DEF_T[p]);if(!T[p]?.[i])return;T[p][i].feito=v;S.tasks=T;computeAlerts();try{await db?.doc('estado/tarefas').set(T)}catch(e){note('Não consegui salvar a tarefa.')}}
 document.addEventListener('change',e=>{const c=e.target;if(c.dataset?.p!==undefined&&c.dataset.i!==undefined)toggle(c.dataset.p,+c.dataset.i,c.checked)});
 const ICON={shop:'<path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/>',meta:'<path d="M5 20V12M10 20V8M15 20v-6M20 20V5"/>',ig:'<rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/>',ai:'<path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V6a2 2 0 0 0-3-2zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/>',cc:'<path d="m8 9-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/>',pc:'<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/>',ml:'<path d="M3 12c3-4 6-4 9 0s6 4 9 0"/>',home:'<path d="M3 11 12 4l9 7v9H3z"/>'};
 function renderSys(){const c=S.conn,st=v=>v==='ok'?'':v==='wait'?'':'off';
@@ -446,7 +449,7 @@ const PAGES={
   <div class="sugs"><button class="act" data-q="Qual é a ação mais urgente agora e por quê?">Mais urgente?</button><button class="act" data-q="Como estão os anúncios da RUAH nos últimos 7 dias? O que eu deveria mudar?">Anúncios</button><button class="act" data-q="Resuma as tendências de hoje e o que eu posso postar.">O que postar hoje</button><button class="act" data-q="Monte meu plano de hoje em 5 passos, por prioridade.">Plano do dia</button></div>
   <div class="log" id="log"></div>`,
  agenda:()=>`<div class="hd"><h2>Agenda</h2><span class="src">próximos compromissos dos projetos</span></div><div class="list">${AGENDA.map(a=>`<div class="li"><span class="bx"></span><span class="h">${a[0].slice(8)}/${a[0].slice(5,7)}</span><span>${a[1]!=='—'?a[1]+' · ':''}${esc(a[2])}</span></div>`).join('')}</div><p class="src">Para ver seus eventos do Google Agenda aqui, peça: “Nexus, conecte meu Google Agenda”.</p>`,
- projetos:()=>`<div class="hd"><h2>Projetos</h2><span class="src">tarefas sincronizadas na nuvem</span></div><div class="g2">${PROJ.map(p=>{const it=(S.tasks||{})[p.id]||[];return `<div class="box"><span class="k">${p.k}</span><h3>${esc(p.nome)}</h3><p>${esc(p.meta)}</p>${it.map((t,i)=>`<label class="tk"><input type="checkbox" data-p="${p.id}" data-i="${i}" ${t.feito?'checked':''}><span>${esc(t.texto)}</span></label>`).join('')||'<div class="empty">Sem tarefas.</div>'}<div class="sugs">${p.acts.map(a=>`<button class="act" data-run="${esc(a[1])}">▶ ${esc(a[0])}</button>`).join('')}</div></div>`}).join('')}</div>`,
+ projetos:()=>`<div class="hd"><h2>Projetos</h2><span class="src">tarefas sincronizadas na nuvem</span></div><div class="g2">${PROJ.map(p=>{const it=(S.tasks||{})[p.id]||DEF_T[p.id]||[];return `<div class="box"><span class="k">${p.k}</span><h3>${esc(p.nome)}</h3><p>${esc(p.meta)}</p>${it.map((t,i)=>`<label class="tk"><input type="checkbox" data-p="${p.id}" data-i="${i}" ${t.feito?'checked':''}><span>${esc(t.texto)}</span></label>`).join('')||'<div class="empty">Sem tarefas.</div>'}<div class="sugs">${p.acts.map(a=>`<button class="act" data-run="${esc(a[1])}">▶ ${esc(a[0])}</button>`).join('')}</div></div>`}).join('')}</div>`,
  storytelling:()=>`<div class="hd"><h2>Storytelling</h2><span class="src">base de todo conteúdo</span></div>
   <div class="tabs">${Object.keys(STORY).map(k=>`<button class="tab" data-st="${esc(k)}" aria-selected="${k===stTab}">${esc(k)}</button>`).join('')}</div>
   <div class="story box">${STORY[stTab]}</div>`,
@@ -477,6 +480,14 @@ const PAGES={
    <section class="bz" style="--c:#F4A6BC">
     <header><span class="bi">P</span><div><h3>Pequeninos do Reino</h3><small>Animação infantil cristã · @pequeninosdoreinoofc</small></div><span class="bs warn">sem conexão</span></header>
     <div class="bks">${kpi('YouTube','—','conectar na Windsor')}${kpi('TikTok','—','conectar na Windsor')}${kpi('EP01','Em revisão','não aprovado')}${kpi('Formato','9:16 · 16:9','Shorts e episódios')}</div>
+   </section>
+   <section class="bz" style="--c:#14b98a">
+    <header><span class="bi">S</span><div><h3>Sales360Pro</h3><small>CRM de WhatsApp · SaaS · sales360pro.com</small></div><span class="bs warn">segurança pendente</span></header>
+    <div class="bks">${kpi('Planos','R$ 197 · 397','Essencial · Operação · Escala')}${kpi('Multi-tenant','Fase 1','Fase 2 não iniciada')}${kpi('Workflows n8n','14','automações ativas')}${kpi('Pendências',((S.tasks||{}).s360||DEF_T.s360).filter(t=>!t.feito).length,'em Projetos')}</div>
+   </section>
+   <section class="bz" style="--c:#C9A46A">
+    <header><span class="bi">B</span><div><h3>Brothers Supply</h3><small>Contexto a enviar</small></div><span class="bs warn">aguardando contexto</span></header>
+    <div class="bks">${kpi('Status','Novo','pasta brothers/ criada')}${kpi('Canais','—','a definir')}${kpi('Vendas','—','a conectar')}${kpi('Próximo passo','Briefing','envie o contexto')}</div>
    </section>
   </div>`},
  tendencias:()=>{const b=S.brief,L=b?.[tab]||[];
