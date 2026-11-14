@@ -6,7 +6,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.worksheet.datavalidation import DataValidation
 
-NAVY, ELEC, ICE, PAPER, INK, GRAY = "0A1638", "2F6BFF", "DDE7FF", "F3F5F9", "070A12", "7D879A"
+NAVY, ELEC, ICE, PAPER, INK, GRAY = "08090E", "2F6BFF", "E8EFFF", "F5F7FB", "0A0B10", "7A7F8C"
 F = "Arial"
 thin = Side(style="thin", color="E7EBF2")
 
