@@ -1,0 +1,74 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Formato "Cinético" (identidade @augustosilva.p): tipografia em tela cheia no ritmo da fala, cortes rápidos navy/branco/azul, UI da marca contando a história. -->
+<style>
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I;letter-spacing:-.01em}
+.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I;letter-spacing:-.01em}
+.card{position:absolute;left:140px;right:140px;border-radius:36px;background:#fff;box-shadow:0 30px 70px rgba(10,20,60,.18);padding:40px 48px}
+.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-cl(x),3),eb=x=>{x=cl(x);const c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const NAVY='#08090E',WHITE='#F5F7FB',BLUE='#2F6BFF',BLUE2='#7FA3FF',RED='#E5384A',INK='#0A0B10';
+// palavra: entra de baixo com escala e desfoque; sai cortada na troca de cena
+function w(t,t0,txt,x,y,size,c,o={}){if(t<t0)return'';const p=cl((t-t0)/.18),s=(o.s||1.35)-((o.s||1.35)-1)*eb(p);
+ return `<div class="w" style="left:${x}px;top:${y}px;font-size:${size}px;color:${c};transform:translateY(${(1-eo(p))*60}px) scale(${s});transform-origin:${o.o||'0 50%'};filter:blur(${(1-p)*12}px);opacity:${cl(p*3)}">${txt}</div>`}
+const brl=v=>v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+// vidro: trinca e estilhaça
+function glass(lt,tc,tb,x,y,W,H,inner,imp=[.55,.48]){
+ const slab=`<div style="position:absolute;inset:0;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(255,255,255,.10) 55%,rgba(255,255,255,.22));border:3px solid rgba(255,255,255,.75);box-shadow:inset 0 2px 0 rgba(255,255,255,.8)">${inner}</div>`;
+ const ix=imp[0]*W,iy=imp[1]*H,R=rng(7),N=16,P=[];
+ for(let i=0;i<N;i++){const a=(i+R()*.6)/N*2*Math.PI,dx=Math.cos(a),dy=Math.sin(a);let k=1e9;if(dx>0)k=Math.min(k,(W-ix)/dx);if(dx<0)k=Math.min(k,-ix/dx);if(dy>0)k=Math.min(k,(H-iy)/dy);if(dy<0)k=Math.min(k,-iy/dy);P.push([ix+dx*k,iy+dy*k])}
+ if(lt<tb){let cr='';if(lt>tc){const q=eo((lt-tc)/.18);cr=`<svg style="position:absolute;left:0;top:0" width="${W}" height="${H}">${P.map((p,i)=>`<line x1="${ix}" y1="${iy}" x2="${ix+(p[0]-ix)*q*(.5+((i*37)%10)/20)}" y2="${iy+(p[1]-iy)*q*(.5+((i*37)%10)/20)}" stroke="#fff" stroke-width="3" opacity=".9"/>`).join('')}<circle cx="${ix}" cy="${iy}" r="${10*q}" fill="#fff"/></svg>`}
+  const sh=lt>tc?(Math.sin(lt*90)*4*(1-cl((lt-tc)/.3))):0;
+  return `<div style="position:absolute;left:${x+sh}px;top:${y}px;width:${W}px;height:${H}px">${slab}${cr}</div>`}
+ const q=cl((lt-tb)/.8);let h='';
+ for(let i=0;i<N;i++){const p1=P[i],p2=P[(i+1)%N];for(const part of [0,1]){const f=.42,m1=[ix+(p1[0]-ix)*f,iy+(p1[1]-iy)*f],m2=[ix+(p2[0]-ix)*f,iy+(p2[1]-iy)*f];
+  const poly=part?[m1,p1,p2,m2]:[[ix,iy],m1,m2];const cx=poly.reduce((a,p)=>a+p[0],0)/poly.length,cy=poly.reduce((a,p)=>a+p[1],0)/poly.length;
+  let dx=cx-ix,dy=cy-iy;const L=Math.hypot(dx,dy)||1;dx/=L;dy/=L;const r=rng(i*2+part+3)(),d=(260+r*520)*eo(q);
+  h+=`<div style="position:absolute;left:${x}px;top:${y}px;width:${W}px;height:${H}px;clip-path:polygon(${poly.map(p=>p[0].toFixed(1)+'px '+p[1].toFixed(1)+'px').join(',')});transform-origin:${cx}px ${cy}px;transform:translate(${dx*d}px,${dy*d+1100*q*q}px) rotate(${(r-.5)*160*q}deg);opacity:${1-cl((q-.45)/.5)}">${slab}</div>`}}
+ return h+`<div style="position:absolute;inset:0;background:#fff;opacity:${.55*(1-cl((lt-tb)/.12))}"></div>`}
+const notif=(lt,t0,y,txt)=>lt<t0?'':`<div style="position:absolute;right:84px;top:${y+(1-eo((lt-t0)/.2))*-40}px;opacity:${cl((lt-t0)/.15)};display:flex;align-items:center;gap:16px;padding:18px 26px;border-radius:24px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.18);color:#fff;font:700 28px I"><span style="width:40px;height:40px;border-radius:50%;background:#22A06B;display:grid;place-items:center;font-size:22px">✓</span>${txt}</div>`;
+function line(lt,t0,x,y,W,H,pts,col,dur=.8){const q=eo((lt-t0)/dur);if(lt<t0)return'';const P=pts.map(([a,b])=>[x+a*W,y+b*H]);let L=0;for(let i=1;i<P.length;i++)L+=Math.hypot(P[i][0]-P[i-1][0],P[i][1]-P[i-1][1]);
+ const d=P.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' '),e=P[P.length-1],pv=P[P.length-2],ang=Math.atan2(e[1]-pv[1],e[0]-pv[0])*180/Math.PI;
+ return `<svg style="position:absolute;left:0;top:0" width="1080" height="1920"><path d="${d}" fill="none" stroke="${col}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-q)}"/>${q>.97?`<g transform="translate(${e[0]} ${e[1]}) rotate(${ang})"><path d="M-6 -26 L30 0 L-6 26 Z" fill="${col}"/></g>`:''}</svg>`}
+const SC=[
+ [0,1.8,NAVY,lt=>notif(lt,.1,300,'Nova visita no anúncio').replace('#22A06B','#2F6BFF').replace('✓','👁')+notif(lt,.35,400,'Nova visita no anúncio').replace('#22A06B','#2F6BFF').replace('✓','👁')+notif(lt,.6,500,'Nova visita no anúncio').replace('#22A06B','#2F6BFF').replace('✓','👁')
+   +w(lt,0,'MUITA',84,660,150,'#fff')+w(lt,.18,'VISITA',84,800,240,'#fff')+w(lt,.6,'E NENHUMA',84,1030,130,'#fff')+w(lt,.85,'VENDA?',84,1160,240,BLUE2),'muita visita e nenhuma venda?'],
+ [1.8,3.9,WHITE,lt=>{const p=eo((lt-.1)/.3);const x=(t0,top,left,lab)=>lt<t0?'':`<div style="position:absolute;left:${left}px;top:${top}px;display:flex;align-items:center;gap:14px;opacity:${cl((lt-t0)/.12)};transform:scale(${1.4-.4*eo((lt-t0)/.2)})"><span style="width:62px;height:62px;border-radius:50%;background:${RED};color:#fff;display:grid;place-items:center;font:800 36px I">×</span><span style="font:800 34px I;color:${RED};background:#fff;padding:6px 14px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.12)">${lab}</span></div>`;
+   return `<div class="card" style="top:${360+(1-p)*80}px;left:84px;right:300px;opacity:${p};padding:0;overflow:hidden">
+     <div style="height:420px;background:linear-gradient(135deg,#D9DDE6,#BFC5D2);display:grid;place-items:center;font:600 30px I;color:#7A7F8C">foto escura e sem fundo</div>
+     <div style="padding:30px 44px"><div style="font:700 40px/1.2 I">Produto bom barato promoção envio rápido</div><div style="font:800 64px I;margin-top:14px">R$ 89,90</div><div style="font:600 28px I;color:#7A7F8C;margin-top:6px">frete: calcular no checkout</div></div></div>`
+   +x(.5,520,700,'foto')+x(.75,880,700,'título')+x(1.0,1050,700,'frete')},'o problema pode estar no anúncio.'],
+ [3.9,5.7,BLUE,lt=>w(lt,0,'NÃO É',84,520,150,'#fff')+w(lt,.25,'FALTA DE',84,690,200,'#fff')+(lt>.5?glass(lt-.5,.45,.75,84,940,912,330,`<div style="position:absolute;left:50px;top:50%;transform:translateY(-50%);font:800 190px/1 I;letter-spacing:-.06em;color:#fff">TRÁFEGO.</div>`):''),'não é falta de tráfego.'],
+ [5.7,7.3,NAVY,lt=>{const c=2.1-1.7*eo((lt-.4)/.8);return w(lt,0,'É O',84,480,150,'#fff')+w(lt,.2,'ANÚNCIO.',84,650,190,BLUE2,{s:1.6})
+   +`<div style="position:absolute;left:84px;top:${980+(1-eo((lt-.3)/.25))*50}px;opacity:${cl((lt-.3)/.2)};width:640px;padding:36px 44px;border-radius:28px;background:#11131C;border:2px solid #23263A">
+     <div style="font:500 24px M;color:#8C92A3;letter-spacing:.14em">CONVERSÃO · EXEMPLO</div>
+     <div style="font:800 140px/1 I;letter-spacing:-.05em;color:${lt>.5?RED:'#fff'};margin-top:10px">${c.toFixed(1).replace('.',',')}%</div></div>`
+   +line(lt,.4,770,1000,230,300,[[0,0],[.4,.35],[.6,.25],[1,1]],RED,.7)},'visita sem venda = anúncio que não convence.'],
+ [7.3,9.0,WHITE,lt=>{const items=['Foto clara, fundo limpo','Título com o que o cliente busca','Preço competitivo','Frete visível','Descrição que tira dúvidas'];
+   return w(lt,0,'REVISE EM',84,330,130,INK)+w(lt,.18,'5 PONTOS',84,470,190,BLUE)
+   +items.map((t,i)=>{const t0=.45+i*.2,q=eo((lt-t0)/.2);return lt<t0?'':`<div style="position:absolute;left:84px;right:84px;top:${720+i*120}px;display:flex;align-items:center;gap:24px;opacity:${q};transform:translateX(${(1-q)*-40}px);font:700 44px I;color:${INK}"><span style="width:70px;height:70px;border-radius:18px;background:${BLUE};color:#fff;display:grid;place-items:center;font-size:40px;flex:none">✓</span>${t}</div>`}).join('')},'revise estes 5 pontos hoje.'],
+ [9.0,10.9,BLUE,lt=>w(lt,0,'COMENTE',84,560,150,'#fff')+w(lt,.25,'ANUNCIO',84,750,190,NAVY,{s:1.5})+`<div style="position:absolute;left:84px;top:1060px;padding:34px 64px;border-radius:99px;background:#fff;color:${BLUE};font:800 54px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};transform:translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px)">Leia a legenda ↓</div>`,'e receba o checklist no Direct.']];
+const DUR=10.9;
+window.R=function(t){
+ const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length-1:i],lt=t-s[0];
+ const dark=s[2]===NAVY,blue=s[2]===BLUE,fg=dark||blue?'#fff':INK;
+ const punch=1+(lt<.15?.04*(1-lt/.15):0)+.02*lt;
+ document.getElementById('v').innerHTML=`<div style="position:absolute;inset:0;background:${s[2]}"></div>
+  <div style="position:absolute;inset:0;transform:scale(${punch});transform-origin:30% 50%">${s[3](lt)}</div>
+  <div class="chip" style="color:${fg}"><i style="background:${blue?'#fff':BLUE};color:${blue?BLUE:'#fff'}">↗</i>@augustosilva.p</div>
+  <div class="cap" style="color:${fg};opacity:.9">${s[4]}</div>
+  <div class="bar" style="width:912px;background:${dark||blue?'rgba(255,255,255,.2)':'rgba(10,11,16,.12)'}"></div>
+  <div class="bar" style="width:${912*t/DUR}px;background:${blue?'#fff':BLUE}"></div>`};
+R(0);
+</script></body></html>

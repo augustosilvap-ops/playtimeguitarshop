@@ -1,0 +1,58 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../base.css"><link rel="stylesheet" href="guia_base.css">
+<style>.doc{display:none}.doc.on{display:block}.doc .pg:last-child{page-break-after:auto}.tight2 .step.card{padding:4mm 6mm}.tight2 .steps{gap:2.6mm}.tight2 pre{padding:4.5mm;font-size:8.8pt}</style></head><body>
+
+<div class="doc" id="escuro">
+<section class="pg tight2">
+  <div class="glowc"></div>
+  <div class="k">Prompt gratuito · ESCURO</div>
+  <h1 style="font-size:32pt;margin-bottom:5mm">Descubra seu <span class="em">preço mínimo</span> com IA</h1>
+  <p class="lead">Preço mínimo é o valor em que a venda empata: abaixo dele, cada pedido dá prejuízo. Use o prompt abaixo no ChatGPT, Claude ou Gemini.</p>
+<pre style="margin-top:5mm">"Quero calcular o preço mínimo do meu produto. Estes são os meus dados:
+- custo do produto: R$ [ ]
+- embalagem: R$ [ ]
+- tarifa fixa do canal por unidade: R$ [ ]
+- frete que eu pago por pedido: R$ [ ]
+- comissão do canal: [ ]%
+- imposto sobre a venda: [ ]%
+- taxa financeira: [ ]%
+- anúncios: [ ]% do preço
+
+1. Some os custos em reais (custo por unidade).
+2. Some os percentuais cobrados sobre o preço.
+3. Calcule: preço mínimo = custo por unidade ÷ (1 − soma dos %).
+4. Calcule também o preço para margem de [ ]%: custo ÷ (1 − % − margem).
+5. Mostre a conta passo a passo e use só os números que eu passei.
+   Se faltar algum dado, escreva 'não informado' em vez de inventar."</pre>
+  <div class="card" style="margin-top:5mm"><span class="sim">Exemplo hipotético</span>
+    <table><tr><th>Item</th><th class="n">Valor</th></tr>
+    <tr><td>Custo por unidade</td><td class="n">R$ 48,50</td></tr><tr><td>Soma dos % sobre a venda</td><td class="n">27%</td></tr>
+    <tr class="tot"><td>Preço mínimo (lucro zero)</td><td class="n">R$ 66,44</td></tr><tr><td>Preço com margem de 15%</td><td class="n">R$ 83,62</td></tr></table></div>
+  <p class="note" style="margin-top:4mm">Confira as taxas na tabela oficial do seu canal e a alíquota com o seu contador.</p>
+  <div class="ft"><span>@augustosilva.p</span><span>01</span></div>
+</section>
+</div>
+
+<div class="doc" id="anuncio">
+<section class="pg tight2">
+  <div class="glowc"></div>
+  <div class="k">Checklist gratuito · ANUNCIO</div>
+  <h1 style="font-size:30pt;margin-bottom:5mm">Seu anúncio <span class="em">convence</span>?</h1>
+  <p class="lead">Muita visita e pouca venda costuma ser sinal de anúncio fraco. Revise estes 5 pontos em cada anúncio que mais recebe visitas.</p>
+  <div class="steps" style="margin-top:5mm">
+    <div class="step card"><div class="no">1</div><div><h3>Foto</h3><p>Primeira foto clara, produto inteiro, fundo limpo, sem texto por cima. Depois: detalhes, medidas e o produto em uso.</p></div></div>
+    <div class="step card"><div class="no">2</div><div><h3>Título</h3><p>Produto + marca/modelo + principal característica + variação. Escreva como o cliente pesquisa, sem "promoção" ou "barato".</p></div></div>
+    <div class="step card"><div class="no">3</div><div><h3>Preço</h3><p>Compare com os 10 primeiros resultados da busca. Se estiver acima, mostre por que vale mais (kit, garantia, entrega).</p></div></div>
+    <div class="step card"><div class="no">4</div><div><h3>Frete e prazo</h3><p>Frete grátis ou barato e prazo curto aparecem antes de tudo para o cliente. Confira as condições do seu canal.</p></div></div>
+    <div class="step card"><div class="no">5</div><div><h3>Descrição e perguntas</h3><p>Responda na descrição as dúvidas que mais aparecem nas perguntas: medidas, compatibilidade, material, o que vem na caixa.</p></div></div>
+  </div>
+<pre style="margin-top:5mm">Prompt para a IA revisar o anúncio:
+"Vou colar o título, a descrição e as 3 primeiras perguntas do meu anúncio de
+[PRODUTO] no [CANAL]. Reescreva o título com até [N] caracteres como o cliente
+pesquisa, sugira melhorias na descrição e liste o que falta responder.
+Não invente características que eu não informei."</pre>
+  <div class="ft"><span>@augustosilva.p</span><span>01</span></div>
+</section>
+</div>
+<script>document.getElementById(location.hash.slice(1)).classList.add('on')</script>
+</body></html>
