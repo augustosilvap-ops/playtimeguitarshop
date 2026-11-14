@@ -17,7 +17,10 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 
 ## Outras frentes
 - **Mercado Livre:** conta ativa com ~300 anúncios, só dropshipping, produtos variados. Fornecedor: B2Drop. Todos os anúncios em Premium (avaliar Clássico). Zero vendas até 13/11/2026; termômetro ainda não ativo; avaliando o programa Decola. Ainda sem acesso à API.
-- Canal infantil.
+- **Canal infantil — Pequeninos do Reino:** briefing em `pequeninos/BRIEFING_MESTRE.txt` (original .docx ao lado). Universo Reino Feliz; Davi e Rafaella co-protagonistas; Theo (leão, sempre 4 patas) e Jasmin (cordeirinha). YouTube/TikTok @pequeninosdoreinoofc. EP01 não aprovado. Arquivos no Google Drive (pasta compartilhada pelo Augusto).
+
+## Nexus (pasta `nexus/`)
+- Central de comando de todos os projetos, casa e escritório. Página única `nexus/index.html`, publicada como Artifact. Atualize os dados lá quando o status mudar.
 
 ## Instagram pessoal @augustosilva.p (pasta `augusto/`)
 - Documento mestre: `augusto/sistema/BRIEFING_MESTRE.md`. Regras de produção: `augusto/sistema/SISTEMA_VISUAL_E_EDITORIAL.md`. Leia os dois antes de qualquer peça.

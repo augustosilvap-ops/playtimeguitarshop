@@ -1,0 +1,197 @@
+<title>Nexus</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cérebro no topo (rede neural viva) → sinapses (módulos) em grade → painel lateral de decisões e conexões */
+:root{
+  --ink:#070B17; --tissue:#0E1426; --line:#1E2840; --dim:#8A93AE; --fg:#EAF0FF;
+  --cortex:#F4A6BC;   /* rosa córtex — identidade Nexus */
+  --axon:#5FE3F0;     /* ciano sinapse — ação */
+  --ok:#5BD69A; --warn:#F5C060; --bad:#F27272;
+  --f-d:'Sora',system-ui,sans-serif; --f-b:'Inter',system-ui,sans-serif; --f-m:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--fg);font:15px/1.5 var(--f-b);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;gap:22px}
+h1,h2,h3{font-family:var(--f-d);margin:0;text-wrap:balance}
+.mono{font-family:var(--f-m)}
+.lab{font:500 11px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+/* Hero */
+.hero{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:radial-gradient(600px 300px at 80% 20%,rgba(244,166,188,.14),transparent 70%),radial-gradient(500px 300px at 10% 100%,rgba(95,227,240,.10),transparent 70%),var(--tissue);min-height:250px}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;padding:28px 28px 26px;display:grid;gap:16px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand svg{width:46px;height:46px;flex:0 0 auto}
+.brand h1{font-size:34px;font-weight:800;letter-spacing:.18em}
+.brand small{display:block;font:500 12px var(--f-m);color:var(--dim);letter-spacing:.1em}
+.greet{font-family:var(--f-d);font-size:clamp(22px,3.6vw,34px);font-weight:700;max-width:22ch;line-height:1.15}
+.greet em{font-style:normal;color:var(--cortex)}
+.pulse{display:flex;flex-wrap:wrap;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;font:500 12px var(--f-m);padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:rgba(7,11,23,.6)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--dim)}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}.dot.ax{background:var(--axon);box-shadow:0 0 10px var(--axon)}
+/* Grid principal */
+.main{display:grid;grid-template-columns:1fr 340px;gap:22px;align-items:start}
+@media (max-width:900px){.main{grid-template-columns:1fr}}
+.mods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:640px){.mods{grid-template-columns:1fr}}
+.mod{border:1px solid var(--line);border-radius:18px;background:var(--tissue);padding:18px;display:grid;gap:14px;min-width:0}
+.mod header{display:flex;justify-content:space-between;align-items:start;gap:10px}
+.mod h3{font-size:19px}
+.mod .sub{color:var(--dim);font-size:13px}
+.lobe{font:500 10px var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--cortex);border:1px solid rgba(244,166,188,.35);padding:4px 8px;border-radius:99px;white-space:nowrap}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kpi{background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px}
+.kpi b{display:block;font:700 20px var(--f-d);font-variant-numeric:tabular-nums}
+.kpi span{font-size:11px;color:var(--dim)}
+ul.tasks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ul.tasks label{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;cursor:pointer}
+ul.tasks input{accent-color:var(--axon);margin-top:3px}
+ul.tasks input:checked+span{color:var(--dim);text-decoration:line-through}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+button.cmd{font:500 12px var(--f-m);color:var(--ink);background:var(--axon);border:0;border-radius:10px;padding:8px 12px;cursor:pointer}
+button.cmd.ghost{background:transparent;color:var(--axon);border:1px solid rgba(95,227,240,.4)}
+button.cmd:focus-visible{outline:2px solid var(--cortex);outline-offset:2px}
+/* Lateral */
+.side{display:grid;gap:16px}
+.panel{border:1px solid var(--line);border-radius:18px;background:var(--tissue);padding:18px;display:grid;gap:12px}
+.row{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;padding:8px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.st{font:500 11px var(--f-m);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.ag .row b{font:500 12px var(--f-m);color:var(--cortex);min-width:62px}
+.ag .row span{flex:1}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--ink);font:500 13px var(--f-m);padding:10px 16px;border-radius:10px}
+textarea#cp{position:absolute;left:-9999px}
+@media (prefers-reduced-motion:reduce){#net{display:none}}
+</style>
+
+<div class="wrap">
+  <section class="hero" aria-label="Nexus">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="brand">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#F4A6BC" stroke-width="1.6"><path d="M24 6c-6 0-10 4-10 8-4 1-7 5-6 10-2 3-1 8 3 10 0 5 5 8 9 7 1 1 3 1 4 1M24 6c6 0 10 4 10 8 4 1 7 5 6 10 2 3 1 8-3 10 0 5-5 8-9 7-1 1-3 1-4 1M24 6v36"/></g><g fill="#5FE3F0"><circle cx="16" cy="18" r="2"/><circle cx="31" cy="15" r="2"/><circle cx="14" cy="31" r="2"/><circle cx="33" cy="30" r="2"/><circle cx="24" cy="24" r="2.6"/></g><g stroke="#5FE3F0" stroke-width="1" opacity=".7"><path d="M16 18l8 6 7-9M14 31l10-7 9 6"/></g></svg>
+        <div><h1>NEXUS</h1><small>Cérebro central · casa &amp; escritório</small></div>
+      </div>
+      <p class="greet" id="greet">Bom dia, Augusto. <em>4 projetos</em> conectados ao Nexus, 6 decisões esperando por você.</p>
+      <div class="pulse">
+        <span class="pill"><span class="dot ax"></span><span id="clock">—</span></span>
+        <span class="pill"><span class="dot ok"></span>Shopify · RUAH</span>
+        <span class="pill"><span class="dot warn"></span>Meta Ads com 0 impressões</span>
+        <span class="pill"><span class="dot bad"></span>Mercado Livre sem API</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="main">
+    <div class="mods">
+      <!-- RUAH -->
+      <article class="mod">
+        <header><div><h3>RUAH</h3><div class="sub">Streetwear cristão · useruah.com · @ruahwear_</div></div><span class="lobe">Marca</span></header>
+        <div class="kpis"><div class="kpi"><b>28</b><span>vagas Founders</span></div><div class="kpi"><b>5</b><span>pedidos (#1001–1005)</span></div><div class="kpi"><b>R$ 149,90</b><span>por camiseta</span></div></div>
+        <ul class="tasks" data-k="ruah">
+          <li><label><input type="checkbox"><span>Compartilhar página e Instagram com o portfólio da conta de anúncios</span></label></li>
+          <li><label><input type="checkbox"><span>Comparar métricas da home antes/depois do tema</span></label></li>
+          <li><label><input type="checkbox"><span>Prévia do combo "Leve 2 por R$ 269,90" (17/11)</span></label></li>
+          <li><label><input type="checkbox"><span>Revisar menções a "25/11" no fluxo Founders</span></label></li>
+          <li><label><input type="checkbox"><span>Falar com especialista sobre o registro no INPI</span></label></li>
+        </ul>
+        <div class="acts"><button class="cmd" data-c="Nexus: compare as métricas da home da RUAH antes e depois do tema novo e me dê o resumo.">Comparar home</button><button class="cmd ghost" data-c="Nexus: prepare a prévia do combo Leve 2 por R$ 269,90 da RUAH (celular e desktop), sem publicar.">Prévia do combo</button></div>
+      </article>
+
+      <!-- Augusto -->
+      <article class="mod">
+        <header><div><h3>@augustosilva.p</h3><div class="sub">Marketplace, e-commerce e IA · 3 posts por dia</div></div><span class="lobe">Autoridade</span></header>
+        <div class="kpis"><div class="kpi"><b>3/21</b><span>posts prontos</span></div><div class="kpi"><b>3</b><span>materiais gratuitos</span></div><div class="kpi"><b>0</b><span>automações ativas</span></div></div>
+        <ul class="tasks" data-k="aug">
+          <li><label><input type="checkbox"><span>Aprovar paleta, fontes e grade 3×3</span></label></li>
+          <li><label><input type="checkbox"><span>Escolher onde hospedar PDFs e planilha</span></label></li>
+          <li><label><input type="checkbox"><span>Conectar o Manychat e testar CUSTOS, TAXAS e PLANILHA</span></label></li>
+          <li><label><input type="checkbox"><span>Publicar os posts 01–03 (16/11)</span></label></li>
+        </ul>
+        <div class="acts"><button class="cmd" data-c="Nexus: produza completos os posts 04 a 06 do @augustosilva.p seguindo o calendário e o sistema visual.">Produzir posts 04–06</button><button class="cmd ghost" data-c="Nexus: me mostre o calendário de 16 a 22/11 do @augustosilva.p com o status de cada post.">Ver calendário</button></div>
+      </article>
+
+      <!-- Mercado Livre -->
+      <article class="mod">
+        <header><div><h3>Mercado Livre</h3><div class="sub">Dropshipping · fornecedor B2Drop · anúncios Premium</div></div><span class="lobe">Vendas</span></header>
+        <div class="kpis"><div class="kpi"><b>~300</b><span>anúncios</span></div><div class="kpi"><b>0</b><span>vendas</span></div><div class="kpi"><b>—</b><span>termômetro</span></div></div>
+        <ul class="tasks" data-k="ml">
+          <li><label><input type="checkbox"><span>Ativar o programa Decola</span></label></li>
+          <li><label><input type="checkbox"><span>Criar o app em developers.mercadolivre.com.br</span></label></li>
+          <li><label><input type="checkbox"><span>Confirmar se a B2Drop sincroniza preço e estoque</span></label></li>
+          <li><label><input type="checkbox"><span>Escolher os 20–30 anúncios prioritários</span></label></li>
+        </ul>
+        <div class="acts"><button class="cmd" data-c="Nexus: o app do Mercado Livre está criado. Conecte a API e faça a auditoria dos anúncios.">Conectar API</button><button class="cmd ghost" data-c="Nexus: compare Premium e Clássico para os meus anúncios do Mercado Livre usando o custo da B2Drop.">Premium × Clássico</button></div>
+      </article>
+
+      <!-- Pequeninos -->
+      <article class="mod">
+        <header><div><h3>Pequeninos do Reino</h3><div class="sub">Animação infantil cristã · Reino Feliz · @pequeninosdoreinoofc</div></div><span class="lobe">Canal</span></header>
+        <div class="kpis"><div class="kpi"><b>4</b><span>personagens</span></div><div class="kpi"><b>9:16</b><span>Shorts</span></div><div class="kpi"><b>2–4 min</b><span>episódios 16:9</span></div></div>
+        <ul class="tasks" data-k="pq">
+          <li><label><input type="checkbox"><span>Revisar o EP01 "Bem-vindos ao Reino" (não aprovado)</span></label></li>
+          <li><label><input type="checkbox"><span>Fechar a ficha visual de Davi, Rafaella, Theo e Jasmin</span></label></li>
+          <li><label><input type="checkbox"><span>Montar a grade de Shorts da semana (YouTube e TikTok)</span></label></li>
+          <li><label><input type="checkbox"><span>Organizar os arquivos da pasta do Drive</span></label></li>
+        </ul>
+        <div class="acts"><button class="cmd" data-c="Nexus: escreva o roteiro de um Short de Pequeninos do Reino seguindo o briefing mestre, take por take.">Roteiro de Short</button><button class="cmd ghost" data-c="Nexus: analise o EP01 de Pequeninos do Reino e proponha o que mudar para não parecer vídeos de IA concatenados.">Revisar EP01</button></div>
+      </article>
+    </div>
+
+    <aside class="side">
+      <section class="panel ag">
+        <div class="lab">Agenda neural</div>
+        <div class="row"><b>14/11</b><span>RUAH · comparação da home, 10h</span></div>
+        <div class="row"><b>16/11</b><span>@augustosilva.p · posts 01–03</span></div>
+        <div class="row"><b>17/11</b><span>RUAH · prévia do combo</span></div>
+        <div class="row"><b>18–24/11</b><span>RUAH · combo no ar</span></div>
+        <div class="row"><b>27/11</b><span>Black Friday</span></div>
+      </section>
+      <section class="panel">
+        <div class="lab">Conexões</div>
+        <div class="row"><span>Shopify (RUAH)</span><span class="st"><span class="dot ok"></span>disponível</span></div>
+        <div class="row"><span>Instagram e Meta Ads (Windsor)</span><span class="st"><span class="dot ok"></span>disponível</span></div>
+        <div class="row"><span>GitHub (arquivos do Nexus)</span><span class="st"><span class="dot ok"></span>ativo</span></div>
+        <div class="row"><span>Mercado Livre API</span><span class="st"><span class="dot bad"></span>falta o app</span></div>
+        <div class="row"><span>Manychat</span><span class="st"><span class="dot bad"></span>não configurado</span></div>
+        <div class="row"><span>YouTube e TikTok</span><span class="st"><span class="dot bad"></span>não conectado</span></div>
+        <div class="row"><span>n8n (automações)</span><span class="st"><span class="dot warn"></span>falhou ao conectar</span></div>
+        <div class="row"><span>Casa e escritório</span><span class="st"><span class="dot"></span>nenhum dispositivo</span></div>
+      </section>
+      <section class="panel">
+        <div class="lab">Como usar</div>
+        <p style="margin:0;font-size:13.5px;color:var(--dim)">Os botões azuis copiam um comando pronto. Cole na conversa com o Claude e o Nexus executa. As tarefas marcadas ficam salvas neste aparelho.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+<div id="toast" hidden></div>
+<textarea id="cp" aria-hidden="true" tabindex="-1"></textarea>
+
+<script>
+// relógio + saudação
+const now=()=>new Date();const c=document.getElementById('clock');
+function tick(){const d=now();c.textContent=d.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit'})+' · '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});}
+tick();setInterval(tick,30000);
+const h=now().getHours();const g=document.getElementById('greet');
+g.firstChild.textContent=(h<12?'Bom dia':h<18?'Boa tarde':'Boa noite')+', Augusto. ';
+// tarefas salvas localmente
+document.querySelectorAll('ul.tasks').forEach(ul=>{const k='nexus-'+ul.dataset.k;let s=[];try{s=JSON.parse(localStorage.getItem(k)||'[]')}catch(e){}
+  ul.querySelectorAll('input').forEach((i,n)=>{i.id=k+'-'+n;i.checked=!!s[n];i.addEventListener('change',()=>{const v=[...ul.querySelectorAll('input')].map(x=>x.checked);try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}})});});
+// copiar comando
+const t=document.getElementById('toast');function toast(m){t.textContent=m;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>t.hidden=true,2200)}
+document.querySelectorAll('button.cmd').forEach(b=>b.addEventListener('click',()=>{const txt=b.dataset.c;
+  navigator.clipboard&&navigator.clipboard.writeText(txt).then(()=>toast('Comando copiado. Cole na conversa.'),fb);if(!navigator.clipboard)fb();
+  function fb(){const a=document.getElementById('cp');a.value=txt;a.select();toast('Comando selecionado: copie e cole na conversa.')}}));
+// rede neural viva
+const cv=document.getElementById('net'),x=cv.getContext('2d');let N=[],W,H;
+function rs(){const r=cv.getBoundingClientRect();W=cv.width=r.width*devicePixelRatio;H=cv.height=r.height*devicePixelRatio;N=Array.from({length:Math.min(70,Math.floor(r.width/14))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25*devicePixelRatio,vy:(Math.random()-.5)*.25*devicePixelRatio,p:Math.random()*6}))}
+function fr(){x.clearRect(0,0,W,H);const L=130*devicePixelRatio;
+  for(const n of N){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;n.p+=.02}
+  for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const a=N[i],b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<L){x.strokeStyle='rgba(95,227,240,'+(.22*(1-d/L))+')';x.lineWidth=devicePixelRatio;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+  for(const n of N){const f=.5+.5*Math.sin(n.p);x.fillStyle=f>.92?'rgba(244,166,188,.95)':'rgba(234,240,255,'+(.25+.3*f)+')';x.beginPath();x.arc(n.x,n.y,(1.4+f*1.4)*devicePixelRatio,0,7);x.fill()}
+  requestAnimationFrame(fr)}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){rs();addEventListener('resize',rs);fr()}
+</script>
