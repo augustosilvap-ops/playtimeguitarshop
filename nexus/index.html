@@ -1,197 +1,413 @@
 <title>Nexus</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: cérebro no topo (rede neural viva) → sinapses (módulos) em grade → painel lateral de decisões e conexões */
+/* Layout: segunda tela — 3 colunas (sinais vitais · projetos e tendências · conversa com o Nexus); empilha no celular. Visual: tecido neural escuro, córtex rosa, sinapse ciano. */
 :root{
-  --ink:#070B17; --tissue:#0E1426; --line:#1E2840; --dim:#8A93AE; --fg:#EAF0FF;
-  --cortex:#F4A6BC;   /* rosa córtex — identidade Nexus */
-  --axon:#5FE3F0;     /* ciano sinapse — ação */
-  --ok:#5BD69A; --warn:#F5C060; --bad:#F27272;
+  --bg:#05070F; --bg2:#0A0F1E; --panel:rgba(16,23,44,.72); --panel2:rgba(22,31,58,.6);
+  --line:rgba(140,160,220,.14); --line2:rgba(140,160,220,.26);
+  --fg:#ECF1FF; --dim:#8E98B6; --faint:#5A6482;
+  --cortex:#F4A6BC; --axon:#62E4F2; --ok:#5BD69A; --warn:#F5C060; --bad:#FF7A7A;
   --f-d:'Sora',system-ui,sans-serif; --f-b:'Inter',system-ui,sans-serif; --f-m:'IBM Plex Mono',ui-monospace,monospace;
-  color-scheme:dark;
+  --r:18px; color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--ink);color:var(--fg);font:15px/1.5 var(--f-b);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
-.wrap{max-width:1180px;margin:0 auto;display:grid;gap:22px}
-h1,h2,h3{font-family:var(--f-d);margin:0;text-wrap:balance}
+html,body{min-height:100%}
+body{margin:0;background:radial-gradient(1200px 700px at 85% -10%,rgba(244,166,188,.10),transparent 60%),radial-gradient(900px 600px at -10% 110%,rgba(98,228,242,.08),transparent 60%),var(--bg);color:var(--fg);font:14px/1.5 var(--f-b);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 40px}
+#mesh{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;opacity:.45;z-index:0}
+.app{position:relative;z-index:1;max-width:1880px;margin:0 auto;display:grid;gap:16px}
+h1,h2,h3{font-family:var(--f-d);margin:0;font-weight:700;text-wrap:balance}
+button{font:inherit;color:inherit}
+.lab{font:500 10.5px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
 .mono{font-family:var(--f-m)}
-.lab{font:500 11px/1 var(--f-m);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-/* Hero */
-.hero{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:radial-gradient(600px 300px at 80% 20%,rgba(244,166,188,.14),transparent 70%),radial-gradient(500px 300px at 10% 100%,rgba(95,227,240,.10),transparent 70%),var(--tissue);min-height:250px}
-#net{position:absolute;inset:0;width:100%;height:100%}
-.hero-in{position:relative;padding:28px 28px 26px;display:grid;gap:16px}
-.brand{display:flex;align-items:center;gap:14px}
-.brand svg{width:46px;height:46px;flex:0 0 auto}
-.brand h1{font-size:34px;font-weight:800;letter-spacing:.18em}
-.brand small{display:block;font:500 12px var(--f-m);color:var(--dim);letter-spacing:.1em}
-.greet{font-family:var(--f-d);font-size:clamp(22px,3.6vw,34px);font-weight:700;max-width:22ch;line-height:1.15}
-.greet em{font-style:normal;color:var(--cortex)}
-.pulse{display:flex;flex-wrap:wrap;gap:10px}
-.pill{display:inline-flex;align-items:center;gap:8px;font:500 12px var(--f-m);padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:rgba(7,11,23,.6)}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--dim)}
-.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}.dot.ax{background:var(--axon);box-shadow:0 0 10px var(--axon)}
-/* Grid principal */
-.main{display:grid;grid-template-columns:1fr 340px;gap:22px;align-items:start}
-@media (max-width:900px){.main{grid-template-columns:1fr}}
-.mods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-@media (max-width:640px){.mods{grid-template-columns:1fr}}
-.mod{border:1px solid var(--line);border-radius:18px;background:var(--tissue);padding:18px;display:grid;gap:14px;min-width:0}
-.mod header{display:flex;justify-content:space-between;align-items:start;gap:10px}
-.mod h3{font-size:19px}
-.mod .sub{color:var(--dim);font-size:13px}
-.lobe{font:500 10px var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--cortex);border:1px solid rgba(244,166,188,.35);padding:4px 8px;border-radius:99px;white-space:nowrap}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.kpi{background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px}
-.kpi b{display:block;font:700 20px var(--f-d);font-variant-numeric:tabular-nums}
-.kpi span{font-size:11px;color:var(--dim)}
-ul.tasks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-ul.tasks label{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;cursor:pointer}
-ul.tasks input{accent-color:var(--axon);margin-top:3px}
-ul.tasks input:checked+span{color:var(--dim);text-decoration:line-through}
-.acts{display:flex;flex-wrap:wrap;gap:8px}
-button.cmd{font:500 12px var(--f-m);color:var(--ink);background:var(--axon);border:0;border-radius:10px;padding:8px 12px;cursor:pointer}
-button.cmd.ghost{background:transparent;color:var(--axon);border:1px solid rgba(95,227,240,.4)}
-button.cmd:focus-visible{outline:2px solid var(--cortex);outline-offset:2px}
-/* Lateral */
-.side{display:grid;gap:16px}
-.panel{border:1px solid var(--line);border-radius:18px;background:var(--tissue);padding:18px;display:grid;gap:12px}
-.row{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;padding:8px 0;border-top:1px solid var(--line)}
-.row:first-of-type{border-top:0}
-.st{font:500 11px var(--f-m);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.ag .row b{font:500 12px var(--f-m);color:var(--cortex);min-width:62px}
-.ag .row span{flex:1}
-#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--ink);font:500 13px var(--f-m);padding:10px 16px;border-radius:10px}
-textarea#cp{position:absolute;left:-9999px}
-@media (prefers-reduced-motion:reduce){#net{display:none}}
+.num{font-variant-numeric:tabular-nums}
+/* topo */
+.top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px 4px}
+.logo{display:flex;align-items:center;gap:12px;margin-right:auto}
+.logo svg{width:42px;height:42px}
+.logo h1{font-size:22px;letter-spacing:.32em;font-weight:800}
+.logo small{display:block;font:500 11px var(--f-m);color:var(--dim);letter-spacing:.08em}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:99px;border:1px solid var(--line);background:var(--panel);font:500 12px var(--f-m);white-space:nowrap}
+button.chip{cursor:pointer}
+button.chip:hover{border-color:var(--line2)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--axon);outline-offset:2px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint);flex:0 0 auto}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.bad{background:var(--bad)}.dot.live{background:var(--axon);box-shadow:0 0 0 0 rgba(98,228,242,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 8px rgba(98,228,242,0)}100%{box-shadow:0 0 0 0 rgba(98,228,242,0)}}
+/* grade principal */
+.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.35fr) minmax(340px,.95fr);gap:16px;align-items:start}
+@media (max-width:1280px){.grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.chat{grid-column:1/-1}}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}}
+.col{display:grid;gap:16px;min-width:0}
+.card{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);padding:16px;display:grid;gap:12px;min-width:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.card>header{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card h2{font-size:15px;letter-spacing:.01em}
+.src{font:400 10.5px var(--f-m);color:var(--faint)}
+/* alertas */
+.alerts{display:grid;gap:8px}
+.al{display:grid;grid-template-columns:4px 1fr;gap:12px;padding:10px 12px;border-radius:12px;background:var(--panel2);border:1px solid var(--line)}
+.al i{border-radius:4px;background:var(--faint)}
+.al.bad i{background:var(--bad)}.al.warn i{background:var(--warn)}.al.ok i{background:var(--ok)}
+.al b{display:block;font-weight:600}
+.al span{color:var(--dim);font-size:12.5px}
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.kpi{padding:12px;border-radius:14px;background:var(--panel2);border:1px solid var(--line);min-width:0}
+.kpi .v{font:700 26px/1.1 var(--f-d);font-variant-numeric:tabular-nums;margin-top:6px}
+.kpi .s{font-size:12px;color:var(--dim)}
+.skel{color:var(--faint)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+td,th{padding:7px 4px;border-top:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font:500 10px var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);border-top:0}
+td.n,th.n{text-align:right;font-family:var(--f-m);font-variant-numeric:tabular-nums}
+.bar{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--axon),var(--cortex));min-width:2px}
+.spark{width:100%;height:56px;display:block}
+/* projetos */
+.projs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:560px){.projs{grid-template-columns:1fr}}
+.proj{padding:14px;border-radius:14px;background:var(--panel2);border:1px solid var(--line);display:grid;gap:10px;min-width:0}
+.proj .hd{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.proj h3{font-size:15px}
+.lobe{font:500 9.5px var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--cortex)}
+.proj .meta{font-size:12px;color:var(--dim)}
+ul.t{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+ul.t label{display:flex;gap:9px;align-items:flex-start;font-size:13px;cursor:pointer}
+ul.t input{accent-color:var(--axon);margin-top:3px}
+ul.t input:checked+span{color:var(--faint);text-decoration:line-through}
+.acts{display:flex;flex-wrap:wrap;gap:6px}
+.act{border:1px solid rgba(98,228,242,.35);background:transparent;color:var(--axon);border-radius:9px;padding:6px 10px;font:500 11.5px var(--f-m);cursor:pointer}
+.act:hover{background:rgba(98,228,242,.08)}
+/* tendências */
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:transparent;border-radius:99px;padding:6px 12px;font:500 12px var(--f-m);cursor:pointer;color:var(--dim)}
+.tab[aria-selected=true]{color:var(--bg);background:var(--fg);border-color:var(--fg)}
+.news{display:grid;gap:8px}
+.nw{display:grid;gap:3px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel2)}
+.nw a{color:var(--fg);font-weight:600;text-decoration:none}
+.nw a:hover{text-decoration:underline}
+.nw p{margin:0;color:var(--dim);font-size:12.5px}
+.ins{border-left:2px solid var(--cortex);padding:4px 0 4px 12px;font-size:13px}
+.empty{color:var(--dim);font-size:13px;padding:6px 0}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:560px){.sk{grid-template-columns:1fr}}
+.sk div{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel2)}
+.sk b{font:600 12.5px var(--f-m);color:var(--axon)}
+.sk p{margin:2px 0 0;font-size:12px;color:var(--dim)}
+.sk .k{font:500 9.5px var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--cortex)}
+/* chat */
+.chat{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);max-height:calc(100vh - 28px);grid-template-rows:auto 1fr auto}
+@media (max-width:1280px){.chat{position:static;max-height:none}}
+.log{overflow:auto;display:flex;flex-direction:column;gap:10px;min-height:260px;padding-right:4px}
+.msg{padding:10px 12px;border-radius:14px;max-width:92%;white-space:pre-wrap;font-size:13.5px}
+.msg.u{align-self:flex-end;background:rgba(244,166,188,.14);border:1px solid rgba(244,166,188,.3)}
+.msg.a{align-self:flex-start;background:var(--panel2);border:1px solid var(--line)}
+.msg.sys{align-self:center;color:var(--dim);font:500 11.5px var(--f-m);background:none;padding:2px}
+.compose{display:grid;gap:8px}
+.compose textarea{width:100%;min-height:64px;max-height:200px;resize:vertical;background:var(--bg2);color:var(--fg);border:1px solid var(--line2);border-radius:12px;padding:10px 12px;font:14px/1.45 var(--f-b)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{border:0;border-radius:10px;padding:9px 14px;font:600 12.5px var(--f-m);cursor:pointer;background:var(--axon);color:#04131A}
+.btn.alt{background:transparent;border:1px solid var(--line2);color:var(--fg)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.rec{background:var(--bad);color:#fff}
+.sugs{display:flex;gap:6px;flex-wrap:wrap}
+.foot{color:var(--faint);font:400 11px var(--f-m);text-align:center;padding-top:6px}
+.pc{font-size:13px;color:var(--dim);display:grid;gap:8px}
+.pc ol{margin:0;padding-left:18px;display:grid;gap:4px}
+a{color:var(--axon)}
+@media (prefers-reduced-motion:reduce){#mesh{display:none}.dot.live{animation:none}}
 </style>
 
-<div class="wrap">
-  <section class="hero" aria-label="Nexus">
-    <canvas id="net" aria-hidden="true"></canvas>
-    <div class="hero-in">
-      <div class="brand">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#F4A6BC" stroke-width="1.6"><path d="M24 6c-6 0-10 4-10 8-4 1-7 5-6 10-2 3-1 8 3 10 0 5 5 8 9 7 1 1 3 1 4 1M24 6c6 0 10 4 10 8 4 1 7 5 6 10 2 3 1 8-3 10 0 5-5 8-9 7-1 1-3 1-4 1M24 6v36"/></g><g fill="#5FE3F0"><circle cx="16" cy="18" r="2"/><circle cx="31" cy="15" r="2"/><circle cx="14" cy="31" r="2"/><circle cx="33" cy="30" r="2"/><circle cx="24" cy="24" r="2.6"/></g><g stroke="#5FE3F0" stroke-width="1" opacity=".7"><path d="M16 18l8 6 7-9M14 31l10-7 9 6"/></g></svg>
-        <div><h1>NEXUS</h1><small>Cérebro central · casa &amp; escritório</small></div>
-      </div>
-      <p class="greet" id="greet">Bom dia, Augusto. <em>4 projetos</em> conectados ao Nexus, 6 decisões esperando por você.</p>
-      <div class="pulse">
-        <span class="pill"><span class="dot ax"></span><span id="clock">—</span></span>
-        <span class="pill"><span class="dot ok"></span>Shopify · RUAH</span>
-        <span class="pill"><span class="dot warn"></span>Meta Ads com 0 impressões</span>
-        <span class="pill"><span class="dot bad"></span>Mercado Livre sem API</span>
-      </div>
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="app">
+  <header class="top">
+    <div class="logo">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><defs><radialGradient id="g" cx="40%" cy="35%"><stop offset="0" stop-color="#F4A6BC"/><stop offset="1" stop-color="#F4A6BC" stop-opacity="0"/></radialGradient></defs><circle cx="24" cy="24" r="22" fill="url(#g)" opacity=".35"/><g fill="none" stroke="#F4A6BC" stroke-width="1.6" stroke-linecap="round"><path d="M24 7c-6 0-10 4-10 8-4 1-7 5-6 10-2 3-1 8 3 10 0 5 5 8 9 7 1 1 3 1 4 1M24 7c6 0 10 4 10 8 4 1 7 5 6 10 2 3 1 8-3 10 0 5-5 8-9 7-1 1-3 1-4 1M24 7v36"/></g><g stroke="#62E4F2" stroke-width="1.1" opacity=".8"><path d="M16 18l8 6 7-9M14 31l10-7 9 6"/></g><g fill="#62E4F2"><circle cx="16" cy="18" r="2"/><circle cx="31" cy="15" r="2"/><circle cx="14" cy="31" r="2"/><circle cx="33" cy="30" r="2"/><circle cx="24" cy="24" r="2.8"/></g></svg>
+      <div><h1>NEXUS</h1><small id="greet">Cérebro central · casa &amp; escritório</small></div>
     </div>
-  </section>
+    <span class="chip"><span class="dot live"></span><span id="clock">—</span></span>
+    <span class="chip" id="sync"><span class="dot"></span>conectando…</span>
+    <button class="chip" id="voice" type="button" aria-pressed="false"><span class="dot"></span>Voz desligada</button>
+    <button class="chip" id="perm" type="button">Permissões</button>
+  </header>
 
-  <div class="main">
-    <div class="mods">
-      <!-- RUAH -->
-      <article class="mod">
-        <header><div><h3>RUAH</h3><div class="sub">Streetwear cristão · useruah.com · @ruahwear_</div></div><span class="lobe">Marca</span></header>
-        <div class="kpis"><div class="kpi"><b>28</b><span>vagas Founders</span></div><div class="kpi"><b>5</b><span>pedidos (#1001–1005)</span></div><div class="kpi"><b>R$ 149,90</b><span>por camiseta</span></div></div>
-        <ul class="tasks" data-k="ruah">
-          <li><label><input type="checkbox"><span>Compartilhar página e Instagram com o portfólio da conta de anúncios</span></label></li>
-          <li><label><input type="checkbox"><span>Comparar métricas da home antes/depois do tema</span></label></li>
-          <li><label><input type="checkbox"><span>Prévia do combo "Leve 2 por R$ 269,90" (17/11)</span></label></li>
-          <li><label><input type="checkbox"><span>Revisar menções a "25/11" no fluxo Founders</span></label></li>
-          <li><label><input type="checkbox"><span>Falar com especialista sobre o registro no INPI</span></label></li>
-        </ul>
-        <div class="acts"><button class="cmd" data-c="Nexus: compare as métricas da home da RUAH antes e depois do tema novo e me dê o resumo.">Comparar home</button><button class="cmd ghost" data-c="Nexus: prepare a prévia do combo Leve 2 por R$ 269,90 da RUAH (celular e desktop), sem publicar.">Prévia do combo</button></div>
-      </article>
+  <div class="grid">
+    <!-- COLUNA 1 · sinais vitais -->
+    <div class="col">
+      <section class="card">
+        <header><h2>Ações urgentes</h2><span class="src" id="alSrc">ao vivo</span></header>
+        <div class="alerts" id="alerts"><div class="empty">Lendo seus projetos…</div></div>
+      </section>
 
-      <!-- Augusto -->
-      <article class="mod">
-        <header><div><h3>@augustosilva.p</h3><div class="sub">Marketplace, e-commerce e IA · 3 posts por dia</div></div><span class="lobe">Autoridade</span></header>
-        <div class="kpis"><div class="kpi"><b>3/21</b><span>posts prontos</span></div><div class="kpi"><b>3</b><span>materiais gratuitos</span></div><div class="kpi"><b>0</b><span>automações ativas</span></div></div>
-        <ul class="tasks" data-k="aug">
-          <li><label><input type="checkbox"><span>Aprovar paleta, fontes e grade 3×3</span></label></li>
-          <li><label><input type="checkbox"><span>Escolher onde hospedar PDFs e planilha</span></label></li>
-          <li><label><input type="checkbox"><span>Conectar o Manychat e testar CUSTOS, TAXAS e PLANILHA</span></label></li>
-          <li><label><input type="checkbox"><span>Publicar os posts 01–03 (16/11)</span></label></li>
-        </ul>
-        <div class="acts"><button class="cmd" data-c="Nexus: produza completos os posts 04 a 06 do @augustosilva.p seguindo o calendário e o sistema visual.">Produzir posts 04–06</button><button class="cmd ghost" data-c="Nexus: me mostre o calendário de 16 a 22/11 do @augustosilva.p com o status de cada post.">Ver calendário</button></div>
-      </article>
+      <section class="card">
+        <header><h2>RUAH · loja</h2><span class="src" id="shSrc">Shopify</span></header>
+        <div class="kpis">
+          <div class="kpi"><div class="lab">Faturamento</div><div class="v num" id="kRev">—</div><div class="s" id="kRevS">pedidos pagos</div></div>
+          <div class="kpi"><div class="lab">Pedidos</div><div class="v num" id="kOrd">—</div><div class="s" id="kOrdS">total na loja</div></div>
+          <div class="kpi"><div class="lab">Aguardando envio</div><div class="v num" id="kUnf">—</div><div class="s">pagos e não enviados</div></div>
+          <div class="kpi"><div class="lab">Último pedido</div><div class="v num" id="kLast" style="font-size:20px">—</div><div class="s" id="kLastS">&nbsp;</div></div>
+        </div>
+      </section>
 
-      <!-- Mercado Livre -->
-      <article class="mod">
-        <header><div><h3>Mercado Livre</h3><div class="sub">Dropshipping · fornecedor B2Drop · anúncios Premium</div></div><span class="lobe">Vendas</span></header>
-        <div class="kpis"><div class="kpi"><b>~300</b><span>anúncios</span></div><div class="kpi"><b>0</b><span>vendas</span></div><div class="kpi"><b>—</b><span>termômetro</span></div></div>
-        <ul class="tasks" data-k="ml">
-          <li><label><input type="checkbox"><span>Ativar o programa Decola</span></label></li>
-          <li><label><input type="checkbox"><span>Criar o app em developers.mercadolivre.com.br</span></label></li>
-          <li><label><input type="checkbox"><span>Confirmar se a B2Drop sincroniza preço e estoque</span></label></li>
-          <li><label><input type="checkbox"><span>Escolher os 20–30 anúncios prioritários</span></label></li>
-        </ul>
-        <div class="acts"><button class="cmd" data-c="Nexus: o app do Mercado Livre está criado. Conecte a API e faça a auditoria dos anúncios.">Conectar API</button><button class="cmd ghost" data-c="Nexus: compare Premium e Clássico para os meus anúncios do Mercado Livre usando o custo da B2Drop.">Premium × Clássico</button></div>
-      </article>
+      <section class="card">
+        <header><h2>Meta Ads · 7 dias</h2><span class="src" id="adSrc">Windsor</span></header>
+        <div style="overflow-x:auto"><table id="ads"><tr><th>Campanha</th><th class="n">Gasto</th><th class="n">Impr.</th><th class="n">Cliques</th></tr><tr><td colspan="4" class="skel">carregando…</td></tr></table></div>
+      </section>
 
-      <!-- Pequeninos -->
-      <article class="mod">
-        <header><div><h3>Pequeninos do Reino</h3><div class="sub">Animação infantil cristã · Reino Feliz · @pequeninosdoreinoofc</div></div><span class="lobe">Canal</span></header>
-        <div class="kpis"><div class="kpi"><b>4</b><span>personagens</span></div><div class="kpi"><b>9:16</b><span>Shorts</span></div><div class="kpi"><b>2–4 min</b><span>episódios 16:9</span></div></div>
-        <ul class="tasks" data-k="pq">
-          <li><label><input type="checkbox"><span>Revisar o EP01 "Bem-vindos ao Reino" (não aprovado)</span></label></li>
-          <li><label><input type="checkbox"><span>Fechar a ficha visual de Davi, Rafaella, Theo e Jasmin</span></label></li>
-          <li><label><input type="checkbox"><span>Montar a grade de Shorts da semana (YouTube e TikTok)</span></label></li>
-          <li><label><input type="checkbox"><span>Organizar os arquivos da pasta do Drive</span></label></li>
-        </ul>
-        <div class="acts"><button class="cmd" data-c="Nexus: escreva o roteiro de um Short de Pequeninos do Reino seguindo o briefing mestre, take por take.">Roteiro de Short</button><button class="cmd ghost" data-c="Nexus: analise o EP01 de Pequeninos do Reino e proponha o que mudar para não parecer vídeos de IA concatenados.">Revisar EP01</button></div>
-      </article>
+      <section class="card">
+        <header><h2>Instagram @ruahwear_</h2><span class="src" id="igSrc">Windsor</span></header>
+        <div class="kpis">
+          <div class="kpi"><div class="lab">Seguidores</div><div class="v num" id="kFol">—</div><div class="s" id="kFolS">hoje</div></div>
+          <div class="kpi"><div class="lab">Alcance 7 dias</div><div class="v num" id="kReach">—</div><div class="s">soma diária</div></div>
+        </div>
+        <svg class="spark" id="spark" viewBox="0 0 300 56" preserveAspectRatio="none" aria-label="Alcance diário"></svg>
+        <div class="src">@augustosilva.p ainda não está conectado na Windsor.</div>
+      </section>
     </div>
 
-    <aside class="side">
-      <section class="panel ag">
-        <div class="lab">Agenda neural</div>
-        <div class="row"><b>14/11</b><span>RUAH · comparação da home, 10h</span></div>
-        <div class="row"><b>16/11</b><span>@augustosilva.p · posts 01–03</span></div>
-        <div class="row"><b>17/11</b><span>RUAH · prévia do combo</span></div>
-        <div class="row"><b>18–24/11</b><span>RUAH · combo no ar</span></div>
-        <div class="row"><b>27/11</b><span>Black Friday</span></div>
+    <!-- COLUNA 2 · projetos, tendências, skills, computador -->
+    <div class="col">
+      <section class="card">
+        <header><h2>Projetos</h2><span class="src" id="tkSrc">tarefas sincronizadas</span></header>
+        <div class="projs" id="projs"></div>
       </section>
-      <section class="panel">
-        <div class="lab">Conexões</div>
-        <div class="row"><span>Shopify (RUAH)</span><span class="st"><span class="dot ok"></span>disponível</span></div>
-        <div class="row"><span>Instagram e Meta Ads (Windsor)</span><span class="st"><span class="dot ok"></span>disponível</span></div>
-        <div class="row"><span>GitHub (arquivos do Nexus)</span><span class="st"><span class="dot ok"></span>ativo</span></div>
-        <div class="row"><span>Mercado Livre API</span><span class="st"><span class="dot bad"></span>falta o app</span></div>
-        <div class="row"><span>Manychat</span><span class="st"><span class="dot bad"></span>não configurado</span></div>
-        <div class="row"><span>YouTube e TikTok</span><span class="st"><span class="dot bad"></span>não conectado</span></div>
-        <div class="row"><span>n8n (automações)</span><span class="st"><span class="dot warn"></span>falhou ao conectar</span></div>
-        <div class="row"><span>Casa e escritório</span><span class="st"><span class="dot"></span>nenhum dispositivo</span></div>
+
+      <section class="card">
+        <header><h2>Tendências e notícias</h2><span class="src" id="brSrc">briefing diário às 6h38</span></header>
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" aria-selected="true" data-tab="moda">Moda e streetwear</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="negocios">Marketplace e IA</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="infantil">Conteúdo infantil</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="insights">Insights do Nexus</button>
+        </div>
+        <div class="news" id="news"><div class="empty">O primeiro briefing está sendo preparado. Ele aparece aqui sozinho, sem recarregar.</div></div>
       </section>
-      <section class="panel">
-        <div class="lab">Como usar</div>
-        <p style="margin:0;font-size:13.5px;color:var(--dim)">Os botões azuis copiam um comando pronto. Cole na conversa com o Claude e o Nexus executa. As tarefas marcadas ficam salvas neste aparelho.</p>
+
+      <section class="card">
+        <header><h2>Skills do Claude para criar</h2><span class="src">design · web · motion · vídeo</span></header>
+        <div class="sk">
+          <div><span class="k">Design</span><br><b>frontend-design</b><p>Interfaces e páginas com direção de arte de verdade, fugindo do visual genérico.</p></div>
+          <div><span class="k">Design</span><br><b>canvas-design</b><p>Pôsteres, capas e artes estáticas em PNG e PDF.</p></div>
+          <div><span class="k">Design</span><br><b>design:design-critique</b><p>Crítica estruturada de uma arte ou tela: hierarquia, leitura e consistência.</p></div>
+          <div><span class="k">Design</span><br><b>design:design-system</b><p>Organiza cores, fontes e componentes de uma marca (RUAH, @augustosilva.p).</p></div>
+          <div><span class="k">Web design</span><br><b>ui-ux-pro-max</b><p>Plugin já ativo no projeto: padrões de UI/UX, paletas e layouts para sites e apps.</p></div>
+          <div><span class="k">Web design</span><br><b>web-artifacts-builder</b><p>Apps e sites interativos completos, como este Nexus.</p></div>
+          <div><span class="k">Motion</span><br><b>scrollcraft</b><p>Plugin ativo: sites com animação guiada pela rolagem (landing de drop da RUAH).</p></div>
+          <div><span class="k">Animação</span><br><b>cinetic</b><p>Plugin ativo: animações e transições para web e peças em movimento.</p></div>
+          <div><span class="k">Vídeo</span><br><b>Reels com filmagem real</b><p>O fluxo do projeto (ffmpeg): vídeo real + vidro + texto fixo, 1080×1920, 30 fps.</p></div>
+          <div><span class="k">Copy</span><br><b>design:ux-copy</b><p>Textos de botões, telas e CTAs com clareza.</p></div>
+        </div>
       </section>
-    </aside>
+
+      <section class="card">
+        <header><h2>Seu computador</h2><span class="src">arquivos e acesso remoto</span></header>
+        <div class="pc">
+          <p style="margin:0">O Nexus roda na nuvem e não enxerga o seu computador sozinho. Para eu acessar seus arquivos e trabalhar na sua máquina de longe:</p>
+          <ol>
+            <li>Instale e abra o app <b>Claude Desktop</b> no computador do escritório e no de casa.</li>
+            <li>Em Configurações → Claude Code → <b>Remote Control</b>, escolha as pastas que o Nexus pode usar (ex.: RUAH, Pequeninos, Documentos).</li>
+            <li>Deixe o app aberto. Pelo celular ou por aqui, você pede e eu trabalho nessas pastas, com sua aprovação.</li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <!-- COLUNA 3 · conversa -->
+    <section class="card chat" aria-label="Conversa com o Nexus">
+      <header><h2>Fale com o Nexus</h2><span class="src" id="aiSrc">Claude</span></header>
+      <div class="log" id="log" aria-live="polite">
+        <div class="msg a">Pergunte qualquer coisa sobre seus projetos. Eu leio os números ao vivo antes de responder. Para trabalhos maiores (criar posts, mexer na loja, auditar anúncios), use “Executar no Claude Code”: eu abro uma sessão de trabalho no seu repositório.</div>
+      </div>
+      <div class="compose">
+        <div class="sugs">
+          <button class="act" data-q="Qual é a ação mais urgente agora e por quê?">Mais urgente?</button>
+          <button class="act" data-q="Como estão os anúncios da RUAH nos últimos 7 dias? O que eu deveria mudar?">Anúncios</button>
+          <button class="act" data-q="Resuma as tendências de hoje e o que eu posso postar.">O que postar hoje</button>
+        </div>
+        <label class="lab" for="q">Sua mensagem</label>
+        <textarea id="q" placeholder="Ex.: quantos pedidos preciso enviar hoje?"></textarea>
+        <div class="row">
+          <button class="btn" id="send" type="button">Perguntar</button>
+          <button class="btn alt" id="mic" type="button" hidden>🎙 Falar</button>
+          <button class="btn alt" id="run" type="button" title="Abre uma sessão do Claude Code no seu repositório com este pedido">Executar no Claude Code</button>
+        </div>
+      </div>
+    </section>
   </div>
+  <div class="foot">Nexus · dados ao vivo da Shopify e da Windsor · tarefas e briefing salvos na nuvem</div>
 </div>
-<div id="toast" hidden></div>
-<textarea id="cp" aria-hidden="true" tabindex="-1"></textarea>
 
 <script>
-// relógio + saudação
-const now=()=>new Date();const c=document.getElementById('clock');
-function tick(){const d=now();c.textContent=d.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit'})+' · '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});}
-tick();setInterval(tick,30000);
-const h=now().getHours();const g=document.getElementById('greet');
-g.firstChild.textContent=(h<12?'Bom dia':h<18?'Boa tarde':'Boa noite')+', Augusto. ';
-// tarefas salvas localmente
-document.querySelectorAll('ul.tasks').forEach(ul=>{const k='nexus-'+ul.dataset.k;let s=[];try{s=JSON.parse(localStorage.getItem(k)||'[]')}catch(e){}
-  ul.querySelectorAll('input').forEach((i,n)=>{i.id=k+'-'+n;i.checked=!!s[n];i.addEventListener('change',()=>{const v=[...ul.querySelectorAll('input')].map(x=>x.checked);try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}})});});
-// copiar comando
-const t=document.getElementById('toast');function toast(m){t.textContent=m;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>t.hidden=true,2200)}
-document.querySelectorAll('button.cmd').forEach(b=>b.addEventListener('click',()=>{const txt=b.dataset.c;
-  navigator.clipboard&&navigator.clipboard.writeText(txt).then(()=>toast('Comando copiado. Cole na conversa.'),fb);if(!navigator.clipboard)fb();
-  function fb(){const a=document.getElementById('cp');a.value=txt;a.select();toast('Comando selecionado: copie e cole na conversa.')}}));
-// rede neural viva
-const cv=document.getElementById('net'),x=cv.getContext('2d');let N=[],W,H;
-function rs(){const r=cv.getBoundingClientRect();W=cv.width=r.width*devicePixelRatio;H=cv.height=r.height*devicePixelRatio;N=Array.from({length:Math.min(70,Math.floor(r.width/14))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25*devicePixelRatio,vy:(Math.random()-.5)*.25*devicePixelRatio,p:Math.random()*6}))}
-function fr(){x.clearRect(0,0,W,H);const L=130*devicePixelRatio;
-  for(const n of N){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;n.p+=.02}
-  for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const a=N[i],b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<L){x.strokeStyle='rgba(95,227,240,'+(.22*(1-d/L))+')';x.lineWidth=devicePixelRatio;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
-  for(const n of N){const f=.5+.5*Math.sin(n.p);x.fillStyle=f>.92?'rgba(244,166,188,.95)':'rgba(234,240,255,'+(.25+.3*f)+')';x.beginPath();x.arc(n.x,n.y,(1.4+f*1.4)*devicePixelRatio,0,7);x.fill()}
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const BRL=v=>'R$ '+Number(v||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const INT=v=>Number(v||0).toLocaleString('pt-BR');
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const REPO='https://github.com/augustosilvap-ops/playtimeguitarshop';
+const S={orders:null,ads:null,ig:null,fol:null,brief:null,tasks:null,alerts:[]};
+let mcp=null, sample=null, tts=null, voiceOn=false, spoken=new Set();
+
+/* relógio e saudação */
+function tick(){const d=new Date();$('#clock').textContent=d.toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit'})+' · '+d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+  const h=d.getHours();$('#greet').textContent=(h<12?'Bom dia':h<18?'Boa tarde':'Boa noite')+', Augusto';}
+tick();setInterval(tick,20000);
+
+/* projetos (texto fixo; estado das tarefas vem do banco) */
+const PROJ=[
+ {id:'ruah',nome:'RUAH',lobe:'Marca',meta:'Streetwear cristão · useruah.com',acts:[['Comparar home','Compare as métricas da home da RUAH antes e depois do tema novo (puxe do Shopify Analytics) e me entregue o resumo.'],['Prévia do combo','Prepare a prévia do combo "Leve 2 por R$ 269,90" da RUAH (celular e desktop), tema NÃO publicado.']]},
+ {id:'aug',nome:'@augustosilva.p',lobe:'Autoridade',meta:'Marketplace, e-commerce e IA',acts:[['Produzir posts 04–06','Produza completos os posts 04 a 06 do @augustosilva.p seguindo augusto/editorial/CALENDARIO.md e o sistema visual.'],['Ver calendário','Resuma o calendário de 16 a 22/11 do @augustosilva.p com o status de cada post.']]},
+ {id:'ml',nome:'Mercado Livre',lobe:'Vendas',meta:'Dropshipping · B2Drop · ~300 anúncios',acts:[['Auditar anúncios','O app do Mercado Livre está criado. Conecte a API e audite os anúncios, escolhendo os 20–30 prioritários.'],['Premium × Clássico','Compare Premium e Clássico para meus anúncios do Mercado Livre usando o custo da B2Drop.']]},
+ {id:'pq',nome:'Pequeninos do Reino',lobe:'Canal',meta:'Animação infantil cristã · @pequeninosdoreinoofc',acts:[['Roteiro de Short','Escreva o roteiro de um Short de Pequeninos do Reino seguindo pequeninos/BRIEFING_MESTRE.txt, take por take.'],['Revisar EP01','Analise o EP01 de Pequeninos do Reino e proponha o que mudar para não parecer vídeos de IA concatenados.']]},
+];
+function renderProjs(){
+  const T=S.tasks||{};
+  $('#projs').innerHTML=PROJ.map(p=>{const items=(T[p.id]||[]);
+    return `<div class="proj"><div class="hd"><h3>${esc(p.nome)}</h3><span class="lobe">${esc(p.lobe)}</span></div><div class="meta">${esc(p.meta)}</div>
+    <ul class="t">${items.length?items.map((it,i)=>`<li><label><input type="checkbox" id="t-${p.id}-${i}" data-p="${p.id}" data-i="${i}" ${it.feito?'checked':''}><span>${esc(it.texto)}</span></label></li>`).join(''):'<li class="empty">Sem tarefas abertas.</li>'}</ul>
+    <div class="acts">${p.acts.map(a=>`<button class="act" data-run="${esc(a[1])}">${esc(a[0])}</button>`).join('')}</div></div>`}).join('');
+}
+renderProjs();
+$('#projs').addEventListener('change',async e=>{const c=e.target;if(!c.dataset.p)return;const T=structuredClone(S.tasks||{});T[c.dataset.p][+c.dataset.i].feito=c.checked;S.tasks=T;
+  try{await db?.doc('estado/tarefas').set(T)}catch(err){note('Não consegui salvar a tarefa. Tente de novo.')} computeAlerts();});
+$('#projs').addEventListener('click',e=>{const b=e.target.closest('[data-run]');if(b)runTask(b.dataset.run)});
+
+/* alertas */
+function computeAlerts(){
+  const A=[];
+  if(S.orders){const u=S.orders.filter(o=>o.financialStatus==='PAID'&&o.fulfillmentStatus!=='FULFILLED');
+    if(u.length)A.push({n:'bad',t:`${u.length} pedido${u.length>1?'s':''} da RUAH aguardando envio`,d:u.map(o=>o.name+' · '+(o.customerName||'')).join(', ')});}
+  if(S.ads){S.ads.filter(r=>!Number(r.impressions)).forEach(r=>A.push({n:'warn',t:'Campanha sem entrega',d:r.campaign}));}
+  (S.brief?.alertas||[]).forEach(a=>A.push({n:a.nivel==='urgente'?'bad':'warn',t:a.titulo,d:a.detalhe||''}));
+  A.push({n:'warn',t:'Mercado Livre sem conexão',d:'Crie o app em developers.mercadolivre.com.br para o Nexus ler anúncios e vendas.'});
+  A.push({n:'warn',t:'Manychat não configurado',d:'As palavras-chave CUSTOS, TAXAS e PLANILHA ainda não disparam.'});
+  S.alerts=A;
+  $('#alerts').innerHTML=A.map(a=>`<div class="al ${a.n}"><i></i><div><b>${esc(a.t)}</b><span>${esc(a.d)}</span></div></div>`).join('');
+  const urg=A.filter(a=>a.n==='bad');document.title=urg.length?`(${urg.length}) Nexus`:'Nexus';
+  if(voiceOn)urg.forEach(a=>{if(!spoken.has(a.t)){spoken.add(a.t);say('Augusto, atenção: '+a.t+'.')}});
+}
+
+/* helpers mcp */
+const pay=r=>{if(!r)return null;if(r.payload!==undefined)return r.payload;if(r.structuredContent)return r.structuredContent;try{return JSON.parse(r.content?.[0]?.text||'null')}catch{return null}};
+const ago=t=>{if(!t)return'agora';const s=Math.round((Date.now()-t)/1000);return s<60?'agora':s<3600?`há ${Math.round(s/60)} min`:`há ${Math.round(s/3600)} h`};
+function setSync(ok,txt){$('#sync').innerHTML=`<span class="dot ${ok?'ok':'warn'}"></span>${esc(txt)}`}
+function errMsg(e){const c=e?.code;return c==='not_granted'?'acesso não liberado':c==='server_not_connected'?'conector desconectado':c==='needs_reauth'?'reconecte o conector':c==='rate_limited'?'aguardando limite':'indisponível'}
+
+function watch(server,tool,input,el,fn,every){
+  return mcp.watchTool(server,tool,input,ev=>{
+    if(ev.type==='error'){$(el).textContent=server.replace('_',' ')+' · '+errMsg(ev.error);return}
+    const p=pay(ev.result);
+    if(p&&p.status==='pending'){$(el).textContent='gerando relatório…';setTimeout(()=>mcp.invalidate(server,tool,input),15000);return}
+    fn(p);$(el).textContent=server.replace('_',' ')+' · '+ago(ev.result.cache?.storedAt);computeAlerts();
+  },{refetchInterval:every});
+}
+
+function onOrders(p){const os=p?.orders||[];S.orders=os;const paid=os.filter(o=>o.financialStatus==='PAID');
+  $('#kRev').textContent=BRL(paid.reduce((s,o)=>s+Number(o.totalPrice||0),0));$('#kRevS').textContent=`${paid.length} pedidos pagos`;
+  $('#kOrd').textContent=INT(p?.totalCount??os.length);
+  $('#kUnf').textContent=INT(paid.filter(o=>o.fulfillmentStatus!=='FULFILLED').length);
+  const l=os[0];if(l){$('#kLast').textContent=l.name;$('#kLastS').textContent=new Date(l.createdAt).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})+' · '+BRL(l.totalPrice)}}
+function onAds(p){const rows=(p?.data||[]).slice().sort((a,b)=>b.spend-a.spend);S.ads=rows;const mx=Math.max(1,...rows.map(r=>+r.spend||0));
+  $('#ads').innerHTML='<tr><th>Campanha</th><th class="n">Gasto</th><th class="n">Impr.</th><th class="n">Cliques</th></tr>'+(rows.length?rows.map(r=>`<tr><td>${esc(r.campaign)}<div class="bar" style="width:${(r.spend||0)/mx*100}%"></div></td><td class="n">${BRL(r.spend)}</td><td class="n">${INT(r.impressions)}</td><td class="n">${INT(r.clicks)}</td></tr>`).join('')+`<tr><td><b>Total</b></td><td class="n"><b>${BRL(rows.reduce((s,r)=>s+(+r.spend||0),0))}</b></td><td class="n">${INT(rows.reduce((s,r)=>s+(+r.impressions||0),0))}</td><td class="n">${INT(rows.reduce((s,r)=>s+(+r.clicks||0),0))}</td></tr>`:'<tr><td colspan="4" class="empty">Sem gasto nos últimos 7 dias.</td></tr>')}
+function onIg(p){const rows=(p?.data||[]).filter(r=>r.date).sort((a,b)=>a.date<b.date?-1:1);S.ig=rows;
+  $('#kReach').textContent=INT(rows.reduce((s,r)=>s+(+r.reach||0),0));
+  const v=rows.map(r=>+r.reach||0),mx=Math.max(1,...v),n=v.length;if(n<2){$('#spark').innerHTML='';return}
+  const pts=v.map((y,i)=>[i/(n-1)*296+2,52-y/mx*46]);const line=pts.map(p=>p.join(',')).join(' ');
+  $('#spark').innerHTML=`<polyline points="2,54 ${line} 298,54" fill="rgba(98,228,242,.12)" stroke="none"/><polyline points="${line}" fill="none" stroke="#62E4F2" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${pts[n-1][0]}" cy="${pts[n-1][1]}" r="3.5" fill="#F4A6BC"/>`}
+function onFol(p){const r=(p?.data||[])[0];S.fol=r?.followers_count??null;$('#kFol').textContent=S.fol==null?'—':INT(S.fol)}
+
+/* tendências */
+let tab='moda';
+function renderNews(){const b=S.brief;const el=$('#news');
+  if(!b){el.innerHTML='<div class="empty">O primeiro briefing está sendo preparado. Ele aparece aqui sozinho, sem recarregar.</div>';return}
+  $('#brSrc').textContent='briefing de '+(b.data||'hoje');
+  const L=b[tab]||[];
+  if(tab==='insights'){el.innerHTML=L.length?L.map(x=>`<div class="ins">${esc(x)}</div>`).join(''):'<div class="empty">Sem insights hoje.</div>';return}
+  el.innerHTML=L.length?L.map(n=>`<div class="nw">${n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a>`:`<b>${esc(n.titulo)}</b>`}<p>${esc(n.resumo||'')}</p><span class="src">${esc(n.fonte||'')}</span></div>`).join(''):'<div class="empty">Nada novo nesta categoria hoje.</div>'}
+$$('.tab').forEach(t=>t.addEventListener('click',()=>{tab=t.dataset.tab;$$('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));renderNews()}));
+
+/* voz */
+async function say(text){if(!tts||!voiceOn)return;try{await tts.speak(text,{language:'pt-BR',voice:'airy'})}catch(e){}}
+$('#voice').addEventListener('click',()=>{if(!tts){note('A voz não está disponível neste navegador. Use o Chrome ou o app Claude Desktop.');return}
+  voiceOn=!voiceOn;$('#voice').setAttribute('aria-pressed',voiceOn);$('#voice').innerHTML=`<span class="dot ${voiceOn?'live':''}"></span>${voiceOn?'Voz ligada':'Voz desligada'}`;
+  if(voiceOn){const u=S.alerts.filter(a=>a.n==='bad');u.forEach(a=>spoken.add(a.t));say(u.length?`Nexus ativo. Você tem ${u.length} ação urgente${u.length>1?'s':''}. ${u.map(a=>a.t).join('. ')}.`:'Nexus ativo. Nenhuma ação urgente agora.')}else tts.stop?.()});
+$('#perm').addEventListener('click',async()=>{try{await claude.use('permissions').then(p=>p?.manage())}catch(e){note('Abra o menu Permissões do artifact para revisar os acessos.')}});
+
+/* conversa */
+const log=$('#log');function add(cls,txt){const d=document.createElement('div');d.className='msg '+cls;d.textContent=txt;log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
+function note(t){add('sys',t)}
+const hist=[];
+const CONTEXTO=`Você é o NEXUS, o assistente central do Augusto (Curitiba/PR). Responda em português do Brasil, direto, curto (até 8 linhas) e prático. Use as ferramentas para ler números ao vivo antes de responder sobre métricas. Nunca invente números: se um dado não estiver disponível, diga que não está conectado.
+Projetos: 1) RUAH — streetwear cristão premium, camisetas R$ 149,90, Founders Club (30 primeiros compradores), loja Shopify useruah.com, Instagram @ruahwear_, anúncios Meta. Regras: o prazo de produção é interno e não pode aparecer em textos públicos; não alterar estampas. 2) @augustosilva.p — Instagram pessoal sobre marketplace, e-commerce e IA; 3 posts por dia; Manychat ainda não configurado. 3) Mercado Livre — dropshipping com B2Drop, cerca de 300 anúncios em Premium, zero vendas, API ainda não conectada. 4) Pequeninos do Reino — animação infantil cristã no YouTube/TikTok @pequeninosdoreinoofc; EP01 não aprovado.
+Para trabalhos que exigem criar arquivos, mexer na loja ou pesquisar na web, sugira o botão "Executar no Claude Code".`;
+const TOOLS=[
+ {name:'pedidos_ruah',description:'Pedidos recentes da loja RUAH (Shopify): número, cliente, valor, status de pagamento e envio.',execute:()=>S.orders?S.orders.slice(0,20).map(o=>({pedido:o.name,data:o.createdAt,cliente:o.customerName,valor:o.totalPrice,pagamento:o.financialStatus,envio:o.fulfillmentStatus})):'Shopify ainda carregando ou sem acesso.'},
+ {name:'anuncios_meta',description:'Campanhas de anúncios Meta da RUAH nos últimos 7 dias: gasto (R$), impressões e cliques.',execute:()=>S.ads||'Windsor ainda carregando ou sem acesso.'},
+ {name:'instagram_ruah',description:'Instagram @ruahwear_: seguidores hoje e alcance diário dos últimos 7 dias.',execute:()=>({seguidores:S.fol,alcance_diario:S.ig})},
+ {name:'briefing_do_dia',description:'Notícias e tendências de hoje (moda/streetwear, marketplace/IA, conteúdo infantil) e insights.',execute:()=>S.brief||'Briefing de hoje ainda não chegou.'},
+ {name:'tarefas',description:'Tarefas abertas e concluídas de cada projeto, e os alertas atuais do painel.',execute:()=>({tarefas:S.tasks,alertas:S.alerts})},
+];
+async function ask(q){
+  q=q.trim();if(!q)return;if(!sample){note('O chat precisa da permissão “Perguntar ao Claude”. Toque em Permissões.');return}
+  add('u',q);$('#q').value='';const out=add('a','Pensando…');hist.push({role:'user',content:q});
+  const msgs=[{role:'user',content:CONTEXTO+'\n\nHoje: '+new Date().toLocaleString('pt-BR')},{role:'assistant',content:'Entendido. Sou o Nexus.'},...hist.slice(-10)];
+  $('#send').disabled=true;
+  try{const r=await sample(msgs,{tools:TOOLS,cache:false,onText:({text})=>{out.textContent=text;log.scrollTop=log.scrollHeight}});
+    out.textContent=r.text;hist.push({role:'assistant',content:r.text});say(r.text.slice(0,1900));
+  }catch(e){out.textContent=e?.code==='rate_limited'?'Muitas perguntas seguidas. Espere um minuto e tente de novo.':e?.code==='not_granted'?'Sem permissão para perguntar ao Claude. Libere em Permissões.':'Não consegui responder agora. Tente de novo.'}
+  finally{$('#send').disabled=false}
+}
+$('#send').addEventListener('click',()=>ask($('#q').value));
+$('#q').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();ask($('#q').value)}});
+$$('.sugs .act').forEach(b=>b.addEventListener('click',()=>ask(b.dataset.q)));
+
+/* executar no Claude Code: abre uma sessão de trabalho no repositório */
+let ccOk=false;
+async function runTask(pedido){
+  pedido=(pedido||'').trim();if(!pedido){note('Escreva o pedido na caixa e toque em Executar.');return}
+  if(!ccOk){note('A execução direta precisa do conector Claude Code Remote liberado em Permissões. Enquanto isso, mande o pedido na conversa do Claude Code.');return}
+  add('u','▶ '+pedido);const st=add('a','Abrindo uma sessão de trabalho…');
+  try{const r=await mcp.callTool('Claude Code Remote','create_session',{prompt:pedido+'\n\n(Pedido enviado pelo Nexus. Siga o CLAUDE.md do repositório e as regras de cada projeto. Não publique nem agende nada sem aprovação.)',source_url:REPO,title:'Nexus · '+pedido.slice(0,60)});
+    const p=pay(r)||{};const id=p.session_id||p.id||'';st.textContent='Sessão aberta'+(id?` (${id})`:'')+'. Acompanhe e aprove em claude.ai/code. Eu aviso no celular quando terminar.';say('Tarefa enviada. Sessão aberta.');
+  }catch(e){st.textContent='Não consegui abrir a sessão: '+errMsg(e)+'.'}
+}
+$('#run').addEventListener('click',()=>runTask($('#q').value));
+
+/* inicialização das capacidades */
+let db=null;
+(async()=>{
+  const [m,s,t,d,dic]=await Promise.all(['mcp','sample','tts','db','dictation'].map(n=>claude.use(n).catch(()=>null)));
+  mcp=m;sample=s;tts=t;db=d;
+  if(!t)$('#voice').hidden=true;
+  if(!s)$('#aiSrc').textContent='chat indisponível nesta visualização';
+  if(dic){const mic=$('#mic');mic.hidden=false;let on=false;
+    dic.onPartial(({text})=>{$('#q').dataset.p=text;$('#q').value=($('#q').dataset.f||'')+text});
+    dic.onFinal(({text})=>{$('#q').dataset.f=($('#q').dataset.f||'')+text+' ';$('#q').value=$('#q').dataset.f});
+    dic.onState(({state})=>{on=state==='listening'||state==='starting';mic.className='btn '+(on?'rec':'alt');mic.textContent=on?'■ Parar':'🎙 Falar';if(state==='idle'&&$('#q').value.trim()){const q=$('#q').value;$('#q').dataset.f='';ask(q)}});
+    mic.addEventListener('click',()=>{if(on){dic.stop()}else{$('#q').dataset.f='';dic.start().catch(()=>{mic.hidden=true})}})}
+  if(m){setSync(true,'ao vivo');
+    watch('Shopify','list-orders',{first:50},'#shSrc',onOrders,300000);
+    watch('Windsor_ai','get_data',{connector:'facebook',fields:['campaign','spend','impressions','clicks'],date_preset:'last_7dT'},'#adSrc',onAds,900000);
+    watch('Windsor_ai','get_data',{connector:'instagram',fields:['date','reach'],date_preset:'last_7d'},'#igSrc',onIg,1800000);
+    watch('Windsor_ai','get_data',{connector:'instagram',fields:['followers_count']},'#igSrc',onFol,1800000);
+    try{const L=await m.listTools('Claude Code Remote');ccOk=!!L.servers?.[0]?.tools?.some(x=>x.name==='create_session')}catch(e){ccOk=false}
+    if(!ccOk)$('#run').title='Precisa do conector Claude Code Remote liberado';
+  }else setSync(false,'sem dados ao vivo');
+  if(d){const tm=setTimeout(()=>{$('#tkSrc').textContent='sem resposta do banco'},10000);
+    d.doc('estado/tarefas').onSnapshot(sn=>{clearTimeout(tm);S.tasks=sn?.data?.()||sn?.data||null;renderProjs();computeAlerts()},()=>{$('#tkSrc').textContent='banco indisponível'});
+    d.doc('briefing/hoje').onSnapshot(sn=>{const b=sn?.data?.()||sn?.data||null;const isNew=S.brief&&b&&b.data!==S.brief.data;S.brief=b;renderNews();computeAlerts();if(isNew)say('Chegou o briefing de hoje.')},()=>{});
+  }
+  computeAlerts();
+})();
+
+/* malha neural de fundo */
+const cv=$('#mesh'),x=cv.getContext('2d');let N=[],W,H,R=devicePixelRatio||1;
+function rs(){W=cv.width=innerWidth*R;H=cv.height=innerHeight*R;N=Array.from({length:Math.min(90,Math.floor(innerWidth/18))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.18*R,vy:(Math.random()-.5)*.18*R,p:Math.random()*6}))}
+function fr(){x.clearRect(0,0,W,H);const L=150*R;
+  for(const n of N){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;n.p+=.015}
+  for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const a=N[i],b=N[j],dd=Math.hypot(a.x-b.x,a.y-b.y);if(dd<L){x.strokeStyle=`rgba(98,228,242,${.16*(1-dd/L)})`;x.lineWidth=R;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+  for(const n of N){const f=.5+.5*Math.sin(n.p);x.fillStyle=f>.94?'rgba(244,166,188,.9)':`rgba(236,241,255,${.18+.25*f})`;x.beginPath();x.arc(n.x,n.y,(1.2+f*1.3)*R,0,7);x.fill()}
   requestAnimationFrame(fr)}
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){rs();addEventListener('resize',rs);fr()}
+})();
 </script>

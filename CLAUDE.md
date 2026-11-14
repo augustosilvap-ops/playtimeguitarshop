@@ -20,7 +20,9 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - **Canal infantil — Pequeninos do Reino:** briefing em `pequeninos/BRIEFING_MESTRE.txt` (original .docx ao lado). Universo Reino Feliz; Davi e Rafaella co-protagonistas; Theo (leão, sempre 4 patas) e Jasmin (cordeirinha). YouTube/TikTok @pequeninosdoreinoofc. EP01 não aprovado. Arquivos no Google Drive (pasta compartilhada pelo Augusto).
 
 ## Nexus (pasta `nexus/`)
-- Central de comando de todos os projetos, casa e escritório. Página única `nexus/index.html`, publicada como Artifact. Atualize os dados lá quando o status mudar.
+- Central de comando: `nexus/index.html`, publicada em https://claude.ai/artifact/6SYuGnMN62uD1UMRiFaZrm (republique o mesmo arquivo para manter o link).
+- Dados ao vivo pela capacidade `mcp` (Shopify list-orders; Windsor_ai get_data para Meta Ads e Instagram @ruahwear_). Chat via `sample`, voz via `tts`/`dictation`, execução via Claude Code Remote `create_session`.
+- Banco do artifact: `estado/tarefas` (tarefas por projeto: ruah, aug, ml, pq) e `briefing/hoje` (gravado todo dia às 6h38 pela tarefa agendada "Nexus briefing diário").
 
 ## Instagram pessoal @augustosilva.p (pasta `augusto/`)
 - Documento mestre: `augusto/sistema/BRIEFING_MESTRE.md`. Regras de produção: `augusto/sistema/SISTEMA_VISUAL_E_EDITORIAL.md`. Leia os dois antes de qualquer peça.
