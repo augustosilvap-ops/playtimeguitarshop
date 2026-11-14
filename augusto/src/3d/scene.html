@@ -1,0 +1,72 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="src/base.css">
+<style>
+html,body{margin:0;background:#000}
+#art{position:relative;width:1080px;height:1350px;overflow:hidden;background:#050B1F}
+#art.story{height:1920px}
+canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.ov{position:absolute;inset:0;pointer-events:none}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<div id="art"><div class="ov" id="ov"></div></div>
+<script type="module">
+import * as THREE from 'three';
+import {TTFLoader} from 'three/addons/loaders/TTFLoader.js';
+import {Font} from 'three/addons/loaders/FontLoader.js';
+import {TextGeometry} from 'three/addons/geometries/TextGeometry.js';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+
+const P=new URLSearchParams(location.search).get('p')||'02';
+const art=document.getElementById('art'); if(P==='03')art.classList.add('story');
+const W=1080,H=P==='03'?1920:1350;
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+r.setPixelRatio(1);r.setSize(W,H);r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.05;r.outputColorSpace=THREE.SRGBColorSpace;
+art.prepend(r.domElement);
+const scene=new THREE.Scene();
+scene.environment=new THREE.PMREMGenerator(r).fromScene(new RoomEnvironment(),0.04).texture;
+const cam=new THREE.PerspectiveCamera(30,W/H,.1,100);cam.position.set(0,0,19);
+
+/* fundo: textura com brilhos para o vidro refratar */
+function backdrop(spots){const c=document.createElement('canvas');c.width=1024;c.height=1280;const g=c.getContext('2d');
+  const lg=g.createLinearGradient(0,0,0,1280);lg.addColorStop(0,'#071436');lg.addColorStop(1,'#03081A');g.fillStyle=lg;g.fillRect(0,0,1024,1280);
+  for(const [x,y,rad,col,a] of spots){const rg=g.createRadialGradient(x,y,0,x,y,rad);rg.addColorStop(0,col.replace('A',a));rg.addColorStop(1,col.replace('A',0));g.fillStyle=rg;g.fillRect(0,0,1024,1280)}
+  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;
+  const m=new THREE.Mesh(new THREE.PlaneGeometry(26,26*1280/1024*(H/1350)),new THREE.MeshBasicMaterial({map:t}));m.position.z=-8;scene.add(m)}
+const glass=(o={})=>new THREE.MeshPhysicalMaterial({color:0xffffff,transmission:1,thickness:1.6,roughness:.06,ior:1.5,metalness:0,clearcoat:1,clearcoatRoughness:.05,
+  attenuationColor:new THREE.Color(o.tint||0x7fa6ff),attenuationDistance:o.att||2.4,iridescence:.35,iridescenceIOR:1.3,specularIntensity:1,envMapIntensity:1.6,...(o.extra||{})});
+const bar=(x,y,z,w,h,col,rot=0)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:col}));m.position.set(x,y,z);m.rotation.z=rot;scene.add(m)};
+scene.add(new THREE.AmbientLight(0x8fb0ff,.4));
+const key=new THREE.DirectionalLight(0xffffff,2.2);key.position.set(-4,6,8);scene.add(key);
+const rim=new THREE.PointLight(0x2f6bff,60,30);rim.position.set(5,2,-2);scene.add(rim);
+const rim2=new THREE.PointLight(0x9dbbff,30,30);rim2.position.set(-5,-4,3);scene.add(rim2);
+
+const ttf=await new TTFLoader().loadAsync('src/fonts/Manrope-800.ttf');const font=new Font(ttf);
+const txt=(s,size,depth=.5)=>{const g=new TextGeometry(s,{font,size,depth,curveSegments:24,bevelEnabled:true,bevelThickness:.09,bevelSize:.05,bevelSegments:8});g.center();return g};
+const ov=document.getElementById('ov');
+
+if(P==='02'){
+  backdrop([[760,330,520,'rgba(47,107,255,A)',.95],[900,700,300,'rgba(157,187,255,A)',.55],[150,1150,520,'rgba(27,58,140,A)',.8],[620,520,140,'rgba(255,255,255,A)',.35]]);
+  bar(3.4,2.4,-6,.12,9,0x9dbbff,.35);bar(1.6,-1,-6,.06,9,0x2f6bff,.35);
+  const five=new THREE.Mesh(txt('5',5.4,1.5),glass());five.position.set(2.0,-1.3,0);five.rotation.set(-.1,-.45,.05);scene.add(five);
+  const cards=[[-2.2,-3.0,-.6,.35,-.45,.18]];
+  for(const [x,y,z,a,b,c] of cards){const m=new THREE.Mesh(new RoundedBoxGeometry(2.6,1.5,.16,6,.18),glass({tint:0xbcd0ff,att:5}));m.position.set(x,y,z);m.rotation.set(a,b,c);scene.add(m)}
+  const coin=new THREE.Mesh(new THREE.CylinderGeometry(.55,.55,.14,64),glass({tint:0x5b8cff}));coin.position.set(-3.0,-.6,2.0);coin.rotation.set(1.2,.3,.4);scene.add(coin);
+  ov.innerHTML=`<div class="kicker" style="position:absolute;left:84px;top:96px;color:#fff">Precificação &amp; margem</div>
+   <h1 class="h-xl" style="position:absolute;left:84px;top:170px;width:560px;color:#fff;font-size:104px">custos que <span class="em">comem</span> seu lucro</h1>
+   <div style="position:absolute;left:84px;bottom:56px;font:500 22px var(--f-mono);color:#fff;opacity:.8">@augustosilva.p</div>
+   <div style="position:absolute;right:84px;bottom:52px;font:500 22px var(--f-mono);color:#fff;opacity:.85">arraste →</div>`;
+}
+if(P==='01'){
+  backdrop([[512,560,560,'rgba(47,107,255,A)',.9],[300,300,260,'rgba(157,187,255,A)',.5],[820,900,380,'rgba(27,58,140,A)',.9]]);
+  bar(-2.2,1,-6,.1,10,0x9dbbff,-.5);bar(2.6,-.5,-6,.05,10,0x2f6bff,-.5);
+  const pct=new THREE.Mesh(txt('%',3.7,1.3),glass());pct.position.set(.2,1.9,0);pct.rotation.set(-.1,-.35,.05);scene.add(pct);
+  const coins=[[-3.2,-.6,1.6,1.3,.4,.2,.6],[3.0,-1.3,1.0,1.1,-.5,.3,.45],[-2.6,4.6,-1,1.0,.6,.2,.38],[3.0,4.9,-1.5,1.2,-.3,.4,.3]];
+  for(const [x,y,z,a,b,c,s] of coins){const m=new THREE.Mesh(new THREE.CylinderGeometry(s,s,.13,64),glass({tint:0x9dbbff,att:3}));m.position.set(x,y,z);m.rotation.set(a,b,c);scene.add(m)}
+  ov.innerHTML=`<div class="kicker" style="position:absolute;left:84px;top:96px;color:#fff">Taxas &amp; comissões</div>
+   <h1 class="h-xl" style="position:absolute;left:84px;right:84px;bottom:150px;color:#fff;font-size:100px;text-align:left">Você perde lucro <span class="em" style="color:#CFE0FF">nas taxas?</span></h1>
+   <div style="position:absolute;left:84px;bottom:56px;font:500 22px var(--f-mono);color:#fff;opacity:.8">@augustosilva.p</div>`;
+}
+r.render(scene,cam);await document.fonts.ready;r.render(scene,cam);window.READY=true;
+</script></body></html>
