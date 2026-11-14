@@ -1,0 +1,85 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- v4 · capas com DESTAQUE: fundo sólido + título gigante + 1 elemento herói grande (≈45% da arte) -->
+<style>
+@font-face{font-family:I;font-weight:400;src:url('../fonts/InterPDF-400.ttf')}
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:A;src:url('../fonts/Anton.woff2')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#222}
+.art{position:relative;width:1080px;height:1350px;overflow:hidden;font-family:I,sans-serif;color:#fff;background:#08090E}
+.top{position:absolute;left:70px;right:70px;top:60px;display:flex;justify-content:space-between;align-items:center;font:600 28px I;z-index:9}
+.top .c{display:flex;align-items:center;gap:14px}.top .c i{width:50px;height:50px;border-radius:50%;background:#2F6BFF;display:grid;place-items:center;font-style:normal;font-size:24px;color:#fff}
+.top .n{padding:10px 18px;border-radius:99px;background:rgba(255,255,255,.14);font-size:24px}
+.swipe{position:absolute;right:70px;bottom:60px;padding:16px 30px;border-radius:99px;background:#fff;color:#2F6BFF;font:700 28px I;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.cn{font-family:A;text-transform:uppercase;line-height:.9}
+.hv{font-weight:800;letter-spacing:-.06em;line-height:.9}
+.blk{display:inline-block;background:#2F6BFF;color:#fff;padding:4px 26px}
+.tile{position:absolute;border-radius:28%;display:grid;place-items:center;box-shadow:0 30px 60px rgba(0,0,0,.5),inset 0 4px 0 rgba(255,255,255,.6);z-index:6}
+.tile svg{width:55%;height:55%}
+.tw{background:linear-gradient(160deg,#fff,#DCE5F7)}.tb{background:linear-gradient(160deg,#7FA3FF,#2F6BFF 50%,#1C47C9)}
+.tag{position:absolute;padding:22px 34px 22px 60px;border-radius:14px 28px 28px 14px;background:#fff;color:#0A0B10;font:800 52px I;letter-spacing:-.03em;box-shadow:0 30px 50px rgba(0,0,0,.35);white-space:nowrap}
+.tag:before{content:'';position:absolute;left:22px;top:50%;width:18px;height:18px;border-radius:50%;background:#1C47C9;transform:translateY(-50%)}
+.neg{color:#E5384A}
+/* caixa isométrica */
+.box{position:absolute;width:300px;height:300px;transform-style:preserve-3d}
+.box i{position:absolute;display:block}
+</style></head><body>
+<script>
+const IC={ai:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>',chat:'<path d="M4 5h16v11H9l-5 4z"/>',sheet:'<rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 10h16M4 15h16M10 4v16"/>',lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'};
+const ic=(k,c)=>`<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg>`;
+// caixa de papelão isométrica (SVG)
+const box=(x,y,s,lab)=>`<svg style="position:absolute;left:${x}px;top:${y}px;z-index:4;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5))" width="${s}" height="${s*1.05}" viewBox="0 0 200 210">
+ <path d="M100 10 L190 55 L100 100 L10 55 Z" fill="#E2B37A"/><path d="M10 55 L100 100 L100 205 L10 160 Z" fill="#C8955A"/><path d="M190 55 L100 100 L100 205 L190 160 Z" fill="#B07D45"/>
+ <path d="M55 32.5 L145 77.5" stroke="#B9874F" stroke-width="10"/><path d="M145 77.5 L145 182" stroke="#9A6A36" stroke-width="10" opacity=".6"/>${lab?`<text x="45" y="140" font-family="Inter" font-weight="800" font-size="22" fill="#5a3a18" transform="skewY(26.6) translate(0,-55)">${lab}</text>`:''}</svg>`;
+</script>
+
+<!-- C1 · IAs: celular gigante com chat + ícones orbitando -->
+<section class="art" data-out="entregas/testes/v4_destaque/C1_ias.png" style="background:radial-gradient(800px 700px at 50% 85%,rgba(47,107,255,.55),transparent 65%),#08090E">
+  <div class="top"><div class="c"><i>↗</i>@augustosilva.p</div><div class="n">1/7</div></div>
+  <div style="position:absolute;left:70px;right:70px;top:150px;z-index:7">
+    <div class="hv" style="font-size:120px">5 IAs que</div>
+    <div class="cn" style="font-size:150px;margin-top:8px;white-space:nowrap"><span class="blk">todo vendedor</span></div>
+    <div class="hv" style="font-size:100px;margin-top:12px">deveria usar</div>
+  </div>
+  <div style="position:absolute;left:270px;top:690px;width:540px;height:900px;border-radius:72px;background:#0A0B10;border:3px solid #2A2E40;padding:20px;transform:rotate(-6deg);box-shadow:0 50px 100px rgba(0,0,0,.6);z-index:4">
+    <div style="width:100%;height:100%;border-radius:54px;background:#F4F6FA;padding:56px 30px;color:#0A0B10">
+      <div style="font:700 26px I;text-align:center">Assistente de vendas</div>
+      <div style="margin-top:34px;margin-left:80px;padding:22px 26px;border-radius:26px 26px 6px 26px;background:#2F6BFF;color:#fff;font:600 28px/1.3 I">Calcule o preço do meu produto com 27% de taxas</div>
+      <div style="margin-top:22px;margin-right:60px;padding:22px 26px;border-radius:26px 26px 26px 6px;background:#fff;box-shadow:0 8px 20px rgba(10,20,60,.1);font:600 28px/1.3 I">Preço sugerido:<br><b style="color:#2F6BFF;font-size:48px;white-space:nowrap">R$ 83,62</b></div>
+    </div></div>
+  <div class="tile tb" style="left:110px;top:760px;width:200px;height:200px;transform:rotate(-14deg)"><script>document.write(ic('ai','#fff'))</script></div>
+  <div class="tile tw" style="right:90px;top:820px;width:180px;height:180px;transform:rotate(12deg)"><script>document.write(ic('chat','#2F6BFF'))</script></div>
+  <div class="tile tw" style="left:150px;top:1080px;width:150px;height:150px;transform:rotate(8deg)"><script>document.write(ic('sheet','#2F6BFF'))</script></div>
+  <div class="swipe">arraste pro lado →</div>
+</section>
+
+<!-- C2 · R$100: fundo azul, número gigante, etiquetas grandes voando -->
+<section class="art" data-out="entregas/testes/v4_destaque/C2_r100.png" style="background:radial-gradient(900px 800px at 50% 40%,#3D7BFF,#2456E6 60%,#1A3FB0)">
+  <div class="top"><div class="c"><i style="background:#fff;color:#2F6BFF">↗</i>@augustosilva.p</div><div class="n">1/7</div></div>
+  <div style="position:absolute;left:0;right:0;top:200px;text-align:center;z-index:5">
+    <div class="hv" style="font-size:84px;font-weight:400;letter-spacing:-.04em">Você vendeu</div>
+    <div class="cn" style="font-size:430px;line-height:.86;margin-top:10px;text-shadow:0 30px 60px rgba(10,20,80,.35)">R$100</div>
+    <div style="margin-top:26px"><span style="display:inline-block;background:#fff;color:#0A0B10;padding:14px 36px;font:800 80px I;letter-spacing:-.05em;transform:rotate(-2deg)">quanto <span style="color:#2F6BFF">sobrou?</span></span></div>
+  </div>
+  <div class="tag" style="left:40px;top:950px;transform:rotate(-12deg);z-index:6"><span class="neg">− R$ 45</span></div>
+  <div class="tag" style="right:30px;top:900px;transform:rotate(10deg);z-index:6"><span class="neg">− R$ 14</span></div>
+  <div class="tag" style="left:330px;top:1090px;transform:rotate(4deg);z-index:6"><span class="neg">− R$ 18</span></div>
+  <div class="swipe">arraste pro lado →</div>
+</section>
+
+<!-- C4 · Estoque: pilha de caixas grande + cadeado -->
+<section class="art" data-out="entregas/testes/v4_destaque/C4_estoque.png" style="background:radial-gradient(800px 600px at 50% 90%,rgba(47,107,255,.45),transparent 65%),#08090E">
+  <div class="top"><div class="c"><i>↗</i>@augustosilva.p</div><div class="n">1/7</div></div>
+  <div style="position:absolute;left:70px;right:70px;top:150px;z-index:7">
+    <div class="hv" style="font-size:110px">Estoque parado é</div>
+    <div class="cn" style="font-size:230px;margin-top:10px"><span class="blk">dinheiro</span></div>
+    <div class="hv" style="font-size:110px;margin-top:10px">preso.</div>
+  </div>
+  <script>document.write(box(140,820,340)+box(470,820,340)+box(305,590,340)+box(690,960,240))</script>
+  <div class="tile tw" style="left:440px;top:700px;width:210px;height:210px;transform:rotate(-6deg);z-index:8"><script>document.write(ic('lock','#0A0B10'))</script></div>
+  <div class="tag" style="left:60px;top:1170px;transform:rotate(-6deg);z-index:8">R$ 12.400 <span style="font:600 30px I;color:#7A7F8C">parados · exemplo</span></div>
+  <div class="swipe">arraste pro lado →</div>
+</section>
+</body></html>
