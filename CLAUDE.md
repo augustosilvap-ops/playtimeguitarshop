@@ -30,7 +30,7 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Paleta navy/azul elétrico/branco/preto; Glassmorfismo A alternando 4 direções (foto, clean, glass dashboard, conceitual). Gráfico só quando há análise; números sempre marcados como hipotéticos.
 - CTA: "Comente PALAVRA e eu te envio X no Direct" — nunca "siga para receber". Palavra-chave única por post (`augusto/editorial/calendario.py` valida).
 - Reels: filmagem real (Mixkit Free License, conferir licença por vídeo), 1080×1920, 30 fps, 7 s, texto fixo. Nada de GIF ou foto com zoom.
-- Manychat e agendamento: NÃO configurados. Nunca marcar como publicado/agendado sem confirmação.
+- Manychat: configurado pelo Augusto em 14/11 (links em `augusto/editorial/MANYCHAT_LINKS.md`). Agendamento: NÃO configurado. Nunca marcar como publicado/agendado sem confirmação.
 
 ## Skills de vídeo instaladas (14/11/2026)
 - `remotion:*` (vídeos em código), `video-shotcraft` (vídeo de produto cinematográfico), `watch-video` (analisar vídeos: quadros + transcrição). Usar nos Reels do @augustosilva.p, anúncios da RUAH e revisão do EP01 do Pequeninos.
