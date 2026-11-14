@@ -24,7 +24,7 @@ O sopro representa **vida, movimento, transformação e liberdade**. A marca esc
 | **Guia** | A RUAH | Faz a pergunta: *o que você carrega?*, e responde: *We carry the spirit* |
 | **Movimento** | Founders, Ruah Club, igrejas parceiras | Pertencimento: quem veste ajuda a escrever a história |
 
-**Fundadores:** *a completar.* A marca precisa dos nomes e do papel real de cada pessoa por trás dela (fundador, sócios, família) antes de contar essa parte.
+**Fundador:** Augusto, fundador único da RUAH. A história é contada em primeira pessoa quando fizer sentido ("eu me perguntei…"), mas o protagonista é sempre quem veste.
 
 ## 4. As estampas: cada uma carrega um capítulo
 | Estampa | Capítulo | Mensagem |

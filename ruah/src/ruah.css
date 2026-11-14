@@ -1,0 +1,14 @@
+@font-face{font-family:'Cinzel';font-weight:700;src:url('../fontes/cinzel700.ttf')}
+@font-face{font-family:'Cinzel';font-weight:900;src:url('../fontes/cinzel900.ttf')}
+@font-face{font-family:'CG';font-style:italic;font-weight:400;src:url('../fontes/cg400i.ttf')}
+@font-face{font-family:'CG';font-style:italic;font-weight:600;src:url('../fontes/cgi600.ttf')}
+@font-face{font-family:'CG';font-style:normal;font-weight:500;src:url('../fontes/cg500n.ttf')}
+:root{--preto:#080808;--bone:#EEEAE1;--bone2:#E3DED3;--cinza:#9A9893;--taupe:#B9A88C;--claro:#F3EFE8;--tx:#15120F}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#222}
+.art{position:relative;width:1080px;height:1350px;overflow:hidden}
+.cz{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.05}
+.it{font-family:'CG',serif;font-style:italic;font-weight:400;line-height:1.2}
+.lab{font-family:'Inter',sans-serif;font-size:20px;letter-spacing:.32em;text-transform:uppercase}
+.handle{position:absolute;left:84px;bottom:56px;font-family:'Inter',sans-serif;font-size:22px;letter-spacing:.12em}
+.cnt{position:absolute;right:84px;top:72px;font-family:'Inter',sans-serif;font-size:22px;letter-spacing:.16em}
+.logo{position:absolute;left:84px;top:64px;height:44px}
