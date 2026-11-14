@@ -1,0 +1,118 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Mostruário de animações (16 estilos, 2,8 s cada). Cada estilo pode virar cena de um Reel. -->
+<style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}
+.ab{position:absolute}
+.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.tag{position:absolute;left:60px;top:70px;padding:12px 22px;border-radius:99px;font:700 26px I;letter-spacing:.02em}
+</style></head><body><div id="v"></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-cl(x),3),eio=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},eb=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)},bounce=x=>{x=cl(x);const n=7.5625,d=2.75;if(x<1/d)return n*x*x;if(x<2/d)return n*(x-=1.5/d)*x+.75;if(x<2.5/d)return n*(x-=2.25/d)*x+.9375;return n*(x-=2.625/d)*x+.984375};
+const B='#2F6BFF',B2='#7FA3FF',N='#08090E',W='#F5F7FB',RD='#E5384A',G='#22A06B',Y='#FFC94D',INK='#0A0B10';
+const rnd=s=>()=>((s=Math.imul(s^s>>>15,2246822507)^Math.imul(s^s>>>13,3266489909),(s^=s>>>16)>>>0)/4294967296);
+const T=(y,size,col,txt,o=1)=>`<div class="t" style="top:${y}px;font-size:${size}px;color:${col};opacity:${o}">${txt}</div>`;
+const pop=(lt,t0,d=.35)=>eb((lt-t0)/d);
+const D=2.8;
+const C=[
+// 01 · personagem caixa
+['Personagem · Caixinha',W,lt=>{const j=Math.abs(Math.sin(lt*5))*60*(lt<1.6?1:0),blink=(lt%1.2)<.1?.1:1,sad=lt>1.6,sw=sad?eo((lt-1.6)/.4):0;
+ return T(260,110,INK,'Estoque')+T(380,150,B,'parado?',pop(lt,.2))+`<svg class="ab" style="left:290px;top:${760-j}px" width="500" height="560" viewBox="0 0 500 560">
+ <ellipse cx="250" cy="${540+j*.3}" rx="${170-j*.6}" ry="20" fill="rgba(0,0,0,.12)"/>
+ <path d="M60 170 L250 80 L440 170 L250 260 Z" fill="#E2B37A"/><path d="M60 170 L250 260 L250 520 L60 430 Z" fill="#C8955A"/><path d="M440 170 L250 260 L250 520 L440 430 Z" fill="#B07D45"/>
+ <ellipse cx="140" cy="${330}" rx="22" ry="${30*blink}" fill="#2a1a0c"/><ellipse cx="200" cy="${355}" rx="22" ry="${30*blink}" fill="#2a1a0c"/>
+ <path d="${sad?'M120 430 Q170 395 215 440':'M120 410 Q170 450 215 420'}" stroke="#2a1a0c" stroke-width="10" fill="none" stroke-linecap="round"/>
+ ${sad?`<path d="M90 ${260+sw*60} q14 22 0 34 q-14 -12 0 -34z" fill="#7FC4FF" opacity="${sw}"/>`:''}
+ </svg>`+(sad?T(1400,60,RD,'há 47 dias sem vender',eo((lt-1.7)/.3)):'')}],
+// 02 · robô IA
+['Personagem · Robô IA',N,lt=>{const bob=Math.sin(lt*4)*14,led=(Math.sin(lt*10)+1)/2,dots=[0,1,2].map(k=>`<circle cx="${70+k*40}" cy="45" r="11" fill="#fff" opacity="${.3+.7*((Math.sin(lt*8-k)+1)/2)}"/>`).join('');
+ return T(230,96,'#fff','A IA pode')+T(340,130,B2,'te ajudar.',pop(lt,.15))+`<svg class="ab" style="left:300px;top:${700+bob}px" width="480" height="560" viewBox="0 0 480 560">
+ <line x1="240" y1="40" x2="240" y2="100" stroke="#C9D6F5" stroke-width="10"/><circle cx="240" cy="34" r="20" fill="${led>.5?B2:B}"/>
+ <rect x="70" y="100" width="340" height="260" rx="80" fill="#E8EEFB"/><rect x="110" y="150" width="260" height="160" rx="60" fill="#0E1530"/>
+ <ellipse cx="190" cy="230" rx="24" ry="${lt%1.5<.12?3:26}" fill="${B2}"/><ellipse cx="290" cy="230" rx="24" ry="${lt%1.5<.12?3:26}" fill="${B2}"/>
+ <rect x="150" y="380" width="180" height="150" rx="40" fill="#C9D6F5"/><circle cx="240" cy="455" r="30" fill="${B}"/>
+ </svg><svg class="ab" style="left:640px;top:600px;opacity:${eo((lt-.5)/.2)}" width="220" height="90"><rect width="220" height="90" rx="40" fill="${B}"/>${dots}</svg>`
+ +(lt>1.4?`<div class="ab" style="left:120px;right:120px;top:1360px;padding:30px 36px;border-radius:30px 30px 30px 8px;background:#fff;font:700 40px/1.25 I;color:${INK};opacity:${eo((lt-1.4)/.3)};transform:translateY(${(1-eo((lt-1.4)/.3))*40}px)">Seu preço mínimo é <span style="color:${B}">R$ 66,44</span>.</div>`:'')}],
+// 03 · chuva de moedas
+['Moedas caindo · física',B,lt=>{const r=rnd(9);let h='';for(let k=0;k<22;k++){const x=60+r()*900,d=r()*1.2,sz=70+r()*50,f=cl((lt-d)/.9),y=-150+f*f*0+1500*bounce(f)-0;h+=`<div class="ab" style="left:${x}px;top:${Math.min(y,1500)}px;width:${sz}px;height:${sz}px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFE59A,#F5B700 60%,#C98A00);border:5px solid #FFD54D;display:grid;place-items:center;font:800 ${sz*.45}px I;color:#9A6A00;transform:rotateY(${(lt*360+k*40)%360}deg);opacity:${lt>d?1:0}">$</div>`}
+ const v=Math.round(1240*eo(lt/2.2));return h+T(320,110,'#fff','Seu caixa')+T(450,190,'#fff','R$ '+v.toLocaleString('pt-BR'))}],
+// 04 · barras + seta rompendo + confete
+['Gráfico · seta rompendo',W,lt=>{const bars=[.25,.4,.55,.75,1];let h='';bars.forEach((b,k)=>{const g=eo((lt-.1-k*.12)/.5);h+=`<div class="ab" style="left:${150+k*165}px;bottom:520px;width:120px;height:${700*b*g}px;border-radius:20px 20px 8px 8px;background:${k===4?B:'#C9D6F5'}"></div>`});
+ const q=eo((lt-.9)/.6),ax=150+q*820,ay=1400-q*1000;let cf='';if(lt>1.5){const r=rnd(3);for(let k=0;k<40;k++){const a=r()*Math.PI*2,sp=200+r()*500,tt=lt-1.5;cf+=`<div class="ab" style="left:${900+Math.cos(a)*sp*tt}px;top:${380+Math.sin(a)*sp*tt+500*tt*tt}px;width:18px;height:28px;background:${[B,Y,RD,G][k%4]};transform:rotate(${k*40+tt*600}deg);opacity:${1-tt/1.3}"></div>`}}
+ return T(180,120,INK,'Margem')+T(300,120,B,'subindo ↑')+h+`<svg class="ab" style="left:0;top:0" width="1080" height="1920"><path d="M150 1400 L${ax} ${ay}" stroke="${G}" stroke-width="18" stroke-linecap="round"/>${q>0?`<g transform="translate(${ax} ${ay}) rotate(-50)"><path d="M-10 -40 L50 0 L-10 40 Z" fill="${G}"/></g>`:''}</svg>`+cf}],
+// 05 · carrinho correndo
+['Ícone · carrinho em movimento',N,lt=>{const x=-300+eo(lt/1.3)*680+(lt>1.3?Math.sin((lt-1.3)*14)*10*(1-cl((lt-1.3)/.8)):0),wh=lt<1.3?lt*900:1170;const items=[['#FFC94D',0],['#7FA3FF',.5],['#E5384A',.9]].map(([c,d],k)=>{const q=bounce((lt-d)/.5);return lt<d?'':`<div class="ab" style="left:${80+k*55}px;top:${-260+q*230}px;width:60px;height:60px;border-radius:14px;background:${c}"></div>`}).join('');
+ return T(260,110,'#fff','Carrinho')+T(380,150,B2,'abandonado?')+`<div class="ab" style="left:0;right:0;top:1290px;height:6px;background:repeating-linear-gradient(90deg,#2a2e40 0 40px,transparent 40px 80px);background-position:${-lt*400}px 0"></div>
+ <div class="ab" style="left:${x}px;top:1000px;width:320px;height:300px">${items}<svg width="320" height="300" viewBox="0 0 320 300" style="position:absolute;inset:0"><path d="M10 30 h50 l40 170 h170 l35 -130 H80" fill="none" stroke="#fff" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+ ${[110,250].map(cx=>`<g transform="rotate(${wh} ${cx} 250)"><circle cx="${cx}" cy="250" r="28" fill="${B}"/><line x1="${cx-20}" y1="250" x2="${cx+20}" y2="250" stroke="#fff" stroke-width="6"/></g>`).join('')}</svg>
+ ${[0,1,2].map(k=>`<div class="ab" style="left:${-60-k*50}px;top:${120+k*40}px;width:${50-k*10}px;height:6px;border-radius:3px;background:rgba(255,255,255,${.5-k*.15})"></div>`).join('')}</div>`}],
+// 06 · cartão 3D
+['3D · cartão girando',B,lt=>{const ry=(1-eo(lt/1.2))*540,fl=lt>1.3;return T(240,110,'#fff','Parcelou')+T(360,150,'#fff','em 12x?')+
+ `<div class="ab" style="left:190px;top:780px;width:700px;height:440px;perspective:1600px"><div style="width:100%;height:100%;border-radius:36px;transform:rotateY(${ry}deg) rotateX(${Math.sin(lt*2)*8}deg);background:linear-gradient(135deg,#0E1530,#1C2A5A 60%,#2F6BFF);box-shadow:0 50px 90px rgba(0,0,0,.45);padding:50px;color:#fff;position:relative">
+ <div style="width:110px;height:80px;border-radius:16px;background:linear-gradient(135deg,#FFE59A,#C98A00)"></div><div style="font:500 44px M;margin-top:70px;letter-spacing:.12em">•••• •••• •••• 2026</div><div style="font:700 30px I;margin-top:30px;opacity:.8">VENDEDOR ONLINE</div></div></div>`
+ +(fl?`<div class="ab" style="left:0;right:0;top:1330px;text-align:center"><span style="display:inline-block;padding:22px 40px;border-radius:24px;background:#fff;color:${RD};font:800 56px I;transform:scale(${pop(lt,1.3)})">taxa de 4,99% ao mês</span></div>`:'')}],
+// 07 · notificações empilhando + badge
+['UI · notificações empilhando',W,lt=>{let h='';for(let k=0;k<5;k++){const t0=.15+k*.28,q=eo((lt-t0)/.25);if(lt<t0)continue;const sh=Math.min(k,4);h+=`<div class="ab" style="left:110px;right:110px;top:${600+k*150}px;transform:translateX(${(1-q)*-120}px) scale(${.9+.1*q});opacity:${q};padding:28px 32px;border-radius:30px;background:#fff;box-shadow:0 20px 40px rgba(10,20,60,.14);display:flex;gap:22px;align-items:center;font:700 34px I;color:${INK}"><span style="width:64px;height:64px;border-radius:18px;background:${B};display:grid;place-items:center;color:#fff;font-size:34px">✓</span>Venda aprovada · R$ ${[89,129,59,249,79][k]},90</div>`}
+ const n=Math.min(5,Math.max(0,Math.floor((lt-.15)/.28)+1));return T(240,110,INK,'Quando o preço')+T(360,140,B,'está certo…')+h+`<div class="ab" style="left:860px;top:540px;width:110px;height:110px;border-radius:50%;background:${RD};color:#fff;display:grid;place-items:center;font:800 56px I;transform:scale(${1+.25*Math.max(0,Math.sin(((lt-.15)%.28)/.28*Math.PI))})">${n}</div>`}],
+// 08 · lupa varrendo
+['Ícone · lupa encontrando erros',N,lt=>{const mx=200+Math.sin(lt*1.6)*300+300,my=900+Math.cos(lt*2.1)*220;const err=[[300,820,.6],[700,960,1.1],[420,1120,1.6]];
+ return T(230,110,'#fff','Seu anúncio')+T(350,140,B2,'tem erros?')+`<div class="ab" style="left:140px;right:140px;top:680px;height:600px;border-radius:30px;background:#141826;padding:40px"><div style="height:250px;border-radius:20px;background:#2A2E40"></div><div style="height:30px;width:80%;background:#2A2E40;border-radius:10px;margin-top:30px"></div><div style="height:30px;width:55%;background:#2A2E40;border-radius:10px;margin-top:20px"></div><div style="height:60px;width:40%;background:#2A2E40;border-radius:10px;margin-top:30px"></div></div>`
+ +`<svg class="ab" style="left:0;top:0" width="1080" height="1920">${err.map(([x,y,d])=>lt<d?'':`<circle cx="${x}" cy="${y}" r="70" fill="none" stroke="${RD}" stroke-width="8" stroke-dasharray="440" stroke-dashoffset="${440*(1-eo((lt-d)/.3))}"/>`).join('')}
+ <circle cx="${mx}" cy="${my}" r="110" fill="rgba(127,163,255,.15)" stroke="#fff" stroke-width="16"/><line x1="${mx+78}" y1="${my+78}" x2="${mx+170}" y2="${my+170}" stroke="#fff" stroke-width="30" stroke-linecap="round"/></svg>`}],
+// 09 · máquina de escrever + troca de palavra
+['Texto · digitando e corrigindo',W,lt=>{const a='Preço no ',w1='chute.',w2='cálculo.';const n=Math.floor(lt*16);let s=a.slice(0,n),tail='';const k=n-a.length;
+ if(k>0){if(lt<1.5)tail=w1.slice(0,k);else{const del=Math.max(0,w1.length-Math.floor((lt-1.5)*20));tail=del>0?`<span style="color:${RD};text-decoration:line-through">${w1.slice(0,del)}</span>`:`<span style="color:${B}">${w2.slice(0,Math.floor((lt-1.8)*16))}</span>`}}
+ return `<div class="ab" style="left:90px;right:90px;top:760px;font:800 120px/1.1 I;letter-spacing:-.05em;color:${INK}">${s}${tail}<span style="display:inline-block;width:10px;height:110px;background:${B};vertical-align:-10px;opacity:${(lt*3)%1<.5?1:0}"></span></div>`}],
+// 10 · medidor
+['Medidor · ponteiro do vermelho ao verde',N,lt=>{const q=eio((lt-.3)/1.6),ang=-120+240*q;const lab=q<.4?['PREJUÍZO',RD]:q<.7?['NO LIMITE',Y]:['LUCRO',G];
+ return T(230,110,'#fff','Sua margem')+T(350,140,B2,'está onde?')+`<svg class="ab" style="left:140px;top:700px" width="800" height="600" viewBox="0 0 800 600">
+ ${[[RD,-120,-40],[Y,-40,40],[G,40,120]].map(([c,a0,a1])=>{const p=(a)=>[400+300*Math.sin(a*Math.PI/180),420-300*Math.cos(a*Math.PI/180)];const [x0,y0]=p(a0),[x1,y1]=p(a1);return `<path d="M${x0} ${y0} A300 300 0 0 1 ${x1} ${y1}" stroke="${c}" stroke-width="56" fill="none"/>`}).join('')}
+ <g transform="rotate(${ang} 400 420)"><path d="M392 420 L400 160 L408 420 Z" fill="#fff"/></g><circle cx="400" cy="420" r="36" fill="#fff"/></svg>`+T(1250,100,lab[1],lab[0])}],
+// 11 · vendedor antes/depois
+['Personagem · vendedor antes e depois',W,lt=>{const hap=lt>1.4,q=eo((lt-1.4)/.4);const face=hap?'M-38 30 Q0 70 38 30':'M-38 50 Q0 15 38 50';const arm=hap?140*q:0;
+ return T(230,110,INK,hap?'Com a conta':'Vendendo')+T(350,140,hap?B:RD,hap?'certa.':'no prejuízo')+`<svg class="ab" style="left:290px;top:${700-(hap?Math.abs(Math.sin(lt*7))*40:0)}px" width="500" height="760" viewBox="-250 -120 500 760">
+ <circle cx="0" cy="40" r="110" fill="#F2C9A0"/><path d="M-110 20 Q-100 -90 0 -80 Q100 -90 110 20 Q60 -30 0 -20 Q-60 -30 -110 20z" fill="#3A2A1E"/>
+ <circle cx="-38" cy="30" r="12" fill="${INK}"/><circle cx="38" cy="30" r="12" fill="${INK}"/><path d="${face}" transform="translate(0,40)" stroke="${INK}" stroke-width="10" fill="none" stroke-linecap="round"/>
+ <rect x="-120" y="170" width="240" height="300" rx="60" fill="${hap?B:'#8C92A3'}"/>
+ <g transform="rotate(${arm} -110 200)"><rect x="-180" y="190" width="70" height="220" rx="35" fill="${hap?B:'#8C92A3'}"/></g><rect x="110" y="190" width="70" height="220" rx="35" fill="${hap?B:'#8C92A3'}"/>
+ ${hap?'':`<path d="M90 -60 q14 22 0 34 q-14 -12 0 -34z" fill="#7FC4FF"/>`}</svg>`}],
+// 12 · líquido enchendo
+['Líquido · porcentagem enchendo',B,lt=>{const lv=eo((lt-.2)/1.8),pc=Math.round(32*lv),wv=Math.sin(lt*6)*16;
+ return T(230,110,'#fff','Sua meta')+T(350,140,'#fff','de lucro')+`<div class="ab" style="left:290px;top:680px;width:500px;height:720px;border-radius:60px;border:10px solid #fff;overflow:hidden;background:rgba(255,255,255,.1)">
+ <svg style="position:absolute;left:-20px;bottom:0" width="540" height="${720*lv+40}" viewBox="0 0 540 ${720*lv+40}"><path d="M0 ${30+wv} Q135 ${-wv} 270 ${30+wv} T540 ${30+wv} V${720*lv+40} H0 Z" fill="#fff"/></svg>
+ <div style="position:absolute;left:0;right:0;top:300px;text-align:center;font:800 140px I;color:${lv>.5?B:'#fff'};mix-blend-mode:difference">${pc}%</div></div>`}],
+// 13 · caminhão no mapa
+['Rota · caminhão até o cliente',W,lt=>{const q=eio((lt-.2)/1.9);const P=t=>{const x=160+760*t,y=1350-500*t+Math.sin(t*Math.PI*2)*160;return[x,y]};const [x,y]=P(q);let d='';for(let k=0;k<=40;k++){const[a,b]=P(k/40);d+=(k?'L':'M')+a+' '+b}
+ return T(230,110,INK,'Frete grátis')+T(350,140,B,'tem dono.')+`<svg class="ab" style="left:0;top:0" width="1080" height="1920"><path d="${d}" stroke="#C9D6F5" stroke-width="10" stroke-dasharray="20 20" fill="none"/>
+ <g transform="translate(920 ${850-(q>.97?Math.abs(Math.sin(lt*8))*20:0)})"><path d="M0 0 C-60 -70 -40 -130 0 -130 C40 -130 60 -70 0 0z" fill="${RD}"/><circle cx="0" cy="-85" r="18" fill="#fff"/></g>
+ <g transform="translate(${x-70} ${y-70})"><rect x="0" y="20" width="90" height="70" rx="10" fill="${B}"/><path d="M90 40 h30 l20 25 v25 h-50z" fill="${N}"/><circle cx="25" cy="95" r="14" fill="${INK}"/><circle cx="110" cy="95" r="14" fill="${INK}"/></g></svg>`
+ +T(1520,70,RD,'− R$ 18 por pedido',eo((lt-1.8)/.3))}],
+// 14 · calendário virando
+['Calendário · páginas virando',N,lt=>{const days=[20,21,22,23,24,25,26,27],n=Math.min(days.length-1,Math.floor(lt*3.2)),fr=(lt*3.2)%1,last=n===days.length-1;
+ return T(230,110,'#fff','Faltam')+T(350,140,B2,`${27-days[n]} dias`)+`<div class="ab" style="left:240px;top:680px;width:600px;height:640px;perspective:1800px">
+ <div style="position:absolute;inset:0;border-radius:40px;background:#fff;overflow:hidden"><div style="height:140px;background:${last?RD:B};color:#fff;font:800 60px/140px I;text-align:center">NOVEMBRO</div><div style="font:800 330px/470px I;text-align:center;color:${INK};letter-spacing:-.06em">${days[n]}</div></div>
+ ${last?'':`<div style="position:absolute;left:0;right:0;top:140px;height:500px;border-radius:0 0 40px 40px;background:#F1F3F8;transform-origin:50% 0;transform:rotateX(${fr*-110}deg);font:800 330px/470px I;text-align:center;color:${INK};opacity:${1-fr*.6}">${days[Math.max(0,n)]}</div>`}</div>`
+ +(last?T(1420,110,RD,'BLACK FRIDAY',pop(lt,2.2)):'')}],
+// 15 · antes/depois com slider
+['Antes e depois · slider',W,lt=>{const sx=eio((lt-.4)/1.4)*820+130;
+ const card=(c,price,mg,mc)=>`<div style="position:absolute;inset:0;background:${c};display:flex;flex-direction:column;align-items:center;justify-content:center"><div style="font:500 30px M;letter-spacing:.14em;color:#8C92A3">PREÇO</div><div style="font:800 150px I;letter-spacing:-.05em;color:${INK}">${price}</div><div style="font:800 70px I;color:${mc}">margem ${mg}</div></div>`;
+ return T(230,110,INK,'Antes × depois')+T(350,120,B,'da planilha')+`<div class="ab" style="left:90px;right:90px;top:640px;height:760px;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(10,20,60,.16)">${card('#FDECEC','R$ 59,90','−4%',RD)}<div style="position:absolute;inset:0;clip-path:inset(0 0 0 ${sx-90}px)">${card('#EAF0FF','R$ 83,62','15%',B)}</div>
+ <div style="position:absolute;top:0;bottom:0;left:${sx-90-4}px;width:8px;background:#fff"></div><div style="position:absolute;top:340px;left:${sx-90-50}px;width:100px;height:100px;border-radius:50%;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.2);display:grid;place-items:center;font:800 40px I;color:${B}">⇆</div></div>`}],
+// 16 · donut explodindo
+['Gráfico · rosca se separando',B,lt=>{const sl=[[45,'#fff','produto'],[20,'#C9D6F5','taxas'],[18,'#9DBBFF','frete e anúncios'],[17,Y,'lucro']];let a=-90,h='';const q=eo((lt-.3)/.8),ex=eo((lt-1.3)/.4);
+ sl.forEach(([p,c,lb],k)=>{const a0=a,a1=a+360*p/100*q;a+=360*p/100;const mid=(a0+a1)/2*Math.PI/180,off=k===3?ex*60:0,ox=Math.cos(mid)*off,oy=Math.sin(mid)*off,r=260,arc=(t)=>[400+r*Math.cos(t*Math.PI/180),400+r*Math.sin(t*Math.PI/180)];const[x0,y0]=arc(a0),[x1,y1]=arc(a1);
+  if(a1-a0>.5)h+=`<path d="M${x0+ox} ${y0+oy} A${r} ${r} 0 ${a1-a0>180?1:0} 1 ${x1+ox} ${y1+oy}" stroke="${c}" stroke-width="110" fill="none"/>`});
+ return T(230,110,'#fff','Pra onde vai')+T(350,140,'#fff','seu dinheiro?')+`<svg class="ab" style="left:140px;top:660px" width="800" height="800">${h}</svg>`+T(1000,120,Y,'17%',ex)+T(1490,52,'#fff','sobra de lucro · exemplo',ex)}],
+];
+const DUR=C.length*D;
+window.R=function(t){const i=Math.min(C.length-1,Math.floor(t/D)),lt=t-i*D,c=C[i],dark=c[1]!==W;
+ const fade=lt<.12?lt/.12:lt>D-.12?(D-lt)/.12:1;
+ document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:${c[1]}"></div><div class="ab" style="inset:0;opacity:${fade}">${c[2](lt)}</div>
+ <div class="tag" style="background:${dark?'rgba(255,255,255,.14)':'rgba(10,11,16,.07)'};color:${dark?'#fff':INK}">Estilo ${String(i+1).padStart(2,'0')} · ${c[0]}</div>`};
+R(0);
+</script></body></html>
