@@ -38,3 +38,7 @@ Comente GARIMPO e eu te envio no Direct os 5 prompts prontos para copiar e colar
 
 ## Versão Cinética (14/11, formato aprovado)
 - Vídeo: `reel_cinetico_1080x1920_21s.mp4` · capa `capa_cinetico_1080x1920.png`. Substitui a versão com filmagem. Sem narração (entra quando a chave do ElevenLabs chegar).
+
+
+## Versão mini-aula (15/11, POSTAR ESTA)
+- `reel_aula_1080x1920_38s.mp4`: gancho → erro comum → por que dá errado → passo a passo com números → conferência/resultado → resumo → CTA.

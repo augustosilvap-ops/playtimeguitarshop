@@ -35,3 +35,7 @@ Comente ANUNCIO e eu te envio no Direct o checklist completo com um prompt para 
 - **Resposta pública ao comentário:** "Te mandei no Direct! 📩"
 - **Mensagem:** "Aqui está o checklist de anúncio, {primeiro nome}. Abra o anúncio que mais recebe visitas e confira os 5 pontos. No final tem um prompt para a IA revisar o título e a descrição."
 - **Botão:** "Abrir o checklist" → link do Drive (a criar).
+
+
+## Versão mini-aula (15/11, POSTAR ESTA)
+- `reel_aula_1080x1920_42s.mp4`: gancho → erro comum → por que dá errado → passo a passo com números → conferência/resultado → resumo → CTA.
