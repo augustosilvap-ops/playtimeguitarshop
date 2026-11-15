@@ -1,0 +1,25 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#000000',light:'#F1F3F8',accent:'radial-gradient(900px 900px at 30% 20%,#7FA3FF,#2F6BFF 50%,#1A3FB0)',anim:'left',trans:'zoom',deco:'rings',align:'left'};
+const SC=[
+[0.00,2.00,'dark',lt=>W(lt,[[0,'FOTO ESCURA',120],[.15,'VENDE MENOS.',120,BL2]],260)+magnifier(lt,{top:620,errors:[[330,770,.5],[720,900,.8],[460,1080,1.1]]}),'Vamos melhorar a foto do produto só com o celular.'],
+[2.00,4.40,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+table(lt,{top:560,t0:.3,step:.22,w1:'50%',rows:[['Foto à noite, luz amarela','cor errada',RD],['Fundo da casa','distrai',RD],['Produto cortado','não mostra o todo',RD]]}),'Erro comum: fotografar onde está, do jeito que dá.'],
+[4.40,6.80,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+typer(lt,{a:'Na busca, o cliente vê só a primeira foto, pequena. Se ela não for clara, ele passa direto.',size:46,speed:44,top:640,box:true}),'A primeira foto decide se o cliente clica ou não.'],
+[6.80,9.20,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'LUZ',100,BL2]],250)+phone3d(lt,{top:470,after:'perto da janela, de dia, sem flash',afterCol:BL,ta:1}),'Passo 1: luz natural de janela, de dia, sem flash.'],
+[9.20,11.60,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'FUNDO',100,BL]],250)+slider(lt,{top:480,h:800,t0:.3,dur:1.1,L:{bg:'#3A3D47',k:'ANTES',big:'bagunçado',sub:'distrai',c:'#FF8A95'},Rt:{bg:'#FFFFFF',k:'DEPOIS',big:'liso',sub:'cartolina branca',c:BL},bigSize:130}),'Passo 2: fundo liso. Uma cartolina branca atrás e embaixo resolve.'],
+[11.60,14.20,'dark',lt=>W(lt,[[0,'PASSO 3',150],[.15,'4 FOTOS',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'35%',rows:[['Frente','produto inteiro'],['Lateral','profundidade'],['Detalhe','material e acabamento'],['Em uso','tamanho real']]}),'Passo 3: frente, lateral, detalhe e em uso.'],
+[14.20,16.40,'accent',lt=>W(lt,[[0,'PASSO 4',150],[.15,'SEM FILTRO',100]],250)+strike(lt,.5,'FILTRO.',720,210),'Passo 4: sem filtro. A cor tem que ser a que o cliente vai receber.'],
+[16.40,19.00,'light',lt=>W(lt,[[0,'PASSO 5',150],[.15,'REGRAS DO CANAL',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'40%',rows:[['Primeira foto','fundo branco'],['Formato','quadrado (1:1)'],['Produto','ocupa boa parte da foto']]}),'Passo 5: confira as regras de foto do seu marketplace antes de subir.'],
+[19.00,21.40,'dark',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Luz de janela'],['2','Fundo liso'],['3','4 ângulos'],['4','Sem filtro'],['5','Regras do canal']]}),'Salve e refaça hoje a foto do seu produto principal.'],
+[21.40,23.40,'accent',lt=>cta(lt,'FOTOS'),'Comente FOTOS e receba o checklist de fotos.']];
+let DUR=23.40;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>
