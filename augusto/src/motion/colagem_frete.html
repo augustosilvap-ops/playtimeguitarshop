@@ -1,0 +1,71 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Reel em COLAGEM (inspiração: estilo editorial de papel) · mini-aula FRETE. Papel, recortes com borda rasgada, fita, retícula, marca-texto, traços à mão, stop-motion 12 fps. -->
+<style>
+@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:S;src:url('../fonts/InstrumentSerif-400.ttf')}@font-face{font-family:S;font-style:italic;src:url('../fonts/InstrumentSerif-400i.ttf')}
+@font-face{font-family:A;src:url('../fonts/Anton.woff2')}@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#EFE6D5}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}
+.paper{position:absolute;inset:0;background:radial-gradient(1200px 1600px at 50% 40%,#F4ECDD,#E6D9C2)}
+.grain{position:absolute;inset:-20px;opacity:.55;mix-blend-mode:multiply}
+.clip{position:absolute;background:#fff;padding:14px;box-shadow:0 18px 30px rgba(40,30,10,.28)}
+.clip .ph{width:100%;height:100%;background-size:cover;background-position:center;filter:grayscale(.35) contrast(1.15) sepia(.15)}
+.clip .ht{position:absolute;inset:14px;background-image:radial-gradient(rgba(0,0,0,.28) 1.2px,transparent 1.6px);background-size:7px 7px;mix-blend-mode:multiply}
+.tape{position:absolute;width:150px;height:46px;background:rgba(255,248,220,.72);box-shadow:0 2px 4px rgba(0,0,0,.1)}
+.strip{position:absolute;padding:14px 24px;background:#0A1430;color:#F4ECDD;font:500 34px M;letter-spacing:.04em;box-shadow:0 10px 18px rgba(0,0,0,.25)}
+.note{position:absolute;background:#FFFDF6;padding:44px 48px;box-shadow:0 16px 30px rgba(40,30,10,.25);font:600 52px/1.4 I;color:#14110D;background-image:repeating-linear-gradient(transparent 0 70px,rgba(47,107,255,.18) 70px 72px)}
+.hl{position:relative;display:inline-block}.hl b{position:absolute;left:-10px;right:-10px;bottom:4%;height:42%;background:rgba(255,214,0,.75);z-index:-1;transform-origin:0 50%}
+.big{position:absolute;font-family:A;text-transform:uppercase;line-height:.88;color:#0A1430}
+.ser{font-family:S;font-style:italic}
+.cap{position:absolute;left:70px;right:70px;bottom:170px;padding:22px 30px;background:#0A1430;color:#F4ECDD;font:600 42px/1.3 I;text-align:center;transform:rotate(-1deg);box-shadow:0 12px 20px rgba(0,0,0,.25)}
+.hand{position:absolute;inset:0;overflow:visible;pointer-events:none}
+</style></head><body><div id="v"></div>
+<svg width="0" height="0" style="position:absolute"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .28  0 0 0 0 .18  0 0 0 .45 0"/></filter>
+<filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-cl(x),3),eb=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const NV='#0A1430',BL='#2F6BFF',RD='#D7263D',PP='#F4ECDD';
+let FT=0; // tempo quantizado (stop-motion)
+const jit=(k,a=3)=>{const s=Math.sin(FT*97.3+k*13.7)*a;return s};
+// borda rasgada (polígono irregular, estável por semente)
+function torn(seed,w,h,amp=10){const r=x=>{const v=Math.sin(seed*12.9898+x*78.233)*43758.5453;return v-Math.floor(v)};let p=[];const n=26;
+ for(let i=0;i<=n;i++)p.push(`${(i/n*100).toFixed(1)}% ${(r(i)*amp/h*100).toFixed(2)}%`);for(let i=0;i<=n;i++)p.push(`${(100-r(i+40)*amp/w*100).toFixed(2)}% ${(i/n*100).toFixed(1)}%`);
+ for(let i=n;i>=0;i--)p.push(`${(i/n*100).toFixed(1)}% ${(100-r(i+80)*amp/h*100).toFixed(2)}%`);for(let i=n;i>=0;i--)p.push(`${(r(i+120)*amp/w*100).toFixed(2)}% ${(i/n*100).toFixed(1)}%`);return `polygon(${p.join(',')})`}
+// entra "pulando" de fora, em passos de stop-motion
+const inn=(lt,t0,d=.35)=>eo(Math.floor(cl((lt-t0)/d)*6)/6);
+function clip(lt,t0,{x,y,w,h,img,rot=0,seed=1,from=[0,-300],tape=true}){const q=inn(lt,t0);if(lt<t0)return'';
+ return `<div class="clip" style="left:${x+from[0]*(1-q)+jit(seed)}px;top:${y+from[1]*(1-q)+jit(seed+1)}px;width:${w}px;height:${h}px;transform:rotate(${rot+(1-q)*8}deg);clip-path:${torn(seed,w,h)}"><div class="ph" style="background-image:url('${img}')"></div><div class="ht"></div></div>`
+ +(tape?`<div class="tape" style="left:${x+w/2-75+jit(seed+2)}px;top:${y-18+from[1]*(1-q)}px;transform:rotate(${rot-6}deg)"></div>`:'')}
+function strip(lt,t0,{x,y,txt,rot=-2,bg=NV,col=PP,size=34}){const q=inn(lt,t0,.25);if(lt<t0)return'';const n=Math.floor(cl((lt-t0)/.6)*txt.length);
+ return `<div class="strip" style="left:${x+jit(7)}px;top:${y+jit(8)}px;transform:rotate(${rot}deg) scaleX(${q});transform-origin:0 50%;background:${bg};color:${col};font-size:${size}px;clip-path:${torn(t0*10+3,600,70,6)}">${txt.slice(0,n)}<span style="opacity:${(FT*2)%1<.5?1:0}">▌</span></div>`}
+function big(lt,t0,{x,y,txt,size=220,col=NV,rot=-2}){const q=inn(lt,t0,.3);if(lt<t0)return'';return `<div class="big" style="left:${x+jit(t0*9)}px;top:${y+jit(t0*9+1)}px;font-size:${size}px;color:${col};transform:rotate(${rot}deg) scale(${.7+.3*q});opacity:${q};transform-origin:0 50%">${txt}</div>`}
+function note(lt,t0,{x,y,w,html,rot=1.5}){const q=inn(lt,t0);if(lt<t0)return'';return `<div class="note" style="left:${x+jit(t0*7)}px;top:${y+(1-q)*400+jit(t0*7+1)}px;width:${w}px;transform:rotate(${rot}deg)">${html}</div>`+`<div class="tape" style="left:${x-30}px;top:${y-14+(1-q)*400}px;transform:rotate(-30deg)"></div>`}
+// traço à mão: círculo e seta (SVG com tremido)
+function circle(lt,t0,{cx,cy,rx,ry,col=RD,w=9}){if(lt<t0)return'';const q=cl((lt-t0)/.45),L=2*Math.PI*Math.max(rx,ry)*1.25;let d='';for(let i=0;i<=60;i++){const a=i/60*Math.PI*2.25-.4,jr=1+Math.sin(i*1.7)*.04;d+=(i?'L':'M')+(cx+Math.cos(a)*rx*jr).toFixed(1)+' '+(cy+Math.sin(a)*ry*jr).toFixed(1)}
+ return `<svg class="hand" width="1080" height="1920"><path d="${d}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-q)}" filter="url(#rough)"/></svg>`}
+function arrow(lt,t0,{x1,y1,x2,y2,col=RD,w=9,bend=80}){if(lt<t0)return'';const q=cl((lt-t0)/.4),mx=(x1+x2)/2-bend,my=(y1+y2)/2-bend,L=Math.hypot(x2-x1,y2-y1)*1.3,ang=Math.atan2(y2-my,x2-mx);
+ return `<svg class="hand" width="1080" height="1920"><path d="M${x1} ${y1} Q${mx} ${my} ${x2} ${y2}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-dasharray="${L}" stroke-dashoffset="${L*(1-q)}" filter="url(#rough)"/>${q>.95?`<path d="M${x2-38*Math.cos(ang-.5)} ${y2-38*Math.sin(ang-.5)} L${x2} ${y2} L${x2-38*Math.cos(ang+.5)} ${y2-38*Math.sin(ang+.5)}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`:''}</svg>`}
+const hl=(txt,lt,t0)=>`<span class="hl">${txt}<b style="transform:scaleX(${eo((lt-t0)/.4)})"></b></span>`;
+const stamp=(lt,t0,{x,y,txt,col=RD,rot=-12,size=96})=>lt<t0?'':`<div class="ab" style="left:${x}px;top:${y}px;border:10px solid ${col};color:${col};font:800 ${size}px/1 I;padding:10px 30px;border-radius:14px;transform:rotate(${rot}deg) scale(${1+(1-eo((lt-t0)/.15))*1.5});opacity:${cl((lt-t0)/.1)*.92};mix-blend-mode:multiply;filter:url(#rough)">${txt}</div>`;
+const IMG='../img/';
+const SC=[
+[0,3.4,lt=>clip(lt,.1,{x:500,y:860,w:500,h:560,img:IMG+'ph_frete.jpg',rot:4,seed:2,from:[400,0]})+big(lt,.3,{x:70,y:300,txt:'Frete',size:250})+big(lt,.55,{x:70,y:520,txt:'grátis',size:250,col:BL})+stamp(lt,1.2,{x:80,y:900,txt:'TEM DONO',size:110}),'Frete grátis para o cliente não é grátis para você.'],
+[3.4,7.2,lt=>`<div class="ser ab" style="left:80px;top:300px;font-size:120px;color:${NV};transform:rotate(-2deg)">Quem paga?</div>`+note(lt,.3,{x:90,y:520,w:900,html:`<div style="font:500 32px M;color:#6B6152">PEDIDO #1042 · EXEMPLO</div><div style="display:flex;justify-content:space-between;margin-top:20px">Frete do pedido<b>R$ 22,90</b></div><div style="display:flex;justify-content:space-between">Cliente paga<b>R$ 0,00</b></div><div style="display:flex;justify-content:space-between;font-size:48px;margin-top:10px">Você paga<b style="color:${RD}">R$ 22,90</b></div>`})+circle(lt,1.4,{cx:820,cy:880,rx:190,ry:70}),'No frete grátis, o valor do frete sai do seu bolso.'],
+[7.2,11.0,lt=>big(lt,.1,{x:70,y:280,txt:'Por que',size:200})+big(lt,.3,{x:70,y:460,txt:'pesa tanto?',size:150,col:BL})+clip(lt,.5,{x:70,y:720,w:400,h:500,img:IMG+'ph_comissao.jpg',rot:-5,seed:5,from:[-400,0]})+note(lt,.8,{x:480,y:700,w:540,rot:3,html:`Produto de<br><b>R$ 59,90</b><br>frete de<br><b>R$ 22,90</b><br>= <span style="color:${RD};font-size:64px">${hl('38%',lt,1.4)}</span> do preço`})+arrow(lt,1.6,{x1:300,y1:1330,x2:560,y2:1260}),'Em produto barato, o frete come boa parte do preço (exemplo).'],
+[11.0,14.8,lt=>strip(lt,.1,{x:70,y:300,txt:'PASSO 1 · PESE E MEÇA',size:40})+clip(lt,.4,{x:70,y:440,w:480,h:560,img:IMG+'ph_frete.jpg',rot:-3,seed:7,from:[0,400]})+note(lt,.8,{x:420,y:860,w:600,rot:4,html:`O frete usa o <b>${hl('maior',lt,1.4)}</b> entre:<br>• peso real<br>• peso cúbico<br><span style="font-size:30px;color:#6B6152">(medidas da caixa)</span>`}),'Passo 1: confira peso e medidas. A caixa grande pode encarecer o frete.'],
+[14.8,18.6,lt=>strip(lt,.1,{x:70,y:300,txt:'PASSO 2 · CAIXA MENOR',size:40})+`<div class="ab" style="left:${120+jit(31)}px;top:${600}px;width:460px;height:460px;background:#C8955A;border:6px solid #9A6A36;transform:rotate(-3deg);opacity:${inn(lt,.4)}"></div><div class="ab" style="left:${640+jit(32)}px;top:${760}px;width:260px;height:260px;background:#C8955A;border:6px solid #9A6A36;transform:rotate(4deg);opacity:${inn(lt,.8)}"></div>`+stamp(lt,1.1,{x:110,y:700,txt:'R$ 32',size:80,rot:-8})+stamp(lt,1.4,{x:640,y:840,txt:'R$ 19',size:70,rot:6,col:BL})+arrow(lt,1.2,{x1:520,y1:1100,x2:700,y2:1060,col:NV})+lbl2('valores ilustrativos',lt,1.6),'Passo 2: use a menor embalagem que protege bem o produto.'],
+[18.6,22.6,lt=>strip(lt,.1,{x:70,y:300,txt:'PASSO 3 · FRETE NO PREÇO',size:40})+note(lt,.4,{x:90,y:480,w:900,rot:-1,html:`<div style="font:500 30px M;color:#6B6152">A CONTA</div><div style="font-size:56px;margin-top:16px">Preço = <span style="color:${BL}">${hl('(custo + frete)',lt,1.3)}</span> ÷ (1 − taxas − margem)</div><div style="font-size:40px;margin-top:30px;color:#6B6152">Se oferecer frete grátis, o frete entra no custo.</div>`}),'Passo 3: se o frete é grátis, coloque ele no custo antes de precificar.'],
+[22.6,26.6,lt=>`<div class="ser ab" style="left:80px;top:280px;font-size:130px;color:${NV};transform:rotate(-2deg)">Resumo</div>`+note(lt,.3,{x:100,y:500,w:880,rot:1,html:`1. Frete grátis tem dono: você<br>2. Pese e meça a caixa<br>3. Use a menor embalagem segura<br>4. Coloque o frete no custo`})+stamp(lt,1.4,{x:600,y:1200,txt:'SALVE',col:BL,rot:-10,size:90}),'Salve este Reel e revise o frete dos seus produtos hoje.'],
+[26.6,29.6,lt=>big(lt,.1,{x:70,y:460,txt:'Comente',size:170})+big(lt,.35,{x:70,y:640,txt:'FRETE',size:300,col:BL})+strip(lt,.8,{x:80,y:1020,txt:'e receba o checklist no Direct',size:40,rot:-1})+arrow(lt,1.1,{x1:700,y1:1250,x2:540,y2:1450,col:RD}),'Leia a legenda ↓'],
+];
+function lbl2(t,lt,t0){return lt<t0?'':`<div class="ab" style="left:90px;top:1100px;font:500 28px M;color:#6B6152">${t}</div>`}
+const DUR=29.6;
+window.R=function(t){FT=Math.floor(t*12)/12;const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length-1:i],lt=FT-s[0];
+ const sh=Math.sin(FT*5)*2;
+ document.getElementById('v').innerHTML=`<div class="paper"></div><svg class="grain" width="1120" height="1960"><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+ <div class="ab" style="left:70px;top:150px;font:500 28px M;color:#6B6152;transform:rotate(-1deg)">@augustosilva.p · FRETE</div>
+ <div class="ab" style="inset:0;transform:translate(${sh}px,${-sh}px)">${s[3]?'':''}${s[2](lt)}</div>
+ <div class="cap" style="opacity:${cl(lt/.3)}">${s[3]}</div>
+ <div class="ab" style="left:70px;bottom:110px;height:8px;width:${940*t/DUR}px;background:${BL}"></div>`};
+R(0);
+</script></body></html>
