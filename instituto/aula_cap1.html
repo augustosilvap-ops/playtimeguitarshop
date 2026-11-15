@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Aula — Desenvolvendo meu talento</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=block" rel="stylesheet">
+<style>
+:root{--paper:#F7F2E8;--ink:#15181E;--soft:#5B5F68;--gold:#B4873A;--gold2:#E2C27F;--navy:#0F1B2D;--line:#E2D9C6;--card:#FFFDF8}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:var(--ink);font-size:10.4pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--paper);padding:20mm 18mm 18mm;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.serif{font-family:Fraunces,serif}
+.kicker{font-size:7.6pt;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+h2{font-family:Fraunces,serif;font-weight:700;font-size:25pt;line-height:1.08;letter-spacing:-.01em;margin:4mm 0 3mm}
+h3{font-family:Fraunces,serif;font-weight:700;font-size:13.5pt;margin:5mm 0 2mm}
+p{margin:0 0 2.6mm}
+.foot{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.verse{border-left:3px solid var(--gold);padding:2.5mm 0 2.5mm 5mm;margin:3mm 0 4mm;font-family:Fraunces,serif;font-style:italic;font-size:12pt;line-height:1.4}
+.verse b{display:block;font-family:Inter;font-style:normal;font-size:7.6pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:1.5mm}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4mm;padding:5mm 6mm;margin:3mm 0}
+.dyn{background:var(--navy);color:#EEE8DA;border-radius:4mm;padding:5mm 6mm;margin:4mm 0;position:relative}
+.dyn .tag{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;font-size:7.2pt;letter-spacing:.16em;text-transform:uppercase;padding:1mm 2.6mm;border-radius:10mm;margin-bottom:2.5mm}
+.dyn h4{font-family:Fraunces,serif;font-size:14pt;font-weight:700;color:#fff;margin-bottom:1.8mm}
+.dyn p,.dyn li{color:#D9D3C4}
+.dyn ol,.dyn ul{padding-left:5mm;margin:1mm 0 1mm}
+.say{background:#EFE4CC;border-radius:3mm;padding:3.5mm 5mm;margin:3mm 0;font-size:10pt}
+.say::before{content:"DIGA À TURMA";display:block;font-size:6.8pt;font-weight:800;letter-spacing:.18em;color:var(--gold);margin-bottom:1mm}
+.ask{display:flex;gap:3mm;align-items:flex-start;margin:2mm 0}
+.ask i{flex:none;width:6mm;height:6mm;border-radius:50%;background:var(--gold);color:#fff;font-style:normal;font-weight:800;font-size:8pt;display:flex;align-items:center;justify-content:center;margin-top:.4mm}
+.time{float:right;font-family:Inter;font-size:8pt;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:10mm;padding:1mm 3mm;margin-top:1mm}
+ul.clean{list-style:none}
+ul.clean li{padding-left:5mm;position:relative;margin-bottom:1.6mm}
+ul.clean li::before{content:"";position:absolute;left:0;top:2.1mm;width:2mm;height:2mm;border-radius:50%;background:var(--gold)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.coins{display:flex;gap:1.6mm;align-items:center}
+.coin{width:7mm;height:7mm;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6DFA6,#C99A46 55%,#9C722D);box-shadow:0 .6mm 0 #7d5a20}
+/* capa */
+.cover{background:var(--navy);color:#F3ECDD;padding:22mm 20mm}
+.cover .kicker{color:var(--gold2)}
+.cover h1{font-family:Fraunces,serif;font-weight:900;font-size:56pt;line-height:.95;letter-spacing:-.02em;margin:10mm 0 6mm;color:#fff}
+.cover h1 em{font-style:italic;font-weight:400;color:var(--gold2)}
+.cover .big1{position:absolute;right:-12mm;top:20mm;font-family:Fraunces,serif;font-weight:900;font-size:330pt;line-height:1;color:rgba(226,194,127,.09)}
+.cover .lead{font-size:12pt;max-width:120mm;color:#CFC8B8}
+.parable{position:absolute;left:20mm;right:20mm;bottom:40mm;display:flex;gap:9mm;align-items:flex-end}
+.parable .col{display:flex;flex-direction:column;gap:2mm}
+.parable .lbl{font-size:7.4pt;letter-spacing:.16em;text-transform:uppercase;color:#9FA7B5;margin-top:2mm}
+.parable .stack{display:flex;gap:1.6mm}
+.parable .hole{width:7mm;height:7mm;border-radius:50%;border:1.2px dashed #6F7A8C}
+.cover .meta{position:absolute;left:20mm;right:20mm;bottom:16mm;display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.15);padding-top:4mm;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:#9FA7B5}
+/* mapa */
+.map{display:grid;grid-template-columns:22mm 1fr 20mm;gap:0;margin-top:4mm}
+.map>div{padding:1.7mm 0;border-bottom:1px solid var(--line)}
+.map .n{font-family:Fraunces,serif;font-size:20pt;font-weight:900;color:var(--gold);line-height:1}
+.map .t b{display:block;font-size:11pt}
+.map .t span{color:var(--soft);font-size:9pt}
+.map .m{text-align:right;font-weight:700;font-size:10pt;color:var(--navy)}
+.ans{font-size:9.4pt}
+.ans .q{font-weight:700;margin-top:3mm}
+.ans .a{color:#3c4048;border-left:2px solid var(--gold2);padding-left:3mm;margin-top:1mm}
+</style></head><body>
+
+<!-- CAPA -->
+<section class="page cover">
+  <div class="big1">1</div>
+  <div class="kicker">Instituto de Vencedores · Módulo III · Formando o líder</div>
+  <h1>Desenvolvendo<br><em>meu talento</em></h1>
+  <p class="lead">Roteiro da aula do Capítulo 1 — resumo do conteúdo, dinâmicas para prender a atenção da turma, perguntas para discussão e gabarito do questionário.</p>
+  <div class="parable">
+    <div class="col"><div class="stack"><div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div></div><div class="lbl">5 talentos → 10</div></div>
+    <div class="col"><div class="stack"><div class="coin"></div><div class="coin"></div></div><div class="lbl">2 talentos → 4</div></div>
+    <div class="col"><div class="stack"><div class="hole"></div></div><div class="lbl">1 talento → enterrado</div></div>
+  </div>
+  <div class="meta"><span>Mateus 25:14-30</span><span>Duração sugerida · 60 min</span></div>
+</section>
+
+<!-- VISÃO GERAL -->
+<section class="page">
+  <div class="kicker">Antes de começar</div>
+  <h2>A aula em uma frase</h2>
+  <div class="verse" style="font-size:13pt">Deus me criou com propósito, me confiou talentos — e espera que eu os multiplique, sem medo, com disciplina e perseverança.</div>
+
+  <h3>Objetivos: ao final, cada aluno vai</h3>
+  <ul class="clean">
+    <li><b>Entender</b> que seus dons vêm de Deus e existem para as boas obras que Ele preparou (Ef 2:10; Tg 1:17).</li>
+    <li><b>Identificar</b> pelo menos um talento próprio, com a ajuda de outras pessoas.</li>
+    <li><b>Reconhecer</b> o que trava o crescimento: medo, comparação e uma imagem errada de Deus.</li>
+    <li><b>Sair com uma ação concreta</b> para "negociar" o seu talento nesta semana.</li>
+  </ul>
+
+  <h3>Mapa da aula</h3>
+  <div class="map">
+    <div class="n">01</div><div class="t"><b>Abertura — "O envelope"</b><span>Dinâmica de impacto + pergunta-gancho</span></div><div class="m">7 min</div>
+    <div class="n">02</div><div class="t"><b>Leitura encenada de Mt 25:14-30</b><span>5 voluntários dão voz à parábola</span></div><div class="m">6 min</div>
+    <div class="n">03</div><div class="t"><b>Deus te capacitou com talentos</b><span>Dinâmica "Espelho de elogios" em duplas</span></div><div class="m">12 min</div>
+    <div class="n">04</div><div class="t"><b>O que fazer com os talentos</b><span>Goleiro × atacante · lei da semeadura · disciplina</span></div><div class="m">12 min</div>
+    <div class="n">05</div><div class="t"><b>O que pode te impedir</b><span>Dinâmica "Enterre o medo"</span></div><div class="m">10 min</div>
+    <div class="n">06</div><div class="t"><b>Quiz relâmpago + desafio da semana</b><span>Revisão em pé + compromisso 1-1-1</span></div><div class="m">8 min</div>
+    <div class="n">07</div><div class="t"><b>Oração de envio</b><span>Consagração dos talentos</span></div><div class="m">5 min</div>
+  </div>
+
+  <div class="card" style="margin-top:4mm">
+    <div class="kicker" style="margin-bottom:2mm">Separe antes da aula</div>
+    <div class="grid2" style="font-size:9.6pt">
+      <ul class="clean"><li>Envelopes (1 por aluno) com uma "moeda" de papel dourado dentro — alguns com 5, outros com 2, outros com 1</li><li>Papéis pequenos e canetas</li></ul>
+      <ul class="clean"><li>Uma caixa ou cesto (será a "cova" da dinâmica do medo)</li><li>Versículos-chave no telão ou num cartaz (opcional)</li></ul>
+    </div>
+  </div>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>2</span></div>
+</section>
+
+<!-- ABERTURA + LEITURA -->
+<section class="page">
+  <div class="kicker">Bloco 01 <span class="time">7 min</span></div>
+  <h2>Abertura: "O envelope"</h2>
+  <div class="dyn">
+    <span class="tag">Dinâmica de abertura</span>
+    <h4>Cada um recebe algo que não é seu</h4>
+    <ol>
+      <li>Na entrada, entregue um envelope fechado para cada aluno. Diga apenas: <i>"Não abram ainda. Isso foi confiado a vocês."</i></li>
+      <li>No início da aula, peça para abrirem. Alguns terão 5 moedas, outros 2, outros 1.</li>
+      <li>Pergunte: <b>"Quem achou injusto? Quem ficou feliz? Quem já está pensando no que fazer com isso?"</b> Deixe 2 ou 3 pessoas falarem.</li>
+      <li>Feche: <i>"Guardem esse envelope. No fim da aula vocês vão decidir o que fazer com ele."</i></li>
+    </ol>
+  </div>
+  <div class="say">Imagine que alguém te entrega hoje um valor e diz: "Volto daqui a um tempo para ver o que você fez com isso". Você guardaria debaixo do colchão ou faria multiplicar? Hoje vamos ver que Deus já fez isso com cada um de nós.</div>
+
+  <div class="kicker" style="margin-top:7mm">Bloco 02 <span class="time">6 min</span></div>
+  <h2>Leitura encenada</h2>
+  <p>Em vez de ler sozinho, chame <b>5 voluntários</b>: narrador, o senhor e os três servos (de 5, de 2 e de 1 talento). Cada um lê a sua fala de <b>Mateus 25:14-30</b>. A turma participa: quando o senhor disser "Muito bem, servo bom e fiel", todos repetem juntos.</p>
+  <div class="card">
+    <div class="kicker" style="margin-bottom:1.5mm">Por que funciona</div>
+    <p style="margin:0">Quem participa lembra. A leitura encenada tira a turma do modo "plateia" logo nos primeiros minutos e já deixa a parábola viva na cabeça de todos para o resto da aula.</p>
+  </div>
+  <div class="verse">Vocês foram comprados por um alto preço. Portanto, glorifiquem a Deus com o seu próprio corpo.<b>1 Coríntios 6:20</b></div>
+  <p>Ponte para o conteúdo: nossa vida foi comprada pelo sangue de Jesus. Não existe razão maior para glorificar a Deus — e nós O glorificamos quando O <b>servimos</b>. Mas para servir bem, é preciso saber <b>com o quê</b> Deus nos equipou.</p>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>3</span></div>
+</section>
+
+<!-- BLOCO 3 -->
+<section class="page">
+  <div class="kicker">Bloco 03 <span class="time">12 min</span></div>
+  <h2>Deus te capacitou com talentos</h2>
+  <div class="verse">Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos.<b>Efésios 2:10</b></div>
+  <h3>Ensine</h3>
+  <ul class="clean">
+    <li><b>Você foi criado com propósito.</b> Existem "boas obras" esperando por você — isso dá à sua vida uma missão a cumprir.</li>
+    <li><b>Os bens não eram dos servos, eram do senhor.</b> Seus dons também não são seus: Deus os emprestou a você (Tg 1:17).</li>
+    <li><b>Deus não chama sem antes capacitar.</b> As habilidades foram distribuídas quando Ele te criou — cantar, lidar com números, liderar, cuidar, ensinar…</li>
+    <li><b>Cada um recebeu uma medida diferente</b> (5, 2, 1), de acordo com o propósito de cada um (Rm 12:6). Diferente não é inferior.</li>
+  </ul>
+  <div class="verse">Toda boa dádiva e todo dom perfeito vêm do alto, descendo do Pai das luzes, em quem não há mudança nem sombra de variação.<b>Tiago 1:17</b></div>
+
+  <div class="dyn">
+    <span class="tag">Dinâmica · 5 min</span>
+    <h4>Espelho de elogios</h4>
+    <p>A apostila diz: uma boa forma de descobrir seus pontos fortes é <b>ouvir as pessoas</b>. Então vamos fazer isso agora.</p>
+    <ol>
+      <li>Forme duplas (de preferência com quem a pessoa conhece um pouco).</li>
+      <li>Em 1 minuto cada, um diz ao outro: <b>"Uma coisa que você faz muito bem é…"</b> e <b>"As pessoas te procuram quando precisam de…"</b>.</li>
+      <li>Quem ouviu anota no papel. Depois inverte.</li>
+      <li>Peça 2 ou 3 voluntários: <i>"Você já sabia disso sobre você?"</i></li>
+    </ol>
+  </div>
+  <h3>Perguntas para a turma</h3>
+  <div class="ask"><i>?</i><div>Em que área as pessoas costumam te elogiar?</div></div>
+  <div class="ask"><i>?</i><div>O que você faz bem, com gosto, que chama atenção das pessoas?</div></div>
+  <div class="ask"><i>?</i><div>Que dom você acha que Deus colocou em você e que ainda não percebeu?</div></div>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>4</span></div>
+</section>
+
+<!-- BLOCO 4 -->
+<section class="page">
+  <div class="kicker">Bloco 04 <span class="time">12 min</span></div>
+  <h2>O que fazer com os talentos que Deus te deu</h2>
+  <div class="say">Quando você ganha um presente que queria muito, o que faz? Sai usando e mostrando para todo mundo. O servo de 5 talentos fez assim: saiu <b>imediatamente</b> para negociá-los (Mt 25:16).</div>
+  <div class="verse">Cada um administre aos outros o dom como o recebeu, como bons despenseiros da multiforme graça de Deus.<b>1 Pedro 4:10</b></div>
+
+  <div class="dyn">
+    <span class="tag">Interação rápida · 3 min</span>
+    <h4>Goleiro ou atacante?</h4>
+    <p>Pergunte: <b>"O que acontece se o melhor atacante do time resolver jogar no gol?"</b> Deixe a turma responder. Depois: <i>"E por que o goleiro treina diferente do atacante?"</i></p>
+    <p style="margin:0"><b>A lição:</b> muita gente passa a vida tentando consertar o lado fraco. O caminho é descobrir em que você é bom e <b>investir para ser o melhor</b> nisso.</p>
+  </div>
+
+  <h3>Três verdades para fixar</h3>
+  <div class="grid2" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="card"><div class="coins" style="margin-bottom:2mm"><div class="coin"></div></div><b>Lei da semeadura</b><p style="font-size:9.2pt;margin-top:1mm">Quem investe o talento ganha outros. O de 5 ganhou 5; o de 2 ganhou 2. Funciona como um investimento.</p></div>
+    <div class="card"><div class="coins" style="margin-bottom:2mm"><div class="coin"></div><div class="coin"></div></div><b>Disciplina</b><p style="font-size:9.2pt;margin-top:1mm">Ter foco no que se quer alcançar. O atleta que para de treinar perde o condicionamento.</p></div>
+    <div class="card"><div class="coins" style="margin-bottom:2mm"><div class="coin"></div><div class="coin"></div><div class="coin"></div></div><b>Perseverança</b><p style="font-size:9.2pt;margin-top:1mm">O sucesso é o resultado de perseverar em aperfeiçoar os dons que Deus te deu.</p></div>
+  </div>
+  <p style="margin-top:3mm">Não se contente em ser bom se pode ser o melhor. Se seu dom é ajudar pessoas, ajude cada vez mais. Se é se relacionar, invista nisso. Se Deus te chamou para prosperar, expanda para investir ainda mais na obra.</p>
+  <div class="verse">Portanto, meus amados irmãos, mantenham-se firmes, e que nada os abale. Sejam sempre dedicados à obra do Senhor, pois vocês sabem que, no Senhor, o trabalho de vocês não será inútil.<b>1 Coríntios 15:58 · ver também Mt 10:22</b></div>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>5</span></div>
+</section>
+
+<!-- BLOCO 5 -->
+<section class="page">
+  <div class="kicker">Bloco 05 <span class="time">10 min</span></div>
+  <h2>O que pode te impedir de desenvolver seus talentos</h2>
+  <p>O terceiro servo teve medo e preferiu <b>esconder</b> o talento (Mt 25:24-25). Ele não entendeu que o talento era para ser usado. A apostila aponta três travas:</p>
+  <div class="grid2" style="grid-template-columns:1fr 1fr 1fr;margin-top:3mm">
+    <div class="card"><div class="serif" style="font-size:22pt;font-weight:900;color:var(--gold);line-height:1">1</div><b>O medo</b><p style="font-size:9.2pt;margin-top:1mm">Medo de tentar e perder. Quais medos te impedem de começar?</p></div>
+    <div class="card"><div class="serif" style="font-size:22pt;font-weight:900;color:var(--gold);line-height:1">2</div><b>A comparação</b><p style="font-size:9.2pt;margin-top:1mm">Olhar as bênçãos dos outros e reclamar do que não recebeu. Gera pessimismo e crítica — e trava a multiplicação.</p></div>
+    <div class="card"><div class="serif" style="font-size:22pt;font-weight:900;color:var(--gold);line-height:1">3</div><b>Não conhecer Deus de fato</b><p style="font-size:9.2pt;margin-top:1mm">O servo achava que conhecia o senhor (Mt 25:24). Quem vê Deus só como juiz punitivo tem medo de errar. Ele é Pai: corrige com amor e ensina a continuar.</p></div>
+  </div>
+  <div class="say">Algumas experiências dolorosas do seu passado podem ter te deixado mais forte. Quantas delas podem virar ferramentas para vencer as crises de hoje?</div>
+  <div class="verse">Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.<b>Provérbios 3:6</b></div>
+
+  <div class="dyn">
+    <span class="tag">Dinâmica · 5 min</span>
+    <h4>Enterre o medo — não o talento</h4>
+    <ol>
+      <li>Cada aluno escreve num papel, sem se identificar, <b>o medo</b> que o impede de usar seu dom ("medo de errar", "de me expor", "de não ser bom o bastante"…).</li>
+      <li>Todos dobram e colocam o papel na caixa — a "cova". Diga: <i>"O servo mau enterrou o talento. Hoje nós vamos enterrar o medo."</i></li>
+      <li>Ore pela caixa toda em voz alta, entregando esses medos a Deus.</li>
+    </ol>
+  </div>
+  <p><b>A consequência de não investir:</b> corremos o risco de perder o que recebemos — "tirem dele o talento" (Mt 25:28).</p>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>6</span></div>
+</section>
+
+<!-- BLOCO 6/7 -->
+<section class="page">
+  <div class="kicker">Bloco 06 <span class="time">8 min</span></div>
+  <h2>Quiz relâmpago + desafio da semana</h2>
+  <div class="dyn">
+    <span class="tag">Quiz em pé · Verdadeiro ou falso</span>
+    <h4>Quem acha verdadeiro, fica em pé</h4>
+    <ol>
+      <li>Os talentos pertencem a quem os recebeu. <b style="color:var(--gold2)">Falso — são do Senhor (Tg 1:17).</b></li>
+      <li>Deus distribuiu a mesma quantidade para todos. <b style="color:var(--gold2)">Falso — 5, 2 e 1 (Rm 12:6).</b></li>
+      <li>O melhor caminho é investir no que você já faz bem. <b style="color:var(--gold2)">Verdadeiro.</b></li>
+      <li>O terceiro servo perdeu o talento por preguiça apenas. <b style="color:var(--gold2)">Falso — o texto destaca o medo e uma visão errada do senhor.</b></li>
+      <li>Disciplina é ter foco no que se quer alcançar. <b style="color:var(--gold2)">Verdadeiro.</b></li>
+    </ol>
+  </div>
+  <h3>Volte ao envelope</h3>
+  <p>Peça para todos pegarem o envelope do início. No verso da moeda, cada um escreve o <b>Desafio 1-1-1</b>:</p>
+  <div class="grid2" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="card"><div class="serif" style="font-size:20pt;font-weight:900;color:var(--gold)">1</div><b>talento</b><p style="font-size:9.2pt;margin-top:1mm">que eu vou investir esta semana</p></div>
+    <div class="card"><div class="serif" style="font-size:20pt;font-weight:900;color:var(--gold)">1</div><b>ação concreta</b><p style="font-size:9.2pt;margin-top:1mm">com dia marcado (ex.: "quinta, ajudar no louvor da célula")</p></div>
+    <div class="card"><div class="serif" style="font-size:20pt;font-weight:900;color:var(--gold)">1</div><b>pessoa</b><p style="font-size:9.2pt;margin-top:1mm">que vou servir com esse dom</p></div>
+  </div>
+  <p style="margin-top:2mm">Na próxima aula, abra os primeiros 5 minutos para quem quiser contar como "negociou" seu talento.</p>
+
+  <div class="kicker" style="margin-top:6mm">Bloco 07 <span class="time">5 min</span></div>
+  <h2 style="font-size:20pt">Oração de envio</h2>
+  <div class="say" style="font-size:10.5pt">Peça para todos segurarem a moeda na mão aberta. <i>"Senhor, tudo o que temos veio de Ti. Obrigado pelos dons que colocaste em cada um. Tira de nós o medo e a comparação. Dá-nos disciplina e perseverança para multiplicar o que confiaste a nós, para a Tua glória. Que um dia possamos ouvir: 'Muito bem, servo bom e fiel'. Em nome de Jesus, amém."</i></div>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>7</span></div>
+</section>
+
+<!-- GABARITO -->
+<section class="page">
+  <div class="kicker">Para o professor</div>
+  <h2>Gabarito do questionário</h2>
+  <p style="color:var(--soft)">Respostas baseadas no texto da apostila (Módulo III, Capítulo 1).</p>
+  <div class="ans">
+    <div class="q">1. Complete Efésios 2:10</div>
+    <div class="a">"Porque somos <b>criação</b> de <b>Deus</b> realizada em <b>Cristo Jesus</b> para fazermos <b>boas obras</b>, as quais Deus preparou antes para nós as praticarmos."</div>
+    <div class="q">2. Qual foi o propósito de Deus em criar o homem?</div>
+    <div class="a">Deus nos criou com um propósito: que façamos diferença no meio em que vivemos, praticando as boas obras que Ele preparou, e assim O glorifiquemos servindo-O. Nossa vida tem uma missão a ser cumprida.</div>
+    <div class="q">3. Qual a melhor maneira de identificarmos em que somos bons e quais são os nossos pontos fortes?</div>
+    <div class="a">Ouvindo as pessoas: em que área elas nos elogiam, o que fazemos bem que chama a atenção delas e o que fazemos com gosto. E pedindo a ajuda do Espírito Santo para identificar, dia a dia, nossos pontos fortes.</div>
+    <div class="q">4. O que é preciso para desenvolver os talentos dados por Deus?</div>
+    <div class="a">Exercitá-los e investi-los (não se contentar em ser bom se pode ser o melhor), com disciplina e perseverança. Quando usamos as habilidades, elas se aperfeiçoam e geram outros dons — a lei da semeadura.</div>
+    <div class="q">5. Defina o que é disciplina.</div>
+    <div class="a">Disciplina é ter foco, concentração naquilo que se quer alcançar: não se desviar nem deixar de aplicar suas habilidades e dons.</div>
+    <div class="q">6. O que pode nos impedir de desenvolver os nossos talentos?</div>
+    <div class="a">O medo de tentar e perder; a frustração e a comparação com as bênçãos dos outros (pessimismo e crítica); não reconhecer os talentos recebidos; e não conhecer de fato quem Deus é — vê-Lo só como um ser punitivo, e não como Pai que corrige com amor.</div>
+    <div class="q">7. Qual é a consequência de não investir nem desenvolver as nossas habilidades?</div>
+    <div class="a">Corremos o risco de perdê-las, como o servo que teve o talento tirado (Mt 25:28).</div>
+  </div>
+  <div class="card" style="margin-top:6mm">
+    <div class="kicker" style="margin-bottom:1.5mm">Dica de condução</div>
+    <p style="margin:0;font-size:9.6pt">Se o tempo apertar, corte a leitura encenada para 3 voluntários (narrador faz o senhor) e deixe o questionário como tarefa de casa — o material do aluno já traz as perguntas e o plano de estudo de 7 dias.</p>
+  </div>
+  <div class="foot"><span>Instituto de Vencedores · Capítulo 1</span><span>8</span></div>
+</section>
+</body></html>
