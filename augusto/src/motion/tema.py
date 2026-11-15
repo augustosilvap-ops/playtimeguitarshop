@@ -45,7 +45,7 @@ R = r'''window.R=function(t){
  if(TEMA.deco==='rings')deco=`<svg style="position:absolute;right:-380px;top:-300px" width="1100" height="1100" viewBox="0 0 1100 1100" fill="none">${[0,1,2,3,4].map(k=>`<circle cx="550" cy="550" r="${180+k*90}" stroke="${ln}${.16-k*.025})" stroke-width="3" stroke-dasharray="${k%2?'14 18':'none'}" transform="rotate(${t*(k%2?20:-12)} 550 550)"/>`).join('')}</svg>`;
  if(TEMA.deco==='scan')deco=`<div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,${ln}.04) 0 2px,transparent 2px 6px)"></div><div style="position:absolute;left:0;right:0;height:260px;top:${((t*520)%2400)-260}px;background:linear-gradient(180deg,transparent,${ln}.07),transparent)"></div>`;
  document.getElementById('v').innerHTML=`<div style="position:absolute;inset:0;background:${bg}"></div>${deco}
-  <div style="position:absolute;inset:0;transform:${wrapT};transform-origin:30% 50%">${s[3](lt)}</div>${over}
+  <div style="position:absolute;inset:0;transform:${wrapT};transform-origin:30% 50%">${s[3](lt/1.25)}</div>${over}
   <div class="chip" style="color:${fg}"><i style="background:${blue?'#fff':BLUE};color:${blue?BLUE:'#fff'}">↗</i>@augustosilva.p</div>
   <div class="cap" style="color:${fg};opacity:.9">${s[4]}</div>
   <div class="bar" style="width:912px;background:${dark||blue?'rgba(255,255,255,.2)':'rgba(10,11,16,.12)'}"></div>

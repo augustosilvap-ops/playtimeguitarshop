@@ -16,6 +16,6 @@ const SC=[
 [5.7,7.4,'dark',lt=>W(lt,[[0,'ANTES ×',110],[.15,'DEPOIS',110,BL2]],260)+slider(lt,{top:560,h:760,t0:.25,dur:1.1,L:{bg:'#FDECEC',k:'SEM IA · EXEMPLO',big:'6 h',sub:'para responder',c:RD},Rt:{bg:'#EAF0FF',k:'COM IA · EXEMPLO',big:'5 min',sub:'para responder',c:BL},bigSize:200}),'de horas para minutos.'],
 [7.4,9.0,'light',lt=>W(lt,[[0,'AVALIAÇÃO',120],[.15,'SOBE.',120,BL]],260)+liquid(lt,{pct:4.9,dec:1,suffix:'★',top:600,t0:.15,dur:1.2,fill:BL})+lbl('Exemplo hipotético',1360,'#7A7F8C'),'e a avaliação acompanha.'],
 [9.0,10.9,'accent',lt=>cta(lt,'ATENDE'),'e receba os prompts de atendimento no Direct.']];
-const DUR=10.9;
+let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

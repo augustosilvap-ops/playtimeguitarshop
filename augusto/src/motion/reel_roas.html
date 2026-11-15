@@ -16,6 +16,6 @@ const SC=[
 [5.5,7.4,'light',lt=>lbl('A conta',640,'#7A7F8C',eo(lt/.2))+typer(lt,{a:'ROAS mínimo = ',wrong:'chute',right:'1 ÷ margem',size:100,top:720,t1:.75,speed:26}),'use a conta, não o chute.'],
 [7.4,9.0,'dark',lt=>W(lt,[[0,'ANÚNCIO',140],[.15,'COM LUCRO.',140,BL2]],280)+bars(lt,{label:'Lucro com anúncio · exemplo',hi:GR,lo:'rgba(255,255,255,.18)',t0:.1}),'anúncio que paga a conta.'],
 [9.0,10.9,'accent',lt=>cta(lt,'ROAS'),'e receba a calculadora de ROAS no Direct.']];
-const DUR=10.9;
+let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

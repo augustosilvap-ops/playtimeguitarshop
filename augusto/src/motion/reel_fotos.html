@@ -16,6 +16,6 @@ const SC=[
 [5.6,7.3,'dark',lt=>W(lt,[[0,'ESQUEÇA O',130]],560)+strike(lt,.6,'FILTRO.',780,210),'nada de filtro pesado.'],
 [7.3,9.0,'light',lt=>W(lt,[[0,'MAIS',130],[.15,'CLIQUES ↑',130,BL]],280)+bars(lt,{label:'Cliques · exemplo',t0:.1}),'foto boa traz mais cliques.'],
 [9.0,10.9,'accent',lt=>cta(lt,'FOTOS'),'e receba o checklist de fotos no Direct.']];
-const DUR=10.9;
+let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

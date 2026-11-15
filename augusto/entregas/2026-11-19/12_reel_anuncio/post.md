@@ -1,9 +1,9 @@
-# 12 · Reel 11s (formato Cinético) — Muita visita e nenhuma venda?
+# 12 · Reel 18s (formato Cinético) — Muita visita e nenhuma venda?
 
 | Campo | Definição |
 |---|---|
 | Data proposta | Ter 17/11/2026 · 20h |
-| Formato | Reel 9:16 · `reel_1080x1920_11s.mp4` (sem música e sem narração) + `capa_1080x1920.png` |
+| Formato | Reel 9:16 · `reel_1080x1920_18s.mp4` (sem música e sem narração) + `capa_1080x1920.png` |
 | Roteiro | muita visita e nenhuma venda? → o problema pode estar no anúncio (foto, título, frete) → não é falta de tráfego (vidro estilhaçando) → é o anúncio (conversão caindo, exemplo) → revise 5 pontos → comente ANUNCIO |
 | Pilar | Marketplace e operação |
 | Palavra-chave Manychat | **ANUNCIO** |

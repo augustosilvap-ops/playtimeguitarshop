@@ -16,6 +16,6 @@ const SC=[
 [5.6,7.3,'dark',lt=>W(lt,[[0,'RELEVÂNCIA',120]],380)+gauge(lt,{top:620,from:.12,to:.9,t0:.2,dur:1.2,labels:[['BAIXA',RD],['MÉDIA',YE],['ALTA',GR]]}),'o título certo aumenta a relevância.'],
 [7.3,9.0,'light',lt=>W(lt,[[0,'CLIQUES',120]],330)+slider(lt,{top:560,h:760,t0:.3,dur:1.1,L:{bg:'#FDECEC',k:'TÍTULO GENÉRICO · EXEMPLO',big:'0,8%',sub:'de cliques',c:RD},Rt:{bg:'#EAF0FF',k:'TÍTULO COM IA · EXEMPLO',big:'2,4%',sub:'de cliques',c:BL},bigSize:200}),'antes e depois do título (exemplo).'],
 [9.0,10.9,'accent',lt=>cta(lt,'TITULO'),'e receba o prompt de títulos no Direct.']];
-const DUR=10.9;
+let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

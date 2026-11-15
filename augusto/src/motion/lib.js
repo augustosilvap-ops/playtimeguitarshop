@@ -90,7 +90,7 @@ window.R=function(t){const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length
  if(THEME.deco==='scan')deco=`<div class="ab" style="inset:0;background:repeating-linear-gradient(0deg,${ln}.04) 0 2px,transparent 2px 6px)"></div>`;
  if(THEME.deco==='diag')deco=`<div class="ab" style="inset:0;background:repeating-linear-gradient(135deg,${ln}.05) 0 3px,transparent 3px 46px);background-position:${t*30}px 0"></div>`;
  if(THEME.deco==='glow')deco=`<div class="ab" style="left:${300+Math.sin(t)*200}px;top:${500+Math.cos(t*.8)*300}px;width:700px;height:700px;border-radius:50%;background:radial-gradient(closest-side,${dark?'rgba(47,107,255,.35)':acc?'rgba(255,255,255,.25)':'rgba(47,107,255,.15)'},transparent)"></div>`;
- document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:${bg}"></div>${deco}<div class="ab" style="inset:0;transform:${wrapT};transform-origin:30% 50%">${s[3](lt)}</div>${over}
+ document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:${bg}"></div>${deco}<div class="ab" style="inset:0;transform:${wrapT};transform-origin:30% 50%">${s[3](lt/1.25)}</div>${over}
  <div class="chip" style="color:${FG}"><i style="background:${acc?'#fff':BL};color:${acc?BL:'#fff'}">↗</i>@augustosilva.p</div><div class="cap" style="color:${FG};opacity:.9">${s[4]}</div>
  <div class="bar" style="width:912px;background:${dark||acc?'rgba(255,255,255,.2)':'rgba(10,11,16,.12)'}"></div><div class="bar" style="width:${912*t/DUR}px;background:${acc?'#fff':BL}"></div>`};
 // 06b · celular em 3D girando (tela clara)
