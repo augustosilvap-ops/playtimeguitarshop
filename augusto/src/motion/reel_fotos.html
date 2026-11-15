@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#000000',light:'#F1F3F8',accent:'radial-gradient(900px 900px at 30% 20%,#7FA3FF,#2F6BFF 50%,#1A3FB0)',anim:'left',trans:'zoom',deco:'rings',align:'left'};
+const SC=[
+[0,1.9,'dark',lt=>W(lt,[[0,'FOTO ESCURA',120],[.15,'VENDE MENOS.',120,BL2]],260)+magnifier(lt,{top:620,errors:[[330,770,.5],[720,900,.9],[460,1080,1.3]]}),'foto escura vende menos.'],
+[1.9,3.8,'light',lt=>slider(lt,{top:420,h:900,t0:.2,dur:1.3,L:{bg:'#3A3D47',k:'ANTES',big:'Foto escura',sub:'fundo bagunçado',c:'#FF8A95'},Rt:{bg:'#FFFFFF',k:'DEPOIS',big:'Foto clara',sub:'fundo limpo',c:BL},bigSize:110}),'antes e depois, só com o celular.'],
+[3.8,5.6,'accent',lt=>W(lt,[[0,'SÓ COM O',110],[.15,'CELULAR.',110]],260)+phone3d(lt,{top:520,after:'luz da janela + fundo branco',afterCol:BL,ta:1.1}),'luz da janela e fundo branco.'],
+[5.6,7.3,'dark',lt=>W(lt,[[0,'ESQUEÇA O',130]],560)+strike(lt,.6,'FILTRO.',780,210),'nada de filtro pesado.'],
+[7.3,9.0,'light',lt=>W(lt,[[0,'MAIS',130],[.15,'CLIQUES ↑',130,BL]],280)+bars(lt,{label:'Cliques · exemplo',t0:.1}),'foto boa traz mais cliques.'],
+[9.0,10.9,'accent',lt=>cta(lt,'FOTOS'),'e receba o checklist de fotos no Direct.']];
+const DUR=10.9;
+R(0);
+</script></body></html>

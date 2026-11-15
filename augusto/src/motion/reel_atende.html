@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#08090E',light:'#FFFFFF',accent:'#2F6BFF',anim:'flip',trans:'slide',deco:'dots',align:'center'};
+const SC=[
+[0,1.9,'dark',lt=>W(lt,[[0,'CLIENTE',120],[.15,'SEM RESPOSTA?',110,BL2]],260)+notifs(lt,{items:['Tem pronta entrega?','Qual o prazo?','Aceita Pix?','Tem outra cor?','Cadê meu pedido?'],icon:'?',ic:RD,top:600,step:.22,t0:.35,dark:true}),'cliente sem resposta?'],
+[1.9,3.7,'light',lt=>W(lt,[[0,'TEMPO DE',110],[.15,'RESPOSTA',110,BL]],280)+gauge(lt,{top:600,from:.08,to:.92,t0:.25,dur:1.2,labels:[['LENTO',RD],['OK',YE],['RÁPIDO',GR]]}),'resposta lenta perde a venda.'],
+[3.7,5.7,'accent',lt=>lbl('Resposta escrita com IA',560,'rgba(255,255,255,.8)',eo(lt/.2))+typer(lt,{a:'Oi, Ana! Temos sim, com envio em até 24h. Posso separar o seu?',size:54,speed:34,top:650,box:true}),'a IA rascunha, você revisa.'],
+[5.7,7.4,'dark',lt=>W(lt,[[0,'ANTES ×',110],[.15,'DEPOIS',110,BL2]],260)+slider(lt,{top:560,h:760,t0:.25,dur:1.1,L:{bg:'#FDECEC',k:'SEM IA · EXEMPLO',big:'6 h',sub:'para responder',c:RD},Rt:{bg:'#EAF0FF',k:'COM IA · EXEMPLO',big:'5 min',sub:'para responder',c:BL},bigSize:200}),'de horas para minutos.'],
+[7.4,9.0,'light',lt=>W(lt,[[0,'AVALIAÇÃO',120],[.15,'SOBE.',120,BL]],260)+liquid(lt,{pct:4.9,dec:1,suffix:'★',top:600,t0:.15,dur:1.2,fill:BL})+lbl('Exemplo hipotético',1360,'#7A7F8C'),'e a avaliação acompanha.'],
+[9.0,10.9,'accent',lt=>cta(lt,'ATENDE'),'e receba os prompts de atendimento no Direct.']];
+const DUR=10.9;
+R(0);
+</script></body></html>
