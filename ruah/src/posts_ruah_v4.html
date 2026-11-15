@@ -1,0 +1,62 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- RUAH v4 · mais 4 linguagens inspiradas em marcas de streetwear (inspiração, nunca cópia): minimal monocromático, arquivo de filme, padrão de logo, flyer xerox. -->
+<link rel="stylesheet" href="ruah.css">
+<style>
+@font-face{font-family:'Anton';src:url('../../augusto/src/fonts/Anton.woff2')}
+@font-face{font-family:'Mono';font-weight:500;src:url('../../augusto/src/fonts/JetBrainsMono-500.ttf')}
+.ab{position:absolute}.mono{font-family:'Mono';font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.an{font-family:'Anton';text-transform:uppercase;line-height:.88}.cz9{font-family:'Cinzel';font-weight:900;text-transform:uppercase;line-height:.9}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute">
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 .5 0"/></filter>
+ <filter id="xerox"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="discrete" tableValues="0 .15 1"/><feFuncG type="discrete" tableValues="0 .15 1"/><feFuncB type="discrete" tableValues="0 .15 1"/></feComponentTransfer></filter>
+</svg>
+<script>const grain=(op=.5)=>`<svg class="ab" style="left:0;top:0;opacity:${op};mix-blend-mode:overlay" width="1080" height="1350"><rect width="100%" height="100%" filter="url(#grain)"/></svg>`;</script>
+
+<!-- N1 · MINIMAL MONOCROMÁTICO (muito respiro, foto P&B de alto contraste, texto mínimo) -->
+<section class="art" data-out="../ruah/entregas/testes/v4_streetwear/N1_minimal_mono.png" style="background:#EDE9E1">
+  <div class="ab" style="left:270px;top:250px;width:540px;height:675px;background:url('../fotos_produtos/04_WHAT_DO_YOU_CARRY/04_2_modelo_costas.jpg') center/cover;filter:grayscale(1) contrast(1.25)"></div>
+  <div class="mono ab" style="left:270px;top:960px;font-size:18px;color:#2A2622">What do you carry? — Coleção 001</div>
+  <div class="ab" style="left:0;right:0;top:110px;text-align:center"><img src="../marca/logos/logo-preto.png" style="height:44px"></div>
+  <div class="it ab" style="left:0;right:0;bottom:150px;text-align:center;font-size:44px;color:#2A2622">It's not what we wear. It's what we carry.</div>
+  <div class="mono ab" style="left:0;right:0;bottom:70px;text-align:center;font-size:16px;color:#6B645B">useruah.com</div>
+</section>
+
+<!-- N2 · ARQUIVO DE FILME (grão, carimbo de data, legenda de arquivo, tons quentes) -->
+<section class="art" data-out="../ruah/entregas/testes/v4_streetwear/N2_arquivo_filme.png" style="background:#1A1714">
+  <div class="ab" style="left:60px;top:60px;right:60px;bottom:240px;background:url('../fotos_produtos/02_WE_CARRY_THE_SPIRIT/02_1_modelo_frente.jpg') center 30%/cover;filter:sepia(.25) contrast(1.1) saturate(.85)"></div>
+  <script>document.write(grain(.7))</script>
+  <div class="ab" style="right:90px;top:1000px;font:500 34px 'Mono';color:#FF8A3D;text-shadow:0 0 8px rgba(255,120,40,.7);letter-spacing:.06em">'26 11 15</div>
+  <div class="ab" style="left:60px;right:60px;bottom:60px;display:flex;justify-content:space-between;align-items:flex-end;color:#E3DED3">
+    <div><div class="mono" style="font-size:18px;color:#B9A88C">Arquivo RUAH · Rolo 001 · Fot. 12</div><div class="cz9" style="font-size:64px;margin-top:12px">We carry the spirit</div></div>
+    <img src="../marca/logos/logo-bone.png" style="height:36px">
+  </div>
+</section>
+
+<!-- N3 · PADRÃO DE LOGO (marca repetida como textura + peça no centro) -->
+<section class="art" data-out="../ruah/entregas/testes/v4_streetwear/N3_padrao_logo.png" style="background:#0E0D0C">
+  <div class="ab" style="inset:-40px;transform:rotate(-8deg);opacity:.12">
+   <script>let r='';for(let i=0;i<14;i++)r+=`<div class="an" style="white-space:nowrap;font-size:120px;color:#EEEAE1;margin-left:${(i%2)*-160}px">RUAH RUAH RUAH RUAH RUAH RUAH</div>`;document.write(r)</script></div>
+  <img class="ab" src="recortes/03_4_mockup_costas.png" style="left:150px;top:200px;width:780px;filter:drop-shadow(0 40px 60px rgba(0,0,0,.6))">
+  <div class="ab" style="left:60px;top:60px;padding:10px 18px;background:#EEEAE1"><span class="mono" style="font-size:20px;color:#0E0D0C">Drop 001</span></div>
+  <div class="ab" style="left:60px;right:60px;bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;color:#EEEAE1">
+    <div class="an" style="font-size:110px">O invisível<br>move.</div>
+    <div class="mono" style="font-size:18px;text-align:right;line-height:1.6">Coleção 001<br>useruah.com</div>
+  </div>
+</section>
+
+<!-- N4 · FLYER XEROX (fotocópia de alto contraste, grid, fita de aviso, texto empilhado) -->
+<section class="art" data-out="../ruah/entregas/testes/v4_streetwear/N4_flyer_xerox.png" style="background:#F2F0EA">
+  <div class="ab" style="left:60px;top:60px;width:600px;height:820px;background:url('../fotos_produtos/01_RUACH/01_2_modelo_costas.jpg') center/cover;filter:grayscale(1) contrast(1.3)"><div style="position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,0,.18) 1.3px,transparent 1.8px);background-size:8px 8px;mix-blend-mode:multiply"></div></div>
+  <div class="ab" style="left:700px;top:60px;right:60px;color:#0E0D0C">
+    <div class="an" style="font-size:150px;line-height:.86">RU<br>ACH</div>
+    <div class="mono" style="font-size:20px;margin-top:30px;line-height:1.7">Sopro<br>Espírito<br>Vento</div>
+    <div style="height:6px;background:#0E0D0C;margin:30px 0"></div>
+    <div class="mono" style="font-size:18px;line-height:1.7">Coleção 001<br>Carry<br>Curitiba · BR</div>
+  </div>
+  <div class="ab" style="left:-40px;right:-40px;top:930px;height:96px;background:repeating-linear-gradient(-45deg,#0E0D0C 0 40px,#F2F0EA 40px 80px);transform:rotate(-3deg);display:flex;align-items:center;justify-content:center"><span class="an" style="font-size:60px;background:#F2F0EA;color:#0E0D0C;padding:0 24px">We carry the spirit</span></div>
+  <div class="ab" style="left:60px;right:60px;bottom:60px;display:flex;justify-content:space-between;align-items:flex-end">
+    <img src="../marca/logos/logo-preto.png" style="height:48px"><div class="mono" style="font-size:18px;color:#0E0D0C">@ruahwear_ · useruah.com</div></div>
+  <script>document.write(grain(.35))</script>
+</section>
+</body></html>
