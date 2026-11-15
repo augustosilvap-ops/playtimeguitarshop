@@ -50,5 +50,8 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Storytelling: `storytelling/RUAH_storytelling.md` e `storytelling/AUGUSTO_storytelling.md`.
 - Manychat: configurado pelo Augusto em 14/11 (links em `augusto/editorial/MANYCHAT_LINKS.md`). Agendamento: NÃO configurado. Nunca marcar como publicado/agendado sem confirmação.
 
+## Skills do projeto (15/11/2026) — `.claude/skills/`
+- `hooks` (10 ganchos por tema, fórmulas e regras), `roteiro` (mini-aula, carrossel v4, legenda e Direct), `voz` (voz do @augustosilva.p e da RUAH). Usar sempre ao criar conteúdo.
+
 ## Skills de vídeo instaladas (14/11/2026)
 - `remotion:*` (vídeos em código), `video-shotcraft` (vídeo de produto cinematográfico), `watch-video` (analisar vídeos: quadros + transcrição). Usar nos Reels do @augustosilva.p, anúncios da RUAH e revisão do EP01 do Pequeninos.
