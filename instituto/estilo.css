@@ -1,0 +1,52 @@
+/* Instituto de Vencedores — apostila premium (azul-marinho + dourado) */
+:root{
+  --navy:#0E2240; --navy2:#1A3A6B; --gold:#C29A45; --gold-d:#A67F2E; --gold-l:#E6CF97; --gold-t:#FAF3E3;
+  --ink:#1F2633; --muted:#5E6777; --blue-t:#EEF2F9; --line:#E4E7EE; --white:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-variant-numeric:lining-nums}
+body{font-family:"Source Sans 3",sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{position:relative;overflow:hidden;background:var(--white);page-break-after:always}
+.page:last-child{page-break-after:auto}
+.serif{font-family:"EB Garamond",serif}
+p{margin:0 0 .62em}
+b,strong{font-weight:700;color:var(--navy)}
+svg.ic{width:1em;height:1em;stroke:currentColor;vertical-align:-.14em;flex:none}
+
+/* cabeçalho e rodapé */
+.hdr{position:absolute;display:flex;justify-content:space-between;align-items:center;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-d);border-bottom:1px solid var(--gold-l)}
+.ftr{position:absolute;display:flex;align-items:center;gap:3mm;color:var(--gold-d);font-weight:700}
+.ftr::before,.ftr::after{content:"";height:1px;background:var(--gold-l);flex:1}
+
+/* rótulos */
+.label{display:inline-flex;align-items:center;gap:1.6mm;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-d)}
+.pill{display:inline-flex;align-items:center;gap:1.4mm;background:var(--navy);color:var(--gold-l);font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-radius:20mm}
+.chip{display:inline-flex;align-items:center;gap:1.4mm;border:1px solid var(--gold-l);color:var(--navy);font-weight:600;border-radius:20mm;background:#fff}
+.h-title{font-family:"EB Garamond",serif;font-weight:700;color:var(--navy);line-height:1.02;letter-spacing:-.005em}
+.h-title em{font-style:italic;color:var(--gold-d);font-weight:600}
+.orn{display:flex;align-items:center;gap:2mm;color:var(--gold)}
+.orn::before,.orn::after{content:"";height:1px;background:var(--gold);width:14mm}
+.orn i{width:1.8mm;height:1.8mm;background:var(--gold);transform:rotate(45deg);display:block}
+
+/* caixas */
+.box{border-radius:2.4mm;position:relative}
+.box-dyn{background:var(--gold-t);border-left:1.4mm solid var(--gold)}
+.box-say{background:var(--navy);color:#fff}
+.box-say p{color:#E9EDF5}
+.box-say b{color:var(--gold-l)}
+.box-verse{background:var(--blue-t)}
+.box-verse .q{position:absolute;color:var(--gold);opacity:.9}
+.verse{font-family:"EB Garamond",serif;font-style:italic;font-weight:500;color:var(--navy);line-height:1.3}
+.ref{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
+.icon-dot{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--gold);color:#fff;flex:none}
+.icon-dot.navy{background:var(--navy);color:var(--gold-l)}
+.box-head{display:flex;align-items:center;gap:2.6mm}
+.box-head h4{font-family:"EB Garamond",serif;font-weight:700;color:var(--navy);line-height:1.1}
+.box-say .box-head h4{color:#fff}
+
+/* listas */
+ol.steps{list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:0;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--navy);color:var(--gold-l);font-weight:700}
+ul.dots{list-style:none}
+ul.dots li{position:relative}
+ul.dots li::before{content:"";position:absolute;left:0;background:var(--gold);transform:rotate(45deg)}

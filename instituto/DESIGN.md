@@ -1,35 +1,10 @@
-# Instituto de Vencedores — sistema visual dos materiais
+# Instituto de Vencedores — padrão visual dos materiais (aprovado como direção em 15/11)
 
-## Filosofia: "Peso e Medida"
+Estilo **apostila premium**: azul-marinho + dourado, capa com foto, caixas de destaque e ícones discretos.
+Reprovados: creme/dourado genérico (v1) e a versão "Peso e Medida" com cinza/terra e números 5-2-1 gigantes (v2: "cores sem vida, capa estranha").
 
-O talento, no tempo de Jesus, não era um dom abstrato: era uma unidade de peso — dezenas de quilos de prata.
-Este sistema trata a lição como um livro de contas de um mercador: o que foi recebido, o que foi negociado,
-o que foi devolvido e o que ficou enterrado. A informação mora na estrutura (margem com horários e referências,
-colunas de lançamento), não em enfeites.
-
-A única ousadia fica na capa: os números 5, 2 e 1 em tipo condensado gigante; o "1" afunda abaixo da linha do
-chão, num bloco de terra, e só o contorno dele continua visível dentro dela. Dentro do material, tudo é quieto:
-grade de livro, margem esquerda para anotações do professor, cor só onde carrega significado — cobalto para
-a ação (dinâmicas, referências bíblicas), terra só para o que trava e enterra o talento.
-
-## Tokens
-
-| Papel | Hex | Uso |
-|---|---|---|
-| Prata | `#EEF0ED` | fundo (papel frio, levemente prateado) |
-| Grafite | `#1B1E1D` | texto e numerais |
-| Cinza | `#676C68` | legendas, notas |
-| Cobalto | `#2443C9` | dinâmicas, referências, ações |
-| Terra | `#5E4130` | bloco do chão, a seção "o que te impede" |
-| Linha | `#CFD2CC` | divisões |
-
-## Tipos
-- **Archivo** (eixo de largura): condensado 900 para numerais; expandido 700–800 para títulos.
-- **Literata**: corpo e versículos (serifa de livro, boa leitura no celular).
-- **IBM Plex Mono**: margem — horários, referências, rótulos.
-
-## Regras
-- Sem cantos arredondados, sem moedas douradas, sem ícones.
-- Numeração só onde há sequência real (blocos da aula, passos das dinâmicas, dias do plano).
-- Falas do professor com travessão (—), como diálogo em português.
-- A capa é o único momento expressivo.
+- Cores: marinho #0E2240 · dourado #C29A45 (escuro #A67F2E, claro #E6CF97, fundo #FAF3E3) · azul-claro #EEF2F9 · texto #1F2633.
+- Fontes: EB Garamond (títulos e versículos; NÃO usar Cormorant — acento "ê" quebra no PDF) + Source Sans 3 (texto).
+- Caixas: Dinâmica (fundo dourado claro, barra dourada), Diga à turma (marinho), Versículo (azul-claro com aspas douradas).
+- Ícones: Lucide (`icons/`, licença ISC), inseridos com [[i:nome]]. Fotos: Unsplash (licença livre) em `img/`.
+- Gerar: `python3 build.py` → Aula_Cap1_*.pdf (A4) e Material_do_Aluno_Cap1.pdf (A5). CSS comum em `estilo.css`.

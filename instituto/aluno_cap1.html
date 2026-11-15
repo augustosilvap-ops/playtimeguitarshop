@@ -1,160 +1,167 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <title>Material do aluno — Desenvolvendo meu talento</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400;1,7..72,500&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;600;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
 <style>
-:root{--prata:#EEF0ED;--grafite:#1B1E1D;--cinza:#676C68;--cobalto:#2443C9;--terra:#5E4130;--linha:#CFD2CC}
 @page{size:A5;margin:0}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Literata,serif;color:var(--grafite);font-size:9.8pt;line-height:1.52;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page{width:148mm;height:210mm;position:relative;overflow:hidden;background:var(--prata);padding:17mm 14mm 16mm;page-break-after:always}
-.page:last-child{page-break-after:auto}
-.head{position:absolute;top:8mm;left:14mm;right:14mm;display:flex;justify-content:space-between;font-family:"IBM Plex Mono";font-size:6.4pt;letter-spacing:.06em;color:var(--cinza);text-transform:uppercase}
-.folio{position:absolute;bottom:7mm;right:14mm;font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:800;font-size:11pt}
-.label{font-family:"IBM Plex Mono";font-size:7pt;letter-spacing:.04em;color:var(--cinza);text-transform:uppercase}
-.ref{font-family:"IBM Plex Mono";font-size:7.2pt;color:var(--cobalto);letter-spacing:.02em}
-.title{font-family:Archivo;font-variation-settings:"wdth" 112;font-weight:780;font-size:19pt;line-height:1.04;letter-spacing:-.015em;margin:2mm 0 4mm}
-.word{font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:900;font-size:34pt;line-height:.86;letter-spacing:-.01em}
-p{margin:0 0 2.2mm}
-.verse{font-style:italic;font-size:11pt;line-height:1.42;margin:0 0 1mm}
-.vblock{padding:4mm 0;border-top:1px solid var(--linha)}
-.sec{display:grid;grid-template-columns:31mm 1fr;column-gap:5mm;padding:4mm 0;border-top:1px solid var(--grafite)}
-.sec .side .label{margin-top:2mm}
-.terra{color:var(--terra)}
-.cob{color:var(--cobalto)}
-/* plano */
-.day{display:grid;grid-template-columns:5mm 13mm 1fr;column-gap:3mm;padding:2.6mm 0;border-top:1px solid var(--linha);align-items:start}
-.box{width:4mm;height:4mm;border:1.2px solid var(--grafite);margin-top:1mm}
-.dn{font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:850;font-size:15pt;line-height:1}
-.day h4{font-family:Archivo;font-variation-settings:"wdth" 100;font-weight:700;font-size:9.6pt;line-height:1.25}
-.day p{font-size:8.8pt;margin:.6mm 0 0;color:#3A3E3C}
-.day p.ref{color:var(--cobalto);font-size:7.2pt}
-.q{padding:2mm 0 2mm 7mm;position:relative;border-top:1px solid var(--linha);font-size:9.2pt}
-.q span{position:absolute;left:0;top:1.6mm;font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:850;font-size:11pt}
-.three{display:grid;grid-template-columns:repeat(3,1fr);column-gap:3.5mm}
-.three>div{border-top:1px solid var(--grafite);padding-top:1.6mm}
-.k{font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:850;font-size:17pt;line-height:1}
-.ln{border-bottom:1px solid #B9BDB7;height:7mm}
+body{font-size:9.8pt;line-height:1.5}
+.page{width:148mm;height:210mm;padding:19mm 14mm 16mm}
+.hdr{top:8mm;left:14mm;right:14mm;font-size:5.8pt;padding-bottom:1.6mm}
+.ftr{bottom:7mm;left:14mm;right:14mm;font-size:8pt}
+.label{font-size:6.6pt}
+.h-title{font-size:21pt;margin:1.4mm 0 4mm}
+.box{padding:4mm 4.5mm;margin:0 0 4mm}
+.box-head{margin-bottom:2mm}
+.box-head h4{font-size:13pt}
+.icon-dot{width:7mm;height:7mm;font-size:3.8mm}
+.box-verse{padding:4mm 5mm 4mm 13mm}
+.box-verse .q{left:4mm;top:4mm;font-size:6mm}
+.verse{font-size:12pt}
+.ref{font-size:6.6pt;margin-top:1.4mm;display:block}
+ul.dots li{padding-left:4.5mm;margin-bottom:1.4mm}
+ul.dots li::before{width:1.6mm;height:1.6mm;top:1.9mm}
+.sec{display:grid;grid-template-columns:10mm 1fr;gap:3.5mm;padding:4mm 0;border-bottom:1px solid var(--line)}
+.sec .icon-dot{width:10mm;height:10mm;font-size:5mm}
+.sec h3{font-family:"EB Garamond",serif;font-size:17pt;font-weight:700;color:var(--navy);line-height:1;margin-bottom:1.6mm}
+.sec .ref{margin:0 0 1.6mm}
+.day{display:grid;grid-template-columns:5mm 1fr;gap:3mm;padding:2.4mm 0;border-bottom:1px solid var(--line)}
+.ck{width:4.2mm;height:4.2mm;border:1.3px solid var(--gold);border-radius:1mm;margin-top:.8mm}
+.day h4{font-weight:700;color:var(--navy);font-size:9.6pt;line-height:1.25}
+.day h4 span{color:var(--gold-d);letter-spacing:.12em;font-size:7pt;text-transform:uppercase;margin-right:1.6mm}
+.day .ref{margin:.4mm 0 .6mm;font-size:6.4pt}
+.day p{font-size:8.8pt;color:#3A4250;margin:0}
+.qq{display:grid;grid-template-columns:6mm 1fr;gap:2mm;padding:1.8mm 0;border-bottom:1px solid var(--line);font-size:9pt}
+.qq .n{width:5mm;height:5mm;border-radius:50%;background:var(--navy);color:var(--gold-l);font-weight:700;font-size:7pt;display:flex;align-items:center;justify-content:center;margin-top:.4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.mini{border:1px solid var(--line);border-top:.9mm solid var(--gold);border-radius:1.6mm;padding:2.6mm}
+.mini h5{font-family:"EB Garamond",serif;font-size:12pt;font-weight:700;color:var(--navy);line-height:1}
+.mini p{font-size:7.8pt;color:var(--muted);margin:.6mm 0 0}
+.ln{border-bottom:1px solid #CCD2DC;height:6mm}
 /* capa */
-.cover{padding:0}
-.cover .top{position:absolute;left:14mm;right:14mm;top:11mm;display:flex;justify-content:space-between;font-family:"IBM Plex Mono";font-size:6.6pt;letter-spacing:.06em;text-transform:uppercase}
-.cover h1{position:absolute;left:14mm;top:24mm;font-family:Archivo;font-variation-settings:"wdth" 125;font-weight:800;font-size:30pt;line-height:.98;letter-spacing:-.02em}
-.cover .sub{position:absolute;left:14mm;top:54mm;font-size:9.6pt;max-width:92mm;color:var(--cinza)}
-.nums{position:absolute;left:0;right:0;top:76mm;bottom:0}
-.n{position:absolute;font-family:Archivo;font-variation-settings:"wdth" 62;font-weight:900;font-size:310pt;line-height:.74;letter-spacing:-.03em;z-index:1}
-.n.ghost{color:transparent;-webkit-text-stroke:1px rgba(238,240,237,.5);z-index:3}
-.ground{position:absolute;left:0;right:0;bottom:0;height:44mm;background:var(--terra);z-index:2}
-.cap{position:absolute;font-family:"IBM Plex Mono";font-size:6.6pt;line-height:1.45;z-index:4}
-.cap b{font-weight:500}
-.cover .bottom{position:absolute;left:14mm;right:14mm;bottom:8mm;display:flex;justify-content:space-between;font-family:"IBM Plex Mono";font-size:6.6pt;letter-spacing:.06em;text-transform:uppercase;color:#D9CBBE;z-index:4}
+.cover{padding:0;background:var(--navy)}
+.cover .photo{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/biblia.jpg) 58% center/cover}
+.cover .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,34,64,.5) 0%,rgba(14,34,64,0) 30%,rgba(14,34,64,.1) 60%,var(--navy) 100%)}
+.cover .frame{position:absolute;inset:6.5mm;border:.4mm solid rgba(230,207,151,.75);z-index:2}
+.cover .brand{position:absolute;top:13mm;left:0;right:0;text-align:center;z-index:3;color:#fff;font-weight:700;letter-spacing:.28em;font-size:6.6pt;text-transform:uppercase}
+.cover .brand span{display:block;color:var(--gold-l);letter-spacing:.22em;font-size:5.8pt;margin-top:1.2mm;font-weight:600}
+.cover .txt{position:absolute;left:0;right:0;top:118mm;text-align:center;z-index:3;padding:0 16mm}
+.cover .cap{color:var(--gold);font-weight:700;letter-spacing:.3em;font-size:7.4pt;text-transform:uppercase}
+.cover h1{font-family:"EB Garamond",serif;font-weight:700;color:#fff;font-size:38pt;line-height:.98;margin:3mm 0 4mm}
+.cover h1 em{font-style:italic;font-weight:600;color:var(--gold-l)}
+.cover .orn{justify-content:center;margin:0 auto 4mm}
+.cover .orn::before,.cover .orn::after{width:10mm}
+.cover .desc{color:#C9D2E3;font-size:9pt;line-height:1.5}
+.cover .bottom{position:absolute;left:0;right:0;bottom:12mm;text-align:center;z-index:3;color:var(--gold-l);font-weight:600;letter-spacing:.2em;font-size:6.4pt;text-transform:uppercase}
+.strip{margin:-19mm -14mm 6mm;height:46mm;position:relative;background:url(img/campo.jpg) center 62%/cover}
+.strip::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,34,64,.94),rgba(14,34,64,.35))}
+.strip .in{position:absolute;left:14mm;bottom:7mm;z-index:2;color:#fff;right:30mm}
+.strip .label{color:var(--gold-l)}
+.strip h2{font-family:"EB Garamond",serif;font-size:24pt;font-weight:700;line-height:1;margin-top:1.4mm}
 </style></head><body>
 
 <section class="page cover">
-  <div class="top"><span>Instituto de Vencedores · Módulo III</span><span>Material do aluno</span></div>
-  <h1>Desenvolvendo<br>meu talento</h1>
-  <p class="sub">Capítulo 1. Resumo da aula, versículos, perguntas e um plano de leitura bíblica de sete dias.</p>
-  <div class="nums">
-    <div class="n" style="left:9mm;top:0">5</div>
-    <div class="n" style="left:56mm;top:0">2</div>
-    <div class="n" style="left:101mm;top:44mm">1</div>
-    <div class="n ghost" style="left:101mm;top:44mm">1</div>
-    <div class="ground"></div>
-    <div class="cap" style="left:10mm;top:82mm"><b>5 recebidos</b><br>10 devolvidos</div>
-    <div class="cap" style="left:58mm;top:82mm"><b>2 recebidos</b><br>4 devolvidos</div>
-    <div class="cap" style="left:66mm;top:94mm;color:#D9CBBE;text-align:right;width:32mm">1 recebido<br>enterrado</div>
+  <div class="photo"></div>
+  <div class="frame"></div>
+  <div class="brand">Instituto de Vencedores<span>Módulo III · Formando o líder</span></div>
+  <div class="txt">
+    <div class="cap">Capítulo 1</div>
+    <h1>Desenvolvendo<br><em>meu talento</em></h1>
+    <div class="orn"><i></i></div>
+    <p class="desc">Material do aluno: resumo da aula, versículos, perguntas e um plano de leitura bíblica de sete dias.</p>
   </div>
-  <div class="bottom"><span>Mateus 25:14-30</span><span>Capítulo 1</span></div>
+  <div class="bottom">Mateus 25:14-30</div>
 </section>
 
 <section class="page">
-  <div class="head"><span>Desenvolvendo meu talento</span><span>Resumo da aula</span></div>
-  <p class="label">A parábola</p>
-  <p class="title">Três servos, três contas</p>
+  <div class="strip"><div class="in"><span class="label">[[i:book-open]] Resumo da aula</span><h2>Três servos, três escolhas</h2></div></div>
   <p>Antes de viajar, um senhor confia seus bens aos servos: cinco talentos a um, dois a outro e um ao terceiro. Os dois primeiros negociam e dobram o que receberam. O terceiro, com medo, enterra o seu — e acaba perdendo&#8209;o.</p>
-  <p style="color:var(--cinza);font-size:8.8pt">Um talento era uma medida de peso — dezenas de quilos de prata, o equivalente ao salário de muitos anos de trabalho. Mesmo o servo que recebeu “só um” tinha uma fortuna nas mãos.</p>
-
-  <div class="sec" style="margin-top:4mm">
-    <div class="side"><p class="word">Rece&shy;bido</p><p class="ref" style="margin-top:2mm">Ef 2:10 · Tg 1:17<br>Rm 12:6</p></div>
-    <div><p>Você foi criado com propósito: existem boas obras que Deus preparou para você. Seus dons não são seus — são de Deus, emprestados a você. Ele não chama sem antes capacitar, e reparte de forma diferente para cada um. Diferente não quer dizer inferior.</p></div>
+  <div class="box box-dyn" style="margin:3mm 0 1mm;padding:3mm 4mm">
+    <p style="margin:0;font-size:8.8pt"><b>Você sabia?</b> Um talento era uma medida de peso — dezenas de quilos de prata, o salário de muitos anos de trabalho. Mesmo quem recebeu “só um” tinha uma fortuna nas mãos.</p>
   </div>
   <div class="sec">
-    <div class="side"><p class="word cob">Multi&shy;plicado</p><p class="ref" style="margin-top:2mm">Mt 25:16 · 1Pe 4:10<br>1Co 15:58</p></div>
-    <div><p>O servo de cinco talentos saiu imediatamente para negociar. Descubra em que você é bom e invista para ser o melhor nisso: quem investe, multiplica. Isso pede <b>disciplina</b> — foco no que se quer alcançar — e <b>perseverança</b> até o fim.</p></div>
+    <span class="icon-dot">[[i:hand-heart]]</span>
+    <div><h3>Deus te capacitou</h3><span class="ref">Ef 2:10 · Tg 1:17 · Rm 12:6</span>
+    <p style="margin:0">Você foi criado com propósito: existem boas obras que Deus preparou para você. Seus dons não são seus — são de Deus, emprestados a você. Ele não chama sem antes capacitar, e reparte de forma diferente para cada um. Diferente não quer dizer inferior.</p></div>
   </div>
-  <div class="folio">2</div>
+  <div class="sec" style="border-bottom:0">
+    <span class="icon-dot navy">[[i:sprout]]</span>
+    <div><h3>Talento existe para ser usado</h3><span class="ref">Mt 25:16 · 1Pe 4:10 · 1Co 15:58</span>
+    <p style="margin:0">O servo de cinco talentos saiu imediatamente para negociar. Descubra em que você é bom e invista para ser o melhor nisso: quem investe, multiplica. Isso pede <b>disciplina</b> — foco no que se quer alcançar — e <b>perseverança</b>.</p></div>
+  </div>
+  <div class="ftr">2</div>
 </section>
 
 <section class="page">
-  <div class="head"><span>Desenvolvendo meu talento</span><span>Resumo da aula</span></div>
-  <div class="sec" style="border-color:var(--terra);margin-top:2mm">
-    <div class="side"><p class="word terra">Enter&shy;rado</p><p class="ref" style="margin-top:2mm">Mt 25:24-28<br>Pv 3:6</p></div>
-    <div>
-      <p>O terceiro servo não perdeu o talento por falta de capacidade, mas por medo. Três coisas fazem a gente enterrar o que recebeu:</p>
-      <p><b class="terra">O medo</b> de tentar e errar.</p>
-      <p><b class="terra">A comparação</b> com as bênçãos dos outros, que gera pessimismo e crítica.</p>
-      <p><b class="terra">Uma imagem errada de Deus</b>, como se Ele fosse só um juiz. Ele é Pai: corrige com amor e ensina a continuar.</p>
-    </div>
+  <div class="hdr"><span>Instituto de Vencedores</span><span>Capítulo 1</span></div>
+  <div class="sec" style="padding-top:0">
+    <span class="icon-dot">[[i:shovel]]</span>
+    <div><h3>O que faz a gente enterrar o talento</h3><span class="ref">Mt 25:24-28 · Pv 3:6</span>
+    <p>O terceiro servo não perdeu o talento por falta de capacidade, mas por medo.</p>
+    <ul class="dots">
+      <li><b>O medo</b> de tentar e errar.</li>
+      <li><b>A comparação</b> com as bênçãos dos outros, que gera pessimismo e crítica.</li>
+      <li><b>Uma imagem errada de Deus</b>, como se Ele fosse só um juiz. Ele é Pai: corrige com amor e ensina a continuar.</li>
+    </ul></div>
   </div>
-  <div style="background:var(--terra);color:#F1E9E0;padding:5mm 6mm;margin:4mm -14mm 0;padding-left:14mm;padding-right:14mm">
-    <p class="label" style="color:#D9CBBE">Lembre-se</p>
-    <p style="font-size:11pt;line-height:1.42;margin:1.5mm 0 0">Quem não investe o que recebeu corre o risco de perder (Mt 25:28). O sucesso é o resultado de perseverar em aperfeiçoar os dons que Deus te deu.</p>
+  <div class="box box-say" style="margin-top:5mm">
+    <div class="box-head"><span class="icon-dot">[[i:bookmark]]</span><span class="label" style="color:var(--gold-l)">Lembre-se</span></div>
+    <p style="margin:0;font-size:10pt">Quem não investe o que recebeu corre o risco de perder (Mt 25:28). O sucesso é o resultado de perseverar em aperfeiçoar os dons que Deus te deu.</p>
   </div>
-  <div style="margin-top:7mm">
-    <p class="label">Para memorizar nesta semana</p>
-    <p class="verse" style="font-size:13pt;margin-top:2mm">Cada um administre aos outros o dom como o recebeu, como bons despenseiros da multiforme graça de Deus.</p>
-    <p class="ref">1 Pedro 4:10</p>
+  <span class="label" style="margin-top:2mm">[[i:pen-line]] Para memorizar nesta semana</span>
+  <div class="box box-verse" style="margin-top:2mm">
+    <span class="q">[[i:quote]]</span>
+    <p class="verse" style="font-size:14pt">Cada um administre aos outros o dom como o recebeu, como bons despenseiros da multiforme graça de Deus.</p>
+    <span class="ref">1 Pedro 4:10</span>
   </div>
-  <div class="folio">3</div>
+  <div class="ftr">3</div>
 </section>
 
 <section class="page">
-  <div class="head"><span>Desenvolvendo meu talento</span><span>Versículos</span></div>
-  <p class="label">Versículos da aula</p>
-  <p class="title">Para guardar</p>
-  <div class="vblock"><p class="verse">Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos.</p><p class="ref">Efésios 2:10</p></div>
-  <div class="vblock"><p class="verse">Vocês foram comprados por um alto preço. Portanto, glorifiquem a Deus com o seu próprio corpo.</p><p class="ref">1 Coríntios 6:20</p></div>
-  <div class="vblock"><p class="verse">Toda boa dádiva e todo dom perfeito vêm do alto, descendo do Pai das luzes, em quem não há mudança nem sombra de variação.</p><p class="ref">Tiago 1:17</p></div>
-  <div class="vblock"><p class="verse">Portanto, meus amados irmãos, mantenham-se firmes, e que nada os abale. Sejam sempre dedicados à obra do Senhor, pois vocês sabem que, no Senhor, o trabalho de vocês não será inútil.</p><p class="ref">1 Coríntios 15:58</p></div>
-  <div class="vblock" style="border-bottom:1px solid var(--linha)"><p class="verse">Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.</p><p class="ref">Provérbios 3:6</p></div>
-  <div class="folio">4</div>
+  <div class="hdr"><span>Instituto de Vencedores</span><span>Capítulo 1</span></div>
+  <span class="label">[[i:bookmark]] Versículos da aula</span>
+  <h2 class="h-title">Para guardar <em>no coração</em></h2>
+  <div class="box box-verse"><span class="q">[[i:quote]]</span><p class="verse">Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos.</p><span class="ref">Efésios 2:10</span></div>
+  <div class="box box-verse"><span class="q">[[i:quote]]</span><p class="verse">Vocês foram comprados por um alto preço. Portanto, glorifiquem a Deus com o seu próprio corpo.</p><span class="ref">1 Coríntios 6:20</span></div>
+  <div class="box box-verse"><span class="q">[[i:quote]]</span><p class="verse">Toda boa dádiva e todo dom perfeito vêm do alto, descendo do Pai das luzes, em quem não há mudança nem sombra de variação.</p><span class="ref">Tiago 1:17</span></div>
+  <div class="box box-verse" style="margin:0"><span class="q">[[i:quote]]</span><p class="verse">Mantenham-se firmes, e que nada os abale. Sejam sempre dedicados à obra do Senhor, pois vocês sabem que, no Senhor, o trabalho de vocês não será inútil.</p><span class="ref">1 Coríntios 15:58</span></div>
+  <div class="ftr">4</div>
 </section>
 
 <section class="page">
-  <div class="head"><span>Desenvolvendo meu talento</span><span>Estudo bíblico</span></div>
-  <p class="label">Dez minutos por dia</p>
-  <p class="title">Plano de leitura de sete dias</p>
-  <p style="color:var(--cinza);font-size:8.8pt;margin-bottom:3mm">Leia o texto, responda a pergunta e ore sobre o que aprendeu. Marque o quadrado quando terminar.</p>
-  <div class="day"><div class="box"></div><div class="dn">Dia 1</div><div><h4>A parábola inteira</h4><p class="ref">Mateus 25:14-30</p><p>Com qual dos três servos você mais se parece hoje? Por quê?</p></div></div>
-  <div class="day"><div class="box"></div><div class="dn">Dia 2</div><div><h4>Criado com propósito</h4><p class="ref">Efésios 2:10 · Salmo 139:13-16</p><p>Que boas obras você sente que Deus preparou para você?</p></div></div>
-  <div class="day"><div class="box"></div><div class="dn">Dia 3</div><div><h4>Dons diferentes, um só corpo</h4><p class="ref">Romanos 12:3-8 · 1 Coríntios 12:4-11</p><p>Por que Deus não deu os mesmos dons a todos?</p></div></div>
-  <div class="day"><div class="box"></div><div class="dn">Dia 4</div><div><h4>Um artesão cheio do Espírito</h4><p class="ref">Êxodo 31:1-6</p><p>Bezalel trabalhava com as mãos, e Deus o encheu do Seu Espírito para isso. Seu talento do dia a dia também pode servir a Deus?</p></div></div>
-  <div class="day"><div class="box"></div><div class="dn">Dia 5</div><div><h4>Servir com excelência</h4><p class="ref">1 Pedro 4:10-11 · Colossenses 3:23-24 · Provérbios 22:29</p><p>Em que você pode fazer melhor, como quem faz para o Senhor?</p></div></div>
-  <div class="day"><div class="box"></div><div class="dn">Dia 6</div><div><h4>Vencendo o medo</h4><p class="ref">Êxodo 4:10-12 · 2 Timóteo 1:6-7</p><p>Moisés também deu desculpas a Deus. Qual é a sua? O que Deus responderia?</p></div></div>
-  <div class="day" style="border-bottom:1px solid var(--linha)"><div class="box"></div><div class="dn">Dia 7</div><div><h4>Fiel até o fim</h4><p class="ref">Lucas 19:11-27 · Gálatas 6:9 · Mateus 25:21</p><p>O que significa ser fiel no pouco nesta semana?</p></div></div>
-  <div class="folio">5</div>
+  <div class="hdr"><span>Instituto de Vencedores</span><span>Capítulo 1</span></div>
+  <span class="label">[[i:calendar-check]] Estudo bíblico · 10 min por dia</span>
+  <h2 class="h-title">Plano de leitura <em>de 7 dias</em></h2>
+  <p style="color:var(--muted);font-size:8.8pt;margin-bottom:1mm">Leia o texto, responda a pergunta e ore sobre o que aprendeu. Marque o quadrado quando terminar.</p>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 1</span>A parábola inteira</h4><span class="ref">Mateus 25:14-30</span><p>Com qual dos três servos você mais se parece hoje? Por quê?</p></div></div>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 2</span>Criado com propósito</h4><span class="ref">Efésios 2:10 · Salmo 139:13-16</span><p>Que boas obras você sente que Deus preparou para você?</p></div></div>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 3</span>Dons diferentes, um só corpo</h4><span class="ref">Romanos 12:3-8 · 1 Coríntios 12:4-11</span><p>Por que Deus não deu os mesmos dons a todos?</p></div></div>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 4</span>Um artesão cheio do Espírito</h4><span class="ref">Êxodo 31:1-6</span><p>Bezalel trabalhava com as mãos, e Deus o encheu do Seu Espírito para isso. Seu talento do dia a dia também pode servir a Deus?</p></div></div>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 5</span>Servir com excelência</h4><span class="ref">1 Pedro 4:10-11 · Colossenses 3:23-24 · Provérbios 22:29</span><p>Em que você pode fazer melhor, como quem faz para o Senhor?</p></div></div>
+  <div class="day"><div class="ck"></div><div><h4><span>Dia 6</span>Vencendo o medo</h4><span class="ref">Êxodo 4:10-12 · 2 Timóteo 1:6-7</span><p>Moisés também deu desculpas a Deus. Qual é a sua? O que Deus responderia?</p></div></div>
+  <div class="day" style="border:0"><div class="ck"></div><div><h4><span>Dia 7</span>Fiel até o fim</h4><span class="ref">Lucas 19:11-27 · Gálatas 6:9 · Mateus 25:21</span><p>O que significa ser fiel no pouco nesta semana?</p></div></div>
+  <div class="ftr">5</div>
 </section>
 
 <section class="page">
-  <div class="head"><span>Desenvolvendo meu talento</span><span>Para responder</span></div>
-  <p class="label">Questionário da apostila</p>
-  <p class="title">Perguntas da lição</p>
-  <div class="q"><span>1</span>Complete Efésios 2:10: “Porque somos ________ de ________ realizada em ________ para fazermos ________…”</div>
-  <div class="q"><span>2</span>Qual foi o propósito de Deus em criar o homem?</div>
-  <div class="q"><span>3</span>Qual a melhor maneira de identificar em que somos bons e quais são os nossos pontos fortes?</div>
-  <div class="q"><span>4</span>O que é preciso para desenvolver os talentos dados por Deus?</div>
-  <div class="q"><span>5</span>Defina o que é disciplina.</div>
-  <div class="q"><span>6</span>O que pode nos impedir de desenvolver os nossos talentos?</div>
-  <div class="q" style="border-bottom:1px solid var(--linha)"><span>7</span>Qual é a consequência de não investir nem desenvolver as nossas habilidades?</div>
-
-  <p class="label" style="margin-top:6mm">Meu desafio desta semana</p>
-  <div class="three" style="margin-top:2mm">
-    <div><p class="k">1</p><p style="font-size:8.4pt">talento que vou usar</p><div class="ln"></div><div class="ln"></div></div>
-    <div><p class="k">1</p><p style="font-size:8.4pt">ação, com dia marcado</p><div class="ln"></div><div class="ln"></div></div>
-    <div><p class="k">1</p><p style="font-size:8.4pt">pessoa que vou servir</p><div class="ln"></div><div class="ln"></div></div>
+  <div class="hdr"><span>Instituto de Vencedores</span><span>Capítulo 1</span></div>
+  <span class="label">[[i:circle-help]] Questionário da apostila</span>
+  <h2 class="h-title">Perguntas <em>da lição</em></h2>
+  <div class="qq"><span class="n">1</span><span>Complete Efésios 2:10: “Porque somos ______ de ______ realizada em ______ para fazermos ______…”</span></div>
+  <div class="qq"><span class="n">2</span><span>Qual foi o propósito de Deus em criar o homem?</span></div>
+  <div class="qq"><span class="n">3</span><span>Qual a melhor maneira de identificar em que somos bons e quais são os nossos pontos fortes?</span></div>
+  <div class="qq"><span class="n">4</span><span>O que é preciso para desenvolver os talentos dados por Deus?</span></div>
+  <div class="qq"><span class="n">5</span><span>Defina o que é disciplina.</span></div>
+  <div class="qq"><span class="n">6</span><span>O que pode nos impedir de desenvolver os nossos talentos?</span></div>
+  <div class="qq" style="border:0"><span class="n">7</span><span>Qual é a consequência de não investir nem desenvolver as nossas habilidades?</span></div>
+  <span class="label" style="margin-top:4mm">[[i:list-checks]] Meu desafio desta semana</span>
+  <div class="grid3" style="margin-top:2mm">
+    <div class="mini"><h5>1 talento</h5><p>que vou usar</p><div class="ln"></div><div class="ln"></div></div>
+    <div class="mini"><h5>1 ação</h5><p>com dia marcado</p><div class="ln"></div><div class="ln"></div></div>
+    <div class="mini"><h5>1 pessoa</h5><p>que vou servir</p><div class="ln"></div><div class="ln"></div></div>
   </div>
-
-  <p class="label" style="margin-top:6mm">Para ir mais fundo</p>
-  <p style="font-size:8.8pt;margin-top:1.5mm"><i>Formando Líderes Vencedores</i> e <i>Você nasceu para reinar</i>, do Bispo Robson Rodovalho, leituras do Módulo III. Outras passagens: 1 Timóteo 4:14-15 · Eclesiastes 9:10 · Jeremias 1:6-8 · Juízes 6:11-16.</p>
-  <div class="folio">6</div>
+  <span class="label" style="margin-top:4mm">[[i:book-open]] Para ir mais fundo</span>
+  <p style="font-size:8.6pt;margin-top:1.2mm"><i>Formando Líderes Vencedores</i> e <i>Você nasceu para reinar</i>, do Bispo Robson Rodovalho (leituras do Módulo III). Outras passagens: 1 Timóteo 4:14-15 · Eclesiastes 9:10 · Jeremias 1:6-8 · Juízes 6:11-16.</p>
+  <div class="ftr">6</div>
 </section>
 </body></html>
