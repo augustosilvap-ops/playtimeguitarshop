@@ -45,3 +45,7 @@ Mesmos 4 testes do post 02, com a palavra `PLANILHA`. Abrir a planilha no celula
 
 ## Versão Cinética (14/11, formato aprovado)
 - Vídeo: `reel_cinetico_1080x1920_21s.mp4` · capa `capa_cinetico_1080x1920.png`. Substitui a versão com filmagem. Sem narração (entra quando a chave do ElevenLabs chegar).
+
+
+## Versão mini-aula (15/11, POSTAR ESTA) 
+- `reel_aula_1080x1920_42s.mp4`: erro comum e por que dá errado → passo 1 custo por unidade → passo 2 % sobre a venda → passo 3 margem → passo 4 a conta em etapas → conferência (R$ 12,54 = 15%) → resumo para salvar → CTA PLANILHA.
