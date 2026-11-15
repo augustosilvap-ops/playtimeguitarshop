@@ -6,16 +6,17 @@
 #v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
 .w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
 .chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
-.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
 </style></head><body><div id="v"></div><script src="lib.js"></script><script>
 const THEME={dark:'radial-gradient(900px 1200px at 50% 30%,#13307A,#050A1C)',light:'#F5F7FB',accent:'#1C47C9',anim:'zoom',trans:'flash',deco:'grid',align:'left'};
 const SC=[
-[0,1.9,'light',lt=>W(lt,[[0,'GASTOU',130],[.2,'EM ANÚNCIO',130,BL]],260)+coins(lt,{n:18,count:500,y:600,top:1480}),'gastou em anúncio...'],
-[1.9,3.8,'dark',lt=>W(lt,[[0,'PRA ONDE',120],[.15,'FOI?',120,BL2]],260)+donut(lt,{slices:[[45,'#fff'],[20,'#C9D6F5'],[15,'#9DBBFF'],[20,RD]],hi:3,top:640,center:'20%',centerCol:RD,sub:'foi para anúncios · exemplo'}),'...e não sabe se voltou?'],
-[3.8,5.5,'accent',lt=>W(lt,[[0,'SEU ROAS',130]],330)+gauge(lt,{top:600,from:.05,to:.3,t0:.2,dur:1.1,valTxt:q=>'ROAS '+(1+q*3).toFixed(1).replace('.',',')}),'ROAS baixo = prejuízo.'],
-[5.5,7.4,'light',lt=>lbl('A conta',640,'#7A7F8C',eo(lt/.2))+typer(lt,{a:'ROAS mínimo = ',wrong:'chute',right:'1 ÷ margem',size:100,top:720,t1:.75,speed:26}),'use a conta, não o chute.'],
-[7.4,9.0,'dark',lt=>W(lt,[[0,'ANÚNCIO',140],[.15,'COM LUCRO.',140,BL2]],280)+bars(lt,{label:'Lucro com anúncio · exemplo',hi:GR,lo:'rgba(255,255,255,.18)',t0:.1}),'anúncio que paga a conta.'],
-[9.0,10.9,'accent',lt=>cta(lt,'ROAS'),'e receba a calculadora de ROAS no Direct.']];
-let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+[0.00,1.75,'light',lt=>W(lt,[[0,'GASTOU',130],[.2,'EM ANÚNCIO',130,BL]],260)+coins(lt,{n:16,count:500,y:600,top:1480}),'Você gastou R$ 500 em anúncio. Deu lucro?'],
+[1.75,3.50,'dark',lt=>W(lt,[[0,'O QUE É',130],[.15,'ROAS',200,BL2]],280)+typer(lt,{a:'ROAS = vendas ÷ gasto',size:80,top:820,speed:26,ink:'#fff'}),'ROAS = vendas geradas ÷ valor gasto no anúncio.'],
+[3.50,5.25,'accent',lt=>W(lt,[[0,'NO EXEMPLO',130]],300)+table(lt,{top:600,t0:.3,rows:[['Vendas geradas','R$ 900'],['Gasto em anúncio','R$ 500'],['ROAS','1,8']],hiLast:true}),'R$ 900 em vendas com R$ 500 gastos = ROAS 1,8.'],
+[5.25,7.00,'dark',lt=>W(lt,[[0,'ROAS',140],[.15,'MÍNIMO',140,BL2]],280)+typer(lt,{a:'1 ÷ margem → 1 ÷ 0,25 = 4',size:74,top:760,speed:26,ink:'#fff'}),'ROAS mínimo = 1 ÷ margem. Margem de 25% → 4.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'1,8 < 4',160,RD]],300)+gauge(lt,{top:560,from:.05,to:.2,t0:.2,dur:.9,valTxt:q=>'PREJUÍZO'}),'Abaixo do mínimo, o anúncio dá prejuízo: ajuste ou pause.'],
+[8.75,10.50,'dark',lt=>W(lt,[[0,'ACIMA DE 4',140,BL2]],300)+bars(lt,{label:'Lucro com anúncio · exemplo',hi:GR,lo:'rgba(255,255,255,.18)',t0:.15}),'Acima do mínimo, aumente o investimento aos poucos.'],
+[10.50,12.40,'accent',lt=>cta(lt,'ROAS'),'Comente ROAS e receba a calculadora.']];
+let DUR=12.40;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

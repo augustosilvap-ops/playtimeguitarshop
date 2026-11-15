@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#0A1430',light:'#EEF2FA',accent:'linear-gradient(160deg,#5B8CFF,#1C47C9)',anim:'mask',trans:'zoom',deco:'dots',align:'center'};
+const SC=[
+[0.00,1.75,'dark',lt=>W(lt,[[0,'COMPROU',130],[.2,'ESTOQUE NO',130],[.4,'ACHISMO?',190,BL2]],330)+notifs(lt,{items:['Pedido ao fornecedor: 200 un.','Vendidas no mês: 12'],top:1020,t0:.6,step:.3,dark:true,badge:false,icon:'!',ic:RD}),'Comprar sem pesquisar é apostar seu dinheiro.'],
+[1.75,3.50,'light',lt=>W(lt,[[0,'1. DEMANDA',150]],320)+table(lt,{top:620,t0:.3,rows:[['Anúncios do topo vendem?','sim ✓'],['Avaliações recentes?','sim ✓'],['Busca sugere o termo?','sim ✓']]}),'Passo 1: veja se o topo da busca tem vendas e avaliações.'],
+[3.50,5.25,'accent',lt=>W(lt,[[0,'2. CONCORRÊNCIA',110]],320)+table(lt,{top:600,t0:.3,rows:[['Faixa de preço','R$ 49 a 79'],['Nota média','4,3 ★'],['Frete grátis','7 de 10'],['Brecha','tampa que vaza']],hiLast:true}),'Passo 2: cole os 10 primeiros anúncios na IA e peça esta tabela.'],
+[5.25,7.00,'dark',lt=>W(lt,[[0,'3. RECLAMAÇÕES',110]],320)+notifs(lt,{items:['"Chegou amassada"','"A tampa vaza"','"Não mantém gelado"'],icon:'×',ic:RD,top:620,step:.25,t0:.3,dark:true,badge:false}),'Passo 3: a reclamação do concorrente é a sua oportunidade.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'4. MARGEM',150]],320)+table(lt,{top:620,t0:.3,rows:[['Preço médio do mercado','R$ 59,90'],['Custo + taxas','− R$ 44,00'],['Lucro por venda','R$ 15,90']],hiLast:true})+lbl('Exemplo hipotético',1130,'#7A7F8C'),'Passo 4: no preço do mercado, ainda sobra lucro?'],
+[8.75,10.50,'dark',lt=>W(lt,[[0,'DECIDA',150]],300)+gauge(lt,{top:560,from:.1,to:.85,t0:.2,dur:1.1,valTxt:q=>'NOTA '+Math.round(q*10)+'/10'}),'Passou nas 4? Teste com um lote pequeno antes.'],
+[10.50,12.40,'accent',lt=>cta(lt,'GARIMPO'),'Comente GARIMPO e receba os 5 prompts prontos.']];
+let DUR=12.40;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

@@ -6,16 +6,16 @@
 #v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
 .w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
 .chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
-.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
 </style></head><body><div id="v"></div><script src="lib.js"></script><script>
 const THEME={dark:'#0A1430',light:'#FFFFFF',accent:'#2F6BFF',anim:'right',trans:'iris',deco:'diag',align:'right'};
 const SC=[
-[0,1.8,'dark',lt=>W(lt,[[0,'SEU TÍTULO',130],[.2,'ESPANTA',210],[.45,'CLIENTE?',210,BL2]],520),'seu título espanta o cliente?'],
-[1.8,3.9,'light',lt=>lbl('Título do anúncio · exemplo',600,'#7A7F8C',eo(lt/.2))+typer(lt,{a:'Produto ',wrong:'barato promoção',right:'térmico 1L inox',size:96,top:700,t1:.9,speed:28}),'título genérico some na busca.'],
-[3.9,5.6,'accent',lt=>notifs(lt,{items:['Visita no anúncio','Visita no anúncio','Visita no anúncio','Visita no anúncio','Visita no anúncio'],icon:'↗',ic:'#0A1430',top:560,step:.2}),'muita visita, pouco clique.'],
-[5.6,7.3,'dark',lt=>W(lt,[[0,'RELEVÂNCIA',120]],380)+gauge(lt,{top:620,from:.12,to:.9,t0:.2,dur:1.2,labels:[['BAIXA',RD],['MÉDIA',YE],['ALTA',GR]]}),'o título certo aumenta a relevância.'],
-[7.3,9.0,'light',lt=>W(lt,[[0,'CLIQUES',120]],330)+slider(lt,{top:560,h:760,t0:.3,dur:1.1,L:{bg:'#FDECEC',k:'TÍTULO GENÉRICO · EXEMPLO',big:'0,8%',sub:'de cliques',c:RD},Rt:{bg:'#EAF0FF',k:'TÍTULO COM IA · EXEMPLO',big:'2,4%',sub:'de cliques',c:BL},bigSize:200}),'antes e depois do título (exemplo).'],
-[9.0,10.9,'accent',lt=>cta(lt,'TITULO'),'e receba o prompt de títulos no Direct.']];
-let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+[0.00,1.75,'dark',lt=>W(lt,[[0,'SEU TÍTULO',130],[.2,'ESPANTA',210],[.45,'CLIENTE?',210,BL2]],420),'O cliente encontra o produto pelas palavras do título.'],
+[1.75,3.50,'light',lt=>lbl('Errado → certo',600,'#7A7F8C',eo(lt/.2))+typer(lt,{a:'Garrafa ',wrong:'barata promoção',right:'térmica 1L inox',size:90,top:700,t1:.8,speed:28}),'Tire "promoção" e "barato": ninguém pesquisa isso.'],
+[3.50,5.25,'accent',lt=>W(lt,[[0,'A FÓRMULA',150]],300)+table(lt,{top:580,t0:.3,w1:'20%',rows:[['1','Produto'],['2','Marca ou modelo'],['3','Característica principal'],['4','Variação: cor, tamanho']]}),'Produto + marca + característica + variação.'],
+[5.25,7.00,'dark',lt=>lbl('Prompt',600,'#C9D6F5',eo(lt/.2))+typer(lt,{a:'Escreva 5 títulos para minha garrafa térmica 1L inox, usando as palavras que o cliente pesquisa.',size:46,speed:42,top:680,box:true}),'Peça 5 opções para a IA usando a fórmula.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'TESTE 7 DIAS',120]],300)+slider(lt,{top:520,h:760,t0:.3,dur:1.1,L:{bg:'#FDECEC',k:'TÍTULO ANTIGO',big:'0,8%',sub:'de cliques',c:RD},Rt:{bg:'#EAF0FF',k:'TÍTULO NOVO',big:'2,4%',sub:'de cliques',c:BL},bigSize:200})+lbl('Exemplo hipotético',1310,'#7A7F8C'),'Troque o título e compare os cliques em 7 dias.'],
+[8.75,10.65,'accent',lt=>cta(lt,'TITULO'),'Comente TITULO e receba o prompt completo.']];
+let DUR=10.65;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>

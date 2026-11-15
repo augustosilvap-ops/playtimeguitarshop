@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'radial-gradient(900px 1200px at 50% 30%,#13307A,#050A1C)',light:'#F5F7FB',accent:'#1C47C9',anim:'zoom',trans:'flash',deco:'rings',align:'right'};
+const SC=[
+[0.00,1.75,'dark',lt=>W(lt,[[0,'VAI DAR',130],[.2,'30% OFF',200],[.4,'NA BLACK?',150,BL2]],330)+notifs(lt,{items:['Cupom −30% ativado','Cupom −30% ativado'],top:1020,t0:.6,step:.25,dark:true,badge:false}),'Antes do cupom, faça uma conta de 1 minuto.'],
+[1.75,3.50,'light',lt=>W(lt,[[0,'COM 30% OFF',120]],300)+table(lt,{top:560,t0:.3,rows:[['Preço','R$ 83,90'],['Com −30%','R$ 58,73'],['Taxas (27%)','− R$ 15,86'],['Custo','− R$ 48,50'],['Resultado','− R$ 5,63',RD]],hiLast:true})+lbl('Exemplo hipotético',1320,'#7A7F8C'),'No exemplo, cada venda com 30% off dá prejuízo.'],
+[3.50,5.25,'accent',lt=>W(lt,[[0,'O CUPOM',130],[.2,'QUEBRA SUA',130]],360)+split(lt,.7,'MARGEM.',820),'O desconto sai inteiro da sua margem.'],
+[5.25,7.00,'dark',lt=>W(lt,[[0,'1. PREÇO',140],[.15,'MÍNIMO',140,BL2]],300)+typer(lt,{a:'48,50 ÷ (1 − 0,27) = R$ 66,44',size:62,top:720,speed:30,ink:'#fff'}),'Passo 1: custo ÷ (1 − taxas). Abaixo disso, prejuízo.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'2. MARGEM',140],[.15,'MÍNIMA',140,BL]],300)+liquid(lt,{pct:5,top:640,t0:.2,dur:1,fill:BL}),'Passo 2: defina a menor margem aceitável (ex.: 5%).'],
+[8.75,10.50,'dark',lt=>W(lt,[[0,'3. DESCONTO',130],[.15,'MÁXIMO',130,BL2]],300)+(lt>.5?`<div class="t" style="top:680px;font-size:320px;color:#fff;transform:scale(${eb((lt-.5)/.35)})">15%</div>`:'')+lbl('R$ 83,90 → R$ 71,32 · exemplo',1050,'#C9D6F5',eo((lt-.8)/.3)),'Passo 3: custo ÷ (1 − taxas − margem mínima).'],
+[10.50,12.40,'accent',lt=>cta(lt,'DESCONTO'),'Comente DESCONTO e receba a calculadora.']];
+let DUR=12.40;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

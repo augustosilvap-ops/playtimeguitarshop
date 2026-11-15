@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#000000',light:'#FFFFFF',accent:'#2F6BFF',anim:'left',trans:'wipe',deco:'grid',align:'left'};
+const SC=[
+[0.00,1.75,'dark',lt=>W(lt,[[0,'VOCÊ VENDE',130],[.2,'E NÃO',130],[.4,'SOBRA?',220,BL2]],360)+notifs(lt,{items:['Venda aprovada · R$ 100','Venda aprovada · R$ 100','Venda aprovada · R$ 100'],top:1000,t0:.6,step:.2,dark:true,badge:false}),'Vender R$ 100 não é lucrar R$ 100.'],
+[1.75,3.50,'light',lt=>W(lt,[[0,'PRA ONDE VAI',110]],300)+donut(lt,{slices:[[45,'#0A1430'],[14,'#2F6BFF'],[6,'#7FA3FF'],[18,'#C9D6F5'],[17,YE]],hi:4,top:520,center:'R$ 17',centerCol:INK,sub:'sobram de R$ 100 · exemplo'}),'Produto, comissão, imposto, frete e anúncio saem antes.'],
+[3.50,5.25,'accent',lt=>W(lt,[[0,'1. SOME',150],[.2,'OS CUSTOS',150]],320)+table(lt,{top:720,t0:.4,rows:[['Produto','R$ 40,00'],['Embalagem','R$ 2,50'],['Tarifa fixa','R$ 6,00'],['Custo por unidade','R$ 48,50']],hiLast:true}),'Passo 1: some tudo o que sai por unidade.'],
+[5.25,7.00,'dark',lt=>W(lt,[[0,'2. SOME',150],[.2,'OS %',150,BL2]],320)+table(lt,{top:720,t0:.4,rows:[['Comissão','14%'],['Imposto','6%'],['Anúncios','5%'],['Devoluções','2%'],['Total sobre a venda','27%']],hiLast:true}),'Passo 2: some os percentuais cobrados sobre o preço.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'3. DIVIDA',150]],320)+typer(lt,{a:'48,50 ÷ (1 − 0,27 − 0,15)',size:76,top:640,speed:30})+(lt>1?`<div class="t" style="top:900px;font-size:220px;color:${BL};transform:scale(${eb((lt-1)/.35)})">R$ 83,62</div>`:'')+lbl('Preço com margem de 15% · exemplo',1180,'#7A7F8C',eo((lt-1.1)/.3)),'Passo 3: custo ÷ (1 − % − margem desejada).'],
+[8.75,10.50,'dark',lt=>W(lt,[[0,'CHUTE × CONTA',110]],300)+slider(lt,{top:520,h:800,t0:.3,dur:1.1,L:{bg:'#FDECEC',k:'CUSTO × 1,42',big:'R$ 68,87',sub:'margem de 2,6%',c:RD},Rt:{bg:'#EAF0FF',k:'COM A CONTA',big:'R$ 83,62',sub:'margem de 15%',c:BL},bigSize:160}),'Somar os % ao custo faz a margem sumir.'],
+[10.50,12.40,'accent',lt=>cta(lt,'PLANILHA'),'Comente PLANILHA e receba a planilha que faz a conta.']];
+let DUR=12.40;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

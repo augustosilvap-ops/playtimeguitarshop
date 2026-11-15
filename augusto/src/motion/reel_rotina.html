@@ -6,16 +6,17 @@
 #v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
 .w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
 .chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
-.cap{position:absolute;left:84px;right:84px;bottom:250px;text-align:center;font:700 40px I}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
 </style></head><body><div id="v"></div><script src="lib.js"></script><script>
 const THEME={dark:'#000000',light:'#EEF2FA',accent:'linear-gradient(160deg,#5B8CFF,#1C47C9)',anim:'mask',trans:'wipe',deco:'glow',align:'center'};
 const SC=[
-[0,1.8,'accent',lt=>W(lt,[[0,'PEDIDOS',150],[.2,'ACUMULANDO?',130]],250)+notifs(lt,{items:['Novo pedido #1042','Novo pedido #1043','Novo pedido #1044','Novo pedido #1045','Novo pedido #1046'],top:640,step:.18,t0:.3}),'pedidos acumulando?'],
-[1.8,3.8,'dark',lt=>W(lt,[[0,'O PRAZO',140]],330)+calendar(lt,{days:[16,17,18,19],rate:2.4,top:600,head:'PRAZO DE ENVIO',stampTxt:'ATRASO'}),'atraso vira reclamação.'],
-[3.8,5.6,'light',lt=>W(lt,[[0,'ROTINA',150],[.2,'DIÁRIA.',150,BL]],300)+route(lt,{t0:.2,dur:1.3,after:'postar até 12h todo dia',afterCol:BL}),'uma rotina simples resolve.'],
-[5.6,7.3,'dark',lt=>W(lt,[[0,'NO PRAZO',140]],330)+liquid(lt,{pct:98,top:600,t0:.15,dur:1.3})+lbl('Pedidos no prazo · exemplo',1360,'#8C92A3'),'pedidos saindo no prazo.'],
-[7.3,9.0,'light',lt=>W(lt,[[0,'REPUTAÇÃO',130],[.2,'SUBINDO ↑',130,BL]],280)+bars(lt,{label:'Reputação · exemplo',t0:.15}),'reputação sobe junto.'],
-[9.0,10.9,'accent',lt=>cta(lt,'ROTINA'),'e receba o checklist diário no Direct.']];
-let DUR=10.9;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+[0.00,1.75,'accent',lt=>W(lt,[[0,'PEDIDOS',150],[.2,'ACUMULANDO?',130]],250)+notifs(lt,{items:['Novo pedido #1042','Novo pedido #1043','Novo pedido #1044','Novo pedido #1045'],top:660,step:.18,t0:.3}),'Sem rotina, pedido atrasa e vira reclamação.'],
+[1.75,3.50,'dark',lt=>W(lt,[[0,'ATRASO',150]],320)+calendar(lt,{days:[16,17,18,19],rate:2.4,top:580,head:'PRAZO DE ENVIO',stampTxt:'ATRASO'}),'Atraso de envio derruba a reputação.'],
+[3.50,5.25,'light',lt=>W(lt,[[0,'ROTINA FIXA',130]],280)+table(lt,{top:540,t0:.3,step:.15,w1:'22%',rows:[['09h','Separar os pedidos do dia'],['10h','Imprimir etiquetas'],['11h','Embalar e conferir'],['12h','Postar ou chamar coleta'],['17h','Responder mensagens']]}),'Faça sempre na mesma ordem, todo dia.'],
+[5.25,7.00,'dark',lt=>W(lt,[[0,'POSTE',150],[.15,'ATÉ 12H',150,BL2]],280)+route(lt,{t0:.3,dur:1.2}),'Postar até o meio-dia ajuda o pedido a sair no mesmo dia.'],
+[7.00,8.75,'light',lt=>W(lt,[[0,'NO PRAZO',140]],300)+liquid(lt,{pct:98,top:560,t0:.15,dur:1.2,fill:BL})+lbl('Meta de pedidos no prazo · exemplo',1320,'#7A7F8C'),'Meta: quase todos os pedidos no prazo.'],
+[8.75,10.50,'dark',lt=>W(lt,[[0,'REPUTAÇÃO',130],[.15,'SOBE ↑',130,BL2]],280)+bars(lt,{label:'Reputação · exemplo',lo:'rgba(255,255,255,.18)',t0:.15}),'Com reputação melhor, o anúncio ganha visibilidade.'],
+[10.50,12.40,'accent',lt=>cta(lt,'ROTINA'),'Comente ROTINA e receba o checklist diário.']];
+let DUR=12.40;const K=1.7;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
 R(0);
 </script></body></html>
