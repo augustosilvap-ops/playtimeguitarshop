@@ -13,6 +13,8 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 
 - Artes RUAH (APROVADO o pedido 14/11): estampa em close no fundo com opacidade baixa + palavra gigante em negrito (Cinzel 900) passando por trás do modelo, parte das letras na frente dos ombros; modelo recortado das fotos oficiais (rembg, `ruah/src/recortes/`); camiseta preta em fundo bone, clara em fundo preto. Base: `ruah/src/posts_ruah_v2.html`. Nunca cobrir a estampa.
 
+- Nova direção RUAH (15/11, pedido do Augusto): MISTURAR editorial de revista com urbano/streetwear. 4 modelos em teste em `ruah/src/posts_ruah_v3.html` → `ruah/entregas/testes/v3_editorial_street/` (T1 capa de revista, T2 lambe-lambe no concreto, T3 página de revista, T4 ficha técnica street — só afirmações aprovadas). Usar as fotos oficiais existentes; Augusto vai mandar fotos novas depois.
+
 ## Estrutura
 - `ruah/` — pacote da marca (logos, fontes, fotos de produto, conteúdo, vídeos, textos, scripts).
   - `ruah/scripts/` usa caminhos da sessão antiga; ajuste `SP` e os caminhos de fontes/logos antes de rodar.
