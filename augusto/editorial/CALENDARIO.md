@@ -10,7 +10,7 @@
 | 03 | Dom 15/11 | 18h | Reel 18s | Precificação | Cinético · preto/grade | Você vende e não sobra? Leia a legenda. | PLANILHA | Planilha de Precificação (XLSX) | — | Remanejado: 18/11 16h automático (Reel narrado 79s) |
 | 05 | Dom 15/11 | 20h | Estático | Precificação | v2 | Margem não é markup | MARKUP | Tabela markup → margem (PDF 1 p.) | — | Publicado 16/11 10h (Windsor, sem presente) |
 | 04 | Seg 16/11 | 10h | Carrossel 7 | Precificação | v2 | Faturamento não é lucro | MARGEM | Mini-guia Faturamento × Lucro × Margem (PDF) | — | Pronto p/ revisão |
-| 11 | Seg 16/11 | 12h | Estático | Precificação | v4 | Pare de precificar no escuro | ESCURO | Prompt de preço mínimo (PDF 1 p.) | — | Agendado: publicação automática via Windsor |
+| 11 | Seg 16/11 | 12h | Estático | Precificação | v4 | Pare de precificar no escuro | ESCURO | Prompt de preço mínimo (PDF 1 p.) | — | Publicado 16/11 12h (Windsor) |
 | 06 | Seg 16/11 | 18h | Reel 18s | IA aplicada | Cinético · claro/pontos | Comprou estoque no achismo? Leia a legenda. | GARIMPO | 5 prompts de garimpo (PDF) | — | Agendado: publicação automática via Windsor |
 | 07 | Seg 16/11 | 20h | Carrossel 7 | IA aplicada | v2 | Valide antes de comprar | VALIDAR | Checklist de validação (PDF) | — | Agendado: publicação automática via Windsor |
 | 10 | Ter 17/11 | 10h | Carrossel 8 | Estratégia comercial | v4 | Black Friday com oferta que dá lucro | BLACK | Planejador de ofertas da Black Friday (XLSX) | — | Agendado: publicação automática via Windsor |
