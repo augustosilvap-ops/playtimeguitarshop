@@ -31,7 +31,7 @@ def build(name,theme,kw,capcta,S):
 OUT={}
 OUT['garimpo']=build('garimpo','claro_pontos','GARIMPO','Comente GARIMPO e receba os 5 prompts prontos.',[
 (2.0,'dark',"W(lt,[[0,'COMPROU',130],[.2,'200 PEÇAS',170],[.45,'NO ACHISMO?',130,BL2]],420)","Vamos validar um produto antes de comprar, com um exemplo."),
-(2.4,'light',"W(lt,[[0,'O ERRO',150]],260)+"+tb([T('Pedido ao fornecedor','200 un.'),T('Vendidas em 30 dias','12 un.'),T('Dinheiro parado','R$ 7.520','RD')],hiLast='true'),"Erro comum: comprar porque “parece que vende”."),
+(2.4,'light',"W(lt,[[0,'O ERRO',150]],260)+"+tb([T('Pedido ao fornecedor','200 un.'),T('Vendidas em 30 dias','12 un.'),T('Dinheiro parado','R$ 5.264','RD')],hiLast='true'),"Erro comum: comprar porque “parece que vende”."),
 (2.4,'accent',"W(lt,[[0,'POR QUE',150],[.15,'DÁ ERRADO?',120]],260)+"+box('Você viu o produto em alta, mas não conferiu se alguém compra ele no seu canal.'),"Produto em alta não prova que ele vende no SEU canal."),
 (2.6,'light',head('PASSO 1','DEMANDA','BL')+"+"+tb([T('Digite o produto na busca','veja as sugestões'),T('Abra os 5 primeiros','eles têm vendas?'),T('Avaliações','são recentes?')],w1="'48%'"),"Passo 1: pesquise no próprio marketplace, como o cliente faz."),
 (2.8,'dark',head('PASSO 2','CONCORRÊNCIA','BL2')+"+"+tb([T('Faixa de preço','R$ 49 a R$ 79'),T('Nota média','4,3 ★'),T('Frete grátis','7 de 10'),T('Brecha','tampa que vaza')],hiLast='true'),"Passo 2: cole os 10 primeiros anúncios na IA e peça esta tabela."),

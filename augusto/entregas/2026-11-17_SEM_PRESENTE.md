@@ -51,7 +51,7 @@ Faça o teste agora: dê uma nota de 0 a 10 para cada sinal do produto que você
 ---
 
 ## 18h · Reel DESCONTO — Vai dar 30% off na Black?
-**Arquivo:** `2026-11-18/09_reel_desconto/reel_narrado_1080x1920_44s.mp4` (narrado pelo Lucas + trilha + efeitos; final "SALVE PRA BLACK"). Capa: `capa_aula_1080x1920.png`.
+**Arquivo:** `2026-11-18/09_reel_desconto/reel_narrado_1080x1920_79s.mp4` (narração detalhada do Lucas + legenda frase a frase + trilha + efeitos). Capa: `capa_aula_1080x1920.png`.
 
 **Legenda:**
 
@@ -74,7 +74,7 @@ Exemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mín
 ---
 
 ## 20h · Reel ANUNCIO — Muita visita e nenhuma venda?
-**Arquivo:** `2026-11-19/12_reel_anuncio/reel_narrado_1080x1920_44s.mp4` (narrado pelo Lucas + trilha + efeitos; final "SALVE E REVISE"). Capa: `capa_aula_1080x1920.png`.
+**Arquivo:** `2026-11-19/12_reel_anuncio/reel_narrado_1080x1920_56s.mp4` (narração detalhada do Lucas + legenda frase a frase + trilha + efeitos). Capa: `capa_aula_1080x1920.png`.
 
 **Legenda:**
 

@@ -55,7 +55,7 @@ Faça agora com o seu produto principal: some todos os % que saem em cada venda,
 ---
 
 ## 18h · Reel GARIMPO — Quer usar IA para achar produtos com potencial?
-**Arquivo:** `2026-11-17/06_reel_garimpo/reel_narrado_1080x1920_40s.mp4` (narrado pelo Lucas + trilha + efeitos; final "SALVE E TESTE"). Capa: `capa_aula_1080x1920.png`.
+**Arquivo:** `2026-11-17/06_reel_garimpo/reel_narrado_1080x1920_64s.mp4` (narração detalhada do Lucas + legenda frase a frase + trilha + efeitos). Capa: `capa_aula_1080x1920.png`.
 
 **Legenda:**
 
