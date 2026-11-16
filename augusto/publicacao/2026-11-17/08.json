@@ -1,0 +1,13 @@
+{
+ "hora": "12:00",
+ "acao": "create_image_post",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/17/08.jpg",
+  "caption": "Nem todo produto que \"parece bom\" vale o estoque. Procure 3 sinais juntos:\n\n1. Demanda real: concorrentes com vendas e avaliações recentes.\n2. Concorrência com brecha: reclamações que você consegue resolver (fornecedor, embalagem, descrição).\n3. Margem que sobra: lucro no preço do mercado, depois de todas as taxas.\n\nSe um dos três estiver fraco, não compre. Se os três estiverem fortes, teste com um lote pequeno antes de escalar.\n\nFaça o teste agora: dê uma nota de 0 a 10 para cada sinal do produto que você está pensando em comprar. Abaixo de 7 em qualquer um, segure a compra.\n\n💬 Me conta nos comentários: qual dos 3 sinais você costuma ignorar?\n🔖 Salve para usar antes da próxima compra.\n\n#produtos #mercadolivre #shopee #ecommerce #vendasonline"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-17",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}

@@ -1,0 +1,15 @@
+{
+ "hora": "20:00",
+ "acao": "create_video_post",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/17/12.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/17/12_capa.jpg",
+  "share_to_feed": true,
+  "caption": "Seu anúncio tem visita, mas não vende? Antes de investir em mais tráfego, olhe para o anúncio.\n\nRevise estes 5 pontos:\n\n1. Foto: produto inteiro, fundo limpo, sem texto por cima.\n2. Título: escrito como o cliente pesquisa. Nada de \"promoção\" ou \"barato\".\n3. Preço: compare com os 10 primeiros resultados da busca.\n4. Frete e prazo: são das primeiras coisas que o cliente vê.\n5. Descrição: responda as dúvidas que mais aparecem nas perguntas.\n\nMais visita num anúncio que não convence só aumenta o número de pessoas que vão embora.\n\n🔖 Salve e revise seu anúncio principal hoje, ponto por ponto.\n💬 Qual desses 5 você acha que está pegando no seu? Me conta aqui.\n\n#marketplace #mercadolivre #shopee #ecommerce #vendasonline"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-17",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}

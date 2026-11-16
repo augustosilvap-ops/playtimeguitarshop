@@ -1,0 +1,22 @@
+{
+ "hora": "10:00",
+ "acao": "create_carousel_post",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/17/10_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_07.jpg",
+   "https://nexusautomatic.vercel.app/ig/17/10_08.jpg"
+  ],
+  "caption": "A Black Friday é em 27/11. E todo ano alguém vende muito e termina o mês no prejuízo.\n\nAntes de montar suas ofertas, siga 5 passos:\n\n1. Escolha quem entra: só produtos com margem alta e estoque para a demanda.\n2. Calcule o desconto máximo: custo ÷ (1 − taxas − margem mínima). Acima disso, cada venda tira dinheiro do seu bolso.\n3. Pense além do desconto: kit, brinde ou frete a partir de um valor mínimo.\n4. Defina limite e prazo: quantas unidades, até quando e qual a meta de lucro.\n5. Acompanhe a margem real todo dia e ajuste a oferta no mesmo dia se ela cair.\n\nExemplo hipotético: um produto de R$ 83,90 com custo de R$ 48,50 e 27% de taxas aguenta no máximo 15% de desconto. Com −30%, cada venda perde R$ 5,63. Em 200 vendas, são R$ 1.125 de prejuízo.\n\n🔖 Salve este post para montar suas ofertas com calma.\n↗ Envie para aquele amigo que já está pensando em \"−50% em tudo\".\n\n#blackfriday #marketplace #precificacao #ecommerce #vendasonline"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-17",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}

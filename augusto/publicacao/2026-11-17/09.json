@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/17/09.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/17/09_capa.jpg",
+  "share_to_feed": true,
+  "caption": "A Black Friday é em 27/11. Antes de colocar \"-30%\" em tudo, faça uma conta de 1 minuto.\n\n1. Descubra o seu preço mínimo: custo por unidade ÷ (1 − soma dos % cobrados na venda).\n2. Defina a menor margem que você aceita na promoção (ex.: 5%).\n3. Calcule o preço da oferta: custo ÷ (1 − % da venda − margem mínima).\n4. Compare com o preço atual: esse é o seu desconto máximo.\n\nExemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mínima de 5%. O desconto máximo é 15%. Um cupom de 20% deixaria a margem abaixo de 1%.\n\n🔖 Salve e faça essa conta com cada produto antes de definir o desconto.\n↗ Envie para quem vai fazer Black Friday este ano.\n\n#blackfriday #precificacao #marketplace #ecommerce #vendasonline"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-17",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}
