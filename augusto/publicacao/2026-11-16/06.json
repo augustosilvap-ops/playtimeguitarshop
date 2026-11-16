@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/16/06.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/16/06_capa.jpg",
+  "share_to_feed": true,
+  "caption": "A IA não sabe quanto um produto vende. Mas ela é ótima para organizar o que você descobre.\n\nUm jeito simples de usar IA para garimpar produtos:\n\n1. Peça ideias por nicho, com o motivo de compra e o risco de cada uma.\n2. Cole os dados dos 10 primeiros anúncios (preço, avaliações, vendas exibidas) e peça uma tabela com faixa de preço e brechas.\n3. Cole as avaliações negativas dos concorrentes e descubra o que eles fazem mal.\n4. Calcule a margem com as taxas oficiais do seu canal.\n5. Peça uma nota de 0 a 10 para demanda, concorrência e margem, sempre com base nos dados que você passou.\n\nRegra de ouro: só compre estoque depois de conferir com dados reais e fazer um teste pequeno.\n\n🔖 Salve e use esse passo a passo no próximo produto.\n↗ Envie para quem está escolhendo o que vender.\n\n#ia #produtos #marketplace #mercadolivre #shopee"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-16",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}

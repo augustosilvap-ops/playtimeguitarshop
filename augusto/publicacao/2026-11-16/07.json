@@ -1,0 +1,21 @@
+{
+ "hora": "20:00",
+ "acao": "create_carousel_post",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/16/07_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/16/07_07.jpg"
+  ],
+  "caption": "Comprar estoque sem validar é apostar com o seu dinheiro.\n\nAntes de fechar qualquer pedido com o fornecedor, passe o produto por 4 checagens:\n\n1. Demanda: tem gente procurando? Veja as sugestões da busca e se os anúncios do topo têm vendas.\n2. Concorrência: quem já vende, a que preço e com que nota?\n3. Avaliações: o que os clientes reclamam nos concorrentes? Aí está a sua oportunidade.\n4. Margem: no preço médio do mercado, sobra dinheiro depois de todas as taxas?\n\nA IA ajuda a organizar tudo isso em minutos, mas só com os dados que você coletou. Ela não sabe quanto um produto vende.\n\n🔖 Salve e use antes de fechar o próximo pedido com o fornecedor.\n💬 Qual dessas checagens você costuma pular?\n\n#produtos #marketplace #mercadolivre #shopee #ia"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-16",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}

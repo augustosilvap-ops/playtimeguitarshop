@@ -1,0 +1,13 @@
+{
+ "hora": "12:00",
+ "acao": "create_image_post",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/16/11.jpg",
+  "caption": "Você sabe qual é o menor preço que pode cobrar sem ter prejuízo?\n\nEsse número se chama preço mínimo. É o ponto em que a venda empata: abaixo dele, cada pedido tira dinheiro do seu bolso.\n\nA conta é simples:\npreço mínimo = custo por unidade ÷ (1 − soma dos % cobrados na venda)\n\nExemplo hipotético: custo por unidade de R$ 48,50 e 27% de taxas.\n48,50 ÷ 0,73 = R$ 66,44.\n\nQuem não sabe esse número dá desconto no escuro e só descobre o prejuízo no extrato.\n\nFaça agora com o seu produto principal: some todos os % que saem em cada venda, subtraia de 1 e divida o custo por esse número.\n\n🔖 Salve para calcular antes do próximo desconto.\n↗ Envie para quem vive dando cupom sem fazer conta.\n\n#precificacao #marketplace #ecommerce #ia #vendasonline"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-16",
+ "status": "agendado (aprovado pelo Augusto 16/11)"
+}
