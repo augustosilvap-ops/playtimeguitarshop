@@ -1,0 +1,13 @@
+{
+ "hora": "10:00 (agora)",
+ "acao": "create_image_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-16",
+ "status": "aguardando confirmação do Augusto",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/16/05.jpg",
+  "caption": "\"Coloquei 50% em cima do custo, então tenho 50% de margem.\" Não tem.\n\nMarkup é quanto você soma ao custo.\nMargem é quanto do preço sobra.\n\nProduto de R$ 40 com markup de 50% → preço de R$ 60.\nLucro: R$ 20. Margem: R$ 20 ÷ R$ 60 = 33%.\n\nE isso antes de comissão, imposto, frete e anúncios. Quem confunde os dois acha que está ganhando bem e descobre o contrário no fim do mês.\n\nPara chegar numa margem de 50% de verdade, o preço precisa ser o custo ÷ 0,5. No exemplo: R$ 40 ÷ 0,5 = R$ 80 — e ainda falta descontar as taxas.\n\n🔖 Salve para não confundir na hora de precificar.\n💬 Você precificava com markup ou com margem? Conta aqui.\n\n#markup #margem #precificacao #marketplace #vendasonline"
+ }
+}
