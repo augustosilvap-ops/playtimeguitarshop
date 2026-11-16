@@ -47,7 +47,30 @@ REELS = {
   (big('<div style="font:800 150px/.95 I;letter-spacing:-.05em">SALVE<br><span style="color:#BFD2FF">PRA BLACK</span></div><div style="display:inline-block;margin-top:50px;padding:28px 54px;border-radius:99px;background:#fff;color:#1C47C9;font:800 48px I">Envie para quem precisa ↗</div>'), "Salve e faça essa conta antes de criar qualquer cupom."),
  ],
 }
-SFX = {'notif': [(.25, 'pop', .8)], 'phone': [(.2, 'pop', .7)], 'bubble': [(.05, 'pop', .8)], 'typing': [(0, 'typing', .4)],
+
+# ---------------- QUIZ "VOCÊ ACERTARIA?" (formato novo, 17/11 18h) ----------------
+# Q1: 60 × 20% = 12 → 48 < 50 (prejuízo) · 50 ÷ 0,8 = 62,50 | Q2: 30% de 80 = 24 > lucro 20 | Q3: 1 ÷ 0,25 = 4 · 900 × 25% = 225 − 300 = −75
+Q1 = 'O produto custa <span style="color:#FFC94D">R$ 50</span> e as taxas levam <span style="color:#FFC94D">20% do preço</span>. Qual o preço mínimo?'
+O1 = ['R$ 60,00', 'R$ 62,50', 'R$ 70,00']
+Q2 = 'Você lucra <span style="color:#FFC94D">R$ 20</span> num produto de <span style="color:#FFC94D">R$ 80</span>. Dá um cupom de <span style="color:#FFC94D">30%</span>. E aí?'
+O2 = ['O lucro cai um pouco', 'Vira prejuízo', 'Continua igual']
+Q3 = 'Gastou <span style="color:#FFC94D">R$ 300</span> em anúncio e vendeu <span style="color:#FFC94D">R$ 900</span>. Antes do anúncio, sobram <span style="color:#FFC94D">25%</span>. Deu lucro?'
+O3 = ['Sim, ROAS 3', 'Não, precisava de ROAS 4', 'Empatou']
+REELS['quiz'] = [
+  (big('<div style="font:800 140px/.95 I;letter-spacing:-.06em">VOCÊ<br><span style="background:#FFC94D;color:#0A0B10;padding:0 20px">ACERTARIA?</span></div><div style="font:700 50px I;margin-top:40px;opacity:.9">3 perguntas de quem vende online</div>'), "Três perguntas de quem vende online. Vamos ver quantas você acerta?"),
+  (S('quizq', n=1, q=Q1, ops=O1, hold=3), "Pergunta 1. O produto custa 50 reais e as taxas levam 20% do preço. Qual é o preço mínimo?"),
+  (S('quizr', n=1, q=Q1, ops=O1, ok=1), "Resposta B: R$ 62,50. Com 60 reais, as taxas levam 12 e sobram 48, menos que o custo."),
+  (S('formula', f='=50/(1-20%)', r='R$ 62,50', col='#4ADE80'), "A conta é o custo dividido por 1 menos as taxas: 50 dividido por 0,8."),
+  (S('quizq', n=2, q=Q2, ops=O2, hold=3), "Pergunta 2. Você lucra 20 reais num produto de 80 e dá um cupom de 30%. O que acontece?"),
+  (S('quizr', n=2, q=Q2, ops=O2, ok=1), "Resposta B: vira prejuízo."),
+  (big('<div style="font:600 54px I;opacity:.9">O cupom tira</div><div style="font:800 220px/1 I;letter-spacing:-.06em">R$ 24</div><div style="font:700 60px I">e o lucro era R$ 20</div>', 'red', shake=1, top=600), "30% de 80 são 24 reais. O desconto é maior que o lucro inteiro."),
+  (S('quizq', n=3, q=Q3, ops=O3, hold=3, top=760), "Pergunta 3. Gastou 300 em anúncio e vendeu 900. Antes do anúncio, sobram 25% de cada venda. Deu lucro?"),
+  (S('quizr', n=3, q=Q3, ops=O3, ok=1, top=760), "Resposta B. O ROAS mínimo é 1 dividido por 0,25: 4. O anúncio fez ROAS 3."),
+  (big('<div style="font:600 54px I;opacity:.9">Sobraram R$ 225, o anúncio custou R$ 300</div><div style="font:800 240px/1 I;letter-spacing:-.06em">−R$ 75</div>', 'red', top=620), "Sobraram 225 reais e o anúncio custou 300. Prejuízo de 75. Números de exemplo."),
+  (big('<div style="font:800 130px/.95 I;letter-spacing:-.05em">QUANTAS<br>VOCÊ<br><span style="background:#FFC94D;color:#0A0B10;padding:0 20px">ACERTOU?</span></div><div style="display:inline-block;margin-top:50px;padding:28px 54px;border-radius:99px;background:#fff;color:#1C47C9;font:800 46px I">Comenta aí 👇 · Salve 🔖</div>'), "Quantas você acertou? Comenta aqui e salve para refazer depois."),
+]
+
+SFX = {'quizq': [(.5, 'pop', .6), (.75, 'pop', .6), (1.0, 'pop', .6)], 'quizr': [(.15, 'chime', .8), (.2, 'stamp', .5)], 'notif': [(.25, 'pop', .8)], 'phone': [(.2, 'pop', .7)], 'bubble': [(.05, 'pop', .8)], 'typing': [(0, 'typing', .4)],
        'sheet': [(.2, 'tick', .7), (.5, 'typing', .3)], 'cell': [(.15, 'typing', .4)], 'formula': [(0, 'typing', .45), (1.2, 'impact', .55)], 'chart': [(.2, 'riser', .45)]}
 
 def main():
@@ -57,7 +80,7 @@ def main():
         st = t; vt = t + (.25 if i == 0 else .1)
         for fr in [f for f in re.split(r'(?<=[.?!:])\s+', fala) if f.strip()]:
             a = NA.tts(NA.falar(fr)); voz.append((vt, a)); caps.append([round(vt - .05, 3), 0, fr]); vt += len(a) / NA.SR; caps[-1][1] = round(vt + .04, 3); vt += .04
-        dur = max(1.6, vt - st + .2); beats.append(dict(t0=round(st, 3), t1=round(st + dur, 3), **b))
+        dur = max(1.6, vt - st + .2 + b['p'].get('hold', 0)); b = dict(b, p=dict(b['p'], d=round(dur, 3))); beats.append(dict(t0=round(st, 3), t1=round(st + dur, 3), **b))
         fx.append((st, 'whoosh' if i else 'impact', .5 if i else .7))
         p = b['p']
         if b['shot'] == 'big': fx.append((st + .1, 'impact' if p.get('bg') == 'red' else 'chime' if p.get('bg') == 'green' else 'pop', .7))

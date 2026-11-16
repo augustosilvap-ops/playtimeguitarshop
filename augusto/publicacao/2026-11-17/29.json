@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-17",
+ "status": "programado — publica só se aprovado no Nexus (substitui o DESCONTO das 18h)",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/17/29.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/17/29_capa.jpg",
+  "share_to_feed": true,
+  "caption": "3 perguntas de quem vende online. Pausa o vídeo e responde antes de ver a resposta 👀\n\n1️⃣ O produto custa R$ 50 e as taxas levam 20% do preço. Qual o preço mínimo?\n2️⃣ Você lucra R$ 20 num produto de R$ 80 e dá um cupom de 30%. O que acontece?\n3️⃣ Gastou R$ 300 em anúncio, vendeu R$ 900 e, antes do anúncio, sobram 25% de cada venda. Deu lucro?\n\nAs respostas e as contas estão no vídeo. (Números de exemplo, hipotéticos.)\n\n💬 Quantas você acertou? Comenta aqui: 0, 1, 2 ou 3.\n🔖 Salve para refazer depois.\n\n#precificacao #marketplace #ecommerce #vendasonline #empreendedorismo"
+ }
+}
