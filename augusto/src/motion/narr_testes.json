@@ -1,0 +1,160 @@
+{
+ "titulo_salve": [
+  "Seu título está espantando cliente? Vamos reescrever um, com um exemplo, passo a passo.",
+  "O erro comum: encher o título de palavras que ninguém pesquisa, como garrafa barata, promoção, envio rápido.",
+  "Por quê? A busca do marketplace compara o seu título com o que o cliente digita. Ninguém digita promoção ou barato para achar uma garrafa.",
+  "Passo 1, pesquise. Digite o produto na busca e anote as sugestões que aparecem, como 1 litro, inox e 24 horas. Depois veja quais palavras se repetem nos títulos do topo.",
+  "Passo 2, a fórmula: produto, marca ou modelo, característica principal e variação. No exemplo: garrafa térmica, Inox Pro, 1 litro, 24 horas gelada, preta.",
+  "Passo 3, monte o título juntando tudo, sem repetir palavras e sem símbolos: Garrafa Térmica Inox Pro 1 Litro 24h Gelada Preta.",
+  "Passo 4, use a IA. Peça 5 versões com as palavras que o cliente pesquisa e o limite de caracteres do seu canal. Escolha a mais clara, não a mais criativa.",
+  "Passo 5, teste. Troque o título e compare a taxa de cliques depois de 7 dias. No exemplo, foi de 0,8% para 2,4%: três vezes mais cliques.",
+  "Resumo: pesquise as palavras da busca, use a fórmula, respeite o limite do canal e teste. Números de exemplo.",
+  "Salve e reescreva hoje o título do seu anúncio principal."
+ ],
+ "t1_classico": [
+  "Clássico ou Premium no marketplace? Vamos fazer a conta, com um exemplo.",
+  "O erro comum é colocar tudo no Premium porque parece que vende mais, sem olhar quanto sobra.",
+  "Por quê? No exemplo, um produto de R$ 100, com custo de R$ 50 e 6% de imposto. A comissão do Clássico é 12% e a do Premium, 17%.",
+  "Passo 1: veja a comissão de cada tipo de anúncio na tabela de tarifas da sua categoria. Os números aqui são só exemplo.",
+  "Passo 2: calcule o lucro de uma venda. No Clássico, sobram R$ 32. No Premium, R$ 27.",
+  "Passo 3: divida um pelo outro. 32 dividido por 27 dá 1,19. O Premium precisa vender 19% a mais só para empatar.",
+  "Passo 4: teste os dois tipos e compare o lucro total, não só o número de vendas.",
+  "Resumo: veja as comissões, calcule o lucro em cada tipo, divida e teste. Números de exemplo.",
+  "Salve antes de escolher o tipo do próximo anúncio."
+ ],
+ "t1_classico_ui": [
+  "Clássico ou Premium no marketplace? Vamos fazer a conta, com um exemplo.",
+  "O erro comum é colocar tudo no Premium porque parece que vende mais, sem olhar quanto sobra.",
+  "Por quê? No exemplo, um produto de R$ 100, com custo de R$ 50 e 6% de imposto. A comissão do Clássico é 12% e a do Premium, 17%.",
+  "Passo 1: veja a comissão de cada tipo de anúncio na tabela de tarifas da sua categoria. Os números aqui são só exemplo.",
+  "Passo 2: calcule o lucro de uma venda. No Clássico, sobram R$ 32. No Premium, R$ 27.",
+  "Passo 3: divida um pelo outro. 32 dividido por 27 dá 1,19. O Premium precisa vender 19% a mais só para empatar.",
+  "Passo 4: teste os dois tipos e compare o lucro total, não só o número de vendas.",
+  "Resumo: veja as comissões, calcule o lucro em cada tipo, divida e teste. Números de exemplo.",
+  "Salve antes de escolher o tipo do próximo anúncio."
+ ],
+ "t2_abc": [
+  "Quais produtos realmente pagam as suas contas? Vamos descobrir, com um exemplo.",
+  "O erro comum é dar a mesma atenção para os 100 produtos da loja.",
+  "Por quê? No exemplo, a loja fatura R$ 50 mil. Só 20 produtos fazem R$ 40 mil, 80% do total. Os 50 últimos fazem só R$ 2.500.",
+  "Passo 1: exporte o relatório de vendas dos últimos 90 dias, por produto, no painel do seu canal.",
+  "Passo 2: numa planilha, ordene do produto que mais faturou para o que menos faturou.",
+  "Passo 3: some o faturamento acumulado. Até 80% é a curva A. De 80 a 95% é a curva B. O resto é a curva C.",
+  "Passo 4: curva A nunca pode faltar estoque. Na curva B, melhore os anúncios. A curva C, revise ou tire da loja.",
+  "Resumo: exporte, ordene, corte em 80 e 95% e dê uma ação para cada curva. Números de exemplo.",
+  "Salve e faça a sua curva ABC esta semana."
+ ],
+ "t2_abc_curta": [
+  "Quais produtos realmente pagam as suas contas? Descubra em 3 passos.",
+  "No exemplo, 20 de 100 produtos fazem 80% do faturamento.",
+  "Ordene as vendas dos últimos 90 dias do maior para o menor faturamento e some o acumulado: até 80% é a curva A.",
+  "Curva A nunca falta estoque. Curva C, revise ou tire. Números de exemplo.",
+  "Salve e faça a sua curva ABC esta semana."
+ ],
+ "t3_cubado": [
+  "O seu frete pode estar caro por causa da caixa, não do produto. Veja, com um exemplo.",
+  "O erro comum é achar que o frete é cobrado só pelo peso que aparece na balança.",
+  "Por quê? A transportadora cobra o maior entre o peso real e o peso cubado, que é calculado pelo tamanho da caixa.",
+  "Passo 1: meça a caixa em centímetros. No exemplo, 40 de comprimento, 30 de largura e 20 de altura.",
+  "Passo 2: multiplique as três medidas, 24 mil, e divida pelo fator da sua transportadora. Aqui usamos 6 mil. O peso cubado é 4 quilos.",
+  "Passo 3: compare. O produto pesa 1,2 quilo, mas você paga por 4.",
+  "Passo 4: troque a caixa. Uma caixa de 30 por 20 por 15 dá 1,5 quilo cubado.",
+  "Resumo: meça, multiplique, divida pelo fator e use a menor caixa possível. Confira o fator da sua transportadora.",
+  "Salve e meça as caixas dos seus 5 produtos mais vendidos."
+ ],
+ "t4_cac": [
+  "Quanto custa cada venda que vem do seu anúncio? Vamos calcular, com um exemplo.",
+  "O erro comum é olhar só o total gasto no mês, sem dividir pelas vendas.",
+  "Por quê? Gastar R$ 1.200 pode ser barato ou caro. Depende de quantas vendas esse dinheiro trouxe.",
+  "Passo 1: pegue o total gasto no mês, no painel de anúncios. No exemplo, R$ 1.200.",
+  "Passo 2: veja quantas vendas vieram do anúncio, no mesmo painel. Aqui, 40.",
+  "Passo 3: divida o gasto pelas vendas. 1.200 dividido por 40 dá R$ 30 por venda.",
+  "Passo 4: compare com o lucro de cada venda antes do anúncio. Se sobram R$ 35, ficam R$ 5 por venda. No mês, R$ 200.",
+  "Resumo: gasto do mês, vendas do anúncio, divida e compare com o lucro. Números de exemplo.",
+  "Salve e calcule o custo por venda do seu anúncio."
+ ],
+ "t4_cac_numero": [
+  "R$ 1.200 em anúncio. Sobraram R$ 200. Veja a conta, com um exemplo.",
+  "O erro comum é olhar só o total gasto no mês, sem dividir pelas vendas.",
+  "Por quê? Gastar R$ 1.200 pode ser barato ou caro. Depende de quantas vendas esse dinheiro trouxe.",
+  "Passo 1: pegue o total gasto no mês, no painel de anúncios. No exemplo, R$ 1.200.",
+  "Passo 2: veja quantas vendas vieram do anúncio, no mesmo painel. Aqui, 40.",
+  "Passo 3: divida o gasto pelas vendas. 1.200 dividido por 40 dá R$ 30 por venda.",
+  "Passo 4: compare com o lucro de cada venda antes do anúncio. Se sobram R$ 35, ficam R$ 5 por venda. No mês, R$ 200.",
+  "Resumo: gasto do mês, vendas do anúncio, divida e compare com o lucro. Números de exemplo.",
+  "Salve e calcule o custo por venda do seu anúncio."
+ ],
+ "t5_equilibrio": [
+  "Quantas vendas por mês você precisa para não ter prejuízo? Vamos calcular, com um exemplo.",
+  "O erro comum é esquecer os custos fixos: ferramentas, contador, internet.",
+  "Por quê? Eles chegam todo mês, vendendo ou não, e saem do lucro das vendas.",
+  "Passo 1: some todos os custos fixos do mês. No exemplo, R$ 3 mil.",
+  "Passo 2: calcule quanto sobra de cada venda. Preço de R$ 80, menos R$ 40 de custo e R$ 20 de taxas. Sobram R$ 20.",
+  "Passo 3: divida os custos fixos pela sobra. 3 mil dividido por 20 dá 150 vendas por mês.",
+  "Passo 4: acompanhe o mês. Abaixo de 150 vendas, prejuízo. Acima, cada venda vira lucro.",
+  "Resumo: some os fixos, calcule a sobra por venda e divida. Números de exemplo.",
+  "Salve e calcule o seu ponto de equilíbrio."
+ ],
+ "t5_equilibrio_ui": [
+  "Quantas vendas por mês você precisa para não ter prejuízo? Vamos calcular, com um exemplo.",
+  "O erro comum é esquecer os custos fixos: ferramentas, contador, internet.",
+  "Por quê? Eles chegam todo mês, vendendo ou não, e saem do lucro das vendas.",
+  "Passo 1: some todos os custos fixos do mês. No exemplo, R$ 3 mil.",
+  "Passo 2: calcule quanto sobra de cada venda. Preço de R$ 80, menos R$ 40 de custo e R$ 20 de taxas. Sobram R$ 20.",
+  "Passo 3: divida os custos fixos pela sobra. 3 mil dividido por 20 dá 150 vendas por mês.",
+  "Passo 4: acompanhe o mês. Abaixo de 150 vendas, prejuízo. Acima, cada venda vira lucro.",
+  "Resumo: some os fixos, calcule a sobra por venda e divida. Números de exemplo.",
+  "Salve e calcule o seu ponto de equilíbrio."
+ ],
+ "t6_conversao": [
+  "O seu anúncio converte bem? Vamos medir, com um exemplo.",
+  "O erro comum é comemorar visitas sem saber quantas viram venda.",
+  "Por quê? Visita não paga conta. O que importa é quantas pessoas compraram.",
+  "Passo 1: pegue as visitas e as vendas do mês, nas métricas do anúncio. No exemplo, 2 mil visitas e 30 vendas.",
+  "Passo 2: divida as vendas pelas visitas. 30 dividido por 2 mil dá 1,5%.",
+  "Passo 3: compare com os seus outros anúncios. O que converte menos é o primeiro a melhorar: foto, título e preço.",
+  "Passo 4: se subir de 1,5 para 2%, as mesmas 2 mil visitas viram 40 vendas. 10 a mais, sem pagar mais tráfego.",
+  "Resumo: visitas e vendas, divida, compare e melhore o pior. Números de exemplo.",
+  "Salve e calcule a conversão dos seus anúncios."
+ ],
+ "t6_conversao_curta": [
+  "O seu anúncio converte bem? Meça em 1 conta.",
+  "Divida as vendas pelas visitas do mês. No exemplo, 30 dividido por 2 mil dá 1,5%.",
+  "Compare com os seus outros anúncios e melhore o que converte menos.",
+  "Subindo para 2%, as mesmas visitas viram 10 vendas a mais. Números de exemplo.",
+  "Salve e calcule a conversão dos seus anúncios."
+ ],
+ "t7_antecipa": [
+  "Antecipar o dinheiro das vendas parceladas compensa? Vamos fazer a conta, com um exemplo.",
+  "O erro comum é antecipar tudo, todo mês, sem olhar a taxa.",
+  "Por quê? A antecipação cobra uma taxa por mês que você recebe antes. E essa taxa sai direto da sua margem.",
+  "Passo 1: veja a taxa mensal no contrato ou no painel de pagamentos. No exemplo, 1,5% ao mês.",
+  "Passo 2: multiplique pelos meses que vai receber antes. 4 meses vezes 1,5% dá 6%, numa conta aproximada.",
+  "Passo 3: aplique sobre o valor. A cada R$ 1.000 antecipados, R$ 60 ficam com a operadora.",
+  "Passo 4: compare com a sua margem. Se ela é 15%, a antecipação leva 6 desses 15 pontos.",
+  "Resumo: taxa mensal, vezes os meses, em reais, comparado com a margem. Antecipe só quando precisar. Números de exemplo.",
+  "Salve e confira quanto a antecipação está te custando."
+ ],
+ "t8_estoque": [
+  "Quanto do seu dinheiro está parado no estoque? Vamos calcular, com um exemplo.",
+  "O erro comum é recomprar tudo sem saber quantos meses de estoque você já tem.",
+  "Por quê? Estoque parado é dinheiro que não volta para o caixa, e falta para recomprar o que vende.",
+  "Passo 1: some o estoque pelo preço de custo. No exemplo, R$ 10 mil.",
+  "Passo 2: veja o custo do que você vendeu no último mês. Aqui, R$ 2.500.",
+  "Passo 3: divida um pelo outro. 10 mil dividido por 2.500 dá 4 meses de estoque.",
+  "Passo 4: se a sua meta é 2 meses, são R$ 5 mil parados a mais. Pare de recomprar esses itens e gire com kit ou promoção.",
+  "Resumo: estoque a custo, dividido pelo custo das vendas do mês, igual a meses de estoque. Números de exemplo.",
+  "Salve e calcule os meses de estoque da sua loja."
+ ],
+ "t8_estoque_numero": [
+  "R$ 10 mil no estoque. 4 meses para vender. Veja a conta, com um exemplo.",
+  "O erro comum é recomprar tudo sem saber quantos meses de estoque você já tem.",
+  "Por quê? Estoque parado é dinheiro que não volta para o caixa, e falta para recomprar o que vende.",
+  "Passo 1: some o estoque pelo preço de custo. No exemplo, R$ 10 mil.",
+  "Passo 2: veja o custo do que você vendeu no último mês. Aqui, R$ 2.500.",
+  "Passo 3: divida um pelo outro. 10 mil dividido por 2.500 dá 4 meses de estoque.",
+  "Passo 4: se a sua meta é 2 meses, são R$ 5 mil parados a mais. Pare de recomprar esses itens e gire com kit ou promoção.",
+  "Resumo: estoque a custo, dividido pelo custo das vendas do mês, igual a meses de estoque. Números de exemplo.",
+  "Salve e calcule os meses de estoque da sua loja."
+ ]
+}

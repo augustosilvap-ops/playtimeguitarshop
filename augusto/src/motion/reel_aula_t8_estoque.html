@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#000000',light:'#F1F3F8',accent:'radial-gradient(900px 900px at 30% 20%,#7FA3FF,#2F6BFF 50%,#1A3FB0)',anim:'left',trans:'zoom',deco:'rings',align:'left'};
+const SC=[
+[0.00,2.20,'dark',lt=>W(lt,[[0,'SEU DINHEIRO',140],[.2,'ESTÁ PARADO',140,BL2],[.4,'NO ESTOQUE?',140]],380),'Quanto do seu dinheiro está parado no estoque? Vamos calcular.'],
+[2.20,4.60,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+typer(lt,{a:'Recomprar tudo sem saber quantos meses de estoque você já tem.',size:54,speed:44,top:620,box:true}),'Erro comum: recomprar sem saber quanto já tem parado.'],
+[4.60,7.20,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+typer(lt,{a:'Estoque parado é dinheiro que não volta para o caixa.',size:56,speed:44,top:620,box:true}),'Estoque parado é dinheiro que não volta para o caixa.'],
+[7.20,9.60,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'O ESTOQUE',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'60%',rows:[['Estoque a preço de custo','R$ 10.000']]}),'Passo 1: some o estoque pelo preço de custo.'],
+[9.60,12.00,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'O GIRO',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'60%',rows:[['Custo do que vendeu no mês','R$ 2.500']]}),'Passo 2: veja o custo do que você vendeu no mês.'],
+[12.00,14.40,'accent',lt=>W(lt,[[0,'PASSO 3',150],[.15,'A COBERTURA',100]],250)+(lt>.5?`<div class="t" style="top:640px;font-size:260px;color:#fff;transform:scale(${eb((lt-.5)/.35)})">4 MESES</div>`:'')+lbl('10.000 ÷ 2.500 = 4 meses',1000,'rgba(255,255,255,.85)',eo((lt-.8)/.3)),'Passo 3: divida um pelo outro. 4 meses de estoque.'],
+[14.40,17.00,'dark',lt=>W(lt,[[0,'PASSO 4',150],[.15,'AJUSTE',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'40%',rows:[['Meta (exemplo)','2 meses = R$ 5.000'],['Parado a mais','R$ 5.000',RD],['O que fazer','kit, promoção, pausar recompra']]}),'Passo 4: acima da meta, pare de recomprar e gire o que está parado.'],
+[17.00,19.40,'light',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Estoque a custo'],['2','Custo das vendas do mês'],['3','Divida = meses de estoque'],['4','Acima da meta, gire']]})+lbl('Valores do exemplo são hipotéticos',1200,'#7A7F8C'),'Salve e calcule os meses de estoque da sua loja.'],
+[19.40,21.40,'accent',lt=>ctaSave(lt,'SALVE','E GIRE'),'Salve e calcule os meses de estoque da sua loja.']];
+let DUR=21.40;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

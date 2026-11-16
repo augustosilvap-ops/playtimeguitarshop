@@ -12,6 +12,7 @@ VOZ = '7lu3ze7orhWaNeSPowWx'  # Lucas (aprovado 16/11)
 SFX = os.path.join(HERE, '../sfx'); CACHE = '/tmp/narr_cache'; os.makedirs(CACHE, exist_ok=True)
 SR = 44100; LEAD = .25; PAD = .2; GAPF = .04; ASPD = 1.0  # animações no tempo normal (antes 1.25)
 from narr_textos import NARR
+if os.path.exists(os.path.join(HERE, 'narr_testes.json')): NARR.update(json.load(open(os.path.join(HERE, 'narr_testes.json'))))
 
 def falar(txt):
     t = txt

@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#000000',light:'#EEF2FA',accent:'linear-gradient(160deg,#5B8CFF,#1C47C9)',anim:'mask',trans:'wipe',deco:'glow',align:'center'};
+const SC=[
+[0.00,2.20,'dark',lt=>W(lt,[[0,'QUANTAS VENDAS',120],[.2,'PARA',110,BL2],[.4,'NÃO PERDER?',150]],380),'Quantas vendas por mês você precisa para não ter prejuízo? Vamos calcular.'],
+[2.20,4.60,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+typer(lt,{a:'Esquecer os custos fixos: ferramentas, contador, internet.',size:56,speed:44,top:620,box:true}),'Erro comum: esquecer os custos fixos do mês.'],
+[4.60,7.20,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+typer(lt,{a:'Os custos fixos chegam todo mês, vendendo ou não.',size:56,speed:44,top:620,box:true}),'Eles chegam todo mês, vendendo ou não.'],
+[7.20,9.80,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'CUSTOS FIXOS',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'55%',rows:[['Ferramentas e apps','R$ 900'],['Contador','R$ 600'],['Internet, luz, outros','R$ 1.500'],['Total no mês','R$ 3.000']]}),'Passo 1: some todos os custos fixos do mês.'],
+[9.80,12.40,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'SOBRA POR VENDA',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'55%',rows:[['Preço','R$ 80'],['Custo do produto','− R$ 40'],['Taxas (25%)','− R$ 20'],['Sobra por venda','R$ 20']]}),'Passo 2: calcule quanto sobra de cada venda para pagar os fixos.'],
+[12.40,14.80,'accent',lt=>W(lt,[[0,'PASSO 3',150],[.15,'A CONTA',100]],250)+(lt>.5?`<div class="t" style="top:640px;font-size:300px;color:#fff;transform:scale(${eb((lt-.5)/.35)})">150</div>`:'')+lbl('3.000 ÷ 20 = 150 vendas',1000,'rgba(255,255,255,.85)',eo((lt-.8)/.3)),'Passo 3: divida os fixos pela sobra. 150 vendas por mês.'],
+[14.80,17.20,'dark',lt=>W(lt,[[0,'PASSO 4',150],[.15,'ACOMPANHE',100,BL2]],250)+liquid(lt,{pct:60,top:560,t0:.3,dur:1,fill:BL2}),'Passo 4: acompanhe o mês. Abaixo de 150, prejuízo; acima, lucro.'],
+[17.20,19.60,'light',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Some os custos fixos'],['2','Calcule a sobra por venda'],['3','Divida um pelo outro'],['4','Acompanhe o mês']]})+lbl('Valores do exemplo são hipotéticos',1200,'#7A7F8C'),'Salve e calcule o seu ponto de equilíbrio.'],
+[19.60,21.60,'accent',lt=>ctaSave(lt,'SALVE','E CALCULE'),'Salve e calcule o seu ponto de equilíbrio.']];
+let DUR=21.60;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

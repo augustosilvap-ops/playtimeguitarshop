@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#08090E',light:'#FFFFFF',accent:'#2F6BFF',anim:'flip',trans:'slide',deco:'scan',align:'left'};
+const SC=[
+[0.00,2.20,'dark',lt=>W(lt,[[0,'FRETE CARO',150],[.2,'POR CAUSA',120,BL2],[.4,'DA CAIXA?',160]],380),'O seu frete pode estar caro por causa da caixa. Veja, com um exemplo.'],
+[2.20,4.60,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+typer(lt,{a:'Achar que o frete é cobrado só pelo peso do produto.',size:56,speed:44,top:620,box:true}),'Erro comum: olhar só o peso na balança.'],
+[4.60,7.20,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+typer(lt,{a:'A transportadora cobra o MAIOR entre o peso real e o peso cubado (o tamanho da caixa).',size:52,speed:44,top:620,box:true}),'A transportadora cobra o maior: peso real ou peso pelo tamanho da caixa.'],
+[7.20,9.80,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'MEÇA A CAIXA',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'45%',rows:[['Comprimento','40 cm'],['Largura','30 cm'],['Altura','20 cm']]}),'Passo 1: meça a caixa em centímetros.'],
+[9.80,12.40,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'A CONTA',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'40%',rows:[['Multiplique','40 × 30 × 20 = 24.000'],['Divida pelo fator','24.000 ÷ 6.000'],['Peso cubado','4 kg']]}),'Passo 2: multiplique as medidas e divida pelo fator da transportadora.'],
+[12.40,14.80,'accent',lt=>W(lt,[[0,'PASSO 3',150],[.15,'COMPARE',100]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'45%',rows:[['Peso real','1,2 kg'],['Peso cubado','4 kg'],['Você paga por','4 kg']]}),'Passo 3: compare. Você paga pelo maior dos dois.'],
+[14.80,17.40,'dark',lt=>W(lt,[[0,'PASSO 4',150],[.15,'TROQUE A CAIXA',100,BL2]],250)+slider(lt,{top:480,h:760,t0:.3,dur:1.1,L:{bg:'#3A3D47',k:'ANTES',big:'4 kg',sub:'40×30×20',c:'#FF8A95'},Rt:{bg:'#FFFFFF',k:'DEPOIS',big:'1,5 kg',sub:'30×20×15',c:BL},bigSize:150}),'Passo 4: uma caixa menor derruba o peso cobrado.'],
+[17.40,19.80,'light',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Meça a caixa'],['2','Multiplique e divida pelo fator'],['3','Compare com o peso real'],['4','Use a menor caixa possível']]})+lbl('Valores do exemplo são hipotéticos',1200,'#7A7F8C'),'Salve e meça as caixas dos seus 5 mais vendidos.'],
+[19.80,21.80,'accent',lt=>ctaSave(lt,'SALVE','E MEÇA'),'Salve e meça as caixas dos seus 5 mais vendidos.']];
+let DUR=21.80;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

@@ -3,18 +3,30 @@ Cada par muda UMA variável. Cada variável é testada 2 vezes com conteúdos di
 Gera augusto/entregas/testes_reels/ (vídeos A/B por par, GUIA.md) e Testes_Reels.xlsx (planilha de resultados).
 Rodar em augusto/: python3 editorial/testes_reels.py"""
 import os, shutil, json
-E = 'entregas'; AB = '/tmp/claude-0/drive/ab'
+E = 'entregas'
+AB = '/tmp/claude-0/drive/ab2'
 PARES = [
- # (dia, hora, par, variável, conteúdo, A (arquivo, descrição), B (arquivo, descrição), legenda (post id))
- ('17/11', '11h', 1, 'Efeito', 'ANUNCIO', (f'{E}/2026-11-19/12_reel_anuncio/reel_narrado_1080x1920_56s.mp4', 'abertura normal'), (f'{E}/2026-11-19/12_reel_anuncio/reel_teste_mundo_interface_56s.mp4', 'abertura "mundo de interface"'), ('2026-11-17', '12')),
- ('17/11', '15h', 2, 'Duração', 'DESCONTO', (f'{E}/2026-11-18/09_reel_desconto/reel_narrado_1080x1920_79s.mp4', 'completa (79 s)'), (f'{AB}/desconto_curta.mp4', 'curta'), ('2026-11-17', '09')),
- ('18/11', '11h', 3, 'Narração', 'TITULO', (f'{E}/2026-11-18/15_reel_titulo/reel_narrado_1080x1920_58s.mp4', 'com voz'), (f'{AB}/titulo_semvoz.mp4', 'sem voz (só legenda + trilha)'), ('2026-11-18', '15')),
- ('18/11', '15h', 4, 'Gancho', 'ROAS', (f'{E}/2026-11-19/23_reel_roas/reel_narrado_1080x1920_53s.mp4', 'gancho pergunta ("Gastou em anúncio")'), (f'{AB}/roas_numero.mp4', 'gancho número ("R$ 500 → R$ 248 de prejuízo")'), ('2026-11-19', '23')),
- ('19/11', '11h', 5, 'Efeito', 'PLANILHA', (f'{E}/2026-11-16/03_reel_precificar-leigo/reel_narrado_1080x1920_79s.mp4', 'abertura normal'), (f'{AB}/planilha_ui.mp4', 'abertura "mundo de interface"'), ('2026-11-18', '03')),
- ('19/11', '15h', 6, 'Duração', 'ROTINA', (f'{E}/2026-11-19/18_reel_rotina/reel_narrado_1080x1920_54s.mp4', 'completa'), (f'{AB}/rotina_curta.mp4', 'curta'), ('2026-11-19', '18')),
- ('20/11', '11h', 7, 'Narração', 'ATENDE', (f'{E}/2026-11-20/21_reel_atende/reel_narrado_1080x1920_51s.mp4', 'com voz'), (f'{AB}/atende_semvoz.mp4', 'sem voz (só legenda + trilha)'), ('2026-11-20', '21')),
- ('20/11', '15h', 8, 'Gancho', 'GARIMPO', (f'{E}/2026-11-17/06_reel_garimpo/reel_narrado_1080x1920_64s.mp4', 'gancho pergunta ("Comprou 200 peças no achismo?")'), (f'{AB}/garimpo_numero.mp4', 'gancho número ("200 compradas → 12 vendidas")'), ('2026-11-16', '06')),
+ # (dia, hora, par, variável, conteúdo inédito, A, B, chave da legenda) — conteúdos que NÃO estão no feed
+ ('17/11', '11h', 1, 'Efeito', 'CLASSICO', (f'{AB}/t1_A.mp4', 'abertura normal'), (f'{AB}/t1_B.mp4', 'abertura "mundo de interface"'), 't1'),
+ ('17/11', '15h', 2, 'Duração', 'ABC', (f'{AB}/t2_A.mp4', 'completa'), (f'{AB}/t2_B.mp4', 'curta'), 't2'),
+ ('18/11', '11h', 3, 'Narração', 'CUBADO', (f'{AB}/t3_A.mp4', 'com voz'), (f'{AB}/t3_B.mp4', 'sem voz (só legenda + trilha)'), 't3'),
+ ('18/11', '15h', 4, 'Gancho', 'CAC', (f'{AB}/t4_A.mp4', 'gancho pergunta ("Quanto custa cada venda?")'), (f'{AB}/t4_B.mp4', 'gancho número ("R$ 1.200 → sobraram R$ 200")'), 't4'),
+ ('19/11', '11h', 5, 'Efeito', 'EQUILIBRIO', (f'{AB}/t5_A.mp4', 'abertura normal'), (f'{AB}/t5_B.mp4', 'abertura "mundo de interface"'), 't5'),
+ ('19/11', '15h', 6, 'Duração', 'CONVERSAO', (f'{AB}/t6_A.mp4', 'completa'), (f'{AB}/t6_B.mp4', 'curta'), 't6'),
+ ('20/11', '11h', 7, 'Narração', 'ANTECIPA', (f'{AB}/t7_A.mp4', 'com voz'), (f'{AB}/t7_B.mp4', 'sem voz (só legenda + trilha)'), 't7'),
+ ('20/11', '15h', 8, 'Gancho', 'ESTOQUE', (f'{AB}/t8_A.mp4', 'gancho pergunta ("Dinheiro parado no estoque?")'), (f'{AB}/t8_B.mp4', 'gancho número ("R$ 10.000 → 4 meses para vender")'), 't8'),
 ]
+H = '#marketplace #ecommerce #vendasonline #mercadolivre #shopee'
+LEG = {
+ 't1': f"""Clássico ou Premium? Antes de escolher, faça esta conta.\n\n1. Veja a comissão de cada tipo na tabela da sua categoria.\n2. Calcule o lucro de uma venda em cada um.\n3. Divida o lucro do Clássico pelo do Premium.\n4. O resultado diz quanto o Premium precisa vender a mais para empatar.\n\nExemplo hipotético: produto de R$ 100, custo R$ 50, imposto 6%. Clássico a 12% deixa R$ 32; Premium a 17% deixa R$ 27. 32 ÷ 27 = 1,19 → o Premium precisa vender 19% a mais.\n\n🔖 Salve antes do próximo anúncio.\n💬 Seus anúncios estão em qual tipo hoje?\n\n{H}""",
+ 't2': f"""Nem todo produto merece a mesma atenção. A curva ABC mostra quais pagam as suas contas.\n\n1. Exporte as vendas dos últimos 90 dias, por produto.\n2. Ordene do maior para o menor faturamento.\n3. Some o acumulado: até 80% é curva A, de 80% a 95% é B, o resto é C.\n4. A nunca falta estoque · B melhore os anúncios · C revise ou tire.\n\nExemplo hipotético: de R$ 50 mil, 20 produtos fazem R$ 40 mil (80%).\n\n🔖 Salve e faça a sua curva ABC esta semana.\n↗ Envie para quem tem loja com muitos produtos.\n\n{H}""",
+ 't3': f"""Seu frete pode estar caro por causa da caixa, não do produto.\n\nA transportadora cobra o MAIOR entre o peso real e o peso cubado:\nComprimento × largura × altura (cm) ÷ fator da transportadora.\n\nExemplo hipotético (fator 6.000): caixa de 40 × 30 × 20 = 24.000 ÷ 6.000 = 4 kg. O produto pesa 1,2 kg, mas você paga por 4 kg. Trocando por uma caixa de 30 × 20 × 15, o cubado cai para 1,5 kg.\n\nConfira o fator da sua transportadora.\n\n🔖 Salve e meça as caixas dos seus 5 mais vendidos.\n💬 Você já tinha ouvido falar em peso cubado?\n\n{H}""",
+ 't4': f"""Gastar R$ 1.200 em anúncio é caro ou barato? Depende de quantas vendas vieram.\n\n1. Pegue o total gasto no mês (painel de anúncios).\n2. Veja quantas vendas vieram do anúncio.\n3. Divida: esse é o custo por venda.\n4. Compare com o lucro de cada venda antes do anúncio.\n\nExemplo hipotético: R$ 1.200 ÷ 40 vendas = R$ 30 por venda. Se sobravam R$ 35 antes do anúncio, ficam R$ 5 por venda — R$ 200 no mês.\n\n🔖 Salve e calcule o custo por venda do seu anúncio.\n💬 Quanto custa cada venda sua hoje?\n\n{H}""",
+ 't5': f"""Quantas vendas por mês você precisa para não ter prejuízo? Esse é o ponto de equilíbrio.\n\n1. Some os custos fixos do mês (ferramentas, contador, internet…).\n2. Calcule quanto sobra de cada venda: preço − custo − taxas.\n3. Divida os fixos pela sobra.\n\nExemplo hipotético: R$ 3.000 de fixos. Preço R$ 80 − R$ 40 de custo − R$ 20 de taxas = R$ 20 por venda. 3.000 ÷ 20 = 150 vendas por mês.\n\nAbaixo disso, prejuízo. Acima, cada venda vira lucro.\n\n🔖 Salve e calcule o seu ponto de equilíbrio.\n↗ Envie para quem está começando a vender.\n\n{H}""",
+ 't6': f"""Visita não paga conta. O que paga é visita que vira pedido.\n\nTaxa de conversão = vendas ÷ visitas.\n\n1. Pegue visitas e vendas do mês nas métricas do anúncio.\n2. Divida.\n3. Compare com os seus outros anúncios.\n4. Melhore primeiro o que converte menos (foto, título, preço).\n\nExemplo hipotético: 30 vendas ÷ 2.000 visitas = 1,5%. Subindo para 2%, as mesmas visitas viram 40 vendas — 10 a mais sem pagar tráfego.\n\n🔖 Salve e calcule a conversão dos seus anúncios.\n💬 Qual é a conversão do seu melhor anúncio?\n\n{H}""",
+ 't7': f"""Antecipar o dinheiro das vendas parceladas tem custo. Faça a conta antes.\n\n1. Veja a taxa mensal no contrato ou no painel de pagamentos.\n2. Multiplique pelos meses que vai receber antes.\n3. Aplique sobre o valor.\n4. Compare com a sua margem.\n\nExemplo hipotético (conta aproximada): 1,5% ao mês × 4 meses = 6%. A cada R$ 1.000, R$ 60 ficam com a operadora. Com margem de 15%, a antecipação leva 6 desses 15 pontos.\n\nAntecipe quando precisar, não por hábito.\n\n🔖 Salve e confira quanto a antecipação te custa.\n\n{H}""",
+ 't8': f"""Estoque parado é dinheiro que não volta para o caixa.\n\nMeses de estoque = estoque a preço de custo ÷ custo do que vendeu no mês.\n\nExemplo hipotético: R$ 10.000 em estoque ÷ R$ 2.500 vendidos no mês = 4 meses. Com meta de 2 meses, são R$ 5.000 parados a mais.\n\nO que fazer: pare de recomprar esses itens e gire com kit ou promoção.\n\n🔖 Salve e calcule os meses de estoque da sua loja.\n💬 Quantos meses de estoque você tem hoje?\n\n{H}""",
+}
 
 def dur(f):
     import subprocess
@@ -34,9 +46,9 @@ def main():
         da, db = dur(fa), dur(fb)
         md.append(f'| {dia} | {hora} | {par} | {var} | {cont} | {A[1]} ({da} s) | {B[1]} ({db} s) |\n')
         rows.append((dia, hora, par, var, cont, f'{A[1]} ({da} s)', f'{B[1]} ({db} s)', leg))
-    md.append('\n## Legendas\nUse nos dois vídeos do par a mesma legenda do post do feed:\n\n')
-    for dia, hora, par, var, cont, a, b, (d, pid) in rows:
-        cap = json.load(open(f'publicacao/{d}/{pid}.json'))['params']['caption']
+    md.append('\n## Legendas\nConteúdos INÉDITOS (não estão no feed). Use a mesma legenda nos dois vídeos do par:\n\n')
+    for dia, hora, par, var, cont, a, b, k in rows:
+        cap = LEG[k]
         md.append(f'### Par {par} · {cont}\n\n{cap}\n\n')
     open(f'{D}/GUIA.md', 'w').write(''.join(md))
     from openpyxl import Workbook
