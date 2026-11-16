@@ -34,7 +34,7 @@ Com as fotos oficiais, logos e a trilha da marca:
 2. **Reels de mensagem em motion**: tipografia, sopro animado, estampa em close, versículo implícito.
 3. **Stories prontos**: contador do Founders, frete grátis, enquete das 4 estampas, "escolha a sua", link.
 4. **Significado de cada estampa** (série de 4 posts: RUACH, WE CARRY THE SPIRIT, INVISÍVEL MOVE, WHAT DO YOU CARRY?).
-5. **Peças de oferta**: combo "Leve 2 por R$ 269,90" (18–24/11) e Black Friday — **precisam da sua aprovação** antes.
+5. **Peças de oferta** (Black Friday, se houver) — **precisam da sua aprovação** antes. Combo "Leve 2" CANCELADO pelo Augusto em 16/11.
 6. **Legendas e anúncios** com as afirmações aprovadas.
 7. **Publicação automática pelo Windsor** depois da sua aprovação no Nexus (aba @ruahwear_).
 
@@ -51,7 +51,7 @@ Uma sessão de 2 horas rende ~2 semanas de conteúdo.
 | Data | Feed | Quem produz |
 |---|---|---|
 | 17/11 Ter | Reel "Coleção 001 disponível" (corrige o "pré-venda" antigo) | Eu |
-| 18/11 Qua | Carrossel combo "Leve 2" (se aprovado) | Eu |
+| 18/11 Qua | Carrossel Peça: "Escolha a sua" (as 4 estampas lado a lado) | Eu |
 | 19/11 Qui | Série estampas 1/4: RUACH | Eu |
 | 20/11 Sex | Reel Bastidor: unboxing | **Você grava** |
 | 21/11 Sáb | Série estampas 2/4: WE CARRY THE SPIRIT | Eu |
@@ -59,14 +59,14 @@ Uma sessão de 2 horas rende ~2 semanas de conteúdo.
 | 23/11 Seg | Série estampas 3/4: INVISÍVEL MOVE | Eu |
 | 24/11 Ter | Reel Movimento: pessoas na rua | **Você grava** |
 | 25/11 Qua | Série estampas 4/4: WHAT DO YOU CARRY? | Eu |
-| 26/11 Qui | Aviso Black Friday (se houver oferta) | Eu |
-| 27/11 Sex | Black Friday | Eu |
+| 26/11 Qui | Mensagem: "Não é sobre o que vestimos. É sobre o que carregamos." (sem desconto) | Eu |
+| 27/11 Sex | Black Friday: posicionamento sem desconto + Founders (ver decisão 2) | Eu |
 | 28/11 Sáb | Founders: "restam X vagas" | Eu |
 | 29/11 Dom | Reel "por que criei a RUAH" | **Você grava** |
 | 30/11 Seg | Carrossel styling: 4 jeitos de usar | Eu (fotos novas melhoram muito) |
 
 ## 7. Decisões que preciso de você
-1. **Combo "Leve 2 por R$ 269,90"** de 18 a 24/11: confirma? (vira post + story + faixa no site, com prévia antes).
-2. **Black Friday da RUAH**: vai ter oferta? Qual? (sugestão: manter o preço e dar brinde/frete, para não desvalorizar a marca premium).
+1. ~~Combo "Leve 2"~~ — cancelado (16/11).
+2. **Black Friday da RUAH**: recomendação = **sem desconto**. Opções: (A) não participar e reforçar Founders/escassez; (B) frete grátis para todo o Brasil de 24 a 30/11, sem mexer no preço. Aguardando decisão.
 3. **Visual**: sigo com o estilo aprovado em 14/11 enquanto você junta referências para o novo editorial/streetwear?
 4. **Data da sessão de fotos** com pessoas reais.

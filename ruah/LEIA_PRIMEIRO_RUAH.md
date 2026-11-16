@@ -209,7 +209,7 @@
 - [ ] Opcional: repositório público `ruah-midia` no GitHub para automatizar as postagens.
 - [ ] Mensagem automática no Instagram (Resposta instantânea do Meta) e comentário que vira DM pelo ManyChat. O "Follow to DM" do ManyChat não está disponível na conta dele.
 - [ ] O fluxo e o e-mail do Founders e stories antigos ainda podem mencionar "25/11". Revisar.
-- [ ] Em 17/11, preparar a prévia do combo "Leve 2 por R$ 269,90", para rodar de 18 a 24/11.
+- [x] ~~Combo "Leve 2 por R$ 269,90" (18–24/11)~~ — CANCELADO pelo Augusto em 16/11 (poucas vendas até agora).
 - [ ] Registro no INPI. Existem outros registros com o nome RUAH, então o conselho é falar com um especialista em marcas.
 - [ ] Contato com micro-influenciadores cristãos de Curitiba com 10 a 20 mil seguidores, pedindo os valores deles. A ideia é pagar pela divulgação.
 
