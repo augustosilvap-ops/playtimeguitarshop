@@ -120,6 +120,7 @@ OUT['fotos']=build('fotos','preto_aneis','FOTOS','Comente FOTOS e receba o check
 ])
 # Versões SEM recompensa (Manychat não configurado) — 16/11
 for nm,sv,cap in [('desconto',('SALVE','PRA BLACK'),'Salve e faça essa conta antes de definir o desconto.'),
-                  ('anuncio',('SALVE','E REVISE'),'Salve e revise seu anúncio com esse passo a passo.')]:
+                  ('anuncio',('SALVE','E REVISE'),'Salve e revise seu anúncio com esse passo a passo.'),
+                  ('garimpo',('SALVE','E TESTE'),'Salve e use esse passo a passo no próximo produto.')]:
     SAVE=sv; th,kw,_,S=ARGS[nm]; OUT[nm+'_salve']=build(nm+'_salve',th,kw,cap,S); SAVE=None
 print(OUT)
