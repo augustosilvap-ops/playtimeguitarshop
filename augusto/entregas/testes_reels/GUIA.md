@@ -20,19 +20,23 @@ Conteúdos INÉDITOS (não estão no feed). Use a mesma legenda nos dois vídeos
 
 ### Par 9 · DESCONTO
 
-A Black Friday é em 27/11. Antes de colocar "-30%" em tudo, faça uma conta de 1 minuto.
+Desconto na Black Friday: faça esta conta antes de criar o cupom 👇
 
-1. Descubra o seu preço mínimo: custo por unidade ÷ (1 − soma dos % cobrados na venda).
-2. Defina a menor margem que você aceita na promoção (ex.: 5%).
-3. Calcule o preço da oferta: custo ÷ (1 − % da venda − margem mínima).
-4. Compare com o preço atual: esse é o seu desconto máximo.
+Dar 30% de desconto em tudo parece boa ideia. Mas o desconto sai inteiro do seu lucro.
 
-Exemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mínima de 5%. O desconto máximo é 15%. Um cupom de 20% deixaria a margem abaixo de 1%.
+Exemplo hipotético: produto de R$ 83,90, custo de R$ 48,50 e 27% de taxas.
+❌ Com 30% off: prejuízo de R$ 5,63 em cada venda.
+✅ Desconto máximo: 15% — e ainda sobram R$ 3,56 por venda.
 
-🔖 Salve e faça essa conta com cada produto antes de definir o desconto.
-↗ Envie para quem vai fazer Black Friday este ano.
+A conta:
+1. Some taxas + a margem mínima que você aceita (27% + 5% = 32%).
+2. Divida o custo por (1 − 0,32): 48,50 ÷ 0,68 = R$ 71,32.
+3. Compare com o preço atual: 1 − 71,32 ÷ 83,90 = 15%.
 
-#blackfriday #precificacao #marketplace #ecommerce #vendasonline
+🔖 Salve para fazer essa conta com cada produto antes da Black.
+💬 Qual desconto você estava pensando em dar?
+
+#blackfriday #precificacao #mercadolivre #shopee #vendasonline
 
 ### Par 1 · CLASSICO
 
