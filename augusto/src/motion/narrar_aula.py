@@ -56,6 +56,7 @@ def eventos(js, real):
         m = re.search(r"typer\(lt,\{a:'([^']*)'(?:,wrong:'([^']*)')?.*?speed:(\d+)", js)
         sp = float(m.group(3)) if m else 30; n = len(m.group(1)) + len(m.group(2) or '') if m else 30
         ev.append((U(.05), 'typing', .45, U(n / sp)))
+    if 'uiworld(' in js: ev += [(U(.15), 'riser', .4), (U(.8), 'whoosh', .5), (U(1.5), 'whoosh', .5), (U(2.2), 'whoosh', .45), (U(2.6), 'pop', .6)]
     if 'slider(' in js: ev.append((U(.3), 'swipe', .7))
     if 'liquid(' in js: ev.append((U(.3), 'riser', .45))
     if 'phone3d(' in js or 'notifs(' in js: ev.append((U(.4), 'pop', .5))

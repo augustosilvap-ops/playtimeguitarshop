@@ -123,3 +123,5 @@ NARR['atende_salve'] = [
  "Resumo: escreva a base, liste as perguntas frequentes, use o prompt com a base e revise antes de enviar.",
  "Salve e monte a base de atendimento da sua loja hoje.",
 ]
+
+NARR['anuncio_ui'] = NARR['anuncio_salve']  # teste do efeito mundo de interface (16/11)

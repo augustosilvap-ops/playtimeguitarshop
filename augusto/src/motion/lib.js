@@ -78,6 +78,26 @@ function cta(lt,kw,size){size=size||(kw.length>7?150:kw.length>6?170:190);return
 
 // CTA sem recompensa (sem Manychat): SALVE + frase, pílula "Envie para alguém que precisa ↗"
 function ctaSave(lt,a,b,size){size=size||150;return W(lt,[[0,a,170],[.25,b,size,THEME.ctaWord||NV]],560,1.15)+`<div class="ab" style="${A()==='center'?'left:50%;transform:translateX(-50%) ':A()==='right'?'right:84px;transform:':'left:84px;transform:'}translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px);top:1060px;padding:34px 56px;border-radius:99px;background:#fff;color:${BL};font:800 50px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};white-space:nowrap">Envie para quem precisa ↗</div>`}
+
+// MUNDO DE INTERFACE (teste 16/11): câmera voando por um espaço 3D cheio de telas (cards de anúncio, notificações, gráficos, busca),
+// passa pelos painéis e aterrissa no painel "herói". Uso: uiworld(lt,{dur:3.2,hero:'<html do painel final>'}) — vai no fundo da cena.
+function uiworld(lt,o={}){const dur=o.dur||3.2,p=eio(lt/dur),tz=p*2300,ry=Math.sin(lt*.6)*6*(1-p),rx=4*(1-p);
+ const glassC='background:linear-gradient(135deg,rgba(255,255,255,.20),rgba(255,255,255,.06));border:2px solid rgba(255,255,255,.28);box-shadow:0 30px 80px rgba(0,0,0,.45);backdrop-filter:blur(6px);border-radius:34px;color:#fff;font-family:I';
+ const P=[ // x,y,z,w,h,rotY,conteúdo
+  [-520,-560,-600,420,260,22,`<div style="padding:28px"><div style="font:700 26px I;opacity:.7">Visitas hoje</div><div style="font:800 86px I;letter-spacing:-.04em">1.000</div></div>`],
+  [480,-420,-900,440,300,-24,`<div style="padding:28px"><div style="font:700 26px I;opacity:.7">Conversão</div><div style="font:800 86px I;color:${RD}">0,5%</div></div>`],
+  [-560,380,-1300,460,320,26,`<div style="padding:26px;display:flex;gap:18px;align-items:center"><div style="width:110px;height:110px;border-radius:24px;background:${BL}"></div><div><div style="font:700 30px I">Novo pedido</div><div style="font:500 24px I;opacity:.7">há 2 min</div></div></div>`],
+  [520,460,-1700,460,300,-22,`<div style="padding:26px"><div style="display:flex;align-items:flex-end;gap:16px;height:200px">${[40,65,30,80,55].map(h=>`<div style="flex:1;height:${h}%;background:${BL2};border-radius:10px"></div>`).join('')}</div></div>`],
+  [-420,-180,-2100,520,140,18,`<div style="padding:30px 34px;font:600 36px I;opacity:.9">🔍 garrafa térmica 1L</div>`],
+  [440,-60,-2400,400,260,-18,`<div style="padding:26px"><div style="font:800 60px I;color:${YE}">★ 4,3</div><div style="font:600 26px I;opacity:.75">média do topo</div></div>`],
+  [-500,-520,-2900,440,240,20,`<div style="padding:28px"><div style="font:700 26px I;opacity:.7">Carrinhos abandonados</div><div style="font:800 76px I">23</div></div>`],
+  [500,520,-3200,460,260,-20,`<div style="padding:28px"><div style="font:700 26px I;opacity:.7">Frete grátis</div><div style="font:800 64px I">7 de 10</div></div>`],
+  [-460,620,-3600,420,220,16,`<div style="padding:28px;font:700 34px I">💬 Tem pronta entrega?</div>`],
+ ];
+ let h='';for(const [x,y,zz,w,hh,r,c] of P){const ez=zz+tz;h+=`<div style="position:absolute;left:${540+x-w/2}px;top:${960+y-hh/2}px;width:${w}px;height:${hh}px;transform:translateZ(${zz}px) rotateY(${r}deg);${glassC};opacity:${cl((800-ez)/350)*cl((ez+4200)/700)*(1-.85*eo((lt-dur*.6)/(dur*.35)))}">${c}</div>`}
+ const hq=eo((lt-dur*.6)/(dur*.35)),hero=o.hero?`<div class="ab" style="left:170px;width:740px;top:${o.heroTop||720}px;transform:perspective(1100px) translateZ(${(1-hq)*-900}px) rotateX(${(1-hq)*12}deg);${glassC};opacity:${hq}">${o.hero}</div>`:'';
+ const grid=`<div style="position:absolute;left:-2000px;right:-2000px;top:1500px;height:4000px;transform:rotateX(90deg) translateZ(-200px);transform-origin:50% 0;background-image:linear-gradient(rgba(127,163,255,.25) 2px,transparent 2px),linear-gradient(90deg,rgba(127,163,255,.25) 2px,transparent 2px);background-size:160px 160px;opacity:.6"></div>`;
+ return `<div class="ab" style="inset:0;background:radial-gradient(1000px 1200px at 50% 48%,rgba(47,107,255,.5),transparent 70%);opacity:${1-.5*p}"></div><div class="ab" style="inset:0;perspective:1100px;perspective-origin:50% 45%;overflow:hidden"><div style="position:absolute;inset:0;transform-style:preserve-3d;transform:translateZ(${tz}px) rotateX(${rx}deg) rotateY(${ry}deg)">${grid}${h}</div></div>${hero}`}
 // tempos das cenas vindos da narração: [[ini,fim],...] (render_motion.js chama antes de renderizar)
 function setTimes(a){if(!Array.isArray(a)){window.CAPS=a.caps;window.ASPD=a.aspd;a=a.times}a.forEach((x,i)=>{if(SC[i]){SC[i][0]=x[0];SC[i][1]=x[1]}});DUR=a[a.length-1][1]}
 // motor de render com tema (fundo, transição, textura)

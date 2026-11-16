@@ -127,4 +127,11 @@ for nm,sv,cap in [('desconto',('SALVE','PRA BLACK'),'Salve e faça essa conta an
                   ('roas',('SALVE','E CONFIRA'),'Salve e confira o ROAS dos seus anúncios hoje.'),
                   ('atende',('SALVE','E MONTE'),'Salve e monte a base de atendimento da sua loja hoje.')]:
     SAVE=sv; th,kw,_,S=ARGS[nm]; OUT[nm+'_salve']=build(nm+'_salve',th,kw,cap,S); SAVE=None
+
+# TESTE 16/11 — efeito "mundo de interface" na abertura do ANUNCIO (câmera voando por telas 3D)
+_th,_kw,_cap,_S=ARGS['anuncio_salve']; _S=list(_S)
+_hero="<div style=\\'padding:34px\\'><div style=\\'font:700 28px I;opacity:.7\\'>Seu anúncio</div><div style=\\'font:800 58px I;margin-top:10px\\'>Garrafa térmica 1L</div><div style=\\'display:flex;justify-content:space-between;margin-top:22px;font:700 36px I\\'><span>1.000 visitas</span><span style=\\'color:#E5384A\\'>5 vendas</span></div></div>"
+_S[0]=(3.4,'dark',"uiworld(lt,{dur:3.2,heroTop:1060,hero:'"+_hero+"'})+W(lt,[[1.0,'MUITA VISITA',130],[1.2,'E NENHUMA',130],[1.45,'VENDA?',220,BL2]],300)",_S[0][3])
+SAVE=('SALVE','E REVISE'); OUT['anuncio_ui']=build('anuncio_ui',_th,_kw,_cap,_S); SAVE=None
+print(OUT['anuncio_ui'])
 print(OUT)
