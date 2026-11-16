@@ -1,12 +1,12 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
 <!-- FORMATO "VÍDEO REAL + TEXTO": camada transparente (render_alpha.js) sobreposta a cenas reais (Mixkit, licença livre). Exemplo hipotético. -->
-<style>html,body{background:transparent}</style></head><body><div id="v"></div><script>const THEME={};</script><script src="../lib.js"></script><script>
+<style>html,body{background:transparent}.bx{display:inline;background:rgba(8,10,20,.82);padding:6px 22px;line-height:1.32;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.45)}#v{text-shadow:0 6px 24px rgba(0,0,0,.55)}</style></head><body><div id="v"></div><script>const THEME={};</script><script src="../lib.js"></script><script>
 const B=[ // [t0, t1, html]
- [0,3,`<div style="font:800 150px/.92 I;letter-spacing:-.06em">VAI DAR<br><span style="background:#2F6BFF;padding:0 20px">30% OFF</span><br>NA BLACK?</div>`],
- [3,6,`<div style="font:700 44px I;opacity:.85">No exemplo</div><div style="font:800 96px/1.05 I;letter-spacing:-.04em;margin-top:14px">R$ 83,90 de preço<br>R$ 48,50 de custo<br>27% de taxas</div>`],
- [6,9,`<div style="font:700 44px I;opacity:.85">Com 30% off</div><div style="font:800 170px/1 I;color:#FF6B78;letter-spacing:-.05em;margin-top:10px">−R$ 5,63</div><div style="font:700 48px I">em cada venda</div>`],
- [9,12,`<div style="font:700 44px I;opacity:.85">Desconto máximo</div><div style="font:800 300px/1 I;color:#4ADE80;letter-spacing:-.06em">15%</div><div style="font:700 44px I">48,50 ÷ 0,68 = R$ 71,32</div>`],
- [12,15,`<div style="font:800 120px/.95 I;letter-spacing:-.05em">SALVE<br><span style="color:#7FA3FF">PRA BLACK</span></div><div style="display:inline-block;margin-top:40px;padding:26px 50px;border-radius:99px;background:#fff;color:#2F6BFF;font:800 46px I">Envie para quem precisa ↗</div>`],
+ [0,3,`<div style="font:800 150px/.92 I;letter-spacing:-.06em"><span class="bx">VAI DAR</span><br><span class="bx" style="background:#2F6BFF">30% OFF</span><br><span class="bx">NA BLACK?</span></div>`],
+ [3,6,`<div style="font:700 44px I;opacity:.85"><span class="bx">No exemplo</span></div><div style="font:800 96px/1.05 I;letter-spacing:-.04em;margin-top:14px"><span class="bx">R$ 83,90 de preço<br>R$ 48,50 de custo<br>27% de taxas</span></div>`],
+ [6,9,`<div style="font:700 44px I;opacity:.85"><span class="bx">Com 30% off</span></div><div style="font:800 170px/1 I;color:#FF6B78;letter-spacing:-.05em;margin-top:10px"><span class="bx">−R$ 5,63</span></div><div style="font:700 48px I"><span class="bx">em cada venda</span></div>`],
+ [9,12,`<div style="font:700 44px I;opacity:.85"><span class="bx">Desconto máximo</span></div><div style="font:800 300px/1 I;color:#4ADE80;letter-spacing:-.06em"><span class="bx">15%</span></div><div style="font:700 44px I"><span class="bx">48,50 ÷ 0,68 = R$ 71,32</span></div>`],
+ [12,15,`<div style="font:800 120px/.95 I;letter-spacing:-.05em"><span class="bx">SALVE<br><span style="color:#7FA3FF">PRA BLACK</span></span></div><div style="display:inline-block;margin-top:40px;padding:26px 50px;border-radius:99px;background:#fff;color:#2F6BFF;font:800 46px I">Envie para quem precisa ↗</div>`],
 ];
 window.R=function(t){
  const b=B.find(x=>t>=x[0]&&t<x[1])||B[B.length-1],lt=t-b[0],q=eo(lt/.35),out=t>b[1]-.25&&b!==B[B.length-1]?eo((t-(b[1]-.25))/.25):0;

@@ -23,14 +23,21 @@ window.R=function(t){
    <div style="max-width:640px;${isCard?'padding:10px;background:#fff':'padding:24px 30px;background:'+(me?'#F1F3F8':'#2F6BFF')};color:${me?'#0A0B10':'#fff'};border-radius:${me?'34px 34px 34px 10px':'34px 34px 10px 34px'};font:500 38px/1.35 I;box-shadow:0 6px 18px rgba(10,20,60,.08)">${body}</div></div>`}
  const typing=MSG.find(m=>m[0]>t&&m[0]-t<.9);const dots=typing?`<div style="display:flex;justify-content:${typing[1]?'flex-start':'flex-end'};margin-left:${typing[1]?78:0}px"><div style="padding:22px 30px;border-radius:30px;background:${typing[1]?'#F1F3F8':'#2F6BFF'}">${[0,1,2].map(i=>`<span style="display:inline-block;width:14px;height:14px;border-radius:50%;margin:0 5px;background:${typing[1]?'#9AA0AE':'#fff'};opacity:${.35+.65*Math.abs(Math.sin(t*6+i))}"></span>`).join('')}</div></div>`:'';
  const content=h+dots, n=vis.length, scroll=Math.max(0,(n-6))*150;
- const zoom=1+.03*Math.sin(t*.4);
- document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:radial-gradient(900px 1200px at 50% 30%,#3D7BFF,#1A3FB0 55%,#08122E)"></div>
- <div class="ab" style="left:0;right:0;top:120px;text-align:center;font:800 64px I;color:#fff;letter-spacing:-.04em;opacity:${eo(t/.5)}">Vai dar 30% off na Black?</div>
- <div class="ab" style="left:110px;top:250px;width:860px;height:1560px;border-radius:70px;background:#fff;box-shadow:0 60px 120px rgba(0,0,0,.45);overflow:hidden;transform:scale(${zoom})">
+ // câmera: cada mensagem nova dá um "punch-in"; cards dão zoom forte + leve giro; prejuízo treme
+ const last=vis[vis.length-1]||MSG[0], dl=t-last[0], isCardLast=last[2].startsWith('card:');
+ const punch=isCardLast?1+.32*eo(cl(dl/.35))*(1-eio(cl((dl-1.3)/.5))):1+.05*(1-eo(cl(dl/.3)));
+ const shake=last[2]==='card:prej'&&dl<.6?Math.sin(dl*70)*14*(1-dl/.6):0;
+ const ry=Math.sin(t*.7)*7, rx=4+Math.sin(t*.5)*3;
+ const emo=MSG.filter(m=>m[2].startsWith('card:')&&t>m[0]+.3&&t<m[0]+2.2).map(m=>{const e=m[2]==='card:prej'?'😱':'🎉',u=(t-m[0]-.3)/1.9;return [0,1,2,3].map(k=>`<div class="ab" style="left:${640+k*70+Math.sin(u*6+k)*20}px;top:${1300-u*700-k*40}px;font-size:${70-k*8}px;opacity:${1-u}">${e}</div>`).join('')}).join('');
+ const wordOn=MSG.some(m=>m[2].startsWith('card:')&&t>m[0]+.2&&t<m[0]+1.9);const word=MSG.filter(m=>m[2].startsWith('card:')&&t>m[0]+.2&&t<m[0]+1.9).map(m=>{const p=m[2]==='card:prej',u=t-m[0]-.2,q=eo(cl(u/.25));return `<div class="ab" style="left:0;right:0;top:70px;text-align:center;font:800 ${p?140:160}px I;letter-spacing:-.05em;color:${p?'#FF6B78':'#4ADE80'};text-shadow:0 10px 40px rgba(0,0,0,.5);transform:scale(${1+(1-q)*1.4}) rotate(${p?-4:3}deg);opacity:${q*(1-eio(cl((u-1.3)/.4)))}">${p?'PREJUÍZO':'15% ✓'}</div>`}).join('');
+ const blobs=[0,1,2].map(k=>`<div class="ab" style="left:${200+Math.sin(t*.6+k*2)*300}px;top:${300+k*500+Math.cos(t*.5+k)*200}px;width:700px;height:700px;border-radius:50%;background:radial-gradient(closest-side,${['rgba(127,163,255,.55)','rgba(47,107,255,.45)','rgba(160,120,255,.35)'][k]},transparent);filter:blur(10px)"></div>`).join('');
+ document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:radial-gradient(900px 1200px at 50% 30%,#3D7BFF,#1A3FB0 55%,#08122E)"></div>${blobs}
+ <div class="ab" style="left:0;right:0;top:110px;text-align:center;font:800 70px I;color:#fff;letter-spacing:-.04em;text-shadow:0 8px 30px rgba(0,0,0,.35);transform:translateY(${(1-eo(t/.5))*-60}px);opacity:${eo(t/.5)*(wordOn?0:1)}">Vai dar 30% off na Black?</div>
+ <div class="ab" style="inset:0;perspective:1600px"><div class="ab" style="left:110px;top:250px;width:860px;height:1560px;border-radius:70px;background:#fff;box-shadow:0 60px 120px rgba(0,0,0,.45);overflow:hidden;transform-origin:50% 78%;transform:translateX(${shake}px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${punch})">
   <div style="height:150px;border-bottom:2px solid #EEF1F7;display:flex;align-items:center;gap:20px;padding:40px 40px 0"><div style="width:76px;height:76px;border-radius:50%;background:#2F6BFF;color:#fff;display:grid;place-items:center;font:800 34px I">↗</div><div><div style="font:700 34px I;color:#0A0B10">augustosilva.p</div><div style="font:500 24px I;color:#22A06B">online</div></div></div>
-  <div style="position:absolute;left:34px;right:34px;top:190px;bottom:120px;overflow:hidden"><div style="transform:translateY(${-scroll}px);transition:none">${content}</div></div>
+  <div style="position:absolute;left:34px;right:34px;top:190px;bottom:120px;overflow:hidden"><div style="transform:translateY(${-scroll}px)">${content}</div></div>
   <div style="position:absolute;left:30px;right:30px;bottom:26px;height:80px;border-radius:40px;background:#F1F3F8;display:flex;align-items:center;padding:0 30px;font:500 30px I;color:#9AA0AE">Mensagem…</div>
- </div>
+ </div></div>${emo}${word}
  <div class="ab" style="left:0;right:0;bottom:60px;text-align:center;font:600 30px I;color:rgba(255,255,255,.75)">Exemplo hipotético · @augustosilva.p</div>`};
 R(0);
 </script></body></html>
