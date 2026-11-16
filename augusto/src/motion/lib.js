@@ -78,6 +78,8 @@ function cta(lt,kw,size){size=size||(kw.length>7?150:kw.length>6?170:190);return
 
 // CTA sem recompensa (sem Manychat): SALVE + frase, pílula "Envie para alguém que precisa ↗"
 function ctaSave(lt,a,b,size){size=size||150;return W(lt,[[0,a,170],[.25,b,size,THEME.ctaWord||NV]],560,1.15)+`<div class="ab" style="${A()==='center'?'left:50%;transform:translateX(-50%) ':A()==='right'?'right:84px;transform:':'left:84px;transform:'}translateY(${(1-eo((lt-.6)/.3))*40-6*Math.abs(Math.sin(Math.PI*cl(lt-.95)/.7))}px);top:1060px;padding:34px 56px;border-radius:99px;background:#fff;color:${BL};font:800 50px I;letter-spacing:-.02em;opacity:${eo((lt-.6)/.25)};white-space:nowrap">Envie para quem precisa ↗</div>`}
+// tempos das cenas vindos da narração: [[ini,fim],...] (render_motion.js chama antes de renderizar)
+function setTimes(a){a.forEach((x,i)=>{if(SC[i]){SC[i][0]=x[0];SC[i][1]=x[1]}});DUR=a[a.length-1][1]}
 // motor de render com tema (fundo, transição, textura)
 window.R=function(t){const i=SC.findIndex(s=>t>=s[0]&&t<s[1]),s=SC[i<0?SC.length-1:i],lt=t-s[0],ty=s[2],dark=ty==='dark',acc=ty==='accent';
  FG=dark||acc?'#fff':INK;const bg=dark?THEME.dark:acc?THEME.accent:THEME.light;const q=eo(lt/.28);let wrapT=`scale(${1+.02*lt})`,over='';

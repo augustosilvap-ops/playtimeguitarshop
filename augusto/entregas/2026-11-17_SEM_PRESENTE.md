@@ -51,7 +51,7 @@ Faça o teste agora: dê uma nota de 0 a 10 para cada sinal do produto que você
 ---
 
 ## 18h · Reel DESCONTO — Vai dar 30% off na Black?
-**Arquivo:** `2026-11-18/09_reel_desconto/reel_salve_1080x1920_38s.mp4` (final: "SALVE PRA BLACK" + "Envie para quem precisa ↗"). Capa: `capa_aula_1080x1920.png`.
+**Arquivo:** `2026-11-18/09_reel_desconto/reel_narrado_1080x1920_44s.mp4` (narrado pelo Lucas + trilha + efeitos; final "SALVE PRA BLACK"). Capa: `capa_aula_1080x1920.png`.
 
 **Legenda:**
 
@@ -69,12 +69,12 @@ Exemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mín
 
 #blackfriday #precificacao #marketplace #ecommerce #vendasonline
 
-**Áudio:** escolher no Instagram uma faixa da biblioteca liberada para contas comerciais.
+**Áudio:** já vem com narração, trilha e efeitos — não adicionar música do Instagram.
 
 ---
 
 ## 20h · Reel ANUNCIO — Muita visita e nenhuma venda?
-**Arquivo:** `2026-11-19/12_reel_anuncio/reel_salve_1080x1920_42s.mp4` (final: "SALVE E REVISE" + "Envie para quem precisa ↗"). Capa: `capa_aula_1080x1920.png`.
+**Arquivo:** `2026-11-19/12_reel_anuncio/reel_narrado_1080x1920_44s.mp4` (narrado pelo Lucas + trilha + efeitos; final "SALVE E REVISE"). Capa: `capa_aula_1080x1920.png`.
 
 **Legenda:**
 
@@ -95,4 +95,4 @@ Mais visita num anúncio que não convence só aumenta o número de pessoas que 
 
 #marketplace #mercadolivre #shopee #ecommerce #vendasonline
 
-**Áudio:** escolher no Instagram uma faixa da biblioteca liberada para contas comerciais.
+**Áudio:** já vem com narração, trilha e efeitos — não adicionar música do Instagram.
