@@ -4,7 +4,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 C=[
 # id, data, hora, formato, pilar, direção, tema/gancho, palavra, recompensa, mídia, status
 ("02","Dom 15/11","10h","Carrossel 8","Precificação","v2","5 custos que comem seu lucro","CUSTOS","Guia de Precificação para Leigos com IA (PDF 12 p.)","—","Remanejado: 17/11 16h automático (sem presente)"),
-("01","Dom 15/11","12h","Estático","Precificação","v2","Você perde lucro nas taxas?","TAXAS","Raio-X das Taxas (PDF 2 p.)","—","Remanejado: 16/11 16h automático (sem presente)"),
+("01","Dom 15/11","12h","Estático","Precificação","v2","Você perde lucro nas taxas?","TAXAS","Raio-X das Taxas (PDF 2 p.)","—","Publicado 16/11 16h (Windsor)"),
 ("03","Dom 15/11","18h","Reel 18s","Precificação","Cinético · preto/grade","Você vende e não sobra? Leia a legenda.","PLANILHA","Planilha de Precificação (XLSX)","—","Remanejado: 18/11 16h automático (Reel narrado 79s)"),
 ("05","Dom 15/11","20h","Estático","Precificação","v2","Margem não é markup","MARKUP","Tabela markup → margem (PDF 1 p.)","—","Publicado 16/11 10h (Windsor, sem presente)"),
 ("04","Seg 16/11","10h","Carrossel 7","Precificação","v2","Faturamento não é lucro","MARGEM","Mini-guia Faturamento × Lucro × Margem (PDF)","—","Pronto p/ revisão"),
