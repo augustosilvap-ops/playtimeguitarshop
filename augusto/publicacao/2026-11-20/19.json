@@ -5,7 +5,7 @@
  "account": "17841407424879500",
  "perfil": "@augustosilva.p",
  "data": "2026-11-20",
- "status": "aguardando aprovação no Nexus",
+ "status": "programado no horário — publica só se aprovado no Nexus",
  "params": {
   "image_urls": [
    "https://nexusautomatic.vercel.app/ig/20/19_01.jpg",
