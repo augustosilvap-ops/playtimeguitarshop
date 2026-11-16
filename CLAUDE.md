@@ -51,6 +51,7 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Carrosséis: usar o v4 aprovado (acima). Testes v3/editorial e capas com foto de fundo foram REJEITADOS em 14/11.
 - Storytelling: `storytelling/RUAH_storytelling.md` e `storytelling/AUGUSTO_storytelling.md`.
 - Instagram via Windsor (conferido 15/11): ações disponíveis = publicar foto, carrossel, Reel e story (mídia em URL pública, JPEG ≤ 8 MB), comentar, responder/ocultar/apagar comentários. NÃO envia DM (isso continua com o Manychat). Toda ação de escrita só com confirmação específica do Augusto. Tarefas agendadas não têm conectores (organização bloqueia).
+- SEM MANYCHAT (16/11): enquanto o Augusto não configurar as automações, postar SEM recompensa — CTA "Salve 🔖 / Envie para quem precisa ↗ / comente sua opinião" (nunca "Comente PALAVRA"). Reels: `gen_aula.py` gera `reel_aula_<nome>_salve.html` com `ctaSave()` (lib.js). Carrossel: último slide vira checklist para salvar (`slides_sem_presente/`). 17/11 pronto em `augusto/entregas/2026-11-17_SEM_PRESENTE.md`.
 - Manychat: configurado pelo Augusto em 14/11 (links em `augusto/editorial/MANYCHAT_LINKS.md`). Agendamento: NÃO configurado. Nunca marcar como publicado/agendado sem confirmação.
 
 ## Skills do projeto (15/11/2026) — `.claude/skills/`

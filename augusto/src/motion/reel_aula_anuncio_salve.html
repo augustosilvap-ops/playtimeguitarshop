@@ -1,0 +1,26 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#08090E',light:'#FFFFFF',accent:'#2F6BFF',anim:'flip',trans:'slide',deco:'scan',align:'left'};
+const SC=[
+[0.00,2.00,'dark',lt=>W(lt,[[0,'MUITA VISITA',130],[.2,'E NENHUMA',130],[.4,'VENDA?',220,BL2]],380),'Vamos achar o problema do anúncio, ponto por ponto.'],
+[2.00,4.40,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+typer(lt,{a:'Colocar mais anúncio pago num anúncio que não convence.',size:56,speed:44,top:620,box:true}),'Erro comum: pagar por mais visitas antes de arrumar o anúncio.'],
+[4.40,7.00,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,w1:'45%',rows:[['Visitas','1.000'],['Conversão','0,5%'],['Vendas','5'],['Dobrar as visitas','10 vendas, custo em dobro']]}),'Se o anúncio converte pouco, mais visitas só aumentam o gasto (exemplo).'],
+[7.00,9.60,'dark',lt=>W(lt,[[0,'1.',150],[.15,'FOTO',100,BL2]],250)+slider(lt,{top:520,h:760,t0:.3,dur:1.1,L:{bg:'#3A3D47',k:'ANTES',big:'escura',sub:'com texto por cima',c:'#FF8A95'},Rt:{bg:'#FFFFFF',k:'DEPOIS',big:'clara',sub:'produto inteiro',c:BL},bigSize:150}),'1. Primeira foto: produto inteiro, fundo limpo, sem texto por cima.'],
+[9.60,12.20,'light',lt=>W(lt,[[0,'2.',150],[.15,'TÍTULO',100,BL]],250)+typer(lt,{a:'Garrafa ',wrong:'barata promoção',right:'térmica 1L inox',size:84,top:640,t1:.8,speed:28}),'2. Título com as palavras que o cliente digita na busca.'],
+[12.20,14.80,'dark',lt=>W(lt,[[0,'3.',150],[.15,'PREÇO',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,rows:[['Seu preço','R$ 89,90'],['Média dos 10 primeiros','R$ 74,90'],['Diferença','+20%',RD]]}),'3. Mais caro que a média? Mostre por quê: kit, garantia ou prazo.'],
+[14.80,17.40,'light',lt=>W(lt,[[0,'4.',150],[.15,'FRETE',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'40%',rows:[['Seu frete','calcular no checkout',RD],['Concorrentes','7 de 10 grátis'],['O que fazer','avaliar frete embutido']]}),'4. Se os concorrentes dão frete grátis, avalie embutir no preço.'],
+[17.40,20.00,'dark',lt=>W(lt,[[0,'5.',150],[.15,'DESCRIÇÃO',100,BL2]],250)+notifs(lt,{items:['Qual a medida?','Serve no meu modelo?','O que vem na caixa?'],icon:'?',ic:BL,top:560,step:.25,t0:.3,dark:true,badge:false}),'5. Responda na descrição as perguntas que mais chegam.'],
+[20.00,22.40,'accent',lt=>W(lt,[[0,'RESULTADO',140]],260)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,rows:[['Mesmas visitas','1.000'],['Conversão nova','1,5%'],['Vendas','15']]}),'Com o anúncio arrumado, as mesmas visitas vendem mais (exemplo).'],
+[22.40,24.80,'light',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Foto clara e inteira'],['2','Título com palavras da busca'],['3','Preço comparado'],['4','Frete competitivo'],['5','Descrição que responde']]})+lbl('Valores do exemplo são hipotéticos',1330,'#7A7F8C'),'Salve e revise hoje o anúncio com mais visitas.'],
+[24.80,26.80,'accent',lt=>ctaSave(lt,'SALVE','E REVISE'),'Salve e revise seu anúncio com esse passo a passo.']];
+let DUR=26.80;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

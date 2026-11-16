@@ -18,10 +18,14 @@ def tb(rows,top=560,**k):
 def box(txt,top=640,size=46,ink=None): return f"typer(lt,{{a:'{txt}',size:{size},speed:44,top:{top},box:true}})"
 def head(a,b,c=None,top=250): return f"W(lt,[[0,'{a}',150],[.15,'{b}',100{','+c if c else ''}]],{top})"
 def resumo(items,dark=False): return "W(lt,[[0,'RESUMO',150]],250)+"+tb([T(str(i+1),x) for i,x in enumerate(items)],top=480,w1="'10%'",al="'left'")
+ARGS={}
+SAVE=None
 def build(name,theme,kw,capcta,S):
+    ARGS[name]=(theme,kw,capcta,S)
     rows=[];t=0
     for d,ty,js,cap in S: rows.append(f"[{t:.2f},{t+d:.2f},'{ty}',lt=>{js},'{cap}']");t+=d
-    rows.append(f"[{t:.2f},{t+2:.2f},'accent',lt=>cta(lt,'{kw}'),'{capcta}']");t+=2
+    ctajs=f"ctaSave(lt,'{SAVE[0]}','{SAVE[1]}')" if SAVE else f"cta(lt,'{kw}')"
+    rows.append(f"[{t:.2f},{t+2:.2f},'accent',lt=>{ctajs},'{capcta}']");t+=2
     js=f"const THEME={TH[theme]};\nconst SC=[\n"+",\n".join(rows)+f"];\nlet DUR={t:.2f};const K=1.55;SC.forEach(s=>{{s[0]*=K;s[1]*=K}});DUR*=K;"
     open(f'reel_aula_{name}.html','w').write(H+js+'\nR(0);\n</script></body></html>\n');return round(t*1.55,2)
 OUT={}
@@ -114,4 +118,8 @@ OUT['fotos']=build('fotos','preto_aneis','FOTOS','Comente FOTOS e receba o check
 (2.6,'light',head('PASSO 5','REGRAS DO CANAL','BL')+"+"+tb([T('Primeira foto','fundo branco'),T('Formato','quadrado (1:1)'),T('Produto','ocupa boa parte da foto')],w1="'40%'"),"Passo 5: confira as regras de foto do seu marketplace antes de subir."),
 (2.4,'dark',resumo(['Luz de janela','Fundo liso','4 ângulos','Sem filtro','Regras do canal']),"Salve e refaça hoje a foto do seu produto principal."),
 ])
+# Versões SEM recompensa (Manychat não configurado) — 16/11
+for nm,sv,cap in [('desconto',('SALVE','PRA BLACK'),'Salve e faça essa conta antes de definir o desconto.'),
+                  ('anuncio',('SALVE','E REVISE'),'Salve e revise seu anúncio com esse passo a passo.')]:
+    SAVE=sv; th,kw,_,S=ARGS[nm]; OUT[nm+'_salve']=build(nm+'_salve',th,kw,cap,S); SAVE=None
 print(OUT)
