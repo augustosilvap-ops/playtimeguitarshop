@@ -6,7 +6,7 @@ C=[
 ("02","Dom 15/11","10h","Carrossel 8","Precificação","v2","5 custos que comem seu lucro","CUSTOS","Guia de Precificação para Leigos com IA (PDF 12 p.)","—","Pronto p/ revisão"),
 ("01","Dom 15/11","12h","Estático","Precificação","v2","Você perde lucro nas taxas?","TAXAS","Raio-X das Taxas (PDF 2 p.)","—","Pronto p/ revisão"),
 ("03","Dom 15/11","18h","Reel 18s","Precificação","Cinético · preto/grade","Você vende e não sobra? Leia a legenda.","PLANILHA","Planilha de Precificação (XLSX)","—","Pronto p/ revisão"),
-("05","Dom 15/11","20h","Estático","Precificação","v2","Margem não é markup","MARKUP","Tabela markup → margem (PDF 1 p.)","—","Pronto p/ revisão"),
+("05","Dom 15/11","20h","Estático","Precificação","v2","Margem não é markup","MARKUP","Tabela markup → margem (PDF 1 p.)","—","Publicado 16/11 10h (Windsor, sem presente)"),
 ("04","Seg 16/11","10h","Carrossel 7","Precificação","v2","Faturamento não é lucro","MARGEM","Mini-guia Faturamento × Lucro × Margem (PDF)","—","Pronto p/ revisão"),
 ("11","Seg 16/11","12h","Estático","Precificação","v4","Pare de precificar no escuro","ESCURO","Prompt de preço mínimo (PDF 1 p.)","—","Agendado: publicação automática via Windsor"),
 ("06","Seg 16/11","18h","Reel 18s","IA aplicada","Cinético · claro/pontos","Comprou estoque no achismo? Leia a legenda.","GARIMPO","5 prompts de garimpo (PDF)","—","Agendado: publicação automática via Windsor"),
