@@ -5,160 +5,146 @@ Regra de decisão: vence quem tiver **tempo médio assistido + compartilhamentos
 
 | Dia | Hora | Par | Variável | Conteúdo | A | B |
 |---|---|---|---|---|---|---|
-| 17/11 | 11h | 1 | Efeito | ANUNCIO | abertura normal (56 s) | abertura "mundo de interface" (56 s) |
-| 17/11 | 15h | 2 | Duração | DESCONTO | completa (79 s) (79 s) | curta (33 s) |
-| 18/11 | 11h | 3 | Narração | TITULO | com voz (58 s) | sem voz (só legenda + trilha) (58 s) |
-| 18/11 | 15h | 4 | Gancho | ROAS | gancho pergunta ("Gastou em anúncio") (53 s) | gancho número ("R$ 500 → R$ 248 de prejuízo") (54 s) |
-| 19/11 | 11h | 5 | Efeito | PLANILHA | abertura normal (79 s) | abertura "mundo de interface" (79 s) |
-| 19/11 | 15h | 6 | Duração | ROTINA | completa (54 s) | curta (23 s) |
-| 20/11 | 11h | 7 | Narração | ATENDE | com voz (51 s) | sem voz (só legenda + trilha) (51 s) |
-| 20/11 | 15h | 8 | Gancho | GARIMPO | gancho pergunta ("Comprou 200 peças no achismo?") (64 s) | gancho número ("200 compradas → 12 vendidas") (64 s) |
+| 17/11 | 11h | 1 | Efeito | CLASSICO | abertura normal (39 s) | abertura "mundo de interface" (39 s) |
+| 17/11 | 15h | 2 | Duração | ABC | completa (39 s) | curta (17 s) |
+| 18/11 | 11h | 3 | Narração | CUBADO | com voz (38 s) | sem voz (só legenda + trilha) (38 s) |
+| 18/11 | 15h | 4 | Gancho | CAC | gancho pergunta ("Quanto custa cada venda?") (34 s) | gancho número ("R$ 1.200 → sobraram R$ 200") (35 s) |
+| 19/11 | 11h | 5 | Efeito | EQUILIBRIO | abertura normal (34 s) | abertura "mundo de interface" (34 s) |
+| 19/11 | 15h | 6 | Duração | CONVERSAO | completa (34 s) | curta (16 s) |
+| 20/11 | 11h | 7 | Narração | ANTECIPA | com voz (38 s) | sem voz (só legenda + trilha) (38 s) |
+| 20/11 | 15h | 8 | Gancho | ESTOQUE | gancho pergunta ("Dinheiro parado no estoque?") (34 s) | gancho número ("R$ 10.000 → 4 meses para vender") (34 s) |
 
 ## Legendas
-Use nos dois vídeos do par a mesma legenda do post do feed:
+Conteúdos INÉDITOS (não estão no feed). Use a mesma legenda nos dois vídeos do par:
 
-### Par 1 · ANUNCIO
+### Par 1 · CLASSICO
 
-Seu anúncio tem visita, mas não vende? Antes de investir em mais tráfego, olhe para o anúncio.
+Clássico ou Premium? Antes de escolher, faça esta conta.
 
-Revise estes 5 pontos:
+1. Veja a comissão de cada tipo na tabela da sua categoria.
+2. Calcule o lucro de uma venda em cada um.
+3. Divida o lucro do Clássico pelo do Premium.
+4. O resultado diz quanto o Premium precisa vender a mais para empatar.
 
-1. Foto: produto inteiro, fundo limpo, sem texto por cima.
-2. Título: escrito como o cliente pesquisa. Nada de "promoção" ou "barato".
-3. Preço: compare com os 10 primeiros resultados da busca.
-4. Frete e prazo: são das primeiras coisas que o cliente vê.
-5. Descrição: responda as dúvidas que mais aparecem nas perguntas.
+Exemplo hipotético: produto de R$ 100, custo R$ 50, imposto 6%. Clássico a 12% deixa R$ 32; Premium a 17% deixa R$ 27. 32 ÷ 27 = 1,19 → o Premium precisa vender 19% a mais.
 
-Mais visita num anúncio que não convence só aumenta o número de pessoas que vão embora.
+🔖 Salve antes do próximo anúncio.
+💬 Seus anúncios estão em qual tipo hoje?
 
-🔖 Salve e revise seu anúncio principal hoje, ponto por ponto.
-💬 Qual desses 5 você acha que está pegando no seu? Me conta aqui.
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#marketplace #mercadolivre #shopee #ecommerce #vendasonline
+### Par 2 · ABC
 
-### Par 2 · DESCONTO
+Nem todo produto merece a mesma atenção. A curva ABC mostra quais pagam as suas contas.
 
-A Black Friday é em 27/11. Antes de colocar "-30%" em tudo, faça uma conta de 1 minuto.
+1. Exporte as vendas dos últimos 90 dias, por produto.
+2. Ordene do maior para o menor faturamento.
+3. Some o acumulado: até 80% é curva A, de 80% a 95% é B, o resto é C.
+4. A nunca falta estoque · B melhore os anúncios · C revise ou tire.
 
-1. Descubra o seu preço mínimo: custo por unidade ÷ (1 − soma dos % cobrados na venda).
-2. Defina a menor margem que você aceita na promoção (ex.: 5%).
-3. Calcule o preço da oferta: custo ÷ (1 − % da venda − margem mínima).
-4. Compare com o preço atual: esse é o seu desconto máximo.
+Exemplo hipotético: de R$ 50 mil, 20 produtos fazem R$ 40 mil (80%).
 
-Exemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mínima de 5%. O desconto máximo é 15%. Um cupom de 20% deixaria a margem abaixo de 1%.
+🔖 Salve e faça a sua curva ABC esta semana.
+↗ Envie para quem tem loja com muitos produtos.
 
-🔖 Salve e faça essa conta com cada produto antes de definir o desconto.
-↗ Envie para quem vai fazer Black Friday este ano.
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#blackfriday #precificacao #marketplace #ecommerce #vendasonline
+### Par 3 · CUBADO
 
-### Par 3 · TITULO
+Seu frete pode estar caro por causa da caixa, não do produto.
 
-Seu anúncio pode estar ótimo e mesmo assim não aparecer. O motivo costuma estar no título.
+A transportadora cobra o MAIOR entre o peso real e o peso cubado:
+Comprimento × largura × altura (cm) ÷ fator da transportadora.
 
-A busca compara o título com o que o cliente digita. "Barato", "promoção" e "envio rápido" ninguém pesquisa.
+Exemplo hipotético (fator 6.000): caixa de 40 × 30 × 20 = 24.000 ÷ 6.000 = 4 kg. O produto pesa 1,2 kg, mas você paga por 4 kg. Trocando por uma caixa de 30 × 20 × 15, o cubado cai para 1,5 kg.
 
-1. Pesquise: digite o produto na busca e anote as sugestões e as palavras que se repetem nos títulos do topo.
-2. Use a fórmula: produto + marca/modelo + característica principal + variação.
-3. Monte sem repetir palavras e sem símbolos. Ex.: Garrafa Térmica Inox Pro 1 Litro 24h Gelada Preta.
-4. Peça 5 versões para a IA, com o limite de caracteres do seu canal, e escolha a mais clara.
-5. Troque e compare a taxa de cliques depois de 7 dias.
+Confira o fator da sua transportadora.
 
-No exemplo (hipotético), a taxa de cliques foi de 0,8% para 2,4%.
+🔖 Salve e meça as caixas dos seus 5 mais vendidos.
+💬 Você já tinha ouvido falar em peso cubado?
 
-🔖 Salve e reescreva hoje o título do seu anúncio principal.
-💬 Me conta: qual palavra inútil você vai tirar do seu título?
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#ia #marketplace #produtos #mercadolivre #shopee
+### Par 4 · CAC
 
-### Par 4 · ROAS
+Gastar R$ 1.200 em anúncio é caro ou barato? Depende de quantas vendas vieram.
 
-O anúncio vendeu R$ 900 e parece ótimo. Mas deu lucro?
+1. Pegue o total gasto no mês (painel de anúncios).
+2. Veja quantas vendas vieram do anúncio.
+3. Divida: esse é o custo por venda.
+4. Compare com o lucro de cada venda antes do anúncio.
 
-Exemplo hipotético: R$ 900 em vendas − R$ 405 de custo dos produtos − R$ 243 de taxas − R$ 500 de anúncio = R$ 248 de prejuízo.
+Exemplo hipotético: R$ 1.200 ÷ 40 vendas = R$ 30 por venda. Se sobravam R$ 35 antes do anúncio, ficam R$ 5 por venda — R$ 200 no mês.
 
-Como conferir os seus:
-1. ROAS = vendas geradas pelo anúncio ÷ valor gasto. Os dois estão no painel de anúncios. No exemplo: 900 ÷ 500 = 1,8.
-2. Veja quanto sobra de cada venda antes do anúncio: preço − custo do produto − taxas. No exemplo, 28%.
-3. ROAS mínimo = 1 ÷ essa sobra. 1 ÷ 0,28 = 3,6.
-4. Abaixo do mínimo, o anúncio dá prejuízo: ajuste público, foto e título, ou anuncie um produto com margem maior.
+🔖 Salve e calcule o custo por venda do seu anúncio.
+💬 Quanto custa cada venda sua hoje?
 
-🔖 Salve e confira o ROAS dos seus anúncios hoje.
-💬 Você sabe o ROAS mínimo do seu produto principal?
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#precificacao #marketplace #ecommerce #vendasonline #margem
+### Par 5 · EQUILIBRIO
 
-### Par 5 · PLANILHA
+Quantas vendas por mês você precisa para não ter prejuízo? Esse é o ponto de equilíbrio.
 
-Precificar não é chutar um valor e torcer para dar certo. É uma conta de 4 passos — e dá para fazer mesmo sem ser bom em matemática.
+1. Some os custos fixos do mês (ferramentas, contador, internet…).
+2. Calcule quanto sobra de cada venda: preço − custo − taxas.
+3. Divida os fixos pela sobra.
 
-1. Some o custo de uma unidade: produto + embalagem + tarifa fixa do canal + a parte do frete que você paga.
-2. Some tudo o que é cobrado em percentual sobre a venda: comissão, imposto, anúncios, devoluções.
-3. Escolha a margem que você quer que sobre.
-4. Divida: custo por unidade ÷ (1 − percentuais − margem).
+Exemplo hipotético: R$ 3.000 de fixos. Preço R$ 80 − R$ 40 de custo − R$ 20 de taxas = R$ 20 por venda. 3.000 ÷ 20 = 150 vendas por mês.
 
-Exemplo hipotético: custo por unidade de R$ 48,50, percentuais somando 27% e margem desejada de 15%.
-48,50 ÷ (1 − 0,42) = R$ 83,62.
+Abaixo disso, prejuízo. Acima, cada venda vira lucro.
 
-Se você tivesse multiplicado o custo por 1,42, daria R$ 68,87 — e a margem desapareceria nas taxas.
+🔖 Salve e calcule o seu ponto de equilíbrio.
+↗ Envie para quem está começando a vender.
 
-🔖 Salve e calcule hoje o preço do seu produto principal.
-↗ Envie para quem precifica no chute.
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#precificacao #empreendedorismo #vendasonline #marketplace #ecommerce
+### Par 6 · CONVERSAO
 
-### Par 6 · ROTINA
+Visita não paga conta. O que paga é visita que vira pedido.
 
-Pedido acumulando, prazo estourando, cliente reclamando. Quase sempre o problema é a falta de rotina, não de tempo.
+Taxa de conversão = vendas ÷ visitas.
 
-Uma rotina simples que dá conta:
+1. Pegue visitas e vendas do mês nas métricas do anúncio.
+2. Divida.
+3. Compare com os seus outros anúncios.
+4. Melhore primeiro o que converte menos (foto, título, preço).
 
-1. Horário fixo, sempre na mesma ordem: 9h separar, 10h etiquetas, 11h embalar e conferir, 12h postar, 17h mensagens.
-2. Descubra o horário de corte da transportadora (fica no painel do canal) e poste antes dele.
-3. Antes de fechar a caixa, confira 4 itens: produto certo, cor e tamanho, etiqueta do pedido certo e embalagem protegida.
-4. Reserve um horário só para responder mensagens.
+Exemplo hipotético: 30 vendas ÷ 2.000 visitas = 1,5%. Subindo para 2%, as mesmas visitas viram 40 vendas — 10 a mais sem pagar tráfego.
 
-Acompanhe toda semana a sua taxa de envio no prazo. No exemplo (hipotético), a meta é 98%.
+🔖 Salve e calcule a conversão dos seus anúncios.
+💬 Qual é a conversão do seu melhor anúncio?
 
-🔖 Salve e cole na parede do estoque.
-💬 Qual parte da sua rotina mais atrasa hoje?
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#marketplace #mercadolivre #shopee #ecommerce #vendasonline
+### Par 7 · ANTECIPA
 
-### Par 7 · ATENDE
+Antecipar o dinheiro das vendas parceladas tem custo. Faça a conta antes.
 
-O cliente pergunta para várias lojas ao mesmo tempo. Quem responde primeiro costuma levar a venda.
+1. Veja a taxa mensal no contrato ou no painel de pagamentos.
+2. Multiplique pelos meses que vai receber antes.
+3. Aplique sobre o valor.
+4. Compare com a sua margem.
 
-Como montar um atendimento rápido com IA:
+Exemplo hipotético (conta aproximada): 1,5% ao mês × 4 meses = 6%. A cada R$ 1.000, R$ 60 ficam com a operadora. Com margem de 15%, a antecipação leva 6 desses 15 pontos.
 
-1. Escreva a base da loja: prazo de envio, frete, trocas, pagamento e tom de voz.
-2. Liste as perguntas que mais chegam e a resposta certa de cada uma.
-3. Cole a base no prompt: "Você é atendente da minha loja. Responda com simpatia, em até 3 linhas, usando só esta base. Se não souber, diga que vai confirmar."
-4. A IA rascunha, você revisa e envia. Nunca deixe a IA inventar prazo ou preço.
+Antecipe quando precisar, não por hábito.
 
-No exemplo (hipotético), o tempo de resposta caiu de 6 horas para 5 minutos.
+🔖 Salve e confira quanto a antecipação te custa.
 
-🔖 Salve e monte a base da sua loja hoje.
-💬 Quanto tempo você leva hoje para responder um cliente?
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 
-#ia #marketplace #produtos #mercadolivre #shopee
+### Par 8 · ESTOQUE
 
-### Par 8 · GARIMPO
+Estoque parado é dinheiro que não volta para o caixa.
 
-A IA não sabe quanto um produto vende. Mas ela é ótima para organizar o que você descobre.
+Meses de estoque = estoque a preço de custo ÷ custo do que vendeu no mês.
 
-Um jeito simples de usar IA para garimpar produtos:
+Exemplo hipotético: R$ 10.000 em estoque ÷ R$ 2.500 vendidos no mês = 4 meses. Com meta de 2 meses, são R$ 5.000 parados a mais.
 
-1. Peça ideias por nicho, com o motivo de compra e o risco de cada uma.
-2. Cole os dados dos 10 primeiros anúncios (preço, avaliações, vendas exibidas) e peça uma tabela com faixa de preço e brechas.
-3. Cole as avaliações negativas dos concorrentes e descubra o que eles fazem mal.
-4. Calcule a margem com as taxas oficiais do seu canal.
-5. Peça uma nota de 0 a 10 para demanda, concorrência e margem, sempre com base nos dados que você passou.
+O que fazer: pare de recomprar esses itens e gire com kit ou promoção.
 
-Regra de ouro: só compre estoque depois de conferir com dados reais e fazer um teste pequeno.
+🔖 Salve e calcule os meses de estoque da sua loja.
+💬 Quantos meses de estoque você tem hoje?
 
-🔖 Salve e use esse passo a passo no próximo produto.
-↗ Envie para quem está escolhendo o que vender.
-
-#ia #produtos #marketplace #mercadolivre #shopee
+#marketplace #ecommerce #vendasonline #mercadolivre #shopee
 

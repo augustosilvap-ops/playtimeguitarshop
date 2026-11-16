@@ -128,7 +128,7 @@ OUT['t4_cac_numero'] = B('t4_cac_numero', 'branco_diag', ('SALVE', 'E CALCULE'),
 
 # ---------- T5 · PONTO DE EQUILÍBRIO (Efeito) — 80 × 25% = 20 · 80 − 40 − 20 = 20 · 3.000 ÷ 20 = 150 ----------
 t5 = [
- (2.2,'dark',"W(lt,[[0,'QUANTAS VENDAS',120],[.2,'PARA',110,BL2],[.4,'NÃO PERDER?',150]],380)","Quantas vendas por mês você precisa para não ter prejuízo? Vamos calcular."),
+ (2.2,'dark',"W(lt,[[0,'QUANTAS VENDAS',104],[.2,'PARA',110,BL2],[.4,'NÃO PERDER?',150]],380)","Quantas vendas por mês você precisa para não ter prejuízo? Vamos calcular."),
  (2.4,'light',"W(lt,[[0,'O ERRO',150]],260)+"+box('Esquecer os custos fixos: ferramentas, contador, internet.',top=620,size=56),"Erro comum: esquecer os custos fixos do mês."),
  (2.6,'accent',"W(lt,[[0,'POR QUE?',150]],260)+"+box('Os custos fixos chegam todo mês, vendendo ou não.',top=620,size=56),"Eles chegam todo mês, vendendo ou não."),
  (2.6,'dark',head('PASSO 1','CUSTOS FIXOS','BL2')+"+"+tb([T('Ferramentas e apps','R$ 900'),T('Contador','R$ 600'),T('Internet, luz, outros','R$ 1.500'),T('Total no mês','R$ 3.000')],hiLast='true',w1="'55%'"),"Passo 1: some todos os custos fixos do mês."),
@@ -149,7 +149,7 @@ N.NARR['t5_equilibrio'] = [
  "Salve e calcule o seu ponto de equilíbrio.",
 ]
 OUT['t5_equilibrio'] = B('t5_equilibrio', 'preto_glow', ('SALVE', 'E CALCULE'), t5, 'Salve e calcule o seu ponto de equilíbrio.')
-t5b = list(t5); t5b[0] = (3.4, 'dark', uiw(card('Este mês', 'Custos fixos: R$ 3.000', 'Vendas para empatar', '?', '#FFC94D'), "[1.0,'QUANTAS VENDAS',120],[1.2,'PARA',110,BL2],[1.45,'NÃO PERDER?',150]"), t5[0][3])
+t5b = list(t5); t5b[0] = (3.4, 'dark', uiw(card('Este mês', 'Custos fixos: R$ 3.000', 'Vendas para empatar', '?', '#FFC94D'), "[1.0,'QUANTAS VENDAS',104],[1.2,'PARA',110,BL2],[1.45,'NÃO PERDER?',150]"), t5[0][3])
 N.NARR['t5_equilibrio_ui'] = N.NARR['t5_equilibrio']
 OUT['t5_equilibrio_ui'] = B('t5_equilibrio_ui', 'preto_glow', ('SALVE', 'E CALCULE'), t5b, 'Salve e calcule o seu ponto de equilíbrio.')
 
