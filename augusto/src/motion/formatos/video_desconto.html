@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<!-- FORMATO "VÍDEO REAL + TEXTO": camada transparente (render_alpha.js) sobreposta a cenas reais (Mixkit, licença livre). Exemplo hipotético. -->
+<style>html,body{background:transparent}</style></head><body><div id="v"></div><script>const THEME={};</script><script src="../lib.js"></script><script>
+const B=[ // [t0, t1, html]
+ [0,3,`<div style="font:800 150px/.92 I;letter-spacing:-.06em">VAI DAR<br><span style="background:#2F6BFF;padding:0 20px">30% OFF</span><br>NA BLACK?</div>`],
+ [3,6,`<div style="font:700 44px I;opacity:.85">No exemplo</div><div style="font:800 96px/1.05 I;letter-spacing:-.04em;margin-top:14px">R$ 83,90 de preço<br>R$ 48,50 de custo<br>27% de taxas</div>`],
+ [6,9,`<div style="font:700 44px I;opacity:.85">Com 30% off</div><div style="font:800 170px/1 I;color:#FF6B78;letter-spacing:-.05em;margin-top:10px">−R$ 5,63</div><div style="font:700 48px I">em cada venda</div>`],
+ [9,12,`<div style="font:700 44px I;opacity:.85">Desconto máximo</div><div style="font:800 300px/1 I;color:#4ADE80;letter-spacing:-.06em">15%</div><div style="font:700 44px I">48,50 ÷ 0,68 = R$ 71,32</div>`],
+ [12,15,`<div style="font:800 120px/.95 I;letter-spacing:-.05em">SALVE<br><span style="color:#7FA3FF">PRA BLACK</span></div><div style="display:inline-block;margin-top:40px;padding:26px 50px;border-radius:99px;background:#fff;color:#2F6BFF;font:800 46px I">Envie para quem precisa ↗</div>`],
+];
+window.R=function(t){
+ const b=B.find(x=>t>=x[0]&&t<x[1])||B[B.length-1],lt=t-b[0],q=eo(lt/.35),out=t>b[1]-.25&&b!==B[B.length-1]?eo((t-(b[1]-.25))/.25):0;
+ document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:linear-gradient(180deg,rgba(5,8,20,.55),rgba(5,8,20,.25) 40%,rgba(5,8,20,.75))"></div>
+ <div class="ab" style="left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I;color:#fff"><i style="width:56px;height:56px;border-radius:50%;background:#2F6BFF;display:grid;place-items:center;font-style:normal">↗</i>@augustosilva.p</div>
+ <div class="ab" style="left:84px;right:84px;top:640px;color:#fff;opacity:${q*(1-out)};transform:translateY(${(1-q)*80-out*60}px);clip-path:inset(0 0 ${(1-q)*30}% 0)">${b[2]}</div>
+ <div class="ab" style="left:84px;right:84px;bottom:110px;font:600 28px I;color:rgba(255,255,255,.7)">Exemplo hipotético</div>
+ <div class="ab" style="left:84px;bottom:180px;height:8px;width:${912*t/15}px;background:#2F6BFF;border-radius:4px"></div>`};
+R(0);
+</script></body></html>

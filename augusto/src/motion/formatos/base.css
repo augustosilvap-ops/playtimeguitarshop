@@ -1,0 +1,6 @@
+@font-face{font-family:I;font-weight:400;src:url('../../fonts/InterPDF-400.ttf')}@font-face{font-family:I;font-weight:500;src:url('../../fonts/InterPDF-500.ttf')}
+@font-face{font-family:I;font-weight:600;src:url('../../fonts/InterPDF-600.ttf')}@font-face{font-family:I;font-weight:700;src:url('../../fonts/InterPDF-700.ttf')}
+@font-face{font-family:I;font-weight:800;src:url('../../fonts/InterPDF-800.ttf')}@font-face{font-family:M;font-weight:500;src:url('../../fonts/JetBrainsMono-500.ttf')}
+@font-face{font-family:A;src:url('../../fonts/Anton.woff2')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}

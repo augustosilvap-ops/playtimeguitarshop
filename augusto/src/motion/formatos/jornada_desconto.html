@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<!-- FORMATO "JORNADA 3D": cada passo é um painel num espaço 3D; a câmera voa de um para o outro. Exemplo hipotético. -->
+</head><body><div id="v"></div><script>const THEME={};</script><script src="../lib.js"></script><script>
+const G='background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.06));border:2px solid rgba(255,255,255,.3);border-radius:44px;box-shadow:0 40px 100px rgba(0,0,0,.5);color:#fff;font-family:I;padding:56px';
+const P=[ // posição do painel no mundo [x,y,z,rotY] + conteúdo
+ [0,0,0,0,`<div style="font:800 110px/1 I;letter-spacing:-.05em">Vai dar<br><span style="color:#7FA3FF">30% off</span><br>na Black?</div>`],
+ [1300,-200,-1400,-25,`<div style="font:600 34px I;opacity:.7">O exemplo</div><div style="font:800 64px/1.25 I;margin-top:16px">Preço R$ 83,90<br>Custo R$ 48,50<br>Taxas 27%</div>`],
+ [-200,250,-2900,20,`<div style="font:600 34px I;opacity:.7">Com 30% off</div><div style="font:800 120px I;color:#FF6B78;letter-spacing:-.04em;margin-top:10px">− R$ 5,63</div><div style="font:600 36px I;opacity:.8">por venda</div>`],
+ [1200,100,-4400,-20,`<div style="font:600 34px I;opacity:.7">A conta certa</div><div style="font:800 60px/1.3 I;margin-top:16px">48,50 ÷ (1 − 27% − 5%)<br>= <span style="color:#7FA3FF">R$ 71,32</span></div>`],
+ [0,-150,-5900,0,`<div style="font:600 34px I;opacity:.7">Desconto máximo</div><div style="font:800 220px/1 I;color:#4ADE80;letter-spacing:-.05em">15%</div><div style="font:600 36px I;opacity:.85">ainda sobram R$ 3,56</div>`],
+];
+const STOP=[0,2.6,5.2,7.8,10.4]; // a câmera chega em cada painel nesses tempos e fica ~1,6 s
+window.R=function(t){
+ let k=STOP.findIndex(s=>s>t);k=k<0?STOP.length:k;const i=Math.max(0,k-1),j=Math.min(P.length-1,k);
+ const seg=t-STOP[i],fly=i===j?0:eio(cl((seg-1.6)/1.0));
+ const a=P[i],b=P[j];const cx=a[0]+(b[0]-a[0])*fly,cy=a[1]+(b[1]-a[1])*fly,cz=a[2]+(b[2]-a[2])*fly,cr=a[3]+(b[3]-a[3])*fly;
+ const bank=Math.sin(fly*Math.PI)*8;
+ const foc=fly>.5?j:i;let h='';P.forEach(([x,y,z,r,c],n)=>{h+=`<div style="position:absolute;left:${540+x-430}px;top:${900+y-300}px;width:860px;transform:translateZ(${z}px) rotateY(${r}deg);${G};opacity:${n===foc?1:.18};filter:blur(${n===foc?0:4}px)">${c}</div>`});
+ // estrelas/pontos de profundidade
+ let dots='';for(let n=0;n<70;n++){const x=((n*397)%4000)-1400,y=((n*211)%2600)-1300,z=-((n*733)%7000);dots+=`<div style="position:absolute;left:${540+x}px;top:${960+y}px;width:8px;height:8px;border-radius:50%;background:rgba(160,190,255,.6);transform:translateZ(${z}px)"></div>`}
+ document.getElementById('v').innerHTML=`<div class="ab" style="inset:0;background:radial-gradient(1200px 1400px at 50% 45%,#13307A,#050A1C)"></div>
+ <div class="ab" style="inset:0;perspective:1200px;perspective-origin:50% 48%"><div style="position:absolute;inset:0;transform-style:preserve-3d;transform:rotateZ(${bank*.3}deg) rotateY(${-cr}deg) translate3d(${-cx}px,${-cy}px,${-cz}px)">${dots}${h}</div></div>
+ <div class="ab" style="left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I;color:#fff"><i style="width:56px;height:56px;border-radius:50%;background:#2F6BFF;display:grid;place-items:center;font-style:normal">↗</i>@augustosilva.p</div>
+ <div class="ab" style="left:0;right:0;bottom:120px;text-align:center;font:600 28px I;color:rgba(255,255,255,.6)">Exemplo hipotético</div>`};
+R(0);
+</script></body></html>
