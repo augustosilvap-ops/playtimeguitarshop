@@ -16,7 +16,7 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 - Nova direção RUAH (15/11, pedido do Augusto): MISTURAR editorial de revista com urbano/streetwear. 4 modelos em teste em `ruah/src/posts_ruah_v3.html` → `ruah/entregas/testes/v3_editorial_street/` (T1 capa de revista, T2 lambe-lambe no concreto, T3 página de revista, T4 ficha técnica street — só afirmações aprovadas). Usar as fotos oficiais existentes; Augusto vai mandar fotos novas depois. Mais 4 modelos inspirados em marcas de streetwear (`ruah/src/posts_ruah_v4.html` → `ruah/entregas/testes/v4_streetwear/`: N1 minimal monocromático, N2 arquivo de filme, N3 padrão de logo, N4 flyer xerox) e comparativos anterior × nova em `ruah/entregas/testes/comparativo_*.jpg`. Efeitos (xerox, filtros) nunca podem apagar ou deformar a estampa.
 
 ## Estrutura
-- `ruah/conteudo/PLANO_CONTEUDO_RUAH.md` — plano de conteúdo da RUAH (16/11): 1 post/dia + stories, 4 pilares (Peça, Mensagem, Movimento, Bastidor), semana-modelo, o que o Claude faz × o que o Augusto grava, 14 dias (17–30/11) e decisões pendentes (combo Leve 2, Black Friday, visual, sessão de fotos).
+- `ruah/conteudo/PLANO_CONTEUDO_RUAH.md` — plano de conteúdo da RUAH (16/11): 1 post/dia + stories, 4 pilares (Peça, Mensagem, Movimento, Bastidor), semana-modelo, o que o Claude faz × o que o Augusto grava, 14 dias (17–30/11) e decisões pendentes (visual, sessão de fotos). DECIDIDO 16/11: SEM combo "Leve 2" e SEM comunicação de Black Friday na RUAH (nenhum post, story, oferta ou desconto sobre a data).
 - `ruah/` — pacote da marca (logos, fontes, fotos de produto, conteúdo, vídeos, textos, scripts).
   - `ruah/scripts/` usa caminhos da sessão antiga; ajuste `SP` e os caminhos de fontes/logos antes de rodar.
 
