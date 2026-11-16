@@ -1,0 +1,21 @@
+{
+ "hora": "16:00",
+ "acao": "create_carousel_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-20",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/20/25_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/25_07.jpg"
+  ],
+  "caption": "Avaliação negativa não precisa afastar cliente. Bem respondida, ela vende.\n\nQuem vai comprar lê as negativas primeiro. A sua resposta não é para quem reclamou — é para os próximos compradores.\n\nComo responder:\n1. Agradeça e cite o problema que a pessoa contou. Nada de resposta copiada.\n2. Explique o que aconteceu sem culpar o cliente. Nunca discuta em público.\n3. Diga o que mudou (ex.: reforçamos a embalagem).\n4. Ofereça a solução pelo canal oficial: troca, devolução ou contato.\n\nResponda no mesmo dia. Resposta rápida mostra que a loja está presente.\n\n🔖 Salve o modelo para a próxima avaliação.\n↗ Envie para quem tem medo de avaliação ruim.\n\n#marketplace #mercadolivre #shopee #ecommerce #vendasonline"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "hora": "10:00",
+ "acao": "create_carousel_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-19",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/19/16_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_07.jpg",
+   "https://nexusautomatic.vercel.app/ig/19/16_08.jpg"
+  ],
+  "caption": "Quase todo mundo que começa no marketplace comete pelo menos um destes 7 erros. Confira se algum é seu:\n\n1. Somar os % ao custo. As taxas são cobradas sobre o preço — a conta certa é dividir.\n2. Escolher a categoria errada. Ela muda a comissão e onde o produto aparece.\n3. Título com \"promoção\" e \"barato\". Use as palavras que o cliente digita.\n4. Foto escura ou com texto por cima. A primeira foto decide o clique.\n5. Esquecer o frete na conta. A parte que você paga entra no custo.\n6. Comprar estoque grande sem teste. Comece com um lote pequeno.\n7. Deixar pergunta sem resposta. Quem responde primeiro costuma levar a venda.\n\n🔖 Salve e confira os 7 nos seus anúncios hoje.\n↗ Envie para alguém que está começando agora.\n\n#marketplace #mercadolivre #shopee #ecommerce #vendasonline"
+ }
+}

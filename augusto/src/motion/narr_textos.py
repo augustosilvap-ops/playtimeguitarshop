@@ -70,3 +70,56 @@ NARR['planilha_salve'] = [
  "Resumo: some o custo em reais, some os percentuais da venda, escolha a margem e divida o custo por 1 menos tudo isso. Números de exemplo.",
  "Salve e calcule hoje o preço do seu produto principal.",
 ]
+
+NARR['titulo_salve'] = [
+ "Seu título está espantando cliente? Vamos reescrever um, com um exemplo, passo a passo.",
+ "O erro comum: encher o título de palavras que ninguém pesquisa, como garrafa barata, promoção, envio rápido.",
+ "Por quê? A busca do marketplace compara o seu título com o que o cliente digita. Ninguém digita promoção ou barato para achar uma garrafa.",
+ "Passo 1, pesquise. Digite o produto na busca e anote as sugestões que aparecem, como 1 litro, inox e 24 horas. Depois veja quais palavras se repetem nos títulos do topo.",
+ "Passo 2, a fórmula: produto, marca ou modelo, característica principal e variação. No exemplo: garrafa térmica, Inox Pro, 1 litro, 24 horas gelada, preta.",
+ "Passo 3, monte o título juntando tudo, sem repetir palavras e sem símbolos: Garrafa Térmica Inox Pro 1 Litro 24h Gelada Preta.",
+ "Passo 4, use a IA. Peça 5 versões com as palavras que o cliente pesquisa e o limite de caracteres do seu canal. Escolha a mais clara, não a mais criativa.",
+ # 0,8% → 2,4% = 3×
+ "Passo 5, teste. Troque o título e compare a taxa de cliques depois de 7 dias. No exemplo, foi de 0,8% para 2,4%: três vezes mais cliques.",
+ "Resumo: pesquise as palavras da busca, use a fórmula, respeite o limite do canal e teste. Números de exemplo.",
+ "Salve e reescreva hoje o título do seu anúncio principal.",
+]
+NARR['rotina_salve'] = [
+ "Os pedidos estão acumulando e você não sabe por onde começar? Vamos montar uma rotina que dá conta.",
+ "O erro comum é enviar quando dá tempo. Um dia vira dois, e o prazo de envio estoura.",
+ "Por quê isso pesa? Envio atrasado vira reclamação. Reclamação derruba a reputação. E reputação baixa significa menos exposição e menos vendas.",
+ "Passo 1, horário fixo, sempre na mesma ordem. Às 9, separe os pedidos. Às 10, imprima as etiquetas. Às 11, embale e confira. Ao meio-dia, poste ou entregue para a coleta. Às 17, responda as mensagens.",
+ "Passo 2, descubra o horário de corte da transportadora ou da agência, que fica no painel do seu canal. Poste sempre antes dele, para o pedido sair no mesmo dia.",
+ "Passo 3, antes de fechar a caixa, confira 4 itens: produto certo, cor e tamanho, etiqueta do pedido certo e embalagem protegida. Isso evita troca e devolução.",
+ "Passo 4, reserve um horário só para mensagens. Responda tudo de uma vez: onde está meu pedido, troca de cor, previsão de entrega.",
+ "A meta, no exemplo, é 98% dos pedidos no prazo. Acompanhe a sua taxa de envio no prazo toda semana, no painel do canal.",
+ "Resumo: horário fixo, postar antes do corte, conferir 4 itens e um horário para mensagens.",
+ "Salve e monte sua rotina de envio a partir de amanhã.",
+]
+NARR['roas_salve'] = [
+ "Gastou 500 reais em anúncio. Será que deu lucro? Vamos ver com um exemplo.",
+ "O erro comum é olhar só as vendas. O anúncio vendeu R$ 900, e parece ótimo.",
+ # 900 − 405 − 243 − 500 = −248
+ "Agora a conta inteira: das vendas de R$ 900, saem R$ 405 de custo dos produtos, R$ 243 de taxas e R$ 500 do anúncio. O resultado é R$ 248 de prejuízo.",
+ "Passo 1, calcule o ROAS: vendas geradas pelo anúncio divididas pelo valor gasto. Os dois números estão no painel de anúncios. Aqui, 900 dividido por 500 dá 1,8.",
+ # 100 − 45 − 27 = 28
+ "Passo 2, veja quanto sobra de cada venda antes de pagar o anúncio. Do preço, tire o custo do produto, 45%, e as taxas, 27%. Sobram 28%.",
+ # 1 ÷ 0,28 = 3,57
+ "Passo 3, o ROAS mínimo é 1 dividido por essa sobra. 1 dividido por 0,28 dá 3,6. Abaixo disso, o anúncio dá prejuízo.",
+ "Passo 4, compare: 1,8 é menor que 3,6. Esse anúncio está dando prejuízo. Ajuste ou pause antes de colocar mais dinheiro.",
+ "O que ajustar: um público mais específico, foto e título melhores no anúncio, ou anunciar um produto com margem maior.",
+ "Resumo: ROAS é vendas dividido pelo gasto. Calcule a sobra antes do anúncio. O mínimo é 1 dividido pela sobra. Números de exemplo.",
+ "Salve e confira o ROAS dos seus anúncios hoje.",
+]
+NARR['atende_salve'] = [
+ "Cliente perguntando e ficando sem resposta? Vamos montar um atendimento rápido com IA, passo a passo.",
+ "O erro comum é responder só quando sobra tempo, horas depois da pergunta.",
+ "Por quê isso custa vendas? O cliente pergunta para várias lojas ao mesmo tempo, e quem responde primeiro costuma levar a venda.",
+ "Passo 1, escreva a base da sua loja num documento: prazo de envio, frete, regras de troca, formas de pagamento e o tom de voz, simpático e direto.",
+ "Passo 2, liste as perguntas que mais chegam, olhando as últimas mensagens, e escreva a resposta certa de cada uma. Tem pronta entrega? Qual o prazo? Aceita Pix?",
+ "Passo 3, cole a base no prompt: você é atendente da minha loja, responda com simpatia, em até 3 linhas, usando só esta base. Se não souber, diga que vai confirmar.",
+ "Passo 4, a IA escreve o rascunho, e você revisa antes de enviar. Nunca deixe a IA inventar prazo ou preço.",
+ "Resultado no exemplo: o tempo de resposta caiu de 6 horas para 5 minutos.",
+ "Resumo: escreva a base, liste as perguntas frequentes, use o prompt com a base e revise antes de enviar.",
+ "Salve e monte a base de atendimento da sua loja hoje.",
+]

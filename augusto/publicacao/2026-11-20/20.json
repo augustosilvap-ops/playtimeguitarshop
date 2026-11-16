@@ -1,0 +1,13 @@
+{
+ "hora": "12:00",
+ "acao": "create_image_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-20",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/20/20.jpg",
+  "caption": "Você vende R$ 100. Quanto disso é seu?\n\nExemplo hipotético de para onde vai o dinheiro:\n→ Produto: R$ 45\n→ Comissão: R$ 14\n→ Frete e embalagem: R$ 8\n→ Imposto: R$ 6\n→ Anúncios: R$ 5\n→ Devoluções: R$ 2\n→ Sobra: R$ 20\n\nFaça a mesma conta com o seu produto principal: pegue o preço, tire cada custo em reais e veja o que fica. Se a sobra for pequena, é ali que você mexe antes de vender mais.\n\nOs percentuais mudam por canal, categoria e regime de imposto — confira a tabela do seu marketplace e a alíquota com o seu contador.\n\n🔖 Salve e faça a sua conta hoje.\n💬 Quanto sobra de cada R$ 100 na sua loja?\n\n#precificacao #marketplace #ecommerce #vendasonline #margem"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "hora": "16:00",
+ "acao": "create_image_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-19",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/19/26.jpg",
+  "caption": "Faltar estoque derruba o anúncio. Sobrar estoque prende o seu dinheiro. O ponto de pedido resolve os dois.\n\nPonto de pedido = vendas por dia × prazo do fornecedor + estoque de segurança.\n\nExemplo hipotético:\n→ Vende 4 por dia.\n→ O fornecedor leva 10 dias para entregar.\n→ Estoque de segurança de 12 unidades (3 dias de venda).\n→ 4 × 10 + 12 = 52.\n\nQuando o estoque chegar em 52 unidades, faça o pedido. Ele chega antes de acabar.\n\nOnde achar os números: vendas por dia no relatório dos últimos 30 dias ÷ 30; prazo real das últimas entregas do fornecedor.\n\n🔖 Salve e calcule o ponto de pedido dos seus 5 mais vendidos.\n↗ Envie para quem vive ficando sem estoque.\n\n#marketplace #mercadolivre #shopee #ecommerce #vendasonline"
+ }
+}

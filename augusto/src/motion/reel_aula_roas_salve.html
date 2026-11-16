@@ -1,0 +1,25 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'radial-gradient(900px 1200px at 50% 30%,#13307A,#050A1C)',light:'#F5F7FB',accent:'#1C47C9',anim:'zoom',trans:'flash',deco:'grid',align:'left'};
+const SC=[
+[0.00,2.00,'light',lt=>W(lt,[[0,'GASTOU',130],[.2,'EM ANÚNCIO',130,BL]],260)+coins(lt,{n:16,count:500,y:600,top:1480}),'Vamos ver se o seu anúncio dá lucro, com um exemplo.'],
+[2.00,4.40,'dark',lt=>W(lt,[[0,'O ERRO',150]],260)+typer(lt,{a:'O anúncio vendeu R$ 900. Está ótimo!',size:60,speed:44,top:620,box:true}),'Erro comum: achar que vender bem é o mesmo que dar lucro.'],
+[4.40,7.20,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,rows:[['Vendas geradas','R$ 900'],['Custo dos produtos (45%)','− R$ 405'],['Taxas (27%)','− R$ 243'],['Anúncio','− R$ 500'],['Resultado','− R$ 248',RD]]}),'Depois do custo, das taxas e do anúncio, o resultado foi negativo (exemplo).'],
+[7.20,9.60,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'O ROAS',100,BL2]],250)+typer(lt,{a:'900 ÷ 500 = 1,8',size:120,top:640,speed:20,ink:'#fff'}),'Passo 1: ROAS = vendas geradas ÷ valor gasto no anúncio.'],
+[9.60,12.20,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'SOBRA',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,rows:[['Preço','100%'],['Custo do produto','− 45%'],['Taxas','− 27%'],['Sobra antes do anúncio','28%']]}),'Passo 2: veja quanto sobra de cada venda antes de pagar o anúncio.'],
+[12.20,14.80,'dark',lt=>W(lt,[[0,'PASSO 3',150],[.15,'ROAS MÍNIMO',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,hiLast:true,rows:[['Sobra antes do anúncio','28%'],['Conta','1 ÷ 0,28'],['ROAS mínimo','3,6']]}),'Passo 3: ROAS mínimo = 1 ÷ sobra antes do anúncio.'],
+[14.80,17.20,'accent',lt=>W(lt,[[0,'1,8 < 3,6',170]],260)+gauge(lt,{top:540,from:.05,to:.2,t0:.2,dur:.9,valTxt:q=>'PREJUÍZO'}),'Passo 4: ROAS abaixo do mínimo = prejuízo. Ajuste ou pause.'],
+[17.20,19.80,'light',lt=>W(lt,[[0,'O QUE AJUSTAR',120,BL]],260)+table(lt,{top:560,t0:.3,step:.22,w1:'30%',rows:[['Público','mais específico'],['Anúncio','foto e título melhores'],['Produto','escolha um com margem maior']]}),'Ajuste público, anúncio ou produto antes de investir mais.'],
+[19.80,22.20,'dark',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','ROAS = vendas ÷ gasto'],['2','Calcule a sobra antes do anúncio'],['3','ROAS mínimo = 1 ÷ sobra'],['4','Abaixo do mínimo: ajuste ou pause']]})+lbl('Valores do exemplo são hipotéticos',1200,'#C9D6F5'),'Salve e confira seus anúncios hoje.'],
+[22.20,24.20,'accent',lt=>ctaSave(lt,'SALVE','E CONFIRA'),'Salve e confira o ROAS dos seus anúncios hoje.']];
+let DUR=24.20;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

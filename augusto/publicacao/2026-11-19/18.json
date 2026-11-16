@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-19",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/19/18.mp4",
+  "share_to_feed": true,
+  "caption": "Pedido acumulando, prazo estourando, cliente reclamando. Quase sempre o problema é a falta de rotina, não de tempo.\n\nUma rotina simples que dá conta:\n\n1. Horário fixo, sempre na mesma ordem: 9h separar, 10h etiquetas, 11h embalar e conferir, 12h postar, 17h mensagens.\n2. Descubra o horário de corte da transportadora (fica no painel do canal) e poste antes dele.\n3. Antes de fechar a caixa, confira 4 itens: produto certo, cor e tamanho, etiqueta do pedido certo e embalagem protegida.\n4. Reserve um horário só para responder mensagens.\n\nAcompanhe toda semana a sua taxa de envio no prazo. No exemplo (hipotético), a meta é 98%.\n\n🔖 Salve e cole na parede do estoque.\n💬 Qual parte da sua rotina mais atrasa hoje?\n\n#marketplace #mercadolivre #shopee #ecommerce #vendasonline",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/19/18_capa.jpg"
+ }
+}

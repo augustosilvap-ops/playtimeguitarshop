@@ -1,0 +1,22 @@
+{
+ "hora": "10:00",
+ "acao": "create_carousel_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-20",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/20/19_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_07.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/19_08.jpg"
+  ],
+  "caption": "Faltam 7 dias para a Black Friday (27/11). O que você não preparar até lá, vai improvisar no dia.\n\nChecklist:\n\n1. Desconto máximo por produto: custo ÷ (1 − taxas − margem mínima). Acima disso, é prejuízo.\n2. Estoque para a demanda: confira os 10 mais vendidos e peça reposição já.\n3. Anúncios revisados: foto, título com as palavras da busca e preço comparado ao topo.\n4. Frete e envio testados: horário de corte, embalagens e etiquetas em estoque.\n5. Respostas prontas para as perguntas que mais chegam.\n6. Oferta com limite e prazo: quantas unidades, até quando e qual a meta de lucro.\n\n(Valores dos slides são exemplos hipotéticos.)\n\n🔖 Salve e marque o que ainda falta.\n↗ Envie para quem vai fazer Black Friday este ano.\n\n#blackfriday #marketplace #ecommerce #vendasonline #precificacao"
+ }
+}

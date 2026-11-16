@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-20",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/20/21.mp4",
+  "share_to_feed": true,
+  "caption": "O cliente pergunta para várias lojas ao mesmo tempo. Quem responde primeiro costuma levar a venda.\n\nComo montar um atendimento rápido com IA:\n\n1. Escreva a base da loja: prazo de envio, frete, trocas, pagamento e tom de voz.\n2. Liste as perguntas que mais chegam e a resposta certa de cada uma.\n3. Cole a base no prompt: \"Você é atendente da minha loja. Responda com simpatia, em até 3 linhas, usando só esta base. Se não souber, diga que vai confirmar.\"\n4. A IA rascunha, você revisa e envia. Nunca deixe a IA inventar prazo ou preço.\n\nNo exemplo (hipotético), o tempo de resposta caiu de 6 horas para 5 minutos.\n\n🔖 Salve e monte a base da sua loja hoje.\n💬 Quanto tempo você leva hoje para responder um cliente?\n\n#ia #marketplace #produtos #mercadolivre #shopee",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/20/21_capa.jpg"
+ }
+}

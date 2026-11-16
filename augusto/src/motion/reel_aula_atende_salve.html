@@ -1,0 +1,25 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+@font-face{font-family:I;font-weight:500;src:url('../fonts/InterPDF-500.ttf')}@font-face{font-family:I;font-weight:600;src:url('../fonts/InterPDF-600.ttf')}
+@font-face{font-family:I;font-weight:700;src:url('../fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../fonts/InterPDF-800.ttf')}
+@font-face{font-family:M;font-weight:500;src:url('../fonts/JetBrainsMono-500.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:I,sans-serif}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}.t{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:-.05em;line-height:.95}
+.w{position:absolute;white-space:nowrap;font-weight:800;letter-spacing:-.06em;line-height:.92}
+.chip{position:absolute;left:84px;top:150px;display:flex;align-items:center;gap:16px;font:700 30px I}.chip i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:28px}
+.cap{position:absolute;left:70px;right:70px;bottom:190px;text-align:center;font:700 44px/1.3 I;padding:22px 30px;border-radius:26px}.bar{position:absolute;left:84px;bottom:110px;height:6px;border-radius:6px}
+</style></head><body><div id="v"></div><script src="lib.js"></script><script>
+const THEME={dark:'#08090E',light:'#FFFFFF',accent:'#2F6BFF',anim:'flip',trans:'slide',deco:'dots',align:'center'};
+const SC=[
+[0.00,2.00,'dark',lt=>W(lt,[[0,'CLIENTE',120],[.15,'SEM RESPOSTA?',110,BL2]],260)+notifs(lt,{items:['Tem pronta entrega?','Qual o prazo?','Aceita Pix?','Tem outra cor?'],icon:'?',ic:RD,top:620,step:.2,t0:.35,dark:true}),'Vamos montar um atendimento rápido com IA, passo a passo.'],
+[2.00,4.20,'light',lt=>W(lt,[[0,'O ERRO',150]],260)+gauge(lt,{top:540,from:.9,to:.08,t0:.2,dur:1,labels:[['LENTO',RD],['OK',YE],['RÁPIDO',GR]]}),'Erro comum: responder só quando sobra tempo, horas depois.'],
+[4.20,6.60,'accent',lt=>W(lt,[[0,'POR QUE?',150]],260)+typer(lt,{a:'O cliente pergunta para várias lojas ao mesmo tempo. Quem responde primeiro costuma levar a venda.',size:46,speed:44,top:640,box:true}),'Quem responde primeiro tem mais chance de vender.'],
+[6.60,9.40,'dark',lt=>W(lt,[[0,'PASSO 1',150],[.15,'A BASE',100,BL2]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'45%',rows:[['Prazo de envio','sua política'],['Frete','valores do canal'],['Trocas','regras da loja'],['Pagamento','formas aceitas'],['Tom de voz','simpático e direto']]}),'Passo 1: escreva sua base: prazo, frete, trocas, pagamento e tom.'],
+[9.40,12.00,'light',lt=>W(lt,[[0,'PASSO 2',150],[.15,'PERGUNTAS',100,BL]],250)+table(lt,{top:560,t0:.3,step:.22,w1:'48%',rows:[['Tem pronta entrega?','sim, envio em 24h'],['Qual o prazo?','conforme o frete'],['Aceita Pix?','sim']]}),'Passo 2: liste as perguntas que mais chegam e a resposta certa de cada uma.'],
+[12.00,14.60,'accent',lt=>lbl('Passo 3 · prompt',540,'rgba(255,255,255,.85)',eo(lt/.2))+typer(lt,{a:'Você é atendente da minha loja. Responda com simpatia, em até 3 linhas, usando só esta base. Se não souber, diga que vai confirmar.',size:44,speed:44,top:620,box:true}),'Passo 3: cole a base no prompt e peça respostas curtas.'],
+[14.60,17.00,'dark',lt=>lbl('Passo 4 · revise antes de enviar',540,'#C9D6F5',eo(lt/.2))+typer(lt,{a:'Oi, Ana! Temos sim, com envio em até 24h. Posso separar o seu?',size:52,speed:44,top:620,box:true}),'Passo 4: a IA rascunha; você revisa e envia. Nunca invente prazo.'],
+[17.00,19.40,'light',lt=>W(lt,[[0,'RESULTADO',140,BL]],260)+slider(lt,{top:500,h:780,t0:.3,dur:1.1,L:{bg:'#FDECEC',k:'ANTES',big:'6 h',sub:'para responder',c:RD},Rt:{bg:'#EAF0FF',k:'DEPOIS',big:'5 min',sub:'para responder',c:BL},bigSize:200}),'Resultado: respostas em minutos, não em horas (exemplo).'],
+[19.40,21.80,'dark',lt=>W(lt,[[0,'RESUMO',150]],250)+table(lt,{top:480,t0:.3,step:.22,w1:'10%',al:'left',rows:[['1','Escreva a base da loja'],['2','Liste as perguntas frequentes'],['3','Use o prompt com a base'],['4','Revise antes de enviar']]}),'Salve e monte sua base hoje.'],
+[21.80,23.80,'accent',lt=>ctaSave(lt,'SALVE','E MONTE'),'Salve e monte a base de atendimento da sua loja hoje.']];
+let DUR=23.80;const K=1.55;SC.forEach(s=>{s[0]*=K;s[1]*=K});DUR*=K;
+R(0);
+</script></body></html>

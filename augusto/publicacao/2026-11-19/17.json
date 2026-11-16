@@ -1,0 +1,13 @@
+{
+ "hora": "12:00",
+ "acao": "create_image_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-19",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/19/17.jpg",
+  "caption": "Toda loja tem devolução. O problema é não colocar ela na conta.\n\nCada devolução custa o frete de volta e, muitas vezes, um produto que não pode ser vendido de novo.\n\nExemplo hipotético:\n→ 200 vendas no mês, 6 devoluções (3%).\n→ Custo médio de R$ 25 por devolução.\n→ 6 × R$ 25 = R$ 150 no mês.\n→ R$ 150 ÷ 200 vendas = R$ 0,75 por venda.\n\nEsses R$ 0,75 (ou o % equivalente) entram na sua conta de preço como reserva. Assim a devolução não come o lucro quando acontece.\n\nPara achar o seu número: veja no painel do canal quantas devoluções teve nos últimos 3 meses e quanto cada uma custou.\n\n🔖 Salve e calcule a sua reserva para devoluções.\n💬 Qual é o motivo de devolução que mais aparece na sua loja?\n\n#precificacao #marketplace #ecommerce #vendasonline #margem"
+ }
+}

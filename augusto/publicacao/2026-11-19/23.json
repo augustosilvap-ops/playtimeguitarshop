@@ -1,0 +1,15 @@
+{
+ "hora": "20:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-19",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/19/23.mp4",
+  "share_to_feed": true,
+  "caption": "O anúncio vendeu R$ 900 e parece ótimo. Mas deu lucro?\n\nExemplo hipotético: R$ 900 em vendas − R$ 405 de custo dos produtos − R$ 243 de taxas − R$ 500 de anúncio = R$ 248 de prejuízo.\n\nComo conferir os seus:\n1. ROAS = vendas geradas pelo anúncio ÷ valor gasto. Os dois estão no painel de anúncios. No exemplo: 900 ÷ 500 = 1,8.\n2. Veja quanto sobra de cada venda antes do anúncio: preço − custo do produto − taxas. No exemplo, 28%.\n3. ROAS mínimo = 1 ÷ essa sobra. 1 ÷ 0,28 = 3,6.\n4. Abaixo do mínimo, o anúncio dá prejuízo: ajuste público, foto e título, ou anuncie um produto com margem maior.\n\n🔖 Salve e confira o ROAS dos seus anúncios hoje.\n💬 Você sabe o ROAS mínimo do seu produto principal?\n\n#precificacao #marketplace #ecommerce #vendasonline #margem",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/19/23_capa.jpg"
+ }
+}

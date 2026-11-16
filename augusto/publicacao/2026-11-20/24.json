@@ -1,0 +1,21 @@
+{
+ "hora": "20:00",
+ "acao": "create_carousel_post",
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-20",
+ "status": "aguardando aprovação no Nexus",
+ "params": {
+  "image_urls": [
+   "https://nexusautomatic.vercel.app/ig/20/24_01.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_02.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_03.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_04.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_05.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_06.jpg",
+   "https://nexusautomatic.vercel.app/ig/20/24_07.jpg"
+  ],
+  "caption": "Desconto sai inteiro do seu lucro. Kit aumenta o pedido sem cortar o preço.\n\nComo montar:\n1. Junte o produto com um complemento que o cliente também precisa (garrafa + capa térmica).\n2. Faça a conta com as taxas sobre o preço do kit.\n3. Mostre a economia em relação a comprar separado.\n4. Teste por 14 dias, com o kit ao lado do produto sozinho, e compare o lucro por pedido.\n\nExemplo hipotético (taxas de 27%):\n→ Garrafa sozinha a R$ 89,90 (custo R$ 38): lucro de R$ 27,63.\n→ Kit a R$ 109,90 (custo R$ 47): lucro de R$ 33,23.\n→ +R$ 5,60 por pedido, e o cliente economiza R$ 9,90.\n\n🔖 Salve e monte o seu primeiro kit.\n↗ Envie para quem só pensa em desconto.\n\n#precificacao #marketplace #ecommerce #vendasonline #margem"
+ }
+}
