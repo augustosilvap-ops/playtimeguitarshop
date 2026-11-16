@@ -1,0 +1,13 @@
+{
+ "hora": "16:00",
+ "acao": "create_image_post",
+ "params": {
+  "image_url": "https://nexusautomatic.vercel.app/ig/16/01.jpg",
+  "caption": "Muita gente olha o preço de venda e esquece o caminho que o dinheiro faz até chegar na conta.\n\nAntes de anunciar, confira estas taxas no seu canal:\n\n→ Comissão da categoria: muda de uma categoria para outra. Use a categoria exata do produto.\n→ Tarifa fixa por unidade: em alguns marketplaces, aparece em produtos de preço baixo — e pesa muito mais neles.\n→ Tipo de anúncio: oferecer parcelamento pode mudar a comissão.\n→ Frete subsidiado: \"frete grátis\" para o cliente costuma sair, em parte, do seu bolso.\n→ Taxa financeira: na loja própria, o intermediador de pagamento cobra à parte.\n\nNo exemplo da arte (hipotético), de uma venda de R$ 100 sobram R$ 77 antes de pagar o produto. Faça a mesma conta com a tabela oficial do seu canal.\n\n🔖 Salve para conferir antes do próximo anúncio.\n💬 Qual dessas taxas mais te pegou de surpresa?\n\n#marketplace #taxas #precificacao #vendasonline #ecommerce"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-16",
+ "status": "agendado 16h (pedido do Augusto 16/11)"
+}

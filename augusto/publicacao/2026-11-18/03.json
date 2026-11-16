@@ -1,0 +1,15 @@
+{
+ "hora": "16:00",
+ "acao": "create_video_post",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/18/03.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/18/03_capa.jpg",
+  "share_to_feed": true,
+  "caption": "Precificar não é chutar um valor e torcer para dar certo. É uma conta de 4 passos — e dá para fazer mesmo sem ser bom em matemática.\n\n1. Some o custo de uma unidade: produto + embalagem + tarifa fixa do canal + a parte do frete que você paga.\n2. Some tudo o que é cobrado em percentual sobre a venda: comissão, imposto, anúncios, devoluções.\n3. Escolha a margem que você quer que sobre.\n4. Divida: custo por unidade ÷ (1 − percentuais − margem).\n\nExemplo hipotético: custo por unidade de R$ 48,50, percentuais somando 27% e margem desejada de 15%.\n48,50 ÷ (1 − 0,42) = R$ 83,62.\n\nSe você tivesse multiplicado o custo por 1,42, daria R$ 68,87 — e a margem desapareceria nas taxas.\n\n🔖 Salve e calcule hoje o preço do seu produto principal.\n↗ Envie para quem precifica no chute.\n\n#precificacao #empreendedorismo #vendasonline #marketplace #ecommerce"
+ },
+ "connector": "instagram",
+ "account": "17841407424879500",
+ "perfil": "@augustosilva.p",
+ "data": "2026-11-18",
+ "status": "agendado 16h (pedido do Augusto 16/11)"
+}

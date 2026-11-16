@@ -51,3 +51,22 @@ NARR = {
  "Salve e revise hoje o anúncio que mais recebe visitas.",
 ],
 }
+
+NARR['planilha_salve'] = [
+ "Você vende um produto por 100 reais. Quanto sobra de verdade? Vamos fazer a conta com um exemplo.",
+ "Desses 100 reais, a maior parte vai para o produto, a comissão, o imposto e os anúncios. No exemplo, só R$ 17 viram lucro.",
+ "O erro mais comum: somar 42% em cima do custo. R$ 48,50 mais 42% dá R$ 68,87. Parece certo, mas não é.",
+ # 68,87 × 27% = 18,59 · 68,87 − 18,59 − 48,50 = 1,78 (2,6%)
+ "Por quê? As taxas são cobradas sobre o preço, não sobre o custo. Com R$ 68,87, as taxas levam R$ 18,59 e sobra só R$ 1,78. Isso é 2,6%, não 15%.",
+ # 40 + 2,50 + 6 = 48,50
+ "Passo 1, custo por unidade. Some tudo o que você paga em reais por peça: produto R$ 40, embalagem R$ 2,50 e a tarifa fixa do canal, R$ 6. Total: R$ 48,50.",
+ # 14 + 6 + 5 + 2 = 27
+ "Passo 2, o que é cobrado em porcentagem sobre a venda. Comissão da categoria, 14%. Imposto, 6%, confirme com o contador. Anúncios, 5%. Reserva para devoluções, 2%. Total: 27%.",
+ "Passo 3, a sua margem. Decida quanto quer que sobre de cada venda. No exemplo, 15%.",
+ # 27 + 15 = 42 · 1 − 0,42 = 0,58 · 48,50 ÷ 0,58 = 83,62
+ "Passo 4, a conta. Some 27 mais 15: 42%. Tire de 1: sobra 0,58. Divida o custo por 0,58. R$ 48,50 dividido por 0,58 dá R$ 83,62.",
+ # 83,62 × 27% = 22,58 · 83,62 − 22,58 − 48,50 = 12,54 = 15%
+ "Conferindo: com preço de R$ 83,62, as taxas levam R$ 22,58 e o custo é R$ 48,50. Sobram R$ 12,54, exatamente os 15% que você queria.",
+ "Resumo: some o custo em reais, some os percentuais da venda, escolha a margem e divida o custo por 1 menos tudo isso. Números de exemplo.",
+ "Salve e calcule hoje o preço do seu produto principal.",
+]

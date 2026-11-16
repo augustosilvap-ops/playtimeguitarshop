@@ -69,9 +69,13 @@ def eventos(js, real):
 def main():
     nome, out = sys.argv[1], sys.argv[2]
     trilha = sys.argv[3] if len(sys.argv) > 3 else '/tmp/claude-0/drive/mus/759.mp3'
-    th, kw, capcta, S = G.ARGS[nome]
-    salve = nome.endswith('_salve')
-    cenas = [(d, js, cap) for d, ty, js, cap in S] + [(2.0, "ctaSave(lt" if salve else "cta(lt", capcta)]
+    if nome in G.ARGS:
+        th, kw, capcta, S = G.ARGS[nome]
+        salve = nome.endswith('_salve')
+        cenas = [(d, js, cap) for d, ty, js, cap in S] + [(2.0, "ctaSave(lt" if salve else "cta(lt", capcta)]
+    else:  # Reel montado à mão (ex.: reel_aula_planilha_salve.html): lê as cenas do próprio HTML
+        h = open(f'reel_aula_{nome}.html').read(); body = h[h.index('const SC=[') + 10:h.index('];', h.index('const SC=['))]
+        cenas = [(float(b) - float(a), js, cap) for a, b, js, cap in re.findall(r"^\[([\d.]+),([\d.]+),'\w+',lt=>(.*),'([^']*)'\],?$", body, re.M)]
     falas = NARR.get(nome, [c for _, _, c in cenas])
     assert len(falas) == len(cenas), (len(falas), len(cenas))
     voz_parts, times, caps, sfx_ev, t = [], [], [], [], 0.0
