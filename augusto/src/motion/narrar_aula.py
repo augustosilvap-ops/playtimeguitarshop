@@ -102,11 +102,12 @@ def main():
     sf.write(f'{tmp}/voz.wav', voz[:int(DUR * SR)], SR); sf.write(f'{tmp}/fx.wav', fx[:int(DUR * SR)], SR)
     caps[-1][1] = round(DUR, 3)
     json.dump({'times': times, 'caps': caps, 'aspd': ASPD}, open(f'{tmp}/t.json', 'w'))
+    NOVOZ = os.environ.get('NOVOZ') == '1'  # teste: sem narração (só legenda frase a frase + trilha + efeitos)
     # mix: voz em destaque, efeitos abaixo, trilha abafada sob a voz (sidechain) com fade
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', f'{tmp}/voz.wav', '-i', f'{tmp}/fx.wav', '-stream_loop', '-1', '-i', trilha, '-filter_complex',
-        f"[2:a]atrim=0:{DUR:.2f},asetpts=PTS-STARTPTS,aformat=sample_rates={SR}:channel_layouts=mono,volume=0.22,afade=t=in:d=0.4,afade=t=out:st={DUR-1.5:.2f}:d=1.5[m];"
+        f"[2:a]atrim=0:{DUR:.2f},asetpts=PTS-STARTPTS,aformat=sample_rates={SR}:channel_layouts=mono,volume={0.42 if NOVOZ else 0.22},afade=t=in:d=0.4,afade=t=out:st={DUR-1.5:.2f}:d=1.5[m];"
         f"[0:a]asplit[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=8:attack=15:release=300[md];"
-        f"[1:a]volume=0.55[f];[v1]volume=1.0[v];[v][f][md]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5,aformat=channel_layouts=stereo[a]",
+        f"[1:a]volume=0.55[f];[v1]volume={0 if NOVOZ else 1.0}[v];[v][f][md]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5,aformat=channel_layouts=stereo[a]",
         '-map', '[a]', '-ar', str(SR), f'{tmp}/mix.wav'], check=True)
     print('duração', round(DUR, 2), 'cenas', len(times))
     subprocess.run(['node', 'render_motion.js', f'reel_aula_{nome}.html', out, str(DUR), '30', f'{tmp}/t.json', f'{tmp}/mix.wav'], check=True)

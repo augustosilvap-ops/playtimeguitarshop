@@ -134,4 +134,17 @@ _hero="<div style=\\'padding:34px\\'><div style=\\'font:700 28px I;opacity:.7\\'
 _S[0]=(3.4,'dark',"uiworld(lt,{dur:3.2,heroTop:1060,hero:'"+_hero+"'})+W(lt,[[1.0,'MUITA VISITA',130],[1.2,'E NENHUMA',130],[1.45,'VENDA?',220,BL2]],300)",_S[0][3])
 SAVE=('SALVE','E REVISE'); OUT['anuncio_ui']=build('anuncio_ui',_th,_kw,_cap,_S); SAVE=None
 print(OUT['anuncio_ui'])
+
+# TESTES A/B (Reels de teste, 16/11): variantes de um mesmo conteúdo, mudando UMA variável
+def _variant(base,name,idx=None,scene0=None):
+    th,kw,cap,S=ARGS[base]; S=list(S)
+    if scene0: S[0]=(scene0[0],S[0][1],scene0[1],S[0][3])
+    if idx is not None: S=[S[i] for i in idx]
+    global SAVE
+    SAVE=('SALVE',{'desconto_salve':'PRA BLACK','rotina_salve':'E ORGANIZE','roas_salve':'E CONFIRA','garimpo_salve':'E TESTE'}.get(base,'E USE'))
+    OUT[name]=build(name,th,kw,cap,S); SAVE=None
+_variant('desconto_salve','desconto_curta',[0,1,5,6,7])
+_variant('rotina_salve','rotina_curta',[0,1,3,5,7])
+_variant('roas_salve','roas_numero',scene0=(2.2,"W(lt,[[0,'R$ 500',200],[.25,'EM ANÚNCIO',120,BL2],[.55,'R$ 248',200,'#FF6B78'],[.8,'DE PREJUÍZO',120]],300)"))
+_variant('garimpo_salve','garimpo_numero',scene0=(2.2,"W(lt,[[0,'200 PEÇAS',170],[.25,'COMPRADAS',120,BL2],[.55,'12',230,'#FF6B78'],[.8,'VENDIDAS',120]],300)"))
 print(OUT)

@@ -125,3 +125,24 @@ NARR['atende_salve'] = [
 ]
 
 NARR['anuncio_ui'] = NARR['anuncio_salve']  # teste do efeito mundo de interface (16/11)
+
+# ===== TESTES A/B (16/11) =====
+NARR['desconto_curta'] = [
+ "Vai dar 30% de desconto na Black Friday? Faça essa conta antes.",
+ "Produto de R$ 83,90. Com 30% off, cai para R$ 58,73. Depois das taxas de 27% e do custo de R$ 48,50, cada venda dá R$ 5,63 de prejuízo.",
+ "A conta certa: some taxas e margem mínima, 27 mais 5, 32%. Divida o custo por 0,68. A oferta pode ir até R$ 71,32.",
+ "Divida a oferta pelo preço atual e tire de 1. Seu desconto máximo é 15%.",
+ "Conferindo: com 15% off, ainda sobram R$ 3,56 por venda. Números de exemplo.",
+ "Salve e faça essa conta antes de criar qualquer cupom.",
+]
+NARR['rotina_curta'] = [
+ "Os pedidos estão acumulando? Monte esta rotina.",
+ "O erro é enviar quando dá tempo. O prazo estoura e a reputação cai.",
+ "Horário fixo, sempre na mesma ordem: 9h separar, 10h etiquetas, 11h embalar, meio-dia postar, 17h mensagens.",
+ "Antes de fechar a caixa, confira 4 itens: produto, cor e tamanho, etiqueta certa e embalagem protegida.",
+ "Acompanhe toda semana a sua taxa de envio no prazo. No exemplo, a meta é 98%.",
+ "Salve e monte sua rotina de envio a partir de amanhã.",
+]
+NARR['roas_numero'] = ["500 reais em anúncio. 248 de prejuízo. Veja a conta, com um exemplo."] + NARR['roas_salve'][1:]
+NARR['garimpo_numero'] = ["200 peças compradas. Só 12 vendidas. Veja como evitar, com um exemplo."] + NARR['garimpo_salve'][1:]
+NARR['planilha_ui'] = NARR['planilha_salve']
