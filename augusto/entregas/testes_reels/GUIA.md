@@ -5,6 +5,7 @@ Regra de decisão: vence quem tiver **tempo médio assistido + compartilhamentos
 
 | Dia | Hora | Par | Variável | Conteúdo | A | B |
 |---|---|---|---|---|---|---|
+| 17/11 | 13h | 9 | Formato | DESCONTO | formato conversa de DM (43 s) | formato planilha ao vivo (38 s) |
 | 17/11 | 11h | 1 | Efeito | CLASSICO | abertura normal (39 s) | abertura "mundo de interface" (39 s) |
 | 17/11 | 15h | 2 | Duração | ABC | completa (39 s) | curta (17 s) |
 | 18/11 | 11h | 3 | Narração | CUBADO | com voz (38 s) | sem voz (só legenda + trilha) (38 s) |
@@ -16,6 +17,22 @@ Regra de decisão: vence quem tiver **tempo médio assistido + compartilhamentos
 
 ## Legendas
 Conteúdos INÉDITOS (não estão no feed). Use a mesma legenda nos dois vídeos do par:
+
+### Par 9 · DESCONTO
+
+A Black Friday é em 27/11. Antes de colocar "-30%" em tudo, faça uma conta de 1 minuto.
+
+1. Descubra o seu preço mínimo: custo por unidade ÷ (1 − soma dos % cobrados na venda).
+2. Defina a menor margem que você aceita na promoção (ex.: 5%).
+3. Calcule o preço da oferta: custo ÷ (1 − % da venda − margem mínima).
+4. Compare com o preço atual: esse é o seu desconto máximo.
+
+Exemplo hipotético: custo R$ 48,50, 27% de taxas, preço R$ 83,90 e margem mínima de 5%. O desconto máximo é 15%. Um cupom de 20% deixaria a margem abaixo de 1%.
+
+🔖 Salve e faça essa conta com cada produto antes de definir o desconto.
+↗ Envie para quem vai fazer Black Friday este ano.
+
+#blackfriday #precificacao #marketplace #ecommerce #vendasonline
 
 ### Par 1 · CLASSICO
 
