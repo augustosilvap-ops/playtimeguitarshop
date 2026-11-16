@@ -13,10 +13,10 @@
 | 11 | Seg 16/11 | 12h | Estático | Precificação | v4 | Pare de precificar no escuro | ESCURO | Prompt de preço mínimo (PDF 1 p.) | — | Pronto p/ revisão |
 | 06 | Seg 16/11 | 18h | Reel 18s | IA aplicada | Cinético · claro/pontos | Comprou estoque no achismo? Leia a legenda. | GARIMPO | 5 prompts de garimpo (PDF) | — | Pronto p/ revisão |
 | 07 | Seg 16/11 | 20h | Carrossel 7 | IA aplicada | v2 | Valide antes de comprar | VALIDAR | Checklist de validação (PDF) | — | Pronto p/ revisão |
-| 10 | Ter 17/11 | 10h | Carrossel 8 | Estratégia comercial | v4 | Black Friday com oferta que dá lucro | BLACK | Planejador de ofertas da Black Friday (XLSX) | — | Pronto p/ revisão |
-| 08 | Ter 17/11 | 12h | Estático | Estratégia comercial | v2 | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | — | Pronto p/ revisão |
-| 09 | Ter 17/11 | 18h | Reel 18s | Estratégia comercial | Cinético · azul/anéis | Vai dar 30% off na Black? Leia a legenda. | DESCONTO | Calculadora de desconto (XLSX) | — | Pronto p/ revisão |
-| 12 | Ter 17/11 | 20h | Reel 18s | Marketplace e operação | Cinético · navy/scan | Muita visita e nenhuma venda? Leia a legenda. | ANUNCIO | Checklist de anúncio (PDF) | — | Pronto p/ revisão |
+| 10 | Ter 17/11 | 10h | Carrossel 8 | Estratégia comercial | v4 | Black Friday com oferta que dá lucro | BLACK | Planejador de ofertas da Black Friday (XLSX) | — | Aprovado 16/11 (sem presente) · não agendado |
+| 08 | Ter 17/11 | 12h | Estático | Estratégia comercial | v2 | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | — | Aprovado 16/11 (sem presente) · não agendado |
+| 09 | Ter 17/11 | 18h | Reel 79s narrado | Estratégia comercial | Cinético · azul/anéis | Vai dar 30% off na Black? Leia a legenda. | DESCONTO | Calculadora de desconto (XLSX) | — | Aprovado 16/11 (sem presente) · não agendado |
+| 12 | Ter 17/11 | 20h | Reel 56s narrado | Marketplace e operação | Cinético · navy/scan | Muita visita e nenhuma venda? Leia a legenda. | ANUNCIO | Checklist de anúncio (PDF) | — | Aprovado 16/11 (sem presente) · não agendado |
 | 13 | Qua 18/11 | 10h | Carrossel 7 | IA aplicada | v4 | Como validar a demanda com IA sem inventar números | DEMANDA | Prompts de pesquisa de demanda (PDF) | — | Planejado |
 | 14 | Qua 18/11 | 12h | Estático | Marketplace e operação | v4 | Frete: o custo que você esquece | FRETE | Checklist de embalagem e frete (PDF) | — | Planejado |
 | 15 | Qua 18/11 | 18h | Reel 18s | IA aplicada | Cinético | Quer títulos de anúncio melhores com IA? Leia a legenda. | TITULO | Prompt de títulos de anúncio (PDF) | — | Planejado |
