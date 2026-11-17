@@ -1,0 +1,81 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Founders Club — RUAH</title>
+<!-- PROTÓTIPO (16/11) da área de membros dos Founders. Vai virar uma página da loja Shopify visível só para clientes com a marca "founder".
+     Textos de devocional e benefícios = rascunho para aprovação do Augusto. Nenhum prazo de produção citado. -->
+<style>
+@font-face{font-family:Cz;font-weight:700;src:url('../fontes/cinzel700.ttf')}@font-face{font-family:Cz;font-weight:900;src:url('../fontes/cinzel900.ttf')}
+@font-face{font-family:CG;font-style:italic;src:url('../fontes/cg400i.ttf')}@font-face{font-family:CG;font-weight:500;src:url('../fontes/cg500n.ttf')}
+@font-face{font-family:I;font-weight:400;src:url('../../augusto/src/fonts/InterPDF-400.ttf')}@font-face{font-family:I;font-weight:600;src:url('../../augusto/src/fonts/InterPDF-600.ttf')}@font-face{font-family:I;font-weight:700;src:url('../../augusto/src/fonts/InterPDF-700.ttf')}
+:root{--bk:#080808;--pn:#141414;--ln:#262524;--bn:#EEEAE1;--bn2:#E3DED3;--gy:#9A9893;--tp:#B9A88C}
+*{margin:0;padding:0;box-sizing:border-box}body{background:var(--bk);color:var(--bn);font:400 16px/1.6 I,sans-serif}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+.lab{font:600 11px I;letter-spacing:.28em;text-transform:uppercase;color:var(--gy)}
+.cz{font-family:Cz;font-weight:900;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.it{font-family:CG;font-style:italic;color:var(--bn2)}
+header{border-bottom:1px solid var(--ln)}header .w{display:flex;justify-content:space-between;align-items:center;height:72px}
+header img{height:22px}header nav{display:flex;gap:26px;font:600 12px I;letter-spacing:.18em;text-transform:uppercase;color:var(--gy)}header nav b{color:var(--bn)}
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:64px;margin:14px 0 18px}.hero p.it{font-size:26px;line-height:1.35}
+.card{background:var(--pn);border:1px solid var(--ln);border-radius:4px;padding:28px}
+.carte{position:relative;aspect-ratio:1.6;border-radius:18px;padding:26px 28px;background:radial-gradient(600px 300px at 80% -10%,rgba(185,168,140,.35),transparent 60%),linear-gradient(135deg,#1a1917,#0b0b0b);border:1px solid #3a3733;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.6)}
+.carte .sim{position:absolute;right:-40px;bottom:-60px;height:300px;opacity:.07}
+.carte .top{display:flex;justify-content:space-between;align-items:center}.carte .top img{height:16px}
+.carte .num{font-family:Cz;font-weight:900;font-size:60px;margin-top:22px;letter-spacing:.02em}
+.carte .nm{font:600 18px I;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+.carte .ft{position:absolute;left:28px;right:28px;bottom:22px;display:flex;justify-content:space-between;font:600 10px I;letter-spacing:.22em;text-transform:uppercase;color:var(--tp)}
+.btn{display:inline-block;padding:13px 22px;border:1px solid var(--bn);font:600 11px I;letter-spacing:.22em;text-transform:uppercase;color:var(--bn);text-decoration:none}
+.btn.f{background:var(--bn);color:var(--bk)}
+.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;margin:24px 0}
+.dev h2{font-size:34px;margin:12px 0 6px}.dev .vs{border-left:2px solid var(--tp);padding:6px 0 6px 18px;margin:20px 0;font-size:22px}
+.dev p{color:#cfcac0;margin:12px 0}.dev .ch{margin-top:20px;padding:16px 18px;background:#0e0e0e;border:1px solid var(--ln)}
+.drop .cd{display:flex;gap:10px;margin:18px 0}.drop .cd div{flex:1;text-align:center;padding:14px 0;border:1px solid var(--ln);background:#0e0e0e}
+.drop .cd b{display:block;font-family:Cz;font-size:30px}.drop .cd span{font:600 10px I;letter-spacing:.2em;color:var(--gy)}
+.lock{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px dashed #3a3733;color:var(--gy);font-size:14px}
+.bts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.bts div{aspect-ratio:4/5;background-size:cover;background-position:center;position:relative;filter:grayscale(.2)}
+.bts div span{position:absolute;left:10px;bottom:10px;font:600 10px I;letter-spacing:.2em;text-transform:uppercase;background:rgba(8,8,8,.75);padding:5px 8px}
+.list{display:grid;gap:10px;margin-top:14px}.list a{display:flex;justify-content:space-between;padding:14px 16px;border:1px solid var(--ln);color:var(--bn);text-decoration:none;font-size:15px}.list a span{color:var(--gy);font-size:13px}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0 60px}
+footer{border-top:1px solid var(--ln);padding:28px 0;color:var(--gy);font-size:13px}
+.tag{display:inline-block;font:600 10px I;letter-spacing:.2em;text-transform:uppercase;color:var(--bk);background:var(--tp);padding:4px 8px}
+@media(max-width:760px){header nav{display:none}.hero{grid-template-columns:1fr;padding:36px 0 20px;gap:28px}.hero h1{font-size:42px}.hero p.it{font-size:21px}
+ .grid,.row3{grid-template-columns:1fr}.carte .num{font-size:46px}.dev h2{font-size:28px}.bts{grid-template-columns:repeat(3,1fr)}}
+</style></head><body>
+<header><div class="w"><img src="../marca/logos/logo-bone.png" alt="RUAH"><nav><b>Founders Club</b><span>Devocionais</span><span>Drops</span><span>Bastidores</span><span>Minha conta</span></nav></div></header>
+<main class="w">
+ <section class="hero">
+  <div><div class="lab">Founders Club · Coleção 001</div><h1 class="cz">Bem-vindo,<br>Gabriel.</h1>
+   <p class="it">Você foi um dos primeiros a carregar a RUAH. Aqui é o lugar de quem começou com a gente.</p>
+   <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn f" href="#">Devocional da semana</a><a class="btn" href="#">Próximo drop</a></div></div>
+  <div><div class="carte"><img class="sim" src="../marca/logos/simbolo-bone.png" alt="">
+    <div class="top"><img src="../marca/logos/logo-bone.png" alt="RUAH"><span class="tag">Founder</span></div>
+    <div class="num">Nº 07</div><div class="nm">Gabriel Souza</div>
+    <div class="ft"><span>Desde 11 · 2026</span><span>We carry the spirit.</span></div></div>
+   <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="#">Salvar carteirinha</a><a class="btn" href="#">Compartilhar</a></div></div>
+ </section>
+
+ <section class="grid">
+  <article class="card dev"><div class="lab">Devocional da semana · 01</div><h2 class="cz">O que te move</h2>
+   <p class="it" style="font-size:20px">Você não vê o vento. Vê o que ele move.</p>
+   <div class="vs it">“O vento sopra onde quer, e ouves a sua voz, mas não sabes de onde vem, nem para onde vai; assim é todo aquele que é nascido do Espírito.”<br><span class="lab" style="font-style:normal">João 3:8</span></div>
+   <p>Ninguém nunca viu o vento. Mas todo mundo já viu uma árvore dobrar, uma janela bater, uma folha atravessar a rua. O vento é invisível — o que ele faz, não.</p>
+   <p>Com o Espírito é assim. A maioria das pessoas ao seu redor não vai ver a sua fé. Vai ver o que ela move em você: a forma como você trata quem não pode te devolver nada, a paz no meio da pressão, a coragem de fazer o certo quando ninguém está olhando.</p>
+   <div class="ch"><div class="lab" style="color:var(--tp)">Desafio da semana</div><p style="margin:6px 0 0">Escolha uma atitude concreta para esta semana em que o invisível fique visível. Anote. No domingo, volte aqui.</p></div>
+   <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#">Ouvir (3 min)</a><a class="btn" href="#">Devocionais anteriores</a></div></article>
+  <div style="display:grid;gap:20px">
+   <article class="card drop"><div class="lab">Próximo drop · Coleção 002</div><h3 class="cz" style="font-size:26px;margin-top:10px">Acesso antecipado</h3>
+    <p style="color:#cfcac0;margin-top:8px">Os Founders entram 48h antes de todo mundo.</p>
+    <div class="cd"><div><b>12</b><span>DIAS</span></div><div><b>06</b><span>HORAS</span></div><div><b>40</b><span>MIN</span></div></div>
+    <div class="lock">🔒 A senha aparece aqui 48h antes da abertura.</div></article>
+   <article class="card"><div class="lab">Bastidores</div><h3 class="cz" style="font-size:22px;margin-top:10px">Só para Founders</h3>
+    <div class="bts"><div style="background-image:url('../fotos_produtos/01_RUACH/01_5_detalhe.jpg')"><span>Estampa</span></div><div style="background-image:url('../fotos_produtos/03_INVISIVEL_MOVE/03_5_detalhe.jpg')"><span>Processo</span></div><div style="background-image:url('../fotos_produtos/02_WE_CARRY_THE_SPIRIT/02_4_mockup_costas.jpg')"><span>Prévia</span></div></div></article>
+  </div>
+ </section>
+
+ <section class="row3">
+  <article class="card"><div class="lab">Pedido de oração</div><p style="color:#cfcac0;margin:10px 0 16px">Escreva o seu pedido. Ele chega só para a equipe RUAH, em sigilo.</p><a class="btn" href="#">Enviar pedido</a></article>
+  <article class="card"><div class="lab">Encontros</div><div class="list"><a href="#">Live com os Founders <span>em breve</span></a><a href="#">Encontro em Curitiba <span>a definir</span></a></div></article>
+  <article class="card"><div class="lab">Comunidade</div><p style="color:#cfcac0;margin:10px 0 16px">O grupo dos Founders no WhatsApp: novidades primeiro, conversa de verdade.</p><a class="btn" href="#">Entrar no grupo</a></article>
+ </section>
+</main>
+<footer><div class="w" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><span>RUAH · Founders Club · Curitiba/PR</span><span class="it">Não é sobre o que vestimos. É sobre o que carregamos.</span></div></footer>
+</body></html>

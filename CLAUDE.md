@@ -17,6 +17,7 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 
 ## Estrutura
 - `ruah/conteudo/PLANO_CONTEUDO_RUAH.md` — plano de conteúdo da RUAH (16/11): 1 post/dia + stories, 4 pilares (Peça, Mensagem, Movimento, Bastidor), semana-modelo, o que o Claude faz × o que o Augusto grava, 14 dias (17–30/11) e decisões pendentes (visual, sessão de fotos). DECIDIDO 16/11: SEM combo "Leve 2" e SEM comunicação de Black Friday na RUAH (nenhum post, story, oferta ou desconto sobre a data).
+- `ruah/founders/` — ÁREA DE MEMBROS DOS FOUNDERS (16/11, pedido do Augusto "área completa"): recomendação = página exclusiva DENTRO da loja Shopify (login da loja; Flow marca cada Founder com a tag "founder" + número), subir sempre como tema NÃO publicado com prévia. Protótipo visual `prototipo_area_founders.html` + `previa_desktop.png`/`previa_celular.png`. Seções: boas-vindas com nome, carteirinha digital (Nº, nome, desde), devocional semanal (versículo, reflexão, desafio, áudio), próximo drop com contagem e senha 48h antes, bastidores, pedido de oração (sigiloso), encontros, grupo do WhatsApp. Aguardando aprovação do design e dos textos.
 - `ruah/` — pacote da marca (logos, fontes, fotos de produto, conteúdo, vídeos, textos, scripts).
   - `ruah/scripts/` usa caminhos da sessão antiga; ajuste `SP` e os caminhos de fontes/logos antes de rodar.
 
