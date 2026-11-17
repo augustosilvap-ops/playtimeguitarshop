@@ -14,7 +14,7 @@
 | 06 | Seg 16/11 | 18h | Reel 18s | IA aplicada | Cinético · claro/pontos | Comprou estoque no achismo? Leia a legenda. | GARIMPO | 5 prompts de garimpo (PDF) | — | Publicado 16/11 18h (Windsor) |
 | 07 | Seg 16/11 | 20h | Carrossel 7 | IA aplicada | v2 | Valide antes de comprar | VALIDAR | Checklist de validação (PDF) | — | Publicado 16/11 20h (Windsor) |
 | 10 | Ter 17/11 | 10h | Carrossel 8 | Estratégia comercial | v4 | Black Friday com oferta que dá lucro | BLACK | Planejador de ofertas da Black Friday (XLSX) | — | Agendado: publicação automática via Windsor |
-| 08 | Ter 17/11 | 12h | Estático | Estratégia comercial | v2 | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | — | Agendado: publicação automática via Windsor |
+| 08 | Ter 17/11 | 12h | Estático | Estratégia comercial | v2 | 3 sinais de um produto com potencial | SINAIS | Scorecard de produto (XLSX) | — | Publicado 17/11 12h (Windsor) |
 | 09 | Ter 17/11 | 18h | Reel 79s narrado | Estratégia comercial | Cinético · azul/anéis | Vai dar 30% off na Black? Leia a legenda. | DESCONTO | Calculadora de desconto (XLSX) | — | Movido para Reel de teste (par 9); 18h = QUIZ 29 |
 | 12 | Ter 17/11 | 20h | Reel 56s narrado | Marketplace e operação | Cinético · navy/scan | Muita visita e nenhuma venda? Leia a legenda. | ANUNCIO | Checklist de anúncio (PDF) | — | Agendado: publicação automática via Windsor |
 | 13 | Qua 18/11 | 10h | Carrossel 7 | IA aplicada | v4 | Como validar a demanda com IA sem inventar números | DEMANDA | Prompts de pesquisa de demanda (PDF) | — | Planejado |
