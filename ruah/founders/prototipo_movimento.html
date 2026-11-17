@@ -1,0 +1,137 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RUAH Movement — Founders</title>
+<!-- PROTÓTIPO v2 (16/11): área dos Founders centrada no MOVIMENTO e em ações práticas ("não apenas falar de Jesus, mas amar como Jesus ama").
+     Números de impacto = EXEMPLO (zerados/marcados); a ação na casa da Dona Vera é real (vídeo do Augusto) — confirmar uso. Sem prazo de produção. -->
+<style>
+@font-face{font-family:Cz;font-weight:700;src:url('../fontes/cinzel700.ttf')}@font-face{font-family:Cz;font-weight:900;src:url('../fontes/cinzel900.ttf')}
+@font-face{font-family:CG;font-style:italic;src:url('../fontes/cg400i.ttf')}
+@font-face{font-family:I;font-weight:400;src:url('../../augusto/src/fonts/InterPDF-400.ttf')}@font-face{font-family:I;font-weight:600;src:url('../../augusto/src/fonts/InterPDF-600.ttf')}@font-face{font-family:I;font-weight:700;src:url('../../augusto/src/fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../../augusto/src/fonts/InterPDF-800.ttf')}
+:root{--bk:#080808;--pn:#141414;--ln:#262524;--bn:#EEEAE1;--bn2:#E3DED3;--gy:#9A9893;--tp:#B9A88C}
+*{margin:0;padding:0;box-sizing:border-box}body{background:var(--bk);color:var(--bn);font:400 16px/1.6 I,sans-serif}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+.lab{font:600 11px I;letter-spacing:.28em;text-transform:uppercase;color:var(--gy)}
+.cz{font-family:Cz;font-weight:900;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+.it{font-family:CG;font-style:italic;color:var(--bn2)}
+.btn{display:inline-block;padding:13px 22px;border:1px solid var(--bn);font:600 11px I;letter-spacing:.22em;text-transform:uppercase;color:var(--bn);text-decoration:none;white-space:nowrap}
+.btn.f{background:var(--bn);color:var(--bk)}
+.card{background:var(--pn);border:1px solid var(--ln);padding:28px}
+header{border-bottom:1px solid var(--ln)}header .w{display:flex;justify-content:space-between;align-items:center;height:72px}header img{height:22px}
+header nav{display:flex;gap:24px;font:600 12px I;letter-spacing:.18em;text-transform:uppercase;color:var(--gy)}header nav b{color:var(--bn)}
+.hero{position:relative;min-height:600px;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(8,8,8,.15),rgba(8,8,8,.92) 75%),url('img/acao_grama.jpg') center 30%/cover;border-bottom:1px solid var(--ln)}
+.hero .w{padding-bottom:56px;width:100%}.hero h1{font-size:76px;margin:14px 0 18px;max-width:900px}.hero p.it{font-size:28px;max-width:720px;line-height:1.3}
+.sec{padding:64px 0 0}.sec h2{font-size:40px;margin:10px 0 8px}.sec .sub{color:#cfcac0;max-width:680px}
+.next{display:grid;grid-template-columns:1.1fr 1fr;gap:0;margin-top:28px;border:1px solid var(--ln)}
+.next .ph{background:url('img/acao_jardim.jpg') center/cover;min-height:380px;position:relative}.next .ph span{position:absolute;left:18px;top:18px;background:var(--bn);color:var(--bk);font:700 11px I;letter-spacing:.2em;padding:6px 10px}
+.next .tx{background:var(--pn);padding:34px}.kv{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;margin:20px 0;font-size:15px}.kv b{font:600 11px I;letter-spacing:.2em;text-transform:uppercase;color:var(--gy);padding-top:3px}
+.bar{height:8px;background:#222;margin:8px 0 4px}.bar i{display:block;height:100%;width:60%;background:var(--tp)}
+.imp{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);margin-top:28px}
+.imp div{background:var(--bk);padding:26px 22px}.imp b{display:block;font-family:Cz;font-weight:900;font-size:52px;line-height:1}.imp span{font:600 11px I;letter-spacing:.2em;text-transform:uppercase;color:var(--gy)}
+.mis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.mis .card{position:relative}.mis .n{font-family:Cz;font-weight:900;font-size:44px;color:#2c2a27;position:absolute;right:20px;top:14px}
+.mis h3{font:800 22px/1.25 I;margin:10px 0 8px;letter-spacing:-.01em}.mis p{color:#cfcac0;font-size:15px}
+.chk{display:flex;gap:10px;margin-top:18px}.chk .btn{padding:11px 16px}
+.diario{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.diario a{display:block;color:var(--bn);text-decoration:none}.diario .im{aspect-ratio:4/5;background-size:cover;background-position:center;position:relative}
+.diario .im em{position:absolute;left:12px;bottom:12px;font:700 11px I;font-style:normal;letter-spacing:.2em;background:rgba(8,8,8,.8);padding:6px 9px}
+.diario h4{font:700 18px I;margin-top:12px}.diario p{color:var(--gy);font-size:14px}
+.kit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.steps{counter-reset:s;display:grid;gap:12px;margin-top:16px}.steps div{counter-increment:s;display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--ln)}
+.steps div:before{content:counter(s,decimal-leading-zero);font-family:Cz;font-weight:900;font-size:22px;color:var(--tp);min-width:40px}
+.jor{display:grid;grid-template-columns:1fr 1.2fr;gap:18px;margin-top:28px;align-items:stretch}
+.carte{position:relative;border-radius:18px;padding:26px 28px;min-height:250px;background:radial-gradient(600px 300px at 80% -10%,rgba(185,168,140,.35),transparent 60%),linear-gradient(135deg,#1a1917,#0b0b0b);border:1px solid #3a3733;overflow:hidden}
+.carte .sim{position:absolute;right:-40px;bottom:-60px;height:300px;opacity:.07}.carte .num{font-family:Cz;font-weight:900;font-size:54px;margin-top:20px}
+.carte .nm{font:600 16px I;letter-spacing:.12em;text-transform:uppercase}.carte .ft{position:absolute;left:28px;right:28px;bottom:20px;display:flex;justify-content:space-between;font:600 10px I;letter-spacing:.22em;text-transform:uppercase;color:var(--tp)}
+.selos{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.selos div{text-align:center;padding:16px 8px;border:1px solid var(--ln);background:#0e0e0e;font:600 11px/1.4 I;letter-spacing:.08em;color:var(--gy)}
+.selos div i{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 10px;border-radius:50%;border:1px solid #3a3733;font-style:normal;font-size:22px;color:#4a4744}
+.selos div.on{color:var(--bn);border-color:var(--tp)}.selos div.on i{border-color:var(--tp);color:var(--tp);background:rgba(185,168,140,.08)}
+.row{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-top:28px}
+.apoio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.apoio div{padding:14px;border:1px solid var(--ln);font-size:14px;color:#cfcac0}.apoio b{display:block;color:var(--bn);font-size:15px}
+footer{border-top:1px solid var(--ln);padding:28px 0;margin-top:80px;color:var(--gy);font-size:13px}
+.ex{font:600 10px I;letter-spacing:.18em;color:var(--tp);text-transform:uppercase}
+@media(max-width:760px){header nav{display:none}.hero{min-height:520px}.hero h1{font-size:44px}.hero p.it{font-size:21px}.sec h2{font-size:30px}
+ .next,.kit,.jor,.row{grid-template-columns:1fr}.next .ph{min-height:260px}.imp{grid-template-columns:1fr 1fr}.imp b{font-size:40px}.mis,.diario{grid-template-columns:1fr}.selos{grid-template-columns:repeat(2,1fr)}.apoio{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="w"><img src="../marca/logos/logo-bone.png" alt="RUAH"><nav><b>Movimento</b><span>Ações</span><span>Missões</span><span>Diário</span><span>Minha jornada</span></nav></div></header>
+
+<section class="hero"><div class="w">
+ <div class="lab">RUAH Movement · Founders</div>
+ <h1 class="cz">Não apenas falar.<br>Amar na prática.</h1>
+ <p class="it">A fé que você carrega no peito também sai pela rua. Aqui é onde os Founders transformam o que acreditam em ação.</p>
+ <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn f" href="#">Quero participar da próxima ação</a><a class="btn" href="#">Missão desta semana</a></div>
+</div></section>
+
+<main class="w">
+ <!-- PRÓXIMA AÇÃO -->
+ <section class="sec"><div class="lab">01 · Próxima ação do movimento</div><h2 class="cz">Um sábado servindo</h2>
+  <p class="sub">A gente escolhe uma casa, uma família ou um lugar do bairro e vai junto: cortar grama, pintar, limpar, consertar, ouvir.</p>
+  <div class="next"><div class="ph"><span>AÇÃO Nº 02</span></div>
+   <div class="tx"><div class="lab" style="color:var(--tp)">Inscrições abertas · exemplo</div>
+    <h3 class="cz" style="font-size:28px;margin-top:10px">Mutirão no bairro</h3>
+    <div class="kv"><b>Quando</b><span>Sábado · 8h às 12h</span><b>Onde</b><span>Curitiba/PR · endereço enviado aos inscritos</span><b>O que fazer</b><span>Jardim, pintura do muro e limpeza do quintal</span><b>Leve</b><span>Luvas, garrafa d’água e disposição</span></div>
+    <div class="lab">Voluntários</div><div class="bar"><i></i></div><div style="font-size:13px;color:var(--gy)">12 de 20 vagas · exemplo</div>
+    <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn f" href="#">Quero ir</a><a class="btn" href="#">Doar material</a></div></div></div>
+ </section>
+
+ <!-- IMPACTO -->
+ <section class="sec"><div class="lab">02 · O que o movimento já moveu</div><h2 class="cz">Impacto</h2>
+  <p class="sub">Cada número aqui é uma pessoa, uma casa, uma tarde. <span class="ex">Números de exemplo até a primeira atualização</span></p>
+  <div class="imp"><div><b>01</b><span>Ações realizadas</span></div><div><b>01</b><span>Casas atendidas</span></div><div><b>00</b><span>Voluntários</span></div><div><b>00</b><span>Horas servidas</span></div></div>
+ </section>
+
+ <!-- MISSÕES -->
+ <section class="sec"><div class="lab">03 · Missões da semana</div><h2 class="cz">O invisível fica visível</h2>
+  <p class="sub">Atitudes práticas para você viver onde estiver. Cumpriu? Faça o check-in e mostre (se quiser) no mural.</p>
+  <div class="mis">
+   <div class="card"><span class="n">01</span><div class="lab" style="color:var(--tp)">Servir</div><h3>Ajude alguém sem que ninguém te veja.</h3><p>Lave a louça de um colega, carregue as compras de um vizinho, pague um café sem dizer quem foi.</p><div class="chk"><a class="btn f" href="#">Fiz ✓</a><a class="btn" href="#">Mural</a></div></div>
+   <div class="card"><span class="n">02</span><div class="lab" style="color:var(--tp)">Visitar</div><h3>Visite alguém que está sozinho.</h3><p>Um idoso da rua, um amigo que sumiu, alguém no hospital. Leve tempo, não presente.</p><div class="chk"><a class="btn f" href="#">Fiz ✓</a><a class="btn" href="#">Mural</a></div></div>
+   <div class="card"><span class="n">03</span><div class="lab" style="color:var(--tp)">Falar</div><h3>Conte para alguém o que você carrega.</h3><p>Sem discurso: conte uma história real de como a fé mudou algo em você.</p><div class="chk"><a class="btn f" href="#">Fiz ✓</a><a class="btn" href="#">Mural</a></div></div>
+  </div>
+ </section>
+
+ <!-- DIÁRIO -->
+ <section class="sec"><div class="lab">04 · Diário do movimento</div><h2 class="cz">O que já fizemos</h2>
+  <div class="diario">
+   <a href="#"><div class="im" style="background-image:url('img/acao_convite.jpg')"><em>▶ VÍDEO</em></div><h4>Ação nº 01 · Casa da Dona Vera</h4><p>Cortamos a grama e cuidamos do jardim. “Não apenas falar de Jesus, mas amar como Jesus ama.”</p></a>
+   <a href="#"><div class="im" style="background-image:url('img/acao_grama.jpg')"><em>FOTOS</em></div><h4>Bastidores da ação nº 01</h4><p>Roçadeira, luvas e um quintal inteiro para cuidar.</p></a>
+   <a href="#"><div class="im" style="background:#141414;display:grid;place-items:center;color:var(--gy);font:600 12px I;letter-spacing:.2em">PRÓXIMA HISTÓRIA</div><h4>Ação nº 02</h4><p>Pode ser a sua. Veja como levar o movimento ao seu bairro.</p></a>
+  </div>
+ </section>
+
+ <!-- KIT -->
+ <section class="sec"><div class="lab">05 · Leve o movimento ao seu bairro</div><h2 class="cz">Kit de ação</h2>
+  <div class="kit">
+   <div class="card"><div class="lab" style="color:var(--tp)">Passo a passo</div>
+    <div class="steps"><div>Encontre uma necessidade real perto de você (um vizinho, uma praça, uma instituição).</div><div>Converse com a pessoa e combine o que vai ser feito.</div><div>Chame 2 a 5 pessoas e marque data e hora.</div><div>Separe o material e cuide da segurança de todos.</div><div>Registre com respeito (peça autorização para fotos) e envie para o diário.</div></div></div>
+   <div class="card"><div class="lab" style="color:var(--tp)">Materiais</div>
+    <div class="list" style="display:grid;gap:10px;margin-top:16px">
+     <a class="btn" href="#" style="text-align:left">Checklist da ação (PDF)</a><a class="btn" href="#" style="text-align:left">Arte para convidar no Instagram</a><a class="btn" href="#" style="text-align:left">Termo de autorização de imagem</a><a class="btn f" href="#" style="text-align:left">Registrar uma ação</a></div>
+    <p class="it" style="font-size:18px;margin-top:20px">“Você não vê o vento. Vê o que ele move.”</p></div>
+  </div>
+ </section>
+
+ <!-- JORNADA -->
+ <section class="sec"><div class="lab">06 · Minha jornada</div><h2 class="cz">Founder em movimento</h2>
+  <div class="jor">
+   <div class="carte"><img class="sim" src="../marca/logos/simbolo-bone.png" alt=""><div style="display:flex;justify-content:space-between;align-items:center"><img src="../marca/logos/logo-bone.png" style="height:16px" alt="RUAH"><span style="font:700 10px I;letter-spacing:.2em;color:var(--bk);background:var(--tp);padding:4px 8px">FOUNDER</span></div>
+    <div class="num">Nº 07</div><div class="nm">Gabriel Souza</div><div class="ft"><span>2 ações · 3 missões</span><span>We carry the spirit.</span></div></div>
+   <div class="card"><div class="lab">Selos</div>
+    <div class="selos"><div class="on"><i>✦</i>Founder</div><div class="on"><i>☼</i>Primeira ação</div><div><i>◎</i>10 missões</div><div><i>⌂</i>Líder de ação</div></div>
+    <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#">Salvar carteirinha</a><a class="btn" href="#">Compartilhar</a></div></div>
+  </div>
+ </section>
+
+ <!-- PALAVRA + APOIO -->
+ <section class="sec"><div class="row">
+  <div class="card"><div class="lab">07 · Palavra que move</div><h3 class="cz" style="font-size:28px;margin:12px 0 10px">Fé com as mãos</h3>
+   <p class="it" style="font-size:20px">“Filhinhos, não amemos de palavra, nem de língua, mas por obra e em verdade.”</p><div class="lab" style="margin-top:6px">1 João 3:18</div>
+   <p style="color:#cfcac0;margin-top:14px">A missão desta semana nasce daqui: amor que se vê. Leia, ore, e escolha uma das missões acima.</p>
+   <div style="margin-top:16px"><a class="btn" href="#">Ouvir a reflexão (3 min)</a></div></div>
+  <div class="card"><div class="lab">08 · Apoie o movimento</div><p style="color:#cfcac0;margin:10px 0 0">Material vira ação. Ação vira história.</p>
+   <div class="apoio"><div><b>Lata de tinta</b>muros e portões</div><div><b>Ferramentas</b>jardim e reparos</div><div><b>Oferta</b>para a próxima ação</div></div>
+   <div style="margin-top:16px"><a class="btn f" href="#">Quero apoiar</a></div></div>
+ </div></section>
+
+ <section class="sec"><div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><div><div class="lab">Founders · Próximo drop</div><div style="font:700 18px I;margin-top:6px">Acesso antecipado de 48h · a senha aparece aqui</div></div><a class="btn" href="#">Avise-me</a></div></section>
+</main>
+<footer><div class="w" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><span>RUAH Movement · Curitiba/PR · @ruahwear_</span><span class="it">Não é sobre o que vestimos. É sobre o que carregamos.</span></div></footer>
+</body></html>
