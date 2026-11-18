@@ -41,3 +41,7 @@ Observação: parte dos seguidores pode ser orgânica; o número é uma estimati
 1. Conectar o pixel: Shopify → app "Facebook & Instagram" → Configurações de dados → compartilhamento **Máximo**. Depois testar uma visita e ver o evento chegar no Gerenciador de Eventos.
 2. Enviar os pedidos #1004 e #1005.
 3. Criativo do remarketing: foto oficial da peça (nunca cobrir a estampa) + texto só com afirmações aprovadas. Sem Black Friday e sem combo.
+
+## Decisão (18/11, Augusto)
+- Opção B: tudo em seguidores. Orçamento da campanha "RUAH - Seguidores Instagram" alterado de R$ 20 → **R$ 25/dia** (confirmado pelo Windsor, 18/11 ~12h30).
+- Conferência agendada para sáb 21/11 10h17: se custo por seguidor ≤ R$ 1,00 → propor R$ 30/dia; se > R$ 1,00 → voltar a R$ 20. Nenhuma mudança sem nova confirmação.
