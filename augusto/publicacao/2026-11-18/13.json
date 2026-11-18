@@ -5,7 +5,7 @@
  "account": "17841407424879500",
  "perfil": "@augustosilva.p",
  "data": "2026-11-18",
- "status": "enviado 18/11 10h01 (pedido do Augusto \"posta agora\"; timeout 60s — não repetido; conferir no Windsor)",
+ "status": "publicado",
  "params": {
   "image_urls": [
    "https://nexusautomatic.vercel.app/ig/18/13_01.jpg",
@@ -17,5 +17,7 @@
    "https://nexusautomatic.vercel.app/ig/18/13_07.jpg"
   ],
   "caption": "A IA não sabe quanto um produto vende. Se você pergunta, ela chuta — e chute vira estoque parado.\n\nO jeito certo é usar a IA para organizar os dados que VOCÊ coletou:\n\n1. Digite o produto na busca do marketplace e anote os 10 primeiros anúncios: preço, avaliações, vendas exibidas e frete.\n2. Cole na IA e peça uma tabela com média e faixa de preço. Escreva no prompt: \"não invente nenhum dado\".\n3. Leia os sinais: avaliações recentes no topo, o termo nas sugestões da busca e vendas exibidas nos 5 primeiros.\n4. Peça uma nota de 0 a 10 para demanda, concorrência e margem, explicando o motivo com base nos dados.\n\nNotas fortes? Teste com um lote pequeno antes de comprar grande. (Notas do slide 6 são um exemplo hipotético.)\n\n🔖 Salve para usar antes da próxima compra.\n💬 Você já comprou estoque porque \"parecia que vendia\"?\n\n#ia #marketplace #produtos #mercadolivre #shopee"
- }
+ },
+ "media_id": "18048524354832398",
+ "publicado_em": "2026-11-18T13:36:05Z"
 }
