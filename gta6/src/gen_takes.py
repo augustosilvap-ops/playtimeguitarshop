@@ -17,6 +17,17 @@ BG = {
  'linha_do_tempo': [('T1', 3, .5), ('T1', 21, .5), ('T1', 27, .5), ('L', 18, .5), ('T2', 45, .5), ('L', 48, .5), ('T2', 6, .5), ('L', 66, .5)],
  'quiz': [('T1', 24, .5), ('T2', 6, .5), ('T2', 6, .5), ('T1', 9, .45), ('T1', 6, .45), ('T1', 12, .5), ('T2', 153, .5), ('L', 66, .5)],
 }
+E = lambda n: f'{BR}/ed/{n}'
+import glob as _g
+def ED(prefix): return sorted(_g.glob(f'{BR}/ed/{prefix}*'))[0]
+BG.update({
+ 'vercetti': [('T2', 99, .5), ('img', ED('ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01'), .5), ('img', ED('ULTIMATE_EDITION_WEAPON_VARIANTS_01'), .5), ('img', ED('VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_01'), .5), ('img', ED('VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_02'), .5)],
+ 'ultimate': [('img', ED('ULTIMATE_EDITION_01'), .5), ('img', ED('ULTIMATE_EDITION_GROTTI_CHEETAH_01'), .5), ('img', ED('ULTIMATE_EDITION_VAPID_BUGGY_01'), .5), ('img', ED('ULTIMATE_EDITION_SQUALO_01'), .5), ('img', ED('ULTIMATE_EDITION_ELECTRIC_FANG_01'), .5), ('img', ED('ULTIMATE_EDITION_ONE_EYED_WILLIE_02'), .5), ('img', ED('ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01'), .5), ('L', 66, .5)],
+ 'bairros': [('T1', 12, .5), ('T1', 21, .5), ('img', ED('VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01'), .5), ('img', ED('ULTIMATE_EDITION_STOCK_305_01'), .5), ('img', ED('ULTIMATE_EDITION_PTT_STORE_01'), .5), ('L', 69, .5)],
+ 'macca': [('T2', 6, .5), ('img', ED('ULTIMATE_EDITION_GOODTIME_GEAR_01'), .5), ('T1', 18, .5), ('T1', 3, .5), ('img', P('Leonida Keys', 2), .5), ('L', 66, .5)],
+ 'trilha': [('L', 24, .3), ('L', 48, .5), ('L', 60, .5), ('T2', 96, .45), ('T2', 153, .5), ('L', 66, .5)],
+ 'preview': [('L', 69, .5), ('T2', 36, .5), ('L', 39, .5), ('L', 33, .5), ('T1', 30, .5), ('T2', 141, .45), ('L', 66, .5)],
+})
 def main():
     nome, out = sys.argv[1], os.path.abspath(sys.argv[2]); trilha = os.path.join(HERE, '../trilhas/mk_173.mp3')
     beats, caps, voz, fx, t = [], [], [], [], 0.0

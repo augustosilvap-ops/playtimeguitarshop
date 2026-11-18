@@ -86,6 +86,57 @@ REELS['quiz'] = [
   (S('check', lbl='PERGUNTA 3', items=[('A) 7 ANOS', 0), ('B) 10 ANOS', 0), ('C) 13 ANOS', 1)], fast=1), "Resposta: treze anos."),
   (S('cta', html='QUANTAS<br><span class="yl">VOCÊ ACERTOU?</span>', btn='COMENTA AQUI 👇'), "Quantas você acertou? Comenta aqui e segue o Caos Insano."),
 ]
+# ---- BATERIA 2 (18/11) — fatos do site oficial da Rockstar (Ultimate Edition, Vintage Vice City Pack, loja, vídeos) e cobertura da prévia para criadores.
+REELS['vercetti'] = [
+  (S('title', html='O NOME<br><span class="yl">VERCETTI</span><br><span class="cy">VOLTOU</span>', size=180), "O nome Vercetti voltou no GTA 6. E foi a própria Rockstar que colocou."),
+  (S('rank', n=1, html='VERCETTI<br><span class="yl">ESTATE</span>', sub='Os revólveres Hawk e Little Morgan da Ultimate Edition vêm "da Vercetti Estate", segundo a Rockstar.', sky=1), "Na Ultimate Edition, os revólveres Hawk e Little Morgan vêm da Vercetti Estate, a mansão Vercetti, segundo a descrição oficial."),
+  (S('rank', n=2, html='A CAMISA DE<br><span class="cy">PALMEIRAS</span>', sub='Um padrão de arma inspirado na camisa do Tommy Vercetti.'), "Tem até um padrão de arma inspirado na camisa de palmeiras do Tommy Vercetti, o protagonista de Vice City."),
+  (S('rank', n=3, html='ANOS 80<br><span class="yl">DE VOLTA</span>', sub='Pacote Vintage Vice City: terno de linho pastel para o Jason e vestido vermelho de paetê para a Lucia.', sky=1), "E o pacote Vintage Vice City traz terno de linho pastel para o Jason e vestido vermelho de paetê para a Lucia."),
+  (S('cta', html='O TOMMY<br><span class="yl">APARECE?</span>', btn='COMENTA AQUI 👇'), "Isso não confirma que o Tommy aparece no jogo. Mas o nome dele já está lá. O que você acha? Comenta aqui."),
+]
+REELS['ultimate'] = [
+  (S('title', html='O QUE VEM NA<br><span class="yl">ULTIMATE</span><br><span class="cy">EDITION</span>', size=170), "O que vem na Ultimate Edition do GTA 6? Seis coisas, direto do site da Rockstar."),
+  (S('rank', n=1, html='GROTTI<br><span class="yl">CHEETAH 95</span>', sub='O esportivo clássico dos anos 90, com pintura retrô.', sky=1), "Um: o Grotti Cheetah 95, o esportivo clássico dos anos 90."),
+  (S('rank', n=2, html='BUGGY<br><span class="cy">OFF-ROAD</span>', sub="Dominator 67 para as trilhas de Mount Kalaga, com garagem em Watson Bay."), "Dois: um buggy off-road para as trilhas de Mount Kalaga, com garagem própria em Watson Bay."),
+  (S('rank', n=3, html='LANCHA<br><span class="yl">SQUALO</span>', sub='Rosa e azul, em Washington Beach, com caixa de explosivos.', sky=1), "Três: a lancha Squalo, rosa e azul, em Washington Beach. E vem com uma caixa de explosivos."),
+  (S('rank', n=4, html='50+<br><span class="cy">TATUAGENS</span>', sub='Estúdio Electric Fang, com tatuagens criadas pelo coletivo FAILE.'), "Quatro: o estúdio Electric Fang, com mais de 50 tatuagens criadas pelo coletivo de artistas FAILE."),
+  (S('rank', n=5, html='OFICINA<br><span class="yl">OFF-ROAD</span>', sub="One-Eyed Willie's, em Lake Leonida: modificações e pintura à mão.", sky=1), "Cinco: a oficina One-Eyed Willie's, em Lake Leonida, com modificações off-road e pintura feita à mão."),
+  (S('rank', n=6, html='CARROS<br><span class="cy">ABANDONADOS</span>', sub='Missões do colecionador Wyman para restaurar clássicos.'), "Seis: missões do colecionador Wyman para achar carros abandonados e restaurar."),
+  (S('cta', html='VALE A<br><span class="yl">PENA?</span>', btn='COMENTA AQUI 👇'), "Vale a pena pegar a Ultimate? Comenta aqui e segue o Caos Insano."),
+]
+REELS['bairros'] = [
+  (S('title', html='8 LUGARES<br><span class="cy">QUE A ROCKSTAR</span><br><span class="yl">JÁ CITOU</span>', size=150), "Oito lugares de Leonida que a Rockstar já citou no material oficial."),
+  (S('map', lbl='VICE CITY E ARREDORES', pins=['Ocean Beach', 'Shore Drive', 'Washington Beach', 'Watson Bay', 'Stockyard', 'Gambit Bay', 'Lake Leonida', 'Southside']), "Ocean Beach, Shore Drive, Washington Beach, Watson Bay, Stockyard, Gambit Bay, Lake Leonida e Southside Vice City."),
+  (S('rank', n=1, html='OCEAN<br><span class="yl">BEACH</span>', sub='Onde fica uma das garagens da edição especial.', sky=1), "Ocean Beach é onde fica uma das garagens da edição especial, pertinho da areia."),
+  (S('rank', n=2, html='STOCK<br><span class="cy">YARD</span>', sub='Bairro de loja de streetwear e de estúdio de tatuagem.'), "Stockyard tem loja de streetwear e o estúdio de tatuagem mais famoso da região."),
+  (S('rank', n=3, html='SOUTH<br><span class="yl">SIDE</span>', sub='Área de uma das gangues mais barulhentas de Vice City.', sky=1), "E Southside Vice City é a área de uma das gangues mais barulhentas da cidade, segundo a Rockstar."),
+  (S('cta', html='QUAL VOCÊ<br><span class="cy">VISITA</span><br>PRIMEIRO?', btn='COMENTA AQUI 👇'), "Qual você visita primeiro? Comenta e segue o Caos Insano."),
+]
+REELS['macca'] = [
+  (S('title', html='LEONIDA TEM<br><span class="yl">PROGRAMA</span><br><span class="cy">DE TV</span>', size=170), "Leonida tem até programa de TV famoso. E a Rockstar fez produto de verdade dele."),
+  (S('rank', n=1, html='MACCA<br><span class="yl">THE GATOR</span>', sub='Um jacaré, personagem do programa de TV de sucesso em Leonida.', sky=1), "Macca the Gator é um jacaré, personagem de um programa de TV de sucesso dentro do jogo."),
+  (S('rank', n=2, html='CHUNKEE<br><span class="cy">THE MANATEE</span>', sub='Um peixe-boi, outro personagem da TV de Leonida.'), "Chunkee the Manatee é um peixe-boi, outro personagem da TV de Leonida."),
+  (S('rank', n=3, html='GOODTIME<br><span class="yl">STATE</span>', sub='É o apelido de Leonida no material oficial.', sky=1), "E Leonida tem apelido: Goodtime State, o estado da diversão."),
+  (S('rank', n=4, html='VIROU<br><span class="cy">PRODUTO REAL</span>', sub='A loja da Rockstar tem uma caixa de colecionador inspirada no Macca.'), "Na vida real, a loja da Rockstar lançou uma caixa de colecionador inspirada no Macca, com estatueta, pôster com o mapa de Leonida e mais."),
+  (S('cta', html='TIME<br><span class="yl">MACCA</span> OU<br><span class="cy">CHUNKEE?</span>', btn='COMENTA AQUI 👇'), "Time Macca ou time Chunkee? Comenta aqui."),
+]
+REELS['trilha'] = [
+  (S('title', html='A MÚSICA<br><span class="cy">DO TRAILER</span><br><span class="yl">FINAL</span>', size=170), "Qual é a música do trailer de lançamento do GTA 6?"),
+  (S('song', lbl='TRAILER DE LANÇAMENTO', t='FLOWER IN A HURRICANE', a='Justice feat. Tame Impala, SZA e King Gizzard'), "Flower in a Hurricane, do Justice, com Tame Impala, SZA e King Gizzard and The Lizard Wizard."),
+  (S('rank', n=1, html='JUSTICE<br><span class="cy">FEZ A TRILHA</span>', sub='A dupla francesa compõe a trilha original do jogo.', sky=1), "E o Justice, a dupla francesa de música eletrônica, é quem compõe a trilha original do jogo."),
+  (S('song', lbl='TRAILER 1 · TRAILER 2', t='TOM PETTY · POINTER SISTERS', a='Love Is a Long Road · Hot Together'), "Os outros trailers usaram Love Is a Long Road, do Tom Petty, e Hot Together, das Pointer Sisters."),
+  (S('rank', n=2, html='DÁ PRA<br><span class="yl">OUVIR JÁ</span>', sub='O site oficial tem a trilha e algumas rádios do jogo para ouvir.'), "E o site oficial já tem a trilha e algumas rádios do jogo para ouvir antes de jogar."),
+  (S('cta', html='QUAL A<br><span class="cy">MELHOR?</span>', btn='COMENTA AQUI 👇'), "Qual dessas é a melhor? Comenta aqui e segue o Caos Insano."),
+]
+REELS['preview'] = [
+  (S('title', html='O QUE OS<br><span class="cy">CRIADORES</span><br><span class="yl">VIRAM</span>', size=170), "O que os criadores de conteúdo viram dentro da Rockstar antes de todo mundo?"),
+  (S('rank', n=1, html='ROCKSTAR<br><span class="cy">NORTH</span>', sub='Em julho, criadores foram ao estúdio em Edimburgo, na Escócia.', sky=1), "Em julho, criadores foram ao estúdio Rockstar North, em Edimburgo, na Escócia."),
+  (S('rank', n=2, html='TEVE<br><span class="yl">BRASILEIRO</span>', sub='Entre eles, segundo a imprensa: TGG, Davy Jones, El Rubius e Mike ShowSha.'), "Segundo a imprensa, estavam lá TGG, o brasileiro Davy Jones, El Rubius e Mike ShowSha."),
+  (S('rank', n=3, html='SEM<br><span class="cy">JOGAR</span>', sub='A prévia foi só para assistir, e os celulares ficaram recolhidos.', sky=1), "Mas ninguém jogou. A prévia foi só para assistir, e os celulares ficaram recolhidos."),
+  (S('rank', n=4, html='ESTREIA<br><span class="yl">NA NETFLIX</span>', sub='As reações só saíram depois do especial "An Extended Look", em 27 de agosto.'), "As reações só puderam sair depois do especial An Extended Look, que estreou em 27 de agosto."),
+  (S('rank', n=5, html='TUDO<br><span class="cy">NO PS5</span>', sub='Segundo a Rockstar, o especial foi capturado inteiro dentro do jogo, no PS5.', sky=1), "E segundo a Rockstar, esse especial foi capturado inteiro dentro do jogo, no PS5."),
+  (S('cta', html='AMANHÃ<br><span class="yl">É A NOSSA VEZ</span>', btn='SEGUE O CAOS INSANO →'), "Agora é a nossa vez. Segue o Caos Insano que a gente traz tudo do lançamento."),
+]
 SFX = {'num': [(.15, 'riser', .5), (1.45, 'impact', .7)], 'years': [(.3, 'tick', .6), (1.6, 'impact', .7)], 'delay': [(.3, 'stamp', .6), (1.2, 'stamp', .6), (2.1, 'chime', .7)],
        'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'check': [(.35, 'pop', .6), (.85, 'pop', .6), (1.35, 'pop', .6)], 'title': [(.1, 'impact', .8)]}
 
