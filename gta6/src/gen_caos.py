@@ -143,6 +143,54 @@ REELS['preview'] = [
   (S('cta', html='AMANHÃ<br><span class="yl">É A NOSSA VEZ</span>', btn='SEGUE O CAOS INSANO →'), "Agora é a nossa vez. Segue o Caos Insano que a gente traz tudo do lançamento."),
   (S('subs'), "Se inscreve no canal e segue a gente no TikTok: arroba caos insano br."),
 ]
+# ---- BATERIA 3 (18/11) — GAMEPLAY REAL: "An Extended Look" (Rockstar: "capturado inteiramente de imagens dentro do jogo no PS5").
+# Formato curto (15–25 s), gancho já no 1º segundo, sem cartão de abertura parado. Só descrevemos o que aparece no vídeo oficial (sem história).
+REELS['g_real'] = [
+  (S('title', html='ISSO É<br><span class="yl">GAMEPLAY</span><br><span class="cy">DE VERDADE</span>', size=170, top=300), "Isso aqui não é trailer. É gameplay de verdade do GTA 6."),
+  (S('rank', n=1, html='DIRIGINDO<br><span class="cy">EM VICE CITY</span>', sub='Com minimapa e trânsito na tela.', sky=1), "Dirigindo por Vice City, com minimapa e trânsito de verdade."),
+  (S('rank', n=2, html='PERSEGUIÇÃO<br><span class="yl">NA RUA</span>', sub='Tiroteio e fuga em plena avenida.'), "Perseguição e tiroteio no meio da rua."),
+  (S('rank', n=3, html='EXPLOSÃO<br><span class="cy">NO ESTACIONAMENTO</span>', sub='Fogo, carros e caos.', sky=1), "E explosão no estacionamento."),
+  (S('title', html='TUDO<br><span class="yl">NO PS5</span>', size=200, top=420), "Segundo a Rockstar, tudo isso foi capturado dentro do jogo, no PS5."),
+  (S('subs'), "Se inscreve e segue no TikTok: arroba caos insano br."),
+]
+REELS['g_coisas'] = [
+  (S('title', html='6 COISAS<br><span class="cy">QUE APARECEM</span><br><span class="yl">NO GAMEPLAY</span>', size=150, top=300), "Seis coisas que aparecem no gameplay oficial do GTA 6."),
+  (S('rank', n=1, html='PATINETE<br><span class="cy">ELÉTRICO</span>', sky=1), "Um: patinete elétrico pela cidade."),
+  (S('rank', n=2, html='PULO<br><span class="yl">NO MAR</span>'), "Dois: pulo direto no mar."),
+  (S('rank', n=3, html='MOTO<br><span class="cy">NA TERRA</span>', sky=1), "Três: moto na terra, fora da estrada."),
+  (S('rank', n=4, html='BALADA<br><span class="yl">LOTADA</span>'), "Quatro: balada lotada, com gente dançando."),
+  (S('rank', n=5, html='AEROPORTO', sky=1), "Cinco: o aeroporto, com avião na pista."),
+  (S('rank', n=6, html='BAR NO<br><span class="cy">TERRAÇO</span>'), "Seis: bar no terraço, com Vice City inteira ao fundo."),
+  (S('subs'), "Qual você quer fazer primeiro? Se inscreve e segue no TikTok."),
+]
+REELS['g_tv'] = [
+  (S('title', html='A TV DO<br><span class="yl">GTA 6</span><br><span class="cy">FUNCIONA</span>', size=170, top=300), "No gameplay oficial do GTA 6, a TV do apartamento passa programação."),
+  (S('rank', n=1, html='DESENHO<br><span class="cy">ANIMADO</span>', sky=1), "Tem desenho animado."),
+  (S('rank', n=2, html='DOCUMENTÁRIO<br><span class="yl">DE NATUREZA</span>'), "Documentário de natureza, com cervo e tudo."),
+  (S('rank', n=3, html='E ATÉ<br><span class="cy">PROPAGANDA</span>', sky=1), "E até propaganda de hambúrguer gigante."),
+  (S('subs'), "Você ia ficar vendo TV no GTA? Se inscreve e segue no TikTok."),
+]
+REELS['g_loja'] = [
+  (S('title', html='O CLÁSSICO<br><span class="yl">VOLTOU</span>', size=190, top=320), "O clássico do GTA voltou."),
+  (S('rank', n=1, html='LOJA DE<br><span class="cy">CONVENIÊNCIA</span>', sub='Aparece no gameplay oficial.', sky=1), "No gameplay oficial aparece a loja de conveniência."),
+  (S('rank', n=2, html='MÁSCARA<br><span class="yl">E BANDANA</span>'), "Máscara, bandana, e você já sabe o que vem."),
+  (S('rank', n=3, html='DEPOIS<br><span class="cy">É FUGA</span>', sky=1), "Depois é fuga de carro pela cidade."),
+  (S('subs'), "Se inscreve e segue no TikTok: arroba caos insano br."),
+]
+REELS['g_aeroporto'] = [
+  (S('title', html='VICE CITY<br><span class="cy">TEM</span><br><span class="yl">AEROPORTO</span>', size=170, top=300), "Vice City tem aeroporto, e ele aparece no gameplay oficial."),
+  (S('rank', n=1, html='VISTA<br><span class="yl">DE CIMA</span>', sky=1), "Primeiro, a cidade vista de cima."),
+  (S('rank', n=2, html='TERMINAL<br><span class="cy">CHEIO</span>'), "Depois, o terminal cheio de gente."),
+  (S('rank', n=3, html='AVIÃO<br><span class="yl">NA PISTA</span>', sky=1), "E avião na pista, pela janela."),
+  (S('subs'), "Se inscreve e segue no TikTok: arroba caos insano br."),
+]
+REELS['g_volante'] = [
+  (S('title', html='REPARA<br><span class="yl">NO</span><br><span class="cy">VOLANTE</span>', size=190, top=300), "Repara na direção do GTA 6."),
+  (S('rank', n=1, html='CONVERSÍVEL<br><span class="cy">VERMELHO</span>', sky=1), "Conversível vermelho em Vice City, com sol e palmeira."),
+  (S('rank', n=2, html='TRÂNSITO<br><span class="yl">DE VERDADE</span>'), "Trânsito cheio, carro freando, gente atravessando."),
+  (S('rank', n=3, html='FIM DE<br><span class="cy">TARDE</span>', sky=1), "E pôr do sol na avenida, direto do gameplay oficial."),
+  (S('subs'), "Se inscreve e segue no TikTok: arroba caos insano br."),
+]
 SFX = {'num': [(.15, 'riser', .5), (1.45, 'impact', .7)], 'years': [(.3, 'tick', .6), (1.6, 'impact', .7)], 'delay': [(.3, 'stamp', .6), (1.2, 'stamp', .6), (2.1, 'chime', .7)],
        'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'subs': [(.5, 'pop', .7), (1.5, 'chime', .7), (2.3, 'pop', .7), (2.45, 'chime', .6)], 'check': [(.35, 'pop', .6), (.85, 'pop', .6), (1.35, 'pop', .6)], 'title': [(.1, 'impact', .8)]}
 

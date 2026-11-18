@@ -6,7 +6,7 @@ import numpy as np, soundfile as sf
 import gen_caos as G
 NA = G.NA; HERE = G.HERE; MOT = G.MOT
 BR = '/home/user/gta6_brutos'
-V = {'T1': f'{BR}/GTAVI_Trailer_1_1080.mp4', 'T2': f'{BR}/GTAVI_Trailer_2_1080.mp4', 'L': f'{BR}/GTAVI_Launch_Trailer_1080.mp4'}
+V = {'T1': f'{BR}/GTAVI_Trailer_1_1080.mp4', 'T2': f'{BR}/GTAVI_Trailer_2_1080.mp4', 'L': f'{BR}/GTAVI_Launch_Trailer_1080.mp4', 'EL': f'{BR}/GTAVI_Extended_Look_1080.mp4'}
 P = lambda reg, n: f'{BR}/shots/Places/{reg}/{reg.replace(" ", "_")}_{n:02d}.jpg'
 # (fonte, início em s, posição horizontal do recorte 0–1)
 BG = {
@@ -27,6 +27,14 @@ BG.update({
  'macca': [('T2', 6, .5), ('img', ED('ULTIMATE_EDITION_GOODTIME_GEAR_01'), .5), ('T1', 18, .5), ('T1', 3, .5), ('img', P('Leonida Keys', 2), .5), ('L', 66, .5), ('T2', 153, .5)],
  'trilha': [('L', 54, .5), ('L', 48, .5), ('L', 60, .5), ('T2', 96, .45), ('T2', 153, .5), ('L', 66, .5), ('T2', 153, .5)],
  'preview': [('L', 69, .5), ('T2', 36, .5), ('L', 39, .5), ('L', 33, .5), ('T1', 30, .5), ('T2', 141, .45), ('L', 66, .5), ('T2', 153, .5)],
+})
+BG.update({
+ 'g_real': [('EL', 506, .5), ('EL', 520, .5), ('EL', 920, .5), ('EL', 960, .5), ('EL', 744, .5), ('EL', 984, .5)],
+ 'g_coisas': [('EL', 1022, .5), ('EL', 1022, .5), ('EL', 1040, .5), ('EL', 1112, .5), ('EL', 1222, .5), ('EL', 1144, .5), ('EL', 600, .5), ('EL', 1000, .5)],
+ 'g_tv': [('EL', 448, .5), ('EL', 448, .5), ('EL', 464, .5), ('EL', 472, .5), ('EL', 384, .5)],
+ 'g_loja': [('EL', 704, .5), ('EL', 700, .5), ('EL', 712, .5), ('EL', 905, .5), ('EL', 935, .5)],
+ 'g_aeroporto': [('EL', 1128, .5), ('EL', 1128, .5), ('EL', 1144, .5), ('EL', 1166, .5), ('EL', 1168, .5)],
+ 'g_volante': [('EL', 504, .5), ('EL', 512, .5), ('EL', 524, .5), ('EL', 752, .5), ('EL', 770, .5)],
 })
 def main():
     nome, out = sys.argv[1], os.path.abspath(sys.argv[2]); trilha = os.path.join(HERE, '../trilhas/mk_173.mp3')
