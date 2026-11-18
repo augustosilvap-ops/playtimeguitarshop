@@ -1,11 +1,12 @@
 // CAOS INSANO BR — motor de Shorts (curiosidades). Visual neon/synthwave genérico (sem arte nem logo da Rockstar).
 const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-x,3),eb=x=>{const c=1.70158;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
 // v2 NEON (18/11, aprovado): Miami à noite + letreiro neon
-function sky(t,hue){const z=1.06+.03*Math.min(t,4)/4;return `<div class="ab" style="left:-60px;right:-60px;top:640px;height:1340px;background:url('../img/miami_noite.png') center 70%/cover;filter:blur(1.2px) saturate(1.6) brightness(1.05);transform:scale(${z})"></div>
+function sky(t,hue){if(window.TAKES)return veil(t);const z=1.06+.03*Math.min(t,4)/4;return `<div class="ab" style="left:-60px;right:-60px;top:640px;height:1340px;background:url('../img/miami_noite.png') center 70%/cover;filter:blur(1.2px) saturate(1.6) brightness(1.05);transform:scale(${z})"></div>
  <div class="ab" style="inset:0;background:linear-gradient(180deg,#14051F 0%,#2E0A4E 22%,#7A1A70 42%,rgba(214,46,120,.6) 52%,rgba(255,120,90,.22) 58%,transparent 64%)"></div>
  <div class="ab" style="left:0;right:0;top:880px;height:300px;background:radial-gradient(600px 160px at 50% 100%,rgba(255,140,80,.4),transparent 70%);mix-blend-mode:screen"></div>
  <div class="ab" style="inset:0;background:linear-gradient(180deg,transparent 72%,rgba(7,3,11,.85) 96%)"></div>`}
-function dark(t){const z=1.08+.04*Math.min(t,4)/4;return `<div class="ab" style="inset:-40px;background:url('../img/palmeiras.png') center/cover;filter:blur(3px) saturate(1.2) brightness(.45) hue-rotate(40deg);transform:scale(${z})"></div>
+function veil(t){return `<div class="ab" style="inset:0;background:linear-gradient(180deg,rgba(10,3,18,.82) 0%,rgba(10,3,18,.35) 28%,rgba(10,3,18,0) 45%,rgba(10,3,18,0) 58%,rgba(10,3,18,.55) 75%,rgba(10,3,18,.85) 100%)"></div>`}
+function dark(t){if(window.TAKES)return veil(t);const z=1.08+.04*Math.min(t,4)/4;return `<div class="ab" style="inset:-40px;background:url('../img/palmeiras.png') center/cover;filter:blur(3px) saturate(1.2) brightness(.45) hue-rotate(40deg);transform:scale(${z})"></div>
  <div class="ab" style="inset:0;background:linear-gradient(180deg,rgba(20,5,31,.88),rgba(60,10,80,.75) 50%,rgba(10,3,18,.95))"></div>
  <div class="ab" style="inset:0;background:radial-gradient(700px 900px at 50% 45%,rgba(255,30,156,.16),transparent 70%)"></div>`}
 const fmt=n=>Math.round(n).toLocaleString('pt-BR');
