@@ -57,7 +57,7 @@ REELS['personagens'] = [
   (S('cta', html='TIME<br><span class="cy">JASON</span> OU<br><span class="yl">LUCIA?</span>', btn='COMENTA AQUI 👇'), "E aí, você é time Jason ou time Lucia? Comenta aqui e segue o Caos Insano."),
 ]
 REELS['mapa'] = [
-  (S('title', html='O MAPA DE<br><span class="cy">LEONIDA</span><br>EM 45 SEGUNDOS', size=160), "O mapa do GTA 6 em 45 segundos. São seis regiões, todas inspiradas na Flórida."),
+  (S('title', html='O MAPA DE<br><span class="cy">LEONIDA</span><br>EM 30 SEGUNDOS', size=160), "O mapa do GTA 6 em 30 segundos. São seis regiões, todas inspiradas na Flórida."),
   (S('rank', n=1, html='VICE<br><span class="yl">CITY</span>', sub='A cidade grande, versão do jogo para Miami.', sky=1), "Um: Vice City. A cidade grande do mapa, a versão do jogo para Miami."),
   (S('rank', n=2, html='LEONIDA<br><span class="cy">KEYS</span>', sub='Ilhas e praias, inspiradas nas Florida Keys.'), "Dois: Leonida Keys. As ilhas e praias inspiradas nas Florida Keys."),
   (S('rank', n=3, html='GRASS<br><span class="cy">RIVERS</span>', sub='Pântanos, inspirados nos Everglades.', sky=1), "Três: Grassrivers. Os pântanos, inspirados nos Everglades."),
@@ -67,7 +67,7 @@ REELS['mapa'] = [
   (S('cta', html='QUAL VOCÊ<br><span class="yl">EXPLORA</span><br>PRIMEIRO?', btn='SEGUE O CAOS INSANO →'), "Qual região você vai explorar primeiro? Comenta e segue o Caos Insano."),
 ]
 REELS['linha_do_tempo'] = [
-  (S('title', html='25 ANOS<br><span class="cy">DE CAOS</span><br>EM <span class="yl">45 SEG</span>', size=170), "A história do GTA em 3D até o 6, em 45 segundos."),
+  (S('title', html='25 ANOS<br><span class="cy">DE CAOS</span><br>EM <span class="yl">30 SEG</span>', size=170), "A história do GTA em 3D até o 6, em 30 segundos."),
   (S('years', a=2001, b=2001, big='GTA III'), "2001: GTA 3 leva a série para o 3D e muda os jogos de mundo aberto."),
   (S('years', a=2001, b=2002, big='VICE CITY'), "2002: Vice City. Anos 80, neon e a primeira visita à versão do jogo para Miami."),
   (S('years', a=2002, b=2004, big='SAN ANDREAS'), "2004: San Andreas, com um estado inteiro para explorar."),
@@ -80,8 +80,8 @@ REELS['quiz'] = [
   (S('title', html='SÓ FÃ<br><span class="cy">DE VERDADE</span><br>ACERTA <span class="yl">3/3</span>', size=170), "Só fã de verdade de GTA 6 acerta as três. Valendo!"),
   (S('check', lbl='PERGUNTA 1', items=[('A) FLÓRIDA', 1), ('B) CALIFÓRNIA', 0), ('C) TEXAS', 0)], ask=1), "Pergunta um: Leonida é inspirada em qual estado americano? Flórida, Califórnia ou Texas?"),
   (S('check', lbl='PERGUNTA 1', items=[('A) FLÓRIDA', 1), ('B) CALIFÓRNIA', 0), ('C) TEXAS', 0)], fast=1), "Resposta: Flórida."),
-  (S('check', lbl='PERGUNTA 2', items=[('A) LUCIA SANTOS', 0), ('B) LUCIA CAMINOS', 1), ('C) LUCIA DUVAL', 0)], ask=1), "Pergunta dois: qual o nome completo da protagonista? Santos, Caminos ou Duval?"),
-  (S('check', lbl='PERGUNTA 2', items=[('A) LUCIA SANTOS', 0), ('B) LUCIA CAMINOS', 1), ('C) LUCIA DUVAL', 0)], fast=1), "Resposta: Lucia Caminos."),
+  (S('check', lbl='PERGUNTA 2', items=[('A) SANTOS', 0), ('B) CAMINOS', 1), ('C) DUVAL', 0)], ask=1), "Pergunta dois: qual o nome completo da protagonista? Santos, Caminos ou Duval?"),
+  (S('check', lbl='PERGUNTA 2', items=[('A) SANTOS', 0), ('B) CAMINOS', 1), ('C) DUVAL', 0)], fast=1), "Resposta: Lucia Caminos."),
   (S('check', lbl='PERGUNTA 3', items=[('A) 7 ANOS', 0), ('B) 10 ANOS', 0), ('C) 13 ANOS', 1)], ask=1), "Pergunta três: quantos anos separam o GTA 5 do GTA 6? Sete, dez ou treze?"),
   (S('check', lbl='PERGUNTA 3', items=[('A) 7 ANOS', 0), ('B) 10 ANOS', 0), ('C) 13 ANOS', 1)], fast=1), "Resposta: treze anos."),
   (S('cta', html='QUANTAS<br><span class="yl">VOCÊ ACERTOU?</span>', btn='COMENTA AQUI 👇'), "Quantas você acertou? Comenta aqui e segue o Caos Insano."),

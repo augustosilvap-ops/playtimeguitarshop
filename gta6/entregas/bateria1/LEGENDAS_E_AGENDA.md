@@ -29,14 +29,14 @@ Postar no YouTube Shorts e no TikTok. Agendar: YouTube Studio → Enviar → Vis
 **TikTok:** Quem são Jason e Lucia do GTA 6? Sem spoiler 🤫 Time Jason ou time Lucia? 👇 #gta6 #gtavi #gta #games #fyp
 
 ## 04 · O mapa de Leonida
-**YouTube — título:** O mapa do GTA 6 em 45 segundos: as 6 regiões de Leonida #shorts
+**YouTube — título:** O mapa do GTA 6 em 30 segundos: as 6 regiões de Leonida #shorts
 **YouTube — descrição:** Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia e Mount Kalaga. Qual você explora primeiro? 👇 #gta6 #gtavi #leonida #vicecity #shorts
-**TikTok:** O mapa do GTA 6 em 45 segundos 🗺️🌴 Qual região você explora primeiro? #gta6 #gtavi #vicecity #games #fyp
+**TikTok:** O mapa do GTA 6 em 30 segundos 🗺️🌴 Qual região você explora primeiro? #gta6 #gtavi #vicecity #games #fyp
 
 ## 05 · Linha do tempo do GTA
-**YouTube — título:** 25 anos de GTA em 45 segundos: do GTA 3 ao GTA 6 #shorts
+**YouTube — título:** 25 anos de GTA em 30 segundos: do GTA 3 ao GTA 6 #shorts
 **YouTube — descrição:** De 2001 a 2026. Qual foi o seu primeiro GTA? 👇 #gta6 #gta #gtav #vicecity #shorts
-**TikTok:** 25 anos de GTA em 45 segundos ⏳ Qual foi o seu primeiro? 👇 #gta6 #gta #gtav #games #fyp
+**TikTok:** 25 anos de GTA em 30 segundos ⏳ Qual foi o seu primeiro? 👇 #gta6 #gta #gtav #games #fyp
 
 ## 06 · Quiz: só fã acerta 3/3
 **YouTube — título:** Só fã de verdade de GTA 6 acerta as 3 #shorts
