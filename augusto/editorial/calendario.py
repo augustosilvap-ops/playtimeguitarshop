@@ -14,7 +14,7 @@ C=[
 ("10","Ter 17/11","10h","Carrossel 8","Estratégia comercial","v4","Black Friday com oferta que dá lucro","BLACK","Planejador de ofertas da Black Friday (XLSX)","—","Publicado 17/11 10h (Windsor)"),
 ("08","Ter 17/11","12h","Estático","Estratégia comercial","v2","3 sinais de um produto com potencial","SINAIS","Scorecard de produto (XLSX)","—","Publicado 17/11 12h (Windsor)"),
 ("09","Ter 17/11","18h","Reel 79s narrado","Estratégia comercial","Cinético · azul/anéis","Vai dar 30% off na Black? Leia a legenda.","DESCONTO","Calculadora de desconto (XLSX)","—","Movido para Reel de teste (par 9); 18h = QUIZ 29"),
-("12","Ter 17/11","20h","Reel 56s narrado","Marketplace e operação","Cinético · navy/scan","Muita visita e nenhuma venda? Leia a legenda.","ANUNCIO","Checklist de anúncio (PDF)","—","Agendado: publicação automática via Windsor"),
+("12","Ter 17/11","20h","Reel 56s narrado","Marketplace e operação","Cinético · navy/scan","Muita visita e nenhuma venda? Leia a legenda.","ANUNCIO","Checklist de anúncio (PDF)","—","Publicado 17/11 20h (Windsor)"),
 ("13","Qua 18/11","10h","Carrossel 7","IA aplicada","v4","Como validar a demanda com IA sem inventar números","DEMANDA","Prompts de pesquisa de demanda (PDF)","—","Planejado"),
 ("14","Qua 18/11","12h","Estático","Marketplace e operação","v4","Frete: o custo que você esquece","FRETE","Checklist de embalagem e frete (PDF)","—","Planejado"),
 ("15","Qua 18/11","18h","Reel 18s","IA aplicada","Cinético","Quer títulos de anúncio melhores com IA? Leia a legenda.","TITULO","Prompt de títulos de anúncio (PDF)","—","Planejado"),
