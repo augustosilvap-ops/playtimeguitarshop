@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="caos.css"><style>html,body{width:auto;height:auto;overflow:visible}.box{position:relative;overflow:hidden}</style></head><body>
+<div id="perfil" class="box" style="width:800px;height:800px"></div>
+<div id="banner" class="box" style="width:2560px;height:1440px"></div>
+<script src="caos_engine.js"></script>
+<script>
+const P=document.getElementById('perfil'),B=document.getElementById('banner');
+// perfil: sol neon + CI
+P.innerHTML=`<div style="position:absolute;left:0;top:-300px;transform:scale(.741);transform-origin:0 0;width:1080px;height:1920px">${sky(1.2)}</div>
+<div class="ab" style="inset:0;background:radial-gradient(closest-side,transparent 60%,rgba(11,4,20,.6))"></div>
+<div class="ab ne" style="left:0;right:0;top:120px;text-align:center;font-size:420px;line-height:1">C<span class="cy">I</span></div>
+<div class="ab ne yl" style="left:0;right:0;top:600px;text-align:center;font-size:90px;letter-spacing:.12em">BR</div>`;
+// banner: área segura central 1546x423
+B.innerHTML=`<div style="position:absolute;left:0;top:-400px;width:2560px;height:1920px;transform:scaleX(2.37);transform-origin:0 0"><div style="width:1080px;height:1920px;position:relative">${sky(1.2)}</div></div>
+<div class="ab" style="inset:0;background:linear-gradient(180deg,rgba(11,4,20,.2),transparent 40%,rgba(11,4,20,.5))"></div>
+<div class="ab ne" style="left:0;right:0;top:500px;text-align:center;font-size:260px;line-height:1">CAOS <span class="cy">INSANO</span> <span class="yl">BR</span></div>
+<div class="ab" style="left:0;right:0;top:800px;text-align:center;font:800 54px I;color:#fff;letter-spacing:.12em;text-shadow:0 4px 20px #12051F">CURIOSIDADES · NOTÍCIAS · MELHORES MOMENTOS DO GTA 6</div>`;
+</script></body></html>

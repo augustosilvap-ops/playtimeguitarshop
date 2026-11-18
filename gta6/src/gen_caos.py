@@ -13,6 +13,8 @@ def S(shot, **p): return dict(shot=shot, p=p)
 # Fontes: GTA V lançado em 17/09/2013; GTA VI 19/11/2026 (Rockstar, adiado de "outono 2025" → 26/05/2026 → 19/11/2026).
 # Trailer 1 (05/12/2023, liberado na véspera, 04/12, após vazamento): 90+ milhões de views em 24 h no YouTube (recorde de vídeo não musical).
 # Trailer 2 (06/05/2025): 475 milhões de views em 24 h somando plataformas (Rockstar). Músicas: Tom Petty "Love Is a Long Road" (T1), The Pointer Sisters "Hot Together" (T2).
+# Parte 2: dev confirmado 04/02/2022; vazamento 18/09/2022 (90+ vídeos, hacker de 17 anos); Rockstar fundada 12/1998 → trailer 1 em 12/2023 (25 anos);
+# trailer 2 "capturado inteiramente no jogo no PS5" (Rockstar); lançamento PS5/Xbox Series, sem PC anunciado; GTA V 200+ mi cópias (Take-Two); nomes Jason Duval/Lucia Caminos (site Rockstar, 05/2025).
 # Leonida = estado inspirado na Flórida (regiões divulgadas pela Rockstar em 05/2025: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga); Vice City = inspirada em Miami. Lucia: primeira protagonista mulher da era 3D da série.
 REELS = {
  'curiosidades1': [
@@ -28,8 +30,20 @@ REELS = {
   (S('cta', html='QUAL VOCÊ<br><span class="yl">NÃO SABIA?</span>', btn='SEGUE PRA PARTE 2 →'), "Qual dessas você não sabia? Segue o Caos Insano que amanhã tem parte dois."),
  ],
 }
+REELS['curiosidades2'] = [
+  (S('title', html='MAIS 7<br><span class="cy">COISAS</span><br>DO <span class="yl">GTA 6</span><br>QUE POUCA GENTE SABE', size=140), "Mais sete coisas do GTA 6 que pouca gente sabe. Parte dois."),
+  (S('delay', lbl='LINHA DO TEMPO', steps=['FEV 2022', 'SET 2022', 'DEZ 2023'], nocut=1), "Um: a Rockstar só confirmou que o jogo estava em produção em fevereiro de 2022. Sete meses depois veio um dos maiores vazamentos da história dos games."),
+  (S('num', lbl='Vazamento · set 2022', v=90, pre='+', unit='VÍDEOS VAZADOS', sub='De uma versão inicial do jogo, ainda em desenvolvimento'), "Dois: mais de 90 vídeos de uma versão inicial do jogo vazaram na internet. E quem vazou foi um hacker de 17 anos."),
+  (S('rank', n=3, html='TRAILER DE<br><span class="yl">ANIVERSÁRIO</span>', sub='O trailer 1 saiu em dezembro de 2023, mês dos 25 anos da Rockstar.'), "Três: o primeiro trailer foi lançado em dezembro de 2023, no mês em que a Rockstar completou 25 anos."),
+  (S('rank', n=4, html='TUDO<br><span class="cy">NO PS5</span>', sub='A Rockstar disse que o trailer 2 foi capturado inteiro dentro do jogo, no PS5.'), "Quatro: segundo a Rockstar, o trailer dois foi capturado inteiro dentro do jogo, rodando no PS5. Uma parte é gameplay e outra parte é cena."),
+  (S('check', lbl='NO LANÇAMENTO', items=[('PS5', 1), ('XBOX SERIES', 1), ('PC', 0)]), "Cinco: no lançamento, o jogo sai só para PS5 e Xbox Series. Para PC ainda não tem data."),
+  (S('num', lbl='A régua: GTA 5 vendeu', v=200, pre='+', unit='MILHÕES DE CÓPIAS', sub='Um dos jogos mais vendidos da história'), "Seis: a régua está alta. O GTA 5 passou de 200 milhões de cópias vendidas, um dos jogos mais vendidos da história."),
+  (S('rank', n=7, html='JASON <span class="cy">DUVAL</span><br>&amp; LUCIA<br><span class="yl">CAMINOS</span>', top=520, size=130, sub='Os nomes completos dos protagonistas, revelados pela Rockstar.', subTop=1000), "Sete: os protagonistas têm nome completo. Jason Duval e Lucia Caminos."),
+  (S('song', lbl='BÔNUS · TRILHA DO TRAILER 2', t='HOT TOGETHER', a='The Pointer Sisters · trailer 2'), "Bônus: a música do trailer dois é Hot Together, das Pointer Sisters."),
+  (S('cta', html='AMANHÃ<br><span class="yl">É O DIA</span>', btn='SEGUE O CAOS INSANO →'), "Amanhã é o dia. Segue o Caos Insano pra não perder nada do lançamento."),
+]
 SFX = {'num': [(.15, 'riser', .5), (1.45, 'impact', .7)], 'years': [(.3, 'tick', .6), (1.6, 'impact', .7)], 'delay': [(.3, 'stamp', .6), (1.2, 'stamp', .6), (2.1, 'chime', .7)],
-       'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'title': [(.1, 'impact', .8)]}
+       'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'check': [(.35, 'chime', .6), (.85, 'chime', .6), (1.35, 'impact', .6)], 'title': [(.1, 'impact', .8)]}
 
 def main():
     nome, out = sys.argv[1], sys.argv[2]; trilha = sys.argv[3] if len(sys.argv) > 3 else os.path.join(HERE, '../trilhas/mk_173.mp3')
