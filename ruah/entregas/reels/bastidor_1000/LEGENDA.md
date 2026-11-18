@@ -30,4 +30,4 @@ Se você acredita no que a RUAH carrega, segue e faz parte desde o começo.
 #modacrista #streetwearcristao #ruah #fe #wecarrythespirit
 
 ## Publicação
-- 18/11 ~18h25: versão EMBALANDO enviada ao @ruahwear_ pelo Windsor (pedido do Augusto "Post agora"). 1ª e 2ª tentativas recusadas (áudio 96 kHz — corrigido para 48 kHz). 3ª: timeout 60 s, NÃO repetido — conferir no Windsor.
+- 18/11 ~18h25: versão EMBALANDO enviada ao @ruahwear_ pelo Windsor (pedido do Augusto "Post agora"). 1ª e 2ª tentativas recusadas (áudio 96 kHz — corrigido para 48 kHz). 3ª: timeout 60 s, NÃO repetido. PUBLICADO (confirmado pelo Augusto, 18/11).
