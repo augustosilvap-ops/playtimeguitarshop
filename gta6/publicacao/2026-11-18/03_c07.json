@@ -1,0 +1,15 @@
+{
+ "hora": "20:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841475082570188",
+ "perfil": "@caosinsano.br",
+ "data": "2026-11-18",
+ "status": "programado (pedido do Augusto 18/11: postar de 1 em 1 hora das 18h às 00h)",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/caos/c07.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c07_capa.jpg",
+  "share_to_feed": true,
+  "caption": "O nome VERCETTI voltou no GTA 6 👀\n\nA própria Rockstar colocou no material oficial. Será que o Tommy aparece? Comenta 👇\n\n#gta6 #gtavi #vicecity #gameplay #games"
+ }
+}

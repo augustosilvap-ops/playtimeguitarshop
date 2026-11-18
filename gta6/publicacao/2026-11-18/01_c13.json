@@ -1,0 +1,15 @@
+{
+ "hora": "18:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841475082570188",
+ "perfil": "@caosinsano.br",
+ "data": "2026-11-18",
+ "status": "programado (pedido do Augusto 18/11: postar de 1 em 1 hora das 18h às 00h)",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/caos/c13.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c13_capa.jpg",
+  "share_to_feed": true,
+  "caption": "Isso NÃO é trailer 🤯 É gameplay real do GTA 6 — capturado dentro do jogo no PS5, segundo a Rockstar.\n\nSegue o @caosinsano.br pra não perder nada do lançamento 🌴\n\n#gta6 #gtavi #vicecity #gameplay #games"
+ }
+}
