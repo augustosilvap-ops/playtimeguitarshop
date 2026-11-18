@@ -15,3 +15,16 @@ Se você acredita no que a gente carrega, segue e acompanha de perto. 🕊️
 ## Notas
 - Sem prazo de produção, sem "nosso lema"/"nascida na rua", sem Black Friday/combo.
 - Afirmações usadas: nenhuma nova sobre o produto (só mostra etiqueta da barra, tag e estampa, já aprovadas).
+
+---
+# Versão 2 — EMBALANDO (vídeo IMG_2138 do Drive, 18/11) · RUAH_reel_embalando_1000.mp4 (19 s)
+Sequência: camiseta dobrada com a tag (estampa livre, sem texto) → entra no saquinho zip → fecha → cartão "Essa peça não é só uma camiseta…" (texto da própria RUAH, em 1×, dá para ler) → saquinho pronto.
+Texto da meta (1,6–11,4 s) na parte de baixo, nunca sobre a estampa.
+
+## Legenda
+Cada pedido sai daqui com uma mensagem dentro.
+O saquinho? Não é lixo. É bolsa. 🕊️
+
+Se você acredita no que a RUAH carrega, segue e faz parte desde o começo.
+
+#modacrista #streetwearcristao #ruah #fe #wecarrythespirit
