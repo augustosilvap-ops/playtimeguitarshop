@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:DF;src:url('../fonts/DAFOE.woff2')}@font-face{font-family:MO;src:url('../fonts/MONO.woff2')}@font-face{font-family:NE;src:url('../fonts/NEON.woff2')}@font-face{font-family:SG;font-weight:700;src:url('../fonts/SG.woff2')}@font-face{font-family:UB;font-weight:900;src:url('../fonts/UB.woff2')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#111;display:flex;flex-direction:column;gap:30px;padding:30px}
+.ab{position:absolute}.c{position:relative;overflow:hidden}
+.pink{color:#FFE3F3;text-shadow:0 0 4px #fff,0 0 10px #FF4FB8,0 0 22px #FF2FA8,0 0 45px #FF1E9C,0 0 90px #FF1E9C,0 0 160px rgba(255,30,156,.7)}
+.cyan{color:#E6FEFF;text-shadow:0 0 4px #fff,0 0 10px #4FF3FF,0 0 22px #19E3FF,0 0 45px #00C8FF,0 0 90px #00C8FF,0 0 160px rgba(0,200,255,.6)}
+.orng{color:#FFF1DE;text-shadow:0 0 4px #fff,0 0 10px #FFB04F,0 0 22px #FF8A1E,0 0 45px #FF6A00,0 0 90px #FF5A00,0 0 150px rgba(255,90,0,.6)}
+.wall{background:radial-gradient(1200px 700px at 50% 45%,#2A0F33,#12071A 60%,#07030B)}
+.noise{position:absolute;inset:0;opacity:.18;mix-blend-mode:overlay;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4'/></filter><rect width='400' height='400' filter='url(%23n)'/></svg>")}
+</style></head><body>
+<!-- PERFIL -->
+<div id="perfil" class="c wall" style="width:800px;height:800px">
+ <div class="ab" style="inset:0;background:radial-gradient(420px 300px at 50% 52%,rgba(255,30,156,.28),transparent 70%)"></div>
+ <div class="ab pink" style="left:0;right:0;top:100px;text-align:center;font:380px/1 DF;transform:rotate(-8deg)">Caos</div>
+ <div class="ab cyan" style="left:0;right:0;top:480px;text-align:center;font:900 92px UB;letter-spacing:.08em;-webkit-text-stroke:0">INSANO</div>
+ <div class="ab orng" style="left:0;right:0;top:640px;text-align:center;font:700 40px SG;letter-spacing:.5em;padding-left:.5em">BR</div>
+ <div class="noise"></div>
+ <div class="ab" style="inset:0;box-shadow:inset 0 0 180px rgba(0,0,0,.85)"></div>
+</div>
+<!-- BANNER -->
+<div id="banner" class="c" style="width:2560px;height:1440px;background:#07030B">
+ <div class="ab" style="left:-20px;right:-20px;top:300px;height:1180px;background:url('../img/miami_noite.png') center 72%/cover;filter:blur(2.5px) saturate(1.5) brightness(.85)"></div>
+ <div class="ab" style="inset:0;background:linear-gradient(180deg,#1A0630 0%,#3B0A5E 22%,#8A1B78 40%,rgba(214,46,120,.55) 50%,rgba(255,120,90,.25) 56%,transparent 62%)"></div>
+ <div class="ab" style="left:0;right:0;top:640px;height:260px;background:radial-gradient(900px 140px at 50% 100%,rgba(255,140,80,.45),transparent 70%);mix-blend-mode:screen"></div>
+ <div class="ab" style="inset:0;background:linear-gradient(180deg,transparent 70%,rgba(7,3,11,.85))"></div>
+ <div class="ab" style="left:600px;right:600px;top:470px;height:500px;background:radial-gradient(closest-side,rgba(12,3,22,.75),transparent)"></div>
+ <div class="ab pink" style="left:0;right:0;top:380px;text-align:center;font:270px/1 DF;transform:rotate(-5deg)">Caos</div>
+ <div class="ab cyan" style="left:0;right:0;top:690px;text-align:center;font:900 150px UB;letter-spacing:.06em">INSANO</div>
+ <div class="ab orng" style="left:0;right:0;top:880px;text-align:center;font:700 34px SG;letter-spacing:.5em">GTA 6 · CURIOSIDADES · NOTÍCIAS · BR</div>
+ <div class="noise" style="opacity:.1"></div>
+ <div class="ab" style="inset:0;box-shadow:inset 0 0 300px rgba(0,0,0,.7)"></div>
+</div>
+</body></html>
