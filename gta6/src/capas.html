@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="caos.css"><style>
+body{width:auto;height:auto;overflow:visible;background:#000}.cv{position:relative;width:1080px;height:1920px;overflow:hidden}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.15) contrast(1.05)}
+.vl{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,3,18,.55) 0%,rgba(10,3,18,.15) 18%,rgba(10,3,18,.0) 35%,rgba(10,3,18,.55) 55%,rgba(10,3,18,.92) 100%)}
+.t{position:absolute;left:50px;right:50px;bottom:330px;text-align:center;font-size:150px;line-height:.98}
+.tag{position:absolute;left:0;right:0;bottom:250px;text-align:center;font:800 40px I;letter-spacing:.3em;color:#fff;text-shadow:0 2px 10px #000}
+.br{position:absolute;left:0;right:0;top:90px;text-align:center}
+</style></head><body><div id="list"></div><script>
+const C=[['01','7 COISAS<br><span class="cy">ANTES DE</span><br><span class="yl">JOGAR</span>'],['02','MAIS 7<br><span class="cy">QUE POUCA</span><br><span class="yl">GENTE SABE</span>'],
+['03','QUEM SÃO<br><span class="cy">JASON</span> E<br><span class="yl">LUCIA?</span>'],['04','O MAPA<br><span class="cy">DE</span><br><span class="yl">LEONIDA</span>'],
+['05','25 ANOS<br><span class="cy">DE GTA EM</span><br><span class="yl">30 SEG</span>'],['06','SÓ FÃ<br><span class="cy">ACERTA</span><br><span class="yl">3 DE 3</span>'],
+['07','O NOME<br><span class="yl">VERCETTI</span><br><span class="cy">VOLTOU</span>'],['08','O QUE VEM<br><span class="cy">NA</span><br><span class="yl">ULTIMATE?</span>'],
+['09','8 LUGARES<br><span class="cy">JÁ</span><br><span class="yl">REVELADOS</span>'],['10','GTA 6 TEM<br><span class="cy">PROGRAMA</span><br><span class="yl">DE TV?</span>'],
+['11','A MÚSICA<br><span class="cy">DO TRAILER</span><br><span class="yl">FINAL</span>'],['12','O QUE OS<br><span class="cy">CRIADORES</span><br><span class="yl">VIRAM</span>']];
+document.getElementById('list').innerHTML=C.map(([k,h])=>`<div class="cv" id="c${k}"><div class="bg" style="background-image:url('capas_bg/${k}.jpg')"></div><div class="vl"></div>
+<div class="br"><span class="pink" style="font:80px DF">Caos</span> <span class="cyan" style="font:900 40px UB;letter-spacing:.08em">INSANO</span></div>
+<div class="t ne">${h}</div><div class="tag">GTA 6 · CAOS INSANO BR</div></div>`).join('');
+</script></body></html>
