@@ -49,3 +49,17 @@ Mais 7 coisas do GTA 6 que pouca gente sabe 🌴 Parte 2! Qual você não sabia?
 - **YouTube:** YouTube Studio → Criar → Enviar vídeos → em "Visibilidade" escolha **Programar** e ponha data/hora. Dá pra programar vários de uma vez.
 - **TikTok:** pelo computador, em tiktok.com/tiktokstudio/upload → **Programar** (até 10 dias à frente).
 - Horários sugeridos para o lançamento: 12h e 19h (maior pico de gente procurando GTA 6).
+
+---
+## Instagram (18/11) — perfil @caosinsanobr
+**Nome (campo pesquisável):** Caos Insano BR | GTA 6
+**Bio (opção 1, recomendada):**
+GTA 6 todo dia 🌴🔥
+Gameplay, curiosidades e segredos de Leonida
+Canal de fã · sem ligação com a Rockstar
+👇 YouTube e TikTok
+**Bio (opção 2):** Tudo de GTA 6 em menos de 30 segundos 🌴 / Gameplay · curiosidades · notícias / Canal de fã, sem ligação com a Rockstar / 👇 Me segue no YouTube e TikTok
+**Bio (opção 3):** O caos de Vice City, todo dia 🔥 / GTA 6: gameplay, segredos e notícias / Fã-clube BR · não oficial / 👇 mais vídeos
+**Link:** link do canal do YouTube (ou um link na bio com YouTube + TikTok).
+**Destaques:** Gameplay · Curiosidades · Mapa · Personagens · Quiz (capas: usar os quadros das capas 13, 07, 04, 03 e 06).
+**Categoria:** Criador de conteúdo digital / Videogame.
