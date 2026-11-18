@@ -5,11 +5,13 @@
  "account": "17841407424879500",
  "perfil": "@augustosilva.p",
  "data": "2026-11-18",
- "status": "enviado 18/11 18h00 (timeout 60s — não repetido; conferir no Windsor)",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/18/15.mp4",
   "share_to_feed": true,
   "caption": "Seu anúncio pode estar ótimo e mesmo assim não aparecer. O motivo costuma estar no título.\n\nA busca compara o título com o que o cliente digita. \"Barato\", \"promoção\" e \"envio rápido\" ninguém pesquisa.\n\n1. Pesquise: digite o produto na busca e anote as sugestões e as palavras que se repetem nos títulos do topo.\n2. Use a fórmula: produto + marca/modelo + característica principal + variação.\n3. Monte sem repetir palavras e sem símbolos. Ex.: Garrafa Térmica Inox Pro 1 Litro 24h Gelada Preta.\n4. Peça 5 versões para a IA, com o limite de caracteres do seu canal, e escolha a mais clara.\n5. Troque e compare a taxa de cliques depois de 7 dias.\n\nNo exemplo (hipotético), a taxa de cliques foi de 0,8% para 2,4%.\n\n🔖 Salve e reescreva hoje o título do seu anúncio principal.\n💬 Me conta: qual palavra inútil você vai tirar do seu título?\n\n#ia #marketplace #produtos #mercadolivre #shopee",
   "cover_url": "https://nexusautomatic.vercel.app/ig/18/15_capa.jpg"
- }
+ },
+ "media_id": "18000011523030326",
+ "publicado_em": "2026-11-18T21:02:24Z"
 }
