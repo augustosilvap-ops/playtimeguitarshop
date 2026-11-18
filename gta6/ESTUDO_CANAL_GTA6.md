@@ -57,3 +57,18 @@ Conferir disponibilidade do @ no YouTube e no TikTok antes de criar.
 4. Escolher como postar automático: API do YouTube (grátis, mais configuração) ou agendador com API (pago, simples).
 
 Fontes: Rockstar Support (política de material com direitos), páginas de ajuda do YouTube (conteúdo reutilizado), Dexerto/GTABoom (regras de violência para o GTA 6), O Tempo/Adrenaline/O Liberal (lançamento e lives BR).
+
+## 9. Decisões (18/11)
+- Nome: **Caos Insano BR** (@caosinsanobr — conferir se o @ está livre no YouTube e no TikTok).
+- Augusto NÃO tem o jogo → caminhos 2 (streamers que autorizam) e 3 (curiosidades narradas). Começamos pelo 3.
+- Motor dos Shorts: `gta6/src/gen_caos.py` + `caos_engine.js` (neon/synthwave próprio, legenda palavra por palavra, voz Lucas, trilha Mixkit `gta6/trilhas/`).
+- Short 01 pronto: `gta6/entregas/CaosInsano_curiosidades1_45s.mp4` + legendas.
+
+## 10. Custos para postar automático
+| Opção | Custo | Observação |
+|---|---|---|
+| API do YouTube (Google) | Grátis | Cota diária sobra para 3–5 Shorts/dia. Precisa criar projeto no Google Cloud + autorização OAuth (eu passo o passo a passo). Só YouTube. |
+| API do TikTok (oficial) | Grátis | Exige aprovação do app pelo TikTok (pode levar semanas); até aprovar, os vídeos saem privados. |
+| Upload-Post | ~US$ 16–24/mês (plano Basic, 5 perfis) | YouTube + TikTok + Instagram com 1 chave. TikTok só nos planos pagos. Grátis = sem TikTok. |
+| Ayrshare | ~US$ 149/mês | Caro para 1 canal. Não recomendado. |
+Recomendação: Upload-Post Basic (≈ R$ 130/mês) — posta nos dois com uma chave só. Alternativa sem custo: API do YouTube + postar no TikTok manualmente no começo.

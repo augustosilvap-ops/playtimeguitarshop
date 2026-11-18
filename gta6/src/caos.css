@@ -1,0 +1,7 @@
+@font-face{font-family:I;font-weight:700;src:url('../../augusto/src/fonts/InterPDF-700.ttf')}@font-face{font-family:I;font-weight:800;src:url('../../augusto/src/fonts/InterPDF-800.ttf')}
+@font-face{font-family:A;src:url('../../augusto/src/fonts/Anton.woff2')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#0B0414}
+#v{position:absolute;inset:0;overflow:hidden}.ab{position:absolute}
+.ne{font-family:A;color:#fff;text-transform:uppercase;letter-spacing:.01em;text-shadow:0 0 18px rgba(255,60,172,.9),0 0 50px rgba(255,60,172,.55),0 8px 0 #2A0B3D}
+.cy{color:#5CF2FF;text-shadow:0 0 18px rgba(92,242,255,.9),0 0 50px rgba(92,242,255,.5),0 8px 0 #2A0B3D}
+.yl{color:#FFE14D;text-shadow:0 0 18px rgba(255,200,60,.9),0 8px 0 #2A0B3D}
