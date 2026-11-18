@@ -44,4 +44,4 @@ Postar no YouTube Shorts e no TikTok. Agendar: YouTube Studio → Enviar → Vis
 **TikTok:** Só fã de verdade de GTA 6 acerta as 3 🧠 Quantas você acertou? 👇 #gta6 #gtavi #quiz #games #fyp
 
 ---
-Notas: só fatos públicos (Rockstar e imprensa), sem spoiler da história. Visual próprio (sem logo/arte da Rockstar). Foto de fundo: Miami à noite (Mixkit, licença gratuita). Voz: Lucas (ElevenLabs). Trilha: Mixkit.
+Notas: só fatos públicos (Rockstar e imprensa), sem spoiler da história. Visual próprio (sem logo/arte da Rockstar). Fundo: takes e screenshots oficiais da área de downloads da Rockstar (sem o áudio dos trailers). Voz: Lucas (ElevenLabs). Trilha: Mixkit.
