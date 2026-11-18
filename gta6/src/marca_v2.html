@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:AR;font-style:italic;font-weight:900;src:url('../fonts/AR.woff2')}
+@font-face{font-family:UB;font-weight:900;src:url('../fonts/UB.woff2')}
+@font-face{font-family:BS;font-weight:900;src:url('../fonts/BS.woff2')}
+@font-face{font-family:SG;font-weight:700;src:url('../fonts/SG.woff2')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#222;padding:20px;display:flex;flex-direction:column;gap:20px}
+.p{width:800px;height:800px;position:relative;overflow:hidden}.b{width:2560px;height:1440px;position:relative;overflow:hidden}.ab{position:absolute}
+.grain{position:absolute;inset:0;opacity:.09;mix-blend-mode:overlay;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")}
+/* A — IMPACTO */
+.A{background:radial-gradient(1200px 900px at 70% 20%,#26131F,#0B0B0E 60%)}
+.A .slash{position:absolute;background:linear-gradient(90deg,#FF1F6B,#FF7A1A);transform:skewX(-20deg)}
+.A .w{font:italic 900 1px AR;color:#fff;letter-spacing:-.02em;line-height:.85;text-transform:uppercase}
+/* B — PÔR DO SOL PREMIUM */
+.B{background:linear-gradient(160deg,#1B0B3A 0%,#5B1A6E 40%,#E2366B 75%,#FF8A3D 100%)}
+.B .w{font:900 1px UB;color:#fff;letter-spacing:-.04em;line-height:.9;text-transform:uppercase}
+/* C — ALERTA */
+.C{background:#FFD400}
+.C .w{font:900 1px BS;color:#0B0B0B;letter-spacing:-.01em;line-height:.82;text-transform:uppercase}
+.C .hz{position:absolute;background:repeating-linear-gradient(-45deg,#0B0B0B 0 40px,#FFD400 40px 80px)}
+.tag{font:700 1px SG;letter-spacing:.18em;text-transform:uppercase}
+</style></head><body>
+<!-- A -->
+<div id="pA" class="p A"><div class="slash" style="left:300px;top:-50px;width:150px;height:900px"></div>
+ <div class="ab w" style="left:0;right:0;top:170px;text-align:center;font-size:440px">CI</div>
+ <div class="ab tag" style="left:0;right:0;top:650px;text-align:center;font-size:52px;color:#fff">BR</div><div class="grain"></div></div>
+<div id="bA" class="b A"><div class="slash" style="left:1120px;top:420px;width:120px;height:600px"></div>
+ <div class="ab w" style="left:0;right:0;top:500px;text-align:center;font-size:250px">CAOS <span style="background:linear-gradient(90deg,#FF1F6B,#FF7A1A);-webkit-background-clip:text;color:transparent;padding-right:20px">INSANO</span><span style="font:700 70px SG;color:#fff;letter-spacing:.1em;vertical-align:top;margin-left:10px">BR</span></div>
+ <div class="ab tag" style="left:0;right:0;top:790px;text-align:center;font-size:44px;color:#B9B3C0">GTA 6 · CURIOSIDADES · NOTÍCIAS · MELHORES MOMENTOS</div><div class="grain"></div></div>
+<!-- B -->
+<div id="pB" class="p B"><div class="ab" style="left:150px;top:150px;width:500px;height:500px;border-radius:50%;border:6px solid rgba(255,255,255,.9)"></div>
+ <div class="ab w" style="left:0;right:0;top:270px;text-align:center;font-size:250px">CI</div><div class="grain"></div></div>
+<div id="bB" class="b B"><div class="ab" style="left:1700px;top:330px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#FFD27A,#FF8A3D 60%,transparent 61%);opacity:.9"></div>
+ <div class="ab w" style="left:507px;top:470px;font-size:200px">CAOS<br>INSANO</div>
+ <div class="ab tag" style="left:512px;top:880px;font-size:40px;color:#fff;opacity:.9">GTA 6 · TODO DIA · BR</div><div class="grain"></div></div>
+<!-- C -->
+<div id="pC" class="p C"><div class="hz" style="left:0;right:0;bottom:0;height:120px"></div>
+ <div class="ab w" style="left:0;right:0;top:110px;text-align:center;font-size:500px;transform:rotate(-6deg)">CI</div><div class="ab" style="right:90px;top:120px;background:#0B0B0B;color:#FFD400;font:900 70px BS;padding:6px 20px;transform:rotate(-6deg)">BR</div><div class="grain"></div></div>
+<div id="bC" class="b C"><div class="hz" style="left:0;right:0;top:0;height:90px"></div><div class="hz" style="left:0;right:0;bottom:0;height:90px"></div>
+ <div class="ab w" style="left:0;right:0;top:470px;text-align:center;font-size:330px;transform:rotate(-3deg)">CAOS INSANO <span style="background:#0B0B0B;color:#FFD400;padding:0 24px">BR</span></div>
+ <div class="ab tag" style="left:0;right:0;top:850px;text-align:center;font-size:46px;color:#0B0B0B"><span style="background:#0B0B0B;color:#FFD400;padding:10px 26px">GTA 6</span>&nbsp; CURIOSIDADES · NOTÍCIAS · MELHORES MOMENTOS</div><div class="grain"></div></div>
+</body></html>
