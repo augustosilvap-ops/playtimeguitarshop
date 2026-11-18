@@ -5,3 +5,10 @@
 .ne{font-family:A;color:#fff;text-transform:uppercase;letter-spacing:.01em;text-shadow:0 0 18px rgba(255,60,172,.9),0 0 50px rgba(255,60,172,.55),0 8px 0 #2A0B3D}
 .cy{color:#5CF2FF;text-shadow:0 0 18px rgba(92,242,255,.9),0 0 50px rgba(92,242,255,.5),0 8px 0 #2A0B3D}
 .yl{color:#FFE14D;text-shadow:0 0 18px rgba(255,200,60,.9),0 8px 0 #2A0B3D}
+
+@font-face{font-family:DF;src:url('../fonts/DAFOE.woff2')}@font-face{font-family:UB;font-weight:900;src:url('../fonts/UB.woff2')}
+.ne{font-family:A;letter-spacing:.01em;color:#FFE9F6;text-shadow:0 0 4px #fff,0 0 12px #FF4FB8,0 0 28px #FF2FA8,0 0 60px #FF1E9C,0 0 120px rgba(255,30,156,.6)}
+.cy{color:#E6FEFF;text-shadow:0 0 4px #fff,0 0 12px #4FF3FF,0 0 28px #19E3FF,0 0 60px #00C8FF,0 0 120px rgba(0,200,255,.55)}
+.yl{color:#FFF1DE;text-shadow:0 0 4px #fff,0 0 12px #FFB04F,0 0 28px #FF8A1E,0 0 60px #FF6A00,0 0 110px rgba(255,90,0,.55)}
+.pink{color:#FFE3F3;text-shadow:0 0 3px #fff,0 0 8px #FF4FB8,0 0 18px #FF2FA8,0 0 36px #FF1E9C}
+.cyan{color:#E6FEFF;text-shadow:0 0 3px #fff,0 0 8px #4FF3FF,0 0 18px #19E3FF,0 0 36px #00C8FF}

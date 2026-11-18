@@ -42,8 +42,52 @@ REELS['curiosidades2'] = [
   (S('song', lbl='BÔNUS · TRILHA DO TRAILER 2', t='HOT TOGETHER', a='The Pointer Sisters · trailer 2'), "Bônus: a música do trailer dois é Hot Together, das Pointer Sisters."),
   (S('cta', html='AMANHÃ<br><span class="yl">É O DIA</span>', btn='SEGUE O CAOS INSANO →'), "Amanhã é o dia. Segue o Caos Insano pra não perder nada do lançamento."),
 ]
+# ---- BATERIA 1 (semana de lançamento) — fatos: site oficial da Rockstar (personagens/regiões, 05/2025) e datas de lançamento da série.
+# Jason: cresceu cercado de golpistas; passou pelo Exército tentando deixar a adolescência problemática para trás (site Rockstar).
+# Lucia: o pai a ensinou a lutar assim que aprendeu a andar; aparece presa no trailer 1 (site Rockstar / trailer).
+# Regiões (site Rockstar): Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga National Park.
+# Série: GTA III 2001, Vice City 2002, San Andreas 2004, GTA IV 2008, GTA V 2013, GTA VI 2026.
+REELS['personagens'] = [
+  (S('title', html='QUEM SÃO<br><span class="cy">JASON</span> E<br><span class="yl">LUCIA?</span>', size=170), "Quem são Jason e Lucia, os protagonistas do GTA 6? Sem spoiler, só o que a Rockstar mostrou."),
+  (S('rank', n=1, html='LUCIA<br><span class="cy">CAMINOS</span>', sub='Começa a história atrás das grades.', sky=1), "Lucia Caminos. No primeiro trailer, ela aparece presa, e é assim que a história dela começa."),
+  (S('rank', n=2, html='CRIADA<br><span class="yl">PRA LUTAR</span>', sub='Segundo a Rockstar, o pai dela a ensinou a lutar assim que ela aprendeu a andar.'), "Segundo a Rockstar, o pai dela a ensinou a lutar assim que ela aprendeu a andar."),
+  (S('rank', n=3, html='JASON<br><span class="cy">DUVAL</span>', sub='Cresceu cercado de golpistas e criminosos.', sky=1), "Jason Duval cresceu cercado de golpistas e criminosos."),
+  (S('rank', n=4, html='EX-<span class="yl">EXÉRCITO</span>', sub='Passou pelo Exército tentando deixar a adolescência problemática para trás.'), "Ele passou pelo Exército tentando deixar a adolescência problemática para trás. Não deu muito certo."),
+  (S('title', html='DOIS CONTRA<br><span class="cy">LEONIDA</span>', size=170), "Juntos, eles viram uma dupla tentando sobreviver em Leonida. E o resto você descobre jogando."),
+  (S('cta', html='TIME<br><span class="cy">JASON</span> OU<br><span class="yl">LUCIA?</span>', btn='COMENTA AQUI 👇'), "E aí, você é time Jason ou time Lucia? Comenta aqui e segue o Caos Insano."),
+]
+REELS['mapa'] = [
+  (S('title', html='O MAPA DE<br><span class="cy">LEONIDA</span><br>EM 45 SEGUNDOS', size=160), "O mapa do GTA 6 em 45 segundos. São seis regiões, todas inspiradas na Flórida."),
+  (S('rank', n=1, html='VICE<br><span class="yl">CITY</span>', sub='A cidade grande, versão do jogo para Miami.', sky=1), "Um: Vice City. A cidade grande do mapa, a versão do jogo para Miami."),
+  (S('rank', n=2, html='LEONIDA<br><span class="cy">KEYS</span>', sub='Ilhas e praias, inspiradas nas Florida Keys.'), "Dois: Leonida Keys. As ilhas e praias inspiradas nas Florida Keys."),
+  (S('rank', n=3, html='GRASS<br><span class="cy">RIVERS</span>', sub='Pântanos, inspirados nos Everglades.', sky=1), "Três: Grassrivers. Os pântanos, inspirados nos Everglades."),
+  (S('rank', n=4, html='PORT<br><span class="yl">GELLHORN</span>', sub='Cidade portuária no litoral.'), "Quatro: Port Gellhorn, uma cidade portuária no litoral."),
+  (S('rank', n=5, html='AMBROSIA', sub='Cidade do interior de Leonida.', sky=1), "Cinco: Ambrosia, uma cidade do interior de Leonida."),
+  (S('rank', n=6, html='MOUNT<br><span class="cy">KALAGA</span>', sub='Parque nacional, com trilhas e natureza.'), "Seis: Mount Kalaga, um parque nacional com trilhas e muita natureza."),
+  (S('cta', html='QUAL VOCÊ<br><span class="yl">EXPLORA</span><br>PRIMEIRO?', btn='SEGUE O CAOS INSANO →'), "Qual região você vai explorar primeiro? Comenta e segue o Caos Insano."),
+]
+REELS['linha_do_tempo'] = [
+  (S('title', html='25 ANOS<br><span class="cy">DE CAOS</span><br>EM <span class="yl">45 SEG</span>', size=170), "A história do GTA em 3D até o 6, em 45 segundos."),
+  (S('years', a=2001, b=2001, big='GTA III'), "2001: GTA 3 leva a série para o 3D e muda os jogos de mundo aberto."),
+  (S('years', a=2001, b=2002, big='VICE CITY'), "2002: Vice City. Anos 80, neon e a primeira visita à versão do jogo para Miami."),
+  (S('years', a=2002, b=2004, big='SAN ANDREAS'), "2004: San Andreas, com um estado inteiro para explorar."),
+  (S('years', a=2004, b=2008, big='GTA IV'), "2008: GTA 4, mais realista e mais sério."),
+  (S('years', a=2008, b=2013, big='GTA V'), "2013: GTA 5, com três protagonistas. Ele ficou 13 anos no topo."),
+  (S('years', a=2013, b=2026, big='GTA VI'), "2026: GTA 6. A volta para Vice City, agora no estado de Leonida."),
+  (S('cta', html='QUAL FOI O<br><span class="yl">SEU PRIMEIRO?</span>', btn='COMENTA AQUI 👇'), "Qual foi o seu primeiro GTA? Comenta aqui e segue o Caos Insano."),
+]
+REELS['quiz'] = [
+  (S('title', html='SÓ FÃ<br><span class="cy">DE VERDADE</span><br>ACERTA <span class="yl">3/3</span>', size=170), "Só fã de verdade de GTA 6 acerta as três. Valendo!"),
+  (S('check', lbl='PERGUNTA 1', items=[('A) FLÓRIDA', 1), ('B) CALIFÓRNIA', 0), ('C) TEXAS', 0)], ask=1), "Pergunta um: Leonida é inspirada em qual estado americano? Flórida, Califórnia ou Texas?"),
+  (S('check', lbl='PERGUNTA 1', items=[('A) FLÓRIDA', 1), ('B) CALIFÓRNIA', 0), ('C) TEXAS', 0)], fast=1), "Resposta: Flórida."),
+  (S('check', lbl='PERGUNTA 2', items=[('A) LUCIA SANTOS', 0), ('B) LUCIA CAMINOS', 1), ('C) LUCIA DUVAL', 0)], ask=1), "Pergunta dois: qual o nome completo da protagonista? Santos, Caminos ou Duval?"),
+  (S('check', lbl='PERGUNTA 2', items=[('A) LUCIA SANTOS', 0), ('B) LUCIA CAMINOS', 1), ('C) LUCIA DUVAL', 0)], fast=1), "Resposta: Lucia Caminos."),
+  (S('check', lbl='PERGUNTA 3', items=[('A) 7 ANOS', 0), ('B) 10 ANOS', 0), ('C) 13 ANOS', 1)], ask=1), "Pergunta três: quantos anos separam o GTA 5 do GTA 6? Sete, dez ou treze?"),
+  (S('check', lbl='PERGUNTA 3', items=[('A) 7 ANOS', 0), ('B) 10 ANOS', 0), ('C) 13 ANOS', 1)], fast=1), "Resposta: treze anos."),
+  (S('cta', html='QUANTAS<br><span class="yl">VOCÊ ACERTOU?</span>', btn='COMENTA AQUI 👇'), "Quantas você acertou? Comenta aqui e segue o Caos Insano."),
+]
 SFX = {'num': [(.15, 'riser', .5), (1.45, 'impact', .7)], 'years': [(.3, 'tick', .6), (1.6, 'impact', .7)], 'delay': [(.3, 'stamp', .6), (1.2, 'stamp', .6), (2.1, 'chime', .7)],
-       'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'check': [(.35, 'chime', .6), (.85, 'chime', .6), (1.35, 'impact', .6)], 'title': [(.1, 'impact', .8)]}
+       'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'check': [(.35, 'pop', .6), (.85, 'pop', .6), (1.35, 'pop', .6)], 'title': [(.1, 'impact', .8)]}
 
 def main():
     nome, out = sys.argv[1], sys.argv[2]; trilha = sys.argv[3] if len(sys.argv) > 3 else os.path.join(HERE, '../trilhas/mk_173.mp3')
