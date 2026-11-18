@@ -25,7 +25,7 @@ BG.update({
  'ultimate': [('img', ED('ULTIMATE_EDITION_01'), .5), ('img', ED('ULTIMATE_EDITION_GROTTI_CHEETAH_01'), .5), ('img', ED('ULTIMATE_EDITION_VAPID_BUGGY_01'), .5), ('img', ED('ULTIMATE_EDITION_SQUALO_01'), .5), ('img', ED('ULTIMATE_EDITION_ELECTRIC_FANG_01'), .5), ('img', ED('ULTIMATE_EDITION_ONE_EYED_WILLIE_02'), .5), ('img', ED('ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01'), .5), ('L', 66, .5), ('T2', 153, .5)],
  'bairros': [('T1', 12, .5), ('T1', 21, .5), ('img', ED('VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01'), .5), ('img', ED('ULTIMATE_EDITION_STOCK_305_01'), .5), ('img', ED('ULTIMATE_EDITION_PTT_STORE_01'), .5), ('L', 69, .5), ('T2', 153, .5)],
  'macca': [('T2', 6, .5), ('img', ED('ULTIMATE_EDITION_GOODTIME_GEAR_01'), .5), ('T1', 18, .5), ('T1', 3, .5), ('img', P('Leonida Keys', 2), .5), ('L', 66, .5), ('T2', 153, .5)],
- 'trilha': [('L', 24, .3), ('L', 48, .5), ('L', 60, .5), ('T2', 96, .45), ('T2', 153, .5), ('L', 66, .5), ('T2', 153, .5)],
+ 'trilha': [('L', 54, .5), ('L', 48, .5), ('L', 60, .5), ('T2', 96, .45), ('T2', 153, .5), ('L', 66, .5), ('T2', 153, .5)],
  'preview': [('L', 69, .5), ('T2', 36, .5), ('L', 39, .5), ('L', 33, .5), ('T1', 30, .5), ('T2', 141, .45), ('L', 66, .5), ('T2', 153, .5)],
 })
 def main():
