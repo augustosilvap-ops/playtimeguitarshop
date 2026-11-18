@@ -72,3 +72,9 @@ Fontes: Rockstar Support (política de material com direitos), páginas de ajuda
 | Upload-Post | ~US$ 16–24/mês (plano Basic, 5 perfis) | YouTube + TikTok + Instagram com 1 chave. TikTok só nos planos pagos. Grátis = sem TikTok. |
 | Ayrshare | ~US$ 149/mês | Caro para 1 canal. Não recomendado. |
 Recomendação: Upload-Post Basic (≈ R$ 130/mês) — posta nos dois com uma chave só. Alternativa sem custo: API do YouTube + postar no TikTok manualmente no começo.
+
+## 11. Takes oficiais (18/11)
+- Fonte: área de downloads oficial da Rockstar (rockstargames.com/VI/media — "Download and share official videos, screenshots"). Trailer 1, Trailer 2, Launch Trailer (1080p em /home/user/gta6_brutos, fora do repositório) + 138 screenshots oficiais (lugares e personagens).
+- NUNCA usar o áudio dos trailers (músicas licenciadas → Content ID). Só voz Lucas + trilha Mixkit + SFX.
+- Só cenas já divulgadas pela Rockstar, sempre com narração/informação nossa por cima (conteúdo transformado). Evitar quadros com o logo oficial.
+- Motor: `gta6/src/gen_takes.py` (fundo = take por tela, recorte 9:16 + leve zoom; overlay neon/legenda transparente por cima).
