@@ -191,6 +191,51 @@ REELS['g_volante'] = [
   (S('rank', n=3, html='FIM DE<br><span class="cy">TARDE</span>', sky=1), "E pôr do sol na avenida, direto do gameplay oficial."),
   (S('subs'), "Se inscreve e segue no TikTok: arroba caos insano br."),
 ]
+# ---- BATERIA 4 (19/11, dia do lançamento) — descobertas dos jogadores nas primeiras horas.
+# Fontes: Kotaku (live do lançamento; "flipping and sitting"), TechRadar (live do lançamento), IBTimes UK (ovo na torre), VGC (casa de Belville).
+# Descoberta da comunidade = "segundo jogadores". Sem spoiler de história.
+REELS['d_ovo'] = [
+  (S('title', html='O EASTER EGG<br><span class="yl">É UM OVO</span><br><span class="cy">DE VERDADE</span>', size=160, top=300), "O primeiro easter egg do GTA 6 é, literalmente, um ovo."),
+  (S('rank', n=1, html='TORRE<br><span class="cy">DE RÁDIO</span>', sub='Segundo jogadores, fica num ninho no topo de uma torre de rádio em Leonida.', sky=1), "Segundo jogadores, ele fica num ninho, lá no topo de uma torre de rádio."),
+  (S('rank', n=2, html='SEIS MINUTOS<br><span class="yl">DE ESCALADA</span>'), "A subida leva uns seis a sete minutos."),
+  (S('rank', n=3, html='JOGA O OVO', sub='Lá de cima, arremessar o ovo libera uma cena secreta.', sky=1), "E lá de cima, se você jogar o ovo, libera uma cena secreta."),
+  (S('subs'), "Você ia subir? Se inscreve e segue no TikTok."),
+]
+REELS['d_capotado'] = [
+  (S('title', html='CAPOTOU?<br><span class="cy">DÁ PRA</span><br><span class="yl">DESVIRAR</span>', size=180, top=300), "Capotou o carro no GTA 6? Agora dá pra desvirar."),
+  (S('rank', n=1, html='CARRO<br><span class="yl">DE PONTA-CABEÇA</span>', sub='Chegue perto: aparece a opção de virar de volta.', sky=1), "Chegue perto do carro de ponta-cabeça e aparece a opção de virar de volta."),
+  (S('rank', n=2, html='EMPURRA<br><span class="cy">O BARCO</span>', sub='Dá pra empurrar barco encalhado na areia de volta pra água.'), "Também dá pra empurrar barco encalhado na areia de volta pra água."),
+  (S('rank', n=3, html='O JOGO<br><span class="yl">NÃO AVISA</span>', sub='Quem descobriu foi a imprensa, jogando, por acaso.', sky=1), "O jogo não explica isso. Quem achou foi jogando, por acaso."),
+  (S('subs'), "Salva pra não esquecer e segue o Caos Insano."),
+]
+REELS['d_gato'] = [
+  (S('title', html='CUIDADO<br><span class="yl">COM O</span><br><span class="cy">GATO</span>', size=190, top=300), "Cuidado com o gato no GTA 6."),
+  (S('rank', n=1, html='ROUBOU<br><span class="cy">O CARRO?</span>', sky=1), "Segundo jogadores, se você rouba um carro com um gato dentro..."),
+  (S('rank', n=2, html='ELE<br><span class="yl">ATACA</span>'), "...o gato rosna e ataca."),
+  (S('rank', n=3, html='E VOA<br><span class="cy">PELA JANELA</span>', sub='O Jason joga o gato pra fora.', sky=1), "E o Jason tem que jogar o bicho pra fora."),
+  (S('subs'), "Time gato ou time Jason? Comenta e segue o Caos Insano."),
+]
+REELS['d_animais'] = [
+  (S('title', html='OS ANIMAIS<br><span class="cy">DO GTA 6</span><br><span class="yl">SÃO INSANOS</span>', size=160, top=300), "Os animais do GTA 6 estão roubando a cena."),
+  (S('rank', n=1, html='CACHORRO<br><span class="yl">DE JET SKI</span>', sub='Segundo jogadores, tem cachorro pilotando jet ski que te dá carona.', sky=1), "Segundo jogadores, tem cachorro de jet ski que te dá carona."),
+  (S('rank', n=2, html='DÁ PRA FAZER<br><span class="cy">CARINHO</span>', sub='Cães e gatos aceitam carinho.'), "Dá pra fazer carinho em cachorro e gato."),
+  (S('rank', n=3, html='PÉ-GRANDE?', sub='Jogadores dizem ter visto o Pé-Grande no pântano de Gullet Marsh.', sky=1), "E tem jogador jurando que viu o Pé-Grande no pântano."),
+  (S('subs'), "Qual animal você quer achar primeiro? Segue o Caos Insano."),
+]
+REELS['d_dicas'] = [
+  (S('title', html='3 DICAS<br><span class="cy">PRO SEU</span><br><span class="yl">1º DIA</span>', size=180, top=300), "Três dicas pro seu primeiro dia de GTA 6."),
+  (S('rank', n=1, html='SALVA<br><span class="yl">NA MÃO</span>', sub='O salvamento automático é espaçado. Use o save manual.', sky=1), "Um: o salvamento automático é espaçado. Salva na mão."),
+  (S('rank', n=2, html='REGISTRA<br><span class="cy">O CARRO</span>', sub="Roubou um carro que gostou? Registra no Pay 'N' Spray pra ficar com ele."), "Dois: roubou um carro que gostou? Registra no Pay and Spray pra ficar com ele."),
+  (S('rank', n=3, html='MISSÃO<br><span class="yl">NO MAPA</span>', sub='Se a próxima missão não aparecer, ela está na lista do mapa.', sky=1), "Três: se a próxima missão não aparecer, olha a lista no mapa."),
+  (S('subs'), "Salva esse vídeo e segue o Caos Insano."),
+]
+REELS['d_casa'] = [
+  (S('title', html='A CASA<br><span class="yl">QUE JÁ</span><br><span class="cy">EXISTIA</span>', size=180, top=300), "Jogadores acharam no GTA 6 uma casa que já existia."),
+  (S('rank', n=1, html='BELVILLE', sub='Uma casa no bairro de Belville, em Leonida...', sky=1), "Uma casa em Belville, no mapa de Leonida..."),
+  (S('rank', n=2, html='IGUAL À<br><span class="cy">DE 2021</span>', sub='...é idêntica a uma casa do remaster de 2021 da trilogia.'), "...é idêntica a uma casa do remaster de 2021 da trilogia clássica."),
+  (S('rank', n=3, html='SPOILER<br><span class="yl">ESCONDIDO?</span>', sub='Pode ter sido a primeira espiada no GTA 6, anos antes.', sky=1), "Ou seja: a gente pode ter visto o GTA 6 anos antes, sem saber."),
+  (S('subs'), "Viu? Se inscreve e segue no TikTok."),
+]
 SFX = {'num': [(.15, 'riser', .5), (1.45, 'impact', .7)], 'years': [(.3, 'tick', .6), (1.6, 'impact', .7)], 'delay': [(.3, 'stamp', .6), (1.2, 'stamp', .6), (2.1, 'chime', .7)],
        'rank': [(.05, 'impact', .7)], 'map': [(.3, 'pop', .6), (.65, 'pop', .6), (1.0, 'pop', .6), (1.35, 'pop', .6)], 'song': [(.2, 'swipe', .6)], 'cta': [(.1, 'chime', .8)], 'subs': [(.5, 'pop', .7), (1.5, 'chime', .7), (2.3, 'pop', .7), (2.45, 'chime', .6)], 'check': [(.35, 'pop', .6), (.85, 'pop', .6), (1.35, 'pop', .6)], 'title': [(.1, 'impact', .8)]}
 
