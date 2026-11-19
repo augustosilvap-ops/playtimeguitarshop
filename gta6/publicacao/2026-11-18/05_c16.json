@@ -5,11 +5,13 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-18",
- "status": "programado (pedido do Augusto 18/11: postar de 1 em 1 hora das 18h às 00h)",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/c16.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c16_capa.jpg",
   "share_to_feed": true,
   "caption": "O clássico voltou 🏪🏃\n\nLoja de conveniência, bandana e fuga — direto do gameplay oficial.\n\n#gta6 #gtavi #vicecity #gameplay #games"
- }
+ },
+ "media_id": "18379763254210175",
+ "publicado_em": "2026-11-19T01:01Z"
 }
