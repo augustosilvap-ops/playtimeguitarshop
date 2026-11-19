@@ -1,0 +1,15 @@
+{
+ "hora": "11:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841475082570188",
+ "perfil": "@caosinsano.br",
+ "data": "2026-11-20",
+ "status": "agendado",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/caos/c22.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c22_capa.jpg",
+  "share_to_feed": true,
+  "caption": "Cachorro de jet ski, carinho em gato e até Pé-Grande? 🐶🛥️\n\nSegue o @caosinsano.br pra não perder nada do GTA 6 🌴\n\n#gta6 #gtavi #animais #vicecity #games"
+ }
+}
