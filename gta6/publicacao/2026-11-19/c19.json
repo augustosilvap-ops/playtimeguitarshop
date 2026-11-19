@@ -5,11 +5,13 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-19",
- "status": "agendado",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/c19.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c19_capa.jpg",
   "share_to_feed": true,
   "caption": "O easter egg do GTA 6 é LITERALMENTE um ovo 🥚 Você ia subir a torre?\n\nSegue o @caosinsano.br pra não perder nada do GTA 6 🌴\n\n#gta6 #gtavi #eastereggs #vicecity #games"
- }
+ },
+ "media_id": "17931582579428029",
+ "publicado_em": "2026-11-19T21:01:00Z"
 }
