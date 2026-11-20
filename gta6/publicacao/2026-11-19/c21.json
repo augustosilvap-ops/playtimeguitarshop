@@ -5,11 +5,12 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-20",
- "status": "agendado",
+ "status": "enviado_timeout_conferir",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/c21.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c21_capa.jpg",
   "share_to_feed": true,
   "caption": "Nunca roube um carro com gato no GTA 6 😾 Time gato ou time Jason?\n\nSegue o @caosinsano.br pra não perder nada do GTA 6 🌴\n\n#gta6 #gtavi #gameplay #vicecity #games"
- }
+ },
+ "enviado_em": "2026-11-20T03:01:00Z"
 }
