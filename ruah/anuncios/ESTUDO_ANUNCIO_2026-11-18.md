@@ -45,3 +45,8 @@ Observação: parte dos seguidores pode ser orgânica; o número é uma estimati
 ## Decisão (18/11, Augusto)
 - Opção B: tudo em seguidores. Orçamento da campanha "RUAH - Seguidores Instagram" alterado de R$ 20 → **R$ 25/dia** (confirmado pelo Windsor, 18/11 ~12h30).
 - Conferência agendada para sáb 21/11 10h17: se custo por seguidor ≤ R$ 1,00 → propor R$ 30/dia; se > R$ 1,00 → voltar a R$ 20. Nenhuma mudança sem nova confirmação.
+
+## Impulsionamento pelo app do Instagram (20/11, pago por fora dos R$ 140)
+- Reel impulsionado, objetivo visitas ao perfil, R$ 30/dia, contínuo (sem data de término), Advantage+ (IG + FB).
+- Parcial 20/11 18h12: gasto R$ 11,73 · 433 visualizações · alcance 413 · 26 visitas (R$ 0,45) · **19 seguidores (R$ 0,62 cada)** · 73% visita→seguidor · 230 reproduções de 3 s · 20 curtidas, 2 salvamentos, 1 compartilhamento.
+- Comparar com a campanha de seguidores (~R$ 0,74/seguidor) na conferência de sáb 21/11. Atenção: contínuo a R$ 30/dia ≈ R$ 900/mês se não for pausado.
