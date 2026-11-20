@@ -5,11 +5,12 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-20",
- "status": "agendado",
+ "status": "enviado_timeout_conferir",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/c24.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/c24_capa.jpg",
   "share_to_feed": true,
   "caption": "Essa casa do GTA 6 já existia em 2021 😳 A gente viu o jogo antes?\n\nSegue o @caosinsano.br pra não perder nada do GTA 6 🌴\n\n#gta6 #gtavi #teoria #vicecity #games"
- }
+ },
+ "enviado_em": "2026-11-20T23:01:10Z"
 }
