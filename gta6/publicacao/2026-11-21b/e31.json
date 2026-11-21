@@ -5,7 +5,7 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-21b",
- "status": "agendado",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/a1121b_e31.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/a1121b_e31_capa.jpg",
@@ -28,5 +28,7 @@
  },
  "tt": {
   "legenda": "No GTA 6 dá pra empurrar carro e barco 😳 #gta6 #gtavi #dicas #games #fyp"
- }
+ },
+ "media_id": "18112727573266715",
+ "publicado_em": "2026-11-21T19:01:00Z"
 }
