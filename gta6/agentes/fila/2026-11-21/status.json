@@ -1,0 +1,38 @@
+{
+ "e25": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T03:56:56Z",
+   "palavras": 62
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T03:57:05Z",
+   "segundos": 11.6
+  }
+ },
+ "e26": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T03:56:56Z",
+   "palavras": 62
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T03:57:09Z",
+   "segundos": 12.9
+  }
+ },
+ "e27": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T03:56:56Z",
+   "palavras": 58
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T03:57:13Z",
+   "segundos": 14.8
+  }
+ }
+}

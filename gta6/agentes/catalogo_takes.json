@@ -1,0 +1,1928 @@
+{
+"nota": "Gameplay oficial (Rockstar, An Extended Look + trailers). t = segundo do vídeo. EL: thumb N → t=(N-1)*8+4. Clipes de terceiros só em autorizados.json, com crédito.",
+"takes": [
+{
+"src": "EL",
+"t": 20,
+"thumb": "003",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 28,
+"thumb": "004",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 36,
+"thumb": "005",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 44,
+"thumb": "006",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 52,
+"thumb": "007",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 60,
+"thumb": "008",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 68,
+"thumb": "009",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 76,
+"thumb": "010",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 84,
+"thumb": "011",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 92,
+"thumb": "012",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 100,
+"thumb": "013",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 108,
+"thumb": "014",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 116,
+"thumb": "015",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 124,
+"thumb": "016",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 132,
+"thumb": "017",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 140,
+"thumb": "018",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 148,
+"thumb": "019",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 156,
+"thumb": "020",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 164,
+"thumb": "021",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 172,
+"thumb": "022",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 180,
+"thumb": "023",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 188,
+"thumb": "024",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 196,
+"thumb": "025",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 204,
+"thumb": "026",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 212,
+"thumb": "027",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 220,
+"thumb": "028",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 228,
+"thumb": "029",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 236,
+"thumb": "030",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 244,
+"thumb": "031",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 252,
+"thumb": "032",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 260,
+"thumb": "033",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 268,
+"thumb": "034",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 276,
+"thumb": "035",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 284,
+"thumb": "036",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 292,
+"thumb": "037",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 300,
+"thumb": "038",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 308,
+"thumb": "039",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 316,
+"thumb": "040",
+"tags": [
+"interior",
+"gangue",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 372,
+"thumb": "047",
+"tags": [
+"lucia",
+"carro",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 380,
+"thumb": "048",
+"tags": [
+"cidade",
+"dia",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 388,
+"thumb": "049",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 396,
+"thumb": "050",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 404,
+"thumb": "051",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 412,
+"thumb": "052",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 420,
+"thumb": "053",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 428,
+"thumb": "054",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 436,
+"thumb": "055",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 444,
+"thumb": "056",
+"tags": [
+"casa",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 452,
+"thumb": "057",
+"tags": [
+"tv"
+]
+},
+{
+"src": "EL",
+"t": 460,
+"thumb": "058",
+"tags": [
+"tv"
+]
+},
+{
+"src": "EL",
+"t": 468,
+"thumb": "059",
+"tags": [
+"tv"
+]
+},
+{
+"src": "EL",
+"t": 476,
+"thumb": "060",
+"tags": [
+"tv"
+]
+},
+{
+"src": "EL",
+"t": 468,
+"thumb": "059",
+"tags": [
+"animais"
+]
+},
+{
+"src": "EL",
+"t": 492,
+"thumb": "062",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 500,
+"thumb": "063",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 508,
+"thumb": "064",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 516,
+"thumb": "065",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 524,
+"thumb": "066",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 532,
+"thumb": "067",
+"tags": [
+"carro",
+"direcao",
+"conversivel",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 540,
+"thumb": "068",
+"tags": [
+"ponte",
+"cidade"
+]
+},
+{
+"src": "EL",
+"t": 548,
+"thumb": "069",
+"tags": [
+"motel",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 556,
+"thumb": "070",
+"tags": [
+"motel",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 572,
+"thumb": "072",
+"tags": [
+"vista",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 596,
+"thumb": "075",
+"tags": [
+"terraco",
+"bar",
+"dia",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 604,
+"thumb": "076",
+"tags": [
+"terraco",
+"bar",
+"dia",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 612,
+"thumb": "077",
+"tags": [
+"terraco",
+"bar",
+"dia",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 644,
+"thumb": "081",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 652,
+"thumb": "082",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 660,
+"thumb": "083",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 668,
+"thumb": "084",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 676,
+"thumb": "085",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 684,
+"thumb": "086",
+"tags": [
+"terraco",
+"bar",
+"vista",
+"pessoas",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 708,
+"thumb": "089",
+"tags": [
+"loja",
+"assalto",
+"interior"
+]
+},
+{
+"src": "EL",
+"t": 716,
+"thumb": "090",
+"tags": [
+"loja",
+"assalto",
+"interior"
+]
+},
+{
+"src": "EL",
+"t": 724,
+"thumb": "091",
+"tags": [
+"loja",
+"assalto",
+"interior"
+]
+},
+{
+"src": "EL",
+"t": 740,
+"thumb": "093",
+"tags": [
+"vista",
+"cidade",
+"helicoptero"
+]
+},
+{
+"src": "EL",
+"t": 748,
+"thumb": "094",
+"tags": [
+"vista",
+"cidade",
+"helicoptero"
+]
+},
+{
+"src": "EL",
+"t": 756,
+"thumb": "095",
+"tags": [
+"carro",
+"direcao",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 764,
+"thumb": "096",
+"tags": [
+"carro",
+"direcao",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 772,
+"thumb": "097",
+"tags": [
+"carro",
+"direcao",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 780,
+"thumb": "098",
+"tags": [
+"carro",
+"direcao",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 788,
+"thumb": "099",
+"tags": [
+"carro",
+"direcao",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 796,
+"thumb": "100",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 804,
+"thumb": "101",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 812,
+"thumb": "102",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 820,
+"thumb": "103",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 828,
+"thumb": "104",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 836,
+"thumb": "105",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 844,
+"thumb": "106",
+"tags": [
+"acao",
+"tiroteio",
+"policia",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 852,
+"thumb": "107",
+"tags": [
+"acao",
+"tiroteio",
+"policia",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 860,
+"thumb": "108",
+"tags": [
+"acao",
+"tiroteio",
+"policia",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 868,
+"thumb": "109",
+"tags": [
+"acao",
+"tiroteio",
+"policia",
+"rua"
+]
+},
+{
+"src": "EL",
+"t": 884,
+"thumb": "111",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 892,
+"thumb": "112",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 900,
+"thumb": "113",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 908,
+"thumb": "114",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 916,
+"thumb": "115",
+"tags": [
+"carro",
+"personagem",
+"interior_carro"
+]
+},
+{
+"src": "EL",
+"t": 924,
+"thumb": "116",
+"tags": [
+"acao",
+"perseguicao",
+"carro",
+"policia"
+]
+},
+{
+"src": "EL",
+"t": 932,
+"thumb": "117",
+"tags": [
+"acao",
+"perseguicao",
+"carro",
+"policia"
+]
+},
+{
+"src": "EL",
+"t": 940,
+"thumb": "118",
+"tags": [
+"acao",
+"perseguicao",
+"carro",
+"policia"
+]
+},
+{
+"src": "EL",
+"t": 948,
+"thumb": "119",
+"tags": [
+"acao",
+"perseguicao",
+"carro",
+"policia"
+]
+},
+{
+"src": "EL",
+"t": 964,
+"thumb": "121",
+"tags": [
+"acao",
+"explosao"
+]
+},
+{
+"src": "EL",
+"t": 980,
+"thumb": "123",
+"tags": [
+"carro",
+"direcao",
+"cidade"
+]
+},
+{
+"src": "EL",
+"t": 988,
+"thumb": "124",
+"tags": [
+"carro",
+"direcao",
+"cidade"
+]
+},
+{
+"src": "EL",
+"t": 996,
+"thumb": "125",
+"tags": [
+"cidade",
+"aereo",
+"mapa"
+]
+},
+{
+"src": "EL",
+"t": 1004,
+"thumb": "126",
+"tags": [
+"rua",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 1012,
+"thumb": "127",
+"tags": [
+"rua",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 1020,
+"thumb": "128",
+"tags": [
+"rua",
+"pessoas"
+]
+},
+{
+"src": "EL",
+"t": 1028,
+"thumb": "129",
+"tags": [
+"rua",
+"patinete",
+"grafite"
+]
+},
+{
+"src": "EL",
+"t": 1036,
+"thumb": "130",
+"tags": [
+"casa",
+"palafita",
+"praia"
+]
+},
+{
+"src": "EL",
+"t": 1044,
+"thumb": "131",
+"tags": [
+"praia",
+"mar",
+"salto"
+]
+},
+{
+"src": "EL",
+"t": 1060,
+"thumb": "133",
+"tags": [
+"boate",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1068,
+"thumb": "134",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1076,
+"thumb": "135",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1084,
+"thumb": "136",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1092,
+"thumb": "137",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1100,
+"thumb": "138",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1108,
+"thumb": "139",
+"tags": [
+"rua",
+"pessoas",
+"cidade",
+"dia"
+]
+},
+{
+"src": "EL",
+"t": 1116,
+"thumb": "140",
+"tags": [
+"moto",
+"motocross",
+"natureza",
+"trilha"
+]
+},
+{
+"src": "EL",
+"t": 1124,
+"thumb": "141",
+"tags": [
+"carro",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1132,
+"thumb": "142",
+"tags": [
+"aereo",
+"mapa",
+"cidade"
+]
+},
+{
+"src": "EL",
+"t": 1140,
+"thumb": "143",
+"tags": [
+"aereo",
+"mapa",
+"cidade"
+]
+},
+{
+"src": "EL",
+"t": 1148,
+"thumb": "144",
+"tags": [
+"aeroporto",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 1156,
+"thumb": "145",
+"tags": [
+"aeroporto",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 1164,
+"thumb": "146",
+"tags": [
+"aeroporto",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 1172,
+"thumb": "147",
+"tags": [
+"aeroporto",
+"interior",
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 1180,
+"thumb": "148",
+"tags": [
+"aeroporto",
+"aviao",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1188,
+"thumb": "149",
+"tags": [
+"aeroporto",
+"aviao",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1196,
+"thumb": "150",
+"tags": [
+"aeroporto",
+"aviao",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1204,
+"thumb": "151",
+"tags": [
+"aeroporto",
+"aviao",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1212,
+"thumb": "152",
+"tags": [
+"aeroporto",
+"aviao",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1220,
+"thumb": "153",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1228,
+"thumb": "154",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1236,
+"thumb": "155",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1244,
+"thumb": "156",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1252,
+"thumb": "157",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1260,
+"thumb": "158",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1268,
+"thumb": "159",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1276,
+"thumb": "160",
+"tags": [
+"boate",
+"festa",
+"noite"
+]
+},
+{
+"src": "EL",
+"t": 1284,
+"thumb": "161",
+"tags": [
+"personagem"
+]
+},
+{
+"src": "EL",
+"t": 1300,
+"thumb": "163",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1308,
+"thumb": "164",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1316,
+"thumb": "165",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1324,
+"thumb": "166",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1332,
+"thumb": "167",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1340,
+"thumb": "168",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1348,
+"thumb": "169",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1356,
+"thumb": "170",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1364,
+"thumb": "171",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1372,
+"thumb": "172",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1380,
+"thumb": "173",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1388,
+"thumb": "174",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1396,
+"thumb": "175",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1404,
+"thumb": "176",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1412,
+"thumb": "177",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1420,
+"thumb": "178",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1428,
+"thumb": "179",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1436,
+"thumb": "180",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1444,
+"thumb": "181",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1452,
+"thumb": "182",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1460,
+"thumb": "183",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1468,
+"thumb": "184",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1476,
+"thumb": "185",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1484,
+"thumb": "186",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1492,
+"thumb": "187",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1500,
+"thumb": "188",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1508,
+"thumb": "189",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1516,
+"thumb": "190",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1524,
+"thumb": "191",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1532,
+"thumb": "192",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1540,
+"thumb": "193",
+"tags": [
+"assalto",
+"acao",
+"interior",
+"noite",
+"missao"
+]
+},
+{
+"src": "EL",
+"t": 1548,
+"thumb": "194",
+"tags": [
+"cidade",
+"noite",
+"aereo"
+]
+},
+{
+"src": "EL",
+"t": 1572,
+"thumb": "197",
+"tags": [
+"por_do_sol",
+"cidade",
+"final"
+]
+},
+{
+"src": "L",
+"t": 66,
+"tags": [
+"final",
+"trailer"
+]
+},
+{
+"src": "T2",
+"t": 153,
+"tags": [
+"final",
+"trailer"
+]
+},
+{
+"src": "T2",
+"t": 6,
+"tags": [
+"aereo",
+"mapa",
+"trailer",
+"praia"
+]
+},
+{
+"src": "T1",
+"t": 3,
+"tags": [
+"trailer",
+"abertura",
+"praia"
+]
+},
+{
+"src": "T1",
+"t": 21,
+"tags": [
+"trailer",
+"cidade"
+]
+},
+{
+"src": "L",
+"t": 69,
+"tags": [
+"trailer",
+"acao"
+]
+},
+{
+"src": "T2",
+"t": 99,
+"tags": [
+"trailer",
+"personagem"
+]
+},
+{
+"src": "L",
+"t": 39,
+"tags": [
+"trailer",
+"personagem"
+]
+}
+]
+}

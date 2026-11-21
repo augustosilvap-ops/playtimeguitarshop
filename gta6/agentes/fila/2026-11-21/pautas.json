@@ -1,0 +1,43 @@
+[
+ {"id": "e25", "slug": "dinheiro", "tema": "Não ande com dinheiro", "confirmado": "jogadores", "horario": "18:00",
+  "evidencia": [{"fonte": "https://nerdschalk.com/gta-6-beginner-tips-first-hours-keys", "nota": "jogadores no Reddit relatam perder o dinheiro carregado ao ser preso/morrer; guardar no esconderijo da casa; arma do chão só fica sua no carro"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "NÃO ANDA<br><span class=\"yl\">COM DINHEIRO</span><br><span class=\"cy\">NO GTA 6</span>", "size": 160, "top": 300}, "fala": "Nunca ande com muito dinheiro no GTA 6.", "take": {"tag": "rua"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "PRESO OU<br><span class=\"cy\">MORREU?</span>", "sub": "Segundo jogadores, você perde o dinheiro que estava carregando.", "sky": 1}, "fala": "Segundo jogadores, se você for preso ou morrer, perde o dinheiro que estava carregando.", "take": {"tag": "policia"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "GUARDA<br><span class=\"yl\">EM CASA</span>", "sub": "Leva só o que vai usar. O resto vai pro esconderijo da casa."}, "fala": "Então leve só o que vai usar, e guarde o resto no esconderijo da sua casa.", "take": {"tag": "casa"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "ARMA<br><span class=\"cy\">DO CHÃO</span>", "sub": "Arma pegada do chão só fica sua se você guardar no seu carro.", "sky": 1}, "fala": "E arma que você pega do chão só fica sua se guardar no seu carro.", "take": {"tag": "tiroteio"}},
+   {"tipo": "subs", "fala": "Salva essa dica. Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "DINHEIRO", "bar": "NÃO ANDA COM ELE", "personagem": "Lucia Caminos/Lucia_Caminos_05.jpg"},
+  "titulos": {"yt": "Nunca ande com dinheiro no GTA 6 💸 #shorts", "tt": "Nunca ande com dinheiro no GTA 6 💸 guarda em casa! #gta6 #gtavi #dicas #games #fyp", "ig": "Nunca ande com muito dinheiro no GTA 6 💸 Você já perdeu tudo assim?"},
+  "descricao_yt": "Preso ou morto = dinheiro perdido, segundo jogadores. Guarda no esconderijo da casa.",
+  "tags": ["gta6", "gtavi", "dicas", "vicecity", "games", "shorts"]},
+
+ {"id": "e26", "slug": "dexter", "tema": "O apartamento do Dexter", "confirmado": "jogadores", "horario": "20:00",
+  "evidencia": [{"fonte": "https://www.gamingbible.com/news/gta-6-easter-eggs-778903-20261120", "nota": "prédio muito parecido com o apartamento de Dexter Morgan; telhado com objetos que lembram o kit do personagem"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "O APÊ DO<br><span class=\"yl\">DEXTER</span><br><span class=\"cy\">NO GTA 6?</span>", "size": 170, "top": 300}, "fala": "Acharam o apartamento do Dexter no GTA 6?", "take": {"tag": "vista"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "PRÉDIO<br><span class=\"cy\">IGUALZINHO</span>", "sub": "Segundo jogadores, um prédio de Vice City lembra muito o da série.", "sky": 1}, "fala": "Segundo jogadores, um prédio em Vice City é muito parecido com o apartamento do Dexter, da série.", "take": {"tag": "cidade"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "OLHA O<br><span class=\"yl\">TELHADO</span>", "sub": "Lá em cima tem objetos que lembram o kit do personagem."}, "fala": "E no telhado tem objetos que lembram o kit do personagem.", "take": {"tag": "terraco"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "FAZ<br><span class=\"cy\">SENTIDO</span>", "sub": "A série se passa em Miami. E Vice City é a Miami do GTA.", "sky": 1}, "fala": "E faz sentido: a série se passa em Miami, e Vice City é a Miami do GTA.", "take": {"tag": "por_do_sol"}},
+   {"tipo": "subs", "fala": "Você já achou? Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "DEXTER?", "bar": "O APÊ ESTÁ NO JOGO", "personagem": "Jason Duval/Jason_Duval_07.jpg"},
+  "titulos": {"yt": "O apartamento do DEXTER está no GTA 6? 😳 #shorts", "tt": "O apartamento do Dexter tá no GTA 6? 😳 #gta6 #gtavi #eastereggs #dexter #fyp", "ig": "O apartamento do Dexter tá no GTA 6? 😳 Você já foi lá?"},
+  "descricao_yt": "Segundo jogadores, um prédio de Vice City lembra o apê da série — e o telhado tem uma surpresa.",
+  "tags": ["gta6", "gtavi", "eastereggs", "dexter", "vicecity", "shorts"]},
+
+ {"id": "e27", "slug": "config", "tema": "Configurações para mudar agora", "confirmado": "jogadores", "horario": "22:00",
+  "evidencia": [{"fonte": "https://www.techradar.com/live/news/gta-6-launch-day-november-19", "nota": "jogadores recomendam desligar motion blur e ajustar zona morta"}, {"fonte": "https://www.invenglobal.com/articles/28810/13-tips-i-wish-i-knew-before-starting-gta-6", "nota": "minimapa fixo na tela nas configurações"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "MUDA ISSO<br><span class=\"yl\">AGORA</span><br><span class=\"cy\">NO GTA 6</span>", "size": 170, "top": 300}, "fala": "Segundo jogadores, essas configurações deixam o GTA 6 melhor.", "take": {"tag": "direcao"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "DESFOQUE<br><span class=\"cy\">DESLIGADO</span>", "sub": "Desliga o desfoque de movimento. Em TV OLED, tem quem prefira ligado.", "sky": 1}, "fala": "Um: desliga o desfoque de movimento. Só em TV OLED tem gente que prefere deixar ligado.", "take": {"tag": "conversivel"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "ZONA<br><span class=\"yl\">MORTA</span>", "sub": "Ajustar a zona morta do controle deixa carro e mira mais rápidos."}, "fala": "Dois: ajusta a zona morta do controle. Carro e mira respondem mais rápido.", "take": {"tag": "perseguicao"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "MINIMAPA<br><span class=\"cy\">FIXO</span>", "sub": "Nas configurações de interface dá pra travar o minimapa na tela.", "sky": 1}, "fala": "Três: trava o minimapa na tela, nas configurações de interface.", "take": {"tag": "aereo"}},
+   {"tipo": "subs", "fala": "Salva pra configurar depois. Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "MUDA ISSO", "bar": "3 AJUSTES NO GTA 6", "personagem": "Lucia Caminos/Lucia_Caminos_07.jpg"},
+  "titulos": {"yt": "Muda essas 3 configurações no GTA 6 AGORA ⚙️ #shorts", "tt": "3 configurações pra mudar no GTA 6 agora ⚙️ salva! #gta6 #gtavi #dicas #games #fyp", "ig": "3 configurações pra mudar no GTA 6 agora ⚙️ Salva pra não esquecer!"},
+  "descricao_yt": "Desfoque de movimento, zona morta do controle e minimapa fixo.",
+  "tags": ["gta6", "gtavi", "dicas", "configuracoes", "games", "shorts"]}
+]

@@ -44,8 +44,8 @@ BG.update({
  'd_dicas': [('EL', 516, .5), ('EL', 744, .5), ('EL', 528, .5), ('EL', 1132, .5), ('EL', 756, .5)],
  'd_casa': [('EL', 1132, .5), ('img', P('Vice City', 1), .5), ('T1', 21, .5), ('T1', 3, .5), ('L', 66, .5)],
 })
-def main():
-    nome, out = sys.argv[1], os.path.abspath(sys.argv[2]); trilha = os.path.join(HERE, '../trilhas/mk_173.mp3')
+def main(trilha=None):
+    nome, out = sys.argv[1], os.path.abspath(sys.argv[2]); trilha = trilha or os.path.join(HERE, '../trilhas/mk_173.mp3')
     beats, caps, voz, fx, t = [], [], [], [], 0.0
     for i, (b, fala) in enumerate(G.REELS[nome]):
         st = t; vt = t + (.2 if i == 0 else .08)

@@ -1,0 +1,7 @@
+{
+ "nota": "Clipes de criadores que AUTORIZAM uso. Só entra aqui o que tiver regra pública ou permissão por escrito. Arquivo em <brutos>/autorizados/. Crédito vai na tela e na legenda.",
+ "criadores": {
+  "gaules": {"credito": "twitch.tv/gaules", "regra": "Publicação só 24h após o fim da VOD; com crédito; sem edição fora de contexto (aviso do canal, 11/2026)."}
+ },
+ "clipes": []
+}
