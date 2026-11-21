@@ -50,3 +50,9 @@ Observação: parte dos seguidores pode ser orgânica; o número é uma estimati
 - Reel impulsionado, objetivo visitas ao perfil, R$ 30/dia, contínuo (sem data de término), Advantage+ (IG + FB).
 - Parcial 20/11 18h12: gasto R$ 11,73 · 433 visualizações · alcance 413 · 26 visitas (R$ 0,45) · **19 seguidores (R$ 0,62 cada)** · 73% visita→seguidor · 230 reproduções de 3 s · 20 curtidas, 2 salvamentos, 1 compartilhamento.
 - Comparar com a campanha de seguidores (~R$ 0,74/seguidor) na conferência de sáb 21/11. Atenção: contínuo a R$ 30/dia ≈ R$ 900/mês se não for pausado.
+
+## Conferência sáb 21/11 10h17
+- Campanha seguidores 18–21/11: gasto R$ 80,19 (18: 24,73 · 19: 26,63 · 20: 21,68 · 21 parcial: 7,15); CPM R$ 11,7–15,0; frequência ~1,05–1,10.
+- Novos seguidores (Instagram, total da conta): 18/11 = 58 · 19/11 = 46 · 20/11 = 0 (dado ainda não atualizado) · total hoje 399.
+- Custo por seguidor 18–19/11: R$ 51,36 ÷ 104 = **R$ 0,49** (inclui orgânico; abaixo de R$ 1,00 → regra manda propor R$ 30/dia).
+- Saldo estimado dos R$ 140: ~R$ 60 (dura ~2,4 dias a R$ 25). Impulsionamento (R$ 30/dia) é pago à parte.
