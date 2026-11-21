@@ -31,7 +31,7 @@ def main(data, push=True):
     log('enviador', f"pacote {out}/CaosInsano_{data}.zip")
     if push:
         g = lambda *a: subprocess.run(['git', '-C', REPO, *a], check=True)
-        g('add', CFG['pasta_site'], f'gta6/publicacao/{data}', f'gta6/entregas/auto/{data}', f'gta6/agentes/fila/{data}', 'gta6/agentes/uso_takes.json')
+        g('add', CFG['pasta_site'], f'gta6/publicacao/{data}', f'gta6/entregas/auto/{data}', f'gta6/agentes/fila/{data}', 'gta6/agentes/uso_takes.json', 'gta6/src/capas_v3')
         g('commit', '-q', '-m', f"Caos Insano: pipeline {data} ({len(agenda)} vídeos)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01KxZ3QMQc7vQukPgiLarXU4")
         br = subprocess.run(['git', '-C', REPO, 'branch', '--show-current'], capture_output=True, text=True).stdout.strip()
         g('push', '-q', 'origin', br); g('push', '-q', 'origin', 'HEAD:main')

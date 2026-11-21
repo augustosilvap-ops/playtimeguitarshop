@@ -29,7 +29,10 @@ def render(data, p, i):
     out = os.path.join(saida(data), f"{p['id']}.mp4"); trilha = CFG['trilhas'][i % len(CFG['trilhas'])]
     sys.argv = ['gen_takes.py', p['id'], out]; cwd = os.getcwd(); os.chdir(SRC)
     try: GT.main(trilha=os.path.join(GTA, 'trilhas', trilha))
-    finally: os.chdir(cwd)
+    finally:
+        os.chdir(cwd)
+        try: os.remove(os.path.join(SRC, f"takes_{p['id']}.html"))
+        except OSError: pass
     if cred:  # crédito do criador na tela, o vídeo inteiro
         txt = 'Gameplay: ' + ' · '.join(sorted(cred)); tmp = out + '.tmp.mp4'
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', out, '-vf', f"drawtext=fontfile={GTA}/fonts/ARN.ttf:text='{txt}':x=(w-tw)/2:y=170:fontsize=38:fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=14",
