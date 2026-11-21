@@ -64,3 +64,8 @@ As regras da seção 1 ("Regras que não podem ser quebradas") valem sempre. Em 
 
 ## Skills de vídeo instaladas (14/11/2026)
 - `remotion:*` (vídeos em código), `video-shotcraft` (vídeo de produto cinematográfico), `watch-video` (analisar vídeos: quadros + transcrição). Usar nos Reels do @augustosilva.p, anúncios da RUAH e revisão do EP01 do Pequeninos.
+
+## Caos Insano BR (pasta `gta6/`)
+- Sistema de 6 agentes em `gta6/agentes/` (README): 1 tendências (Claude, `a1_tendencias.md`) → `fila/<data>/pautas.json` → `python3 pipeline.py <data>` (roteiro, voz Lucas, editor com `catalogo_takes.json`, capa v3, enviador). Saída `gta6/entregas/auto/<data>/` + zip; pacotes IG em `gta6/publicacao/<data>/`.
+- Instagram @caosinsano.br (17841475082570188) publicado pelo Claude via Windsor com send_later. YouTube/TikTok: GitHub Actions `.github/workflows/caos_publicar.yml` + `gta6/publicar/yt_tt.py` (secrets YT_*/TT_* no GitHub; estado na branch `caos-status`; YouTube privado e TikTok rascunho até auditoria). Passo a passo: `gta6/publicar/COMO_CONFIGURAR.md`.
+- Gameplay de terceiros só com autorização registrada em `gta6/agentes/autorizados.json` (crédito na tela). YouTube bloqueia download daqui (pede login) — clipes autorizados entram pelo Drive.
