@@ -1,0 +1,57 @@
+[
+ {"id": "e28", "slug": "primeira_pessoa", "tema": "Truque da primeira pessoa", "confirmado": "jogadores", "horario": "08:00",
+  "evidencia": [{"fonte": "https://www.playstationlifestyle.net/2026/11/20/rockstar-games-gta-6-first-person-mode-glitch", "nota": "trocar o botão do touchpad/view de Mapa para Câmera e sair do veículo; para voltar, recarregar o save; pode ser corrigido"}, {"fonte": "https://www.thebiglead.com/gta-6-first-person-mode-glitch/", "nota": "mesmo truque"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "GTA 6 EM<br><span class=\"yl\">PRIMEIRA</span><br><span class=\"cy\">PESSOA</span>", "size": 170, "top": 300}, "fala": "Dá pra jogar o GTA 6 em primeira pessoa.", "take": {"tag": "interior_carro"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "MAPA →<br><span class=\"cy\">CÂMERA</span>", "sub": "Nas configurações do controle, troca o botão do mapa para câmera.", "sky": 1}, "fala": "Segundo jogadores, é só ir nas configurações do controle e trocar o botão do mapa para câmera.", "take": {"tag": "direcao"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "SAI<br><span class=\"yl\">DO CARRO</span>", "sub": "Entra num carro, ativa a câmera e desce. A visão continua em primeira pessoa."}, "fala": "Depois entra num carro, ativa a câmera e desce. A visão continua em primeira pessoa.", "take": {"tag": "rua"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "PRA<br><span class=\"cy\">VOLTAR</span>", "sub": "Recarrega o save. E pode ser que uma atualização corrija o truque.", "sky": 1}, "fala": "Pra voltar ao normal, recarrega o save. E corre, porque uma atualização pode corrigir.", "take": {"tag": "cidade"}},
+   {"tipo": "subs", "fala": "Vai testar? Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "1ª PESSOA", "bar": "O TRUQUE ESCONDIDO", "personagem": "Jason Duval/Jason_Duval_05.jpg"},
+  "titulos": {"yt": "Como jogar GTA 6 em PRIMEIRA PESSOA 👀 #shorts", "tt": "Truque pra jogar GTA 6 em primeira pessoa 👀 #gta6 #gtavi #dicas #games #fyp", "ig": "Dá pra jogar o GTA 6 em primeira pessoa 👀 Vai testar antes de corrigirem?"},
+  "descricao_yt": "Segundo jogadores: troca o botão do mapa para câmera, entra no carro e desce. Recarrega o save pra voltar.",
+  "tags": ["gta6", "gtavi", "dicas", "primeirapessoa", "games", "shorts"]},
+
+ {"id": "e29", "slug": "bugs", "tema": "Bugs mais bizarros", "confirmado": "jogadores", "horario": "10:00",
+  "evidencia": [{"fonte": "https://futurism.com/future-society/gta-6-bugs", "nota": "personagem caindo pelo chão da prisão; puxado para dentro da parede de um escritório; navio de lado numa ponte"}, {"fonte": "https://www.unilad.com/technology/gta-6-glitch-reports-767120-20261119", "nota": "relatos de bugs no lançamento"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "OS BUGS<br><span class=\"yl\">MAIS BIZARROS</span><br><span class=\"cy\">DO GTA 6</span>", "size": 150, "top": 300}, "fala": "Os bugs mais bizarros do GTA 6 até agora.", "take": {"tag": "acao"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "CAIU<br><span class=\"cy\">NO VAZIO</span>", "sub": "Segundo jogadores, um personagem atravessou o chão da prisão.", "sky": 1}, "fala": "Segundo jogadores, um personagem atravessou o chão da prisão e caiu num vazio escuro.", "take": {"tag": "interior"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "ENGOLIDO<br><span class=\"yl\">PELA PAREDE</span>", "sub": "No meio de uma briga, foi puxado pra dentro da parede de um escritório."}, "fala": "Outro foi engolido pela parede de um escritório, no meio de uma briga.", "take": {"tag": "assalto"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "NAVIO<br><span class=\"cy\">DE LADO</span>", "sub": "E teve navio girando de lado em cima de uma ponte.", "sky": 1}, "fala": "E teve até navio girando de lado em cima de uma ponte.", "take": {"tag": "ponte"}},
+   {"tipo": "subs", "fala": "Já pegou algum? Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "BUGADO?", "bar": "OS MAIS BIZARROS", "personagem": "Lucia Caminos/Lucia_Caminos_04.jpg"},
+  "titulos": {"yt": "Os bugs MAIS BIZARROS do GTA 6 😂 #shorts", "tt": "Os bugs mais bizarros do GTA 6 até agora 😂 #gta6 #gtavi #bugs #games #fyp", "ig": "Os bugs mais bizarros do GTA 6 até agora 😂 Já pegou algum?"},
+  "descricao_yt": "Chão da prisão, parede do escritório e navio de lado na ponte.",
+  "tags": ["gta6", "gtavi", "bugs", "glitch", "games", "shorts"]},
+
+ {"id": "e30", "slug": "rideme", "tema": "Sem viagem rápida: app RideMe", "confirmado": "jogadores", "horario": "12:00",
+  "evidencia": [{"fonte": "https://www.invenglobal.com/articles/28810/13-tips-i-wish-i-knew-before-starting-gta-6", "nota": "não existe botão de viagem rápida; chamar corrida pelo app RideMe"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "CADÊ A<br><span class=\"yl\">VIAGEM</span><br><span class=\"cy\">RÁPIDA?</span>", "size": 170, "top": 300}, "fala": "Procurando a viagem rápida no GTA 6?", "take": {"tag": "aereo"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "NÃO TEM<br><span class=\"cy\">BOTÃO</span>", "sub": "Não existe um botão de viagem rápida no mapa.", "sky": 1}, "fala": "Segundo jogadores, não existe um botão de viagem rápida no mapa.", "take": {"tag": "mapa"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "ABRE O<br><span class=\"yl\">CELULAR</span>", "sub": "O jeito é chamar uma corrida pelo app RideMe."}, "fala": "O jeito é abrir o celular e chamar uma corrida pelo aplicativo RideMe.", "take": {"tag": "personagem"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "CHEGA<br><span class=\"cy\">SEM DIRIGIR</span>", "sub": "Você vai até o destino sem precisar atravessar Leonida dirigindo.", "sky": 1}, "fala": "Aí você chega no destino sem precisar atravessar Leonida dirigindo.", "take": {"tag": "carro"}},
+   {"tipo": "subs", "fala": "Salva essa dica. Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "SEM ATALHO?", "bar": "O APP QUE SALVA", "personagem": "Jason Duval/Jason_Duval_02.jpg"},
+  "titulos": {"yt": "Não tem viagem rápida no GTA 6? Faz ISSO 📱 #shorts", "tt": "Não tem viagem rápida no GTA 6? Usa o RideMe 📱 #gta6 #gtavi #dicas #games #fyp", "ig": "Não tem viagem rápida no GTA 6? Usa o app RideMe 📱 Salva essa!"},
+  "descricao_yt": "Segundo jogadores, não há botão de viagem rápida — chame uma corrida pelo app RideMe no celular.",
+  "tags": ["gta6", "gtavi", "dicas", "vicecity", "games", "shorts"]},
+
+ {"id": "e31", "slug": "empurrar", "tema": "Dá pra empurrar barco e carro", "confirmado": "jogadores", "horario": "16:00",
+  "evidencia": [{"fonte": "https://kotaku.com/two-cool-hidden-features-gta-6-doesnt-explain-flipping-and-sitting-2000757835", "nota": "empurrar carro sem gasolina pela rua; empurrar barco e jet ski da areia para a água"}],
+  "cenas": [
+   {"tipo": "title", "params": {"html": "DÁ PRA<br><span class=\"yl\">EMPURRAR</span><br><span class=\"cy\">TUDO</span>", "size": 180, "top": 300}, "fala": "No GTA 6 dá pra empurrar carro e barco.", "take": {"tag": "praia"}},
+   {"tipo": "rank", "params": {"n": 1, "html": "ACABOU A<br><span class=\"cy\">GASOLINA?</span>", "sub": "Segundo jogadores, dá pra empurrar o carro pela rua.", "sky": 1}, "fala": "Segundo jogadores, se a gasolina acabar, você empurra o carro pela rua.", "take": {"tag": "rua"}},
+   {"tipo": "rank", "params": {"n": 2, "html": "BARCO NA<br><span class=\"yl\">AREIA?</span>", "sub": "Barco e jet ski encalhados dá pra empurrar de volta pra água."}, "fala": "Barco ou jet ski encalhado na areia? Empurra de volta pra água.", "take": {"tag": "mar"}},
+   {"tipo": "rank", "params": {"n": 3, "html": "O JOGO<br><span class=\"cy\">NÃO AVISA</span>", "sub": "É o mesmo comando de desvirar o carro: chega perto e segura o botão de ação.", "sky": 1}, "fala": "O jogo não avisa: é o mesmo comando de desvirar o carro. Chega perto e segura a ação.", "take": {"tag": "carro"}},
+   {"tipo": "subs", "fala": "Sabia dessa? Se inscreve e segue no TikTok.", "take": {"tag": "final"}}
+  ],
+  "capa": {"top": "EMPURRA!", "bar": "O JOGO NÃO AVISA", "personagem": "Jason Duval/Jason_Duval_08.jpg"},
+  "titulos": {"yt": "No GTA 6 dá pra EMPURRAR carro e barco 😳 #shorts", "tt": "No GTA 6 dá pra empurrar carro e barco 😳 #gta6 #gtavi #dicas #games #fyp", "ig": "No GTA 6 dá pra empurrar carro e barco 😳 O jogo não avisa!"},
+  "descricao_yt": "Carro sem gasolina e barco encalhado: chega perto e segura o botão de ação.",
+  "tags": ["gta6", "gtavi", "dicas", "vicecity", "games", "shorts"]}
+]

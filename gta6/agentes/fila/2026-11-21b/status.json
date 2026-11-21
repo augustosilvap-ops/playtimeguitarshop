@@ -1,0 +1,230 @@
+{
+ "e28": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T04:12:52Z",
+   "palavras": 63
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T04:13:01Z",
+   "segundos": 13.4
+  },
+  "editor": {
+   "ok": true,
+   "em": "2026-11-21T04:16:21Z",
+   "video": "gta6/entregas/auto/2026-11-21b/e28.mp4",
+   "segundos": 14.6,
+   "takes": [
+    [
+     "EL",
+     796,
+     0.5
+    ],
+    [
+     "EL",
+     516,
+     0.5
+    ],
+    [
+     "EL",
+     548,
+     0.5
+    ],
+    [
+     "EL",
+     524,
+     0.5
+    ],
+    [
+     "L",
+     66,
+     0.5
+    ]
+   ],
+   "creditos": []
+  },
+  "miniatura": {
+   "ok": true,
+   "em": "2026-11-21T04:25:28Z",
+   "capa": "gta6/entregas/auto/2026-11-21b/capa_e28.jpg"
+  },
+  "enviador": {
+   "ok": true,
+   "em": "2026-11-21T04:26:50Z",
+   "ig": "08:00",
+   "pacote": "gta6/publicacao/2026-11-21b/e28.json"
+  }
+ },
+ "e29": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T04:12:52Z",
+   "palavras": 57
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T04:13:03Z",
+   "segundos": 11.5
+  },
+  "editor": {
+   "ok": true,
+   "em": "2026-11-21T04:19:19Z",
+   "video": "gta6/entregas/auto/2026-11-21b/e29.mp4",
+   "segundos": 12.8,
+   "takes": [
+    [
+     "EL",
+     860,
+     0.5
+    ],
+    [
+     "EL",
+     20,
+     0.5
+    ],
+    [
+     "EL",
+     708,
+     0.5
+    ],
+    [
+     "EL",
+     540,
+     0.5
+    ],
+    [
+     "T2",
+     153,
+     0.5
+    ]
+   ],
+   "creditos": []
+  },
+  "miniatura": {
+   "ok": true,
+   "em": "2026-11-21T04:25:55Z",
+   "capa": "gta6/entregas/auto/2026-11-21b/capa_e29.jpg"
+  },
+  "enviador": {
+   "ok": true,
+   "em": "2026-11-21T04:26:50Z",
+   "ig": "10:00",
+   "pacote": "gta6/publicacao/2026-11-21b/e29.json"
+  }
+ },
+ "e30": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T04:12:52Z",
+   "palavras": 50
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T04:13:06Z",
+   "segundos": 11.7
+  },
+  "editor": {
+   "ok": true,
+   "em": "2026-11-21T04:22:05Z",
+   "video": "gta6/entregas/auto/2026-11-21b/e30.mp4",
+   "segundos": 13.0,
+   "takes": [
+    [
+     "EL",
+     1132,
+     0.5
+    ],
+    [
+     "EL",
+     1140,
+     0.5
+    ],
+    [
+     "EL",
+     372,
+     0.5
+    ],
+    [
+     "EL",
+     532,
+     0.5
+    ],
+    [
+     "EL",
+     1572,
+     0.5
+    ]
+   ],
+   "creditos": []
+  },
+  "miniatura": {
+   "ok": true,
+   "em": "2026-11-21T04:26:23Z",
+   "capa": "gta6/entregas/auto/2026-11-21b/capa_e30.jpg"
+  },
+  "enviador": {
+   "ok": true,
+   "em": "2026-11-21T04:26:50Z",
+   "ig": "12:00",
+   "pacote": "gta6/publicacao/2026-11-21b/e30.json"
+  }
+ },
+ "e31": {
+  "roteiro": {
+   "ok": true,
+   "em": "2026-11-21T04:12:52Z",
+   "palavras": 59
+  },
+  "voz": {
+   "ok": true,
+   "em": "2026-11-21T04:13:09Z",
+   "segundos": 12.1
+  },
+  "editor": {
+   "ok": true,
+   "em": "2026-11-21T04:25:00Z",
+   "video": "gta6/entregas/auto/2026-11-21b/e31.mp4",
+   "segundos": 13.3,
+   "takes": [
+    [
+     "EL",
+     1036,
+     0.5
+    ],
+    [
+     "EL",
+     556,
+     0.5
+    ],
+    [
+     "EL",
+     1044,
+     0.5
+    ],
+    [
+     "EL",
+     756,
+     0.5
+    ],
+    [
+     "L",
+     66,
+     0.5
+    ]
+   ],
+   "creditos": []
+  },
+  "miniatura": {
+   "ok": true,
+   "em": "2026-11-21T04:26:50Z",
+   "capa": "gta6/entregas/auto/2026-11-21b/capa_e31.jpg"
+  },
+  "enviador": {
+   "ok": true,
+   "em": "2026-11-21T04:26:50Z",
+   "ig": "16:00",
+   "pacote": "gta6/publicacao/2026-11-21b/e31.json"
+  }
+ }
+}
