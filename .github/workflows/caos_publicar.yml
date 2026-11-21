@@ -1,0 +1,41 @@
+# Caos Insano BR · publica Shorts no YouTube e rascunhos no TikTok no horário da fila (gta6/publicacao).
+# Chaves em Settings → Secrets and variables → Actions. Estado em branch separada "caos-status" (não mexe na main).
+name: Caos Insano · YouTube e TikTok
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+concurrency: caos-publicar
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            gta6/publicacao
+            gta6/publicar
+            nexus-site/public/ig/caos
+      - name: Estado anterior
+        run: |
+          git fetch origin caos-status --depth 1 && git show origin/caos-status:status.json > /tmp/status.json || echo '{}' > /tmp/status.json
+      - name: Publicar o que chegou a hora
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACIDADE: ${{ vars.YT_PRIVACIDADE || 'private' }}
+          TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
+          TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          TT_REFRESH_TOKEN: ${{ secrets.TT_REFRESH_TOKEN }}
+        run: python3 gta6/publicar/yt_tt.py /tmp/status.json
+      - name: Salvar estado
+        run: |
+          cd /tmp && rm -rf st && mkdir st && cd st && git init -q && cp /tmp/status.json .
+          git config user.name "caos-bot" && git config user.email "caos-bot@users.noreply.github.com"
+          git add status.json && git commit -qm "status $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:caos-status

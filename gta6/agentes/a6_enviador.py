@@ -5,6 +5,13 @@
 Uso: python3 a6_enviador.py <data> [--sem-push]"""
 import sys, shutil, subprocess, zipfile
 from nucleo import *
+def campos_yt_tt(data, hora, p, arquivo):
+    """Campos lidos pelo publicador do GitHub Actions (gta6/publicar/yt_tt.py) para YouTube e TikTok."""
+    dia = re.match(r'\d{4}-\d{2}-\d{2}', data).group(0)
+    tags = [t.lstrip('#') for t in p['tags']]
+    return {'publicar_em': f'{dia}T{hora}:00-03:00', 'arquivo': arquivo,
+            'yt': {'titulo': p['titulos']['yt'], 'descricao': (p.get('descricao_yt', '') + '\n\n' + ' '.join('#' + t for t in tags)).strip(), 'tags': tags},
+            'tt': {'legenda': p['titulos']['tt']}}
 def main(data, push=True):
     P = pautas(data); st = status(data); H = CFG['instagram']['horarios']; site = os.path.join(REPO, CFG['pasta_site']); os.makedirs(site, exist_ok=True)
     pub = os.path.join(GTA, 'publicacao', data); os.makedirs(pub, exist_ok=True); md = [f"# Caos Insano BR · pacote de upload {data}\n",
@@ -18,6 +25,7 @@ def main(data, push=True):
         leg = p['titulos']['ig'] + ('\n\n' + ' · '.join('Gameplay: ' + c for c in cred) if cred else '') + '\n\n' + CFG['rodape_ig'] + '\n\n' + ' '.join('#' + t.lstrip('#') for t in p['tags'][:5])
         j = {"hora": hora, "acao": "create_video_post", "connector": "instagram", "account": CFG['instagram']['account'], "perfil": CFG['instagram']['perfil'], "data": data, "status": "agendado",
              "params": {"video_url": CFG['site_midias'] + nome + '.mp4', "cover_url": CFG['site_midias'] + nome + '_capa.jpg', "share_to_feed": True, "caption": leg}}
+        j.update(campos_yt_tt(data, hora, p, f"{CFG['pasta_site']}/{nome}.mp4"))
         json.dump(j, open(f"{pub}/{p['id']}.json", 'w'), ensure_ascii=False, indent=1); agenda.append((hora, p['id']))
         md += [f"\n## {p['id']} · {p['tema']} — IG {hora}\n", f"- Arquivo: `{os.path.basename(vid)}` · capa `{os.path.basename(cap)}`\n",
                f"- **YouTube** título: {p['titulos']['yt']}\n- **YouTube** descrição: {p.get('descricao_yt', '')} " + ' '.join('#' + t.lstrip('#') for t in p['tags']) + "\n",
