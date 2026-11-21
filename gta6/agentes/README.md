@@ -10,7 +10,7 @@
 | # | Agente | O que faz | Automático? |
 |---|---|---|---|
 | 1 | Caçador de tendências | Pesquisa o que está em alta sobre GTA 6 (imprensa, streamers, Shorts mais vistos), descarta o que já foi feito e escreve as 3 pautas do dia com fontes. Procedimento: `a1_tendencias.md` | Sim (Claude) |
-| 2 | Escritor de roteiro | Gancho ≤ 12 palavras (≈ 3 s) → desenvolvimento → CTA "se inscreve e segue no TikTok". Confere total de palavras (20–35 s), fontes, "segundo jogadores", spoiler, títulos e tags. | Sim |
+| 2 | Escritor de roteiro | Gancho ≤ 12 palavras (≈ 3 s) → desenvolvimento → CTA "se inscreve e segue no TikTok". Confere total de palavras (≈ 12–20 s), fontes, "segundo jogadores", spoiler, títulos e tags. | Sim |
 | 3 | Gerador de voz | Narração com a voz aprovada (Lucas, ElevenLabs), frase a frase, com cache. Prévia em `<id>_voz.wav`. | Sim |
 | 4 | Editor de gameplay | Escolhe um take por cena no catálogo de gameplay oficial (`catalogo_takes.json`, por tag, girando para não repetir) ou clipe autorizado (`autorizados.json`, com crédito na tela). 9:16, overlay neon, legenda, trilha com ducking, SFX. Nunca usa áudio dos trailers/clipes. | Sim |
 | 5 | Criador de miniaturas | Capa v3: personagem oficial recortado (BiRefNet), palavra atrás, faixa amarela na frente. | Sim |

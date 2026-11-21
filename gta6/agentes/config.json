@@ -6,7 +6,7 @@
  "pasta_site": "nexus-site/public/ig/caos",
  "brutos": "/home/user/gta6_brutos",
  "trilhas": ["mk_173.mp3", "mk_159.mp3", "mk_131.mp3"],
- "roteiro": {"cenas_min": 4, "cenas_max": 7, "gancho_max_palavras": 12, "palavras_min": 35, "palavras_max": 90},
+ "roteiro": {"cenas_min": 4, "cenas_max": 7, "gancho_max_palavras": 12, "palavras_min": 45, "palavras_max": 100},
  "titulos": {"yt_max": 70, "tags_max": 15},
  "rodape_ig": "Segue o @caosinsano.br pra não perder nada do GTA 6 🌴"
 }

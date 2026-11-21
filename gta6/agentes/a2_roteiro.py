@@ -13,7 +13,7 @@ def checar(p):
     if c and c[0]['tipo'] != 'title': e.append("cena 1 precisa ser 'title' (gancho na tela)")
     if c and c[-1]['tipo'] != 'subs': e.append("última cena precisa ser 'subs' (inscreva-se + TikTok)")
     tot = sum(palavras(x['fala']) for x in c)
-    if not (R['palavras_min'] <= tot <= R['palavras_max']): e.append(f"{tot} palavras no total (use {R['palavras_min']}–{R['palavras_max']} ≈ 20–35 s)")
+    if not (R['palavras_min'] <= tot <= R['palavras_max']): e.append(f"{tot} palavras no total (use {R['palavras_min']}–{R['palavras_max']} ≈ 12–20 s)")
     for i, x in enumerate(c):
         if x['tipo'] not in TIPOS: e.append(f"cena {i+1}: tipo '{x['tipo']}' não existe")
         if 'take' not in x: e.append(f"cena {i+1}: sem take de fundo")
