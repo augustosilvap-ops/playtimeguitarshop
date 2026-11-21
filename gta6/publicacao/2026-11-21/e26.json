@@ -5,7 +5,7 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-21",
- "status": "agendado",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/a1121_e26.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/a1121_e26_capa.jpg",
@@ -28,5 +28,7 @@
  },
  "tt": {
   "legenda": "O apartamento do Dexter tá no GTA 6? 😳 #gta6 #gtavi #eastereggs #dexter #fyp"
- }
+ },
+ "media_id": "17911822593581189",
+ "publicado_em": "2026-11-21T23:01:00Z"
 }
