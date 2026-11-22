@@ -1,6 +1,6 @@
 # RUAH · 500 seguidores (motion 13 s, 1080×1920, trilha da marca)
 
-Uso: Reel e story. v2 (atual) = cenas reais da produção (prensa, estampa, peça pronta, embalagem, cartão). v1 (modelos) reprovada pelo Augusto em 22/11. Não publicar sem aprovação.
+Uso: Reel e story. v3 (atual, 12 s) = só o sopro e a logo, sem fotos (pedido do Augusto 22/11). v1 (modelos) e v2 (cenas reais) reprovadas. Não publicar sem aprovação.
 
 ## Legenda (Reel)
 500 pessoas carregando junto. 🕊️
