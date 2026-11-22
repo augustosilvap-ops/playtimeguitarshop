@@ -1,1 +1,1 @@
-{ "outputDirectory": "public", "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }] }
+{"outputDirectory": "public", "headers": [{"source": "/(.*)", "headers": [{"key": "X-Robots-Tag", "value": "noindex, nofollow"}]}], "rewrites": [{"source": "/tiktok", "destination": "/tiktok.html"}]}
