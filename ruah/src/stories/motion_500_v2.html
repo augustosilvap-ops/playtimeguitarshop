@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cz;font-weight:900;src:url('../../fontes/cinzel900.ttf')}@font-face{font-family:Cz;font-weight:700;src:url('../../fontes/cinzel700.ttf')}
+@font-face{font-family:CG;font-style:italic;src:url('../../fontes/cg400i.ttf')}@font-face{font-family:CG;font-weight:500;src:url('../../fontes/cg500n.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden}
+.bg{position:absolute;inset:0}
+#bgA{background:radial-gradient(900px 760px at 50% 40%,#1d1c1a,#080808 70%)}
+#bgB{background:radial-gradient(900px 760px at 50% 40%,#F6F3EC,#E3DED3 75%)}
+.abs{position:absolute;left:0;width:100%;text-align:center}
+#sym{position:absolute;left:50%;top:640px;width:330px;transform:translateX(-50%)}
+.logo{position:absolute;top:150px;left:50%;transform:translateX(-50%);height:46px}
+#lab{top:226px;font:500 24px CG;letter-spacing:.42em;text-transform:uppercase}
+#n{top:330px;font:900 430px/1 Cz;font-variant-numeric:tabular-nums}
+.m{position:absolute;left:50%;top:470px;width:1000px;transform:translateX(-50%)}
+#txt{top:1390px;padding:110px 90px 0}
+.h{font:900 64px/1.08 Cz;text-transform:uppercase;letter-spacing:.03em}
+.i{font:italic 44px/1.35 CG;margin-top:26px}
+.line{width:90px;height:1px;background:currentColor;opacity:.4;margin:34px auto 0}
+#sig{bottom:110px;font:500 22px CG;letter-spacing:.4em;text-transform:uppercase}
+#grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23f)'/%3E%3C/svg%3E")}
+</style></head><body><div id="s">
+ <div class="bg" id="veil" style="background:linear-gradient(#080808 0,rgba(8,8,8,.85) 520px,rgba(8,8,8,.15) 900px,rgba(8,8,8,.1) 1250px,rgba(8,8,8,.9) 1560px,#080808 1920px)"></div><div class="bg" id="bgA" style="background:#080808"></div>
+ <img id="sym" src="../../marca/logos/RUAH_simbolo_bone_600dpi.png">
+ <img class="logo" id="lgA" src="../../marca/logos/logo-bone.png">
+ <div class="abs" id="lab">Obrigado</div>
+ <div class="abs" id="n">0</div>
+ <div class="abs" id="txt"><div class="h" id="h">500 pessoas<br>carregando junto.</div><div class="i" id="i">Obrigado por fazer parte desde o começo.</div><div class="line" id="ln"></div></div>
+ <div class="abs" id="sig">@ruahwear_ · We carry the spirit.</div>
+ 
+</div><script>
+// v2 (13 s) sobre cenas reais: sopro no preto → contagem 0→500 sobre a produção → agradecimento sobre o cartão "Obrigado por carregar com a gente".
+const $=id=>document.getElementById(id), cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), seg=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+function R(t){
+  ['lab','n','txt','sig'].forEach(i=>$(i).style.color='#EEEAE1');
+  $('bgA').style.opacity=1-eo(seg(t,1.25,1.7));               // preto da abertura abre para as cenas
+  $('lgA').style.opacity=eo(seg(t,1.3,2.0));
+  const s1=eo(seg(t,.1,1.1)), s2=seg(t,1.2,1.7);
+  $('sym').style.opacity=s1*(1-s2); $('sym').style.transform=`translateX(-50%) translateY(${(1-s1)*30-s2*60}px) scale(${.9+.1*s1+.15*s2})`;
+  $('sym').style.filter=`drop-shadow(0 0 ${40*s1}px rgba(238,234,225,.35)) blur(${s2*8}px)`;
+  $('lab').style.opacity=.7*eo(seg(t,.7,1.4)); $('lab').style.letterSpacing=(.7-.28*eo(seg(t,.7,1.6)))+'em';
+  const c=eo(seg(t,1.6,7.0)); $('n').textContent=Math.round(500*c);
+  $('n').style.opacity=eo(seg(t,1.5,1.9)); $('n').style.textShadow='0 10px 60px rgba(0,0,0,.55)';
+  $('n').style.transform=`scale(${1.08-.08*eo(seg(t,1.5,2.6))+.05*Math.max(0,1-Math.abs(t-7.05)/.25)})`;
+  const tx=eo(seg(t,9.3,10.0)), ti=eo(seg(t,10.2,10.9));
+  $('txt').style.background='none'; $('txt').style.top='1360px';
+  $('txt').style.opacity=tx; $('h').style.transform=`translateY(${(1-tx)*40}px)`; $('h').style.textShadow='0 6px 30px rgba(0,0,0,.6)';
+  $('i').style.opacity=.9*ti; $('ln').style.width=(90*ti)+'px'; $('sig').style.opacity=.6*eo(seg(t,11,11.7));
+}
+R(0);
+</script></body></html>
