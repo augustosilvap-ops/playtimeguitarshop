@@ -5,7 +5,7 @@
  "account": "17841475082570188",
  "perfil": "@caosinsano.br",
  "data": "2026-11-21",
- "status": "enviado_timeout_conferir",
+ "status": "publicado",
  "params": {
   "video_url": "https://nexusautomatic.vercel.app/ig/caos/a1121_e27.mp4",
   "cover_url": "https://nexusautomatic.vercel.app/ig/caos/a1121_e27_capa.jpg",
@@ -29,5 +29,7 @@
  "tt": {
   "legenda": "3 configurações pra mudar no GTA 6 agora ⚙️ salva! #gta6 #gtavi #dicas #games #fyp"
  },
- "enviado_em": "2026-11-22T01:01:30Z"
+ "enviado_em": "2026-11-22T01:01:30Z",
+ "media_id": "17956039650303660",
+ "publicado_em": "2026-11-22T01:02:44Z"
 }
