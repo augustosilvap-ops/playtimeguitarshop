@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cz;font-weight:900;src:url('../../fontes/cinzel900.ttf')}@font-face{font-family:Cz;font-weight:700;src:url('../../fontes/cinzel700.ttf')}
+@font-face{font-family:CG;font-style:italic;src:url('../../fontes/cg400i.ttf')}@font-face{font-family:CG;font-weight:500;src:url('../../fontes/cg500n.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#080808}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden}
+.bg{position:absolute;inset:0}
+#bgA{background:radial-gradient(900px 760px at 50% 40%,#1d1c1a,#080808 70%)}
+#bgB{background:radial-gradient(900px 760px at 50% 40%,#F6F3EC,#E3DED3 75%)}
+.abs{position:absolute;left:0;width:100%;text-align:center}
+#sym{position:absolute;left:50%;top:640px;width:330px;transform:translateX(-50%)}
+.logo{position:absolute;top:150px;left:50%;transform:translateX(-50%);height:46px}
+#lab{top:226px;font:500 24px CG;letter-spacing:.42em;text-transform:uppercase}
+#n{top:330px;font:900 430px/1 Cz;font-variant-numeric:tabular-nums}
+.m{position:absolute;left:50%;top:470px;width:1000px;transform:translateX(-50%)}
+#txt{top:1390px;padding:110px 90px 0}
+.h{font:900 64px/1.08 Cz;text-transform:uppercase;letter-spacing:.03em}
+.i{font:italic 44px/1.35 CG;margin-top:26px}
+.line{width:90px;height:1px;background:currentColor;opacity:.4;margin:34px auto 0}
+#sig{bottom:200px;font:500 22px CG;letter-spacing:.4em;text-transform:uppercase}
+#grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23f)'/%3E%3C/svg%3E")}
+</style></head><body><div id="s">
+ <div class="bg" id="bgA"></div><div class="bg" id="bgB"></div>
+ <img id="sym" src="../../marca/logos/RUAH_simbolo_bone_600dpi.png">
+ <img class="logo" id="lgA" src="../../marca/logos/logo-bone.png"><img class="logo" id="lgB" src="../../marca/logos/logo-preto.png">
+ <div class="abs" id="lab">Obrigado</div>
+ <div class="abs" id="n">0</div>
+ <img class="m" id="m0" src="../recortes/02_2_modelo_costas.png">
+ <img class="m" id="m1" src="../recortes/01_2_modelo_costas.png">
+ <img class="m" id="m2" src="../recortes/04_2_modelo_costas.png">
+ <img class="m" id="m3" src="../recortes/03_2_modelo_costas.png">
+ <div class="abs" id="txt"><div class="h" id="h">500 pessoas<br>carregando junto.</div><div class="i" id="i">Obrigado por carregar a RUAH com a gente.</div><div class="line" id="ln"></div></div>
+ <div class="abs" id="sig">@ruahwear_ · We carry the spirit.</div>
+ <div id="grain"></div>
+</div><script>
+// Linha do tempo (13 s): sopro → contagem 0→500 → as 4 peças (clara no preto, preta no bone; estampa sempre livre) → agradecimento.
+const $=id=>document.getElementById(id), cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), seg=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const M=[{id:'m0',t:3.6,bone:0},{id:'m1',t:5.2,bone:1},{id:'m2',t:6.8,bone:0},{id:'m3',t:8.4,bone:1}];
+const mix=(a,b,k)=>a.map((v,i)=>Math.round(v+(b[i]-v)*k)), rgb=c=>`rgb(${c})`, BONE=[238,234,225], INK=[10,10,10];
+function R(t){
+  // fundo: qual peça está na tela define preto ou bone (transição de 0,35 s)
+  let bone=0; for(const m of M){ if(t>=m.t) bone=m.bone; }
+  let prev=0; for(const m of M){ if(t>=m.t){ const k=eio(seg(t,m.t,m.t+.35)); bone=prev+(m.bone-prev)*k; prev=m.bone; } }
+  $('bgB').style.opacity=bone;
+  const fg=mix(BONE,INK,bone); ['lab','n','txt','sig'].forEach(i=>$(i).style.color=rgb(fg));
+  $('lgA').style.opacity=(1-bone)*eo(seg(t,1.3,2.0)); $('lgB').style.opacity=bone*eo(seg(t,1.3,2.0));
+  // sopro de abertura
+  const s1=eo(seg(t,.1,1.1)), s2=seg(t,1.4,1.9);
+  $('sym').style.opacity=s1*(1-s2); $('sym').style.transform=`translateX(-50%) translateY(${(1-s1)*30-s2*60}px) scale(${.9+.1*s1+.15*s2})`;
+  $('sym').style.filter=`drop-shadow(0 0 ${40*s1}px rgba(238,234,225,.35)) blur(${s2*8}px)`;
+  $('lab').style.opacity=.6*eo(seg(t,.7,1.4)); $('lab').style.letterSpacing=(.7-.28*eo(seg(t,.7,1.6)))+'em';
+  // contagem 0 → 500
+  const c=eo(seg(t,1.6,3.9)); $('n').textContent=Math.round(500*c);
+  $('n').style.opacity=eo(seg(t,1.5,1.9)); $('n').style.transform=`scale(${1.08-.08*eo(seg(t,1.5,2.6))+.04*Math.max(0,1-Math.abs(t-3.95)/.25)})`;
+  // as quatro peças (o número fica atrás do modelo; nada cobre a estampa)
+  M.forEach((m,k)=>{ const nx=M[k+1], a=eo(seg(t,m.t,m.t+.5)), out=nx?seg(t,nx.t,nx.t+.35):0, el=$(m.id);
+    el.style.opacity=a*(1-out); el.style.transform=`translateX(-50%) translateY(${(1-a)*60}px) scale(${1+.03*seg(t,m.t,m.t+1.6)})`; });
+  // agradecimento final
+  const tx=eo(seg(t,9.3,10.0)), ti=eo(seg(t,10.2,10.9));
+  $('txt').style.background=`linear-gradient(transparent,${bone>.5?'#E3DED3':'#080808'} 120px)`;
+  $('txt').style.opacity=tx; $('h').style.transform=`translateY(${(1-tx)*40}px)`;
+  $('i').style.opacity=.85*ti; $('ln').style.width=(90*ti)+'px'; $('sig').style.opacity=.55*eo(seg(t,11,11.7));
+}
+R(0);
+</script></body></html>
