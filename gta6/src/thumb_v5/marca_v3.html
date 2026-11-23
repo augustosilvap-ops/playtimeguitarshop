@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:AR;src:url('../../fonts/AR.ttf')}@font-face{font-family:ARN;src:url('../../fonts/ARN.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#111}
+#perfil{position:relative;width:1080px;height:1080px;overflow:hidden;background:linear-gradient(180deg,#7b4dff 0%,#c64bd6 40%,#ff6aa8 68%,#ffb35a 100%)}
+.sun{position:absolute;left:50%;top:58%;width:620px;height:620px;margin:-310px;border-radius:50%;background:radial-gradient(circle,#ffe3a0,#ffb35a 40%,rgba(255,120,150,0) 70%)}
+.palm{position:absolute;opacity:.35}
+.vi{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.word{position:absolute;left:0;width:100%;text-align:center;white-space:nowrap}
+.cz{font:italic 900 150px/1 AR;color:#fff;letter-spacing:.01em;paint-order:stroke fill;-webkit-text-stroke:16px #160828;filter:drop-shadow(0 10px 0 #160828) drop-shadow(0 14px 24px rgba(0,0,0,.45))}
+.ins{font:italic 900 230px/1 AR;color:#fff;paint-order:stroke fill;-webkit-text-stroke:20px #160828;filter:drop-shadow(0 12px 0 #160828) drop-shadow(0 18px 28px rgba(0,0,0,.45))}
+.sw{position:absolute;left:50%;transform:translateX(-50%)}
+#banner{position:relative;width:2560px;height:1440px;overflow:hidden}
+
+#banner .bg{position:absolute;inset:0;background:url('art/banner_bg.jpg') center/cover;filter:saturate(1.2)}
+#banner .dim{position:absolute;inset:0;background:radial-gradient(1100px 520px at 50% 50%,rgba(30,8,60,.0),rgba(30,8,60,0))} #banner .dim{background:linear-gradient(90deg,rgba(30,8,60,.1) 0%,rgba(30,8,60,.82) 22%,rgba(30,8,60,.75) 52%,rgba(30,8,60,0) 66%)}
+.tagline{position:absolute;left:0;width:100%;text-align:center;font:900 46px ARN;letter-spacing:.32em;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.7)}
+.chips{position:absolute;left:0;width:100%;display:flex;justify-content:center;gap:22px}
+.chip{padding:10px 26px;border-radius:12px;border:3px solid #ff3fa4;background:rgba(20,6,40,.8);font:900 36px ARN;color:#fff;box-shadow:0 0 22px rgba(255,63,164,.55)}
+</style></head><body>
+<template id="vi"><svg viewBox="0 0 640 560" width="W"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b1fd6"/><stop offset=".5" stop-color="#ff3fa4"/><stop offset="1" stop-color="#ffb340"/></linearGradient></defs>
+<g stroke="#160828" stroke-width="22" stroke-linejoin="round" fill="url(#g)"><path d="M20 20 H190 L300 360 L410 20 H440 L300 540 H262 Z"/><path d="M465 20 H620 V540 H465 Z"/></g>
+<g stroke="#fff" stroke-width="6" fill="none" opacity=".85"><path d="M42 34 H180 L300 395"/><path d="M480 34 H606"/></g></svg></template>
+<template id="palm"><svg viewBox="0 0 200 400" width="W"><g fill="#2a0c4a"><path d="M100 400 C 96 300, 92 220, 104 130 L 112 130 C 102 220, 108 300, 112 400 Z"/><path d="M108 130 C 60 90, 20 100, 0 130 C 40 100, 80 110, 108 136Z"/><path d="M108 130 C 150 80, 190 90, 200 120 C 170 98, 140 104, 110 138Z"/><path d="M108 128 C 90 70, 50 40, 20 40 C 60 60, 85 90, 104 134Z"/><path d="M110 128 C 130 70, 170 50, 196 56 C 160 70, 135 95, 114 134Z"/><path d="M108 126 C 108 70, 120 30, 140 10 C 128 40, 120 80, 112 130Z"/></g></svg></template>
+
+<div id="perfil">
+ <div class="sun"></div>
+ <div class="palm" data-w="420" style="left:-60px;top:330px"></div><div class="palm" data-w="360" style="right:-40px;top:420px;transform:scaleX(-1)"></div>
+ <div class="vi" data-w="760" style="top:52%"></div>
+ <div class="word cz" style="top:250px">CAOS</div>
+ <div class="word ins" style="top:420px">INSANO</div>
+ <svg class="sw" style="top:660px" width="760" height="70" viewBox="0 0 760 70"><defs><linearGradient id="y"><stop offset="0" stop-color="#ffe14d"/><stop offset="1" stop-color="#ff8a1d"/></linearGradient></defs><path d="M20 50 Q 380 -10 740 30 Q 380 20 20 62 Z" fill="url(#y)" stroke="#160828" stroke-width="6"/></svg>
+ <div class="word" style="top:760px;font:900 70px ARN;letter-spacing:.5em;color:#fff;text-shadow:0 4px 12px rgba(0,0,0,.4)">BR</div>
+</div>
+
+<div id="banner" style="margin-top:20px">
+ <div class="bg"></div><div class="dim"></div>
+ <div class="vi" data-w="330" style="left:640px;top:720px"></div>
+ <div style="position:absolute;left:820px;top:525px;white-space:nowrap"><span class="cz" style="font-size:150px;display:block">CAOS INSANO</span></div>
+ <div style="position:absolute;left:840px;top:690px;font:900 64px ARN;color:#ffd84a;letter-spacing:.06em;text-shadow:0 4px 0 #160828,0 8px 18px rgba(0,0,0,.6)">BR · TUDO DE GTA 6 · TODO DIA</div>
+ <div class="chips" style="top:800px;left:830px;width:auto;justify-content:flex-start"><span class="chip">CURIOSIDADES</span><span class="chip">DICAS</span><span class="chip">EASTER EGGS</span></div>
+</div>
+<script>
+const v=document.getElementById('vi').innerHTML, p=document.getElementById('palm').innerHTML;
+document.querySelectorAll('.vi').forEach(e=>e.innerHTML=v.replace('width="W"',`width="${e.dataset.w}"`));
+document.querySelectorAll('.palm').forEach(e=>e.innerHTML=p.replace('width="W"',`width="${e.dataset.w}"`));
+</script></body></html>

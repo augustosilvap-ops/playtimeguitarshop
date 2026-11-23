@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:AR;src:url('../../fonts/AR.ttf')}@font-face{font-family:ARN;src:url('../../fonts/ARN.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#111}
+.t{position:relative;width:1080px;height:1920px;overflow:hidden;margin-bottom:20px;font-family:ARN}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.25) contrast(1.05)}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,8,45,.0) 0%,rgba(25,8,45,0) 50%,rgba(25,8,45,.75) 72%,rgba(18,6,34,.97) 100%)}
+.topshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,10,70,.55) 0%,rgba(40,10,70,0) 30%)}
+/* logo GTA VI: VI em degradê + wordmark oficial por cima */
+.logo{position:absolute;left:50%;transform:translateX(-50%)}
+.logo svg{display:block;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))}
+.logo img{position:absolute;left:50%;top:50%;transform:translate(-50%,-46%)}
+/* estilo A: caixas (ref. luckeragamer) */
+.kick{position:absolute;left:70px;font:900 46px ARN;letter-spacing:.32em;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.6)}
+.box{position:absolute;left:70px;padding:6px 30px 14px;font:900 104px/1.05 ARN;color:#fff;white-space:nowrap}
+.b1{background:#2a1052}.b2{background:linear-gradient(90deg,#ff8a3d,#ff3fa4 55%,#b44bff)}
+.hand{position:absolute;bottom:70px;left:70px;font:500 38px ARN;color:#fff;opacity:.85;letter-spacing:.04em}
+.swipe{position:absolute;bottom:70px;right:70px;font:900 38px ARN;color:#fff;opacity:.85;letter-spacing:.3em}
+/* estilo B: texto 3D (ref. thumbs virais) */
+.ti{position:absolute;left:0;width:100%;text-align:center;transform:rotate(-5deg)}
+.l{display:block;position:relative;font-family:AR;line-height:.92;white-space:nowrap}
+.l .bk{position:absolute;left:0;right:0;top:0;color:#14051f;-webkit-text-stroke:26px #14051f;filter:drop-shadow(0 16px 0 #14051f) drop-shadow(0 22px 30px rgba(0,0,0,.6))}
+.l .fr{position:relative}
+.w .fr{color:#fff}
+.y .fr{background:linear-gradient(180deg,#fff36b,#ffcf2e 45%,#ff8a1d);-webkit-background-clip:text;color:transparent}
+.k .fr{background:linear-gradient(180deg,#ff9be0,#ff3fa4 55%,#c21686);-webkit-background-clip:text;color:transparent}
+svg.arr{position:absolute;filter:drop-shadow(0 8px 0 #14051f) drop-shadow(0 10px 20px rgba(0,0,0,.5))}
+.pill{position:absolute;left:50%;transform:translateX(-50%);bottom:70px;padding:12px 36px;border-radius:14px;border:4px solid #ff3fa4;background:rgba(20,6,40,.85);font:900 44px ARN;color:#fff;box-shadow:0 0 30px rgba(255,63,164,.6)}
+</style></head><body>
+<template id="vi"><svg viewBox="0 0 640 560" width="W"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a3cff"/><stop offset=".45" stop-color="#ff3fa4"/><stop offset="1" stop-color="#ffb340"/></linearGradient></defs>
+<g stroke="#160828" stroke-width="22" stroke-linejoin="round" fill="url(#g)"><path d="M20 20 H190 L300 360 L410 20 H440 L300 540 H262 Z"/><path d="M465 20 H620 V540 H465 Z"/></g>
+<g stroke="#fff" stroke-width="6" fill="none" opacity=".9"><path d="M42 34 H180 L300 395"/><path d="M480 34 H606"/></g></svg></template>
+
+<!-- A1 · 4 configurações (estilo caixas) -->
+<div class="t" id="a1">
+ <div class="bg" style="background-image:url('art/Jason_and_Lucia_02_portrait.jpg')"></div><div class="topshade"></div><div class="shade"></div>
+ <div class="logo" data-vi="560" style="top:90px"><img src="gta_wordmark_contorno.png" style="width:400px"></div>
+ <div class="kick" style="top:1340px">ANTES DE JOGAR</div>
+ <div class="box b1" style="top:1420px">3 CONFIGURAÇÕES</div>
+ <div class="box b2" style="top:1560px">PRA MUDAR JÁ</div>
+ <div class="hand">@caosinsano.br</div><div class="swipe">GTA 6</div>
+</div>
+
+<!-- A2 · dinheiro (estilo caixas) -->
+<div class="t" id="a2">
+ <div class="bg" style="background-image:url('art/Boobie_Ike_portrait.jpg')"></div><div class="topshade"></div><div class="shade"></div>
+ <div class="logo" data-vi="460" style="top:70px;left:78%"><img src="gta_wordmark_contorno.png" style="width:330px"></div>
+ <div class="kick" style="top:1340px">ERRO DE INICIANTE</div>
+ <div class="box b1" style="top:1420px">NUNCA ANDE</div>
+ <div class="box b2" style="top:1560px">COM DINHEIRO</div>
+ <div class="hand">@caosinsano.br</div><div class="swipe">GTA 6</div>
+</div>
+
+<!-- B1 · bugs (estilo 3D) -->
+<div class="t" id="b1">
+ <div class="bg" style="background-image:url('art/Jason_Lucia_Lock_And_Load_portrait.jpg')"></div><div class="topshade"></div><div class="shade"></div>
+ <div class="logo" data-vi="420" style="top:60px;left:24%"><img src="gta_wordmark_contorno.png" style="width:300px"></div>
+ <svg class="arr" style="left:700px;top:600px" width="300" height="300" viewBox="0 0 300 300"><path d="M260 40 C 120 30, 60 120, 90 230" stroke="#ff2b2b" stroke-width="36" fill="none" stroke-linecap="round"/><path d="M30 190 L90 265 L160 200" stroke="#ff2b2b" stroke-width="36" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+ <div class="ti" style="top:1280px"><span class="l w" style="font-size:140px">OS BUGS</span><span class="l y" style="font-size:240px">INSANOS</span><span class="l k" style="font-size:130px">DO GTA 6</span></div>
+ <div class="pill">@caosinsano.br</div>
+</div>
+
+<!-- B2 · Dexter (estilo 3D) -->
+<div class="t" id="b2">
+ <div class="bg" style="background-image:url('art/Cal_Hampton_portrait.jpg')"></div><div class="topshade"></div><div class="shade"></div>
+ <div class="logo" data-vi="420" style="top:60px;left:76%"><img src="gta_wordmark_contorno.png" style="width:300px"></div>
+ <div class="ti" style="top:1280px"><span class="l w" style="font-size:130px">O APÊ DO</span><span class="l y" style="font-size:250px">DEXTER</span><span class="l k" style="font-size:120px">TÁ NO GTA 6?!</span></div>
+ <div class="pill">@caosinsano.br</div>
+</div>
+
+<script>
+const tpl=document.getElementById('vi').innerHTML;
+document.querySelectorAll('.logo').forEach(l=>{l.insertAdjacentHTML('afterbegin',tpl.replace('width="W"',`width="${l.dataset.vi}"`))});
+document.fonts.ready.then(()=>document.querySelectorAll('.l').forEach(l=>{const t=l.innerHTML;l.innerHTML=`<span class="bk">${t}</span><span class="fr">${t}</span>`;
+  const w=l.querySelector('.fr').getBoundingClientRect().width; if(w>960){l.style.fontSize=(parseFloat(getComputedStyle(l).fontSize)*960/w)+'px'}}));
+document.fonts.ready.then(()=>document.querySelectorAll('.box').forEach(b=>{const w=b.getBoundingClientRect().width; if(w>940){b.style.fontSize=(104*940/w)+'px'}}));
+</script></body></html>
