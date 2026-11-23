@@ -1,7 +1,25 @@
 {
  "nota": "Clipes de criadores que AUTORIZAM uso. Só entra aqui o que tiver regra pública ou permissão por escrito. Arquivo em <brutos>/autorizados/. Crédito vai na tela e na legenda.",
  "criadores": {
-  "gaules": {"credito": "twitch.tv/gaules", "regra": "Publicação só 24h após o fim da VOD; com crédito; sem edição fora de contexto (aviso do canal, 11/2026)."}
+  "gaules": {
+   "credito": "twitch.tv/gaules",
+   "regra": "Publicação só 24h após o fim da VOD; com crédito; sem edição fora de contexto (aviso do canal, 11/2026)."
+  },
+  "paulinho_o_loko": {
+   "credito": "youtube.com/@PaulinhoLOKOoficial",
+   "nome": "Paulinho o LOKO",
+   "regra": "Autorização por DM, informada pelo Augusto em 23/11/2026. Guardar o print da conversa em gta6/agentes/autorizacoes/."
+  }
  },
- "clipes": []
+ "clipes": [
+  {
+   "id": "paulinho_live1",
+   "criador": "paulinho_o_loko",
+   "arquivo": "drive:1ILmr36xnPVuewraKtJXWBuxal3QR-kJm",
+   "origem": "https://www.youtube.com/watch?v=cxuF5siTUQw",
+   "titulo": "GTA 6 O ÍNICIO! 🔴 Paulinho o LOKO",
+   "duracao_s": 26513,
+   "cam": "16,10,224,222"
+  }
+ ]
 }
