@@ -30,8 +30,9 @@ def checar(p):
     if '#shorts' not in ti.get('yt', '').lower(): e.append('título YT sem #shorts')
     if len(p.get('tags', [])) > T['tags_max']: e.append('tags demais')
     cp = p.get('capa', {})
-    if not (cp.get('top') and cp.get('bar') and cp.get('personagem')): e.append('capa incompleta (top, bar, personagem)')
-    elif not os.path.exists(os.path.join(BR, 'shots/People', cp['personagem'])): e.append(f"imagem da capa não existe: {cp['personagem']}")
+    if not ((cp.get('a') and cp.get('b')) or (cp.get('top') and cp.get('bar'))): e.append('capa incompleta (a, b, c)')
+    if len(cp.get('b', '')) > 11: e.append("capa: palavra-chave (b) longa demais — até ~10 letras")
+    if cp.get('arte') and not os.path.exists(os.path.join(SRC, 'thumb_v5/art', cp['arte'])): e.append(f"arte não existe: {cp['arte']}")
     return e, tot
 def main(data):
     ok = True

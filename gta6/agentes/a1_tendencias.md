@@ -23,10 +23,10 @@ Objetivo: escolher os **3 assuntos do dia** sobre GTA 6 que mais têm gente proc
   {"tipo": "title", "params": {"html": "...", "size": 170, "top": 300}, "fala": "GANCHO ≤ 12 palavras", "take": {"tag": "aeroporto"}},
   {"tipo": "rank", "params": {"n": 1, "html": "...", "sub": "...", "sky": 1}, "fala": "...", "take": {"src": "EL", "t": 1132}},
   {"tipo": "subs", "fala": "... Se inscreve e segue no TikTok.", "take": {"tag": "final"}}],
- "capa": {"top": "PALAVRA", "bar": "COMPLEMENTO", "personagem": "Jason Duval/Jason_Duval_05.jpg"},
+ "capa": {"a": "OS BUGS", "b": "INSANOS", "c": "DO GTA 6", "arte": "Cal_Hampton_portrait.jpg", "seta": [700, 620, "esq"]},
  "titulos": {"yt": "... #shorts (≤ 70)", "tt": "... #gta6 #fyp", "ig": "..."},
  "descricao_yt": "...", "tags": ["gta6", "gtavi", "..."]}
 ```
 Tipos de cena: `title`, `rank`, `num`, `years`, `delay`, `map`, `check`, `song`, `cta`, `subs` (ver exemplos em `../src/gen_caos.py`).
 Tags de take: ver `catalogo_takes.json` (carro, direcao, perseguicao, policia, tiroteio, assalto, casa, tv, animais, praia, mar, aeroporto, aviao, boate, festa, cidade, aereo, mapa, vista, terraco, por_do_sol, moto, natureza, final…).
-Personagens da capa: pastas em `<brutos>/shots/People/` (evitar repetir o da véspera).
+Capa v6: `a` (bloco branco), `b` (palavra-chave em pincel rosa, até ~10 letras), `c` (complemento). Artes em `src/thumb_v5/art/` (ex.: Boobie_Ike, Cal_Hampton, Raul_Bautista, Real_Dimez, Jason_and_Lucia_01/02/Beach, Jason_Lucia_Lock_And_Load — `_portrait.jpg`); sem `arte`, o agente gira entre elas.

@@ -1,12 +1,15 @@
-"""AGENTE 5 · CRIADOR DE MINIATURAS — capa 1080×1920 no padrão aprovado (v3): personagem oficial recortado em alta (BiRefNet),
-fundo da própria cena desfocado, palavra metálica ATRÁS do personagem e faixa amarela NA FRENTE.
+"""AGENTE 5 · CRIADOR DE MINIATURAS — capa 1080×1920 no padrão v6 (identidade oficial, aprovada 23/11):
+arte oficial ilustrada da Rockstar + logo Caos Insano + logo GTA VI + título branco / pincel rosa / branco + traço ciano.
+Campos em pauta["capa"]: a, b, c, arte (opcional; senão gira entre as artes) e seta [x, y, "esq"|"dir"] (opcional).
+Compatível com o formato antigo (top/bar): vira a=top, b=bar, c="NO GTA 6".
 Uso: python3 a5_miniatura.py <data>"""
 import sys, subprocess
 from nucleo import *
-def uma(data, pid):  # roda numa chamada separada: o recorte BiRefNet usa muita memória
-    import capa_v3 as C
-    C.OUT = saida(data) + '/'; p = next(p for p in pautas(data) if p['id'] == pid); cp = p['capa']
-    C.make(n=p['id'], src=cp['personagem'], top=cp['top'], bar=cp['bar'], **cp.get('ajustes', {}))
+def uma(data, pid):
+    import capa_v6 as C
+    P = pautas(data); k = [p['id'] for p in P].index(pid); cp = P[k]['capa']
+    arte = cp.get('arte') or C.ARTES[(abs(hash(data)) + k) % len(C.ARTES)]
+    C.make(pid, cp.get('a', cp.get('top', '')), cp.get('b', cp.get('bar', '')), cp.get('c', 'NO GTA 6'), arte, saida(data), cp.get('seta'))
 def main(data):
     for p in pautas(data):
         subprocess.run([sys.executable, __file__, data, '--uma', p['id']], check=True, cwd=AG)
