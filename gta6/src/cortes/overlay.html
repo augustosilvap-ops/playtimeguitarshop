@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:AR;src:url('../../fonts/AR.ttf')}@font-face{font-family:ARN;src:url('../../fonts/ARN.ttf')}@font-face{font-family:KN;src:url('../../fonts/Knewave-Regular.ttf')}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+#camb{position:absolute;left:234px;top:64px;width:612px;height:602px;border-radius:62px;border:6px solid #ff2d95;box-shadow:0 0 30px rgba(255,45,149,.8)}
+#gpb{position:absolute;left:0;top:816px;width:1080px;height:1008px;border-top:6px solid #ff2d95;border-bottom:6px solid #ff2d95;box-sizing:border-box;box-shadow:0 0 30px rgba(255,45,149,.6)}
+#tit{position:absolute;left:60px;right:60px;top:672px;padding:16px 26px;background:#140628;border:5px solid #ff2d95;border-radius:16px;box-shadow:6px 6px 0 #2ee6ff,0 0 26px rgba(255,45,149,.6);
+ font:900 46px/1.12 ARN;color:#fff;text-align:center;text-transform:uppercase}
+#cap{position:absolute;left:40px;right:40px;top:1560px;text-align:center;font:900 76px/1.05 AR;color:#fff;paint-order:stroke fill;-webkit-text-stroke:14px #0d0418;text-shadow:0 8px 0 #0d0418}
+#cap .k{color:#ffe14d}
+#cred{position:absolute;left:24px;top:836px;padding:8px 16px;border-radius:10px;background:rgba(13,4,24,.75);font:900 26px ARN;color:#fff}
+#hand{position:absolute;bottom:26px;width:100%;text-align:center;font:900 34px ARN;color:#fff;text-shadow:0 3px 8px #000}
+#logo{position:absolute;right:22px;top:830px;width:120px}
+</style></head><body>
+<div id="camb"></div><div id="gpb"></div><div id="tit"></div><div id="cap"></div><div id="cred"></div><img id="logo" src="../../marca/oficial/CaosInsano_logo_circular.png"><div id="hand">@caosinsano.br</div>
+<script>
+const CAPS=__CAPS__, TIT=__TITULO__, CRED=__CRED__, DUR=__DUR__;
+document.getElementById('tit').textContent=TIT; document.getElementById('cred').textContent='🎮 '+CRED;
+function R(t){const c=CAPS.find(c=>t>=c[0]&&t<c[1]); const el=document.getElementById('cap');
+ if(!c){el.innerHTML='';return} const ws=c[2].split(' '); const k=Math.min(ws.length-1,Math.floor((t-c[0])/((c[1]-c[0])/ws.length)));
+ el.innerHTML=ws.map((w,i)=>i==k?`<span class="k">${w}</span>`:w).join(' '); const p=Math.min(1,(t-c[0])/.08); el.style.transform=`scale(${.9+.1*p})`}
+R(0);
+</script></body></html>
