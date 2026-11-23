@@ -69,7 +69,7 @@ svg.arr{position:absolute;filter:drop-shadow(0 8px 0 #14051f) drop-shadow(0 10px
 
 <script>
 const tpl=document.getElementById('vi').innerHTML;
-document.querySelectorAll('.logo').forEach(l=>{l.insertAdjacentHTML('afterbegin',tpl.replace('width="W"',`width="${l.dataset.vi}"`))});
+document.querySelectorAll('.logo').forEach(l=>{l.innerHTML=`<img src="GTA_VI_logo_oficial.png" style="position:static;transform:none;width:${l.dataset.vi*1.05}px;filter:drop-shadow(0 14px 24px rgba(0,0,0,.45))">`});
 document.fonts.ready.then(()=>document.querySelectorAll('.l').forEach(l=>{const t=l.innerHTML;l.innerHTML=`<span class="bk">${t}</span><span class="fr">${t}</span>`;
   const w=l.querySelector('.fr').getBoundingClientRect().width; if(w>960){l.style.fontSize=(parseFloat(getComputedStyle(l).fontSize)*960/w)+'px'}}));
 document.fonts.ready.then(()=>document.querySelectorAll('.box').forEach(b=>{const w=b.getBoundingClientRect().width; if(w>940){b.style.fontSize=(104*940/w)+'px'}}));
