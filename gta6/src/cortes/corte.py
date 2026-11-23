@@ -12,7 +12,9 @@ def main():
     run(['ffmpeg', '-loglevel', 'error', '-y', '-i', f'{tmp}/clip.mp4', '-ac', '1', '-ar', '16000', f'{tmp}/a.wav'])
     from faster_whisper import WhisperModel
     m = WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=4)
-    segs, _ = m.transcribe(f'{tmp}/a.wav', language='pt', word_timestamps=True, vad_filter=True)
+    import soundfile as sf
+    aud, _sr = sf.read(f'{tmp}/a.wav', dtype='float32')
+    segs, _ = m.transcribe(aud, language='pt', word_timestamps=True, vad_filter=True)
     words = [(w.start, w.end, w.word.strip()) for s in segs for w in s.words if w.word.strip()]
     caps = []
     for k in range(0, len(words), 3):
