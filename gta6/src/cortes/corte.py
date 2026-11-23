@@ -4,11 +4,17 @@ Uso: python3 corte.py <url_ou_arquivo> <inicio_s> <fim_s> "<TÍTULO>" "<crédito
 import sys, os, json, subprocess, shutil, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); MOT = os.path.abspath(os.path.join(HERE, '../../../augusto/src/motion'))
 def run(c): subprocess.run(c, check=True)
+def run_rede(c, n=5):  # o Drive às vezes responde com página HTML em vez do vídeo: tenta de novo
+    import time
+    for k in range(n):
+        if subprocess.run(c).returncode == 0: return
+        time.sleep(20 * (k + 1))
+    raise SystemExit('falhou ao ler o vídeo do Drive')
 def main():
     src, ini, fim, titulo, cred, out = sys.argv[1:7]; ini, fim = float(ini), float(fim); dur = fim - ini
     cam = [int(v) for v in (sys.argv[7] if len(sys.argv) > 7 else '16,10,224,222').split(',')]
     tmp = tempfile.mkdtemp(prefix='corte_')
-    run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(ini), '-t', f'{dur:.2f}', '-i', src, '-r', '30', '-c:v', 'libx264', '-crf', '16', '-preset', 'veryfast', '-c:a', 'aac', '-b:a', '192k', f'{tmp}/clip.mp4'])
+    run_rede(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(ini), '-t', f'{dur:.2f}', '-i', src, '-r', '30', '-c:v', 'libx264', '-crf', '16', '-preset', 'veryfast', '-c:a', 'aac', '-b:a', '192k', f'{tmp}/clip.mp4'])
     run(['ffmpeg', '-loglevel', 'error', '-y', '-i', f'{tmp}/clip.mp4', '-ac', '1', '-ar', '16000', f'{tmp}/a.wav'])
     from faster_whisper import WhisperModel
     m = WhisperModel('small', device='cpu', compute_type='int8', cpu_threads=4)
