@@ -1,0 +1,15 @@
+{
+ "hora": "10:00",
+ "acao": "create_video_post",
+ "connector": "instagram",
+ "account": "17841475082570188",
+ "perfil": "@caosinsano.br",
+ "data": "2026-11-26",
+ "status": "agendado",
+ "params": {
+  "video_url": "https://nexusautomatic.vercel.app/ig/caos/p1_c11_academia.mp4",
+  "cover_url": "https://nexusautomatic.vercel.app/ig/caos/p1_c11_academia_capa.jpg",
+  "share_to_feed": true,
+  "caption": "185 → 225 libras no supino 💪 Dá pra ficar monstro no GTA 6?\n\n🎮 Gameplay: youtube.com/@PaulinhoLOKOoficial (autorizado pelo criador)\n\nSegue o @caosinsano.br pra não perder nada do GTA 6 🌴\n\n#gta6 #gtavi #paulinhooloko #gameplay #cortes"
+ }
+}
