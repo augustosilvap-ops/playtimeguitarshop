@@ -62,5 +62,28 @@
   "c02_corre_l3": "tela de menu",
   "c06_6_da_manha": "celular do jogo"
  },
- "regra": "Toda escolha passa por conferência de imagem (th/ a cada 20 s): só entra trecho em que a tela mostra o que o streamer fala. Câmera do streamer muda de lado — conferir em quadro real antes do corte."
+ "regra": "Toda escolha passa por conferência de imagem (th/ a cada 20 s): só entra trecho em que a tela mostra o que o streamer fala. Câmera do streamer muda de lado — conferir em quadro real antes do corte.",
+ "extra": [
+  [
+   "c11_academia",
+   12085,
+   12135,
+   "PAULINHO FOI PRA ACADEMIA NO GTA VI E SUBIU A CARGA",
+   "esq"
+  ],
+  [
+   "c12_agachamento",
+   12412,
+   12455,
+   "NO GTA VI DÁ PRA TREINAR DE VERDADE: PAULINHO FAZ AGACHAMENTO",
+   "esq"
+  ],
+  [
+   "c13_policia_dinheiro",
+   10836,
+   10880,
+   "A POLÍCIA TOMOU TODO O DINHEIRO DO PAULINHO NO GTA VI",
+   "esq"
+  ]
+ ]
 }
