@@ -10,6 +10,9 @@ Crédito obrigatório (na legenda de todas as redes): 🎮 Gameplay: youtube.com
 | c08_pescaria | Pescar no GTA 6 é MAIS DIFÍCIL do que parece 🎣 #shorts | Pescaria no GTA 6 não é brincadeira 🎣 |
 | c09_dinheiro_escondido | Paulinho ACHOU DINHEIRO escondido na casa do Jason 💰 #shorts | Dinheiro escondido no chão da casa do Jason 💰 Você já achou o seu? |
 | c10_mapa_distritos | O mapa do GTA 6 é GIGANTE 🗺️ #shorts | Olha quanto distrito tem em Leonida 🗺️😳 |
+| c11_academia | Paulinho foi pra ACADEMIA no GTA 6 e subiu a carga 💪 #shorts | 185 → 225 libras no supino 💪 Dá pra ficar monstro no GTA 6? |
+| c12_agachamento | No GTA 6 dá pra TREINAR DE VERDADE 🏋️ #shorts | Agachamento no GTA 6 🏋️ O jogo não te prende só nas missões |
+| c13_policia_dinheiro | A POLÍCIA TOMOU todo o dinheiro do Paulinho no GTA 6 🚔 #shorts | Perdeu tudo pra polícia 🚔💸 Guarda o dinheiro em casa! |
 
 Tags: gta6, gtavi, paulinhooloko, cortes, gameplay, vicecity, shorts
 Rodapé IG: Segue o @caosinsano.br pra não perder nada do GTA 6 🌴
