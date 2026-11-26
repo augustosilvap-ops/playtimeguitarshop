@@ -30,6 +30,11 @@ EDL = [
 ]
 GAP, PAD, FIM = 0.55, 0.15, 3.4
 def run(c): subprocess.run(c, check=True)
+def cortar(src, s0, s1, p):
+    n = max(1, round((s1 - s0) * 30))  # nº exato de quadros; áudio cortado na mesma medida
+    run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{s0:.3f}', '-i', src, '-vf', 'hflip,scale=1080:1920:flags=lanczos,fps=30,format=yuv420p',
+         '-af', f'aresample=48000,loudnorm=I=-15:TP=-1.5,apad,atrim=0:{n / 30:.4f}', '-frames:v', str(n), '-ac', '2', '-c:v', 'libx264', '-crf', '17', '-preset', 'fast', '-c:a', 'pcm_s16le', p])
+    return n / 30
 def main():
     src, trj, out = sys.argv[1:4]; tmp = tempfile.mkdtemp(prefix='ruah_lt_')
     words = [w for s in json.load(open(trj)) for w in s['w']]
@@ -44,22 +49,19 @@ def main():
         for s0, s1 in sub:
             s0, s1 = max(s0, a), min(s1, b)
             if s1 - s0 < .2: continue
-            mapa.append((s0, s1, t)); partes.append((s0, s1)); t += s1 - s0
+            d = cortar(src, s0, s1, f'{tmp}/p{len(partes):03d}.mov')  # duração REAL do pedaço (evita a legenda atrasar)
+            mapa.append((s0, s1, t, d)); partes.append(f'{tmp}/p{len(partes):03d}.mov'); t += d
         def conv(x):  # tempo do bruto → tempo de saída
-            for s0, s1, o in mapa:
-                if x < s1: return o + max(0, x - s0)
-            return mapa[-1][2] + mapa[-1][1] - mapa[-1][0]
+            for s0, s1, o, d in mapa:
+                if x < s1: return o + min(d, max(0, x - s0))
+            return mapa[-1][2] + mapa[-1][3]
         for ca, cb, txt in cl: caps.append([round(conv(ca), 2), round(conv(cb), 2), txt])
         if fase and chips and chips[-1][2:] == list(fase): chips[-1][1] = round(t, 2)
         else: chips.append([round(c0, 2), round(t, 2), *(fase or ('', ''))])
     total = t
     for k in range(len(caps) - 1): caps[k][1] = min(caps[k][1], caps[k + 1][0])
     lst = open(f'{tmp}/l.txt', 'w')
-    for i, (s0, s1) in enumerate(partes):
-        p = f'{tmp}/p{i:03d}.mov'
-        run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{s0:.3f}', '-t', f'{s1 - s0:.3f}', '-i', src, '-vf', 'hflip,scale=1080:1920:flags=lanczos,fps=30,format=yuv420p',
-             '-af', 'aresample=48000,loudnorm=I=-15:TP=-1.5', '-ac', '2', '-c:v', 'libx264', '-crf', '17', '-preset', 'fast', '-c:a', 'pcm_s16le', p])
-        lst.write(f"file '{p}'\n")
+    for p in partes: lst.write(f"file '{p}'\n")
     lst.close()
     run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{tmp}/l.txt', '-c', 'copy', f'{tmp}/base.mov'])
     dur = total + FIM
