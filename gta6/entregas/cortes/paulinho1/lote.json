@@ -1,12 +1,66 @@
-{"fonte_drive": ["1exN6dvsTjd8cYbtH6wgGAC11qlNdKV3n", "1ILmr36xnPVuewraKtJXWBuxal3QR-kJm"],
- "credito": "youtube.com/@PaulinhoLOKOoficial",
- "cam_esq": "16,10,224,222", "cam_dir": "1036,10,224,222",
- "cortes": [
-  ["c03_limpar_casa", 17228, 17266, "SÓ A ROCKSTAR PRA OBRIGAR O PAULINHO A LIMPAR A CASA NO GTA VI", "esq"],
-  ["c04_pulinho_jason", 4286, 4322, "PAULINHO ZOA O PULINHO ESTRANHO DO JASON NO GTA VI", "dir"],
-  ["c05_shake_proteina", 3724, 3758, "PAULINHO TOMA SHAKE DE PROTEÍNA NO GTA VI E OLHA O QUE ACONTECE", "esq"],
-  ["c07_chat_trolla", 19008, 19060, "O CHAT TROLLOU O PAULINHO NA CASA DO JASON NO GTA VI", "esq"],
-  ["c08_pescaria", 4555, 4612, "PESCAR NO GTA VI É MAIS DIFÍCIL DO QUE PARECE", "dir"]
+{
+ "fonte_drive": [
+  "1exN6dvsTjd8cYbtH6wgGAC11qlNdKV3n",
+  "1ILmr36xnPVuewraKtJXWBuxal3QR-kJm"
  ],
- "descartados": {"c01_pe_grande": "tela mostra o celular do jogo, sem relação com a fala (reprovado pelo Augusto)", "c02_corre_l3": "tela de menu", "c06_6_da_manha": "celular do jogo"},
- "regra": "Toda escolha passa por conferência de imagem (th/ a cada 20 s): só entra trecho em que a tela mostra o que o streamer fala. Câmera do streamer muda de lado — conferir em quadro real antes do corte."}
+ "credito": "youtube.com/@PaulinhoLOKOoficial",
+ "cam_esq": "16,10,224,222",
+ "cam_dir": "1036,10,224,222",
+ "cortes": [
+  [
+   "c03_limpar_casa",
+   17228,
+   17266,
+   "SÓ A ROCKSTAR PRA OBRIGAR O PAULINHO A LIMPAR A CASA NO GTA VI",
+   "esq"
+  ],
+  [
+   "c04_pulinho_jason",
+   4286,
+   4322,
+   "PAULINHO ZOA O PULINHO ESTRANHO DO JASON NO GTA VI",
+   "dir"
+  ],
+  [
+   "c05_shake_proteina",
+   3724,
+   3758,
+   "PAULINHO TOMA SHAKE DE PROTEÍNA NO GTA VI E OLHA O QUE ACONTECE",
+   "esq"
+  ],
+  [
+   "c07_chat_trolla",
+   19008,
+   19060,
+   "O CHAT TROLLOU O PAULINHO NA CASA DO JASON NO GTA VI",
+   "esq"
+  ],
+  [
+   "c08_pescaria",
+   4555,
+   4612,
+   "PESCAR NO GTA VI É MAIS DIFÍCIL DO QUE PARECE",
+   "dir"
+  ],
+  [
+   "c09_dinheiro_escondido",
+   4093,
+   4136,
+   "PAULINHO ACHA DINHEIRO ESCONDIDO NA CASA DO JASON NO GTA VI",
+   "dir"
+  ],
+  [
+   "c10_mapa_distritos",
+   4402,
+   4456,
+   "O MAPA DO GTA VI TEM TANTO DISTRITO QUE O PAULINHO FICOU CHOCADO",
+   "dir"
+  ]
+ ],
+ "descartados": {
+  "c01_pe_grande": "tela mostra o celular do jogo, sem relação com a fala (reprovado pelo Augusto)",
+  "c02_corre_l3": "tela de menu",
+  "c06_6_da_manha": "celular do jogo"
+ },
+ "regra": "Toda escolha passa por conferência de imagem (th/ a cada 20 s): só entra trecho em que a tela mostra o que o streamer fala. Câmera do streamer muda de lado — conferir em quadro real antes do corte."
+}
