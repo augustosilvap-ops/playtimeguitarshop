@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cz;font-weight:700;src:url('../../fontes/cinzel700.ttf')}@font-face{font-family:Cz;font-weight:900;src:url('../../fontes/cinzel900.ttf')}
+@font-face{font-family:CG;font-weight:500;src:url('../../fontes/cg500n.ttf')}@font-face{font-family:CG;font-style:italic;src:url('../../fontes/cg400i.ttf')}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+#top{position:absolute;left:0;right:0;top:0;height:560px;background:linear-gradient(180deg,rgba(8,8,8,.62),rgba(8,8,8,.32) 55%,rgba(8,8,8,0))}
+#chip{position:absolute;left:0;right:0;top:150px;text-align:center}
+#chip .y{font:500 30px CG;letter-spacing:.42em;color:#EEEAE1;opacity:.8;text-transform:uppercase}
+#chip .n{margin-top:6px;font:900 64px Cz;letter-spacing:.04em;color:#EEEAE1;text-transform:uppercase}
+#chip .l{width:80px;height:1px;background:#EEEAE1;opacity:.5;margin:14px auto 0}
+#cap{position:absolute;left:80px;right:80px;top:330px;text-align:center;font:500 50px/1.22 CG;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.85),0 0 3px rgba(0,0,0,.9)}
+#end{position:absolute;inset:0;background:#080808;opacity:0}
+#end img{position:absolute;left:50%;top:760px;width:600px;transform:translateX(-50%)}
+#end .w{position:absolute;left:0;right:0;top:1120px;text-align:center;font:500 30px CG;letter-spacing:.5em;text-transform:uppercase;color:#EEEAE1}
+#end .s{position:absolute;left:0;right:0;top:1200px;text-align:center;font:italic 38px CG;color:#B8B2A8}
+#hand{position:absolute;bottom:56px;width:100%;text-align:center;font:italic 34px CG;color:#EEEAE1;opacity:.85;text-shadow:0 2px 10px #000}
+</style></head><body>
+<div id="top"></div><div id="chip"><div class="y"></div><div class="n"></div><div class="l"></div></div><div id="cap"></div>
+<div id="end"><img src="../../marca/logos/logo-bone.png"><div class="w">We carry the spirit.</div><div class="s">@ruahwear_</div></div>
+<div id="hand">@ruahwear_</div>
+<script>
+const CAPS=__CAPS__, CHIPS=__CHIPS__, END=__END__;
+const $=id=>document.getElementById(id), cl=x=>Math.min(1,Math.max(0,x));
+function R(t){
+ const ch=CHIPS.find(c=>t>=c[0]&&t<c[1]);
+ if(ch&&ch[2]){$('chip').style.display='block';$('chip').querySelector('.y').textContent=ch[2];$('chip').querySelector('.n').textContent=ch[3];
+  const p=cl((t-ch[0])/.5);$('chip').style.opacity=p;$('chip').querySelector('.n').style.letterSpacing=(.14-.1*p)+'em'}else $('chip').style.display='none';
+ const c=CAPS.find(c=>t>=c[0]&&t<c[1]);
+ if(c){$('cap').textContent=c[2];$('cap').style.opacity=cl((t-c[0])/.15)*cl((c[1]-t)/.12)}else $('cap').textContent='';
+ const e=cl((t-END)/.5);$('end').style.opacity=e;$('top').style.opacity=1-e;$('hand').style.opacity=.85*(1-e);
+ $('end').querySelector('img').style.filter=`blur(${(1-cl((t-END-.2)/.8))*10}px)`;$('end').querySelector('img').style.opacity=cl((t-END-.2)/.8);
+ $('end').querySelector('.w').style.opacity=cl((t-END-.8)/.6);$('end').querySelector('.s').style.opacity=cl((t-END-1.2)/.6);
+}
+R(0);
+</script></body></html>
