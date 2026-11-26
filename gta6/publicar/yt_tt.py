@@ -54,6 +54,11 @@ def yt_enviar(tok, arquivo, yt):
     return {'video_id': r['id'], 'url': f"https://youtube.com/shorts/{r['id']}", 'privacidade': meta['status']['privacyStatus']}
 
 
+def yt_capa(tok, video_id, capa):  # miniatura personalizada (exige canal verificado por telefone no YouTube)
+    http(f'https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={video_id}', open(capa, 'rb').read(),
+         {'Authorization': f'Bearer {tok}', 'Content-Type': 'image/jpeg'}, 'POST')
+
+
 # ---------- TikTok ----------
 def tt_token():
     e = os.environ
@@ -96,6 +101,10 @@ def main():
                 feito[rede] = {**fn(tok), 'em': agora.isoformat(timespec='seconds')}; print(f'✓ {rede} ← {chave}: {feito[rede]}')
             except Exception as e:  # não tenta de novo sozinho: o envio pode ter entrado (evita vídeo duplicado)
                 feito[rede] = {'falhou': str(e)[:300], 'em': agora.isoformat(timespec='seconds')}; print(f'✗ {rede} ← {chave}: {e}')
+        y = feito.get('youtube', {})
+        if yt and not SIMULAR and j.get('capa') and y.get('video_id') and 'capa' not in y:
+            try: yt_capa(yt, y['video_id'], os.path.join(RAIZ, j['capa'])); y['capa'] = 'ok'; print(f'✓ capa ← {chave}')
+            except Exception as e: y['capa'] = 'falhou: ' + str(e)[:200]; print(f'✗ capa ← {chave}: {e}')
     json.dump(st, open(st_path, 'w'), ensure_ascii=False, indent=1)
 
 

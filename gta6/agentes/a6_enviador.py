@@ -25,7 +25,7 @@ def main(data, push=True):
         leg = p['titulos']['ig'] + ('\n\n' + ' · '.join('Gameplay: ' + c for c in cred) if cred else '') + '\n\n' + CFG['rodape_ig'] + '\n\n' + ' '.join('#' + t.lstrip('#') for t in p['tags'][:5])
         j = {"hora": hora, "acao": "create_video_post", "connector": "instagram", "account": CFG['instagram']['account'], "perfil": CFG['instagram']['perfil'], "data": data, "status": "agendado",
              "params": {"video_url": CFG['site_midias'] + nome + '.mp4', "cover_url": CFG['site_midias'] + nome + '_capa.jpg', "share_to_feed": True, "caption": leg}}
-        j.update(campos_yt_tt(data, hora, p, f"{CFG['pasta_site']}/{nome}.mp4"))
+        j.update(campos_yt_tt(data, hora, p, f"{CFG['pasta_site']}/{nome}.mp4")); j['capa'] = f"{CFG['pasta_site']}/{nome}_capa.jpg"
         json.dump(j, open(f"{pub}/{p['id']}.json", 'w'), ensure_ascii=False, indent=1); agenda.append((hora, p['id']))
         md += [f"\n## {p['id']} · {p['tema']} — IG {hora}\n", f"- Arquivo: `{os.path.basename(vid)}` · capa `{os.path.basename(cap)}`\n",
                f"- **YouTube** título: {p['titulos']['yt']}\n- **YouTube** descrição: {p.get('descricao_yt', '')} " + ' '.join('#' + t.lstrip('#') for t in p['tags']) + "\n",
