@@ -64,7 +64,7 @@ def main():
         for ca, cb, txt in cl: caps.append([round(conv(ca), 2), round(conv(cb), 2), txt])
         if fase and chips and chips[-1][2:] == list(fase): chips[-1][1] = round(t, 2)
         else: chips.append([round(c0, 2), round(t, 2), *(fase or ('', '', ''))])
-        if fase and fase[1] == 'Drop 01' and cl[1][2].startswith('…já com'): ins = (conv(215.9), conv(224.0))
+        if a == 209.9: ins = (conv(215.9), conv(224.0))
     total = t
     for k in range(len(caps) - 1): caps[k][1] = min(caps[k][1], caps[k + 1][0])
     lst = open(f'{tmp}/l.txt', 'w')
