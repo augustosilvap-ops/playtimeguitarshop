@@ -1,6 +1,6 @@
 # RUAH · Reel "Linha do tempo das camisetas" (26/11)
 
-**Arquivo:** RUAH_linha_do_tempo_1080x1920.mp4 (2min55, 1080×1920)
+**Arquivo:** RUAH_linha_do_tempo_v2_1080x1920.mp4 (2min58). A v1 foi reprovada em 27/11 ("visual amador, texto ruim, áudio/trilha") e substituída.
 **Bruto:** IMG_2863.MOV, que veio espelhado pela câmera frontal; no Reel a imagem foi desespelhada para as estampas ficarem na direção certa.
 **Fases na tela:** Faith Nº 02 (2021–22) → Faith Nº 03 → RUAH · logo antigo → Inabalável (Isaías 54:10) → Peace Plan (Jeremias 29:11) → Drop 01.
 
