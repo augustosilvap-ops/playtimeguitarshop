@@ -70,7 +70,7 @@ def main():
     hp = os.path.join(HERE, '_lt_ov.html'); open(hp, 'w').write(html)
     try: run(['node', REND, hp, f'{tmp}/ov', f'{dur:.2f}', '30'])
     finally: os.remove(hp)
-    fc = (f"[0:v]tpad=stop_mode=clone:stop_duration={FIM}[v0];[v0][1:v]overlay=0:0:format=auto,format=yuv420p[v];"
+    fc = (f"[0:v]tpad=stop_mode=add:color=black:stop_duration={FIM}[v0];[v0][1:v]overlay=0:0:format=auto,format=yuv420p[v];"
           f"[0:a]apad=pad_dur={FIM}[voz];[voz]asplit[voz1][sc];"
           f"[2:a]volume=0.20,afade=t=out:st={dur - 1.2:.2f}:d=1.2[mus];[mus][sc]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=500[duck];"
           f"[voz1][duck]amix=inputs=2:normalize=0,alimiter=limit=0.95[au]")
