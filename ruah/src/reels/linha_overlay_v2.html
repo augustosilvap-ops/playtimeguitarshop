@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cz;font-weight:700;src:url('../../fontes/cinzel700.ttf')}@font-face{font-family:Cz;font-weight:900;src:url('../../fontes/cinzel900.ttf')}
+@font-face{font-family:CM;font-weight:700;src:url('../../fontes/corm700.ttf')}@font-face{font-family:CG;font-weight:500;src:url('../../fontes/cg500n.ttf')}@font-face{font-family:CG;font-style:italic;src:url('../../fontes/cg400i.ttf')}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+#bot{position:absolute;left:0;right:0;bottom:0;height:720px;background:linear-gradient(0deg,rgba(6,6,6,.78),rgba(6,6,6,.45) 45%,rgba(6,6,6,0))}
+#topg{position:absolute;left:0;right:0;top:0;height:520px;background:linear-gradient(180deg,rgba(6,6,6,.7),rgba(6,6,6,0));opacity:0}
+#card{position:absolute;left:0;right:0;top:170px;text-align:center;color:#EEEAE1}
+#card .y{font:500 30px CG;letter-spacing:.5em;text-transform:uppercase;opacity:.85}
+#card .n{font:900 170px/1 Cz;margin-top:10px;text-shadow:0 6px 30px rgba(0,0,0,.5)}
+#card .t{font:700 50px Cz;letter-spacing:.3em;text-transform:uppercase;margin-top:6px}
+#mark{position:absolute;left:60px;top:150px;font:700 30px Cz;letter-spacing:.22em;color:#EEEAE1;text-transform:uppercase;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+#mark i{font:italic 30px CG;letter-spacing:.05em;text-transform:none;opacity:.8;margin-left:8px}
+#cap{position:absolute;left:90px;right:90px;bottom:330px;text-align:center;font:700 60px/1.18 CM;color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.9),0 0 2px rgba(0,0,0,.9)}
+#tl{position:absolute;left:150px;right:150px;bottom:205px;height:2px;background:rgba(238,234,225,.35)}
+#tl .f{position:absolute;left:0;top:0;height:2px;background:#EEEAE1}
+#tl .d{position:absolute;top:-7px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#0b0b0b;border:2px solid rgba(238,234,225,.6);box-sizing:border-box}
+#tl .d.on{background:#EEEAE1;border-color:#EEEAE1}
+#tl .l{position:absolute;top:22px;width:160px;margin-left:-80px;text-align:center;font:500 22px CG;letter-spacing:.12em;color:rgba(238,234,225,.75);text-transform:uppercase}
+#hand{position:absolute;bottom:90px;width:100%;text-align:center;font:italic 32px CG;color:#EEEAE1;opacity:.8}
+#end{position:absolute;inset:0;background:rgba(8,8,8,.99);opacity:0}
+#end img{position:absolute;left:50%;top:760px;width:600px;transform:translateX(-50%)}
+#end .w{position:absolute;left:0;right:0;top:1120px;text-align:center;font:500 30px CG;letter-spacing:.5em;text-transform:uppercase;color:#EEEAE1}
+#end .s{position:absolute;left:0;right:0;top:1200px;text-align:center;font:italic 38px CG;color:#B8B2A8}
+</style></head><body>
+<div id="topg"></div><div id="bot"></div>
+<div id="card"><div class="y"></div><div class="n"></div><div class="t"></div></div><div id="mark"></div>
+<div id="cap"></div><div id="tl"><div class="f"></div></div><div id="hand">@ruahwear_</div>
+<div id="end"><img src="../../marca/logos/logo-bone.png"><div class="w">We carry the spirit.</div><div class="s">@ruahwear_</div></div>
+<script>
+const CAPS=__CAPS__, CH=__CHIPS__, END=__END__;
+const $=id=>document.getElementById(id), cl=x=>Math.min(1,Math.max(0,x)), eo=x=>1-Math.pow(1-x,3);
+const real=CH.filter(c=>c[3]); const tl=$('tl');
+real.forEach((c,i)=>{const x=(i/(real.length-1))*100;tl.insertAdjacentHTML('beforeend',`<div class="d" style="left:${x}%"></div><div class="l" style="left:${x}%">${c[3]}</div>`)});
+const dots=[...tl.querySelectorAll('.d')];
+function R(t){
+ const ch=CH.find(c=>t>=c[0]&&t<c[1]); const i=ch?real.indexOf(ch):-1;
+ // cartão do capítulo (2,4 s) → vira marca pequena no canto
+ if(ch&&ch[3]){const a=t-ch[0], cin=eo(cl(a/.6)), cout=cl((2.4-a)/.4);
+  $('card').style.opacity=cin*cout; $('card').querySelector('.y').textContent=ch[2]; $('card').querySelector('.n').textContent=ch[3]; $('card').querySelector('.t').textContent=ch[4];
+  $('card').querySelector('.n').style.letterSpacing=(.18-.14*cin)+'em'; $('card').style.transform=`translateY(${(1-cin)*30}px)`;
+  $('topg').style.opacity=Math.max(cin*cout, .55*cl((a-2.2)/.4));
+  $('mark').innerHTML=`${ch[3]} · ${ch[4]}`; $('mark').style.opacity=cl((a-2.3)/.4);
+ } else {$('card').style.opacity=0;$('mark').style.opacity=0;$('topg').style.opacity=0}
+ // linha do tempo
+ const p=i<0?(t<(real[0]||[0])[0]?0:1):i/(real.length-1); const pr=i>=0?cl((t-ch[0])/.8):1;
+ const prev=i<=0?0:(i-1)/(real.length-1); tl.querySelector('.f').style.width=((i<0?p:prev+(p-prev)*eo(pr))*100)+'%';
+ dots.forEach((d,k)=>d.classList.toggle('on',i<0?(t>=real[0][0]):k<=i));
+ tl.style.opacity=cl(t/.8); 
+ const c=CAPS.find(c=>t>=c[0]&&t<c[1]);
+ if(c){$('cap').textContent=c[2];$('cap').style.opacity=cl((t-c[0])/.15)*cl((c[1]-t)/.12)}else $('cap').textContent='';
+ const e=cl((t-END)/.6);$('end').style.opacity=e;
+ $('end').querySelector('img').style.filter=`blur(${(1-cl((t-END-.2)/.8))*10}px)`;$('end').querySelector('img').style.opacity=cl((t-END-.2)/.8);
+ $('end').querySelector('.w').style.opacity=cl((t-END-.8)/.6);$('end').querySelector('.s').style.opacity=cl((t-END-1.2)/.6);
+}
+R(0);
+</script></body></html>
